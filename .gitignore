@@ -19,7 +19,7 @@ playwright/.cache/
 .coverage
 
 # Build out
-dist/
+#dist/
 build
 temp
 tsconfig.tsbuildinfo

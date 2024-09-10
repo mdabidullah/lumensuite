@@ -1,0 +1,1 @@
+{"version":3,"file":"embed-edgeless-html-block.d.ts","sourceRoot":"","sources":["../../src/embed-html-block/embed-edgeless-html-block.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,mBAAmB,EAAE,MAAM,wBAAwB,CAAC;AAGlE,OAAO,EAAE,uBAAuB,EAAE,MAAM,uBAAuB,CAAC;;AAEhE,qBACa,+BAAgC,SAAQ,oCAEpD;IACC,IAAI,WAAW,IACgC,mBAAmB,CACjE;IAEQ,cAAc;CAkBxB"}

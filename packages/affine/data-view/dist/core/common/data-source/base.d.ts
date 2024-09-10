@@ -1,0 +1,95 @@
+import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
+import type { ReadonlySignal } from '@lit-labs/preact-signals';
+import type { ColumnMeta } from '../../column/column-config.js';
+import type { DatabaseFlags } from '../../types.js';
+import type { UniComponent } from '../../utils/uni-component/index.js';
+import type { DataViewDataType, DataViewTypes, ViewMeta } from '../../view/data-view.js';
+import type { SingleView } from '../../view-manager/single-view.js';
+import type { ViewManager } from '../../view-manager/view-manager.js';
+import type { DataViewContextKey } from './context.js';
+export type DetailSlotProps = {
+    view: SingleView;
+    rowId: string;
+};
+export interface DetailSlots {
+    header?: UniComponent<DetailSlotProps>;
+    note?: UniComponent<DetailSlotProps>;
+}
+export interface DataSource {
+    readonly$: ReadonlySignal<boolean>;
+    addPropertyConfigList: ColumnMeta[];
+    properties$: ReadonlySignal<string[]>;
+    rows$: ReadonlySignal<string[]>;
+    cellGetValue(rowId: string, propertyId: string): unknown;
+    cellChangeValue(rowId: string, propertyId: string, value: unknown): void;
+    rowAdd(InsertToPosition: InsertToPosition | number): string;
+    rowDelete(ids: string[]): void;
+    propertyGetName(propertyId: string): string;
+    propertyGetDefaultWidth(propertyId: string): number;
+    propertyGetType(propertyId: string): string | undefined;
+    propertyGetData(propertyId: string): Record<string, unknown>;
+    propertyGetReadonly(columnId: string): boolean;
+    propertyChangeName(propertyId: string, name: string): void;
+    propertyChangeType(propertyId: string, type: string): void;
+    propertyChangeData(propertyId: string, data: Record<string, unknown>): void;
+    propertyAdd(insertToPosition: InsertToPosition, type?: string): string;
+    propertyDelete(id: string): void;
+    propertyDuplicate(columnId: string): string;
+    featureFlags$: ReadonlySignal<DatabaseFlags>;
+    detailSlots: DetailSlots;
+    getPropertyMeta(type: string): ColumnMeta;
+    rowMove(rowId: string, position: InsertToPosition): void;
+    getContext<T>(key: DataViewContextKey<T>): T | undefined;
+    viewManager: ViewManager;
+    viewDataList$: ReadonlySignal<DataViewDataType[]>;
+    viewDataAdd(viewType: DataViewTypes): string;
+    viewDataDuplicate(id: string): string;
+    viewDataDelete(viewId: string): void;
+    viewDataGet(viewId: string): DataViewDataType | undefined;
+    viewDataMoveTo(id: string, position: InsertToPosition): void;
+    viewDataUpdate<ViewData extends DataViewDataType>(id: string, updater: (data: ViewData) => Partial<ViewData>): void;
+    viewMetas: ViewMeta[];
+    viewMetaGet(type: string): ViewMeta;
+    viewMetaGetById(viewId: string): ViewMeta;
+}
+export declare abstract class DataSourceBase implements DataSource {
+    abstract addPropertyConfigList: ColumnMeta[];
+    context: Map<DataViewContextKey<unknown>, unknown>;
+    abstract featureFlags$: ReadonlySignal<DatabaseFlags>;
+    abstract properties$: ReadonlySignal<string[]>;
+    abstract readonly$: ReadonlySignal<boolean>;
+    abstract rows$: ReadonlySignal<string[]>;
+    abstract viewDataList$: ReadonlySignal<DataViewDataType[]>;
+    abstract viewManager: ViewManager;
+    abstract viewMetas: ViewMeta[];
+    get detailSlots(): DetailSlots;
+    abstract cellChangeValue(rowId: string, propertyId: string, value: unknown): void;
+    abstract cellChangeValue(rowId: string, propertyId: string, value: unknown): void;
+    abstract cellGetValue(rowId: string, propertyId: string): unknown;
+    getContext<T>(key: DataViewContextKey<T>): T | undefined;
+    abstract getPropertyMeta(type: string): ColumnMeta;
+    abstract propertyAdd(insertToPosition: InsertToPosition, type?: string): string;
+    abstract propertyChangeData(propertyId: string, data: Record<string, unknown>): void;
+    abstract propertyChangeName(propertyId: string, name: string): void;
+    abstract propertyChangeType(propertyId: string, type: string): void;
+    abstract propertyDelete(id: string): void;
+    abstract propertyDuplicate(columnId: string): string;
+    abstract propertyGetData(propertyId: string): Record<string, unknown>;
+    propertyGetDefaultWidth(_propertyId: string): number;
+    abstract propertyGetName(propertyId: string): string;
+    propertyGetReadonly(_propertyId: string): boolean;
+    abstract propertyGetType(propertyId: string): string;
+    abstract rowAdd(InsertToPosition: InsertToPosition | number): string;
+    abstract rowDelete(ids: string[]): void;
+    abstract rowMove(rowId: string, position: InsertToPosition): void;
+    protected setContext<T>(key: DataViewContextKey<T>, value: T): void;
+    abstract viewDataAdd(viewType: DataViewTypes): string;
+    abstract viewDataDelete(viewId: string): void;
+    abstract viewDataDuplicate(id: string): string;
+    abstract viewDataGet(viewId: string): DataViewDataType;
+    abstract viewDataMoveTo(id: string, position: InsertToPosition): void;
+    abstract viewDataUpdate<ViewData extends DataViewDataType>(id: string, updater: (data: ViewData) => Partial<ViewData>): void;
+    abstract viewMetaGet(type: string): ViewMeta;
+    abstract viewMetaGetById(viewId: string): ViewMeta;
+}
+//# sourceMappingURL=base.d.ts.map

@@ -1,0 +1,53 @@
+import { type DocMode, type EmbedSyncedDocModel } from '@blocksuite/affine-model';
+import { type EditorHost } from '@blocksuite/block-std';
+import { type PropertyValues } from 'lit';
+import type { EmbedSyncedDocCard } from './components/embed-synced-doc-card.js';
+import type { EmbedSyncedDocBlockService } from './embed-synced-doc-service.js';
+import { EmbedBlockComponent } from '../_common/embed-block-helper/embed-block-element.js';
+import './components/embed-synced-doc-card.js';
+export declare class EmbedSyncedDocBlockComponent extends EmbedBlockComponent<EmbedSyncedDocModel, EmbedSyncedDocBlockService> {
+    static styles: import("lit").CSSResult;
+    private _initEdgelessFitEffect;
+    private _pageFilter;
+    protected _buildPreviewSpec: (name: "page:preview" | "edgeless:preview") => import("@blocksuite/block-std").ExtensionType[];
+    protected _renderSyncedView: () => import("lit").TemplateResult<1>;
+    protected cardStyleMap: import("lit/async-directive.js").DirectiveResult<typeof import("lit/directives/style-map.js").StyleMapDirective>;
+    convertToCard: () => void;
+    covertToInline: () => void;
+    open: () => void;
+    refreshData: () => void;
+    private get _rootService();
+    get blockState(): {
+        isLoading: boolean;
+        isError: boolean;
+        isDeleted: boolean;
+        isCycle: boolean;
+    };
+    get docTitle(): string;
+    get docUpdatedAt(): Date;
+    get editorMode(): DocMode;
+    protected get isPageMode(): boolean;
+    get syncedDoc(): import("@blocksuite/store").Doc | null;
+    private _checkCycle;
+    private _isClickAtBorder;
+    private _load;
+    private _selectBlock;
+    private _setDocUpdatedAt;
+    protected _handleClick(_event: MouseEvent): void;
+    connectedCallback(): void;
+    firstUpdated(): void;
+    renderBlock(): import("lit").TemplateResult<1>;
+    updated(changedProperties: PropertyValues): void;
+    private accessor _cycle;
+    private accessor _deleted;
+    private accessor _docUpdatedAt;
+    private accessor _error;
+    protected accessor _isEmptySyncedDoc: boolean;
+    private accessor _loading;
+    accessor depth: number;
+    accessor syncedDocCard: EmbedSyncedDocCard | null;
+    accessor syncedDocEditorHost: EditorHost | null;
+    accessor syncedDocMode: DocMode;
+    accessor useCaptionEditor: boolean;
+}
+//# sourceMappingURL=embed-synced-doc-block.d.ts.map

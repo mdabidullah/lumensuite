@@ -1,0 +1,1 @@
+{"version":3,"file":"embed-edgeless-figma-block.d.ts","sourceRoot":"","sources":["../../src/embed-figma-block/embed-edgeless-figma-block.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,wBAAwB,EAAE,MAAM,wBAAwB,CAAC;;AAElE,qBACa,2BAA4B,SAAQ,gCAEhD;CAAG;AAEJ,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,mCAAmC,EAAE,2BAA2B,CAAC;KAClE;CACF"}

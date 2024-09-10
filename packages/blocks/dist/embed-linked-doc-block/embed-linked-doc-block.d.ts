@@ -1,0 +1,44 @@
+import type { DocMode, EmbedLinkedDocModel, EmbedLinkedDocStyles, ReferenceInfo } from '@blocksuite/affine-model';
+import type { SurfaceRefBlockService } from '../surface-ref-block/index.js';
+import type { SurfaceRefRenderer } from '../surface-ref-block/surface-ref-renderer.js';
+import type { EmbedLinkedDocBlockConfig } from './embed-linked-doc-config.js';
+import type { EmbedLinkedDocBlockService } from './embed-linked-doc-service.js';
+import { EmbedBlockComponent } from '../_common/embed-block-helper/index.js';
+export declare class EmbedLinkedDocBlockComponent extends EmbedBlockComponent<EmbedLinkedDocModel, EmbedLinkedDocBlockService> {
+    static styles: import("lit").CSSResult;
+    private _load;
+    private _selectBlock;
+    private _setDocUpdatedAt;
+    _cardStyle: (typeof EmbedLinkedDocStyles)[number];
+    _height: number;
+    _width: number;
+    cleanUpSurfaceRefRenderer: () => void;
+    convertToEmbed: () => void;
+    covertToInline: () => void;
+    open: () => void;
+    refreshData: () => void;
+    get config(): EmbedLinkedDocBlockConfig;
+    get docTitle(): string;
+    get editorMode(): DocMode;
+    get linkedDoc(): import("@blocksuite/store").Doc | null;
+    get referenceInfo(): ReferenceInfo;
+    private _handleDoubleClick;
+    private _isDocEmpty;
+    protected _handleClick(event: MouseEvent): void;
+    connectedCallback(): void;
+    disconnectedCallback(): void;
+    renderBlock(): import("lit").TemplateResult<1>;
+    updated(): void;
+    private accessor _docUpdatedAt;
+    private accessor _isLinkToNode;
+    private accessor _linkedDocMode;
+    private accessor _loading;
+    accessor bannerContainer: Promise<HTMLDivElement>;
+    accessor isBannerEmpty: boolean;
+    accessor isError: boolean;
+    accessor isNoteContentEmpty: boolean;
+    accessor noteContainer: Promise<HTMLDivElement>;
+    accessor surfaceRefRenderer: SurfaceRefRenderer | undefined;
+    accessor surfaceRefService: SurfaceRefBlockService;
+}
+//# sourceMappingURL=embed-linked-doc-block.d.ts.map

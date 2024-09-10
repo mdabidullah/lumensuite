@@ -1,0 +1,1 @@
+{"version":3,"file":"ai-chat-edgeless-block.d.ts","sourceRoot":"","sources":["../../../src/blocks/ai-chat-block/ai-chat-edgeless-block.ts"],"names":[],"mappings":"AAMA,OAAO,EAAE,oBAAoB,EAAE,MAAM,oBAAoB,CAAC;;AAE1D,qBACa,4BAA6B,SAAQ,iCAEjD;IACU,cAAc;CAqBxB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,yBAAyB,EAAE,4BAA4B,CAAC;KACzD;CACF"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sourceRoot":"","sources":["../../../src/rich-text/format/index.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,uBAAuB,CAAC;AAK3D,OAAO,EAAE,iBAAiB,EAAE,MAAM,aAAa,CAAC;AAEhD,OAAO,EACL,6BAA6B,EAC7B,8BAA8B,EAC9B,4BAA4B,GAC7B,MAAM,aAAa,CAAC;AAarB,OAAO,EAAE,8BAA8B,EAAE,iBAAiB,EAAE,MAAM,YAAY,CAAC;AAE/E,eAAO,MAAM,YAAY,EAAE,aAc1B,CAAC"}

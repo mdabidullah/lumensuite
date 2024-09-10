@@ -1,0 +1,53 @@
+import type { EditorHost } from '@blocksuite/block-std';
+import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
+import { type ColumnMeta, type DatabaseFlags, DataSourceBase, type DataViewDataType, type DataViewTypes, type DetailSlots, type ViewManager, type ViewMeta } from '@blocksuite/data-view';
+import { type ReadonlySignal } from '@lit-labs/preact-signals';
+export type DatabaseBlockDataSourceConfig = {
+    pageId: string;
+    blockId: string;
+};
+export declare class DatabaseBlockDataSource extends DataSourceBase {
+    private host;
+    private _batch;
+    private readonly _model;
+    featureFlags$: ReadonlySignal<DatabaseFlags>;
+    properties$: ReadonlySignal<string[]>;
+    readonly$: ReadonlySignal<boolean>;
+    rows$: ReadonlySignal<string[]>;
+    viewDataList$: ReadonlySignal<DataViewDataType[]>;
+    viewManager: ViewManager;
+    viewMetas: ViewMeta[];
+    get addPropertyConfigList(): ColumnMeta<any, any, any>[];
+    get detailSlots(): DetailSlots;
+    get doc(): import("@blocksuite/store").Doc;
+    constructor(host: EditorHost, config: DatabaseBlockDataSourceConfig);
+    private _runCapture;
+    private getModelById;
+    private newColumnName;
+    cellChangeValue(rowId: string, propertyId: string, value: unknown): void;
+    cellGetValue(rowId: string, propertyId: string): unknown;
+    getPropertyMeta(type: string): ColumnMeta;
+    propertyAdd(insertToPosition: InsertToPosition, type?: string): string;
+    propertyChangeData(propertyId: string, data: Record<string, unknown>): void;
+    propertyChangeName(propertyId: string, name: string): void;
+    propertyChangeType(propertyId: string, toType: string): void;
+    propertyDelete(id: string): void;
+    propertyDuplicate(columnId: string): string;
+    propertyGetData(propertyId: string): Record<string, unknown>;
+    propertyGetDefaultWidth(propertyId: string): number;
+    propertyGetName(propertyId: string): string;
+    propertyGetReadonly(propertyId: string): boolean;
+    propertyGetType(propertyId: string): string;
+    rowAdd(insertPosition: InsertToPosition | number): string;
+    rowDelete(ids: string[]): void;
+    rowMove(rowId: string, position: InsertToPosition): void;
+    viewDataAdd(viewType: DataViewTypes): string;
+    viewDataDelete(viewId: string): void;
+    viewDataDuplicate(id: string): string;
+    viewDataGet(viewId: string): DataViewDataType;
+    viewDataMoveTo(id: string, position: InsertToPosition): void;
+    viewDataUpdate<ViewData extends DataViewDataType>(id: string, updater: (data: ViewData) => Partial<ViewData>): void;
+    viewMetaGet(type: string): ViewMeta;
+    viewMetaGetById(viewId: string): ViewMeta;
+}
+//# sourceMappingURL=data-source.d.ts.map

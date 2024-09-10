@@ -1,0 +1,1 @@
+{"version":3,"file":"pointer.d.ts","sourceRoot":"","sources":["../../../src/event/control/pointer.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,kBAAkB,CAAC;AAgd1D,qBAAa,cAAc;IACzB,OAAO,CAAC,WAAW,CAA0B;gBAEjC,WAAW,EAAE,iBAAiB;IAU1C,MAAM;CAGP"}

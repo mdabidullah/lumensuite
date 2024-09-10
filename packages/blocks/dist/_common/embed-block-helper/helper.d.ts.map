@@ -1,0 +1,1 @@
+{"version":3,"file":"helper.d.ts","sourceRoot":"","sources":["../../../src/_common/embed-block-helper/helper.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,eAAe,EAA2B,MAAM,YAAY,CAAC;AAM3E,qBAAa,aAAa;IACxB,OAAO,CAAC,SAAS,CAAiC;IAElD,KAAK,QACE,MAAM,WACF,WAAW,KACnB,OAAO,CAAC,OAAO,CAAC,eAAe,CAAC,CAAC,CA+DlC;IAEF,WAAW,aAAc,MAAM,UAE7B;IAEF,OAAO,CAAC,kBAAkB;CAK3B"}

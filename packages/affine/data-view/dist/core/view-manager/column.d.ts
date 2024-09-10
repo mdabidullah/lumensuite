@@ -1,0 +1,66 @@
+import { type ReadonlySignal } from '@lit-labs/preact-signals';
+import type { CellRenderer } from '../column/index.js';
+import type { TType } from '../logical/typesystem.js';
+import type { ColumnDataUpdater } from '../types.js';
+import type { UniComponent } from '../utils/uni-component/index.js';
+import type { Cell } from './cell.js';
+import type { SingleView } from './single-view.js';
+export interface Column<Value = unknown, Data extends Record<string, unknown> = Record<string, unknown>> {
+    get view(): SingleView;
+    get id(): string;
+    get index(): number;
+    type$: ReadonlySignal<string>;
+    dataType$: ReadonlySignal<TType>;
+    name$: ReadonlySignal<string>;
+    hide$: ReadonlySignal<boolean>;
+    cells$: ReadonlySignal<Cell[]>;
+    data$: ReadonlySignal<Data>;
+    readonly$: ReadonlySignal<boolean>;
+    renderer$: ReadonlySignal<CellRenderer | undefined>;
+    detailRenderer$: ReadonlySignal<CellRenderer | undefined>;
+    get isFirst(): boolean;
+    get isLast(): boolean;
+    cellGet(rowId: string): Cell<Value>;
+    getStringValue(rowId: string): string;
+    getValue(rowId: string): Value | undefined;
+    setValue(rowId: string, value: Value | undefined): void;
+    setValueFromString(rowId: string, value: string): void;
+    updateData(updater: ColumnDataUpdater<Data>): void;
+    updateHide(hide: boolean): void;
+    updateName(name: string): void;
+    get updateType(): undefined | ((type: string) => void);
+    get delete(): undefined | (() => void);
+    get duplicate(): undefined | (() => void);
+    get icon(): UniComponent | undefined;
+}
+export declare abstract class ColumnBase<Value = unknown, Data extends Record<string, unknown> = Record<string, unknown>> implements Column<Value, Data> {
+    view: SingleView;
+    columnId: string;
+    cells$: ReadonlySignal<Cell<Value, Record<string, unknown>>[]>;
+    data$: ReadonlySignal<Data>;
+    dataType$: ReadonlySignal<TType>;
+    detailRenderer$: ReadonlySignal<CellRenderer<{}, unknown> | undefined>;
+    hide$: ReadonlySignal<boolean>;
+    name$: ReadonlySignal<string>;
+    readonly$: ReadonlySignal<boolean>;
+    renderer$: ReadonlySignal<CellRenderer<{}, unknown> | undefined>;
+    type$: ReadonlySignal<string>;
+    get delete(): (() => void) | undefined;
+    get duplicate(): (() => void) | undefined;
+    get icon(): UniComponent | undefined;
+    get id(): string;
+    get index(): number;
+    get isFirst(): boolean;
+    get isLast(): boolean;
+    get updateType(): undefined | ((type: string) => void);
+    constructor(view: SingleView, columnId: string);
+    cellGet(rowId: string): Cell<Value>;
+    getStringValue(rowId: string): string;
+    getValue(rowId: string): Value | undefined;
+    setValue(rowId: string, value: Value | undefined): void;
+    setValueFromString(rowId: string, value: string): void;
+    updateData(updater: ColumnDataUpdater<Data>): void;
+    updateHide(hide: boolean): void;
+    updateName(name: string): void;
+}
+//# sourceMappingURL=column.d.ts.map
