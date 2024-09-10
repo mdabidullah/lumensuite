@@ -7,7 +7,7 @@
 !.vscode/launch.template.json
 !.vscode/extensions.json
 node_modules
-*.tgz
+#*.tgz
 
 # playwright
 test-results/
