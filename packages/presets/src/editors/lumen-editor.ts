@@ -15,7 +15,7 @@ import { guard } from 'lit/directives/guard.js';
 noop(EditorHost);
 
 @customElement('lumen-editor')
-export class EdgelessEditor extends WithDisposable(ShadowlessElement) {
+export class LumenEditor extends WithDisposable(ShadowlessElement) {
   static override styles = css`
     lumen-editor {
       font-family: var(--affine-font-family);
@@ -105,6 +105,6 @@ export class EdgelessEditor extends WithDisposable(ShadowlessElement) {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'lumen-editor': EdgelessEditor;
+    'lumen-editor': LumenEditor;
   }
 }

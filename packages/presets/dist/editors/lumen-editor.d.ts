@@ -1,8 +1,8 @@
 import type { Doc } from '@blocksuite/store';
 import { BlockStdScope, EditorHost, ShadowlessElement } from '@blocksuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
-declare const EdgelessEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
-export declare class EdgelessEditor extends EdgelessEditor_base {
+declare const LumenEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+export declare class LumenEditor extends LumenEditor_base {
     static styles: import("lit").CSSResult;
     get host(): EditorHost | null;
     connectedCallback(): void;
@@ -16,7 +16,7 @@ export declare class EdgelessEditor extends EdgelessEditor_base {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'lumen-editor': EdgelessEditor;
+        'lumen-editor': LumenEditor;
     }
 }
 export {};

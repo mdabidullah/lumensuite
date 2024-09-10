@@ -39,7 +39,7 @@ import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { guard } from 'lit/directives/guard.js';
 noop(EditorHost);
-let EdgelessEditor = (() => {
+let LumenEditor = (() => {
     let _classDecorators = [customElement('lumen-editor')];
     let _classDescriptor;
     let _classExtraInitializers = [];
@@ -57,7 +57,7 @@ let EdgelessEditor = (() => {
     let _std_decorators;
     let _std_initializers = [];
     let _std_extraInitializers = [];
-    var EdgelessEditor = class extends _classSuper {
+    var LumenEditor = class extends _classSuper {
         static { _classThis = this; }
         static {
             const _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(_classSuper[Symbol.metadata] ?? null) : void 0;
@@ -70,7 +70,7 @@ let EdgelessEditor = (() => {
             __esDecorate(this, null, _specs_decorators, { kind: "accessor", name: "specs", static: false, private: false, access: { has: obj => "specs" in obj, get: obj => obj.specs, set: (obj, value) => { obj.specs = value; } }, metadata: _metadata }, _specs_initializers, _specs_extraInitializers);
             __esDecorate(this, null, _std_decorators, { kind: "accessor", name: "std", static: false, private: false, access: { has: obj => "std" in obj, get: obj => obj.std, set: (obj, value) => { obj.std = value; } }, metadata: _metadata }, _std_initializers, _std_extraInitializers);
             __esDecorate(null, _classDescriptor = { value: _classThis }, _classDecorators, { kind: "class", name: _classThis.name, metadata: _metadata }, null, _classExtraInitializers);
-            EdgelessEditor = _classThis = _classDescriptor.value;
+            LumenEditor = _classThis = _classDescriptor.value;
             if (_metadata) Object.defineProperty(_classThis, Symbol.metadata, { enumerable: true, configurable: true, writable: true, value: _metadata });
         }
         static { this.styles = css `
@@ -158,7 +158,7 @@ let EdgelessEditor = (() => {
             __runInitializers(_classThis, _classExtraInitializers);
         }
     };
-    return EdgelessEditor = _classThis;
+    return LumenEditor = _classThis;
 })();
-export { EdgelessEditor };
+export { LumenEditor };
 //# sourceMappingURL=lumen-editor.js.map
