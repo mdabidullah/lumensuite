@@ -1,11 +1,11 @@
+import { signal } from '@lit-labs/preact-signals';
 import {
   PropTypes,
   requiredProperties,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { NoteDisplayMode, scrollbarStyle } from '@blocksuite/blocks';
-import { signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
+import { NoteDisplayMode, scrollbarStyle } from '@lumensuite/blocks';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

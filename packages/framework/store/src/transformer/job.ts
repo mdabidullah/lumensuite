@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
 
 import type { BlockModel, BlockSchemaType } from '../schema/index.js';
 import type { Doc, DocCollection, DocMeta } from '../store/index.js';
@@ -102,7 +102,7 @@ export class Job {
       const rootModel = doc.root;
       const meta = this._exportDocMeta(doc);
       if (!rootModel) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.TransformerError,
           'Root block not found in doc'
         );
@@ -405,7 +405,7 @@ export class Job {
     const docMeta = doc.meta;
 
     if (!docMeta) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         'Doc meta not found'
       );
@@ -422,19 +422,19 @@ export class Job {
     const { meta } = this._collection;
     const { pageVersion, workspaceVersion, docs } = meta;
     if (!pageVersion) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         'Page version not found'
       );
     }
     if (!workspaceVersion) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         'Workspace version not found'
       );
     }
     if (!docs) {
-      throw new BlockSuiteError(ErrorCode.TransformerError, 'Docs not found');
+      throw new LumenSuiteError(ErrorCode.TransformerError, 'Docs not found');
     }
     return {
       pageVersion,
@@ -447,7 +447,7 @@ export class Job {
   private _getSchema(flavour: string) {
     const schema = this._collection.schema.flavourSchemaMap.get(flavour);
     if (!schema) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         `Flavour schema not found for ${flavour}`
       );
@@ -492,7 +492,7 @@ export class Job {
         : setImmediate;
     await new Promise(resolve => nextTick(() => resolve(undefined)));
     doc.addBlock(
-      modelData.flavour as BlockSuite.Flavour,
+      modelData.flavour as LumenSuite.Flavour,
       { ...modelData.props, id: modelData.id },
       parent,
       index
@@ -504,7 +504,7 @@ export class Job {
 
     const model = doc.getBlockById(id);
     if (!model) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         `Block not found by id ${id}`
       );

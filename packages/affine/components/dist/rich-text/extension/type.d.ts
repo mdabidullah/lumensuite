@@ -1,6 +1,6 @@
-import type { ReferenceInfo } from '@blocksuite/affine-model';
-import type { AttributeRenderer, BaseTextAttributes, DeltaInsert, InlineEditor, InlineRange, KeyboardBindingHandler } from '@blocksuite/inline';
-import type { Y } from '@blocksuite/store';
+import type { ReferenceInfo } from '@lumensuite/affine-model';
+import type { AttributeRenderer, BaseTextAttributes, DeltaInsert, InlineEditor, InlineRange, KeyboardBindingHandler } from '@lumensuite/inline';
+import type { Y } from '@lumensuite/store';
 import type { ZodTypeAny } from 'zod';
 export interface AffineTextAttributes {
     bold?: true | null;

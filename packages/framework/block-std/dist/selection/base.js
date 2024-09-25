@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 export class BaseSelection {
     get group() {
         return this.constructor.group;
@@ -11,7 +11,7 @@ export class BaseSelection {
         this.blockId = blockId;
     }
     static fromJSON(_) {
-        throw new BlockSuiteError(ErrorCode.SelectionError, 'You must override this method');
+        throw new LumenSuiteError(ErrorCode.SelectionError, 'You must override this method');
     }
     is(type) {
         return this.type === type;

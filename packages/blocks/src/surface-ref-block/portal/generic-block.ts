@@ -9,11 +9,11 @@ import type {
   EmbedSyncedDocModel,
   EmbedYoutubeModel,
   ImageBlockModel,
-} from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { css, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

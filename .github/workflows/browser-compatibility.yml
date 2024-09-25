@@ -7,18 +7,18 @@ on:
   workflow_dispatch:
     inputs:
       repo:
-        description: 'blocksuite repository to use'
+        description: 'lumensuite repository to use'
         required: true
         type: string
-        default: 'toeverything/blocksuite'
+        default: 'toeverything/lumensuite'
       ref:
-        description: 'blocksuite branch to use'
+        description: 'lumensuite branch to use'
         required: true
         type: string
         default: 'master'
 jobs:
   main-test:
-    if: github.repository == 'toeverything/blocksuite'
+    if: github.repository == 'toeverything/lumensuite'
     name: Playground E2E test
     runs-on: ${{ matrix.os }}
     strategy:

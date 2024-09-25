@@ -1,4 +1,4 @@
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
 import { ArrowRightBigIcon, DeleteIcon, ExpandFullIcon, MoveLeftIcon, MoveRightIcon, } from '@blocksuite/icons/lit';
 import { html } from 'lit';
 export const openDetail = (dataViewEle, rowId, selection) => {

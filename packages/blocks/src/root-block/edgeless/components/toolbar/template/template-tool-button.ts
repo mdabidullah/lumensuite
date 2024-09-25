@@ -1,5 +1,3 @@
-import { ArrowDownSmallIcon } from '@blocksuite/affine-components/icons';
-import { once } from '@blocksuite/affine-shared/utils';
 import {
   arrow,
   autoUpdate,
@@ -7,6 +5,8 @@ import {
   offset,
   shift,
 } from '@floating-ui/dom';
+import { ArrowDownSmallIcon } from '@lumensuite/affine-components/icons';
+import { once } from '@lumensuite/affine-shared/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import type { EdgelessTool } from '../types.js';
 import { EdgelessToolController } from './edgeless-tool.js';
 export declare enum DefaultModeDragType {
@@ -84,7 +84,7 @@ export declare class DefaultToolController extends EdgelessToolController<Defaul
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             default: DefaultToolController;
         }

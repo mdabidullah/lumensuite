@@ -1,8 +1,8 @@
-import type { ConnectorElementModel, FrameBlockModel, GroupElementModel } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
-import { type IModelCoord } from '@blocksuite/affine-block-surface';
-import { ShapeElementModel, TextElementModel } from '@blocksuite/affine-model';
+import type { ConnectorElementModel, FrameBlockModel, GroupElementModel } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
+import { type IModelCoord } from '@lumensuite/affine-block-surface';
+import { ShapeElementModel, TextElementModel } from '@lumensuite/affine-model';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 export declare function mountTextElementEditor(textElement: TextElementModel, edgeless: EdgelessRootBlockComponent, focusCoord?: IModelCoord): void;
 export declare function mountShapeTextEditor(shapeElement: ShapeElementModel, edgeless: EdgelessRootBlockComponent): void;

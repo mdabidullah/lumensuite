@@ -1,4 +1,4 @@
-import { sleep } from '@blocksuite/global/utils';
+import { sleep } from '@lumensuite/global/utils';
 import { expect, type Page } from '@playwright/test';
 import { switchEditorMode } from 'utils/actions/edgeless.js';
 
@@ -287,7 +287,7 @@ test('should undo/redo works for attachment', async ({ page }) => {
 test('should rename attachment works', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/4534',
+    description: 'https://github.com/toeverything/lumensuite/issues/4534',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);

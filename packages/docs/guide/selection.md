@@ -2,7 +2,7 @@
 
 Selection is a very common concept in structure editors. It's used for representing the current cursor position or the current selected blocks.
 
-In BlockSuite, we use a data driven approach to represent the selection. It also follows the [CRDT-native data flow](/blog/crdt-native-data-flow), which means the selection state is always derived from serializable data.
+In LumenSuite, we use a data driven approach to represent the selection. It also follows the [CRDT-native data flow](/blog/crdt-native-data-flow), which means the selection state is always derived from serializable data.
 
 ## Selection Model
 
@@ -148,7 +148,7 @@ selection.slots.remoteChanged.on(nextSelectionMap => {
 You can create your own selection type by extending the `BaseSelection` interface.
 
 ```ts
-import { BaseSelection, PathFinder } from '@blocksuite/block-std';
+import { BaseSelection, PathFinder } from '@lumensuite/block-std';
 import z from 'zod';
 
 const MySelectionSchema = z.object({
@@ -182,7 +182,7 @@ export class MySelection extends BaseSelection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Selection {
       mySelection: typeof MySelection;
     }

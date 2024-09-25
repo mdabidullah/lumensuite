@@ -14,14 +14,14 @@ import {
   NumberedListIcon,
   QuoteIcon,
   TextIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 
 /**
  * Text primitive entries used in slash menu and format bar,
  * which are also used for registering hotkeys for converting block flavours.
  */
 export interface TextConversionConfig {
-  flavour: BlockSuite.Flavour;
+  flavour: LumenSuite.Flavour;
   type?: string;
   name: string;
   description?: string;

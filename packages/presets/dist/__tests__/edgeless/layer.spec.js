@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { DocCollection } from '@blocksuite/store';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { DocCollection } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 import { wait } from '../utils/common.js';
 import { addNote, getDocRootBlock, getSurface } from '../utils/edgeless.js';

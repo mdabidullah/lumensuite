@@ -1,5 +1,5 @@
-import { AffineSchemas } from '@blocksuite/blocks';
-import { assertExists } from '@blocksuite/global/utils';
+import { AffineSchemas } from '@lumensuite/blocks';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   DocCollection,
   type DocCollectionOptions,
@@ -7,13 +7,13 @@ import {
   Job,
   Schema,
   Text,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import {
   BroadcastChannelAwarenessSource,
   BroadcastChannelDocSource,
   IndexedDBBlobSource,
   IndexedDBDocSource,
-} from '@blocksuite/sync';
+} from '@lumensuite/sync';
 
 import { WebSocketAwarenessSource } from '../../_common/sync/websocket/awareness';
 import { WebSocketDocSource } from '../../_common/sync/websocket/doc';
@@ -55,7 +55,7 @@ export async function createDefaultDocCollection() {
       });
   }
 
-  const flags: Partial<BlockSuiteFlags> = Object.fromEntries(
+  const flags: Partial<LumenSuiteFlags> = Object.fromEntries(
     [...params.entries()]
       .filter(([key]) => key.startsWith('enable_'))
       .map(([k, v]) => [k, v === 'true'])

@@ -1,4 +1,4 @@
-import { type DocCollection, Text } from '@blocksuite/store';
+import { type DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils.js';
 
@@ -29,7 +29,7 @@ export const embed: InitFn = (collection: DocCollection, id: string) => {
     doc.addBlock(
       'affine:embed-github',
       {
-        url: 'https://www.github.com/toeverything/blocksuite/pull/5927',
+        url: 'https://www.github.com/toeverything/lumensuite/pull/5927',
         style: 'vertical',
         xywh: '[0, 400, 364, 390]',
       },

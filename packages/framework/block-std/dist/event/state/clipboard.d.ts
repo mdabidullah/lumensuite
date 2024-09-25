@@ -8,7 +8,7 @@ export declare class ClipboardEventState extends UIEventState {
     constructor({ event }: ClipboardEventStateOptions);
 }
 declare global {
-    interface BlockSuiteUIEventState {
+    interface LumenSuiteUIEventState {
         clipboardState: ClipboardEventState;
     }
 }

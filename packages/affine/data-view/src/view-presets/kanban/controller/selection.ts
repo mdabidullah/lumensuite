@@ -1,7 +1,7 @@
 import type { ReactiveController } from 'lit';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
 
 import type { KanbanGroup } from '../group.js';
 import type { DataViewKanban } from '../kanban-view.js';
@@ -345,7 +345,7 @@ export class KanbanSelectionController implements ReactiveController {
         groupIndex => (groupIndex === 0 ? groups.length - 1 : groupIndex - 1)
       );
     }
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.DatabaseBlockError,
       'Unknown arrow keys, only support: up, down, left, and right keys.'
     );
@@ -431,7 +431,7 @@ export class KanbanSelectionController implements ReactiveController {
         groupIndex => (groupIndex === 0 ? groups.length - 1 : groupIndex - 1)
       );
     }
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.DatabaseBlockError,
       'Unknown arrow keys, only support: up, down, left, and right keys.'
     );

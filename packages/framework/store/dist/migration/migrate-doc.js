@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import * as Y from 'yjs';
 export const docMigrations = [
     {

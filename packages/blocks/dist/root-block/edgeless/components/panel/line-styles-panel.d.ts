@@ -1,4 +1,4 @@
-import { type LineWidth, StrokeStyle } from '@blocksuite/affine-model';
+import { type LineWidth, StrokeStyle } from '@lumensuite/affine-model';
 export type LineStyleEvent = {
     type: 'size';
     value: LineWidth;

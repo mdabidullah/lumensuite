@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Doc } from '@blocksuite/store';
-import { BlockViewType } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Doc } from '@lumensuite/store';
+import { BlockViewType } from '@lumensuite/store';
 import { consume, provide } from '@lit/context';
 import { computed } from '@lit-labs/preact-signals';
 import { nothing, render } from 'lit';
@@ -158,7 +158,7 @@ let BlockComponent = (() => {
             }
             const model = this.doc.getBlockById(this.blockId);
             if (!model) {
-                throw new BlockSuiteError(ErrorCode.MissingViewModelError, `Cannot find block model for id ${this.blockId}`);
+                throw new LumenSuiteError(ErrorCode.MissingViewModelError, `Cannot find block model for id ${this.blockId}`);
             }
             this._model = model;
             return model;

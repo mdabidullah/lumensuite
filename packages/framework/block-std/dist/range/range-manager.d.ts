@@ -1,4 +1,4 @@
-import type { TextSelection } from '@blocksuite/block-std';
+import type { TextSelection } from '@lumensuite/block-std';
 import type { BlockComponent } from '../view/element/block-component.js';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { RangeBinding } from './range-binding.js';
@@ -11,8 +11,8 @@ export declare class RangeManager extends LifeCycleWatcher {
     get value(): Range | null | undefined;
     private _isRangeSyncExcluded;
     clear(): void;
-    getClosestBlock(node: Node): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
-    getClosestInlineEditor(node: Node): import("@blocksuite/inline").InlineEditor<{
+    getClosestBlock(node: Node): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
+    getClosestInlineEditor(node: Node): import("@lumensuite/inline").InlineEditor<{
         bold?: true | null | undefined;
         italic?: true | null | undefined;
         underline?: true | null | undefined;
@@ -39,7 +39,7 @@ export declare class RangeManager extends LifeCycleWatcher {
         mode?: 'all' | 'flat' | 'highest';
     }): BlockComponent[];
     mounted(): void;
-    queryInlineEditorByPath(path: string): import("@blocksuite/inline").InlineEditor<{
+    queryInlineEditorByPath(path: string): import("@lumensuite/inline").InlineEditor<{
         bold?: true | null | undefined;
         italic?: true | null | undefined;
         underline?: true | null | undefined;

@@ -1,4 +1,4 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 /**
  * @example
  * before indent:

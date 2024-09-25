@@ -1,10 +1,10 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 
-import { EMBED_BLOCK_FLAVOUR_LIST } from '@blocksuite/affine-shared/consts';
+import { EMBED_BLOCK_FLAVOUR_LIST } from '@lumensuite/affine-shared/consts';
 import {
   getNextContentBlock,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 export function forwardDelete(std: BlockStdScope) {
   const { doc, host } = std;
@@ -19,7 +19,7 @@ export function forwardDelete(std: BlockStdScope) {
   if (!parent) return;
 
   const nextSibling = doc.getNext(model);
-  const ignoreForwardDeleteFlavourList: BlockSuite.Flavour[] = [
+  const ignoreForwardDeleteFlavourList: LumenSuite.Flavour[] = [
     'affine:attachment',
     'affine:bookmark',
     // @ts-ignore TODO: should be fixed after database model is migrated to affine-models

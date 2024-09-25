@@ -1,4 +1,4 @@
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { isTopLevelBlock } from '../../../root-block/edgeless/utils/query.js';
 export const edgelessToBlob = async (host, options) => {
     const { edgelessElement } = options;

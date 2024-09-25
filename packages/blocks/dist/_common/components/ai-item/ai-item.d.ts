@@ -1,8 +1,8 @@
-import { EditorHost } from '@blocksuite/block-std';
+import { EditorHost } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 import type { AIItemConfig } from './types.js';
 import './ai-sub-item-list.js';
-declare const AIItem_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AIItem_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AIItem extends AIItem_base {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

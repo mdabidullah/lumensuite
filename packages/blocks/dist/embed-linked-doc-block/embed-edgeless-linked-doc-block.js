@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@blocksuite/affine-shared/consts';
-import { Bound } from '@blocksuite/global/utils';
+import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@lumensuite/affine-shared/consts';
+import { Bound } from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 import { toEdgelessEmbedBlock } from '../_common/embed-block-helper/embed-block-element.js';
 import { EmbedLinkedDocBlockComponent } from './embed-linked-doc-block.js';

@@ -16,9 +16,9 @@
  *
  * The result should be `[F1, F2, E6, E3, E4]`.
  */
-export declare function getTopElements(elements: BlockSuite.EdgelessModel[]): import("@blocksuite/block-std/gfx").GfxModel[];
+export declare function getTopElements(elements: LumenSuite.EdgelessModel[]): import("@lumensuite/block-std/gfx").GfxModel[];
 /**
  * Get all descendant elements of the given element.
  */
-export declare function getAllDescendantElements(element: BlockSuite.EdgelessModel, includeSelf?: boolean): import("@blocksuite/block-std/gfx").GfxModel[];
+export declare function getAllDescendantElements(element: LumenSuite.EdgelessModel, includeSelf?: boolean): import("@lumensuite/block-std/gfx").GfxModel[];
 //# sourceMappingURL=tree.d.ts.map

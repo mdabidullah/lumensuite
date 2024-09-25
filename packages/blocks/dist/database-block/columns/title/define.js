@@ -1,4 +1,4 @@
-import { columnType, tRichText } from '@blocksuite/data-view';
+import { columnType, tRichText } from '@lumensuite/data-view';
 export const titleColumnType = columnType('title');
 export const titlePureColumnConfig = titleColumnType.modelConfig({
     name: 'Title',

@@ -1,6 +1,6 @@
-import { GroupElementModel } from '@blocksuite/affine-model';
-export function getElementsWithoutGroup(elements: BlockSuite.EdgelessModel[]) {
-  const set = new Set<BlockSuite.EdgelessModel>();
+import { GroupElementModel } from '@lumensuite/affine-model';
+export function getElementsWithoutGroup(elements: LumenSuite.EdgelessModel[]) {
+  const set = new Set<LumenSuite.EdgelessModel>();
 
   elements.forEach(element => {
     // TODO(@L-Sun) Use `getAllDescendantElements` instead

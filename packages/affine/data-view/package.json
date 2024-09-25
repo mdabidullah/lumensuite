@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/data-view",
+  "name": "@lumensuite/data-view",
   "version": "0.17.5",
   "description": "views of database",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "build": "tsc",
     "test:unit": "nx vite:test --run --passWithNoTests",
@@ -14,11 +14,11 @@
   "author": "toeverything",
   "license": "MPL-2.0",
   "dependencies": {
-    "@blocksuite/affine-shared": "workspace:*",
-    "@blocksuite/block-std": "workspace:*",
-    "@blocksuite/global": "workspace:*",
-    "@blocksuite/store": "workspace:*",
-    "@blocksuite/affine-components": "workspace:*",
+    "@lumensuite/affine-shared": "workspace:*",
+    "@lumensuite/block-std": "workspace:*",
+    "@lumensuite/global": "workspace:*",
+    "@lumensuite/store": "workspace:*",
+    "@lumensuite/affine-components": "workspace:*",
     "@blocksuite/icons": "catalog:",
     "@floating-ui/dom": "catalog:",
     "@lit-labs/preact-signals": "catalog:",

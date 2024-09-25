@@ -1,4 +1,4 @@
-import { assertEquals } from '@blocksuite/global/utils';
+import { assertEquals } from '@lumensuite/global/utils';
 /**
  * Class for computing statistics on a DataViewColumnManager column.
  * Supports various statistical operations such as counting, sum, mean, median, mode, max, min, range,

@@ -1,6 +1,6 @@
-import type { BlockStdScope, EditorHost } from '@blocksuite/block-std';
-import type { InlineRange } from '@blocksuite/inline';
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockStdScope, EditorHost } from '@lumensuite/block-std';
+import type { InlineRange } from '@lumensuite/inline';
+import type { BlockModel } from '@lumensuite/store';
 import type { RichText } from './rich-text.js';
 /**
  * In most cases, you not need RichText, you can use {@link getInlineEditorByModel} instead.

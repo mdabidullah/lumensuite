@@ -1,8 +1,8 @@
-import type { FrameBlockModel } from '@blocksuite/affine-model';
+import type { FrameBlockModel } from '@lumensuite/affine-model';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { WithDisposable } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { WithDisposable } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

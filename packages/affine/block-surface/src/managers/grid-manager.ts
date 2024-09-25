@@ -1,12 +1,12 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
-import type { IBound } from '@blocksuite/global/utils';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
+import type { IBound } from '@lumensuite/global/utils';
 
 import {
   Bound,
   getBoundsWithRotation,
   intersects,
   isPointIn,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import { GRID_SIZE } from '../consts.js';
 import { compare } from './layer-utils.js';

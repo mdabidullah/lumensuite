@@ -1,6 +1,6 @@
-import { EdgelessSurfaceBlockSpec, PageSurfaceBlockSpec, } from '@blocksuite/affine-block-surface';
-import { DocModeService, EmbedOptionService, FontLoaderService, } from '@blocksuite/affine-shared/services';
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { EdgelessSurfaceBlockSpec, PageSurfaceBlockSpec, } from '@lumensuite/affine-block-surface';
+import { DocModeService, EmbedOptionService, FontLoaderService, } from '@lumensuite/affine-shared/services';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { EdgelessTextBlockSpec } from '../../edgeless-text-block/index.js';
 import { FrameBlockSpec } from '../../frame-block/frame-spec.js';

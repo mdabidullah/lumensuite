@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 export class UIEventState {
     constructor(event) {
         this.event = event;
@@ -19,7 +19,7 @@ export class UIEventStateContext {
         this.get = (type) => {
             const state = this._map[type];
             if (!state) {
-                throw new BlockSuiteError(ErrorCode.EventDispatcherError, `UIEventStateContext: state ${type} not found`);
+                throw new LumenSuiteError(ErrorCode.EventDispatcherError, `UIEventStateContext: state ${type} not found`);
             }
             return state;
         };

@@ -2,8 +2,8 @@ import {
   ArrowUpIcon,
   LassoFreeHandIcon,
   LassoPolygonalIcon,
-} from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
+} from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-declare const AIPanelDivider_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AIPanelDivider_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AIPanelDivider extends AIPanelDivider_base {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

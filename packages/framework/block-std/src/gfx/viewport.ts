@@ -5,7 +5,7 @@ import {
   type IVec,
   Slot,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 function cutoff(value: number, ref: number, sign: number) {
   if (sign > 0 && value > ref) return ref;

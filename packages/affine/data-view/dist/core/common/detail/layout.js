@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { createModal } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { createModal } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { CloseIcon } from '@blocksuite/icons/lit';
 import { autoUpdate, computePosition, size, } from '@floating-ui/dom';
 import { css, html } from 'lit';

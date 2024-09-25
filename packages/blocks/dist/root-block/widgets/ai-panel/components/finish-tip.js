@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { AIDoneIcon, CopyIcon, WarningIcon, } from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
+import { AIDoneIcon, CopyIcon, WarningIcon, } from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 let AIFinishTip = (() => {

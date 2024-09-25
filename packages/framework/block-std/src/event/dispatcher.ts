@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { DisposableGroup } from '@lumensuite/global/utils';
 
 import type { BlockComponent } from '../view/index.js';
 
@@ -105,7 +105,7 @@ export class UIEventDispatcher extends LifeCycleWatcher {
     return this.std.host;
   }
 
-  constructor(std: BlockSuite.Std) {
+  constructor(std: LumenSuite.Std) {
     super(std);
     this._pointerControl = new PointerControl(this);
     this._keyboardControl = new KeyboardControl(this);
@@ -242,7 +242,7 @@ export class UIEventDispatcher extends LifeCycleWatcher {
         break;
       }
       default: {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.EventDispatcherError,
           `Unknown event scope source: ${state.sourceType}`
         );

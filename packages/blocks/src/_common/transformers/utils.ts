@@ -1,4 +1,4 @@
-import { extMimeMap, getAssetName } from '@blocksuite/store';
+import { extMimeMap, getAssetName } from '@lumensuite/store';
 import * as fflate from 'fflate';
 
 export class Zip {

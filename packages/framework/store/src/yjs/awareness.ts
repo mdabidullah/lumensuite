@@ -1,6 +1,6 @@
 import type { Awareness as YAwareness } from 'y-protocols/awareness.js';
 
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { type Signal, signal } from '@preact/signals-core';
 import clonedeep from 'lodash.clonedeep';
 import merge from 'lodash.merge';
@@ -15,7 +15,7 @@ type UserSelection = Array<Record<string, unknown>>;
 
 // Raw JSON state in awareness CRDT
 export type RawAwarenessState<
-  Flags extends Record<string, unknown> = BlockSuiteFlags,
+  Flags extends Record<string, unknown> = LumenSuiteFlags,
 > = {
   user?: UserInfo;
   color?: string;
@@ -25,7 +25,7 @@ export type RawAwarenessState<
 };
 
 export interface AwarenessEvent<
-  Flags extends Record<string, unknown> = BlockSuiteFlags,
+  Flags extends Record<string, unknown> = LumenSuiteFlags,
 > {
   id: number;
   type: 'add' | 'update' | 'remove';
@@ -33,7 +33,7 @@ export interface AwarenessEvent<
 }
 
 export class AwarenessStore<
-  Flags extends Record<string, unknown> = BlockSuiteFlags,
+  Flags extends Record<string, unknown> = LumenSuiteFlags,
 > {
   private _flags: Signal<Flags>;
 

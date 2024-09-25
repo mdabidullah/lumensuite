@@ -1,5 +1,5 @@
-import { Doc } from '@blocksuite/store';
-import { type BlockModel, BlockViewType } from '@blocksuite/store';
+import { Doc } from '@lumensuite/store';
+import { type BlockModel, BlockViewType } from '@lumensuite/store';
 import { type PropertyValues, type TemplateResult } from 'lit';
 import type { EventName, UIEventHandler } from '../../event/index.js';
 import type { BlockService } from '../../extension/index.js';
@@ -7,7 +7,7 @@ import type { BlockStdScope } from '../../scope/index.js';
 import type { WidgetComponent } from './widget-component.js';
 import { blockComponentSymbol } from './consts.js';
 import { ShadowlessElement } from './shadowless-element.js';
-declare const BlockComponent_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
+declare const BlockComponent_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
 export declare class BlockComponent<Model extends BlockModel = BlockModel, Service extends BlockService = BlockService, WidgetName extends string = string> extends BlockComponent_base {
     private _selected;
     [blockComponentSymbol]: boolean;

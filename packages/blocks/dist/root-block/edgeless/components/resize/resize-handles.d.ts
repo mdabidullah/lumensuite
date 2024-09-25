@@ -1,4 +1,4 @@
-import type { IVec } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 export declare enum HandleDirection {
     Bottom = "bottom",

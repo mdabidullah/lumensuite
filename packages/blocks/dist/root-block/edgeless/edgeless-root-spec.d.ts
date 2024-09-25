@@ -1,4 +1,4 @@
-import { type ExtensionType } from '@blocksuite/block-std';
+import { type ExtensionType } from '@lumensuite/block-std';
 import './edgeless-root-preview-block.js';
 export declare const edgelessRootWigetViewMap: {
     "affine-modal-widget": import("lit/static-html.js").StaticValue;

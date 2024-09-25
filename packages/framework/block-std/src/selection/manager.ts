@@ -1,7 +1,7 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
-import { nanoid, type StackItem } from '@blocksuite/store';
 import { computed, signal } from '@lit-labs/preact-signals';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
+import { nanoid, type StackItem } from '@lumensuite/store';
 
 import type { BlockStdScope } from '../scope/index.js';
 import type { BaseSelection } from './base.js';
@@ -40,7 +40,7 @@ export class SelectionManager extends LifeCycleWatcher {
   private _jsonToSelection = (json: Record<string, unknown>) => {
     const ctor = this._selectionConstructors[json.type as string];
     if (!ctor) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.SelectionError,
         `Unknown selection type: ${json.type}`
       );
@@ -152,18 +152,18 @@ export class SelectionManager extends LifeCycleWatcher {
     }
   }
 
-  create<T extends BlockSuite.SelectionType>(
+  create<T extends LumenSuite.SelectionType>(
     type: T,
-    ...args: ConstructorParameters<BlockSuite.Selection[T]>
-  ): BlockSuite.SelectionInstance[T] {
+    ...args: ConstructorParameters<LumenSuite.Selection[T]>
+  ): LumenSuite.SelectionInstance[T] {
     const ctor = this._selectionConstructors[type];
     if (!ctor) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.SelectionError,
         `Unknown selection type: ${type}`
       );
     }
-    return new ctor(...args) as BlockSuite.SelectionInstance[T];
+    return new ctor(...args) as LumenSuite.SelectionInstance[T];
   }
 
   dispose() {
@@ -171,25 +171,25 @@ export class SelectionManager extends LifeCycleWatcher {
     this.disposables.dispose();
   }
 
-  filter<T extends BlockSuite.SelectionType>(type: T) {
+  filter<T extends LumenSuite.SelectionType>(type: T) {
     return this.filter$(type).value;
   }
 
-  filter$<T extends BlockSuite.SelectionType>(type: T) {
+  filter$<T extends LumenSuite.SelectionType>(type: T) {
     return computed(() =>
-      this.value.filter((sel): sel is BlockSuite.SelectionInstance[T] =>
+      this.value.filter((sel): sel is LumenSuite.SelectionInstance[T] =>
         sel.is(type)
       )
     );
   }
 
-  find<T extends BlockSuite.SelectionType>(type: T) {
+  find<T extends LumenSuite.SelectionType>(type: T) {
     return this.find$(type).value;
   }
 
-  find$<T extends BlockSuite.SelectionType>(type: T) {
+  find$<T extends LumenSuite.SelectionType>(type: T) {
     return computed(() =>
-      this.value.find((sel): sel is BlockSuite.SelectionInstance[T] =>
+      this.value.find((sel): sel is LumenSuite.SelectionInstance[T] =>
         sel.is(type)
       )
     );

@@ -1,13 +1,13 @@
-import type { IVec } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { WithDisposable } from '@blocksuite/block-std';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { WithDisposable } from '@lumensuite/block-std';
 import {
   assertEquals,
   assertExists,
   Slot,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

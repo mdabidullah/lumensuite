@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@blocksuite/affine-shared/consts';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockStdScope } from '@blocksuite/block-std';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@lumensuite/affine-shared/consts';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockStdScope } from '@lumensuite/block-std';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

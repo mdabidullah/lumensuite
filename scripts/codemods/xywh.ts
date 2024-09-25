@@ -17,14 +17,14 @@ export default function (fileInfo: FileInfo, api: API) {
           specifier.imported.name === 'SerializedXYWH' ||
           specifier.imported.name === 'deserializeXYWH' ||
           specifier.imported.name === 'serializeXYWH') &&
-        path.node.source.value !== '@blocksuite/global/utils' &&
+        path.node.source.value !== '@lumensuite/global/utils' &&
         !(path.node.source.value as string).includes('geometry')
       ) {
         existModules.push(specifier.imported.name);
         return false;
       }
 
-      if (path.node.source.value === '@blocksuite/global/utils') {
+      if (path.node.source.value === '@lumensuite/global/utils') {
         globalImportPath = path;
       }
 
@@ -39,7 +39,7 @@ export default function (fileInfo: FileInfo, api: API) {
       if (!globalImportPath!) {
         const newImport = j.importDeclaration(
           existModules.map(name => j.importSpecifier(j.identifier(name))),
-          j.literal('@blocksuite/global/utils')
+          j.literal('@lumensuite/global/utils')
         );
 
         // Insert the new import statement at the beginning of the file

@@ -1,5 +1,5 @@
-import { MarkdownTransformer } from '@blocksuite/blocks';
-import { type DocCollection, Text } from '@blocksuite/store';
+import { MarkdownTransformer } from '@lumensuite/blocks';
+import { type DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils';
 

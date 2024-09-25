@@ -13,7 +13,7 @@ export declare class EventSourceState extends UIEventState {
     constructor({ event, sourceType }: EventSourceStateOptions);
 }
 declare global {
-    interface BlockSuiteUIEventState {
+    interface LumenSuiteUIEventState {
         sourceState: EventSourceState;
     }
 }

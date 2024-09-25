@@ -1,9 +1,9 @@
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getBlockProps, matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BlockStdScope } from '@blocksuite/block-std';
-import { assertExists, Bound, getCommonBound } from '@blocksuite/global/utils';
-import { BlockViewType, } from '@blocksuite/store';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getBlockProps, matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BlockStdScope } from '@lumensuite/block-std';
+import { assertExists, Bound, getCommonBound } from '@lumensuite/global/utils';
+import { BlockViewType, } from '@lumensuite/store';
 import { css, render } from 'lit';
 import { SpecProvider } from '../../_specs/utils/spec-provider.js';
 import { GfxBlockModel } from '../../root-block/edgeless/block-model.js';

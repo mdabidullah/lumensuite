@@ -32,14 +32,14 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { NoopLogger, Slot } from '@blocksuite/global/utils';
-import { AwarenessEngine, BlobEngine, DocEngine, MemoryBlobSource, NoopDocSource, } from '@blocksuite/sync';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { NoopLogger, Slot } from '@lumensuite/global/utils';
+import { AwarenessEngine, BlobEngine, DocEngine, MemoryBlobSource, NoopDocSource, } from '@lumensuite/sync';
 import clonedeep from 'lodash.clonedeep';
 import merge from 'lodash.merge';
 import { Awareness } from 'y-protocols/awareness.js';
 import * as Y from 'yjs';
-import { AwarenessStore, BlockSuiteDoc, } from '../yjs/index.js';
+import { AwarenessStore, LumenSuiteDoc, } from '../yjs/index.js';
 import { DocCollectionAddonType, test } from './addon/index.js';
 import { BlockCollection } from './doc/block-collection.js';
 import { pickIdGenerator } from './id.js';
@@ -108,7 +108,7 @@ let DocCollection = (() => {
             };
             this._schema = schema;
             this.id = id || '';
-            this.doc = new BlockSuiteDoc({ guid: id });
+            this.doc = new LumenSuiteDoc({ guid: id });
             this.awarenessStore = new AwarenessStore(new Awareness(this.doc), merge(clonedeep(FLAGS_PRESET), defaultFlags));
             this.awarenessSync = new AwarenessEngine(this.awarenessStore.awareness, awarenessSources);
             this.docSync = new DocEngine(this.doc, docSources.main, docSources.shadows ?? [], logger);
@@ -157,7 +157,7 @@ let DocCollection = (() => {
         createDoc(options = {}) {
             const { id: docId = this.idGenerator(), query } = options;
             if (this._hasDoc(docId)) {
-                throw new BlockSuiteError(ErrorCode.DocCollectionError, 'doc already exists');
+                throw new LumenSuiteError(ErrorCode.DocCollectionError, 'doc already exists');
             }
             this.meta.addDocMeta({
                 id: docId,
@@ -188,7 +188,7 @@ let DocCollection = (() => {
         removeDoc(docId) {
             const docMeta = this.meta.getDocMeta(docId);
             if (!docMeta) {
-                throw new BlockSuiteError(ErrorCode.DocCollectionError, `doc meta not found: ${docId}`);
+                throw new LumenSuiteError(ErrorCode.DocCollectionError, `doc meta not found: ${docId}`);
             }
             const blockCollection = this.getBlockCollection(docId);
             if (!blockCollection)

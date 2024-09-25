@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ColorScheme, FrameBlockModel } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { docContext, GfxBlockComponent, modelContext, ShadowlessElement, SignalWatcher, stdContext, WithDisposable, } from '@blocksuite/block-std';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
-import { Bound } from '@blocksuite/global/utils';
+import { ColorScheme, FrameBlockModel } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { docContext, GfxBlockComponent, modelContext, ShadowlessElement, SignalWatcher, stdContext, WithDisposable, } from '@lumensuite/block-std';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
+import { Bound } from '@lumensuite/global/utils';
 import { consume } from '@lit/context';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, nothing, unsafeCSS } from 'lit';

@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { sha } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { sha } from '@lumensuite/global/utils';
 /**
  * @internal just for test
  */
@@ -22,7 +22,7 @@ export class MemoryBlobCRUD {
             : await sha(await valueOrKey.arrayBuffer());
         const value = typeof valueOrKey === 'string' ? _value : valueOrKey;
         if (!value) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'value is required');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'value is required');
         }
         this._map.set(key, value);
         return key;
@@ -126,7 +126,7 @@ export function getAssetName(assets, blobId) {
     };
     const blob = assets.get(blobId);
     if (!blob) {
-        throw new BlockSuiteError(ErrorCode.TransformerError, `blob not found for blobId: ${blobId}`);
+        throw new LumenSuiteError(ErrorCode.TransformerError, `blob not found for blobId: ${blobId}`);
     }
     const name = blob.name ?? undefined;
     const ext = name !== undefined && name.includes('.')

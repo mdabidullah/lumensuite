@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { derive, field, GfxPrimitiveElementModel, local, } from '@blocksuite/block-std/gfx';
-import { Bound, curveIntersects, getBezierNearestPoint, getBezierNearestTime, getBezierParameters, getBezierPoint, linePolylineIntersects, PointLocation, Polyline, polyLineNearestPoint, Vec, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { derive, field, GfxPrimitiveElementModel, local, } from '@lumensuite/block-std/gfx';
+import { Bound, curveIntersects, getBezierNearestPoint, getBezierNearestTime, getBezierParameters, getBezierPoint, linePolylineIntersects, PointLocation, Polyline, polyLineNearestPoint, Vec, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { CONNECTOR_LABEL_MAX_WIDTH, ConnectorLabelOffsetAnchor, ConnectorMode, DEFAULT_ROUGHNESS, FontFamily, FontStyle, FontWeight, StrokeStyle, TextAlign, } from '../../consts/index.js';
 export const getConnectorModeName = (mode) => {
     return {

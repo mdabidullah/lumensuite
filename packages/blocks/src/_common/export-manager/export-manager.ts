@@ -1,21 +1,21 @@
-import type { BlockService, EditorHost } from '@blocksuite/block-std';
-import type { IBound } from '@blocksuite/global/utils';
-import type { Doc } from '@blocksuite/store';
+import type { BlockService, EditorHost } from '@lumensuite/block-std';
+import type { IBound } from '@lumensuite/global/utils';
+import type { Doc } from '@lumensuite/store';
 
 import {
   type CanvasRenderer,
   SurfaceElementModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   GroupElementModel,
   type RootBlockModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   isInsidePageEditor,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 
 import type { GfxBlockModel } from '../../root-block/edgeless/block-model.js';
 import type { EdgelessRootBlockComponent } from '../../root-block/edgeless/edgeless-root-block.js';
@@ -121,7 +121,7 @@ export class ExportManager {
       location.pathname !== pathName ||
       isInsidePageEditor(this.editorHost) !== editorMode
     ) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.EdgelessExportError,
         'Unable to export content to canvas'
       );
@@ -406,7 +406,7 @@ export class ExportManager {
     bound: IBound,
     edgeless?: EdgelessRootBlockComponent,
     nodes?: GfxBlockModel[],
-    surfaces?: BlockSuite.SurfaceElementModel[],
+    surfaces?: LumenSuite.SurfaceElementModel[],
     edgelessBackground?: {
       zoom: number;
     }

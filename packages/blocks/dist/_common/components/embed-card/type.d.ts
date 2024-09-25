@@ -1,5 +1,5 @@
-import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
 import { BookmarkBlockComponent } from '../../../bookmark-block/bookmark-block.js';
 import { EmbedFigmaBlockComponent } from '../../../embed-figma-block/embed-figma-block.js';
 import { EmbedGithubBlockComponent } from '../../../embed-github-block/embed-github-block.js';

@@ -1,5 +1,5 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { Doc } from '@blocksuite/store';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { Doc } from '@lumensuite/store';
 
 import { html } from 'lit';
 

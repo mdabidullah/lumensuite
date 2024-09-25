@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { FontFamily, FontStyle, FontWeight, TextAlign, } from '@blocksuite/affine-model';
-import { field, GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
-import { Bound, getPointsFromBoundsWithRotation, linePolygonIntersects, pointInPolygon, polygonNearestPoint, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { FontFamily, FontStyle, FontWeight, TextAlign, } from '@lumensuite/affine-model';
+import { field, GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
+import { Bound, getPointsFromBoundsWithRotation, linePolygonIntersects, pointInPolygon, polygonNearestPoint, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 let TextElementModel = (() => {
     let _classSuper = GfxPrimitiveElementModel;
     let _color_decorators;

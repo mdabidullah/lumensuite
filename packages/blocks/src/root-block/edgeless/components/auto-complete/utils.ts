@@ -1,11 +1,11 @@
-import type { XYWH } from '@blocksuite/global/utils';
+import type { XYWH } from '@lumensuite/global/utils';
 
 import {
   CommonUtils,
   type Options,
   Overlay,
   type RoughCanvas,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   type Connection,
   getShapeRadius,
@@ -15,9 +15,9 @@ import {
   ShapeElementModel,
   type ShapeName,
   type ShapeStyle,
-} from '@blocksuite/affine-model';
-import { assertExists, Bound } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import { assertExists, Bound } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
 

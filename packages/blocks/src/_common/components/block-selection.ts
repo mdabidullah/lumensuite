@@ -1,4 +1,4 @@
-import { type BlockComponent, SignalWatcher } from '@blocksuite/block-std';
+import { type BlockComponent, SignalWatcher } from '@lumensuite/block-std';
 import { css, LitElement, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

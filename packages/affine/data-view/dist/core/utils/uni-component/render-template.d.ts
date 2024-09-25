@@ -1,5 +1,5 @@
 import type { TemplateResult } from 'lit';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 declare const AnyRender_base: typeof ShadowlessElement;
 export declare class AnyRender<T> extends AnyRender_base {
     render(): symbol | TemplateResult;

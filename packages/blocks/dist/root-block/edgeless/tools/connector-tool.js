@@ -1,7 +1,7 @@
-import { calculateNearestLocation, CanvasElementType, ConnectorEndpointLocations, ConnectorEndpointLocationsOnTriangle, } from '@blocksuite/affine-block-surface';
-import { GroupElementModel, ShapeElementModel, ShapeType, } from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound, noop } from '@blocksuite/global/utils';
+import { calculateNearestLocation, CanvasElementType, ConnectorEndpointLocations, ConnectorEndpointLocationsOnTriangle, } from '@lumensuite/affine-block-surface';
+import { GroupElementModel, ShapeElementModel, ShapeType, } from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound, noop } from '@lumensuite/global/utils';
 import { EdgelessToolController } from './edgeless-tool.js';
 var ConnectorToolMode;
 (function (ConnectorToolMode) {

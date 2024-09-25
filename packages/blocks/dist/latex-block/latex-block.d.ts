@@ -1,6 +1,6 @@
-import type { LatexBlockModel } from '@blocksuite/affine-model';
+import type { LatexBlockModel } from '@lumensuite/affine-model';
 import type { Placement } from '@floating-ui/dom';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 import type { LatexBlockService } from './latex-service.js';
 export declare class LatexBlockComponent extends CaptionedBlockComponent<LatexBlockModel, LatexBlockService> {
     static styles: import("lit").CSSResult;

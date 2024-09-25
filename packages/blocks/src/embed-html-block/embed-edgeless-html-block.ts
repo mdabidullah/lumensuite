@@ -1,4 +1,4 @@
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 
 import type { EdgelessRootService } from '../root-block/index.js';

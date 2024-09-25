@@ -1,12 +1,12 @@
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
 import {
   getShapeRadius,
   getShapeType,
   type ShapeName,
   type ShapeStyle,
-} from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, sleep } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, sleep } from '@lumensuite/global/utils';
 import {
   css,
   html,

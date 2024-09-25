@@ -1,10 +1,10 @@
 import type {
   EmbedGithubBlockUrlData,
   EmbedGithubModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { isAbortError } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 
 import type { LinkPreviewer } from '../_common/embed-block-helper/index.js';

@@ -1,6 +1,6 @@
-import type { Constructor, SerializedXYWH } from '@blocksuite/global/utils';
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { BlockModel } from '@blocksuite/store';
+import type { Constructor, SerializedXYWH } from '@lumensuite/global/utils';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { BlockModel } from '@lumensuite/store';
 export type GfxCompatibleProps = {
     xywh: SerializedXYWH;
     index: string;

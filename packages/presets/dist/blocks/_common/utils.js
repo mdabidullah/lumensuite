@@ -1,5 +1,5 @@
-import { defaultImageProxyMiddleware, MarkdownAdapter, } from '@blocksuite/blocks';
-import { DocCollection, Job } from '@blocksuite/store';
+import { defaultImageProxyMiddleware, MarkdownAdapter, } from '@lumensuite/blocks';
+import { DocCollection, Job } from '@lumensuite/store';
 export async function markDownToDoc(host, answer) {
     const schema = host.std.doc.collection.schema;
     // Should not create a new doc in the original collection

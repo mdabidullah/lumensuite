@@ -1,5 +1,5 @@
-import { Slot } from '@blocksuite/global/utils';
-import { BlockModel, DocCollection, nanoid } from '@blocksuite/store';
+import { Slot } from '@lumensuite/global/utils';
+import { BlockModel, DocCollection, nanoid } from '@lumensuite/store';
 import { createDecoratorState } from './decorators/common.js';
 import { initializeObservers, initializeWatchers } from './decorators/index.js';
 import { syncElementFromY } from './element-model.js';

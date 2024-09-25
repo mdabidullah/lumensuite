@@ -4,12 +4,12 @@ import type {
   SurfaceSelection,
   UIEventHandler,
   UIEventState,
-} from '@blocksuite/block-std';
-import type { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import type { Bound } from '@lumensuite/global/utils';
 
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { IS_MAC } from '@blocksuite/global/env';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { IS_MAC } from '@lumensuite/global/env';
+import { DisposableGroup } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 import type { EdgelessRootService } from '../edgeless-root-service.js';
@@ -36,7 +36,7 @@ export type EdgelessToolConstructor =
 
 export interface EdgelessHoverState {
   rect: Bound;
-  content: BlockSuite.EdgelessModel;
+  content: LumenSuite.EdgelessModel;
 }
 
 export interface SelectionArea {

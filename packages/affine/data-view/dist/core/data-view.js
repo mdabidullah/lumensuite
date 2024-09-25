@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@blocksuite/block-std';
+import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@lumensuite/block-std';
 import { computed } from '@lit-labs/preact-signals';
 import { css, unsafeCSS } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

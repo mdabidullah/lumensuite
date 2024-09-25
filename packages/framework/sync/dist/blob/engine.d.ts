@@ -1,4 +1,4 @@
-import { type Logger } from '@blocksuite/global/utils';
+import { type Logger } from '@lumensuite/global/utils';
 import type { BlobSource } from './source.js';
 export interface BlobStatus {
     isStorageOverCapacity: boolean;

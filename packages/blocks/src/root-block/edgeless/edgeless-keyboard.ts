@@ -1,16 +1,16 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { LayoutType, type ShapeElementModel } from '@blocksuite/affine-model';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { LayoutType, type ShapeElementModel } from '@lumensuite/affine-model';
 import {
   ConnectorElementModel,
   ConnectorMode,
   EdgelessTextBlockModel,
   GroupElementModel,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { IS_MAC } from '@blocksuite/global/env';
-import { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { IS_MAC } from '@lumensuite/global/env';
+import { Bound } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from './edgeless-root-block.js';
 import type { EdgelessTool } from './types.js';
@@ -564,7 +564,7 @@ export class EdgelessPageKeyboardManager extends PageKeyboardManager {
       const node = mindmapNodes[0];
       const mindmap = node.group as MindmapElementModel;
       const nodeDirection = mindmap.getLayoutDir(node.id);
-      let targetNode: BlockSuite.SurfaceElementModel | null = null;
+      let targetNode: LumenSuite.SurfaceElementModel | null = null;
 
       switch (key) {
         case 'ArrowUp':

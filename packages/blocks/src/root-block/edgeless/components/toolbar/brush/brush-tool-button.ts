@@ -1,10 +1,10 @@
+import { computed } from '@lit-labs/preact-signals';
 import {
   EdgelessPenDarkIcon,
   EdgelessPenLightIcon,
-} from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { SignalWatcher } from '@blocksuite/block-std';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

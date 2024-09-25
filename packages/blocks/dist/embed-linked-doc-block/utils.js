@@ -1,5 +1,5 @@
-import { DarkLoadingIcon, EmbedEdgelessIcon, EmbedPageIcon, LightLoadingIcon, ReloadIcon, } from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { DarkLoadingIcon, EmbedEdgelessIcon, EmbedPageIcon, LightLoadingIcon, ReloadIcon, } from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { DarkSyncedDocErrorBanner, LightSyncedDocErrorBanner, } from '../embed-synced-doc-block/styles.js';
 import { DarkLinkedEdgelessDeletedLargeBanner, DarkLinkedEdgelessDeletedSmallBanner, DarkLinkedEdgelessEmptyLargeBanner, DarkLinkedEdgelessEmptySmallBanner, DarkLinkedPageDeletedLargeBanner, DarkLinkedPageDeletedSmallBanner, DarkLinkedPageEmptyLargeBanner, DarkLinkedPageEmptySmallBanner, LightLinkedEdgelessDeletedLargeBanner, LightLinkedEdgelessDeletedSmallBanner, LightLinkedEdgelessEmptyLargeBanner, LightLinkedEdgelessEmptySmallBanner, LightLinkedPageDeletedLargeBanner, LightLinkedPageDeletedSmallBanner, LightLinkedPageEmptyLargeBanner, LightLinkedPageEmptySmallBanner, LinkedDocDeletedIcon, } from './styles.js';
 export function getEmbedLinkedDocIcons(editorMode, style) {

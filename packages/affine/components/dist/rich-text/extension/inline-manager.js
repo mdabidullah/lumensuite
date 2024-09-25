@@ -1,6 +1,6 @@
-import { StdIdentifier, } from '@blocksuite/block-std';
-import { createIdentifier, } from '@blocksuite/global/di';
-import { baseTextAttributes, getDefaultAttributeRenderer, KEYBOARD_ALLOW_DEFAULT, } from '@blocksuite/inline';
+import { StdIdentifier, } from '@lumensuite/block-std';
+import { createIdentifier, } from '@lumensuite/global/di';
+import { baseTextAttributes, getDefaultAttributeRenderer, KEYBOARD_ALLOW_DEFAULT, } from '@lumensuite/inline';
 import { z } from 'zod';
 import { MarkdownMatcherIdentifier } from './markdown-matcher.js';
 export class InlineManager {

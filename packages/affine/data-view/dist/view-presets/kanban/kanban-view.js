@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { popMenu } from '@blocksuite/affine-components/context-menu';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import { AddCursorIcon } from '@blocksuite/icons/lit';
 import { css } from 'lit';
 import { customElement, query } from 'lit/decorators.js';

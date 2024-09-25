@@ -1,9 +1,9 @@
 import type {
   AttachmentBlockModel,
   ImageBlockProps,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { withTempBlobData } from '@blocksuite/affine-shared/utils';
+import { withTempBlobData } from '@lumensuite/affine-shared/utils';
 import { html, type TemplateResult } from 'lit';
 
 import { transformModel } from '../root-block/utils/operations/model.js';

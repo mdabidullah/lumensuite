@@ -6,7 +6,7 @@ describe('isValidUrl: determining whether a URL is valid is very complicated', (
         expect(isValidUrl('1.co')).toEqual(true);
         expect(isValidUrl('https://www.example.com')).toEqual(true);
         expect(isValidUrl('www.example.com')).toEqual(true);
-        expect(isValidUrl('http://www.github.com/toeverything/blocksuite')).toEqual(true);
+        expect(isValidUrl('http://www.github.com/toeverything/lumensuite')).toEqual(true);
     });
     test('CAUTION: any link include allowed schema is a valid url!', () => {
         expect(isValidUrl('http://www.example.cm')).toEqual(true);

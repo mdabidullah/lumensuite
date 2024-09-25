@@ -1,4 +1,4 @@
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
 import { type ReadonlySignal } from '@lit-labs/preact-signals';
 import type { TType } from '../../core/logical/typesystem.js';
 import type { ViewManager } from '../../core/view-manager/view-manager.js';

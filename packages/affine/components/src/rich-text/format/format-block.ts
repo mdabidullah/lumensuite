@@ -1,8 +1,8 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { BlockSelection, Command } from '@blocksuite/block-std';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { BlockSelection, Command } from '@lumensuite/block-std';
 
-import { assertExists } from '@blocksuite/global/utils';
-import { INLINE_ROOT_ATTR, type InlineRootElement } from '@blocksuite/inline';
+import { assertExists } from '@lumensuite/global/utils';
+import { INLINE_ROOT_ATTR, type InlineRootElement } from '@lumensuite/inline';
 
 import { FORMAT_BLOCK_SUPPORT_FLAVOURS } from './consts.js';
 
@@ -33,7 +33,7 @@ export const formatBlockCommand: Command<
       blockSelections,
       filter: el =>
         FORMAT_BLOCK_SUPPORT_FLAVOURS.includes(
-          el.model.flavour as BlockSuite.Flavour
+          el.model.flavour as LumenSuite.Flavour
         ),
       types: ['block'],
     })
@@ -72,7 +72,7 @@ export const formatBlockCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       formatBlock: typeof formatBlockCommand;
     }

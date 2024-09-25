@@ -12,12 +12,12 @@ import { customElement, property } from 'lit/decorators.js';
  * ```ts
  * render() {
  *   return html`${showPortal
- *     ? html`<blocksuite-portal .template=${portalTemplate}></blocksuite-portal>`
+ *     ? html`<lumensuite-portal .template=${portalTemplate}></lumensuite-portal>`
  *     : null}`;
  * };
  * ```
  */
-@customElement('blocksuite-portal')
+@customElement('lumensuite-portal')
 export class Portal extends LitElement {
   private _portalRoot: HTMLElement | null = null;
 
@@ -29,7 +29,7 @@ export class Portal extends LitElement {
           ...(typeof this.shadowDom !== 'boolean' ? this.shadowDom : {}),
         })
       : portalRoot;
-    portalRoot.classList.add('blocksuite-portal');
+    portalRoot.classList.add('lumensuite-portal');
     this.container.append(portalRoot);
     this._portalRoot = portalRoot;
     return renderRoot;
@@ -56,6 +56,6 @@ export class Portal extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'blocksuite-portal': Portal;
+    'lumensuite-portal': Portal;
   }
 }

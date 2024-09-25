@@ -1,6 +1,6 @@
-import type { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import type { MindmapStyle } from '@blocksuite/affine-model';
-import type { Bound } from '@blocksuite/global/utils';
+import type { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import type { MindmapStyle } from '@lumensuite/affine-model';
+import type { Bound } from '@lumensuite/global/utils';
 
 import { computed, SignalWatcher } from '@lit-labs/preact-signals';
 import { css, html, LitElement, nothing } from 'lit';

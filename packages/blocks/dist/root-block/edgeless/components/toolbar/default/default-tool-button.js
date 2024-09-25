@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowUpIcon, HandIcon, SelectIcon, } from '@blocksuite/affine-components/icons';
+import { ArrowUpIcon, HandIcon, SelectIcon, } from '@lumensuite/affine-components/icons';
 import { css, html, LitElement } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { getTooltipWithShortcut } from '../../utils.js';

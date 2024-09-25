@@ -2,9 +2,9 @@ import type {
   Template,
   TemplateCategory,
   TemplateManager,
-} from '@blocksuite/blocks';
+} from '@lumensuite/blocks';
 
-import { EdgelessTemplatePanel } from '@blocksuite/blocks';
+import { EdgelessTemplatePanel } from '@lumensuite/blocks';
 
 export function setupEdgelessTemplate() {
   const playgroundTemplates = [

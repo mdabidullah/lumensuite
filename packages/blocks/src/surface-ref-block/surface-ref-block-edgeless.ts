@@ -1,6 +1,6 @@
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
 
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

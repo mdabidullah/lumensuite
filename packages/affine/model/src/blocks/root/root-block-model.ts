@@ -1,6 +1,6 @@
-import type { Text } from '@blocksuite/store';
+import type { Text } from '@lumensuite/store';
 
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 type RootBlockProps = {
   title: Text;
@@ -38,7 +38,7 @@ export const RootBlockSchema = defineBlockSchema({
 });
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:page': RootBlockModel;
     }

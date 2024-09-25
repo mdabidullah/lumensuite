@@ -1,4 +1,4 @@
-import { IS_MAC } from '@blocksuite/global/env';
+import { IS_MAC } from '@lumensuite/global/env';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, unsafeCSS } from 'lit';
 import { customElement, query } from 'lit/decorators.js';

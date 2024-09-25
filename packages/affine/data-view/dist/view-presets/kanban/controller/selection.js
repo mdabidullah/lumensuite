@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
 import { KanbanCard } from '../card.js';
 import { KanbanCell } from '../cell.js';
 export class KanbanSelectionController {
@@ -279,7 +279,7 @@ export class KanbanSelectionController {
         if (nextPosition === 'left') {
             return getNextGroupFocusElement(this.host, groups, selection, groupIndex => (groupIndex === 0 ? groups.length - 1 : groupIndex - 1));
         }
-        throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'Unknown arrow keys, only support: up, down, left, and right keys.');
+        throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'Unknown arrow keys, only support: up, down, left, and right keys.');
     }
     getNextFocusCell(selection, index, nextPosition) {
         const kanbanCells = getCardCellsBySelection(this.host, selection);
@@ -324,7 +324,7 @@ export class KanbanSelectionController {
         if (nextPosition === 'left') {
             return getNextGroupFocusElement(this.host, groups, selection, groupIndex => (groupIndex === 0 ? groups.length - 1 : groupIndex - 1));
         }
-        throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'Unknown arrow keys, only support: up, down, left, and right keys.');
+        throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'Unknown arrow keys, only support: up, down, left, and right keys.');
     }
     hostConnected() {
         this.host.disposables.add(this.host.selection$.subscribe(selection => {

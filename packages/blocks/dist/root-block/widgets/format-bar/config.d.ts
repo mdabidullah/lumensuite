@@ -1,5 +1,5 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import type { Chain, InitCommandCtx } from '@blocksuite/block-std';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import type { Chain, InitCommandCtx } from '@lumensuite/block-std';
 import { type TemplateResult } from 'lit';
 import type { AffineFormatBarWidget } from './format-bar.js';
 import { FormatBarContext } from './context.js';

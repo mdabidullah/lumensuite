@@ -1,4 +1,4 @@
-import { IS_IPAD } from '@blocksuite/global/env';
+import { IS_IPAD } from '@lumensuite/global/env';
 import { UIEventState, UIEventStateContext } from '../base.js';
 import { MultiPointerEventState, PointerEventState } from '../state/index.js';
 import { EventScopeSourceType, EventSourceState } from '../state/source.js';

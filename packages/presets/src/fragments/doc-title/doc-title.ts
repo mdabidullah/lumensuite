@@ -1,9 +1,9 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { RichText, RootBlockModel } from '@blocksuite/blocks';
-import type { Doc } from '@blocksuite/store';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { RichText, RootBlockModel } from '@lumensuite/blocks';
+import type { Doc } from '@lumensuite/store';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 

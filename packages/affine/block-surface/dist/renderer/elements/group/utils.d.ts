@@ -1,5 +1,5 @@
-import type { GroupElementModel } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import type { GroupElementModel } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 export declare function titleRenderParams(group: GroupElementModel, zoom: number): {
     font: string;
     bound: Bound;

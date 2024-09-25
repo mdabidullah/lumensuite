@@ -4,7 +4,7 @@ import './body/outline-notice.js';
 import './body/outline-panel-body.js';
 import './header/outline-panel-header.js';
 export declare const AFFINE_OUTLINE_PANEL = "affine-outline-panel";
-declare const OutlinePanel_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const OutlinePanel_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class OutlinePanel extends OutlinePanel_base {
     static styles: import("lit").CSSResult;
     private _editorDisposables;
@@ -12,10 +12,10 @@ export declare class OutlinePanel extends OutlinePanel_base {
     private _settings;
     private _toggleNotesSorting;
     private _toggleShowPreviewIcon;
-    get doc(): import("@blocksuite/store").Doc;
-    get edgeless(): import("@blocksuite/blocks").EdgelessRootBlockComponent | null;
-    get host(): import("@blocksuite/block-std").EditorHost | null;
-    get mode(): import("@blocksuite/affine-model").DocMode;
+    get doc(): import("@lumensuite/store").Doc;
+    get edgeless(): import("@lumensuite/blocks").EdgelessRootBlockComponent | null;
+    get host(): import("@lumensuite/block-std").EditorHost | null;
+    get mode(): import("@lumensuite/affine-model").DocMode;
     private _clearEditorDisposables;
     private _loadSettingsFromLocalStorage;
     private _saveSettingsToLocalStorage;

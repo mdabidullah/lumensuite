@@ -1,6 +1,6 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
 
 export const insertLinkByQuickSearchCommand: Command<
   never,
@@ -45,7 +45,7 @@ export const insertLinkByQuickSearchCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       insertedLinkType?: Promise<{
         flavour?: string;

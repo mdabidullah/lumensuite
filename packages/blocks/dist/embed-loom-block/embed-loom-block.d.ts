@@ -1,4 +1,4 @@
-import type { EmbedLoomModel, EmbedLoomStyles } from '@blocksuite/affine-model';
+import type { EmbedLoomModel, EmbedLoomStyles } from '@lumensuite/affine-model';
 import type { EmbedLoomBlockService } from './embed-loom-service.js';
 import { EmbedBlockComponent } from '../_common/embed-block-helper/embed-block-element.js';
 export declare class EmbedLoomBlockComponent extends EmbedBlockComponent<EmbedLoomModel, EmbedLoomBlockService> {

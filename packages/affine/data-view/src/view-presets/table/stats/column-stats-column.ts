@@ -1,15 +1,15 @@
+import { ArrowDownSmallIcon } from '@blocksuite/icons/lit';
+import { computed, signal } from '@lit-labs/preact-signals';
 import {
   type Menu,
   popFilterableSimpleMenu,
-} from '@blocksuite/affine-components/context-menu';
+} from '@lumensuite/affine-components/context-menu';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { ArrowDownSmallIcon } from '@blocksuite/icons/lit';
-import { Text } from '@blocksuite/store';
-import { computed, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
+import { Text } from '@lumensuite/store';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

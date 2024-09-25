@@ -1,6 +1,6 @@
-import type { DocSource } from '@blocksuite/sync';
+import type { DocSource } from '@lumensuite/sync';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { diffUpdate, encodeStateVectorFromUpdate, mergeUpdates } from 'yjs';
 
 import type { WebSocketMessage } from './types';

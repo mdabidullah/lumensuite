@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WithDisposable } from '@blocksuite/block-std';
-import { DocModeProvider, } from '@blocksuite/blocks';
-import { createButtonPopper } from '@blocksuite/blocks';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { DocModeProvider, } from '@lumensuite/blocks';
+import { createButtonPopper } from '@lumensuite/blocks';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { SettingsIcon, SmallFrameNavigatorIcon } from '../../_common/icons.js';

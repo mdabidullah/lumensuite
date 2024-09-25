@@ -3,16 +3,16 @@ import type { TemplateResult } from 'lit';
 import {
   CanvasElementType,
   type MindmapElementModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   LayoutType,
   type MindmapStyle,
   type ShapeElementModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertInstanceOf, Bound } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertInstanceOf, Bound } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 import type { EdgelessRootBlockComponent } from '../../../edgeless-root-block.js';
 import type { EdgelessRootService } from '../../../edgeless-root-service.js';

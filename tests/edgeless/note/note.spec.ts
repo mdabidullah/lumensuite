@@ -1,4 +1,4 @@
-import { NOTE_WIDTH, NoteDisplayMode } from '@blocksuite/affine-model';
+import { NOTE_WIDTH, NoteDisplayMode } from '@lumensuite/affine-model';
 import { expect } from '@playwright/test';
 
 import {

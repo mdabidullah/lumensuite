@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { SmallLinkedDocIcon } from '../../_common/icons.js';

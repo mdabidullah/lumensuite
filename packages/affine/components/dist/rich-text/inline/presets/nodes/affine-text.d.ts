@@ -1,5 +1,5 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { type DeltaInsert } from '@blocksuite/inline';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { type DeltaInsert } from '@lumensuite/inline';
 import { type StyleInfo, styleMap } from 'lit/directives/style-map.js';
 import type { AffineTextAttributes } from '../../../extension/index.js';
 export declare function affineTextStyles(props: AffineTextAttributes, override?: Readonly<StyleInfo>): ReturnType<typeof styleMap>;

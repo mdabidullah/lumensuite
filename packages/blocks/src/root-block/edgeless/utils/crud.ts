@@ -5,7 +5,7 @@ import { isConnectable, isNoteBlock } from './query.js';
 
 export function deleteElements(
   edgeless: EdgelessRootBlockComponent,
-  elements: BlockSuite.EdgelessModel[]
+  elements: LumenSuite.EdgelessModel[]
 ) {
   const set = new Set(elements);
   const { service } = edgeless;

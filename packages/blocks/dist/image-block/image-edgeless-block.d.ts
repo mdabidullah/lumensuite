@@ -1,7 +1,7 @@
-import type { BlockCaptionEditor } from '@blocksuite/affine-components/caption';
-import type { ImageBlockModel } from '@blocksuite/affine-model';
-import '@blocksuite/affine-components/caption';
-import { GfxBlockComponent } from '@blocksuite/block-std';
+import type { BlockCaptionEditor } from '@lumensuite/affine-components/caption';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
+import '@lumensuite/affine-components/caption';
+import { GfxBlockComponent } from '@lumensuite/block-std';
 import type { ImageBlockFallbackCard } from './components/image-block-fallback.js';
 import type { ImageBlockService } from './image-service.js';
 import './components/image-block-fallback.js';

@@ -1,9 +1,9 @@
-import { type FrameBlockModel } from '@blocksuite/affine-model';
+import { type FrameBlockModel } from '@lumensuite/affine-model';
 import { LitElement, nothing } from 'lit';
 import type { EdgelessColorPickerButton } from '../../edgeless/components/color-picker/button.js';
 import type { PickColorEvent } from '../../edgeless/components/color-picker/types.js';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const EdgelessChangeFrameButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeFrameButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeFrameButton extends EdgelessChangeFrameButton_base {
     pickColor: (event: PickColorEvent) => void;
     get service(): import("../../index.js").EdgelessRootService;

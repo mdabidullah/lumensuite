@@ -1,4 +1,4 @@
-import { LineWidth } from '@blocksuite/affine-model';
+import { LineWidth } from '@lumensuite/affine-model';
 import { LitElement, type PropertyValues } from 'lit';
 export declare class LineWidthEvent extends Event {
     detail: LineWidth;
@@ -8,7 +8,7 @@ export declare class LineWidthEvent extends Event {
         bubbles: boolean;
     });
 }
-declare const EdgelessLineWidthPanel_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessLineWidthPanel_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessLineWidthPanel extends EdgelessLineWidthPanel_base {
     static styles: import("lit").CSSResult;
     private _dragConfig;

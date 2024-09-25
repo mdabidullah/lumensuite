@@ -4,10 +4,10 @@ import type {
   BlockSelection,
   UIEventHandler,
   UIEventStateContext,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import type { ReactiveController, ReactiveControllerHost } from 'lit';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 import { moveBlockConfigs } from '../_common/configs/move-block.js';
 import { quickActionConfig } from '../_common/configs/quick-action/config.js';
@@ -288,7 +288,7 @@ export class KeymapController implements ReactiveController {
     return result;
   };
 
-  private _onBlockShiftDown = (cmd: BlockSuite.CommandChain) => {
+  private _onBlockShiftDown = (cmd: LumenSuite.CommandChain) => {
     return cmd
       .getBlockSelections()
       .inline<'currentSelectionPath' | 'anchorBlock'>((ctx, next) => {
@@ -325,7 +325,7 @@ export class KeymapController implements ReactiveController {
       .selectBlocksBetween({ tail: true });
   };
 
-  private _onBlockShiftUp = (cmd: BlockSuite.CommandChain) => {
+  private _onBlockShiftUp = (cmd: LumenSuite.CommandChain) => {
     return cmd
       .getBlockSelections()
       .inline<'currentSelectionPath' | 'anchorBlock'>((ctx, next) => {

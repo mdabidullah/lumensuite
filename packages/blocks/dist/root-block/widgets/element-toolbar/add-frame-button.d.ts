@@ -1,6 +1,6 @@
 import { LitElement, nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const EdgelessAddFrameButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessAddFrameButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessAddFrameButton extends EdgelessAddFrameButton_base {
     static styles: import("lit").CSSResult;
     private _createFrame;
@@ -12,6 +12,6 @@ declare global {
         'edgeless-add-frame-button': EdgelessAddFrameButton;
     }
 }
-export declare function renderAddFrameButton(edgeless: EdgelessRootBlockComponent, elements: BlockSuite.EdgelessModel[]): import("lit").TemplateResult<1> | typeof nothing;
+export declare function renderAddFrameButton(edgeless: EdgelessRootBlockComponent, elements: LumenSuite.EdgelessModel[]): import("lit").TemplateResult<1> | typeof nothing;
 export {};
 //# sourceMappingURL=add-frame-button.d.ts.map

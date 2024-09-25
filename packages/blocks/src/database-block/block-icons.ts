@@ -1,5 +1,5 @@
-import type { ParagraphType } from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
+import type { ParagraphType } from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
 
 import {

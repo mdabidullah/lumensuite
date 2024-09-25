@@ -1,4 +1,4 @@
-import { GroupElementModel } from '@blocksuite/affine-model';
+import { GroupElementModel } from '@lumensuite/affine-model';
 export function getElementsWithoutGroup(elements) {
     const set = new Set();
     elements.forEach(element => {

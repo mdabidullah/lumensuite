@@ -1,11 +1,11 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-export class MigrationError extends BlockSuiteError {
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+export class MigrationError extends LumenSuiteError {
     constructor(description) {
-        super(ErrorCode.MigrationError, `Migration failed. Please report to https://github.com/toeverything/blocksuite/issues
+        super(ErrorCode.MigrationError, `Migration failed. Please report to https://github.com/toeverything/lumensuite/issues
           ${description}`);
     }
 }
-export class SchemaValidateError extends BlockSuiteError {
+export class SchemaValidateError extends LumenSuiteError {
     constructor(flavour, message) {
         super(ErrorCode.SchemaValidateError, `Invalid schema for ${flavour}: ${message}`);
     }

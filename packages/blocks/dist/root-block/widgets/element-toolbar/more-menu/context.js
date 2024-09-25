@@ -1,4 +1,4 @@
-import { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
+import { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
 import { MenuContext } from '../../../configs/toolbar.js';
 import { isAttachmentBlock, isBookmarkBlock, isEmbeddedLinkBlock, isEmbedLinkedDocBlock, isEmbedSyncedDocBlock, isFrameBlock, isImageBlock, isNoteBlock, } from '../../../edgeless/utils/query.js';
 export class ElementToolbarMoreMenuContext extends MenuContext {

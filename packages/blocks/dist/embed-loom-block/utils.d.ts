@@ -1,4 +1,4 @@
-import type { EmbedLoomBlockUrlData, EmbedLoomModel } from '@blocksuite/affine-model';
+import type { EmbedLoomBlockUrlData, EmbedLoomModel } from '@lumensuite/affine-model';
 import type { EmbedLoomBlockComponent } from './embed-loom-block.js';
 export declare function queryEmbedLoomData(embedLoomModel: EmbedLoomModel, signal?: AbortSignal): Promise<Partial<EmbedLoomBlockUrlData>>;
 export declare function queryLoomOEmbedData(url: string, signal?: AbortSignal): Promise<Partial<EmbedLoomBlockUrlData>>;

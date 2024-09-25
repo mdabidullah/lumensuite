@@ -16,7 +16,7 @@
       deps: {
         yjs: 'latest',
         '@toeverything/theme': 'latest',
-        '@blocksuite/presets': 'canary',
+        '@lumensuite/presets': 'canary',
       },
     }"
     :code-options="codeOptions"

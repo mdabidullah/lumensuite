@@ -1,4 +1,4 @@
-import { DocCollection, IdGeneratorType, Schema } from '@blocksuite/store';
+import { DocCollection, IdGeneratorType, Schema } from '@lumensuite/store';
 import { describe, expect, test } from 'vitest';
 
 import { TestEditorContainer } from './test-editor.js';

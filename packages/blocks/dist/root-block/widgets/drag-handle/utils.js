@@ -1,6 +1,6 @@
-import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT } from '@blocksuite/affine-shared/consts';
-import { findClosestBlockComponent, getBlockProps, getClosestBlockComponentByElement, getClosestBlockComponentByPoint, isInsidePageEditor, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { assertExists, Bound, Point, Rect } from '@blocksuite/global/utils';
+import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT } from '@lumensuite/affine-shared/consts';
+import { findClosestBlockComponent, getBlockProps, getClosestBlockComponentByElement, getClosestBlockComponentByPoint, isInsidePageEditor, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { assertExists, Bound, Point, Rect } from '@lumensuite/global/utils';
 import { getDropRectByPoint, getHoveringNote, getRectByBlockComponent, } from '../../../_common/utils/index.js';
 import { isEmbedSyncedDocBlock } from '../../edgeless/utils/query.js';
 import { DRAG_HANDLE_CONTAINER_HEIGHT, DRAG_HANDLE_CONTAINER_OFFSET_LEFT, DRAG_HANDLE_CONTAINER_OFFSET_LEFT_LIST, EDGELESS_NOTE_EXTRA_PADDING, NOTE_CONTAINER_PADDING, } from './config.js';

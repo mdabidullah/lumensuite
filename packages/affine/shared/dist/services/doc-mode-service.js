@@ -1,6 +1,6 @@
-import { Extension, StdIdentifier } from '@blocksuite/block-std';
-import { createIdentifier } from '@blocksuite/global/di';
-import { noop, Slot } from '@blocksuite/global/utils';
+import { Extension, StdIdentifier } from '@lumensuite/block-std';
+import { createIdentifier } from '@lumensuite/global/di';
+import { noop, Slot } from '@lumensuite/global/utils';
 const DEFAULT_MODE = 'page';
 export const DocModeProvider = createIdentifier('AffineDocModeService');
 const modeMap = new Map();

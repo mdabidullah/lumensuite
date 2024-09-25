@@ -5,15 +5,15 @@ import {
   HelpIcon,
   NewIcon,
   NotionIcon,
-} from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
-import { sha } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
+import { sha } from '@lumensuite/global/utils';
 import {
   type DocCollection,
   extMimeMap,
   type JobMiddleware,
-} from '@blocksuite/store';
-import { Job } from '@blocksuite/store';
+} from '@lumensuite/store';
+import { Job } from '@lumensuite/store';
 import { html, LitElement, type PropertyValues } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 
@@ -49,7 +49,7 @@ export async function importMarkDown(
       }
       payload.snapshot.meta.title = fileName;
       payload.snapshot.blocks.props.title = {
-        '$blocksuite:internal:text$': true,
+        '$lumensuite:internal:text$': true,
         delta: [
           {
             insert: fileName,

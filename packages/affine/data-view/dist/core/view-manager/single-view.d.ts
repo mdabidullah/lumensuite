@@ -1,4 +1,4 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
 import { type ReadonlySignal } from '@lit-labs/preact-signals';
 import type { ColumnMeta } from '../column/column-config.js';
 import type { FilterGroup, Variable } from '../common/ast.js';

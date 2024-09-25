@@ -1,6 +1,6 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
 import {
   assertType,
   Bound,
@@ -8,7 +8,7 @@ import {
   last,
   nToLast,
   Slot,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 
 import type { GfxModel } from './gfx-block-model.js';

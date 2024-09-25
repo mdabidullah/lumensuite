@@ -4,13 +4,13 @@ import * as Y from 'yjs';
 
 import { createYProxy } from '../reactive/proxy.js';
 
-export type BlockSuiteDocAllowedValue =
+export type LumenSuiteDocAllowedValue =
   | Record<string, unknown>
   | unknown[]
   | Y.Text;
-export type BlockSuiteDocData = Record<string, BlockSuiteDocAllowedValue>;
+export type LumenSuiteDocData = Record<string, LumenSuiteDocAllowedValue>;
 
-export class BlockSuiteDoc extends Y.Doc {
+export class LumenSuiteDoc extends Y.Doc {
   private _spaces: Y.Map<Y.Doc> = this.getMap('spaces');
 
   get spaces() {
@@ -18,9 +18,9 @@ export class BlockSuiteDoc extends Y.Doc {
   }
 
   getArrayProxy<
-    Key extends keyof BlockSuiteDocData & string,
-    Value extends unknown[] = BlockSuiteDocData[Key] extends unknown[]
-      ? BlockSuiteDocData[Key]
+    Key extends keyof LumenSuiteDocData & string,
+    Value extends unknown[] = LumenSuiteDocData[Key] extends unknown[]
+      ? LumenSuiteDocData[Key]
       : never,
   >(key: Key): Value {
     const array = super.getArray(key);
@@ -28,12 +28,12 @@ export class BlockSuiteDoc extends Y.Doc {
   }
 
   getMapProxy<
-    Key extends keyof BlockSuiteDocData & string,
+    Key extends keyof LumenSuiteDocData & string,
     Value extends Record<
       string,
       unknown
-    > = BlockSuiteDocData[Key] extends Record<string, unknown>
-      ? BlockSuiteDocData[Key]
+    > = LumenSuiteDocData[Key] extends Record<string, unknown>
+      ? LumenSuiteDocData[Key]
       : never,
   >(key: Key): Value {
     const map = super.getMap(key);

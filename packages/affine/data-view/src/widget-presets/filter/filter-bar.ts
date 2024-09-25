@@ -1,6 +1,6 @@
-import { createPopup } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
 import { CloseIcon, FilterIcon, PlusIcon } from '@blocksuite/icons/lit';
+import { createPopup } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

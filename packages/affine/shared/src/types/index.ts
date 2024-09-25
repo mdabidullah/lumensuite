@@ -1,6 +1,6 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
 export interface EditingState {
   element: BlockComponent;

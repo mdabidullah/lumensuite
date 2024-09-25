@@ -1,5 +1,5 @@
-import { BanIcon, DashLineIcon, StraightLineIcon, } from '@blocksuite/affine-components/icons';
-import { StrokeStyle } from '@blocksuite/affine-model';
+import { BanIcon, DashLineIcon, StraightLineIcon, } from '@lumensuite/affine-components/icons';
+import { StrokeStyle } from '@lumensuite/affine-model';
 import { html } from 'lit';
 import { classMap } from 'lit/directives/class-map.js';
 import { repeat } from 'lit/directives/repeat.js';

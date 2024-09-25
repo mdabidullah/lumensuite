@@ -1,8 +1,8 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
-import { Job } from '@blocksuite/store';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
+import { Job } from '@lumensuite/store';
 
 import { MarkdownAdapter } from '../adapters/index.js';
 import { defaultImageProxyMiddleware } from './middlewares.js';
@@ -28,7 +28,7 @@ async function exportDoc(doc: Doc) {
   const contentBlob = new Blob([markdownResult.file], { type: 'plain/text' });
   if (markdownResult.assetsIds.length > 0) {
     if (!job.assets) {
-      throw new BlockSuiteError(ErrorCode.ValueNotExists, 'No assets found');
+      throw new LumenSuiteError(ErrorCode.ValueNotExists, 'No assets found');
     }
     const zip = await createAssetsArchive(job.assets, markdownResult.assetsIds);
 

@@ -3,7 +3,7 @@ import {
   countBy,
   groupBy,
   maxBy,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 
 describe('countBy', () => {

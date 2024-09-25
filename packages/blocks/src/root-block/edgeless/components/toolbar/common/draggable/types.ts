@@ -1,5 +1,5 @@
-import type { DisposableClass } from '@blocksuite/block-std';
-import type { Bound } from '@blocksuite/global/utils';
+import type { DisposableClass } from '@lumensuite/block-std';
+import type { Bound } from '@lumensuite/global/utils';
 import type { TemplateResult } from 'lit';
 
 import type { EdgelessRootBlockComponent } from '../../../../edgeless-root-block.js';

@@ -1,6 +1,6 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 import type { TextConversionConfig } from '../../../_common/configs/text-conversion.js';
 import type { SlashMenuActionItem, SlashMenuContext, SlashMenuGroupDivider, SlashMenuItem, SlashMenuItemGenerator, SlashMenuStaticItem, SlashSubMenu } from './config.js';
 export declare function isGroupDivider(item: SlashMenuStaticItem): item is SlashMenuGroupDivider;

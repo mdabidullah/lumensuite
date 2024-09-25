@@ -34,7 +34,7 @@ export declare class MultiPointerEventState extends UIEventState {
     constructor(event: PointerEvent, pointers: PointerEventState[]);
 }
 declare global {
-    interface BlockSuiteUIEventState {
+    interface LumenSuiteUIEventState {
         pointerState: PointerEventState;
         multiPointerState: MultiPointerEventState;
     }

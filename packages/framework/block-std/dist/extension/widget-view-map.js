@@ -10,7 +10,7 @@ import { WidgetViewMapIdentifier } from '../identifier.js';
  *
  * @example
  * ```ts
- * import { WidgetViewMapExtension } from '@blocksuite/block-std';
+ * import { WidgetViewMapExtension } from '@lumensuite/block-std';
  *
  * const MyWidgetViewMapExtension = WidgetViewMapExtension('my-flavour', {
  *  'my-widget': literal`my-widget-view`

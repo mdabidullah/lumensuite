@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { SharedPriorityTarget } from '../utils/async-queue.js';
 import { MANUALLY_STOP, throwIfAborted } from '../utils/throw-if-aborted.js';
 import { DocEngineStep, DocPeerStep } from './consts.js';

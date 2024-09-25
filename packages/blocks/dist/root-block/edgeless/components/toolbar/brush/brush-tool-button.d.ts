@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import '../../buttons/toolbar-button.js';
 import './brush-menu.js';
-declare const EdgelessBrushToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessBrushToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessBrushToolButton extends EdgelessBrushToolButton_base {
     static styles: import("lit").CSSResult;
     private _color$;

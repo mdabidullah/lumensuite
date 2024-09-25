@@ -1,4 +1,4 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 
 import { createContext } from '@lit/context';
 

@@ -1,5 +1,5 @@
-import { LayoutType } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { LayoutType } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 export const NODE_VERTICAL_SPACING = 45;
 export const NODE_HORIZONTAL_SPACING = 110;
 export const NODE_FIRST_LEVEL_HORIZONTAL_SPACING = 200;

@@ -22,7 +22,7 @@ export declare class TemplateToolController extends EdgelessToolController<Templ
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             template: TemplateToolController;
         }

@@ -1,7 +1,7 @@
-import { textKeymap } from '@blocksuite/affine-components/rich-text';
-import { CodeBlockSchema, ColorScheme } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockService } from '@blocksuite/block-std';
+import { textKeymap } from '@lumensuite/affine-components/rich-text';
+import { CodeBlockSchema, ColorScheme } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockService } from '@lumensuite/block-std';
 import { signal } from '@lit-labs/preact-signals';
 import { createHighlighterCore, } from 'shiki';
 import { bundledLanguagesInfo } from 'shiki';

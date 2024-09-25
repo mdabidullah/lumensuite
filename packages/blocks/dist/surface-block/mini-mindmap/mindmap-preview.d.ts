@@ -1,9 +1,9 @@
-import type { MindmapElementModel, SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import { MindmapStyle } from '@blocksuite/affine-model';
-import { type EditorHost } from '@blocksuite/block-std';
-import { type Doc } from '@blocksuite/store';
+import type { MindmapElementModel, SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import { MindmapStyle } from '@lumensuite/affine-model';
+import { type EditorHost } from '@lumensuite/block-std';
+import { type Doc } from '@lumensuite/store';
 import { LitElement, nothing } from 'lit';
-declare const MiniMindmapPreview_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const MiniMindmapPreview_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class MiniMindmapPreview extends MiniMindmapPreview_base {
     static styles: import("lit").CSSResult;
     doc?: Doc;

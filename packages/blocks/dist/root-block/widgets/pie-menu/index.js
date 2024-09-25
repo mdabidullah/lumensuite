@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WidgetComponent } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';

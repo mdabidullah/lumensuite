@@ -1,5 +1,5 @@
-import { AffineSchemas, TestUtils } from '@blocksuite/blocks';
-import { assertExists } from '@blocksuite/global/utils';
+import { AffineSchemas, TestUtils } from '@lumensuite/blocks';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   type BlockCollection,
   DocCollection,
@@ -7,14 +7,14 @@ import {
   IdGeneratorType,
   Job,
   Schema,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import {
   type BlobSource,
   BroadcastChannelAwarenessSource,
   BroadcastChannelDocSource,
   IndexedDBBlobSource,
   MemoryBlobSource,
-} from '@blocksuite/sync';
+} from '@lumensuite/sync';
 
 import type { InitFn } from '../data/utils.js';
 
@@ -52,7 +52,7 @@ export function createStarterDocCollection() {
     blobSources.shadows.push(new IndexedDBBlobSource(collectionId));
   }
 
-  const flags: Partial<BlockSuiteFlags> = Object.fromEntries(
+  const flags: Partial<LumenSuiteFlags> = Object.fromEntries(
     [...params.entries()]
       .filter(([key]) => key.startsWith('enable_'))
       .map(([k, v]) => [k, v === 'true'])

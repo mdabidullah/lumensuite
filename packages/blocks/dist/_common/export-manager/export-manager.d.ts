@@ -1,7 +1,7 @@
-import type { BlockService, EditorHost } from '@blocksuite/block-std';
-import type { IBound } from '@blocksuite/global/utils';
-import type { Doc } from '@blocksuite/store';
-import { type CanvasRenderer } from '@blocksuite/affine-block-surface';
+import type { BlockService, EditorHost } from '@lumensuite/block-std';
+import type { IBound } from '@lumensuite/global/utils';
+import type { Doc } from '@lumensuite/store';
+import { type CanvasRenderer } from '@lumensuite/affine-block-surface';
 import type { GfxBlockModel } from '../../root-block/edgeless/block-model.js';
 import type { EdgelessRootBlockComponent } from '../../root-block/edgeless/edgeless-root-block.js';
 export type ExportOptions = {
@@ -25,7 +25,7 @@ export declare class ExportManager {
     private _enableMediaPrint;
     private _html2canvas;
     private _toCanvas;
-    edgelessToCanvas(surfaceRenderer: CanvasRenderer, bound: IBound, edgeless?: EdgelessRootBlockComponent, nodes?: GfxBlockModel[], surfaces?: BlockSuite.SurfaceElementModel[], edgelessBackground?: {
+    edgelessToCanvas(surfaceRenderer: CanvasRenderer, bound: IBound, edgeless?: EdgelessRootBlockComponent, nodes?: GfxBlockModel[], surfaces?: LumenSuite.SurfaceElementModel[], edgelessBackground?: {
         zoom: number;
     }): Promise<HTMLCanvasElement | undefined>;
     exportPdf(): Promise<void>;

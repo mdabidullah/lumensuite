@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { toggleLinkPopup } from '@blocksuite/affine-components/rich-text';
-import { INLINE_ROOT_ATTR, type InlineRootElement } from '@blocksuite/inline';
+import { toggleLinkPopup } from '@lumensuite/affine-components/rich-text';
+import { INLINE_ROOT_ATTR, type InlineRootElement } from '@lumensuite/inline';
 
 import type { AffineTextAttributes } from '../extension/index.js';
 
@@ -83,7 +83,7 @@ export const isTextStyleActive: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       textStyle?: AffineTextAttributes;
     }

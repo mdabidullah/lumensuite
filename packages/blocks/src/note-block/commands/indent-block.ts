@@ -1,7 +1,7 @@
-import type { ListBlockModel } from '@blocksuite/affine-model';
-import type { Command } from '@blocksuite/block-std';
+import type { ListBlockModel } from '@lumensuite/affine-model';
+import type { Command } from '@lumensuite/block-std';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 /**
  * @example
@@ -66,7 +66,7 @@ export const indentBlock: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       indentBlock: typeof indentBlock;
     }

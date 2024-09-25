@@ -1,7 +1,7 @@
-import type { BlockStdScope, UIEventHandler } from '@blocksuite/block-std';
+import type { BlockStdScope, UIEventHandler } from '@lumensuite/block-std';
 
-import { markdownInput } from '@blocksuite/affine-components/rich-text';
-import { IS_MAC } from '@blocksuite/global/env';
+import { markdownInput } from '@lumensuite/affine-components/rich-text';
+import { IS_MAC } from '@lumensuite/global/env';
 
 import { forwardDelete } from './utils/forward-delete.js';
 

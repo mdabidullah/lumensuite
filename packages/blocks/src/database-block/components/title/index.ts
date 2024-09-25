@@ -1,10 +1,10 @@
-import type { RichText } from '@blocksuite/affine-components/rich-text';
-import type { InlineRange } from '@blocksuite/inline';
-import type { Text } from '@blocksuite/store';
+import type { RichText } from '@lumensuite/affine-components/rich-text';
+import type { InlineRange } from '@lumensuite/inline';
+import type { Text } from '@lumensuite/store';
 
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

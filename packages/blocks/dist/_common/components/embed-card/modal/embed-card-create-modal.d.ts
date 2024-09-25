@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
-import { ShadowlessElement } from '@blocksuite/block-std';
-declare const EmbedCardCreateModal_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
+declare const EmbedCardCreateModal_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EmbedCardCreateModal extends EmbedCardCreateModal_base {
     static styles: import("lit").CSSResult;
     private _onCancel;

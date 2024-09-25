@@ -1,6 +1,6 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import { Bound, Slot } from '@blocksuite/global/utils';
-import { type BlockSnapshot, type DocSnapshot, Job } from '@blocksuite/store';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import { Bound, Slot } from '@lumensuite/global/utils';
+import { type BlockSnapshot, type DocSnapshot, Job } from '@lumensuite/store';
 /**
  * Template type will affect the inserting behaviour
  */

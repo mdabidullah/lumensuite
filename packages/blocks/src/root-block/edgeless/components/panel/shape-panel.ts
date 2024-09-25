@@ -1,5 +1,5 @@
-import { ShapeStyle } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/global/utils';
+import { ShapeStyle } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

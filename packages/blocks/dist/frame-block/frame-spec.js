@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { FrameBlockService } from './frame-service.js';
 export const FrameBlockSpec = [

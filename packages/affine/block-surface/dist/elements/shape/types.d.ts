@@ -1,5 +1,5 @@
-import type { FontFamily, FontStyle, FontWeight, ShapeStyle, ShapeTextFontSize, ShapeType, StrokeStyle, TextAlign, TextVerticalAlign } from '@blocksuite/affine-model';
-import type { Y } from '@blocksuite/store';
+import type { FontFamily, FontStyle, FontWeight, ShapeStyle, ShapeTextFontSize, ShapeType, StrokeStyle, TextAlign, TextVerticalAlign } from '@lumensuite/affine-model';
+import type { Y } from '@lumensuite/store';
 import type { CanvasElementType } from '../../element-model/index.js';
 import type { ISurfaceElement } from '../surface-element.js';
 export interface IShape extends ISurfaceElement {

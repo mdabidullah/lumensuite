@@ -1,6 +1,6 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
-import { Job } from '@blocksuite/store';
+import { Job } from '@lumensuite/store';
 
 import { HtmlAdapter } from '../adapters/index.js';
 import { createAssetsArchive, download } from './utils.js';

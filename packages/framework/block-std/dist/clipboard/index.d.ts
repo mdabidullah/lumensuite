@@ -1,6 +1,6 @@
-import type { BaseAdapter, BlockSnapshot, Doc, JobMiddleware, Slice } from '@blocksuite/store';
+import type { BaseAdapter, BlockSnapshot, Doc, JobMiddleware, Slice } from '@lumensuite/store';
 import type { RootContentMap } from 'hast';
-import { Job } from '@blocksuite/store';
+import { Job } from '@lumensuite/store';
 import { LifeCycleWatcher } from '../extension/index.js';
 type AdapterConstructor<T extends BaseAdapter> = new (job: Job) => T;
 type HastUnionType<K extends keyof RootContentMap, V extends RootContentMap[K]> = V;
@@ -15,7 +15,7 @@ export declare class Clipboard extends LifeCycleWatcher {
     copySlice: (slice: Slice) => Promise<void>;
     duplicateSlice: (slice: Slice, doc: Doc, parent?: string, index?: number, type?: string) => Promise<void>;
     paste: (event: ClipboardEvent, doc: Doc, parent?: string, index?: number) => Promise<Slice | null | undefined>;
-    pasteBlockSnapshot: (snapshot: BlockSnapshot, doc: Doc, parent?: string, index?: number) => Promise<import("@blocksuite/store").BlockModel<object, object & {}> | undefined>;
+    pasteBlockSnapshot: (snapshot: BlockSnapshot, doc: Doc, parent?: string, index?: number) => Promise<import("@lumensuite/store").BlockModel<object, object & {}> | undefined>;
     registerAdapter: <T extends BaseAdapter>(mimeType: string, adapter: AdapterConstructor<T>, priority?: number) => void;
     unregisterAdapter: (mimeType: string) => void;
     unuse: (middleware: JobMiddleware) => void;

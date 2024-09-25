@@ -1,2 +1,2 @@
-export declare function getElementsWithoutGroup(elements: BlockSuite.EdgelessModel[]): import("@blocksuite/block-std/gfx").GfxModel[];
+export declare function getElementsWithoutGroup(elements: LumenSuite.EdgelessModel[]): import("@lumensuite/block-std/gfx").GfxModel[];
 //# sourceMappingURL=group.d.ts.map

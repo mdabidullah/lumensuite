@@ -1,4 +1,4 @@
-import { isInsidePageEditor } from '@blocksuite/affine-shared/utils';
+import { isInsidePageEditor } from '@lumensuite/affine-shared/utils';
 export function filterAIItemGroup(host, configs) {
     const editorMode = isInsidePageEditor(host) ? 'page' : 'edgeless';
     return configs

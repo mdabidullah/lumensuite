@@ -1,11 +1,11 @@
-import type { IBound } from '@blocksuite/global/utils';
+import type { IBound } from '@lumensuite/global/utils';
 
 import {
   requestConnectedFrame,
   stopPropagation,
-} from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, getCommonBound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, getCommonBound } from '@lumensuite/global/utils';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

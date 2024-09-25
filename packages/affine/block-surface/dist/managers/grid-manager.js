@@ -1,4 +1,4 @@
-import { Bound, getBoundsWithRotation, intersects, isPointIn, } from '@blocksuite/global/utils';
+import { Bound, getBoundsWithRotation, intersects, isPointIn, } from '@lumensuite/global/utils';
 import { GRID_SIZE } from '../consts.js';
 import { compare } from './layer-utils.js';
 function getGridIndex(val) {

@@ -1,15 +1,15 @@
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
+import { PenIcon } from '@blocksuite/icons/lit';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
 import {
   isValidUrl,
   normalizeUrl,
   stopPropagation,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   BaseCellRenderer,
   createFromBaseCellRenderer,
   createIcon,
-} from '@blocksuite/data-view';
-import { PenIcon } from '@blocksuite/icons/lit';
+} from '@lumensuite/data-view';
 import { baseTheme } from '@toeverything/theme';
 import { css, unsafeCSS } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

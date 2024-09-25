@@ -1,4 +1,4 @@
-import { getSvgPath } from '@blocksuite/global/utils';
+import { getSvgPath } from '@lumensuite/global/utils';
 import { css, html, LitElement, svg, type TemplateResult } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 

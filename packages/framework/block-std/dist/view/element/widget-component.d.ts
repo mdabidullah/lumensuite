@@ -1,10 +1,10 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 import { LitElement } from 'lit';
 import type { EventName, UIEventHandler } from '../../event/index.js';
 import type { BlockService } from '../../extension/index.js';
 import type { BlockStdScope } from '../../scope/index.js';
 import type { BlockComponent } from './block-component.js';
-declare const WidgetComponent_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
+declare const WidgetComponent_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
 export declare class WidgetComponent<Model extends BlockModel = BlockModel, B extends BlockComponent = BlockComponent, S extends BlockService = BlockService> extends WidgetComponent_base {
     handleEvent: (name: EventName, handler: UIEventHandler, options?: {
         global?: boolean;

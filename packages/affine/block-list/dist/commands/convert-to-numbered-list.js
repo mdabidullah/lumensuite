@@ -1,4 +1,4 @@
-import { toNumberedList } from '@blocksuite/affine-shared/utils';
+import { toNumberedList } from '@lumensuite/affine-shared/utils';
 export const convertToNumberedListCommand = (ctx, next) => {
     const { std, id, order, stopCapturing = true } = ctx;
     const host = std.host;

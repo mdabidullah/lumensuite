@@ -1,4 +1,4 @@
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
 /**
  * Add a paragraph next to the current block.
  */

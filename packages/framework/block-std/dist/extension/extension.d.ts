@@ -1,4 +1,4 @@
-import type { Container } from '@blocksuite/global/di';
+import type { Container } from '@lumensuite/global/di';
 /**
  * Generic extension.
  * Extensions are used to set up the dependency injection container.

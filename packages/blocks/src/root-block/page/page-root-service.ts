@@ -1,5 +1,5 @@
-import { type ReferenceInfo, RootBlockSchema } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/store';
+import { type ReferenceInfo, RootBlockSchema } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/store';
 
 import type { Viewport } from '../../_common/utils/index.js';
 

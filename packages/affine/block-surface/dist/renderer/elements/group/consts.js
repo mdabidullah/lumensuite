@@ -1,4 +1,4 @@
-import { FontFamily } from '@blocksuite/affine-model';
+import { FontFamily } from '@lumensuite/affine-model';
 export const GROUP_TITLE_FONT = FontFamily.Inter;
 export const GROUP_TITLE_FONT_SIZE = 12;
 export const GROUP_TITLE_PADDING = [2, 0];

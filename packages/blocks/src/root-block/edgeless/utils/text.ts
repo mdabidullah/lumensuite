@@ -2,23 +2,23 @@ import type {
   ConnectorElementModel,
   FrameBlockModel,
   GroupElementModel,
-} from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
 
 import {
   CanvasElementType,
   type IModelCoord,
   TextUtils,
-} from '@blocksuite/affine-block-surface';
-import { ShapeElementModel, TextElementModel } from '@blocksuite/affine-model';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+} from '@lumensuite/affine-block-surface';
+import { ShapeElementModel, TextElementModel } from '@lumensuite/affine-model';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import {
   assertExists,
   assertInstanceOf,
   Bound,
-} from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 
@@ -35,7 +35,7 @@ export function mountTextElementEditor(
   focusCoord?: IModelCoord
 ) {
   if (!edgeless.mountElm) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ValueNotExists,
       "edgeless block's mount point does not exist"
     );
@@ -71,7 +71,7 @@ export function mountShapeTextEditor(
   edgeless: EdgelessRootBlockComponent
 ) {
   if (!edgeless.mountElm) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ValueNotExists,
       "edgeless block's mount point does not exist"
     );
@@ -107,7 +107,7 @@ export function mountFrameTitleEditor(
   edgeless: EdgelessRootBlockComponent
 ) {
   if (!edgeless.mountElm) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ValueNotExists,
       "edgeless block's mount point does not exist"
     );
@@ -129,7 +129,7 @@ export function mountGroupTitleEditor(
   edgeless: EdgelessRootBlockComponent
 ) {
   if (!edgeless.mountElm) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ValueNotExists,
       "edgeless block's mount point does not exist"
     );
@@ -182,7 +182,7 @@ export function mountConnectorLabelEditor(
   point?: IVec
 ) {
   if (!edgeless.mountElm) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ValueNotExists,
       "edgeless block's mount point does not exist"
     );

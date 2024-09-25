@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const git = simpleGit();
 
 const REPO_OWNER = 'toeverything';
-const REPO_NAME = 'blocksuite';
+const REPO_NAME = 'lumensuite';
 
 async function getUserInput() {
   const responses = await inquirer.prompt([

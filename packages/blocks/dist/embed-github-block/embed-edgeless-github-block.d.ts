@@ -1,5 +1,5 @@
 import { EmbedGithubBlockComponent } from './embed-github-block.js';
-declare const EmbedEdgelessGithubBlockComponent_base: typeof EmbedGithubBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessGithubBlockComponent_base: typeof EmbedGithubBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessGithubBlockComponent extends EmbedEdgelessGithubBlockComponent_base {
 }
 declare global {

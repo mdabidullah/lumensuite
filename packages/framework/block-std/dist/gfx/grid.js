@@ -1,4 +1,4 @@
-import { Bound, getBoundsWithRotation, intersects, isPointIn, } from '@blocksuite/global/utils';
+import { Bound, getBoundsWithRotation, intersects, isPointIn, } from '@lumensuite/global/utils';
 import { compare } from '../utils/layer.js';
 import { GfxBlockElementModel } from './gfx-block-model.js';
 import { SurfaceBlockModel } from './surface/surface-model.js';

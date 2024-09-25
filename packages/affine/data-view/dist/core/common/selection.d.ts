@@ -1,4 +1,4 @@
-import { BaseSelection } from '@blocksuite/block-std';
+import { BaseSelection } from '@lumensuite/block-std';
 import type { DataViewSelection, GetDataViewSelection } from '../types.js';
 export declare class DatabaseSelection extends BaseSelection {
     static group: string;
@@ -15,7 +15,7 @@ export declare class DatabaseSelection extends BaseSelection {
     toJSON(): Record<string, unknown>;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Selection {
             database: typeof DatabaseSelection;
         }

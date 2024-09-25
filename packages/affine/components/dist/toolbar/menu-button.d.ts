@@ -1,6 +1,6 @@
 import { LitElement, type PropertyValues, type TemplateResult } from 'lit';
 import './icon-button.js';
-declare const EditorMenuButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EditorMenuButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EditorMenuButton extends EditorMenuButton_base {
     static styles: import("lit").CSSResult;
     private _popper;

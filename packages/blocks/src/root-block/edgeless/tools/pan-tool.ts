@@ -1,6 +1,6 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import { EdgelessToolController } from './edgeless-tool.js';
 
@@ -93,7 +93,7 @@ export class PanToolController extends EdgelessToolController<PanTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       pan: PanToolController;
     }

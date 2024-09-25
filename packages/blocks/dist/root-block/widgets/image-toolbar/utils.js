@@ -1,5 +1,5 @@
-import { getBlockProps, isInsidePageEditor, } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { getBlockProps, isInsidePageEditor, } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 export function duplicate(block, abortController) {
     const model = block.model;
     const blockProps = getBlockProps(model);

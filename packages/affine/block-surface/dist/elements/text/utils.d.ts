@@ -1,4 +1,4 @@
-import type { FontFamily } from '@blocksuite/affine-model';
+import type { FontFamily } from '@lumensuite/affine-model';
 export declare const isRTL: (text: string) => boolean;
 export declare function getLineHeight(fontFamily: FontFamily, fontSize: number): number;
 export declare function getFontString({ fontStyle, fontWeight, fontSize, fontFamily, }: {

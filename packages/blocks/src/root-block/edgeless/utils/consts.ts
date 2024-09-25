@@ -4,7 +4,7 @@ import {
   LineWidth,
   ShapeFillColor,
   StrokeStyle,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
 export const BOOKMARK_MIN_WIDTH = 450;
 

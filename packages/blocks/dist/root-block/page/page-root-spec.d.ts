@@ -1,4 +1,4 @@
-import { type ExtensionType } from '@blocksuite/block-std';
+import { type ExtensionType } from '@lumensuite/block-std';
 export declare const pageRootWidgetViewMap: {
     "affine-modal-widget": import("lit/static-html.js").StaticValue;
     "affine-inner-modal-widget": import("lit/static-html.js").StaticValue;

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { cloneGroups } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { cloneGroups } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { limitShift, shift } from '@floating-ui/dom';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';

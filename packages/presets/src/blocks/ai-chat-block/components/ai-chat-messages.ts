@@ -1,5 +1,5 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { AffineAIPanelState } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { AffineAIPanelState } from '@lumensuite/blocks';
 
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

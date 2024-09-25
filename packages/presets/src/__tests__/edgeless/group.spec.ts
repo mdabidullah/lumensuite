@@ -1,12 +1,12 @@
-import type { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import type { MindmapElementModel } from '@lumensuite/affine-block-surface';
 
 import {
   type EdgelessRootBlockComponent,
   type GroupElementModel,
   LayoutType,
   NoteDisplayMode,
-} from '@blocksuite/blocks';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { DocCollection } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 import { wait } from '../utils/common.js';

@@ -1,6 +1,6 @@
-import { LifeCycleWatcher } from '@blocksuite/block-std';
-import { createIdentifier } from '@blocksuite/global/di';
-import { IS_FIREFOX } from '@blocksuite/global/env';
+import { LifeCycleWatcher } from '@lumensuite/block-std';
+import { createIdentifier } from '@lumensuite/global/di';
+import { IS_FIREFOX } from '@lumensuite/global/env';
 const initFontFace = IS_FIREFOX
     ? ({ font, weight, url, style }) => new FontFace(`"${font}"`, `url(${url})`, {
         weight,

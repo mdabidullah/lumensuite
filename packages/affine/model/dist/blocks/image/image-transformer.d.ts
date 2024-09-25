@@ -1,5 +1,5 @@
-import type { FromSnapshotPayload, SnapshotReturn, ToSnapshotPayload } from '@blocksuite/store';
-import { BaseBlockTransformer } from '@blocksuite/store';
+import type { FromSnapshotPayload, SnapshotReturn, ToSnapshotPayload } from '@lumensuite/store';
+import { BaseBlockTransformer } from '@lumensuite/store';
 import type { ImageBlockProps } from './image-model.js';
 export declare class ImageBlockTransformer extends BaseBlockTransformer<ImageBlockProps> {
     fromSnapshot(payload: FromSnapshotPayload): Promise<SnapshotReturn<ImageBlockProps>>;

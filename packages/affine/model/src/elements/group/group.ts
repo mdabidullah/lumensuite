@@ -1,23 +1,23 @@
 import type {
   BaseElementProps,
   SerializedElement,
-} from '@blocksuite/block-std/gfx';
-import type { Y } from '@blocksuite/store';
+} from '@lumensuite/block-std/gfx';
+import type { Y } from '@lumensuite/store';
 
 import {
   field,
   GfxGroupLikeElementModel,
   local,
   observe,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 import {
   Bound,
   type IVec,
   keys,
   linePolygonIntersects,
   type PointLocation,
-} from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 type GroupElementProps = BaseElementProps & {
   children: Y.Map<boolean>;
@@ -58,7 +58,7 @@ export class GroupElementModel extends GfxGroupLikeElementModel<GroupElementProp
     return props as GroupElementProps;
   }
 
-  addChild(element: BlockSuite.EdgelessModel | string) {
+  addChild(element: LumenSuite.EdgelessModel | string) {
     const id = typeof element === 'string' ? element : element.id;
     if (!this.children) {
       return;
@@ -80,7 +80,7 @@ export class GroupElementModel extends GfxGroupLikeElementModel<GroupElementProp
     return linePolygonIntersects(start, end, bound.points);
   }
 
-  removeChild(element: BlockSuite.EdgelessModel | string) {
+  removeChild(element: LumenSuite.EdgelessModel | string) {
     const id = typeof element === 'string' ? element : element.id;
     if (!this.children) {
       return;
@@ -115,7 +115,7 @@ export class GroupElementModel extends GfxGroupLikeElementModel<GroupElementProp
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceGroupLikeModelMap {
       group: GroupElementModel;
     }

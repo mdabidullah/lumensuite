@@ -1,5 +1,5 @@
 var _a;
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { nothing } from 'lit';
 import { GfxControllerIdentifier } from '../../gfx/index.js';
 import { BlockComponent } from './block-component.js';
@@ -23,7 +23,7 @@ export class GfxBlockComponent extends BlockComponent {
     getRenderingRect() {
         const { xywh$ } = this.model;
         if (!xywh$) {
-            throw new BlockSuiteError(ErrorCode.GfxBlockElementError, `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`);
+            throw new LumenSuiteError(ErrorCode.GfxBlockElementError, `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`);
         }
         const [x, y, w, h] = JSON.parse(xywh$.value);
         return { x, y, w, h, zIndex: this.toZIndex() };
@@ -81,7 +81,7 @@ export function toGfxBlockComponent(CustomBlock) {
         getRenderingRect() {
             const { xywh$ } = this.model;
             if (!xywh$) {
-                throw new BlockSuiteError(ErrorCode.GfxBlockElementError, `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`);
+                throw new LumenSuiteError(ErrorCode.GfxBlockElementError, `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`);
             }
             const [x, y, w, h] = JSON.parse(xywh$.value);
             return { x, y, w, h, zIndex: this.toZIndex() };

@@ -32,16 +32,16 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { SurfaceElementModel, } from '@blocksuite/affine-block-surface';
-import { EdgelessModeIcon, FrameIcon, MoreDeleteIcon, } from '@blocksuite/affine-components/icons';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { BlockStdScope, } from '@blocksuite/block-std';
-import { BlockComponent, BlockServiceWatcher } from '@blocksuite/block-std';
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { Bound, deserializeXYWH, } from '@blocksuite/global/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { SurfaceElementModel, } from '@lumensuite/affine-block-surface';
+import { EdgelessModeIcon, FrameIcon, MoreDeleteIcon, } from '@lumensuite/affine-components/icons';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { BlockStdScope, } from '@lumensuite/block-std';
+import { BlockComponent, BlockServiceWatcher } from '@lumensuite/block-std';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { Bound, deserializeXYWH, } from '@lumensuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

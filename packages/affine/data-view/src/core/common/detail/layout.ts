@@ -1,5 +1,3 @@
-import { createModal } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement } from '@blocksuite/block-std';
 import { CloseIcon } from '@blocksuite/icons/lit';
 import {
   autoUpdate,
@@ -7,6 +5,8 @@ import {
   type ReferenceElement,
   size,
 } from '@floating-ui/dom';
+import { createModal } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 import { toEdgelessEmbedBlock } from '../_common/embed-block-helper/embed-block-element.js';
 import { EmbedHtmlBlockComponent } from './embed-html-block.js';

@@ -1,6 +1,6 @@
-import type { PointLocation, SerializedXYWH } from '@blocksuite/global/utils';
+import type { PointLocation, SerializedXYWH } from '@lumensuite/global/utils';
 
-import { GfxLocalElementModel } from '@blocksuite/block-std/gfx';
+import { GfxLocalElementModel } from '@lumensuite/block-std/gfx';
 
 import type { Connection } from './connector.js';
 
@@ -68,7 +68,7 @@ export class LocalConnectorElementModel extends GfxLocalElementModel {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceLocalModelMap {
       connector: LocalConnectorElementModel;
     }

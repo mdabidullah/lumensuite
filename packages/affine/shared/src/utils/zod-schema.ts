@@ -31,7 +31,7 @@ import {
   StrokeStyle,
   TextAlign,
   TextVerticalAlign,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import { z } from 'zod';
 
 const ConnectorEndpointSchema = z.nativeEnum(PointStyle);

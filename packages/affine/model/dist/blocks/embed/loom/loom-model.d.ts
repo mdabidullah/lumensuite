@@ -12,7 +12,7 @@ export type EmbedLoomBlockProps = {
     caption: string | null;
 } & EmbedLoomBlockUrlData;
 declare const EmbedLoomModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<{
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<{
         style: (typeof EmbedLoomStyles)[number];
         url: string;
         caption: string | null;
@@ -21,7 +21,7 @@ declare const EmbedLoomModel_base: {
 export declare class EmbedLoomModel extends EmbedLoomModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-loom': EmbedLoomModel;
         }

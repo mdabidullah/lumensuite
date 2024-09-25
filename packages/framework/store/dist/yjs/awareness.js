@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { signal } from '@preact/signals-core';
 import clonedeep from 'lodash.clonedeep';
 import merge from 'lodash.merge';

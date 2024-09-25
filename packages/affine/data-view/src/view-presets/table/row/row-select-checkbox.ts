@@ -1,10 +1,10 @@
+import { CheckBoxCkeckSolidIcon, CheckBoxUnIcon } from '@blocksuite/icons/lit';
+import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { CheckBoxCkeckSolidIcon, CheckBoxUnIcon } from '@blocksuite/icons/lit';
-import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

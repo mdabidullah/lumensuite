@@ -1,11 +1,11 @@
 import type {
   SurfaceBlockComponent,
   SurfaceBlockModel,
-} from '@blocksuite/affine-block-surface';
-import type { ConnectorElementModel } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-block-surface';
+import type { ConnectorElementModel } from '@lumensuite/affine-model';
 
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { Bound, deserializeXYWH, Point } from '@blocksuite/global/utils';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { Bound, deserializeXYWH, Point } from '@lumensuite/global/utils';
 
 import type { EdgelessRootService } from '../edgeless-root-service.js';
 
@@ -279,7 +279,7 @@ export class EdgelessSnapManager extends Overlay {
   }
 
   private _getBoundsWithRotationByAlignable(
-    alignable: BlockSuite.EdgelessModel
+    alignable: LumenSuite.EdgelessModel
   ) {
     const rotate = isTopLevelBlock(alignable) ? 0 : alignable.rotate;
     const [x, y, w, h] = deserializeXYWH(alignable.xywh);
@@ -420,7 +420,7 @@ export class EdgelessSnapManager extends Overlay {
     });
   }
 
-  setupAlignables(alignables: BlockSuite.EdgelessModel[]): Bound {
+  setupAlignables(alignables: LumenSuite.EdgelessModel[]): Bound {
     if (alignables.length === 0) return new Bound();
 
     const connectors = alignables.filter(isConnectable).reduce((prev, el) => {
@@ -443,7 +443,7 @@ export class EdgelessSnapManager extends Overlay {
       [
         ...this._rootService.blocks,
         ...canvasElements,
-      ] as BlockSuite.EdgelessModel[]
+      ] as LumenSuite.EdgelessModel[]
     ).forEach(alignable => {
       const bounds = this._getBoundsWithRotationByAlignable(alignable);
       if (

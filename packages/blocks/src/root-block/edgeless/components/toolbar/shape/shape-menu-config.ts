@@ -11,8 +11,8 @@ import {
   ScribbledTriangleIcon,
   SquareIcon,
   TriangleIcon,
-} from '@blocksuite/affine-components/icons';
-import { ShapeType } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-components/icons';
+import { ShapeType } from '@lumensuite/affine-model';
 
 import type { ShapeTool } from '../../../tools/shape-tool.js';
 

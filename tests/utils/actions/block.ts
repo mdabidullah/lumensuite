@@ -4,7 +4,7 @@ import { waitNextFrame } from './misc.js';
 
 export async function updateBlockType(
   page: Page,
-  flavour: BlockSuite.Flavour,
+  flavour: LumenSuite.Flavour,
   type?: string
 ) {
   await page.evaluate(
@@ -19,7 +19,7 @@ export async function updateBlockType(
         })
         .run();
     },
-    [flavour, type] as [BlockSuite.Flavour, string?]
+    [flavour, type] as [LumenSuite.Flavour, string?]
   );
   await waitNextFrame(page, 400);
 }

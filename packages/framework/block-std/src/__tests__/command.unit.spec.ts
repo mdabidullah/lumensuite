@@ -17,7 +17,7 @@ type Command2 = Command<'commandData1', 'commandData2'>;
 type Command3 = Command<'commandData1' | 'commandData2', 'commandData3'>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       commandData1?: string;
       commandData2?: string;
@@ -34,7 +34,7 @@ declare global {
 }
 
 describe('CommandManager', () => {
-  let std: BlockSuite.Std;
+  let std: LumenSuite.Std;
   let commandManager: CommandManager;
 
   beforeEach(() => {

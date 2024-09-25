@@ -1,15 +1,15 @@
-import type { RichText } from '@blocksuite/affine-components/rich-text';
-import type { ShapeElementModel } from '@blocksuite/affine-model';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { RichText } from '@lumensuite/affine-components/rich-text';
+import type { ShapeElementModel } from '@lumensuite/affine-model';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
-declare const EdgelessShapeTextEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessShapeTextEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessShapeTextEditor extends EdgelessShapeTextEditor_base {
     private _keeping;
     private _lastXYWH;
     private _resizeObserver;
-    get inlineEditor(): import("@blocksuite/affine-components/rich-text").AffineInlineEditor;
-    get inlineEditorContainer(): import("@blocksuite/inline/inline-editor").InlineRootElement<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>;
+    get inlineEditor(): import("@lumensuite/affine-components/rich-text").AffineInlineEditor;
+    get inlineEditorContainer(): import("@lumensuite/inline/inline-editor").InlineRootElement<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>;
     private _initMindmapKeyBindings;
     private _unmount;
     private _updateElementWH;

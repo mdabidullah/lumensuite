@@ -1,6 +1,6 @@
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getClosestBlockComponentByElement, getModelByElement, } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getClosestBlockComponentByElement, getModelByElement, } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { getClosestRootBlockComponent } from '../root-block/utils/query.js';
 export class ImageResizeManager {
     constructor() {

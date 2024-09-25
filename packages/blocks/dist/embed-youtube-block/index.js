@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 import { EmbedYoutubeBlockComponent } from './embed-youtube-block.js';
 noop(EmbedYoutubeBlockComponent);
 export * from './embed-youtube-block.js';

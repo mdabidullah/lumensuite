@@ -1,4 +1,4 @@
-import { BaseSelection } from '@blocksuite/block-std';
+import { BaseSelection } from '@lumensuite/block-std';
 import { z } from 'zod';
 
 import type { DataViewSelection, GetDataViewSelection } from '../types.js';
@@ -123,7 +123,7 @@ export class DatabaseSelection extends BaseSelection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Selection {
       database: typeof DatabaseSelection;
     }

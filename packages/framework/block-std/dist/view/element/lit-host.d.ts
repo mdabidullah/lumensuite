@@ -1,6 +1,6 @@
-import { Slot } from '@blocksuite/global/utils';
-import { Doc } from '@blocksuite/store';
-import { type BlockModel } from '@blocksuite/store';
+import { Slot } from '@lumensuite/global/utils';
+import { Doc } from '@lumensuite/store';
+import { type BlockModel } from '@lumensuite/store';
 import { nothing, type TemplateResult } from 'lit';
 import type { CommandManager } from '../../command/index.js';
 import type { UIEventDispatcher } from '../../event/index.js';
@@ -15,12 +15,12 @@ export declare const docContext: {
 export declare const stdContext: {
     __context__: BlockStdScope;
 };
-declare const EditorHost_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
+declare const EditorHost_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("../utils/with-disposable.js").DisposableClass>;
 export declare class EditorHost extends EditorHost_base {
     static styles: import("lit").CSSResult;
     private _renderModel;
     /**
-     * Render a block model manually instead of let blocksuite render it.
+     * Render a block model manually instead of let lumensuite render it.
      * If you render the same block model multiple times,
      * the event flow and data binding will be broken.
      * Only use this method as a last resort.
@@ -40,7 +40,7 @@ export declare class EditorHost extends EditorHost_base {
     getUpdateComplete(): Promise<boolean>;
     render(): TemplateResult | typeof nothing;
     accessor doc: Doc;
-    accessor std: BlockSuite.Std;
+    accessor std: LumenSuite.Std;
 }
 declare global {
     interface HTMLElementTagNameMap {

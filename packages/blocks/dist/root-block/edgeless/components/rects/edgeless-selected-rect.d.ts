@@ -1,5 +1,5 @@
-import { FrameBlockModel } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/global/utils';
+import { FrameBlockModel } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/global/utils';
 import { LitElement, nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
 import '../auto-complete/edgeless-auto-complete.js';
@@ -15,7 +15,7 @@ export type SelectedRect = {
     borderStyle: string;
     rotate: number;
 };
-declare const EdgelessSelectedRect_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessSelectedRect_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessSelectedRect extends EdgelessSelectedRect_base {
     #private;
     static enabledWarnings: never[];
@@ -45,11 +45,14 @@ export declare class EdgelessSelectedRect extends EdgelessSelectedRect_base {
         dragRotate: Slot<void>;
         dragEnd: Slot<void>;
     };
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     get dragDirection(): HandleDirection;
     get dragging(): boolean;
     get edgelessSlots(): {
         edgelessToolUpdated: Slot<import("../../tools/text-tool.js").TextTool | {
+            type: "pan";
+            panning: boolean;
+        } | {
             type: "brush";
         } | import("../../tools/connector-tool.js").ConnectorTool | {
             type: "copilot";
@@ -62,10 +65,7 @@ export declare class EdgelessSelectedRect extends EdgelessSelectedRect_base {
             type: "frame";
         } | import("../../tools/lasso-tool.js").LassoTool | {
             type: "mindmap";
-        } | import("../../tools/note-tool.js").NoteTool | {
-            type: "pan";
-            panning: boolean;
-        } | import("../../tools/shape-tool.js").ShapeTool | {
+        } | import("../../tools/note-tool.js").NoteTool | import("../../tools/shape-tool.js").ShapeTool | {
             type: "default";
         } | {
             type: "template";
@@ -73,8 +73,8 @@ export declare class EdgelessSelectedRect extends EdgelessSelectedRect_base {
         pressShiftKeyUpdated: Slot<boolean>;
         cursorUpdated: Slot<string>;
         copyAsPng: Slot<{
-            blocks: BlockSuite.EdgelessBlockModelType[];
-            shapes: BlockSuite.SurfaceModel[];
+            blocks: LumenSuite.EdgelessBlockModelType[];
+            shapes: LumenSuite.SurfaceModel[];
         }>;
         readonlyUpdated: Slot<boolean>;
         draggingAreaUpdated: Slot<void>;
@@ -103,7 +103,7 @@ export declare class EdgelessSelectedRect extends EdgelessSelectedRect_base {
     };
     get resizeMode(): ResizeMode;
     get selection(): import("../../services/selection-manager.js").EdgelessSelectionManager;
-    get surface(): import("@blocksuite/affine-block-surface").SurfaceBlockComponent;
+    get surface(): import("@lumensuite/affine-block-surface").SurfaceBlockComponent;
     get zoom(): number;
     constructor();
     private _canAutoComplete;

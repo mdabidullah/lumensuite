@@ -1,4 +1,4 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

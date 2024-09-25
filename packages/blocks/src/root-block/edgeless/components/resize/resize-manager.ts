@@ -1,11 +1,11 @@
-import { CommonUtils } from '@blocksuite/affine-block-surface';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
 import {
   assertExists,
   type IPoint,
   type IVec,
   type PointLocation,
-} from '@blocksuite/global/utils';
-import { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 
 import type { SelectableProps } from '../../utils/query.js';
 

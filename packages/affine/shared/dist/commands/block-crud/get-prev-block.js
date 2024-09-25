@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 function getPrevSibling(std, path) {
     const view = std.view;
     const block = view.getBlock(path);

@@ -1,6 +1,6 @@
 import type { ReactiveController } from 'lit';
 import type { Ref } from 'lit/directives/ref.js';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DatabaseCellContainer } from '../cell.js';
 import type { TableRow } from '../row/row.js';
 import type { DataViewTable } from '../table-view.js';
@@ -82,7 +82,7 @@ export declare class TableSelectionController implements ReactiveController {
     startDrag(evt: PointerEvent, cell: DatabaseCellContainer, fillValues?: boolean): void;
     toggleRow(rowId: string, groupKey?: string): void;
 }
-declare const SelectionElement_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const SelectionElement_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 declare class SelectionElement extends SelectionElement_base {
     static styles: import("lit").CSSResult;
     focusRef: Ref<HTMLDivElement>;

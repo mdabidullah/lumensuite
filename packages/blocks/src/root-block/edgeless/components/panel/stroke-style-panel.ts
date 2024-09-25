@@ -1,5 +1,5 @@
-import { SHAPE_STROKE_COLORS, StrokeStyle } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
+import { SHAPE_STROKE_COLORS, StrokeStyle } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

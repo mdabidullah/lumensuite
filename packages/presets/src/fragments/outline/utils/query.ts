@@ -1,4 +1,4 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import {
   BlocksUtils,
@@ -6,7 +6,7 @@ import {
   type NoteDisplayMode,
   type ParagraphBlockModel,
   type RootBlockModel,
-} from '@blocksuite/blocks';
+} from '@lumensuite/blocks';
 
 import { headingKeys } from '../config.js';
 

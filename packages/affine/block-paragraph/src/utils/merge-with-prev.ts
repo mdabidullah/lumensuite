@@ -1,19 +1,19 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { ExtendedModel } from '@blocksuite/affine-shared/types';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel, Text } from '@blocksuite/store';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { ExtendedModel } from '@lumensuite/affine-shared/types';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel, Text } from '@lumensuite/store';
 
 import {
   asyncSetInlineRange,
   focusTextModel,
-} from '@blocksuite/affine-components/rich-text';
-import { EMBED_BLOCK_FLAVOUR_LIST } from '@blocksuite/affine-shared/consts';
+} from '@lumensuite/affine-components/rich-text';
+import { EMBED_BLOCK_FLAVOUR_LIST } from '@lumensuite/affine-shared/consts';
 import {
   focusTitle,
   getDocTitleInlineEditor,
   getPrevContentBlock,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 /**
  * Merge the paragraph with prev block

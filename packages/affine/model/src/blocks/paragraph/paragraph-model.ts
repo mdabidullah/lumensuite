@@ -1,4 +1,4 @@
-import { defineBlockSchema, type SchemaToModel } from '@blocksuite/store';
+import { defineBlockSchema, type SchemaToModel } from '@lumensuite/store';
 
 export type ParagraphType =
   | 'text'
@@ -32,7 +32,7 @@ export const ParagraphBlockSchema = defineBlockSchema({
 export type ParagraphBlockModel = SchemaToModel<typeof ParagraphBlockSchema>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:paragraph': ParagraphBlockModel;
     }

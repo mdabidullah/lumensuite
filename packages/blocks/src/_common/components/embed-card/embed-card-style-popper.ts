@@ -2,9 +2,9 @@ import type {
   BookmarkBlockModel,
   EmbedGithubModel,
   EmbedLinkedDocModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { WithDisposable } from '@blocksuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

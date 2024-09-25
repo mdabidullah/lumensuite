@@ -1,24 +1,24 @@
 import type {
   NodeDetail,
   SerializedMindmapElement,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import type {
   FrameBlockProps,
   SerializedConnectorElement,
   SerializedGroupElement,
-} from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
+} from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
 
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
 import {
   ConnectorElementModel,
   GroupElementModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   isGfxContainerElm,
   type SerializedElement,
-} from '@blocksuite/block-std/gfx';
-import { type BlockSnapshot, Job } from '@blocksuite/store';
+} from '@lumensuite/block-std/gfx';
+import { type BlockSnapshot, Job } from '@lumensuite/store';
 
 import { GfxBlockModel } from '../block-model.js';
 import { getAllDescendantElements, getTopElements } from './tree.js';
@@ -26,8 +26,8 @@ import { getAllDescendantElements, getTopElements } from './tree.js';
 /**
  * return all elements in the tree of the elements
  */
-export function getSortedCloneElements(elements: BlockSuite.EdgelessModel[]) {
-  const set = new Set<BlockSuite.EdgelessModel>();
+export function getSortedCloneElements(elements: LumenSuite.EdgelessModel[]) {
+  const set = new Set<LumenSuite.EdgelessModel>();
   elements.forEach(element => {
     // this element subtree has been added
     if (set.has(element)) return;
@@ -40,7 +40,7 @@ export function getSortedCloneElements(elements: BlockSuite.EdgelessModel[]) {
 }
 
 export async function prepareCloneData(
-  elements: BlockSuite.EdgelessModel[],
+  elements: LumenSuite.EdgelessModel[],
   std: BlockStdScope
 ) {
   const job = new Job({
@@ -56,8 +56,8 @@ export async function prepareCloneData(
 }
 
 export async function serializeElement(
-  element: BlockSuite.EdgelessModel,
-  elements: BlockSuite.EdgelessModel[],
+  element: LumenSuite.EdgelessModel,
+  elements: LumenSuite.EdgelessModel[],
   job: Job
 ) {
   if (element instanceof GfxBlockModel) {
@@ -75,7 +75,7 @@ export async function serializeElement(
 
 export function serializeConnector(
   connector: ConnectorElementModel,
-  elements: BlockSuite.EdgelessModel[]
+  elements: LumenSuite.EdgelessModel[]
 ) {
   const sourceId = connector.source?.id;
   const targetId = connector.target?.id;
@@ -99,18 +99,18 @@ export function serializeConnector(
  * @param elements edgeless model list
  * @returns sorted edgeless model list
  */
-export function sortEdgelessElements(elements: BlockSuite.EdgelessModel[]) {
+export function sortEdgelessElements(elements: LumenSuite.EdgelessModel[]) {
   // Since each element has a parent-child relationship, and from-to connector relationship
   // the child element must be added before the parent element
   // and the connected elements must be added before the connector element
   // To achieve this, we do a post-order traversal of the tree
 
-  const result: BlockSuite.EdgelessModel[] = [];
+  const result: LumenSuite.EdgelessModel[] = [];
 
   const topElements = getTopElements(elements);
 
   // the connector element must be added after the connected elements
-  const moveConnectorToEnd = (elements: BlockSuite.EdgelessModel[]) => {
+  const moveConnectorToEnd = (elements: LumenSuite.EdgelessModel[]) => {
     const connectors = elements.filter(
       element => element instanceof ConnectorElementModel
     );
@@ -120,7 +120,7 @@ export function sortEdgelessElements(elements: BlockSuite.EdgelessModel[]) {
     return [...rest, ...connectors];
   };
 
-  const traverse = (element: BlockSuite.EdgelessModel) => {
+  const traverse = (element: LumenSuite.EdgelessModel) => {
     if (isGfxContainerElm(element)) {
       moveConnectorToEnd(element.childElements).forEach(child =>
         traverse(child)
@@ -224,7 +224,7 @@ export function mapMindmapIds(
 }
 
 export function getElementProps(
-  element: BlockSuite.SurfaceModel,
+  element: LumenSuite.SurfaceModel,
   ids: Map<string, string>
 ) {
   if (element instanceof ConnectorElementModel) {

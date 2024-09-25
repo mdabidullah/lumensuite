@@ -1,12 +1,12 @@
-import { openFileOrFiles } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { openFileOrFiles } from '@lumensuite/affine-shared/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import converter from 'xml-js';
 export async function importMindmap(bound) {
     const file = await openFileOrFiles({
         acceptType: 'MindMap',
     });
     if (!file) {
-        throw new BlockSuiteError(ErrorCode.UserAbortError, 'Aborted by user');
+        throw new LumenSuiteError(ErrorCode.UserAbortError, 'Aborted by user');
     }
     let result;
     if (file.name.endsWith('.mm')) {
@@ -16,7 +16,7 @@ export async function importMindmap(bound) {
         result = await parseOPMLFile(file);
     }
     else {
-        throw new BlockSuiteError(ErrorCode.ParsingError, 'Unsupported file type');
+        throw new LumenSuiteError(ErrorCode.ParsingError, 'Unsupported file type');
     }
     if (result) {
         result.xywh = bound.serialize();
@@ -51,13 +51,13 @@ async function parseMmFile(file) {
         };
         const result = traverse(map.node);
         if (!result) {
-            throw new BlockSuiteError(ErrorCode.ParsingError, 'Failed to parse mm file');
+            throw new LumenSuiteError(ErrorCode.ParsingError, 'Failed to parse mm file');
         }
         return result;
     }
     catch (e) {
         console.error(e);
-        throw new BlockSuiteError(ErrorCode.ParsingError, 'Failed to parse mm file');
+        throw new LumenSuiteError(ErrorCode.ParsingError, 'Failed to parse mm file');
     }
 }
 async function parseOPMLFile(file) {
@@ -80,13 +80,13 @@ async function parseOPMLFile(file) {
         };
         const result = traverse(opml.body.outline);
         if (!result) {
-            throw new BlockSuiteError(ErrorCode.ParsingError, 'Failed to parse OPML file');
+            throw new LumenSuiteError(ErrorCode.ParsingError, 'Failed to parse OPML file');
         }
         return result;
     }
     catch (e) {
         console.error(e);
-        throw new BlockSuiteError(ErrorCode.ParsingError, 'Failed to parse OPML file');
+        throw new LumenSuiteError(ErrorCode.ParsingError, 'Failed to parse OPML file');
     }
 }
 //# sourceMappingURL=import-mindmap.js.map

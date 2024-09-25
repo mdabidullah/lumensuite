@@ -1,4 +1,4 @@
-import { almostEqual } from '@blocksuite/global/utils';
+import { almostEqual } from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 import { AStarRunner } from '../utils/a-star.js';
 function mergePath(points) {

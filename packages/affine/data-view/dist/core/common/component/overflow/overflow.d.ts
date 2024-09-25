@@ -1,6 +1,6 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type PropertyValues, type TemplateResult } from 'lit';
-declare const Overflow_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const Overflow_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class Overflow extends Overflow_base {
     static styles: import("lit").CSSResult;
     adjustStyle(): void;

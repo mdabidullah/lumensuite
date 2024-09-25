@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { WithDisposable } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { WithDisposable } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

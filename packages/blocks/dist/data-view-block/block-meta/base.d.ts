@@ -1,6 +1,6 @@
-import type { ColumnMeta } from '@blocksuite/data-view';
-import type { Disposable } from '@blocksuite/global/utils';
-import type { Block, BlockModel } from '@blocksuite/store';
+import type { ColumnMeta } from '@lumensuite/data-view';
+import type { Disposable } from '@lumensuite/global/utils';
+import type { Block, BlockModel } from '@lumensuite/store';
 type PropertyMeta<T extends BlockModel = BlockModel, Value = unknown, ColumnData extends NonNullable<unknown> = NonNullable<unknown>> = {
     name: string;
     key: string;

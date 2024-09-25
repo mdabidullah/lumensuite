@@ -1,6 +1,6 @@
-import { textKeymap } from '@blocksuite/affine-components/rich-text';
-import { ParagraphBlockSchema, } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
+import { textKeymap } from '@lumensuite/affine-components/rich-text';
+import { ParagraphBlockSchema, } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
 import { paragraphKeymap } from './paragraph-keymap.js';
 export class ParagraphBlockService extends BlockService {
     constructor() {

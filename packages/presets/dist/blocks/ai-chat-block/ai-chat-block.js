@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockComponent } from '@blocksuite/block-std';
-import { Peekable } from '@blocksuite/blocks';
+import { BlockComponent } from '@lumensuite/block-std';
+import { Peekable } from '@lumensuite/blocks';
 import { computed } from '@lit-labs/preact-signals';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';

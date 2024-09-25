@@ -1,14 +1,14 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 
 import {
   CopyIcon,
   DatabaseTableViewIcon20,
   LinkedDocIcon,
-} from '@blocksuite/affine-components/icons';
-import { createSimplePortal } from '@blocksuite/affine-components/portal';
-import { toast } from '@blocksuite/affine-components/toast';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-components/icons';
+import { createSimplePortal } from '@lumensuite/affine-components/portal';
+import { toast } from '@lumensuite/affine-components/toast';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { html, type TemplateResult } from 'lit';
 
 import {

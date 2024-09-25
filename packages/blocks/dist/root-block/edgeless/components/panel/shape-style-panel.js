@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { GeneralStyleIcon, ScribbledStyleIcon, } from '@blocksuite/affine-components/icons';
-import { ShapeStyle } from '@blocksuite/affine-model';
+import { GeneralStyleIcon, ScribbledStyleIcon, } from '@lumensuite/affine-components/icons';
+import { ShapeStyle } from '@lumensuite/affine-model';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

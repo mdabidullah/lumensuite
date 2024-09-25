@@ -1,7 +1,7 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import { nothing } from 'lit';
 
 import type { BlockService } from '../../extension/index.js';
@@ -39,7 +39,7 @@ export abstract class GfxBlockComponent<
     const { xywh$ } = this.model;
 
     if (!xywh$) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.GfxBlockElementError,
         `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`
       );
@@ -127,7 +127,7 @@ export function toGfxBlockComponent<
       }>;
 
       if (!xywh$) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.GfxBlockElementError,
           `Error on rendering '${this.model.flavour}': Gfx block's model should have 'xywh' property.`
         );

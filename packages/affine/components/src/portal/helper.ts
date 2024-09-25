@@ -1,15 +1,15 @@
-import { assertExists, Slot } from '@blocksuite/global/utils';
 import {
   autoUpdate,
   computePosition,
   type ComputePositionReturn,
 } from '@floating-ui/dom';
+import { assertExists, Slot } from '@lumensuite/global/utils';
 import { render } from 'lit';
 
 import type { AdvancedPortalOptions, PortalOptions } from './types.js';
 
 /**
- * Similar to `<blocksuite-portal>`, but only renders once when called.
+ * Similar to `<lumensuite-portal>`, but only renders once when called.
  *
  * The template should be a **static** template since it will not be re-rendered unless `updatePortal` is called.
  *
@@ -25,7 +25,7 @@ export function createSimplePortal({
 }: PortalOptions) {
   const portalRoot = document.createElement('div');
   if (identifyWrapper) {
-    portalRoot.classList.add('blocksuite-portal');
+    portalRoot.classList.add('lumensuite-portal');
   }
   if (shadowDom) {
     portalRoot.attachShadow({

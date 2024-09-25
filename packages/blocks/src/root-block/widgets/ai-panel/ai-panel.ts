@@ -1,11 +1,5 @@
-import type { BaseSelection } from '@blocksuite/block-std';
+import type { BaseSelection } from '@lumensuite/block-std';
 
-import {
-  getPageRootByElement,
-  stopPropagation,
-} from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
 import {
   autoPlacement,
   autoUpdate,
@@ -16,6 +10,12 @@ import {
   type Rect,
   shift,
 } from '@floating-ui/dom';
+import {
+  getPageRootByElement,
+  stopPropagation,
+} from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

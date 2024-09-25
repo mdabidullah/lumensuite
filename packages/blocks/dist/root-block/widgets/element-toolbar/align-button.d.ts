@@ -1,6 +1,6 @@
 import { LitElement, nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const EdgelessAlignButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessAlignButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessAlignButton extends EdgelessAlignButton_base {
     private get elements();
     private _align;
@@ -22,6 +22,6 @@ declare global {
         'edgeless-align-button': EdgelessAlignButton;
     }
 }
-export declare function renderAlignButton(edgeless: EdgelessRootBlockComponent, elements: BlockSuite.EdgelessModel[]): import("lit").TemplateResult<1> | typeof nothing;
+export declare function renderAlignButton(edgeless: EdgelessRootBlockComponent, elements: LumenSuite.EdgelessModel[]): import("lit").TemplateResult<1> | typeof nothing;
 export {};
 //# sourceMappingURL=align-button.d.ts.map

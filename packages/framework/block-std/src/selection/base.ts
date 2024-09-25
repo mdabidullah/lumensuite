@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 type SelectionConstructor<T = unknown> = {
   type: string;
@@ -21,9 +21,9 @@ export abstract class BaseSelection {
     return (this.constructor as SelectionConstructor).group;
   }
 
-  get type(): BlockSuite.SelectionType {
+  get type(): LumenSuite.SelectionType {
     return (this.constructor as SelectionConstructor)
-      .type as BlockSuite.SelectionType;
+      .type as LumenSuite.SelectionType;
   }
 
   constructor({ blockId }: BaseSelectionOptions) {
@@ -31,7 +31,7 @@ export abstract class BaseSelection {
   }
 
   static fromJSON(_: Record<string, unknown>): BaseSelection {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.SelectionError,
       'You must override this method'
     );
@@ -39,9 +39,9 @@ export abstract class BaseSelection {
 
   abstract equals(other: BaseSelection): boolean;
 
-  is<T extends BlockSuite.SelectionType>(
+  is<T extends LumenSuite.SelectionType>(
     type: T
-  ): this is BlockSuite.SelectionInstance[T] {
+  ): this is LumenSuite.SelectionInstance[T] {
     return this.type === type;
   }
 

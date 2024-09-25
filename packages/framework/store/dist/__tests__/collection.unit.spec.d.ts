@@ -1,7 +1,7 @@
 import type { BlockModel, BlockSchemaType } from '../index.js';
 export declare const BlockSchemas: BlockSchemaType[];
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:page': BlockModel;
             'affine:paragraph': BlockModel;

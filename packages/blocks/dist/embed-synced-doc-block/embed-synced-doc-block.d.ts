@@ -1,5 +1,5 @@
-import { type DocMode, type EmbedSyncedDocModel } from '@blocksuite/affine-model';
-import { type EditorHost } from '@blocksuite/block-std';
+import { type DocMode, type EmbedSyncedDocModel } from '@lumensuite/affine-model';
+import { type EditorHost } from '@lumensuite/block-std';
 import { type PropertyValues } from 'lit';
 import type { EmbedSyncedDocCard } from './components/embed-synced-doc-card.js';
 import type { EmbedSyncedDocBlockService } from './embed-synced-doc-service.js';
@@ -9,7 +9,7 @@ export declare class EmbedSyncedDocBlockComponent extends EmbedBlockComponent<Em
     static styles: import("lit").CSSResult;
     private _initEdgelessFitEffect;
     private _pageFilter;
-    protected _buildPreviewSpec: (name: "page:preview" | "edgeless:preview") => import("@blocksuite/block-std").ExtensionType[];
+    protected _buildPreviewSpec: (name: "page:preview" | "edgeless:preview") => import("@lumensuite/block-std").ExtensionType[];
     protected _renderSyncedView: () => import("lit").TemplateResult<1>;
     protected cardStyleMap: import("lit/async-directive.js").DirectiveResult<typeof import("lit/directives/style-map.js").StyleMapDirective>;
     convertToCard: () => void;
@@ -27,7 +27,7 @@ export declare class EmbedSyncedDocBlockComponent extends EmbedBlockComponent<Em
     get docUpdatedAt(): Date;
     get editorMode(): DocMode;
     protected get isPageMode(): boolean;
-    get syncedDoc(): import("@blocksuite/store").Doc | null;
+    get syncedDoc(): import("@lumensuite/store").Doc | null;
     private _checkCycle;
     private _isClickAtBorder;
     private _load;

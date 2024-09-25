@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { SmallScissorsIcon } from '@blocksuite/affine-components/icons';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { WithDisposable } from '@blocksuite/block-std';
-import { deserializeXYWH, DisposableGroup, Point, serializeXYWH, } from '@blocksuite/global/utils';
+import { SmallScissorsIcon } from '@lumensuite/affine-components/icons';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { WithDisposable } from '@lumensuite/block-std';
+import { deserializeXYWH, DisposableGroup, Point, serializeXYWH, } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

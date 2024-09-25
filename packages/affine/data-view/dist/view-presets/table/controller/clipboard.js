@@ -1,6 +1,6 @@
-import { toast } from '@blocksuite/affine-components/toast';
+import { toast } from '@lumensuite/affine-components/toast';
 import { TableAreaSelection, TableRowSelection, } from '../types.js';
-const BLOCKSUITE_DATABASE_TABLE = 'blocksuite/database/table';
+const BLOCKSUITE_DATABASE_TABLE = 'lumensuite/database/table';
 const TEXT = 'text/plain';
 export class TableClipboardController {
     get readonly() {

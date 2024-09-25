@@ -1,4 +1,4 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
 export declare const BLOCK_CHILDREN_CONTAINER_PADDING_LEFT = 24;
 export declare const EDGELESS_BLOCK_CHILD_PADDING = 24;
 export declare const EDGELESS_BLOCK_CHILD_BORDER_WIDTH = 2;

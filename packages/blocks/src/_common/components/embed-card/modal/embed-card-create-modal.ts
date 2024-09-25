@@ -1,10 +1,10 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { toast } from '@blocksuite/affine-components/toast';
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { assertExists, Bound, Vec } from '@blocksuite/global/utils';
+import { toast } from '@lumensuite/affine-components/toast';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { assertExists, Bound, Vec } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

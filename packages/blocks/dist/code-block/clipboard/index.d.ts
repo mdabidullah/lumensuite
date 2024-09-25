@@ -1,5 +1,5 @@
-import { type BlockComponent, type UIEventHandler } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { type BlockComponent, type UIEventHandler } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 export declare class CodeClipboardController {
     private _clipboard;
     protected _disposables: DisposableGroup;

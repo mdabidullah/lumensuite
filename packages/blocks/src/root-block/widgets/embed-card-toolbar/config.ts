@@ -1,14 +1,14 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 
 import {
   CopyIcon,
   DeleteIcon,
   DuplicateIcon,
   RefreshIcon,
-} from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { getBlockProps } from '@blocksuite/affine-shared/utils';
-import { Slice } from '@blocksuite/store';
+} from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { getBlockProps } from '@lumensuite/affine-shared/utils';
+import { Slice } from '@lumensuite/store';
 
 import type { EmbedCardToolbarContext } from './context.js';
 
@@ -49,7 +49,7 @@ export const BUILT_IN_GROUPS: MenuItemGroup<EmbedCardToolbarContext>[] = [
           const parent = doc.getParent(model);
           const index = parent?.children.indexOf(model);
           doc.addBlock(
-            model.flavour as BlockSuite.Flavour,
+            model.flavour as LumenSuite.Flavour,
             duplicateProps,
             parent,
             index

@@ -1,11 +1,11 @@
+import { computed } from '@lit-labs/preact-signals';
 import {
   Heading1Icon,
   LinkIcon,
   TextIcon,
-} from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { SignalWatcher } from '@blocksuite/block-std';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 

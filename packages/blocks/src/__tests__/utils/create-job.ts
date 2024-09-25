@@ -3,7 +3,7 @@ import {
   Job,
   type JobMiddleware,
   Schema,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { AffineSchemas } from '../../schemas.js';
 

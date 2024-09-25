@@ -1,20 +1,20 @@
-import type { BrushElementModel } from '@blocksuite/affine-model';
-import { LineWidth } from '@blocksuite/affine-model';
+import type { BrushElementModel } from '@lumensuite/affine-model';
+import { LineWidth } from '@lumensuite/affine-model';
 import { LitElement, nothing } from 'lit';
 import type { EdgelessColorPickerButton } from '../../edgeless/components/color-picker/button.js';
 import type { PickColorEvent } from '../../edgeless/components/color-picker/types.js';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import '../../edgeless/components/panel/line-width-panel.js';
-declare const EdgelessChangeBrushButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeBrushButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeBrushButton extends EdgelessChangeBrushButton_base {
     private _setBrushColor;
     private _setLineWidth;
     pickColor: (event: PickColorEvent) => void;
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     get selectedColor(): string;
     get selectedSize(): LineWidth;
     get service(): import("../../index.js").EdgelessRootService;
-    get surface(): import("@blocksuite/affine-block-surface").SurfaceBlockComponent;
+    get surface(): import("@lumensuite/affine-block-surface").SurfaceBlockComponent;
     private _setBrushProp;
     render(): import("lit").TemplateResult<1>;
     private accessor _selectedColor;

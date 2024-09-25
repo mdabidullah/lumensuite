@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { AddTextIcon, ChangeShapeIcon, GeneralStyleIcon, ScribbledStyleIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
-import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, FontFamily, getShapeName, getShapeRadius, getShapeType, LineWidth, SHAPE_FILL_COLORS, SHAPE_STROKE_COLORS, ShapeStyle, StrokeStyle, } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { countBy, maxBy } from '@blocksuite/global/utils';
+import { AddTextIcon, ChangeShapeIcon, GeneralStyleIcon, ScribbledStyleIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
+import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, FontFamily, getShapeName, getShapeRadius, getShapeType, LineWidth, SHAPE_FILL_COLORS, SHAPE_STROKE_COLORS, ShapeStyle, StrokeStyle, } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { countBy, maxBy } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';

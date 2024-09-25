@@ -1,6 +1,6 @@
-import { ColorScheme } from '@blocksuite/affine-model';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { DisposableGroup, getBoundsWithRotation, intersects, last, Slot, } from '@blocksuite/global/utils';
+import { ColorScheme } from '@lumensuite/affine-model';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { DisposableGroup, getBoundsWithRotation, intersects, last, Slot, } from '@lumensuite/global/utils';
 import { SurfaceElementModel } from '../element-model/base.js';
 import { RoughCanvas } from '../utils/rough/canvas.js';
 /**

@@ -1,10 +1,10 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { uuidv4 } from 'lib0/random.js';
 import * as Y from 'yjs';
 
 import type { BlockModel } from '../../schema/base.js';
 import type { IdGenerator } from '../../utils/id-generator.js';
-import type { AwarenessStore, BlockSuiteDoc } from '../../yjs/index.js';
+import type { AwarenessStore, LumenSuiteDoc } from '../../yjs/index.js';
 import type { DocCollection } from '../collection.js';
 import type { YBlock } from './index.js';
 import type { Query } from './query.js';
@@ -26,7 +26,7 @@ export type BlockProps = BlockSysProps & Record<string, unknown>;
 type DocOptions = {
   id: string;
   collection: DocCollection;
-  doc: BlockSuiteDoc;
+  doc: LumenSuiteDoc;
   awarenessStore: AwarenessStore;
   idGenerator?: IdGenerator;
 };
@@ -110,7 +110,7 @@ export class BlockCollection {
 
   readonly id: string;
 
-  readonly rootDoc: BlockSuiteDoc;
+  readonly rootDoc: LumenSuiteDoc;
 
   readonly slots = {
     historyUpdated: new Slot(),
@@ -412,7 +412,7 @@ export class BlockCollection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {}
 
     type Flavour = string & keyof BlockModels;

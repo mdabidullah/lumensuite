@@ -1,10 +1,10 @@
-import { CanvasElementType, CommonUtils, compareLayer, SortOrder, SurfaceGroupLikeModel, TextUtils, } from '@blocksuite/affine-block-surface';
-import { BookmarkStyles } from '@blocksuite/affine-model';
-import { EmbedOptionProvider, QuickSearchProvider, TelemetryProvider, } from '@blocksuite/affine-shared/services';
-import { isInsidePageEditor, isUrlInClipboard, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, assertType, Bound, DisposableGroup, getCommonBound, nToLast, Vec, } from '@blocksuite/global/utils';
-import { BlockSnapshotSchema, DocCollection, fromJSON, Job, } from '@blocksuite/store';
+import { CanvasElementType, CommonUtils, compareLayer, SortOrder, SurfaceGroupLikeModel, TextUtils, } from '@lumensuite/affine-block-surface';
+import { BookmarkStyles } from '@lumensuite/affine-model';
+import { EmbedOptionProvider, QuickSearchProvider, TelemetryProvider, } from '@lumensuite/affine-shared/services';
+import { isInsidePageEditor, isUrlInClipboard, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists, assertType, Bound, DisposableGroup, getCommonBound, nToLast, Vec, } from '@lumensuite/global/utils';
+import { BlockSnapshotSchema, DocCollection, fromJSON, Job, } from '@lumensuite/store';
 import DOMPurify from 'dompurify';
 import { CANVAS_EXPORT_IGNORE_TAGS, EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '../../../_common/consts.js';
 import { getRootByEditorHost } from '../../../_common/utils/query.js';
@@ -17,7 +17,7 @@ import { getSortedCloneElements, serializeElement, } from '../utils/clone-utils.
 import { DEFAULT_NOTE_HEIGHT, DEFAULT_NOTE_WIDTH } from '../utils/consts.js';
 import { deleteElements } from '../utils/crud.js';
 import { isAttachmentBlock, isCanvasElementWithText, isImageBlock, isTopLevelBlock, } from '../utils/query.js';
-const BLOCKSUITE_SURFACE = 'blocksuite/surface';
+const BLOCKSUITE_SURFACE = 'lumensuite/surface';
 const IMAGE_PNG = 'image/png';
 const { GROUP, MINDMAP, CONNECTOR } = CanvasElementType;
 const IMAGE_PADDING = 5; // for rotated shapes some padding is needed
@@ -591,7 +591,7 @@ export class EdgelessClipboardController extends PageClipboard {
         const _drawTopLevelBlock = async (block, isInFrame = false) => {
             const blockComponent = this.std.view.getBlock(block.id);
             if (!blockComponent) {
-                throw new BlockSuiteError(ErrorCode.EdgelessExportError, 'Could not find edgeless block component.');
+                throw new LumenSuiteError(ErrorCode.EdgelessExportError, 'Could not find edgeless block component.');
             }
             const blockBound = Bound.deserialize(block.xywh);
             const canvasData = await html2canvas(blockComponent, html2canvasOption);

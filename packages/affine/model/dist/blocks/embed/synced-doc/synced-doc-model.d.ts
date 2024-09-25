@@ -7,12 +7,12 @@ export type EmbedSyncedDocBlockProps = {
     scale?: number;
 };
 declare const EmbedSyncedDocModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<EmbedSyncedDocBlockProps & import("../../../utils/gfx-compatible.js").GfxCompatibleProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<EmbedSyncedDocBlockProps & import("../../../utils/gfx-compatible.js").GfxCompatibleProps>;
 };
 export declare class EmbedSyncedDocModel extends EmbedSyncedDocModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-synced-doc': EmbedSyncedDocModel;
         }

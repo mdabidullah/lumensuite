@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { serializeYDoc, yDocToJSXNode } from '../../utils/jsx.js';
 import { addOnFactory } from './shared.js';
 export const test = addOnFactory(originalClass => class extends originalClass {

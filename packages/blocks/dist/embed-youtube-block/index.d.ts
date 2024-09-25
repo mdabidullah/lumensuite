@@ -4,7 +4,7 @@ export * from './embed-youtube-model.js';
 export * from './embed-youtube-service.js';
 export * from './embed-youtube-spec.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:embed-youtube': EmbedYoutubeBlockService;
         }

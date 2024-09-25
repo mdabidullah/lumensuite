@@ -32,14 +32,14 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { AttachmentIcon16, getAttachmentFileIcons, } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { AttachmentBlockStyles, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { humanFileSize } from '@blocksuite/affine-shared/utils';
-import { Slice } from '@blocksuite/store';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { AttachmentIcon16, getAttachmentFileIcons, } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { AttachmentBlockStyles, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { humanFileSize } from '@lumensuite/affine-shared/utils';
+import { Slice } from '@lumensuite/store';
 import { flip, offset } from '@floating-ui/dom';
 import { html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
@@ -191,7 +191,7 @@ let AttachmentBlockComponent = (() => {
                     this.refreshData();
                 }
             });
-            // Workaround for https://github.com/toeverything/blocksuite/issues/4724
+            // Workaround for https://github.com/toeverything/lumensuite/issues/4724
             this.disposables.add(ThemeObserver.subscribe(() => this.requestUpdate()));
             // this is required to prevent iframe from capturing pointer events
             this.disposables.add(this.std.selection.slots.changed.on(() => {

@@ -2,7 +2,7 @@ import { LitElement } from 'lit';
 import type { EdgelessTool } from '../../../types.js';
 import '../../buttons/tool-icon-button.js';
 import './frame-menu.js';
-declare const EdgelessFrameToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
+declare const EdgelessFrameToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
 export declare class EdgelessFrameToolButton extends EdgelessFrameToolButton_base {
     static styles: import("lit").CSSResult;
     type: EdgelessTool['type'];

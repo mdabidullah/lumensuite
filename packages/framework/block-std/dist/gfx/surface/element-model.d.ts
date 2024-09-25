@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { IVec, SerializedXYWH, XYWH } from '@blocksuite/global/utils';
-import { Bound, DisposableGroup, PointLocation } from '@blocksuite/global/utils';
-import { type Y } from '@blocksuite/store';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { IVec, SerializedXYWH, XYWH } from '@lumensuite/global/utils';
+import { Bound, DisposableGroup, PointLocation } from '@lumensuite/global/utils';
+import { type Y } from '@lumensuite/store';
 import type { GfxModel } from '../gfx-block-model.js';
 import type { SurfaceBlockModel } from './surface-model.js';
 export type BaseElementProps = {

@@ -1,4 +1,4 @@
-import { ShapeType, } from '@blocksuite/blocks';
+import { ShapeType, } from '@lumensuite/blocks';
 import { beforeEach, describe, expect, test } from 'vitest';
 import { getDocRootBlock } from '../utils/edgeless.js';
 import { setupEditor } from '../utils/setup.js';
@@ -6,7 +6,7 @@ describe('apply last props', () => {
     let edgelessRoot;
     let service;
     beforeEach(async () => {
-        sessionStorage.removeItem('blocksuite:prop:record');
+        sessionStorage.removeItem('lumensuite:prop:record');
         const cleanup = await setupEditor('edgeless');
         edgelessRoot = getDocRootBlock(window.doc, window.editor, 'edgeless');
         service = edgelessRoot.service;

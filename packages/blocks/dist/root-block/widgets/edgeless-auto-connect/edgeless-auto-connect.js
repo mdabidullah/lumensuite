@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { AutoConnectLeftIcon, AutoConnectRightIcon, HiddenIcon, SmallDocIcon, } from '@blocksuite/affine-components/icons';
-import { FrameBlockModel, NoteBlockModel, } from '@blocksuite/affine-model';
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { matchFlavours, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { AutoConnectLeftIcon, AutoConnectRightIcon, HiddenIcon, SmallDocIcon, } from '@lumensuite/affine-components/icons';
+import { FrameBlockModel, NoteBlockModel, } from '@lumensuite/affine-model';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { matchFlavours, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

@@ -1,6 +1,6 @@
-import type { BaseTextAttributes, DeltaInsert } from '@blocksuite/inline';
+import type { BaseTextAttributes, DeltaInsert } from '@lumensuite/inline';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import { type Signal, signal } from '@preact/signals-core';
 import * as Y from 'yjs';
 
@@ -86,7 +86,7 @@ export class Text {
   private _transact(callback: () => void) {
     const doc = this._yText.doc;
     if (!doc) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to transact text! yText is not attached to a doc'
       );
@@ -124,7 +124,7 @@ export class Text {
       return;
     }
     if (index < 0 || length < 0 || index + length > this._yText.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to delete text! Index or length out of range, index: ' +
           index +
@@ -145,7 +145,7 @@ export class Text {
       return;
     }
     if (index < 0 || length < 0 || index + length > this._yText.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to format text! Index or length out of range, index: ' +
           index +
@@ -165,7 +165,7 @@ export class Text {
       return;
     }
     if (index < 0 || index > this._yText.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to insert text! Index or length out of range, index: ' +
           index +
@@ -199,7 +199,7 @@ export class Text {
     attributes?: BaseTextAttributes
   ) {
     if (index < 0 || length < 0 || index + length > this._yText.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to replace text! The length of the text is' +
           this._yText.length +
@@ -287,7 +287,7 @@ export class Text {
    */
   split(index: number, length = 0): Text {
     if (index < 0 || length < 0 || index + length > this._yText.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'Failed to split text! Index or length out of range, index: ' +
           index +
@@ -299,7 +299,7 @@ export class Text {
     }
     const deltas = this._yText.toDelta();
     if (!(deltas instanceof Array)) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ReactiveProxyError,
         'This text cannot be split because we failed to get the deltas of it.'
       );
@@ -320,7 +320,7 @@ export class Text {
         }
         tmpIndex += insert.length;
       } else {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.ReactiveProxyError,
           'This text cannot be split because it contains non-string insert.'
         );

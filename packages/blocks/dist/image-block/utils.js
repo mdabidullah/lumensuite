@@ -1,6 +1,6 @@
-import { toast } from '@blocksuite/affine-components/toast';
-import { downloadBlob, humanFileSize, withTempBlobData, } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { toast } from '@lumensuite/affine-components/toast';
+import { downloadBlob, humanFileSize, withTempBlobData, } from '@lumensuite/affine-shared/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { readImageSize } from '../root-block/edgeless/components/utils.js';
 import { transformModel } from '../root-block/utils/operations/model.js';
 const MAX_RETRY_COUNT = 3;
@@ -185,7 +185,7 @@ export async function copyImageBlob(block) {
         if (window.apis?.clipboard?.copyAsImageFromString) {
             const dataURL = await convertToString(blob);
             if (!dataURL)
-                throw new BlockSuiteError(ErrorCode.DefaultRuntimeError, 'Cant convert a blob to data URL.');
+                throw new LumenSuiteError(ErrorCode.DefaultRuntimeError, 'Cant convert a blob to data URL.');
             // @ts-ignore
             await window.apis.clipboard?.copyAsImageFromString(dataURL);
         }

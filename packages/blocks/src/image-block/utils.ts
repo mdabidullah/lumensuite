@@ -2,17 +2,17 @@ import type {
   AttachmentBlockProps,
   ImageBlockModel,
   ImageBlockProps,
-} from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { toast } from '@blocksuite/affine-components/toast';
+import { toast } from '@lumensuite/affine-components/toast';
 import {
   downloadBlob,
   humanFileSize,
   withTempBlobData,
-} from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+} from '@lumensuite/affine-shared/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { ImageBlockComponent } from './image-block.js';
 import type { ImageEdgelessBlockComponent } from './image-edgeless-block.js';
@@ -243,7 +243,7 @@ export async function copyImageBlob(
     if (window.apis?.clipboard?.copyAsImageFromString) {
       const dataURL = await convertToString(blob);
       if (!dataURL)
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.DefaultRuntimeError,
           'Cant convert a blob to data URL.'
         );

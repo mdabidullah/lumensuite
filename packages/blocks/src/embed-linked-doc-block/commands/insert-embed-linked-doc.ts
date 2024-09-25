@@ -1,5 +1,5 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { Command } from '@blocksuite/block-std';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { Command } from '@lumensuite/block-std';
 
 import { insertEmbedCard } from '../../_common/embed-block-helper/insert-embed-card.js';
 
@@ -17,7 +17,7 @@ export const insertEmbedLinkedDocCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       insertEmbedLinkedDoc: typeof insertEmbedLinkedDocCommand;
     }

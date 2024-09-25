@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { LineWidth } from '@blocksuite/affine-model';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
+import { LineWidth } from '@lumensuite/affine-model';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, queryAll } from 'lit/decorators.js';
 export class LineWidthEvent extends Event {

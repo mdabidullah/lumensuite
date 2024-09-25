@@ -1,6 +1,6 @@
-import { BLOCK_ID_ATTR, } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { INLINE_ROOT_ATTR, } from '@blocksuite/inline';
+import { BLOCK_ID_ATTR, } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { INLINE_ROOT_ATTR, } from '@lumensuite/inline';
 import { FORMAT_BLOCK_SUPPORT_FLAVOURS, FORMAT_NATIVE_SUPPORT_FLAVOURS, FORMAT_TEXT_SUPPORT_FLAVOURS, } from './consts.js';
 function isActive(std, key) {
     const [result] = std.command.chain().isTextStyleActive({ key }).run();

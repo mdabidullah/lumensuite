@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { isGfxBlockComponent, ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
+import { isGfxBlockComponent, ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
 import { html, nothing } from 'lit';
 import { customElement, property, queryAsync } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

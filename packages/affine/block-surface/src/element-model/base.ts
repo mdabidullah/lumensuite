@@ -1,4 +1,4 @@
-import type { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
+import type { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
 
 import type { OmitFunctionsAndKeysAndReadOnly } from './utility-type.js';
 
@@ -14,4 +14,4 @@ export type ModelToProps<
 export {
   GfxGroupLikeElementModel as SurfaceGroupLikeModel,
   GfxPrimitiveElementModel as SurfaceElementModel,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';

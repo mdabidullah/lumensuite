@@ -1,5 +1,5 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 import { ImageBlockTransformer } from './image-transformer.js';
 export type ImageBlockProps = {
     caption?: string;
@@ -14,7 +14,7 @@ export type ImageBlockProps = {
 export declare const ImageBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<ImageBlockProps>;
+        props: import("@lumensuite/store").PropsGetter<ImageBlockProps>;
         flavour: "affine:image";
     } & {
         version: number;
@@ -24,12 +24,12 @@ export declare const ImageBlockSchema: {
     transformer?: (() => ImageBlockTransformer) | undefined;
 };
 declare const ImageBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<ImageBlockProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<ImageBlockProps>;
 };
 export declare class ImageBlockModel extends ImageBlockModel_base implements GfxElementGeometry {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:image': ImageBlockModel;
         }

@@ -1,5 +1,5 @@
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { assertType, Bound, DisposableGroup, last, nToLast, Slot, } from '@blocksuite/global/utils';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { assertType, Bound, DisposableGroup, last, nToLast, Slot, } from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 import { compare, getElementIndex, getLayerEndZIndex, insertToOrderedArray, isInRange, removeFromOrderedArray, SortOrder, ungroupIndex, updateLayersZIndex, } from '../utils/layer.js';
 import { GfxPrimitiveElementModel, isGfxContainerElm, } from './surface/element-model.js';

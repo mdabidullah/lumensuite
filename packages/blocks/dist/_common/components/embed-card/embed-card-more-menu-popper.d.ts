@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import type { EmbedToolbarBlockComponent } from './type.js';
 import './../button.js';
-declare const EmbedCardMoreMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EmbedCardMoreMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EmbedCardMoreMenu extends EmbedCardMoreMenu_base {
     static styles: import("lit").CSSResult;
     private get _doc();

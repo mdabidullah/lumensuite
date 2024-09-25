@@ -1,8 +1,8 @@
-import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedHtmlModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel } from '@blocksuite/affine-model';
+import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedHtmlModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel } from '@lumensuite/affine-model';
 import { LitElement, nothing, type TemplateResult } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import '../../edgeless/components/panel/card-style-panel.js';
-declare const EdgelessChangeEmbedCardButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeEmbedCardButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeEmbedCardButton extends EdgelessChangeEmbedCardButton_base {
     static styles: import("lit").CSSResult;
     private _convertToCardView;

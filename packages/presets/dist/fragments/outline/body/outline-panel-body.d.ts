@@ -1,11 +1,11 @@
-import type { EdgelessRootBlockComponent } from '@blocksuite/blocks';
-import type { Doc } from '@blocksuite/store';
+import type { EdgelessRootBlockComponent } from '@lumensuite/blocks';
+import type { Doc } from '@lumensuite/store';
 import { LitElement, type PropertyValues } from 'lit';
 import type { AffineEditorContainer } from '../../../editors/editor-container.js';
 import '../card/outline-card.js';
 import './outline-notice.js';
 export declare const AFFINE_OUTLINE_PANEL_BODY = "affine-outline-panel-body";
-declare const OutlinePanelBody_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const OutlinePanelBody_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class OutlinePanelBody extends OutlinePanelBody_base {
     static styles: import("lit").CSSResult;
     private _activeHeadingId$;

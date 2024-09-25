@@ -3,8 +3,8 @@ import type {
   EdgelessRootBlockComponent,
   PageRootBlockComponent,
   SurfaceBlockComponent,
-} from '@blocksuite/blocks';
-import type { Doc } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import type { Doc } from '@lumensuite/store';
 
 import type { AffineEditorContainer } from '../../index.js';
 

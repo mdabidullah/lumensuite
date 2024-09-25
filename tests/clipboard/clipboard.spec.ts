@@ -130,7 +130,7 @@ test(scoped`split block when paste`, async ({ page }) => {
   assertExists(bottomRight789);
   await dragBetweenCoords(page, topLeft123, bottomRight789);
 
-  // FIXME see https://github.com/toeverything/blocksuite/pull/878
+  // FIXME see https://github.com/toeverything/lumensuite/pull/878
   // await pasteContent(page, clipData);
   // await assertRichTexts(page, ['aaa', 'bbc', 'text', 'h1']);
 });
@@ -279,7 +279,7 @@ test(scoped`pasting internal url with params`, async ({ page }) => {
 test(scoped`paste parent block`, async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/3153',
+    description: 'https://github.com/toeverything/lumensuite/issues/3153',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);

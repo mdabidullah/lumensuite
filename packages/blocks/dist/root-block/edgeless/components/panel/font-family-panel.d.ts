@@ -1,4 +1,4 @@
-import { FontFamily } from '@blocksuite/affine-model';
+import { FontFamily } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
 export declare class EdgelessFontFamilyPanel extends LitElement {
     static styles: import("lit").CSSResult;

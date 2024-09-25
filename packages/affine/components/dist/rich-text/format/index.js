@@ -1,4 +1,4 @@
-import { getTextSelectionCommand } from '@blocksuite/affine-shared/commands';
+import { getTextSelectionCommand } from '@lumensuite/affine-shared/commands';
 import { deleteTextCommand } from './delete-text.js';
 export { textFormatConfigs } from './config.js';
 import { formatBlockCommand } from './format-block.js';

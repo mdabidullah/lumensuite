@@ -1,17 +1,17 @@
-import type { NoteBlockModel, RootBlockModel } from '@blocksuite/affine-model';
-import type { Viewport } from '@blocksuite/affine-shared/types';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { BlockModel, Text } from '@blocksuite/store';
+import type { NoteBlockModel, RootBlockModel } from '@lumensuite/affine-model';
+import type { Viewport } from '@lumensuite/affine-shared/types';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { BlockModel, Text } from '@lumensuite/store';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { NoteDisplayMode } from '@blocksuite/affine-model';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
 import {
   focusTitle,
   getDocTitleInlineEditor,
   getScrollContainer,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { BlockComponent } from '@blocksuite/block-std';
+} from '@lumensuite/affine-shared/utils';
+import { BlockComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

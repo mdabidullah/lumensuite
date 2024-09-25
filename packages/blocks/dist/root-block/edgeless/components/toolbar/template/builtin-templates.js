@@ -1,4 +1,4 @@
-import { keys } from '@blocksuite/global/utils';
+import { keys } from '@lumensuite/global/utils';
 export const templates = [];
 function lcs(text1, text2) {
     const dp = Array.from({

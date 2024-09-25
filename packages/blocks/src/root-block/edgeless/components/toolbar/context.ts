@@ -1,5 +1,5 @@
-import type { ColorScheme } from '@blocksuite/affine-model';
-import type { Slot } from '@blocksuite/store';
+import type { ColorScheme } from '@lumensuite/affine-model';
+import type { Slot } from '@lumensuite/store';
 
 import { createContext } from '@lit/context';
 

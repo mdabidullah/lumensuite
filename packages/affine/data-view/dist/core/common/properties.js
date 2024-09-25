@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { createPopup } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@blocksuite/block-std';
+import { createPopup } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@lumensuite/block-std';
 import { ArrowLeftBigIcon, InvisibleIcon, ViewIcon, } from '@blocksuite/icons/lit';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';

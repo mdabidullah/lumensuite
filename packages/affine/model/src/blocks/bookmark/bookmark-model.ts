@@ -1,7 +1,7 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 import type { EmbedCardStyle, LinkPreviewData } from '../../utils/index.js';
 
@@ -64,7 +64,7 @@ export class BookmarkBlockModel
   implements GfxElementGeometry {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:bookmark': BookmarkBlockModel;
     }

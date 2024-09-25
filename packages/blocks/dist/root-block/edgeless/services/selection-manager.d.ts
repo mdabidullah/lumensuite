@@ -1,8 +1,8 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { CursorSelection, SurfaceSelection } from '@blocksuite/block-std';
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { CursorSelection, SurfaceSelection } from '@lumensuite/block-std';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 import type { EdgelessRootService } from '../edgeless-root-service.js';
 export interface EdgelessSelectionState {
     /**
@@ -44,17 +44,17 @@ export declare class EdgelessSelectionManager {
     get cursorSelection(): CursorSelection | null;
     get editing(): boolean;
     get empty(): boolean;
-    get firstElement(): import("@blocksuite/block-std/gfx").GfxModel;
+    get firstElement(): import("@lumensuite/block-std/gfx").GfxModel;
     get inoperable(): boolean;
     get lastSurfaceSelections(): SurfaceSelection[];
     get remoteCursorSelectionMap(): Map<number, CursorSelection>;
     get remoteSelectedSet(): Set<string>;
     get remoteSurfaceSelectionsMap(): Map<number, SurfaceSelection[]>;
-    get selectedBound(): import("@blocksuite/global/utils").Bound;
-    get selectedElements(): import("@blocksuite/block-std/gfx").GfxModel[];
+    get selectedBound(): import("@lumensuite/global/utils").Bound;
+    get selectedElements(): import("@lumensuite/block-std/gfx").GfxModel[];
     get selectedIds(): string[];
     get selectedSet(): Set<string>;
-    get stdSelectionManager(): import("@blocksuite/block-std").SelectionManager;
+    get stdSelectionManager(): import("@lumensuite/block-std").SelectionManager;
     get surfaceSelections(): SurfaceSelection[];
     constructor(service: EdgelessRootService);
     clear(): void;

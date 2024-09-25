@@ -1,5 +1,5 @@
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, type PropertyValues, unsafeCSS } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

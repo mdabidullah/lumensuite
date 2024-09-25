@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
 import { signal } from '@preact/signals-core';
 import { syncBlockProps } from '../../utils/utils.js';
 import { Block } from './block/index.js';
@@ -232,7 +232,7 @@ export class Doc {
     }
     addBlock(flavour, blockProps = {}, parent, parentIndex) {
         if (this.readonly) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'cannot modify data in readonly mode');
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'cannot modify data in readonly mode');
         }
         const id = blockProps.id ?? this._blockCollection.generateBlockId();
         this.transact(() => {
@@ -385,7 +385,7 @@ export class Doc {
         }
         const yBlock = this._yBlocks.get(model.id);
         if (!yBlock) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, `updating block: ${model.id} not found`);
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, `updating block: ${model.id} not found`);
         }
         const block = this.getBlock(model.id);
         if (!block)
@@ -401,7 +401,7 @@ export class Doc {
             }
             const schema = this.schema.flavourSchemaMap.get(model.flavour);
             if (!schema) {
-                throw new BlockSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${model.flavour} not found`);
+                throw new LumenSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${model.flavour} not found`);
             }
             syncBlockProps(schema, model, yBlock, callBackOrProps);
             this._runQuery(block);

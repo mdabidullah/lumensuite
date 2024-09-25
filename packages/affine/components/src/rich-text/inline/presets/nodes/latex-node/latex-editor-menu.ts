@@ -1,17 +1,17 @@
-import type { Y } from '@blocksuite/store';
+import type { Y } from '@lumensuite/store';
 
-import { ColorScheme } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { DoneIcon } from '@blocksuite/icons/lit';
+import { effect, type Signal, signal } from '@lit-labs/preact-signals';
+import { ColorScheme } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   type BlockStdScope,
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
-import { DoneIcon } from '@blocksuite/icons/lit';
-import { DocCollection } from '@blocksuite/store';
-import { effect, type Signal, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { cssVar } from '@toeverything/theme';
 import { css, html, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

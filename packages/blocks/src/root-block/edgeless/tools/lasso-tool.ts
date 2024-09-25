@@ -1,8 +1,8 @@
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IPoint, IVec } from '@blocksuite/global/utils';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IPoint, IVec } from '@lumensuite/global/utils';
 
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   Bound,
   getBoundFromPoints,
@@ -12,7 +12,7 @@ import {
   pointInPolygon,
   rotatePoints,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { EdgelessTool } from '../types.js';
 
@@ -340,7 +340,7 @@ export class LassoToolController extends EdgelessToolController<LassoTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       lasso: LassoToolController;
     }

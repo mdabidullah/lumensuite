@@ -1,8 +1,8 @@
-import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedLoomModel, EmbedYoutubeModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedLoomModel, EmbedYoutubeModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 type EmbedCardModel = BookmarkBlockModel | EmbedGithubModel | EmbedYoutubeModel | EmbedFigmaModel | EmbedLoomModel;
-declare const EmbedCardEditModal_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EmbedCardEditModal_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EmbedCardEditModal extends EmbedCardEditModal_base {
     static styles: import("lit").CSSResult;
     private _handleInput;

@@ -1,5 +1,5 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { PageRootBlockComponent } from '../../index.js';
 export declare const AFFINE_VIEWPORT_OVERLAY_WIDGET = "affine-viewport-overlay-widget";
 export declare class AffineViewportOverlayWidget extends WidgetComponent<RootBlockModel, PageRootBlockComponent> {

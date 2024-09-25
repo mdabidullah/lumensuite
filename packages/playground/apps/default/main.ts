@@ -1,4 +1,4 @@
-import '@blocksuite/presets/themes/affine.css';
+import '@lumensuite/presets/themes/affine.css';
 
 import { setupEdgelessTemplate } from '../_common/setup.js';
 import '../dev-format.js';

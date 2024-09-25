@@ -1,7 +1,7 @@
-import type { MindmapStyle } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Bound } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { MindmapStyle } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Bound } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 import { LitElement, type TemplateResult } from 'lit';
 import { EdgelessDraggableElementController } from '../common/draggable/draggable-element.controller.js';
 import { type ToolbarMindmapItem } from './assets.js';
@@ -15,7 +15,7 @@ type ImportItem = {
     type: 'import';
     icon: TemplateResult;
 };
-declare const EdgelessMindmapMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessMindmapMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessMindmapMenu extends EdgelessMindmapMenu_base {
     static styles: import("lit").CSSResult;
     private _style$;

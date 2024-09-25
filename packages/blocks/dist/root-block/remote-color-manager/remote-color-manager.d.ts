@@ -1,4 +1,4 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 export declare class RemoteColorManager {
     readonly host: EditorHost;
     private get awarenessStore();

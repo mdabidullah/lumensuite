@@ -1,4 +1,4 @@
-import { isOverlap as _isOverlap, almostEqual, linePolygonIntersects, } from '@blocksuite/global/utils';
+import { isOverlap as _isOverlap, almostEqual, linePolygonIntersects, } from '@lumensuite/global/utils';
 function isOverlap(line, line2) {
     if ([line[0][1], line[1][1], line2[0][1], line2[1][1]].every(y => almostEqual(y, line[0][1], 0.02))) {
         return _isOverlap(line, line2, 0);

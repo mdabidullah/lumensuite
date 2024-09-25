@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { autoUpdate, computePosition, size, } from '@floating-ui/dom';
 import { nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';

@@ -1,7 +1,7 @@
 import { openDB } from 'idb';
 import { diffUpdate, encodeStateVectorFromUpdate, mergeUpdates } from 'yjs';
 export const dbVersion = 1;
-export const DEFAULT_DB_NAME = 'blocksuite-local';
+export const DEFAULT_DB_NAME = 'lumensuite-local';
 export function upgradeDB(db) {
     db.createObjectStore('collection', { keyPath: 'id' });
 }

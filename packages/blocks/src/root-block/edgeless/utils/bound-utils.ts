@@ -1,9 +1,9 @@
-import type { SerializedElement } from '@blocksuite/block-std/gfx';
+import type { SerializedElement } from '@lumensuite/block-std/gfx';
 
-import { Bound, getBoundsWithRotation } from '@blocksuite/global/utils';
-import { type BlockSnapshot, BlockSnapshotSchema } from '@blocksuite/store';
+import { Bound, getBoundsWithRotation } from '@lumensuite/global/utils';
+import { type BlockSnapshot, BlockSnapshotSchema } from '@lumensuite/store';
 
-export function edgelessElementsBound(elements: BlockSuite.EdgelessModel[]) {
+export function edgelessElementsBound(elements: LumenSuite.EdgelessModel[]) {
   if (elements.length === 0) return new Bound();
   return elements.reduce((prev, element) => {
     return prev.unite(element.elementBound);

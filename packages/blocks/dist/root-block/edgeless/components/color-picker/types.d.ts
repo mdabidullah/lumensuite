@@ -1,4 +1,4 @@
-import type { ColorScheme } from '@blocksuite/affine-model';
+import type { ColorScheme } from '@lumensuite/affine-model';
 export type Rgb = {
     r: number;
     g: number;

@@ -1,5 +1,5 @@
-import type { BezierCurveParameters, IVec, PointLocation } from '@blocksuite/global/utils';
-import { type ConnectorElementModel, ConnectorMode, type LocalConnectorElementModel } from '@blocksuite/affine-model';
+import type { BezierCurveParameters, IVec, PointLocation } from '@lumensuite/global/utils';
+import { type ConnectorElementModel, ConnectorMode, type LocalConnectorElementModel } from '@lumensuite/affine-model';
 import type { RoughCanvas } from '../../../utils/rough/canvas.js';
 type ConnectorEnd = 'Front' | 'Rear';
 export declare const DEFAULT_ARROW_SIZE = 15;

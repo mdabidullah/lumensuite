@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import '../../buttons/tool-icon-button.js';

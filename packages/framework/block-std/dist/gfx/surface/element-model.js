@@ -33,8 +33,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     return useValue ? value : void 0;
 };
 var _a;
-import { Bound, deserializeXYWH, DisposableGroup, getBoundsWithRotation, getPointsFromBoundsWithRotation, linePolygonIntersects, PointLocation, polygonGetPointTangent, polygonNearestPoint, randomSeed, rotatePoints, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { Bound, deserializeXYWH, DisposableGroup, getBoundsWithRotation, getPointsFromBoundsWithRotation, linePolygonIntersects, PointLocation, polygonGetPointTangent, polygonNearestPoint, randomSeed, rotatePoints, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { createMutex } from 'lib0/mutex';
 import { convertProps, field, getDerivedProps, getFieldPropsSet, local, updateDerivedProps, watch, } from './decorators/index.js';
 export const gfxContainerSymbol = Symbol('GfxContainerElement');

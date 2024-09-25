@@ -1,9 +1,9 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { GroupData } from '../../core/common/group-by/helper.js';
 import type { DataViewRenderer } from '../../core/data-view.js';
 import type { KanbanSingleView } from './kanban-view-manager.js';
 import './card.js';
-declare const KanbanGroup_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const KanbanGroup_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class KanbanGroup extends KanbanGroup_base {
     static styles: import("lit").CSSResult;
     private clickAddCard;

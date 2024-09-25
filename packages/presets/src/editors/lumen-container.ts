@@ -1,5 +1,6 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
+import { computed, effect, signal } from '@lit-labs/preact-signals';
 import {
   BlockStdScope,
   EditorHost,
@@ -7,7 +8,7 @@ import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   type AbstractEditor,
   type DocMode,
@@ -16,9 +17,8 @@ import {
   type EdgelessRootBlockComponent,
   PageEditorBlockSpecs,
   type PageRootBlockComponent,
-} from '@blocksuite/blocks';
-import { noop, Slot } from '@blocksuite/global/utils';
-import { computed, effect, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/blocks';
+import { noop, Slot } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { keyed } from 'lit/directives/keyed.js';

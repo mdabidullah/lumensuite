@@ -1,4 +1,4 @@
-import { defineBlockSchema, type SchemaToModel } from '@blocksuite/store';
+import { defineBlockSchema, type SchemaToModel } from '@lumensuite/store';
 
 export const RootBlockSchema = defineBlockSchema({
   flavour: 'test:page',
@@ -46,7 +46,7 @@ export const HeadingBlockSchema = defineBlockSchema({
 export type HeadingBlockModel = SchemaToModel<typeof HeadingBlockSchema>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'test:page': RootBlockModel;
       'test:note': NoteBlockModel;

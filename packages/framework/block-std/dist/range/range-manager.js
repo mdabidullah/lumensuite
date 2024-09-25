@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { INLINE_ROOT_ATTR } from '@blocksuite/inline';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { INLINE_ROOT_ATTR } from '@lumensuite/inline';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { BLOCK_ID_ATTR } from '../view/index.js';
 import { RANGE_QUERY_EXCLUDE_ATTR, RANGE_SYNC_EXCLUDE_ATTR } from './consts.js';
@@ -82,7 +82,7 @@ export class RangeManager extends LifeCycleWatcher {
         }
         const firstElement = this.getClosestBlock(range.startContainer);
         if (!firstElement) {
-            throw new BlockSuiteError(ErrorCode.SelectionError, 'First element not found');
+            throw new LumenSuiteError(ErrorCode.SelectionError, 'First element not found');
         }
         if (mode === 'flat') {
             result = result.filter(el => firstElement.compareDocumentPosition(el) &

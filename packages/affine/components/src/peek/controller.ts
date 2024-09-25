@@ -1,4 +1,4 @@
-import type { BlockService } from '@blocksuite/block-std';
+import type { BlockService } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
 
 import type { PeekableClass, PeekViewService } from './type.js';

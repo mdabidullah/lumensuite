@@ -1,4 +1,4 @@
-import type { IPoint } from '@blocksuite/global/utils';
+import type { IPoint } from '@lumensuite/global/utils';
 export declare function isFarEnough(a: IPoint, b: IPoint): boolean;
 export declare function center(a: IPoint, b: IPoint): {
     x: number;

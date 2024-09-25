@@ -1,7 +1,7 @@
-import { NoteBlockSchema } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BlockService } from '@blocksuite/block-std';
-import { Bound, Point } from '@blocksuite/global/utils';
+import { NoteBlockSchema } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BlockService } from '@lumensuite/block-std';
+import { Bound, Point } from '@lumensuite/global/utils';
 import { render } from 'lit';
 import { AFFINE_DRAG_HANDLE_WIDGET, AffineDragHandleWidget, } from '../root-block/widgets/drag-handle/drag-handle.js';
 import { captureEventTarget, getDuplicateBlocks, } from '../root-block/widgets/drag-handle/utils.js';

@@ -1,11 +1,5 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
+import type { RootBlockModel } from '@lumensuite/affine-model';
 
-import {
-  MOUSE_BUTTON,
-  requestConnectedFrame,
-} from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { Bound, getElementsBound } from '@blocksuite/global/utils';
 import {
   autoUpdate,
   computePosition,
@@ -14,6 +8,12 @@ import {
   shift,
   size,
 } from '@floating-ui/dom';
+import {
+  MOUSE_BUTTON,
+  requestConnectedFrame,
+} from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { Bound, getElementsBound } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

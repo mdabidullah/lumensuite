@@ -1,15 +1,15 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import { minimatch } from 'minimatch';
 
-export function matchFlavours<Key extends (keyof BlockSuite.BlockModels)[]>(
+export function matchFlavours<Key extends (keyof LumenSuite.BlockModels)[]>(
   model: BlockModel | null,
   expected: Key
-): model is BlockSuite.BlockModels[Key[number]] {
+): model is LumenSuite.BlockModels[Key[number]] {
   return (
     !!model &&
     expected.some(key =>
-      minimatch(model.flavour as keyof BlockSuite.BlockModels, key)
+      minimatch(model.flavour as keyof LumenSuite.BlockModels, key)
     )
   );
 }

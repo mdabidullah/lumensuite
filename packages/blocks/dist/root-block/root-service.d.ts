@@ -1,8 +1,8 @@
-import type { PeekViewService } from '@blocksuite/affine-components/peek';
-import type { RefNodeSlots } from '@blocksuite/affine-components/rich-text';
-import type { BlockComponent } from '@blocksuite/block-std';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockService } from '@blocksuite/block-std';
+import type { PeekViewService } from '@lumensuite/affine-components/peek';
+import type { RefNodeSlots } from '@lumensuite/affine-components/rich-text';
+import type { BlockComponent } from '@lumensuite/block-std';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockService } from '@lumensuite/block-std';
 import type { NotificationService } from '../_common/components/index.js';
 import { FileDropManager } from '../_common/components/file-drop-manager.js';
 import { ExportManager } from '../_common/export-manager/export-manager.js';
@@ -20,29 +20,29 @@ export declare abstract class RootService extends BlockService {
     readonly themeObserver: ThemeObserver;
     transformers: {
         markdown: {
-            exportDoc: (doc: import("@blocksuite/store").Doc) => Promise<void>;
+            exportDoc: (doc: import("@lumensuite/store").Doc) => Promise<void>;
             importMarkdown: ({ doc, markdown, noteId, }: {
-                doc: import("@blocksuite/store").Doc;
+                doc: import("@lumensuite/store").Doc;
                 markdown: string;
                 noteId: string;
             }) => Promise<void>;
         };
         html: {
-            exportDoc: (doc: import("@blocksuite/store").Doc) => Promise<void>;
+            exportDoc: (doc: import("@lumensuite/store").Doc) => Promise<void>;
         };
         zip: {
-            exportDocs: (collection: import("@blocksuite/store").DocCollection, docs: import("@blocksuite/store").Doc[]) => Promise<Blob>;
-            importDocs: (collection: import("@blocksuite/store").DocCollection, imported: Blob) => Promise<(import("@blocksuite/store").Doc | undefined)[]>;
+            exportDocs: (collection: import("@lumensuite/store").DocCollection, docs: import("@lumensuite/store").Doc[]) => Promise<Blob>;
+            importDocs: (collection: import("@lumensuite/store").DocCollection, imported: Blob) => Promise<(import("@lumensuite/store").Doc | undefined)[]>;
         };
     };
-    get selectedBlocks(): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, BlockService, string>[];
-    get selectedModels(): import("@blocksuite/store").BlockModel<object, object & {}>[];
+    get selectedBlocks(): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, BlockService, string>[];
+    get selectedModels(): import("@lumensuite/store").BlockModel<object, object & {}>[];
     get viewportElement(): HTMLElement | null;
     mounted(): void;
     unmounted(): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:page': RootService;
         }

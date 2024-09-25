@@ -1,10 +1,10 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Text } from '@blocksuite/store';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Text } from '@lumensuite/store';
 
 import {
   getNextContentBlock,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 // When deleting at line end of a list block,
 // check current block's children and siblings

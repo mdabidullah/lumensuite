@@ -1,5 +1,5 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { AffineAIPanelState } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { AffineAIPanelState } from '@lumensuite/blocks';
 import { LitElement } from 'lit';
 import type { ChatMessage, MessageRole, MessageUserInfo } from '../types.js';
 import type { TextRendererOptions } from './text-renderer.js';

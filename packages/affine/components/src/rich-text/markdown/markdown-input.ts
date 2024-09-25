@@ -1,9 +1,9 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 
 import {
   isMarkdownPrefix,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 import { getInlineEditorByModel } from '../dom.js';
 import { toDivider } from './divider.js';

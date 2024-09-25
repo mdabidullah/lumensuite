@@ -1,6 +1,6 @@
 import type { AdvancedPortalOptions, PortalOptions } from './types.js';
 /**
- * Similar to `<blocksuite-portal>`, but only renders once when called.
+ * Similar to `<lumensuite-portal>`, but only renders once when called.
  *
  * The template should be a **static** template since it will not be re-rendered unless `updatePortal` is called.
  *

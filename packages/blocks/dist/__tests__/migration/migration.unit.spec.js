@@ -1,6 +1,6 @@
-import { SurfaceBlockSchema } from '@blocksuite/affine-block-surface';
-import { DatabaseBlockSchema, FrameBlockSchema, ListBlockSchema, NoteBlockSchema, ParagraphBlockSchema, RootBlockSchema, } from '@blocksuite/affine-model';
-import { DocCollection, Schema } from '@blocksuite/store';
+import { SurfaceBlockSchema } from '@lumensuite/affine-block-surface';
+import { DatabaseBlockSchema, FrameBlockSchema, ListBlockSchema, NoteBlockSchema, ParagraphBlockSchema, RootBlockSchema, } from '@lumensuite/affine-model';
+import { DocCollection, Schema } from '@lumensuite/store';
 // normal import
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';

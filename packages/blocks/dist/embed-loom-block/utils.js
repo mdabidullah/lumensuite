@@ -1,4 +1,4 @@
-import { isAbortError } from '@blocksuite/affine-shared/utils';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
 const LoomOEmbedEndpoint = 'https://www.loom.com/v1/oembed';
 export async function queryEmbedLoomData(embedLoomModel, signal) {
     const url = embedLoomModel.url;

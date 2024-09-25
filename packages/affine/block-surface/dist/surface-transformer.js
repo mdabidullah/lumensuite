@@ -1,4 +1,4 @@
-import { BaseBlockTransformer, DocCollection } from '@blocksuite/store';
+import { BaseBlockTransformer, DocCollection } from '@lumensuite/store';
 const SURFACE_TEXT_UNIQ_IDENTIFIER = 'affine:surface:text';
 // Used for group children field
 const SURFACE_YMAP_UNIQ_IDENTIFIER = 'affine:surface:ymap';

@@ -1,5 +1,5 @@
-import { AffineSchemas } from '@blocksuite/blocks/schemas';
-import { DocCollection, Schema } from '@blocksuite/store';
+import { AffineSchemas } from '@lumensuite/blocks/schemas';
+import { DocCollection, Schema } from '@lumensuite/store';
 export function createEmptyDoc() {
     const schema = new Schema().register(AffineSchemas);
     const collection = new DocCollection({ schema });

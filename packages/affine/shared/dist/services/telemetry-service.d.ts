@@ -29,5 +29,5 @@ export interface TelemetryEventMap {
 export interface TelemetryService {
     track<T extends keyof TelemetryEventMap>(eventName: T, props: TelemetryEventMap[T]): void;
 }
-export declare const TelemetryProvider: import("@blocksuite/global/di").ServiceIdentifier<TelemetryService> & ((variant: import("@blocksuite/global/di").ServiceVariant) => import("@blocksuite/global/di").ServiceIdentifier<TelemetryService>);
+export declare const TelemetryProvider: import("@lumensuite/global/di").ServiceIdentifier<TelemetryService> & ((variant: import("@lumensuite/global/di").ServiceVariant) => import("@lumensuite/global/di").ServiceIdentifier<TelemetryService>);
 //# sourceMappingURL=telemetry-service.d.ts.map

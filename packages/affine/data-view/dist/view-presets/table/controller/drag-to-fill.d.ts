@@ -1,4 +1,4 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DataViewTable } from '../table-view.js';
 import type { TableAreaSelection } from '../types.js';
 export declare class DragToFillElement extends ShadowlessElement {

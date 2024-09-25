@@ -1,7 +1,7 @@
-import type { Doc } from '@blocksuite/store';
-import { BlockStdScope, EditorHost, ShadowlessElement } from '@blocksuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { BlockStdScope, EditorHost, ShadowlessElement } from '@lumensuite/block-std';
 import { nothing } from 'lit';
-declare const PageEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const PageEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class PageEditor extends PageEditor_base {
     static styles: import("lit").CSSResult;
     get host(): EditorHost | null;
@@ -11,7 +11,7 @@ export declare class PageEditor extends PageEditor_base {
     willUpdate(changedProperties: Map<string | number | symbol, unknown>): void;
     accessor doc: Doc;
     accessor hasViewport: boolean;
-    accessor specs: import("@blocksuite/block-std").ExtensionType[];
+    accessor specs: import("@lumensuite/block-std").ExtensionType[];
     accessor std: BlockStdScope;
 }
 declare global {

@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CanvasElementType, Overlay, } from '@blocksuite/affine-block-surface';
-import { ConnectorPathGenerator, MindmapElementModel, } from '@blocksuite/affine-block-surface';
-import { AutoCompleteArrowIcon, MindMapChildIcon, MindMapSiblingIcon, NoteAutoCompleteIcon, } from '@blocksuite/affine-components/icons';
-import { DEFAULT_SHAPE_STROKE_COLOR, LayoutType, ShapeElementModel, shapeMethods, } from '@blocksuite/affine-model';
-import { handleNativeRangeAtPoint } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists, DisposableGroup, Vec } from '@blocksuite/global/utils';
+import { CanvasElementType, Overlay, } from '@lumensuite/affine-block-surface';
+import { ConnectorPathGenerator, MindmapElementModel, } from '@lumensuite/affine-block-surface';
+import { AutoCompleteArrowIcon, MindMapChildIcon, MindMapSiblingIcon, NoteAutoCompleteIcon, } from '@lumensuite/affine-components/icons';
+import { DEFAULT_SHAPE_STROKE_COLOR, LayoutType, ShapeElementModel, shapeMethods, } from '@lumensuite/affine-model';
+import { handleNativeRangeAtPoint } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists, DisposableGroup, Vec } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

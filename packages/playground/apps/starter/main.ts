@@ -1,18 +1,18 @@
 import {
   WidgetViewMapExtension,
   WidgetViewMapIdentifier,
-} from '@blocksuite/block-std';
-import * as blocks from '@blocksuite/blocks';
+} from '@lumensuite/block-std';
+import * as blocks from '@lumensuite/blocks';
 import {
   CommunityCanvasTextFonts,
   DocModeProvider,
   FontConfigExtension,
   QuickSearchProvider,
-} from '@blocksuite/blocks';
-import * as globalUtils from '@blocksuite/global/utils';
-import * as editor from '@blocksuite/presets';
-import '@blocksuite/presets/themes/affine.css';
-import * as store from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import * as globalUtils from '@lumensuite/global/utils';
+import * as editor from '@lumensuite/presets';
+import '@lumensuite/presets/themes/affine.css';
+import * as store from '@lumensuite/store';
 
 import { mockDocModeService } from '../_common/mock-services.js';
 import { setupEdgelessTemplate } from '../_common/setup.js';
@@ -34,7 +34,7 @@ async function main() {
   const collection = createStarterDocCollection();
 
   if (isE2E) {
-    Object.defineProperty(window, '$blocksuite', {
+    Object.defineProperty(window, '$lumensuite', {
       value: Object.freeze({
         store,
         blocks,
@@ -55,7 +55,7 @@ async function main() {
       }),
     });
 
-    // test if blocksuite can run in a web worker, SEE: tests/worker.spec.ts
+    // test if lumensuite can run in a web worker, SEE: tests/worker.spec.ts
     // window.testWorker = new Worker(
     //   new URL('./utils/test-worker.ts', import.meta.url),
     //   {

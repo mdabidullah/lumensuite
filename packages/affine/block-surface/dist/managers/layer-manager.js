@@ -1,7 +1,7 @@
-import { FrameBlockModel } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { assertType, Bound, DisposableGroup, last, nToLast, Slot, } from '@blocksuite/global/utils';
+import { FrameBlockModel } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { assertType, Bound, DisposableGroup, last, nToLast, Slot, } from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 import { SurfaceElementModel, SurfaceGroupLikeModel, } from '../element-model/base.js';
 import { GridManager } from './grid-manager.js';

@@ -1,4 +1,3 @@
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
 import {
   CopyIcon,
   DeleteIcon,
@@ -6,6 +5,7 @@ import {
   MoveLeftIcon,
   MoveRightIcon,
 } from '@blocksuite/icons/lit';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
 import { html } from 'lit';
 
 import type { DataViewRenderer } from '../../../core/data-view.js';

@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { Bound } from '@blocksuite/global/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { Bound } from '@lumensuite/global/utils';
 
 import { EdgelessRootService } from '../../root-block/edgeless/edgeless-root-service.js';
 import { getSurfaceBlock } from '../../surface-ref-block/utils.js';
@@ -84,7 +84,7 @@ export const insertEdgelessTextCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       textId?: string;
     }

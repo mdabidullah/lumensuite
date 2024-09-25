@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type TemplateResult } from 'lit';
 import type { TableSingleView } from '../table-view-manager.js';
 import './database-header-column.js';
-declare const DatabaseColumnHeader_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatabaseColumnHeader_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DatabaseColumnHeader extends DatabaseColumnHeader_base {
     static styles: import("lit").CSSResult;
     private _onAddColumn;

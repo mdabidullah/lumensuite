@@ -1,6 +1,6 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { IVec } from '@blocksuite/global/utils';
-import { type BlockComponent, type PointerEventState, WidgetComponent } from '@blocksuite/block-std';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { IVec } from '@lumensuite/global/utils';
+import { type BlockComponent, type PointerEventState, WidgetComponent } from '@lumensuite/block-std';
 import type { EdgelessRootBlockComponent } from '../../../root-block/edgeless/edgeless-root-block.js';
 import type { GfxBlockModel } from '../../edgeless/block-model.js';
 import type { DragHandleOption, DropType } from './config.js';
@@ -111,8 +111,8 @@ export declare class AffineDragHandleWidget extends WidgetComponent<RootBlockMod
     get optionRunner(): DragHandleOptionsRunner;
     get rootComponent(): PageRootBlockComponent | EdgelessRootBlockComponent;
     private get scrollContainer();
-    get selectedBlocks(): import("@blocksuite/block-std").BlockSelection[];
-    static registerOption(option: DragHandleOption): import("@blocksuite/global/utils").Disposable;
+    get selectedBlocks(): import("@lumensuite/block-std").BlockSelection[];
+    static registerOption(option: DragHandleOption): import("@lumensuite/global/utils").Disposable;
     private _clearRaf;
     private _getHoverAreaRectTopLevelBlock;
     connectedCallback(): void;

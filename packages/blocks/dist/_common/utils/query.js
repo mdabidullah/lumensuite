@@ -1,6 +1,6 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 const ATTR_SELECTOR = `[${BLOCK_ID_ATTR}]`;
 /**
  * This function is used to build model's "normal" block path.
@@ -50,8 +50,8 @@ function isEdgelessChildNote({ classList }) {
  * Returns rect of the block element.
  *
  * Compatible with Safari!
- * https://github.com/toeverything/blocksuite/issues/902
- * https://github.com/toeverything/blocksuite/pull/1121
+ * https://github.com/toeverything/lumensuite/issues/902
+ * https://github.com/toeverything/lumensuite/pull/1121
  */
 export function getRectByBlockComponent(element) {
     if (isDatabase(element))

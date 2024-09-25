@@ -1,5 +1,5 @@
-import { createFromBaseCellRenderer, createIcon, uniMap, } from '@blocksuite/data-view';
-import { TableSingleView } from '@blocksuite/data-view/view-presets';
+import { createFromBaseCellRenderer, createIcon, uniMap, } from '@lumensuite/data-view';
+import { TableSingleView } from '@lumensuite/data-view/view-presets';
 import { titlePureColumnConfig } from './define.js';
 import { HeaderAreaTextCell, HeaderAreaTextCellEditing } from './text.js';
 export const titleColumnConfig = titlePureColumnConfig.createColumnMeta({

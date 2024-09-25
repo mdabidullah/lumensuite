@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { focusTitle, getDocTitleInlineEditor, getScrollContainer, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BlockComponent } from '@blocksuite/block-std';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { focusTitle, getDocTitleInlineEditor, getScrollContainer, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { BlockComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

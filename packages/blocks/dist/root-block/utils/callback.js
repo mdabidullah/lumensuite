@@ -1,4 +1,4 @@
-import { asyncGetRichText } from '@blocksuite/affine-components/rich-text';
+import { asyncGetRichText } from '@lumensuite/affine-components/rich-text';
 export async function onModelTextUpdated(editorHost, model, callback) {
     const richText = await asyncGetRichText(editorHost, model.id);
     if (!richText) {

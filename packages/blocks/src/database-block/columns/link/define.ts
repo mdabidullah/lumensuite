@@ -1,4 +1,4 @@
-import { columnType, tString } from '@blocksuite/data-view';
+import { columnType, tString } from '@lumensuite/data-view';
 
 export const linkColumnType = columnType('link');
 export const linkColumnModelConfig = linkColumnType.modelConfig<string>({

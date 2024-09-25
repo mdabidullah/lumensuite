@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 export const PropTypes = {
     string: (value) => typeof value === 'string',
     number: (value) => typeof value === 'number',
@@ -17,10 +17,10 @@ function validatePropTypes(instance, propTypes) {
     for (const [propName, validator] of Object.entries(propTypes)) {
         const key = propName;
         if (instance[key] === undefined) {
-            throw new BlockSuiteError(ErrorCode.DefaultRuntimeError, `Property ${propName} is required to ${instance.constructor.name}.`);
+            throw new LumenSuiteError(ErrorCode.DefaultRuntimeError, `Property ${propName} is required to ${instance.constructor.name}.`);
         }
         if (validator && !validator(instance[key])) {
-            throw new BlockSuiteError(ErrorCode.DefaultRuntimeError, `Property ${propName} is invalid to ${instance.constructor.name}.`);
+            throw new LumenSuiteError(ErrorCode.DefaultRuntimeError, `Property ${propName} is invalid to ${instance.constructor.name}.`);
         }
     }
 }

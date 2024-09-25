@@ -1,4 +1,4 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 /**
  * Re-associate bindings for block that have been converted.
  *
@@ -10,7 +10,7 @@ export declare const reassociateConnectorsCommand: Command<never, never, {
     newId: string;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             reassociateConnectors: typeof reassociateConnectorsCommand;
         }

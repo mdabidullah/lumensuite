@@ -1,4 +1,4 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
 import {
   AlignBottomIcon,
   AlignDistributeHorizontallyIcon,
@@ -9,13 +9,13 @@ import {
   AlignTopIcon,
   AlignVerticallyIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   ConnectorElementModel,
   GroupElementModel,
-} from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
@@ -234,7 +234,7 @@ export class EdgelessAlignButton extends WithDisposable(LitElement) {
     });
   }
 
-  private _updateXYWH(ele: BlockSuite.EdgelessModel, bound: Bound) {
+  private _updateXYWH(ele: LumenSuite.EdgelessModel, bound: Bound) {
     if (ele instanceof ConnectorElementModel) {
       ele.moveTo(bound);
     } else if (ele instanceof GroupElementModel) {
@@ -306,7 +306,7 @@ declare global {
 
 export function renderAlignButton(
   edgeless: EdgelessRootBlockComponent,
-  elements: BlockSuite.EdgelessModel[]
+  elements: LumenSuite.EdgelessModel[]
 ) {
   if (elements.length < 2) return nothing;
   if (elements.some(e => e.group instanceof MindmapElementModel))

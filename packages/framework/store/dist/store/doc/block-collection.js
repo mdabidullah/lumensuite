@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { uuidv4 } from 'lib0/random.js';
 import * as Y from 'yjs';
 import { Text } from '../../reactive/text.js';

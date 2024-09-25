@@ -1,6 +1,6 @@
-import type { BlockComponent, EditorHost } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
-import { type NoteBlockModel } from '@blocksuite/affine-model';
+import type { BlockComponent, EditorHost } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
+import { type NoteBlockModel } from '@lumensuite/affine-model';
 export declare function findAncestorModel(model: BlockModel, match: (m: BlockModel) => boolean): BlockModel<object, object & {}> | null;
 /**
  * Get block component by its model and wait for the doc element to finish updating.

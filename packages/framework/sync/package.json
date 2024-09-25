@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/sync",
+  "name": "@lumensuite/sync",
   "version": "0.17.5",
-  "description": "BlockSuite data synchronization engine abstraction and implementation.",
+  "description": "LumenSuite data synchronization engine abstraction and implementation.",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "build": "tsc",
     "test:unit": "nx vite:test --run",
@@ -13,7 +13,7 @@
   "author": "toeverything",
   "license": "MPL-2.0",
   "dependencies": {
-    "@blocksuite/global": "workspace:*",
+    "@lumensuite/global": "workspace:*",
     "idb": "^8.0.0",
     "idb-keyval": "^6.2.1",
     "y-protocols": "^1.0.6"

@@ -1,11 +1,11 @@
-import type { ConnectorElementModel } from '@blocksuite/affine-model';
-import type { SurfaceBlockProps } from '@blocksuite/block-std/gfx';
-import { SurfaceBlockModel as BaseSurfaceModel } from '@blocksuite/block-std/gfx';
+import type { ConnectorElementModel } from '@lumensuite/affine-model';
+import type { SurfaceBlockProps } from '@lumensuite/block-std/gfx';
+import { SurfaceBlockModel as BaseSurfaceModel } from '@lumensuite/block-std/gfx';
 import { SurfaceBlockTransformer } from './surface-transformer.js';
 export declare const SurfaceBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<SurfaceBlockProps>;
+        props: import("@lumensuite/store").PropsGetter<SurfaceBlockProps>;
         flavour: "affine:surface";
     } & {
         version: number;
@@ -22,6 +22,6 @@ export declare class SurfaceBlockModel extends BaseSurfaceModel {
     _init(): void;
     applyMiddlewares(): void;
     getConnectors(id: string): ConnectorElementModel[];
-    getElementsByType<K extends keyof BlockSuite.SurfaceElementModelMap>(type: K): BlockSuite.SurfaceElementModelMap[K][];
+    getElementsByType<K extends keyof LumenSuite.SurfaceElementModelMap>(type: K): LumenSuite.SurfaceElementModelMap[K][];
 }
 //# sourceMappingURL=surface-model.d.ts.map

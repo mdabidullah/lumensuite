@@ -1,11 +1,11 @@
-import type { BlockStdScope, UIEventHandler } from '@blocksuite/block-std';
+import type { BlockStdScope, UIEventHandler } from '@lumensuite/block-std';
 
 import {
   getInlineEditorByModel,
   markdownInput,
-} from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { IS_MAC } from '@blocksuite/global/env';
+} from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { IS_MAC } from '@lumensuite/global/env';
 
 import { forwardDelete } from './utils/forward-delete.js';
 import { mergeWithPrev } from './utils/merge-with-prev.js';

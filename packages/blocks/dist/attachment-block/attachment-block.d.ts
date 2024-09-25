@@ -1,6 +1,6 @@
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { type AttachmentBlockModel } from '@blocksuite/affine-model';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { type AttachmentBlockModel } from '@lumensuite/affine-model';
 import type { AttachmentBlockService } from './attachment-service.js';
 export declare class AttachmentBlockComponent extends CaptionedBlockComponent<AttachmentBlockModel, AttachmentBlockService> {
     static styles: import("lit").CSSResult;

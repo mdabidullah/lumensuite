@@ -8,11 +8,11 @@ import type {
   ListBlockModel,
   ParagraphBlockModel,
   RootBlockModel,
-} from '@blocksuite/blocks';
-import type { DeltaInsert } from '@blocksuite/inline';
+} from '@lumensuite/blocks';
+import type { DeltaInsert } from '@lumensuite/inline';
 
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
@@ -216,7 +216,7 @@ export class OutlineBlockPreview extends SignalWatcher(
     )
       return nothing;
 
-    switch (block.flavour as keyof BlockSuite.BlockModels) {
+    switch (block.flavour as keyof LumenSuite.BlockModels) {
       case 'affine:page':
         assertType<RootBlockModel>(block);
         return block.title.length > 0
@@ -296,7 +296,7 @@ export class OutlineBlockPreview extends SignalWatcher(
   }
 
   @property({ attribute: false })
-  accessor block!: ValuesOf<BlockSuite.BlockModels>;
+  accessor block!: ValuesOf<LumenSuite.BlockModels>;
 
   @property({ attribute: false })
   accessor cardNumber!: number;

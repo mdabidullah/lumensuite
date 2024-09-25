@@ -1,8 +1,8 @@
-# Building and Testing BlockSuite
+# Building and Testing LumenSuite
 
 ## Using Playground
 
-To run BlockSuite from source, please ensure you have installed [Node.js](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/).
+To run LumenSuite from source, please ensure you have installed [Node.js](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/).
 
 ```sh
 pnpm install
@@ -15,9 +15,9 @@ Then there would be multiple entries to choose from:
 - The [localhost:5173/starter/](http://localhost:5173/starter/) entry lists all of the starter presets.
 - The [localhost:5173](http://localhost:5173) entry is a comprehensive example with local-first (IndexedDB-based) data persistence and real-time collaboration support.
 
-All these entries are published to [try-blocksuite.vercel.app](https://try-blocksuite.vercel.app).
+All these entries are published to [try-lumensuite.vercel.app](https://try-lumensuite.vercel.app).
 
-And this would build the BlockSuite packages:
+And this would build the LumenSuite packages:
 
 ```sh
 pnpm build
@@ -55,9 +55,9 @@ To investigate flaky tests, we can mark a test case as `test.only`, then perform
 
 ### Test Collaboration
 
-To test the real-time collaboration feature of BlockSuite locally, please follow these two simple steps:
+To test the real-time collaboration feature of LumenSuite locally, please follow these two simple steps:
 
 1. Open [localhost:5173/starter/?init&room=hello](http://localhost:5173/starter/?init&room=hello) in the first browser tab.
 2. Open [localhost:5173/starter/?room=hello](http://localhost:5173/starter/?room=hello) in a second tab.
 
-See the [documentation](https://blocksuite.io/guide/data-synchronization.html#document-streaming) about what's happening under the hood.
+See the [documentation](https://lumensuite.io/guide/data-synchronization.html#document-streaming) about what's happening under the hood.

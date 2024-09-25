@@ -1,6 +1,6 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
+import type { RootBlockModel } from '@lumensuite/affine-model';
 
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

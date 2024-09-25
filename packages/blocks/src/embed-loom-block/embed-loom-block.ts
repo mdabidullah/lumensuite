@@ -1,6 +1,6 @@
-import type { EmbedLoomModel, EmbedLoomStyles } from '@blocksuite/affine-model';
+import type { EmbedLoomModel, EmbedLoomStyles } from '@lumensuite/affine-model';
 
-import { OpenIcon } from '@blocksuite/affine-components/icons';
+import { OpenIcon } from '@lumensuite/affine-components/icons';
 import { html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

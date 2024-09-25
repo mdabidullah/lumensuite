@@ -1,8 +1,8 @@
-import { CanvasElementType, TextUtils, } from '@blocksuite/affine-block-surface';
-import { ShapeElementModel, TextElementModel } from '@blocksuite/affine-model';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, assertInstanceOf, Bound, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { CanvasElementType, TextUtils, } from '@lumensuite/affine-block-surface';
+import { ShapeElementModel, TextElementModel } from '@lumensuite/affine-model';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists, assertInstanceOf, Bound, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { GET_DEFAULT_LINE_COLOR } from '../components/panel/color-panel.js';
 import { EdgelessConnectorLabelEditor } from '../components/text/edgeless-connector-label-editor.js';
 import { EdgelessFrameTitleEditor } from '../components/text/edgeless-frame-title-editor.js';
@@ -11,7 +11,7 @@ import { EdgelessShapeTextEditor } from '../components/text/edgeless-shape-text-
 import { EdgelessTextEditor } from '../components/text/edgeless-text-editor.js';
 export function mountTextElementEditor(textElement, edgeless, focusCoord) {
     if (!edgeless.mountElm) {
-        throw new BlockSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
+        throw new LumenSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
     }
     let cursorIndex = textElement.text.length;
     if (focusCoord) {
@@ -33,7 +33,7 @@ export function mountTextElementEditor(textElement, edgeless, focusCoord) {
 }
 export function mountShapeTextEditor(shapeElement, edgeless) {
     if (!edgeless.mountElm) {
-        throw new BlockSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
+        throw new LumenSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
     }
     if (!shapeElement.text) {
         const text = new DocCollection.Y.Text();
@@ -53,7 +53,7 @@ export function mountShapeTextEditor(shapeElement, edgeless) {
 }
 export function mountFrameTitleEditor(frame, edgeless) {
     if (!edgeless.mountElm) {
-        throw new BlockSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
+        throw new LumenSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
     }
     const frameEditor = new EdgelessFrameTitleEditor();
     frameEditor.frameModel = frame;
@@ -66,7 +66,7 @@ export function mountFrameTitleEditor(frame, edgeless) {
 }
 export function mountGroupTitleEditor(group, edgeless) {
     if (!edgeless.mountElm) {
-        throw new BlockSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
+        throw new LumenSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
     }
     const groupEditor = new EdgelessGroupTitleEditor();
     groupEditor.group = group;
@@ -101,7 +101,7 @@ export function addText(edgeless, event) {
 }
 export function mountConnectorLabelEditor(connector, edgeless, point) {
     if (!edgeless.mountElm) {
-        throw new BlockSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
+        throw new LumenSuiteError(ErrorCode.ValueNotExists, "edgeless block's mount point does not exist");
     }
     if (!connector.text) {
         const text = new DocCollection.Y.Text();

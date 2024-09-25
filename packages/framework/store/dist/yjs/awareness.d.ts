@@ -1,22 +1,22 @@
 import type { Awareness as YAwareness } from 'y-protocols/awareness.js';
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import type { BlockCollection } from '../store/index.js';
 export interface UserInfo {
     name: string;
 }
 type UserSelection = Array<Record<string, unknown>>;
-export type RawAwarenessState<Flags extends Record<string, unknown> = BlockSuiteFlags> = {
+export type RawAwarenessState<Flags extends Record<string, unknown> = LumenSuiteFlags> = {
     user?: UserInfo;
     color?: string;
     flags: Flags;
     selectionV2: Record<string, UserSelection>;
 };
-export interface AwarenessEvent<Flags extends Record<string, unknown> = BlockSuiteFlags> {
+export interface AwarenessEvent<Flags extends Record<string, unknown> = LumenSuiteFlags> {
     id: number;
     type: 'add' | 'update' | 'remove';
     state?: RawAwarenessState<Flags>;
 }
-export declare class AwarenessStore<Flags extends Record<string, unknown> = BlockSuiteFlags> {
+export declare class AwarenessStore<Flags extends Record<string, unknown> = LumenSuiteFlags> {
     private _flags;
     private _onAwarenessChange;
     readonly awareness: YAwareness<RawAwarenessState<Flags>>;

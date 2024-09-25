@@ -1,5 +1,5 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { EdgelessRootBlockComponent } from '../../../root-block/edgeless/edgeless-root-block.js';
 export declare const AFFINE_EDGELESS_REMOTE_SELECTION_WIDGET = "affine-edgeless-remote-selection-widget";
 export declare class EdgelessRemoteSelectionWidget extends WidgetComponent<RootBlockModel, EdgelessRootBlockComponent> {
@@ -11,7 +11,7 @@ export declare class EdgelessRemoteSelectionWidget extends WidgetComponent<RootB
     private _updateTransform;
     get edgeless(): EdgelessRootBlockComponent;
     get selection(): import("../../edgeless/services/selection-manager.js").EdgelessSelectionManager;
-    get surface(): import("@blocksuite/affine-block-surface").SurfaceBlockComponent;
+    get surface(): import("@lumensuite/affine-block-surface").SurfaceBlockComponent;
     connectedCallback(): void;
     render(): import("lit").TemplateResult<1>;
     private accessor _remoteCursors;

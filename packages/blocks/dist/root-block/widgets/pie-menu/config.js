@@ -1,6 +1,6 @@
-import { ConnectorCWithArrowIcon, ConnectorIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, DiamondIcon, EdgelessEraserLightIcon, EdgelessGeneralShapeIcon, EdgelessPenLightIcon, EllipseIcon, FrameIcon, FrameNavigatorIcon, GeneralStyleIcon, NoteIcon, ScribbledDiamondIcon, ScribbledEllipseIcon, ScribbledSquareIcon, ScribbledStyleIcon, ScribbledTriangleIcon, SelectIcon, SquareIcon, ToolsIcon, TriangleIcon, ViewBarIcon, } from '@blocksuite/affine-components/icons';
-import { ConnectorMode, LINE_COLORS, SHAPE_FILL_COLORS, SHAPE_STROKE_COLORS, ShapeStyle, ShapeType, } from '@blocksuite/affine-model';
-import { isControlledKeyboardEvent } from '@blocksuite/affine-shared/utils';
+import { ConnectorCWithArrowIcon, ConnectorIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, DiamondIcon, EdgelessEraserLightIcon, EdgelessGeneralShapeIcon, EdgelessPenLightIcon, EllipseIcon, FrameIcon, FrameNavigatorIcon, GeneralStyleIcon, NoteIcon, ScribbledDiamondIcon, ScribbledEllipseIcon, ScribbledSquareIcon, ScribbledStyleIcon, ScribbledTriangleIcon, SelectIcon, SquareIcon, ToolsIcon, TriangleIcon, ViewBarIcon, } from '@lumensuite/affine-components/icons';
+import { ConnectorMode, LINE_COLORS, SHAPE_FILL_COLORS, SHAPE_STROKE_COLORS, ShapeStyle, ShapeType, } from '@lumensuite/affine-model';
+import { isControlledKeyboardEvent } from '@lumensuite/affine-shared/utils';
 import { html } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 import { DEFAULT_NOTE_CHILD_FLAVOUR, DEFAULT_NOTE_CHILD_TYPE, DEFAULT_NOTE_TIP, } from '../../edgeless/utils/consts.js';

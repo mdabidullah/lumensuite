@@ -7,12 +7,12 @@ export type EmbedHtmlBlockProps = {
     design?: string;
 };
 declare const EmbedHtmlModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<EmbedHtmlBlockProps & import("../../../utils/gfx-compatible.js").GfxCompatibleProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<EmbedHtmlBlockProps & import("../../../utils/gfx-compatible.js").GfxCompatibleProps>;
 };
 export declare class EmbedHtmlModel extends EmbedHtmlModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-html': EmbedHtmlModel;
         }

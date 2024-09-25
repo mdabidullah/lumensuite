@@ -1,10 +1,10 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const insertLinkByQuickSearchCommand: Command<never, 'insertedLinkType', {
     userInput?: string;
     skipSelection?: boolean;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             insertedLinkType?: Promise<{
                 flavour?: string;

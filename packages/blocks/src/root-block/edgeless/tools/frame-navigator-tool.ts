@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import type { NavigatorMode } from '../../../_common/edgeless/frame/consts.js';
 
@@ -72,7 +72,7 @@ export class PresentToolController extends EdgelessToolController<FrameNavigator
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       'frame-navigator': PresentToolController;
     }

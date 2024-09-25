@@ -17,7 +17,7 @@ export {
 } from './selection/index.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     // if we use `with` or `inline` to add command data either then use a command we
     // need to update this interface
     interface CommandContext {

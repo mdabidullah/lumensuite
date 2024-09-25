@@ -1,4 +1,4 @@
-import type { Bound, IVec3 } from '@blocksuite/global/utils';
+import type { Bound, IVec3 } from '@lumensuite/global/utils';
 export declare class AStarRunner {
     private _sp;
     private _ep;

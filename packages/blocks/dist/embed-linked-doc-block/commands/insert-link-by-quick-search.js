@@ -1,4 +1,4 @@
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
 export const insertLinkByQuickSearchCommand = (ctx, next) => {
     const { userInput, skipSelection, std } = ctx;
     const quickSearchService = std.getOptional(QuickSearchProvider);

@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { base, keyName } from 'w3c-keyname';
 const mac = typeof navigator !== 'undefined'
     ? /Mac|iP(hone|[oa]d)/.test(navigator.platform)
@@ -36,7 +36,7 @@ function normalizeKeyName(name) {
             }
             return;
         }
-        throw new BlockSuiteError(ErrorCode.EventDispatcherError, 'Unrecognized modifier name: ' + mod);
+        throw new LumenSuiteError(ErrorCode.EventDispatcherError, 'Unrecognized modifier name: ' + mod);
     });
     if (alt)
         result = 'Alt-' + result;

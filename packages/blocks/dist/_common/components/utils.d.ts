@@ -1,7 +1,7 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { InlineEditor, InlineRange } from '@blocksuite/inline';
-import { BlockModel } from '@blocksuite/store';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { InlineEditor, InlineRange } from '@lumensuite/inline';
+import { BlockModel } from '@lumensuite/store';
 export declare function getQuery(inlineEditor: InlineEditor, startRange: InlineRange | null): string | null;
 interface ObserverParams {
     target: HTMLElement;

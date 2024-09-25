@@ -1,4 +1,4 @@
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 import type { BlockStdScope } from '../scope/index.js';
 import type { BaseSelection } from './base.js';
 import { LifeCycleWatcher } from '../extension/index.js';
@@ -28,12 +28,12 @@ export declare class SelectionManager extends LifeCycleWatcher {
     constructor(std: BlockStdScope);
     private _setupDefaultSelections;
     clear(types?: string[]): void;
-    create<T extends BlockSuite.SelectionType>(type: T, ...args: ConstructorParameters<BlockSuite.Selection[T]>): BlockSuite.SelectionInstance[T];
+    create<T extends LumenSuite.SelectionType>(type: T, ...args: ConstructorParameters<LumenSuite.Selection[T]>): LumenSuite.SelectionInstance[T];
     dispose(): void;
-    filter<T extends BlockSuite.SelectionType>(type: T): BlockSuite.SelectionInstance[T][];
-    filter$<T extends BlockSuite.SelectionType>(type: T): import("@preact/signals-core").ReadonlySignal<BlockSuite.SelectionInstance[T][]>;
-    find<T extends BlockSuite.SelectionType>(type: T): BlockSuite.SelectionInstance[T] | undefined;
-    find$<T extends BlockSuite.SelectionType>(type: T): import("@preact/signals-core").ReadonlySignal<BlockSuite.SelectionInstance[T] | undefined>;
+    filter<T extends LumenSuite.SelectionType>(type: T): LumenSuite.SelectionInstance[T][];
+    filter$<T extends LumenSuite.SelectionType>(type: T): import("@preact/signals-core").ReadonlySignal<LumenSuite.SelectionInstance[T][]>;
+    find<T extends LumenSuite.SelectionType>(type: T): LumenSuite.SelectionInstance[T] | undefined;
+    find$<T extends LumenSuite.SelectionType>(type: T): import("@preact/signals-core").ReadonlySignal<LumenSuite.SelectionInstance[T] | undefined>;
     fromJSON(json: Record<string, unknown>[]): void;
     getGroup(group: string): BaseSelection[];
     mounted(): void;

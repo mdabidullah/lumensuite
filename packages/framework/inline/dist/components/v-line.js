@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';
@@ -125,9 +125,9 @@ let VLine = (() => {
             const renderElements = this.elements.flatMap(([template, delta], index) => {
                 if (inlineEditor.isEmbed(delta)) {
                     if (delta.insert.length !== 1) {
-                        throw new BlockSuiteError(ErrorCode.InlineEditorError, `The length of embed node should only be 1.
+                        throw new LumenSuiteError(ErrorCode.InlineEditorError, `The length of embed node should only be 1.
             This seems to be an internal issue with inline editor.
-            Please go to https://github.com/toeverything/blocksuite/issues
+            Please go to https://github.com/toeverything/lumensuite/issues
             to report it.`);
                     }
                     // we add `EmbedGap` to make cursor can be placed between embed elements

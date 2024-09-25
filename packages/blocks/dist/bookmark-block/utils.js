@@ -1,5 +1,5 @@
-import { isAbortError } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 export async function refreshBookmarkUrlData(bookmarkElement, signal) {
     let title = null, description = null, icon = null, image = null;
     try {

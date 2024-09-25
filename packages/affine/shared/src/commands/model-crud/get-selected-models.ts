@@ -1,5 +1,5 @@
-import type { Command } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { Command } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
 /**
  * Retrieves the selected models based on the provided selection types and mode.
@@ -32,7 +32,7 @@ export const getSelectedModelsCommand: Command<
   never,
   'selectedModels',
   {
-    types?: Extract<BlockSuite.SelectionType, 'block' | 'text' | 'image'>[];
+    types?: Extract<LumenSuite.SelectionType, 'block' | 'text' | 'image'>[];
     mode?: 'all' | 'flat' | 'highest';
   }
 > = (ctx, next) => {
@@ -60,7 +60,7 @@ export const getSelectedModelsCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       selectedModels?: BlockModel[];
     }

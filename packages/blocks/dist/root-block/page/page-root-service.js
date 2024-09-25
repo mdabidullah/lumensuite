@@ -1,5 +1,5 @@
-import { RootBlockSchema } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/store';
+import { RootBlockSchema } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/store';
 import { RootService } from '../root-service.js';
 export class PageRootService extends RootService {
     constructor() {

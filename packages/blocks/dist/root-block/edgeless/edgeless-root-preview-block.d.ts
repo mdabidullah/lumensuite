@@ -1,8 +1,8 @@
-import type { SurfaceBlockComponent, SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { IBound } from '@blocksuite/global/utils';
-import '@blocksuite/affine-block-surface';
-import { BlockComponent } from '@blocksuite/block-std';
+import type { SurfaceBlockComponent, SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { IBound } from '@lumensuite/global/utils';
+import '@lumensuite/affine-block-surface';
+import { BlockComponent } from '@lumensuite/block-std';
 import type { EdgelessRootBlockWidgetName } from '../types.js';
 import type { EdgelessRootService } from './edgeless-root-service.js';
 import './components/note-slicer/index.js';
@@ -16,7 +16,7 @@ export declare class EdgelessRootPreviewBlockComponent extends BlockComponent<Ro
     private _resizeObserver;
     private _viewportElement;
     mouseRoot: HTMLElement;
-    get dispatcher(): import("@blocksuite/block-std").UIEventDispatcher;
+    get dispatcher(): import("@lumensuite/block-std").UIEventDispatcher;
     get surfaceBlockModel(): SurfaceBlockModel;
     get viewportElement(): HTMLElement;
     private _getLayerViewport;

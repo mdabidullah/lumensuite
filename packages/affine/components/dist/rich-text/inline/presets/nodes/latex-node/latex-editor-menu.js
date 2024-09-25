@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ColorScheme } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { ColorScheme } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { DoneIcon } from '@blocksuite/icons/lit';
-import { DocCollection } from '@blocksuite/store';
+import { DocCollection } from '@lumensuite/store';
 import { effect, signal } from '@lit-labs/preact-signals';
 import { cssVar } from '@toeverything/theme';
 import { css, html, unsafeCSS } from 'lit';

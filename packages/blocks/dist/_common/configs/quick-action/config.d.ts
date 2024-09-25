@@ -1,4 +1,4 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import { type TemplateResult } from 'lit';
 export interface QuickActionConfig {
     id: string;

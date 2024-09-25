@@ -1,9 +1,9 @@
-import type { GroupElementModel } from '@blocksuite/affine-model';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { GroupElementModel } from '@lumensuite/affine-model';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
-import { FrameBlockModel } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { GfxBlockElementModel, type GfxModel } from '@blocksuite/block-std/gfx';
+import { FrameBlockModel } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { GfxBlockElementModel, type GfxModel } from '@lumensuite/block-std/gfx';
 import {
   assertType,
   Bound,
@@ -11,7 +11,7 @@ import {
   last,
   nToLast,
   Slot,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 
 import type { SurfaceBlockModel } from '../surface-model.js';
@@ -807,7 +807,7 @@ export class LayerManager {
   }
 
   getReorderedIndex(element: GfxModel, direction: ReorderingDirection): string {
-    const group = (element.group as BlockSuite.SurfaceGroupLikeModel) || null;
+    const group = (element.group as LumenSuite.SurfaceGroupLikeModel) || null;
     const isFrameBlock =
       (element as FrameBlockModel).flavour === 'affine:frame';
 

@@ -2,7 +2,7 @@ import {
   defineBlockSchema,
   type SchemaToModel,
   type Text,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 interface CodeBlockProps {
   text: Text;
@@ -36,7 +36,7 @@ export const CodeBlockSchema = defineBlockSchema({
 export type CodeBlockModel = SchemaToModel<typeof CodeBlockSchema>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:code': CodeBlockModel;
     }

@@ -6,7 +6,7 @@ export type EmbedLinkedDocBlockProps = {
     caption: string | null;
 } & ReferenceInfo;
 declare const EmbedLinkedDocModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<{
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<{
         style: EmbedCardStyle;
         caption: string | null;
     } & {
@@ -21,7 +21,7 @@ declare const EmbedLinkedDocModel_base: {
 export declare class EmbedLinkedDocModel extends EmbedLinkedDocModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-linked-doc': EmbedLinkedDocModel;
         }

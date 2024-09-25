@@ -1,15 +1,15 @@
-import type { ConnectorElementModel } from '@blocksuite/affine-model';
-import type { SurfaceBlockProps } from '@blocksuite/block-std/gfx';
-import type { MigrationRunner, Y } from '@blocksuite/store';
+import type { ConnectorElementModel } from '@lumensuite/affine-model';
+import type { SurfaceBlockProps } from '@lumensuite/block-std/gfx';
+import type { MigrationRunner, Y } from '@lumensuite/store';
 
-import { SurfaceBlockModel as BaseSurfaceModel } from '@blocksuite/block-std/gfx';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { SurfaceBlockModel as BaseSurfaceModel } from '@lumensuite/block-std/gfx';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import {
   Boxed,
   defineBlockSchema,
   DocCollection,
   Text,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { elementsCtorMap } from './element-model/index.js';
 import { connectorMiddleware } from './middlewares/connector.js';
@@ -189,11 +189,11 @@ export class SurfaceBlockModel extends BaseSurfaceModel {
     );
   }
 
-  override getElementsByType<K extends keyof BlockSuite.SurfaceElementModelMap>(
+  override getElementsByType<K extends keyof LumenSuite.SurfaceElementModelMap>(
     type: K
-  ): BlockSuite.SurfaceElementModelMap[K][] {
+  ): LumenSuite.SurfaceElementModelMap[K][] {
     return super.getElementsByType(
       type
-    ) as BlockSuite.SurfaceElementModelMap[K][];
+    ) as LumenSuite.SurfaceElementModelMap[K][];
   }
 }

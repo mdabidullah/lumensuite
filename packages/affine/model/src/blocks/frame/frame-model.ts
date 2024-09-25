@@ -6,9 +6,9 @@ import {
   type GfxModel,
   type PointTestOptions,
   SurfaceBlockModel,
-} from '@blocksuite/block-std/gfx';
-import { Bound, type SerializedXYWH } from '@blocksuite/global/utils';
-import { BlockModel, defineBlockSchema, type Text } from '@blocksuite/store';
+} from '@lumensuite/block-std/gfx';
+import { Bound, type SerializedXYWH } from '@lumensuite/global/utils';
+import { BlockModel, defineBlockSchema, type Text } from '@lumensuite/store';
 
 import type { Color } from '../../consts/index.js';
 
@@ -54,7 +54,7 @@ export class FrameBlockModel
       .find(model => model instanceof SurfaceBlockModel);
     if (!surface) return [];
 
-    const elements: BlockSuite.EdgelessModel[] = [];
+    const elements: LumenSuite.EdgelessModel[] = [];
 
     for (const key of this.childIds) {
       const element =
@@ -71,7 +71,7 @@ export class FrameBlockModel
     return [...(this.childElementIds ? Object.keys(this.childElementIds) : [])];
   }
 
-  addChild(element: BlockSuite.EdgelessModel | string): void {
+  addChild(element: LumenSuite.EdgelessModel | string): void {
     const id = typeof element === 'string' ? element : element.id;
     this.doc.transact(() => {
       if (!this.childElementIds) this.childElementIds = {};
@@ -100,7 +100,7 @@ export class FrameBlockModel
     );
   }
 
-  removeChild(element: BlockSuite.EdgelessModel | string): void {
+  removeChild(element: LumenSuite.EdgelessModel | string): void {
     const id = typeof element === 'string' ? element : element.id;
     this.doc.transact(() => {
       this.childElementIds && delete this.childElementIds[id];
@@ -109,7 +109,7 @@ export class FrameBlockModel
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:frame': FrameBlockModel;
     }

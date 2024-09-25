@@ -1,13 +1,13 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
+import type { ReadonlySignal } from '@lit-labs/preact-signals';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
 import type {
   BlockStdScope,
   EventName,
   UIEventHandler,
-} from '@blocksuite/block-std';
-import type { Disposable } from '@blocksuite/global/utils';
-import type { ReadonlySignal } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
+import type { Disposable } from '@lumensuite/global/utils';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { DataSource } from '../common/data-source/base.js';
 import type { DataViewRenderer } from '../data-view.js';
@@ -127,7 +127,7 @@ export class ViewRendererManager {
   getView(type: string): DataViewRendererConfig {
     const view = this.map.get(type);
     if (!view) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DatabaseBlockError,
         `${type} is not exist`
       );

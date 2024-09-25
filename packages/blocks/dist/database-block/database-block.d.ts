@@ -1,6 +1,6 @@
-import type { DatabaseBlockModel } from '@blocksuite/affine-model';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { type DataViewExpose, type DataViewProps, type DataViewSelection, type DataViewWidget } from '@blocksuite/data-view';
+import type { DatabaseBlockModel } from '@lumensuite/affine-model';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { type DataViewExpose, type DataViewProps, type DataViewSelection, type DataViewWidget } from '@lumensuite/data-view';
 import type { AffineInnerModalWidget } from '../root-block/index.js';
 import type { DatabaseOptionsConfig } from './config.js';
 import type { DatabaseBlockService } from './database-service.js';
@@ -25,7 +25,7 @@ export declare class DatabaseBlockComponent extends CaptionedBlockComponent<Data
     get dataSource(): DatabaseBlockDataSource;
     get innerModalWidget(): AffineInnerModalWidget;
     get optionsConfig(): DatabaseOptionsConfig;
-    get topContenteditableElement(): import("@blocksuite/block-std").BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+    get topContenteditableElement(): import("@lumensuite/block-std").BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
     get view(): DataViewExpose | undefined;
     private renderDatabaseOps;
     connectedCallback(): void;

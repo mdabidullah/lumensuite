@@ -1,4 +1,4 @@
-import { BlockModel } from '@blocksuite/store';
+import { BlockModel } from '@lumensuite/store';
 
 import type { EmbedCardStyle } from '../../../utils/index.js';
 
@@ -36,7 +36,7 @@ export class EmbedGithubModel extends defineEmbedModel<EmbedGithubBlockProps>(
 ) {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:embed-github': EmbedGithubModel;
     }

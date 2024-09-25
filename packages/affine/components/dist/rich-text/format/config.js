@@ -1,4 +1,4 @@
-import { BoldIcon, CodeIcon, ItalicIcon, LinkIcon, StrikethroughIcon, UnderlineIcon, } from '@blocksuite/affine-components/icons';
+import { BoldIcon, CodeIcon, ItalicIcon, LinkIcon, StrikethroughIcon, UnderlineIcon, } from '@lumensuite/affine-components/icons';
 export const textFormatConfigs = [
     {
         id: 'bold',

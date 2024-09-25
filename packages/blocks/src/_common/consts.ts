@@ -1,1 +1,1 @@
-export * from '@blocksuite/affine-shared/consts';
+export * from '@lumensuite/affine-shared/consts';

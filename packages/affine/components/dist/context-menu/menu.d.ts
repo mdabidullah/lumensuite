@@ -1,6 +1,6 @@
 import type { Middleware, Placement, VirtualElement } from '@floating-ui/dom';
 import type { TemplateResult } from 'lit';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 type MenuCommon = {
     hide?: () => boolean;
 };
@@ -66,7 +66,7 @@ export type MenuOptions = {
     };
     items: Menu[];
 };
-declare const MenuComponent_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const MenuComponent_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class MenuComponent<_T> extends MenuComponent_base {
     static styles: import("lit").CSSResult;
     private _checked;

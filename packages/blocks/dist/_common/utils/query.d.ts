@@ -1,6 +1,6 @@
-import type { Point } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
-import { type BlockComponent, type EditorHost } from '@blocksuite/block-std';
+import type { Point } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
+import { type BlockComponent, type EditorHost } from '@lumensuite/block-std';
 import type { RootBlockComponent } from '../../index.js';
 /**
  * This function is used to build model's "normal" block path.
@@ -20,13 +20,13 @@ export declare function getEdgelessRootByEditorHost(editorHost: EditorHost): imp
  * Use `root.view.viewFromPath` instead.
  * @deprecated
  */
-export declare function getBlockComponentByModel(editorHost: EditorHost, model: BlockModel | null): BlockComponent<BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+export declare function getBlockComponentByModel(editorHost: EditorHost, model: BlockModel | null): BlockComponent<BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
 /**
  * Returns rect of the block element.
  *
  * Compatible with Safari!
- * https://github.com/toeverything/blocksuite/issues/902
- * https://github.com/toeverything/blocksuite/pull/1121
+ * https://github.com/toeverything/lumensuite/issues/902
+ * https://github.com/toeverything/lumensuite/pull/1121
  */
 export declare function getRectByBlockComponent(element: Element | BlockComponent): DOMRect;
 /**

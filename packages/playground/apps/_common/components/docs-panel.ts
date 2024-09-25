@@ -1,8 +1,8 @@
-import type { AffineEditorContainer } from '@blocksuite/presets';
-import type { DocCollection } from '@blocksuite/store';
+import type { AffineEditorContainer } from '@lumensuite/presets';
+import type { DocCollection } from '@lumensuite/store';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { CloseIcon, createDefaultDoc } from '@blocksuite/blocks';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { CloseIcon, createDefaultDoc } from '@lumensuite/blocks';
 import { css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

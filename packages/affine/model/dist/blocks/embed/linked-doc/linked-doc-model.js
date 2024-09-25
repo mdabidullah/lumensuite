@@ -1,4 +1,4 @@
-import { BlockModel } from '@blocksuite/store';
+import { BlockModel } from '@lumensuite/store';
 import { defineEmbedModel } from '../../../utils/index.js';
 export const EmbedLinkedDocStyles = [
     'vertical',

@@ -1,4 +1,4 @@
-import { createIdentifier, } from '@blocksuite/global/di';
+import { createIdentifier, } from '@lumensuite/global/di';
 export const MarkdownMatcherIdentifier = createIdentifier('AffineMarkdownMatcher');
 export function InlineMarkdownExtension(matcher) {
     const identifier = MarkdownMatcherIdentifier(matcher.name);

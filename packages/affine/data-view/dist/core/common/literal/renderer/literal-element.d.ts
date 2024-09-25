@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { TType } from '../../../logical/typesystem.js';
 import type { LiteralViewProps } from '../matcher.js';
-declare const LiteralElement_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LiteralElement_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare abstract class LiteralElement<T = unknown, Type extends TType = TType> extends LiteralElement_base implements LiteralViewProps<T, Type> {
     accessor onChange: (value?: T) => void;
     accessor type: Type;

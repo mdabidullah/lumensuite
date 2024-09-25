@@ -1,6 +1,6 @@
-import type { ListBlockModel } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { ListBlockModel } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
 /**
  * Pass in a list model, and this function will look forward to find continuous sibling numbered lists,
  * typically used for updating list numbers. The result not contains the list passed in.

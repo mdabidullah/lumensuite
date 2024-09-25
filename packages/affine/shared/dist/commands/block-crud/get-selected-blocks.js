@@ -1,4 +1,4 @@
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 export const getSelectedBlocksCommand = (ctx, next) => {
     const { types = ['block', 'text', 'image'], roles = ['content'], mode = 'flat', } = ctx;
     let dirtyResult = [];

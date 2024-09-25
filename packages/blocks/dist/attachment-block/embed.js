@@ -1,4 +1,4 @@
-import { withTempBlobData } from '@blocksuite/affine-shared/utils';
+import { withTempBlobData } from '@lumensuite/affine-shared/utils';
 import { html } from 'lit';
 import { transformModel } from '../root-block/utils/operations/model.js';
 // 10MB

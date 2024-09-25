@@ -1,4 +1,4 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 /**
  * @example
  * before unindent:
@@ -20,7 +20,7 @@ export declare const dedentBlock: Command<never, never, {
     stopCapture?: boolean;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             dedentBlock: typeof dedentBlock;
         }

@@ -1,18 +1,18 @@
 import type {
   SurfaceBlockModel,
   SurfaceBlockService,
-} from '@blocksuite/affine-block-surface';
-import type { Color, NoteBlockModel } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
+} from '@lumensuite/affine-block-surface';
+import type { Color, NoteBlockModel } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
 
 import {
   CanvasRenderer,
   elementRenderers,
-} from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { GfxControllerIdentifier, Viewport } from '@blocksuite/block-std/gfx';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { GfxControllerIdentifier, Viewport } from '@lumensuite/block-std/gfx';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 
 import { getSurfaceBlock } from './utils.js';
 
@@ -111,10 +111,10 @@ export class SurfaceRefRenderer {
     this.slots.surfaceRendererInit.emit();
   }
 
-  getModel(id: string): BlockSuite.EdgelessModel | null {
+  getModel(id: string): LumenSuite.EdgelessModel | null {
     return (
       (this.doc.getBlockById(id) as Exclude<
-        BlockSuite.EdgelessBlockModelType,
+        LumenSuite.EdgelessBlockModelType,
         NoteBlockModel
       >) ??
       this._surfaceModel?.getElementById(id) ??

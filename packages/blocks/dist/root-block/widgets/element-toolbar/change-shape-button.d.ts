@@ -1,4 +1,4 @@
-import type { ShapeElementModel } from '@blocksuite/affine-model';
+import type { ShapeElementModel } from '@lumensuite/affine-model';
 import { LitElement, nothing, type TemplateResult } from 'lit';
 import type { EdgelessColorPickerButton } from '../../edgeless/components/color-picker/button.js';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
@@ -8,7 +8,7 @@ import '../../edgeless/components/panel/shape-panel.js';
 import '../../edgeless/components/panel/shape-style-panel.js';
 import '../../edgeless/components/panel/stroke-style-panel.js';
 import './change-text-menu.js';
-declare const EdgelessChangeShapeButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeShapeButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeShapeButton extends EdgelessChangeShapeButton_base {
     #private;
     static styles: import("lit").CSSResult[][];

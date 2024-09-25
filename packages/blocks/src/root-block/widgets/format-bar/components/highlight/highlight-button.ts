@@ -1,15 +1,15 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { whenHover } from '@blocksuite/affine-components/hover';
+import { computePosition, flip, offset, shift } from '@floating-ui/dom';
+import { whenHover } from '@lumensuite/affine-components/hover';
 import {
   ArrowDownIcon,
   HighLightDuotoneIcon,
   TextBackgroundDuotoneIcon,
   TextForegroundDuotoneIcon,
-} from '@blocksuite/affine-components/icons';
-import { assertExists } from '@blocksuite/global/utils';
-import { computePosition, flip, offset, shift } from '@floating-ui/dom';
+} from '@lumensuite/affine-components/icons';
+import { assertExists } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { ref, type RefOrCallback } from 'lit/directives/ref.js';
 

@@ -1,4 +1,4 @@
-import { ColorScheme, MindmapStyle } from '@blocksuite/affine-model';
+import { ColorScheme, MindmapStyle } from '@lumensuite/affine-model';
 import { getMindmapRender } from './basket-elements.js';
 import { mindMapStyle1Dark, mindMapStyle1Light, mindMapStyle2Dark, mindMapStyle2Light, mindMapStyle3, mindMapStyle4, } from './icons.js';
 export const getMindMaps = (theme) => [

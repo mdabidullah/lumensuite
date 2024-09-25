@@ -1,6 +1,6 @@
 import type { LitElement, PropertyValues, TemplateResult } from 'lit';
 import type { Ref } from 'lit/directives/ref.js';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type StyleInfo } from 'lit/directives/style-map.js';
 export type UniComponentReturn<Props = NonNullable<unknown>, Expose extends NonNullable<unknown> = NonNullable<unknown>> = {
     update: (props: Props) => void;

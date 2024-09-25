@@ -1,4 +1,4 @@
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { DeltaInsert } from '@lumensuite/inline';
 export declare const fetchImage: (url: string, init?: RequestInit, proxy?: string) => Promise<Response | null>;
 export declare const mergeDeltas: (acc: DeltaInsert[], cur: DeltaInsert, options?: {
     force?: boolean;
@@ -6,7 +6,7 @@ export declare const mergeDeltas: (acc: DeltaInsert[], cur: DeltaInsert, options
 export declare const isNullish: (value: unknown) => value is null | undefined;
 export declare const fetchable: (url: string) => boolean;
 export declare const createText: (s: string) => {
-    '$blocksuite:internal:text$': boolean;
+    '$lumensuite:internal:text$': boolean;
     delta: {
         insert: string;
     }[];

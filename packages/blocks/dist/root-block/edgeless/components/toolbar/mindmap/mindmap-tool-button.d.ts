@@ -3,7 +3,7 @@ import type { EdgelessTool } from '../../../types.js';
 import { EdgelessDraggableElementController } from '../common/draggable/draggable-element.controller.js';
 import { type DraggableTool } from './basket-elements.js';
 import './mindmap-menu.js';
-declare const EdgelessMindmapToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessMindmapToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessMindmapToolButton extends EdgelessMindmapToolButton_base {
     static styles: import("lit").CSSResult;
     private _style$;

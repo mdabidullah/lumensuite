@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -58,7 +58,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "111"
@@ -76,7 +76,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "222"
@@ -94,7 +94,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "333"

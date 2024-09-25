@@ -1,6 +1,6 @@
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { getCurrentNativeRange, isControlledKeyboardEvent, } from '@blocksuite/affine-shared/utils';
-import { BlockModel } from '@blocksuite/store';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { getCurrentNativeRange, isControlledKeyboardEvent, } from '@lumensuite/affine-shared/utils';
+import { BlockModel } from '@lumensuite/store';
 import { css, unsafeCSS } from 'lit';
 export function getQuery(inlineEditor, startRange) {
     const nativeRange = getCurrentNativeRange();

@@ -7,7 +7,7 @@ export * from './paragraph-service.js';
 export * from './paragraph-spec.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:paragraph': ParagraphBlockService;
     }

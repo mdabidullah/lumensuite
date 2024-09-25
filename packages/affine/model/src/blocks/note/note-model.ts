@@ -1,8 +1,8 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
-import { Bound } from '@blocksuite/global/utils';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { Bound } from '@lumensuite/global/utils';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 import {
   type Color,
@@ -114,7 +114,7 @@ export class NoteBlockModel
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:note': NoteBlockModel;
     }

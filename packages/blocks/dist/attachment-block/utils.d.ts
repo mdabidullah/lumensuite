@@ -1,6 +1,6 @@
-import type { AttachmentBlockModel, AttachmentBlockProps } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { AttachmentBlockModel, AttachmentBlockProps } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 import type { AttachmentBlockComponent } from './attachment-block.js';
 export declare function cloneAttachmentProperties(model: AttachmentBlockModel): AttachmentBlockProps;
 export declare function setAttachmentUploading(blockId: string): void;

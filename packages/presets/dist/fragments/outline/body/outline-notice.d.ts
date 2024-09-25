@@ -1,6 +1,6 @@
 import { LitElement, nothing } from 'lit';
 export declare const AFFINE_OUTLINE_NOTICE = "affine-outline-notice";
-declare const OutlineNotice_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const OutlineNotice_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class OutlineNotice extends OutlineNotice_base {
     static styles: import("lit").CSSResult;
     private _handleNoticeButtonClick;

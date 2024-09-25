@@ -1,5 +1,5 @@
 import { LitElement, type PropertyValues } from 'lit';
-declare const GeneratingPlaceholder_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const GeneratingPlaceholder_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 declare class GeneratingPlaceholder extends GeneratingPlaceholder_base {
     static styles: import("lit").CSSResult;
     protected render(): import("lit").TemplateResult<1>;

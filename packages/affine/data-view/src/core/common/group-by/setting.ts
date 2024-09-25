@@ -1,16 +1,16 @@
 import type { PropertyValues } from 'lit';
 
+import { ArrowRightSmallIcon, DeleteIcon } from '@blocksuite/icons/lit';
 import {
   type Menu,
   type MenuOptions,
   popMenu,
-} from '@blocksuite/affine-components/context-menu';
+} from '@lumensuite/affine-components/context-menu';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { ArrowRightSmallIcon, DeleteIcon } from '@blocksuite/icons/lit';
+} from '@lumensuite/block-std';
 import { css, html, unsafeCSS } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

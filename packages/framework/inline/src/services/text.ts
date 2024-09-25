@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { InlineEditor } from '../inline-editor.js';
 import type { DeltaInsert, InlineRange } from '../types.js';
@@ -78,7 +78,7 @@ export class InlineTextService<TextAttributes extends BaseTextAttributes> {
       this.editor.attributeService.normalizeAttributes(attributes);
 
     if (!text || !text.length) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'text must not be empty'
       );

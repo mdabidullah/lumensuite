@@ -93,7 +93,7 @@ test('use markdown syntax with trailing characters can create code block', async
 test('support ```[lang] to add code block with language', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/1314',
+    description: 'https://github.com/toeverything/lumensuite/issues/1314',
   });
 
   await enterPlaygroundRoom(page);
@@ -225,7 +225,7 @@ test('duplicate code block', async ({ page }, testInfo) => {
   // add a caption
   await codeBlockController.codeBlock.hover();
   await codeBlockController.captionButton.click();
-  await type(page, 'BlockSuite');
+  await type(page, 'LumenSuite');
   await pressEnter(page);
   await pressBackspace(page); // remove paragraph
   await waitNextFrame(page, 100);
@@ -325,7 +325,7 @@ test('add caption works', async ({ page }) => {
   const codeBlockController = getCodeBlock(page);
   await codeBlockController.codeBlock.hover();
   await codeBlockController.captionButton.click();
-  await type(page, 'BlockSuite');
+  await type(page, 'LumenSuite');
   await pressEnter(page);
   await waitNextFrame(page, 100);
 
@@ -333,7 +333,7 @@ test('add caption works', async ({ page }) => {
     page,
     /*xml*/ `
 <affine:code
-  prop:caption="BlockSuite"
+  prop:caption="LumenSuite"
   prop:language={null}
   prop:wrap={false}
 />`,
@@ -488,7 +488,7 @@ test('multi-line indent', async ({ page }) => {
 test('should bracket complete works in code block', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/1800',
+    description: 'https://github.com/toeverything/lumensuite/issues/1800',
   });
   await enterPlaygroundRoom(page);
   await initEmptyCodeBlockState(page);

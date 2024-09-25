@@ -3,8 +3,8 @@ import type {
   EditorHost,
   ExtensionType,
   WidgetViewMapIdentifier,
-} from '@blocksuite/block-std';
-import type { AffineEditorContainer } from '@blocksuite/presets';
+} from '@lumensuite/block-std';
+import type { AffineEditorContainer } from '@lumensuite/presets';
 import type { DebugMenu } from '@playground/apps/_common/components/debug-menu.js';
 import type { BlockModel, Doc, DocCollection, Job } from '@store/index.js';
 
@@ -13,7 +13,7 @@ declare global {
     /** Available on playground window
      * the following instance are initialized in `packages/playground/apps/starter/main.ts`
      */
-    $blocksuite: {
+    $lumensuite: {
       store: typeof import('../../packages/framework/store/src/index.js');
       blocks: typeof import('../../packages/blocks/src/index.js');
       global: {

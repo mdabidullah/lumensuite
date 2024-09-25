@@ -17,10 +17,10 @@ import { LifeCycleWatcher } from '../extension/index.js';
  *  return;
  * ```
  *
- * You should always add the command to the global interface `BlockSuite.Commands`
+ * You should always add the command to the global interface `LumenSuite.Commands`
  * ```ts
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface Commands {
  *       'myCommand': typeof myCommand
  *     }
@@ -40,7 +40,7 @@ import { LifeCycleWatcher } from '../extension/index.js';
  * }
  *
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface CommandContext {
  *       // All command input and output data should be defined here
  *       // The keys should be optional
@@ -135,14 +135,14 @@ export declare class CommandManager extends LifeCycleWatcher {
      * Register a command to the command manager
      * @param name
      * @param command
-     * Make sure to also add the command to the global interface `BlockSuite.Commands`
+     * Make sure to also add the command to the global interface `LumenSuite.Commands`
      * ```ts
      * const myCommand: Command = (ctx, next) => {
      *   // do something
      * }
      *
      * declare global {
-     *   namespace BlockSuite {
+     *   namespace LumenSuite {
      *     interface Commands {
      *       'myCommand': typeof myCommand
      *     }
@@ -150,7 +150,7 @@ export declare class CommandManager extends LifeCycleWatcher {
      * }
      * ```
      */
-    add<N extends BlockSuite.CommandName>(name: N, command: BlockSuite.Commands[N]): CommandManager;
+    add<N extends LumenSuite.CommandName>(name: N, command: LumenSuite.Commands[N]): CommandManager;
     created(): void;
     /**
      * Execute a registered command by name
@@ -162,10 +162,10 @@ export declare class CommandManager extends LifeCycleWatcher {
      * @returns { success, ...data } - success is a boolean to indicate if the command is successful,
      *  data is the final context after running the command
      */
-    exec<K extends keyof BlockSuite.Commands>(command: K, ...payloads: IfAllKeysOptional<Omit<InDataOfCommand<BlockSuite.Commands[K]>, keyof InitCommandCtx>, [
-        inData: void | Omit<InDataOfCommand<BlockSuite.Commands[K]>, keyof InitCommandCtx>
+    exec<K extends keyof LumenSuite.Commands>(command: K, ...payloads: IfAllKeysOptional<Omit<InDataOfCommand<LumenSuite.Commands[K]>, keyof InitCommandCtx>, [
+        inData: void | Omit<InDataOfCommand<LumenSuite.Commands[K]>, keyof InitCommandCtx>
     ], [
-        inData: Omit<InDataOfCommand<BlockSuite.Commands[K]>, keyof InitCommandCtx>
+        inData: Omit<InDataOfCommand<LumenSuite.Commands[K]>, keyof InitCommandCtx>
     ]>): ExecCommandResult<K> & {
         success: boolean;
     };

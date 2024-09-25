@@ -49,59 +49,59 @@ module.exports = folders;
 
 // module.exports = [
 //   {
-//     name: '@blocksuite/global',
+//     name: '@lumensuite/global',
 //     path: 'packages/framework/global/dist',
 //   },
 //   {
-//     name: '@blocksuite/store',
+//     name: '@lumensuite/store',
 //     path: 'packages/framework/store/dist',
 //   },
 //   {
-//     name: '@blocksuite/block-std',
+//     name: '@lumensuite/block-std',
 //     path: 'packages/framework/block-std/dist',
 //   },
 //   {
-//     name: '@blocksuite/inline',
+//     name: '@lumensuite/inline',
 //     path: 'packages/framework/inline/dist',
 //   },
 //   {
-//     name: '@blocksuite/sync',
+//     name: '@lumensuite/sync',
 //     path: 'packages/framework/sync/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-shared',
+//     name: '@lumensuite/affine-shared',
 //     path: 'packages/affine/shared/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-model',
+//     name: '@lumensuite/affine-model',
 //     path: 'packages/affine/model/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-components',
+//     name: '@lumensuite/affine-components',
 //     path: 'packages/affine/components/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-block-list',
+//     name: '@lumensuite/affine-block-list',
 //     path: 'packages/affine/block-list/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-block-paragraph',
+//     name: '@lumensuite/affine-block-paragraph',
 //     path: 'packages/affine/block-paragraph/dist',
 //   },
 //   {
-//     name: '@blocksuite/affine-block-surface',
+//     name: '@lumensuite/affine-block-surface',
 //     path: 'packages/affine/block-surface/dist',
 //   },
 //   {
-//     name: '@blocksuite/data-view',
+//     name: '@lumensuite/data-view',
 //     path: 'packages/affine/data-view/dist',
 //   },
 //   {
-//     name: '@blocksuite/blocks',
+//     name: '@lumensuite/blocks',
 //     path: 'packages/presets/dist',
 //   },
 //   {
-//     name: '@blocksuite/presets',
+//     name: '@lumensuite/presets',
 //     path: 'packages/presets/dist',
 //   },
 // ];

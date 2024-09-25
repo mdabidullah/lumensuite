@@ -1,6 +1,6 @@
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound, noop, Vec } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound, noop, Vec } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { getTopElements } from '../utils/tree.js';
 import { EdgelessToolController } from './edgeless-tool.js';
 export class FrameToolController extends EdgelessToolController {

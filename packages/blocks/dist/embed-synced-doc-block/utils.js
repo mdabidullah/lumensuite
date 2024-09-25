@@ -1,5 +1,5 @@
-import { DarkLoadingIcon, EmbedEdgelessIcon, EmbedPageIcon, LightLoadingIcon, ReloadIcon, } from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { DarkLoadingIcon, EmbedEdgelessIcon, EmbedPageIcon, LightLoadingIcon, ReloadIcon, } from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { DarkSyncedDocDeletedBanner, DarkSyncedDocEmptyBanner, DarkSyncedDocErrorBanner, LightSyncedDocDeletedBanner, LightSyncedDocEmptyBanner, LightSyncedDocErrorBanner, SyncedDocDeletedIcon, SyncedDocErrorIcon, } from './styles.js';
 export function getSyncedDocIcons(editorMode) {
     const theme = ThemeObserver.mode;

@@ -1,8 +1,8 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Doc } from '@blocksuite/store';
-import { type BlockModel, BlockViewType } from '@blocksuite/store';
 import { consume, provide } from '@lit/context';
 import { computed } from '@lit-labs/preact-signals';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Doc } from '@lumensuite/store';
+import { type BlockModel, BlockViewType } from '@lumensuite/store';
 import { nothing, type PropertyValues, render, type TemplateResult } from 'lit';
 import { property, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';
@@ -113,7 +113,7 @@ export class BlockComponent<
     }
     const model = this.doc.getBlockById<Model>(this.blockId);
     if (!model) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.MissingViewModelError,
         `Cannot find block model for id ${this.blockId}`
       );

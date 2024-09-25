@@ -1,4 +1,4 @@
-import { defineBlockSchema, type SchemaToModel } from '@blocksuite/store';
+import { defineBlockSchema, type SchemaToModel } from '@lumensuite/store';
 
 type SurfaceRefProps = {
   reference: string;
@@ -23,7 +23,7 @@ export const SurfaceRefBlockSchema = defineBlockSchema({
 export type SurfaceRefBlockModel = SchemaToModel<typeof SurfaceRefBlockSchema>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:surface-ref': SurfaceRefBlockModel;
     }

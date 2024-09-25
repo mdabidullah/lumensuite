@@ -1,12 +1,12 @@
-import type { Column } from '@blocksuite/affine-model';
-import type { DataViewDataType } from '@blocksuite/data-view';
+import type { Column } from '@lumensuite/affine-model';
+import type { DataViewDataType } from '@lumensuite/data-view';
 
 import {
   arrayMove,
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+} from '@lumensuite/affine-shared/utils';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 type Props = {
   title: string;

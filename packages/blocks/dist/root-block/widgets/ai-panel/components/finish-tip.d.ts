@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 import type { CopyConfig } from '../type.js';
-declare const AIFinishTip_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AIFinishTip_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AIFinishTip extends AIFinishTip_base {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

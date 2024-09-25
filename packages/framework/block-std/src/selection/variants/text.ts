@@ -118,7 +118,7 @@ export class TextSelection extends BaseSelection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Selection {
       text: typeof TextSelection;
     }

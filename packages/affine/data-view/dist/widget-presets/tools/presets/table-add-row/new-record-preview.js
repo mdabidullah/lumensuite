@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { PlusIcon } from '@blocksuite/icons/lit';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';

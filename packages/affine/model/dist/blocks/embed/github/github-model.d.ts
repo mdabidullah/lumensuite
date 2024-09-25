@@ -19,7 +19,7 @@ export type EmbedGithubBlockProps = {
     caption: string | null;
 } & EmbedGithubBlockUrlData;
 declare const EmbedGithubModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<{
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<{
         style: (typeof EmbedGithubStyles)[number];
         owner: string;
         repo: string;
@@ -32,7 +32,7 @@ declare const EmbedGithubModel_base: {
 export declare class EmbedGithubModel extends EmbedGithubModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-github': EmbedGithubModel;
         }

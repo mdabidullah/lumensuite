@@ -1,8 +1,8 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { FrameIcon } from '@blocksuite/affine-components/icons';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { FrameIcon } from '@lumensuite/affine-components/icons';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
@@ -56,7 +56,7 @@ declare global {
 
 export function renderAddFrameButton(
   edgeless: EdgelessRootBlockComponent,
-  elements: BlockSuite.EdgelessModel[]
+  elements: LumenSuite.EdgelessModel[]
 ) {
   if (elements.length < 2) return nothing;
   if (elements.some(e => e.group instanceof MindmapElementModel))

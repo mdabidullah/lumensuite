@@ -1,4 +1,4 @@
-import type { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import type { MindmapElementModel } from '@lumensuite/affine-block-surface';
 import type {
   AttachmentBlockModel,
   BookmarkBlockModel,
@@ -17,24 +17,24 @@ import type {
   NoteBlockModel,
   RootBlockModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { ConnectorCWithArrowIcon } from '@blocksuite/affine-components/icons';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { ConnectorCWithArrowIcon } from '@lumensuite/affine-components/icons';
 import {
   cloneGroups,
   type MenuItemGroup,
   renderToolbarSeparator,
-} from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/toolbar';
 import {
   ConnectorMode,
   GroupElementModel,
   ShapeElementModel,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { atLeastNMatches, groupBy, pickValues } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { atLeastNMatches, groupBy, pickValues } from '@lumensuite/global/utils';
 import { css, html, nothing, type TemplateResult } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';
@@ -97,7 +97,7 @@ type CategorizedElements = {
 
 type CustomEntry = {
   render: (edgeless: EdgelessRootBlockComponent) => TemplateResult | null;
-  when: (model: BlockSuite.EdgelessModel[]) => boolean;
+  when: (model: LumenSuite.EdgelessModel[]) => boolean;
 };
 
 export const EDGELESS_ELEMENT_TOOLBAR_WIDGET =
@@ -185,7 +185,7 @@ export class EdgelessElementToolbarWidget extends WidgetComponent<
         return 'edgelessText';
       }
 
-      return (model as BlockSuite.SurfaceElementModel).type;
+      return (model as LumenSuite.SurfaceElementModel).type;
     });
     return result as CategorizedElements;
   }
@@ -438,7 +438,7 @@ export class EdgelessElementToolbarWidget extends WidgetComponent<
   @state()
   private accessor _registeredEntries: {
     render: (edgeless: EdgelessRootBlockComponent) => TemplateResult | null;
-    when: (model: BlockSuite.EdgelessModel[]) => boolean;
+    when: (model: LumenSuite.EdgelessModel[]) => boolean;
   }[] = [];
 
   @property({ attribute: false })

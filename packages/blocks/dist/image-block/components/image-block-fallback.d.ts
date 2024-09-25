@@ -1,10 +1,10 @@
-import type { ImageBlockModel } from '@blocksuite/affine-model';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
+import { ShadowlessElement } from '@lumensuite/block-std';
 export declare const SURFACE_IMAGE_CARD_WIDTH = 220;
 export declare const SURFACE_IMAGE_CARD_HEIGHT = 122;
 export declare const NOTE_IMAGE_CARD_WIDTH = 752;
 export declare const NOTE_IMAGE_CARD_HEIGHT = 78;
-declare const ImageBlockFallbackCard_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const ImageBlockFallbackCard_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class ImageBlockFallbackCard extends ImageBlockFallbackCard_base {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

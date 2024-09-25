@@ -32,15 +32,15 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionIcon, CenterPeekIcon, CopyIcon, EditIcon, ExpandFullSmallIcon, OpenIcon, PaletteIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { toast } from '@blocksuite/affine-components/toast';
-import { renderToolbarSeparator, } from '@blocksuite/affine-components/toolbar';
-import { BookmarkStyles } from '@blocksuite/affine-model';
-import { EmbedOptionProvider, } from '@blocksuite/affine-shared/services';
-import { getHostName } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { CaptionIcon, CenterPeekIcon, CopyIcon, EditIcon, ExpandFullSmallIcon, OpenIcon, PaletteIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { toast } from '@lumensuite/affine-components/toast';
+import { renderToolbarSeparator, } from '@lumensuite/affine-components/toolbar';
+import { BookmarkStyles } from '@lumensuite/affine-model';
+import { EmbedOptionProvider, } from '@lumensuite/affine-shared/services';
+import { getHostName } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';

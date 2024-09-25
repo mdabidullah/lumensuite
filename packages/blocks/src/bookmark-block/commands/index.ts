@@ -1,4 +1,4 @@
-import type { BlockCommands } from '@blocksuite/block-std';
+import type { BlockCommands } from '@lumensuite/block-std';
 
 import { insertBookmarkCommand } from './insert-bookmark.js';
 

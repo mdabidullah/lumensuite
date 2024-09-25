@@ -1,4 +1,4 @@
-import type { PointTestOptions } from '@blocksuite/block-std/gfx';
+import type { PointTestOptions } from '@lumensuite/block-std/gfx';
 
 import {
   clamp,
@@ -10,8 +10,8 @@ import {
   pointInPolygon,
   rotatePoints,
   toRadian,
-} from '@blocksuite/global/utils';
-import { Bound, PointLocation, Vec } from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
+import { Bound, PointLocation, Vec } from '@lumensuite/global/utils';
 
 import type { ShapeElementModel } from '../shape.js';
 

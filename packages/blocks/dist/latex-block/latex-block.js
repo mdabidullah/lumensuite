@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
 import { effect } from '@lit-labs/preact-signals';
 import katex from 'katex';
 import { html, render } from 'lit';

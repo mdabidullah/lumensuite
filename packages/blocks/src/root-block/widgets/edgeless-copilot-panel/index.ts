@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { on, stopPropagation } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
+import { on, stopPropagation } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

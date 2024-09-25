@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -39,7 +39,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "123"
@@ -57,7 +57,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "456"
@@ -74,7 +74,7 @@
               "props": {
                 "type": "text",
                 "text": {
-                  "$blocksuite:internal:text$": true,
+                  "$lumensuite:internal:text$": true,
                   "delta": [
                     {
                       "insert": "789"
@@ -94,7 +94,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "012"
@@ -112,7 +112,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "345"

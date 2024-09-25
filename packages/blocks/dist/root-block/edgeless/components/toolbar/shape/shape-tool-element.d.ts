@@ -1,11 +1,11 @@
-import { type ShapeName, type ShapeStyle } from '@blocksuite/affine-model';
+import { type ShapeName, type ShapeStyle } from '@lumensuite/affine-model';
 import { LitElement, type PropertyValues, type TemplateResult } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../../edgeless-root-block.js';
 export interface Shape {
     name: ShapeName;
     svg: TemplateResult<1>;
 }
-declare const EdgelessShapeToolElement_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessShapeToolElement_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessShapeToolElement extends EdgelessShapeToolElement_base {
     static styles: import("lit").CSSResult;
     private _addShape;

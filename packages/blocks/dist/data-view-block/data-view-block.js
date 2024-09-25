@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { popMenu } from '@blocksuite/affine-components/context-menu';
-import { CopyIcon, DeleteIcon, MoreHorizontalIcon, } from '@blocksuite/affine-components/icons';
-import { RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/block-std';
-import { DatabaseSelection, DataView, dataViewCommonStyle, defineUniComponent, renderUniLit, } from '@blocksuite/data-view';
-import { widgetPresets } from '@blocksuite/data-view/widget-presets';
-import { Slice } from '@blocksuite/store';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
+import { CopyIcon, DeleteIcon, MoreHorizontalIcon, } from '@lumensuite/affine-components/icons';
+import { RANGE_SYNC_EXCLUDE_ATTR } from '@lumensuite/block-std';
+import { DatabaseSelection, DataView, dataViewCommonStyle, defineUniComponent, renderUniLit, } from '@lumensuite/data-view';
+import { widgetPresets } from '@lumensuite/data-view/widget-presets';
+import { Slice } from '@lumensuite/store';
 import { computed } from '@lit-labs/preact-signals';
 import { css, nothing, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';

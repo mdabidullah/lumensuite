@@ -5,14 +5,14 @@ import {
   type Command,
   type CommandKeyToData,
   type InitCommandCtx,
-} from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   INLINE_ROOT_ATTR,
   type InlineEditor,
   type InlineRange,
   type InlineRootElement,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 
 import type { AffineTextAttributes } from '../extension/index.js';
 import type { AffineInlineEditor } from '../inline/index.js';
@@ -23,13 +23,13 @@ import {
   FORMAT_TEXT_SUPPORT_FLAVOURS,
 } from './consts.js';
 
-function isActive(std: BlockSuite.Std, key: keyof AffineTextAttributes) {
+function isActive(std: LumenSuite.Std, key: keyof AffineTextAttributes) {
   const [result] = std.command.chain().isTextStyleActive({ key }).run();
   return result;
 }
 
 function handleCommonStyle(
-  std: BlockSuite.Std,
+  std: LumenSuite.Std,
   key: Extract<
     keyof AffineTextAttributes,
     'bold' | 'italic' | 'underline' | 'strike' | 'code'
@@ -118,7 +118,7 @@ function getSelectedInlineEditors(
 }
 
 function handleCurrentSelection<
-  InlineOut extends BlockSuite.CommandDataName = never,
+  InlineOut extends LumenSuite.CommandDataName = never,
 >(
   chain: Chain<InitCommandCtx>,
   handler: (

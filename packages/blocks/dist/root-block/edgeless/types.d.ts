@@ -1,6 +1,6 @@
-export type EdgelessTool = BlockSuite.EdgelessToolType;
+export type EdgelessTool = LumenSuite.EdgelessToolType;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         type EdgelessModelKeys = EdgelessBlockModelKeyType | SurfaceModelKeyType;
         interface EdgelessToolControllerMap {
         }

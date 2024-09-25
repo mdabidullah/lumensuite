@@ -1,6 +1,6 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { Filter, Variable, VariableOrProperty } from '../ast.js';
-declare const VariableRefView_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const VariableRefView_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class VariableRefView extends VariableRefView_base {
     static styles: import("lit").CSSResult;
     get field(): string | undefined;

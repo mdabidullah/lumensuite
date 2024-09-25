@@ -1,8 +1,8 @@
-import { CopyIcon, DatabaseTableViewIcon20, LinkedDocIcon, } from '@blocksuite/affine-components/icons';
-import { createSimplePortal } from '@blocksuite/affine-components/portal';
-import { toast } from '@blocksuite/affine-components/toast';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { CopyIcon, DatabaseTableViewIcon20, LinkedDocIcon, } from '@lumensuite/affine-components/icons';
+import { createSimplePortal } from '@lumensuite/affine-components/portal';
+import { toast } from '@lumensuite/affine-components/toast';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { convertSelectedBlocksToLinkedDoc, getTitleFromSelectedModels, notifyDocCreated, promptDocTitle, } from '../../utils/render-linked-doc.js';
 import { DATABASE_CONVERT_WHITE_LIST } from './database-convert-view.js';

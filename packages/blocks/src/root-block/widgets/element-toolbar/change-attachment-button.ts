@@ -2,9 +2,9 @@ import {
   CaptionIcon,
   DownloadIcon,
   PaletteIcon,
-} from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

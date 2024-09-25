@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { createButtonPopper, NoteDisplayMode, on, once, ThemeObserver, } from '@blocksuite/blocks';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { createButtonPopper, NoteDisplayMode, on, once, ThemeObserver, } from '@lumensuite/blocks';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';

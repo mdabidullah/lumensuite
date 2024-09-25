@@ -1,8 +1,8 @@
-// This file is used to test blocksuite can run in a web worker. SEE: tests/worker.spec.ts
+// This file is used to test lumensuite can run in a web worker. SEE: tests/worker.spec.ts
 
-import '@blocksuite/store';
-// import '@blocksuite/block-std'; // seems not working
-import '@blocksuite/blocks/schemas';
+import '@lumensuite/store';
+// import '@lumensuite/block-std'; // seems not working
+import '@lumensuite/blocks/schemas';
 
 globalThis.onmessage = event => {
   const { data } = event;

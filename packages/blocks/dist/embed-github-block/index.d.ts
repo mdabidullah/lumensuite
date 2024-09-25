@@ -3,7 +3,7 @@ export * from './embed-github-block.js';
 export * from './embed-github-service.js';
 export * from './embed-github-spec.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:embed-github': EmbedGithubBlockService;
         }

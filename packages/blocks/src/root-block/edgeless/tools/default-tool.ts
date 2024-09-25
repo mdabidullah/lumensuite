@@ -1,38 +1,38 @@
-import type { MindmapNode } from '@blocksuite/affine-block-surface';
+import type { MindmapNode } from '@lumensuite/affine-block-surface';
 import type {
   EdgelessTextBlockModel,
   FrameBlockModel,
   NoteBlockModel,
-} from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { PointTestOptions } from '@blocksuite/block-std/gfx';
-import type { IVec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { PointTestOptions } from '@lumensuite/block-std/gfx';
+import type { IVec } from '@lumensuite/global/utils';
 
 import {
   ConnectorUtils,
   MindmapElementModel,
   MindmapUtils,
-} from '@blocksuite/affine-block-surface';
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
+} from '@lumensuite/affine-block-surface';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
 import {
   ConnectorElementModel,
   GroupElementModel,
   ShapeElementModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
 import {
   clamp,
   handleNativeRangeAtPoint,
   resetNativeSelection,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   Bound,
   DisposableGroup,
   intersects,
   noop,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { EdgelessTool } from '../types.js';
 
@@ -185,7 +185,7 @@ export class DefaultToolController extends EdgelessToolController<DefaultTool> {
     }
   };
 
-  private _toBeMoved: BlockSuite.EdgelessModel[] = [];
+  private _toBeMoved: LumenSuite.EdgelessModel[] = [];
 
   private _updateSelectingState = () => {
     const { tools, service } = this._edgeless;
@@ -399,7 +399,7 @@ export class DefaultToolController extends EdgelessToolController<DefaultTool> {
     });
   }
 
-  private _isDraggable(element: BlockSuite.EdgelessModel) {
+  private _isDraggable(element: LumenSuite.EdgelessModel) {
     return !(
       element instanceof ConnectorElementModel &&
       !ConnectorUtils.isConnectorAndBindingsAllSelected(
@@ -483,7 +483,7 @@ export class DefaultToolController extends EdgelessToolController<DefaultTool> {
         .filter(
           el =>
             el !== current &&
-            (el.group as BlockSuite.SurfaceElementModel)?.type === 'mindmap'
+            (el.group as LumenSuite.SurfaceElementModel)?.type === 'mindmap'
         )
         .map(el => ({
           element: el as ShapeElementModel,
@@ -1132,7 +1132,7 @@ export class DefaultToolController extends EdgelessToolController<DefaultTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       default: DefaultToolController;
     }

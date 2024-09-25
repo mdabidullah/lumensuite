@@ -1,5 +1,5 @@
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
-import { BlockComponent } from '@blocksuite/block-std';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
+import { BlockComponent } from '@lumensuite/block-std';
 export declare class EdgelessSurfaceRefBlockComponent extends BlockComponent<SurfaceRefBlockModel> {
     render(): symbol;
 }

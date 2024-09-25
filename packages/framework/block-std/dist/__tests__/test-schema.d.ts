@@ -1,9 +1,9 @@
-import { type SchemaToModel } from '@blocksuite/store';
+import { type SchemaToModel } from '@lumensuite/store';
 export declare const RootBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<{
-            title: import("@blocksuite/store").Text;
+        props: import("@lumensuite/store").PropsGetter<{
+            title: import("@lumensuite/store").Text;
             count: number;
             style: Record<string, unknown>;
             items: unknown[];
@@ -15,13 +15,13 @@ export declare const RootBlockSchema: {
         children: string[];
     };
     onUpgrade?: ((data: {
-        title: import("@blocksuite/store").Text;
+        title: import("@lumensuite/store").Text;
         count: number;
         style: Record<string, unknown>;
         items: unknown[];
     }, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<{
-        title: import("@blocksuite/store").Text;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<{
+        title: import("@lumensuite/store").Text;
         count: number;
         style: Record<string, unknown>;
         items: unknown[];
@@ -31,7 +31,7 @@ export type RootBlockModel = SchemaToModel<typeof RootBlockSchema>;
 export declare const NoteBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<{}>;
+        props: import("@lumensuite/store").PropsGetter<{}>;
         flavour: "test:note";
     } & {
         version: number;
@@ -40,15 +40,15 @@ export declare const NoteBlockSchema: {
         children: string[];
     };
     onUpgrade?: ((data: {}, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<{}>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<{}>) | undefined;
 };
 export type NoteBlockModel = SchemaToModel<typeof NoteBlockSchema>;
 export declare const HeadingBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<{
+        props: import("@lumensuite/store").PropsGetter<{
             type: string;
-            text: import("@blocksuite/store").Text;
+            text: import("@lumensuite/store").Text;
         }>;
         flavour: "test:heading";
     } & {
@@ -58,16 +58,16 @@ export declare const HeadingBlockSchema: {
     };
     onUpgrade?: ((data: {
         type: string;
-        text: import("@blocksuite/store").Text;
+        text: import("@lumensuite/store").Text;
     }, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<{
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<{
         type: string;
-        text: import("@blocksuite/store").Text;
+        text: import("@lumensuite/store").Text;
     }>) | undefined;
 };
 export type HeadingBlockModel = SchemaToModel<typeof HeadingBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'test:page': RootBlockModel;
             'test:note': NoteBlockModel;

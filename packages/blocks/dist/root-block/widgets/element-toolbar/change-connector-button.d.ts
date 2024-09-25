@@ -1,5 +1,5 @@
-import { type ConnectorElementModel } from '@blocksuite/affine-model';
-import { StrokeStyle } from '@blocksuite/affine-model';
+import { type ConnectorElementModel } from '@lumensuite/affine-model';
+import { StrokeStyle } from '@lumensuite/affine-model';
 import { LitElement, nothing, type TemplateResult } from 'lit';
 import type { EdgelessColorPickerButton } from '../../edgeless/components/color-picker/button.js';
 import type { PickColorEvent } from '../../edgeless/components/color-picker/types.js';
@@ -8,10 +8,10 @@ import '../../edgeless/components/panel/color-panel.js';
 import '../../edgeless/components/panel/stroke-style-panel.js';
 import './change-text-menu.js';
 export declare function getMostCommonLineStyle(elements: ConnectorElementModel[]): StrokeStyle | null;
-declare const EdgelessChangeConnectorButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeConnectorButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeConnectorButton extends EdgelessChangeConnectorButton_base {
     pickColor: (event: PickColorEvent) => void;
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     get service(): import("../../index.js").EdgelessRootService;
     private _addLabel;
     private _flipEndpointStyle;

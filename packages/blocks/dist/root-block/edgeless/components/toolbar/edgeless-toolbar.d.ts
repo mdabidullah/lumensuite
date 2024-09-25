@@ -8,7 +8,7 @@ import '../buttons/toolbar-button.js';
 import { type EdgelessToolbarSlots } from './context.js';
 import './present/frame-order-button.js';
 import './presentation-toolbar.js';
-declare const EdgelessToolbar_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessToolbar_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessToolbar extends EdgelessToolbar_base {
     static styles: import("lit").CSSResult;
     private _moreQuickToolsMenu;
@@ -41,7 +41,7 @@ export declare class EdgelessToolbar extends EdgelessToolbar_base {
     private get _seniorToolsWidthTotal();
     private get _spaceWidthTotal();
     private get _visibleQuickToolSize();
-    get host(): import("@blocksuite/block-std").EditorHost;
+    get host(): import("@lumensuite/block-std").EditorHost;
     get isPresentMode(): boolean;
     get scrollSeniorToolSize(): number;
     get slots(): EdgelessToolbarSlots;

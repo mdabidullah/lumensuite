@@ -1,6 +1,6 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Bound, getBoundsWithRotation, getPointsFromBoundsWithRotation, linePolygonIntersects, PointLocation, polygonGetPointTangent, polygonNearestPoint, rotatePoints, } from '@blocksuite/global/utils';
-import { BlockModel } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Bound, getBoundsWithRotation, getPointsFromBoundsWithRotation, linePolygonIntersects, PointLocation, polygonGetPointTangent, polygonNearestPoint, rotatePoints, } from '@lumensuite/global/utils';
+import { BlockModel } from '@lumensuite/store';
 import { SurfaceBlockModel } from './surface/surface-model.js';
 export class GfxBlockElementModel extends BlockModel {
     constructor() {
@@ -85,7 +85,7 @@ export function GfxCompatible(BlockModelSuperClass) {
             currentClass = Object.getPrototypeOf(currentClass.prototype).constructor;
         }
         if (Object.getPrototypeOf(currentClass.prototype) === null) {
-            throw new BlockSuiteError(ErrorCode.GfxBlockElementError, 'The SuperClass is not a subclass of BlockModel');
+            throw new LumenSuiteError(ErrorCode.GfxBlockElementError, 'The SuperClass is not a subclass of BlockModel');
         }
         Object.setPrototypeOf(currentClass.prototype, GfxBlockElementModel.prototype);
     }

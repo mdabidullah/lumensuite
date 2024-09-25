@@ -1,7 +1,7 @@
-import type { AwarenessSource } from '@blocksuite/sync';
+import type { AwarenessSource } from '@lumensuite/sync';
 import type { Awareness } from 'y-protocols/awareness';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   applyAwarenessUpdate,
   encodeAwarenessUpdate,

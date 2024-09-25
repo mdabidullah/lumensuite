@@ -1,4 +1,4 @@
-import type { DocCollection } from '@blocksuite/store';
+import type { DocCollection } from '@lumensuite/store';
 
 import {
   ImportDoc,

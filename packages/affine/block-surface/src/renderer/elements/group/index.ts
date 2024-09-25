@@ -1,6 +1,6 @@
-import type { GroupElementModel } from '@blocksuite/affine-model';
+import type { GroupElementModel } from '@lumensuite/affine-model';
 
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 
 import type { CanvasRenderer } from '../../canvas-renderer.js';
 

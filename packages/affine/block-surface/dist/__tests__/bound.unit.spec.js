@@ -1,4 +1,4 @@
-import { Bound, getCommonBound, inflateBound, transformPointsToNewBound, } from '@blocksuite/global/utils';
+import { Bound, getCommonBound, inflateBound, transformPointsToNewBound, } from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 describe('bound utils', () => {
     it('Bound basic', () => {

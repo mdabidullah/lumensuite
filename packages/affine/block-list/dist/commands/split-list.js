@@ -1,5 +1,5 @@
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { getNextContinuousNumberedLists, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { getNextContinuousNumberedLists, matchFlavours, } from '@lumensuite/affine-shared/utils';
 import { correctNumberedListsOrderToPrev } from './utils.js';
 export const splitListCommand = (ctx, next) => {
     const { blockId, inlineIndex, std } = ctx;

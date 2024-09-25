@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
-import { getShapeRadius, getShapeType, } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, sleep } from '@blocksuite/global/utils';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
+import { getShapeRadius, getShapeType, } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, sleep } from '@lumensuite/global/utils';
 import { css, html, LitElement, } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { ShapeToolController } from '../../../tools/shape-tool.js';

@@ -1,6 +1,6 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
-import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@lumensuite/blocks';
 import type { FramePanelBody } from '../body/frame-panel-body.js';
 import { FrameCard } from '../card/frame-card.js';
 /**

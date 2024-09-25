@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
 import { html, LitElement, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';
@@ -91,11 +91,11 @@ export class VLine extends LitElement {
     const renderElements = this.elements.flatMap(([template, delta], index) => {
       if (inlineEditor.isEmbed(delta)) {
         if (delta.insert.length !== 1) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.InlineEditorError,
             `The length of embed node should only be 1.
             This seems to be an internal issue with inline editor.
-            Please go to https://github.com/toeverything/blocksuite/issues
+            Please go to https://github.com/toeverything/lumensuite/issues
             to report it.`
           );
         }

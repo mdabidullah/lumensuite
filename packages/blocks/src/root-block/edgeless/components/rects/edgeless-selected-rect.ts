@@ -3,14 +3,14 @@ import type {
   IPoint,
   IVec,
   PointLocation,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import {
   CanvasElementType,
   CommonUtils,
   normalizeShapeBound,
   TextUtils,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   type BookmarkBlockModel,
   ConnectorElementModel,
@@ -21,20 +21,20 @@ import {
   NoteBlockModel,
   ShapeElementModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   clamp,
   requestThrottledConnectedFrame,
   stopPropagation,
-} from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
+} from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import {
   assertType,
   Bound,
   deserializeXYWH,
   pickValues,
   Slot,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';
@@ -866,7 +866,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
         areAllConnectors = false;
         areAllShapes = false;
       } else {
-        assertType<BlockSuite.SurfaceElementModel>(element);
+        assertType<LumenSuite.SurfaceElementModel>(element);
         if (element.type === CanvasElementType.CONNECTOR) {
           const connector = element as ConnectorElementModel;
           areAllIndependentConnectors &&= !(
@@ -934,7 +934,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
    * @deprecated
    */
   #adjustAIChat(
-    element: BlockSuite.EdgelessModel,
+    element: LumenSuite.EdgelessModel,
     bound: Bound,
     direction: HandleDirection
   ) {
@@ -1144,7 +1144,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
   }
 
   #adjustProportional(
-    element: BlockSuite.EdgelessModel,
+    element: LumenSuite.EdgelessModel,
     bound: Bound,
     direction: HandleDirection
   ) {
@@ -1242,7 +1242,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
   }
 
   #adjustUseFallback(
-    element: BlockSuite.EdgelessModel,
+    element: LumenSuite.EdgelessModel,
     bound: Bound,
     _direction: HandleDirection
   ) {
@@ -1272,7 +1272,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
     );
   }
 
-  private _isProportionalElement(element: BlockSuite.EdgelessModel) {
+  private _isProportionalElement(element: LumenSuite.EdgelessModel) {
     return (
       isAttachmentBlock(element) ||
       isImageBlock(element) ||
@@ -1285,7 +1285,7 @@ export class EdgelessSelectedRect extends WithDisposable(LitElement) {
     );
   }
 
-  private _shouldRenderSelection(elements?: BlockSuite.EdgelessModel[]) {
+  private _shouldRenderSelection(elements?: LumenSuite.EdgelessModel[]) {
     elements = elements ?? this.selection.selectedElements;
     return elements.length > 0 && !this.selection.editing;
   }

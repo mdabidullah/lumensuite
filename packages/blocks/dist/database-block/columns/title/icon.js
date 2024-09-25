@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BaseCellRenderer } from '@blocksuite/data-view';
+import { BaseCellRenderer } from '@lumensuite/data-view';
 import { css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 let IconCell = (() => {

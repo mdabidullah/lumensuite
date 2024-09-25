@@ -32,15 +32,15 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { playCheckAnimation, toggleDown, toggleRight, } from '@blocksuite/affine-components/icons';
-import { DefaultInlineManagerExtension, } from '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-shared/commands';
-import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT, NOTE_SELECTOR, } from '@blocksuite/affine-shared/consts';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { getInlineRangeProvider } from '@blocksuite/block-std';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { playCheckAnimation, toggleDown, toggleRight, } from '@lumensuite/affine-components/icons';
+import { DefaultInlineManagerExtension, } from '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-shared/commands';
+import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT, NOTE_SELECTOR, } from '@lumensuite/affine-shared/consts';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { getInlineRangeProvider } from '@lumensuite/block-std';
 import { effect } from '@lit-labs/preact-signals';
 import { html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

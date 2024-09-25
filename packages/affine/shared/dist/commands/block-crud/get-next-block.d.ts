@@ -1,9 +1,9 @@
-import type { BlockComponent, Command } from '@blocksuite/block-std';
+import type { BlockComponent, Command } from '@lumensuite/block-std';
 export declare const getNextBlockCommand: Command<'currentSelectionPath', 'nextBlock', {
     path?: string;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             nextBlock?: BlockComponent;
         }

@@ -1,4 +1,4 @@
-import type { Constructor } from '@blocksuite/global/utils';
+import type { Constructor } from '@lumensuite/global/utils';
 import type { LitElement } from 'lit';
 import { type EdgelessToolbarToolClass } from './tool.mixin.js';
 export declare abstract class ToolbarButtonWithMenuClass extends EdgelessToolbarToolClass {

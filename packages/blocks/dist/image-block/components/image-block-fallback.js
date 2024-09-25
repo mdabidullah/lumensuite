@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { humanFileSize } from '@blocksuite/affine-shared/utils';
-import { modelContext, ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
+import { humanFileSize } from '@lumensuite/affine-shared/utils';
+import { modelContext, ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
 import { consume } from '@lit/context';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

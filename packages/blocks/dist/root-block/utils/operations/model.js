@@ -1,5 +1,5 @@
-import { assertExists } from '@blocksuite/global/utils';
-import { Text } from '@blocksuite/store';
+import { assertExists } from '@lumensuite/global/utils';
+import { Text } from '@lumensuite/store';
 /**
  * This file should only contain functions that are used to
  * operate on block models in store, which means that this operations

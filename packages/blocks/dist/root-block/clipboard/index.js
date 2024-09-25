@@ -1,4 +1,4 @@
-import { assertExists, DisposableGroup } from '@blocksuite/global/utils';
+import { assertExists, DisposableGroup } from '@lumensuite/global/utils';
 import { AttachmentAdapter, HtmlAdapter, ImageAdapter, MixTextAdapter, } from '../../_common/adapters/index.js';
 import { defaultImageProxyMiddleware, replaceIdMiddleware, titleMiddleware, } from '../../_common/transformers/middlewares.js';
 import { ClipboardAdapter } from './adapter.js';

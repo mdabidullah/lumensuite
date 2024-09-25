@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -28,7 +28,7 @@
             "xywh": "[25,-287.5,50,56]",
             "index": "a1",
             "color": "--affine-palette-line-blue",
-            "fontFamily": "blocksuite:surface:Inter",
+            "fontFamily": "lumensuite:surface:Inter",
             "fontStyle": "normal",
             "fontWeight": "400",
             "textAlign": "left",
@@ -45,7 +45,7 @@
               "props": {
                 "type": "text",
                 "text": {
-                  "$blocksuite:internal:text$": true,
+                  "$lumensuite:internal:text$": true,
                   "delta": []
                 }
               },
@@ -84,7 +84,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": []
             }
           },

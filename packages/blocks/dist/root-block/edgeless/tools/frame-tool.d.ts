@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import { EdgelessToolController } from './edgeless-tool.js';
 type FrameTool = {
     type: 'frame';
@@ -24,7 +24,7 @@ export declare class FrameToolController extends EdgelessToolController<FrameToo
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             frame: FrameToolController;
         }

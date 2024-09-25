@@ -1,7 +1,7 @@
-import type { BlockComponent, EditorHost } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockComponent, EditorHost } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
-import { type NoteBlockModel, NoteDisplayMode } from '@blocksuite/affine-model';
+import { type NoteBlockModel, NoteDisplayMode } from '@lumensuite/affine-model';
 
 import { matchFlavours } from './checker.js';
 

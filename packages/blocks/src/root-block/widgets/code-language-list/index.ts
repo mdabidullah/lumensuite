@@ -1,10 +1,10 @@
-import type { CodeBlockModel } from '@blocksuite/affine-model';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
 
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { sleep } from '@blocksuite/global/utils';
 import { offset } from '@floating-ui/dom';
 import { computed } from '@lit-labs/preact-signals';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { sleep } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

@@ -1,6 +1,6 @@
-import type { Constructor, IVec, SerializedXYWH } from '@blocksuite/global/utils';
-import { Bound, PointLocation } from '@blocksuite/global/utils';
-import { BlockModel } from '@blocksuite/store';
+import type { Constructor, IVec, SerializedXYWH } from '@lumensuite/global/utils';
+import { Bound, PointLocation } from '@lumensuite/global/utils';
+import { BlockModel } from '@lumensuite/store';
 import type { EditorHost } from '../view/index.js';
 import type { GfxCompatibleProps, GfxElementGeometry, GfxGroupLikeElementModel, GfxPrimitiveElementModel, PointTestOptions } from './surface/element-model.js';
 export declare class GfxBlockElementModel<Props extends GfxCompatibleProps = GfxCompatibleProps> extends BlockModel<Props> implements GfxElementGeometry {

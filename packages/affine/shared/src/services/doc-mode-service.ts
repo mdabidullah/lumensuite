@@ -1,10 +1,10 @@
-import type { DocMode } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Container } from '@blocksuite/global/di';
+import type { DocMode } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Container } from '@lumensuite/global/di';
 
-import { Extension, StdIdentifier } from '@blocksuite/block-std';
-import { createIdentifier } from '@blocksuite/global/di';
-import { type Disposable, noop, Slot } from '@blocksuite/global/utils';
+import { Extension, StdIdentifier } from '@lumensuite/block-std';
+import { createIdentifier } from '@lumensuite/global/di';
+import { type Disposable, noop, Slot } from '@lumensuite/global/utils';
 
 const DEFAULT_MODE: DocMode = 'page';
 

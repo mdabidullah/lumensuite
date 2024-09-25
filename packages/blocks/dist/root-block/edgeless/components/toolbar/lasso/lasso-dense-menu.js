@@ -1,4 +1,4 @@
-import { LassoFreeHandIcon, LassoPolygonalIcon, } from '@blocksuite/affine-components/icons';
+import { LassoFreeHandIcon, LassoPolygonalIcon, } from '@lumensuite/affine-components/icons';
 import { LassoMode } from '../../../../../_common/types.js';
 export const buildLassoDenseMenu = edgeless => {
     // TODO: active state

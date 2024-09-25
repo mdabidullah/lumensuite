@@ -1,15 +1,15 @@
 import type {
   EmbedCardStyle,
   ParagraphBlockModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import type {
   BaseSelection,
   BlockComponent,
   EditorHost,
-} from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT } from '@blocksuite/affine-shared/consts';
+import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT } from '@lumensuite/affine-shared/consts';
 import {
   findClosestBlockComponent,
   getBlockProps,
@@ -17,8 +17,8 @@ import {
   getClosestBlockComponentByPoint,
   isInsidePageEditor,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { assertExists, Bound, Point, Rect } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { assertExists, Bound, Point, Rect } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 

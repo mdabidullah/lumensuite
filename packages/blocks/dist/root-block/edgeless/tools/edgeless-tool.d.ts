@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import type { GfxBlockModel } from '../block-model.js';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 import type { EdgelessRootService } from '../edgeless-root-service.js';
@@ -11,8 +11,8 @@ export declare abstract class EdgelessToolController<Tool extends EdgelessTool =
     enableHover: boolean;
     abstract tool: Tool;
     protected get _blocks(): GfxBlockModel[];
-    protected get _doc(): import("@blocksuite/store").Doc;
-    protected get _surface(): import("@blocksuite/affine-block-surface").SurfaceBlockComponent;
+    protected get _doc(): import("@lumensuite/store").Doc;
+    protected get _surface(): import("@lumensuite/affine-block-surface").SurfaceBlockComponent;
     get draggingArea(): SelectionArea | null;
     constructor(service: EdgelessRootService);
     abstract afterModeSwitch(newMode: Tool): void;

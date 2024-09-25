@@ -1,18 +1,18 @@
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
 import {
   ellipseSvg,
   roundedSvg,
   triangleSvg,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   getShapeRadius,
   getShapeType,
   ShapeType,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { SignalWatcher } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { SignalWatcher } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

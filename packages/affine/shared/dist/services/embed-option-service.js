@@ -1,5 +1,5 @@
-import { Extension } from '@blocksuite/block-std';
-import { createIdentifier } from '@blocksuite/global/di';
+import { Extension } from '@lumensuite/block-std';
+import { createIdentifier } from '@lumensuite/global/di';
 export const EmbedOptionProvider = createIdentifier('AffineEmbedOptionProvider');
 export class EmbedOptionService extends Extension {
     constructor() {

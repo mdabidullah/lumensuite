@@ -1,4 +1,4 @@
-import { BlockService } from '@blocksuite/block-std';
+import { BlockService } from '@lumensuite/block-std';
 import { type Signal } from '@lit-labs/preact-signals';
 import { type HighlighterCore, type MaybeGetter } from 'shiki';
 export declare class CodeBlockService extends BlockService {

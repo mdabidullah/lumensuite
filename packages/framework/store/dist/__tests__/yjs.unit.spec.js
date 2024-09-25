@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
 import * as Y from 'yjs';
 import { Boxed, createYProxy, popProp, stashProp } from '../reactive/index.js';
-describe('blocksuite yjs', () => {
+describe('lumensuite yjs', () => {
     describe('array', () => {
         test('proxy', () => {
             const ydoc = new Y.Doc();

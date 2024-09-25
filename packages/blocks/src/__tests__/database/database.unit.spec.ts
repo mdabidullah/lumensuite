@@ -1,4 +1,4 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import {
   type Cell,
@@ -8,9 +8,9 @@ import {
   NoteBlockSchema,
   ParagraphBlockSchema,
   RootBlockSchema,
-} from '@blocksuite/affine-model';
-import { columnModelPresets } from '@blocksuite/data-view/column-pure-presets';
-import { DocCollection, IdGeneratorType, Schema } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import { columnModelPresets } from '@lumensuite/data-view/column-pure-presets';
+import { DocCollection, IdGeneratorType, Schema } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 import { databaseBlockColumns } from '../../database-block/index.js';
@@ -74,7 +74,7 @@ describe('DatabaseManager', () => {
     noteBlockId = doc.addBlock('affine:note', {}, rootId);
 
     databaseBlockId = doc.addBlock(
-      'affine:database' as BlockSuite.Flavour,
+      'affine:database' as LumenSuite.Flavour,
       {
         columns: [],
         titleColumn: 'Title',

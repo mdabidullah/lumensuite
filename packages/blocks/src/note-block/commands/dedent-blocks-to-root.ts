@@ -1,6 +1,6 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 export const dedentBlocksToRoot: Command<
   never,
@@ -45,7 +45,7 @@ export const dedentBlocksToRoot: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       dedentBlocksToRoot: typeof dedentBlocksToRoot;
     }

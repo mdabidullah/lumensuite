@@ -1,15 +1,15 @@
-import type { RichText } from '@blocksuite/affine-components/rich-text';
-import type { TextElementModel } from '@blocksuite/affine-model';
+import type { RichText } from '@lumensuite/affine-components/rich-text';
+import type { TextElementModel } from '@lumensuite/affine-model';
 
-import { CommonUtils, TextUtils } from '@blocksuite/affine-block-surface';
-import '@blocksuite/affine-components/rich-text';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { CommonUtils, TextUtils } from '@lumensuite/affine-block-surface';
+import '@lumensuite/affine-components/rich-text';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   RANGE_SYNC_EXCLUDE_ATTR,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { assertExists, Bound, Vec } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { assertExists, Bound, Vec } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

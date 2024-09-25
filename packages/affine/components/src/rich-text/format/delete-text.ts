@@ -1,7 +1,7 @@
-import type { Command, TextSelection } from '@blocksuite/block-std';
-import type { Text } from '@blocksuite/store';
+import type { Command, TextSelection } from '@lumensuite/block-std';
+import type { Text } from '@lumensuite/store';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 export const deleteTextCommand: Command<
   'currentTextSelection',
@@ -81,7 +81,7 @@ export const deleteTextCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       deleteText: typeof deleteTextCommand;
     }

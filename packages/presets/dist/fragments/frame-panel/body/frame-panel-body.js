@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
-import { DocModeProvider, } from '@blocksuite/blocks';
-import { Bound, DisposableGroup } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
+import { DocModeProvider, } from '@lumensuite/blocks';
+import { Bound, DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

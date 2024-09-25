@@ -1,13 +1,13 @@
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { DeltaInsert } from '@lumensuite/inline';
 
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
-import { getFilenameFromContentDisposition } from '@blocksuite/affine-shared/utils';
-import { getTagColor } from '@blocksuite/data-view';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { isEqual, sha } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { getFilenameFromContentDisposition } from '@lumensuite/affine-shared/utils';
+import { getTagColor } from '@lumensuite/data-view';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { isEqual, sha } from '@lumensuite/global/utils';
 import {
   type AssetsManager,
   ASTWalker,
@@ -23,7 +23,7 @@ import {
   getAssetName,
   nanoid,
   type SliceSnapshot,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import { collapseWhiteSpace } from 'collapse-white-space';
 import rehypeParse from 'rehype-parse';
 import { unified } from 'unified';
@@ -350,7 +350,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                 props: {
                   language: 'Plain Text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: this._hastToDelta(codeText, {
                       trim: false,
                       pre: true,
@@ -376,7 +376,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                 props: {
                   type: 'quote',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: this._hastToDelta(
                       hastGetTextChildrenOnlyAst(o.node),
                       { pageMap }
@@ -406,7 +406,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                   ? 'quote'
                   : 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: this._hastToDelta(o.node, { pageMap }),
                 },
               },
@@ -431,7 +431,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                 props: {
                   type: o.node.tagName,
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: this._hastToDelta(o.node, { pageMap }),
                   },
                 },
@@ -469,7 +469,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
               props: {
                 type: listType,
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta:
                     listType !== 'toggle'
                       ? this._hastToDelta(o.node, { pageMap })
@@ -526,7 +526,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: this._hastToDelta(o.node, { pageMap }),
                     },
                   },
@@ -549,7 +549,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: this._hastToDelta(o.node, { pageMap }),
                     },
                   },
@@ -795,7 +795,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                       flavour: 'affine:paragraph',
                       props: {
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: this._hastToDelta(child),
                         },
                         type: 'text',
@@ -812,7 +812,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                     flavour: 'affine:paragraph',
                     props: {
                       text: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: this._hastToDelta(child),
                       },
                       type: 'text',
@@ -833,7 +833,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                     flavour: 'affine:paragraph',
                     props: {
                       text: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: this._hastToDelta(child, { pageMap }),
                       },
                       type: 'text',
@@ -1020,7 +1020,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
                   },
                 ],
                 title: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [],
                 },
                 columns,
@@ -1052,7 +1052,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
   override fromBlockSnapshot(
     _payload: FromBlockSnapshotPayload
   ): Promise<FromBlockSnapshotResult<NotionHtml>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'NotionHtmlAdapter.fromBlockSnapshot is not implemented'
     );
@@ -1061,7 +1061,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
   override fromDocSnapshot(
     _payload: FromDocSnapshotPayload
   ): Promise<FromDocSnapshotResult<NotionHtml>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'NotionHtmlAdapter.fromDocSnapshot is not implemented'
     );
@@ -1070,7 +1070,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
   override fromSliceSnapshot(
     _payload: FromSliceSnapshotPayload
   ): Promise<FromSliceSnapshotResult<NotionHtml>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'NotionHtmlAdapter.fromSliceSnapshot is not implemented'
     );
@@ -1138,7 +1138,7 @@ export class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
         flavour: 'affine:page',
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: this._hastToDelta(
               titleAst ?? {
                 type: 'text',

@@ -1,11 +1,11 @@
-import { TextUtils } from '@blocksuite/affine-block-surface';
-import { CheckIcon } from '@blocksuite/affine-components/icons';
+import { TextUtils } from '@lumensuite/affine-block-surface';
+import { CheckIcon } from '@lumensuite/affine-components/icons';
 import {
   FontFamily,
   FontFamilyMap,
   FontStyle,
   FontWeight,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

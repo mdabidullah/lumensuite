@@ -1,5 +1,5 @@
 var _a;
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { computed, signal } from '@preact/signals-core';
 import { z } from 'zod';
 import { Boxed } from '../reactive/boxed.js';

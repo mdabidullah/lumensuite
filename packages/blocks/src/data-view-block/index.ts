@@ -4,7 +4,7 @@ export * from './data-view-block.js';
 export * from './data-view-model.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:data-view': DataViewBlockModel;
     }

@@ -1,4 +1,4 @@
-import { assertExists, Point, Rect } from '@blocksuite/global/utils';
+import { assertExists, Point, Rect } from '@lumensuite/global/utils';
 import { startDrag } from '../../../core/utils/drag.js';
 import { autoScrollOnBoundary } from '../../../core/utils/frame-loop.js';
 import { KanbanCard } from '../card.js';

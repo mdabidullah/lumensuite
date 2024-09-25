@@ -1,15 +1,15 @@
-import type { DatabaseBlockModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { ViewMeta } from '@blocksuite/data-view';
+import type { DatabaseBlockModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { ViewMeta } from '@lumensuite/data-view';
 
 import {
   CloseIcon,
   DatabaseKanbanViewIcon,
   DatabaseTableViewIcon,
-} from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, LitElement, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

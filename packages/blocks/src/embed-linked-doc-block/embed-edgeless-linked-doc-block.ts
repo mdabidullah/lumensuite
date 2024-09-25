@@ -1,8 +1,8 @@
 import {
   EMBED_CARD_HEIGHT,
   EMBED_CARD_WIDTH,
-} from '@blocksuite/affine-shared/consts';
-import { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/consts';
+import { Bound } from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 
 import type { EdgelessRootService } from '../root-block/index.js';

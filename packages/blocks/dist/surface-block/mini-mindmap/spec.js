@@ -1,6 +1,6 @@
-import { SurfaceBlockSchema } from '@blocksuite/affine-block-surface';
-import { RootBlockSchema } from '@blocksuite/affine-model';
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { SurfaceBlockSchema } from '@lumensuite/affine-block-surface';
+import { RootBlockSchema } from '@lumensuite/affine-model';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { MindmapService } from './service.js';
 export const MiniMindmapSpecs = [

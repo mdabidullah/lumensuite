@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { WithDisposable } from '@blocksuite/block-std';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { WithDisposable } from '@lumensuite/block-std';
 import { MoreHorizontalIcon, MoreVerticalIcon } from '@blocksuite/icons/lit';
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

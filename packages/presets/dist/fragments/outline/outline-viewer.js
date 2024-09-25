@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { PropTypes, requiredProperties, SignalWatcher, WithDisposable, } from '@blocksuite/block-std';
-import { NoteDisplayMode, scrollbarStyle } from '@blocksuite/blocks';
+import { PropTypes, requiredProperties, SignalWatcher, WithDisposable, } from '@lumensuite/block-std';
+import { NoteDisplayMode, scrollbarStyle } from '@lumensuite/blocks';
 import { signal } from '@lit-labs/preact-signals';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';

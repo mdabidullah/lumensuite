@@ -1,4 +1,4 @@
-import { BlocksUtils, } from '@blocksuite/blocks';
+import { BlocksUtils, } from '@lumensuite/blocks';
 import { headingKeys } from '../config.js';
 export function getNotesFromDoc(doc, modes) {
     const rootModel = doc.root;

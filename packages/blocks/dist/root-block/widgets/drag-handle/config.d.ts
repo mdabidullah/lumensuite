@@ -1,5 +1,5 @@
-import type { BlockComponent, EditorHost, PointerEventState } from '@blocksuite/block-std';
-import type { Disposable, Point, Rect } from '@blocksuite/global/utils';
+import type { BlockComponent, EditorHost, PointerEventState } from '@lumensuite/block-std';
+import type { Disposable, Point, Rect } from '@lumensuite/global/utils';
 import type { DragPreview } from './components/drag-preview.js';
 export declare const DRAG_HANDLE_CONTAINER_HEIGHT = 24;
 export declare const DRAG_HANDLE_CONTAINER_WIDTH = 16;

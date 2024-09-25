@@ -1,6 +1,6 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { IS_MAC, IS_WINDOWS } from '@blocksuite/global/env';
-import { assertExists } from '@blocksuite/global/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { IS_MAC, IS_WINDOWS } from '@lumensuite/global/env';
+import { assertExists } from '@lumensuite/global/utils';
 import { convertSelectedBlocksToLinkedDoc, getTitleFromSelectedModels, notifyDocCreated, promptDocTitle, } from '../../_common/utils/render-linked-doc.js';
 export class PageKeyboardManager {
     get _currentSelection() {

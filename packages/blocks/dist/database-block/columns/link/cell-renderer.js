@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
-import { isValidUrl, normalizeUrl, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { BaseCellRenderer, createFromBaseCellRenderer, createIcon, } from '@blocksuite/data-view';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
+import { isValidUrl, normalizeUrl, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { BaseCellRenderer, createFromBaseCellRenderer, createIcon, } from '@lumensuite/data-view';
 import { PenIcon } from '@blocksuite/icons/lit';
 import { baseTheme } from '@toeverything/theme';
 import { css, unsafeCSS } from 'lit';

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-declare const AIPanelInput_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AIPanelInput_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AIPanelInput extends AIPanelInput_base {
     static styles: import("lit").CSSResult;
     private _onInput;

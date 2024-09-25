@@ -1,8 +1,8 @@
-import type { NoteBlockModel } from '@blocksuite/affine-model';
-import type { Point } from '@blocksuite/global/utils';
+import type { NoteBlockModel } from '@lumensuite/affine-model';
+import type { Point } from '@lumensuite/global/utils';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { handleNativeRangeAtPoint } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { handleNativeRangeAtPoint } from '@lumensuite/affine-shared/utils';
 
 import type { NoteChildrenFlavour } from '../../../_common/utils/index.js';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
@@ -52,7 +52,7 @@ export function addNote(
     const blocks =
       (doc.root?.children.filter(
         child => child.flavour === 'affine:note'
-      ) as BlockSuite.EdgelessBlockModelType[]) ?? [];
+      ) as LumenSuite.EdgelessBlockModelType[]) ?? [];
     const element = blocks.find(b => b.id === noteId);
     if (element) {
       edgeless.service.selection.set({

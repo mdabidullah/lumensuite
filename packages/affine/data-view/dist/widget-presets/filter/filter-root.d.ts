@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { FilterGroup, Variable } from '../../core/common/ast.js';
 import type { FilterGroupView } from './filter-group.js';
-declare const FilterRootView_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FilterRootView_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FilterRootView extends FilterRootView_base {
     static styles: import("lit").CSSResult;
     private _addNew;

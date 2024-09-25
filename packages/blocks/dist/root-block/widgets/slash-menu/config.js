@@ -1,11 +1,11 @@
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
-import { ArrowDownBigIcon, ArrowUpBigIcon, CopyIcon, DatabaseKanbanViewIcon20, DatabaseTableViewIcon20, DeleteIcon, FileIcon, FrameIcon, HeadingIcon, ImageIcon20, LinkedDocIcon, LinkIcon, NewDocIcon, NowIcon, PasteIcon, TodayIcon, TomorrowIcon, YesterdayIcon, } from '@blocksuite/affine-components/icons';
-import { clearMarksOnDiscontinuousInput, getInlineEditorByModel, REFERENCE_NODE, textFormatConfigs, } from '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
-import { createDefaultDoc, getImageFilesFromLocal, matchFlavours, openFileOrFiles, } from '@blocksuite/affine-shared/utils';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
+import { ArrowDownBigIcon, ArrowUpBigIcon, CopyIcon, DatabaseKanbanViewIcon20, DatabaseTableViewIcon20, DeleteIcon, FileIcon, FrameIcon, HeadingIcon, ImageIcon20, LinkedDocIcon, LinkIcon, NewDocIcon, NowIcon, PasteIcon, TodayIcon, TomorrowIcon, YesterdayIcon, } from '@lumensuite/affine-components/icons';
+import { clearMarksOnDiscontinuousInput, getInlineEditorByModel, REFERENCE_NODE, textFormatConfigs, } from '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
+import { createDefaultDoc, getImageFilesFromLocal, matchFlavours, openFileOrFiles, } from '@lumensuite/affine-shared/utils';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
 import { GroupingIcon, TeXIcon } from '@blocksuite/icons/lit';
-import { Slice, Text } from '@blocksuite/store';
+import { Slice, Text } from '@lumensuite/store';
 import { toggleEmbedCardCreateModal } from '../../../_common/components/embed-card/modal/embed-card-create-modal.js';
 import { textConversionConfigs } from '../../../_common/configs/text-conversion.js';
 import { addSiblingAttachmentBlocks } from '../../../attachment-block/utils.js';

@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WithDisposable } from '@blocksuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
 import { consume } from '@lit/context';
 import { cssVar } from '@toeverything/theme';
 import { property, state } from 'lit/decorators.js';

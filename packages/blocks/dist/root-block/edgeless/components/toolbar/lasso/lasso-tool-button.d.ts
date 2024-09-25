@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { LassoMode } from '../../../../../_common/types.js';
-declare const EdgelessDefaultToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass> & import("@blocksuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
+declare const EdgelessDefaultToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass> & import("@lumensuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
 export declare class EdgelessDefaultToolButton extends EdgelessDefaultToolButton_base {
     static styles: import("lit").CSSResult;
     private _changeTool;

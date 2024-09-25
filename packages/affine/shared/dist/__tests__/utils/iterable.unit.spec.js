@@ -1,4 +1,4 @@
-import { atLeastNMatches, countBy, groupBy, maxBy, } from '@blocksuite/global/utils';
+import { atLeastNMatches, countBy, groupBy, maxBy, } from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 describe('countBy', () => {
     it('basic', () => {

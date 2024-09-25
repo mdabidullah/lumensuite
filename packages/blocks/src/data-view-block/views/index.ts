@@ -1,6 +1,6 @@
-import type { ViewMeta } from '@blocksuite/data-view';
+import type { ViewMeta } from '@lumensuite/data-view';
 
-import { viewPresets } from '@blocksuite/data-view/view-presets';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
 
 export const blockQueryViews: ViewMeta[] = [
   viewPresets.tableViewConfig,

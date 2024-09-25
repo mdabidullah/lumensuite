@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { CaptionIcon, CenterPeekIcon, EdgelessModeIcon, MoreVerticalIcon, OpenIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { cloneGroups, renderGroups, renderToolbarSeparator, } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { CaptionIcon, CenterPeekIcon, EdgelessModeIcon, MoreVerticalIcon, OpenIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { cloneGroups, renderGroups, renderToolbarSeparator, } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { offset, shift } from '@floating-ui/dom';
 import { html, nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';

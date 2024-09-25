@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { KanbanSingleView } from './kanban-view-manager.js';
 import './card.js';
-declare const KanbanHeader_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const KanbanHeader_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class KanbanHeader extends KanbanHeader_base {
     static styles: import("lit").CSSResult;
     private clickGroup;

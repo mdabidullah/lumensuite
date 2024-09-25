@@ -1,5 +1,5 @@
-import { isAbortError } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 import { GithubIssueClosedFailureIcon, GithubIssueClosedSuccessIcon, GithubIssueOpenIcon, GithubPRClosedIcon, GithubPRDraftIcon, GithubPRMergedIcon, GithubPROpenIcon, } from './styles.js';
 export async function queryEmbedGithubData(embedGithubModel, linkPreviewer, signal) {

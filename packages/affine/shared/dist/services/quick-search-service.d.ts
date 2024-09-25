@@ -12,5 +12,5 @@ export type QuickSearchResult = {
 } | {
     userInput: string;
 } | null;
-export declare const QuickSearchProvider: import("@blocksuite/global/di").ServiceIdentifier<QuickSearchService> & ((variant: import("@blocksuite/global/di").ServiceVariant) => import("@blocksuite/global/di").ServiceIdentifier<QuickSearchService>);
+export declare const QuickSearchProvider: import("@lumensuite/global/di").ServiceIdentifier<QuickSearchService> & ((variant: import("@lumensuite/global/di").ServiceVariant) => import("@lumensuite/global/di").ServiceIdentifier<QuickSearchService>);
 //# sourceMappingURL=quick-search-service.d.ts.map

@@ -1,4 +1,4 @@
-import { TextAlign } from '@blocksuite/affine-model';
+import { TextAlign } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
 export declare class EdgelessAlignPanel extends LitElement {
     static styles: import("lit").CSSResult;

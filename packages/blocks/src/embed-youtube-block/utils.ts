@@ -1,10 +1,10 @@
 import type {
   EmbedYoutubeBlockUrlData,
   EmbedYoutubeModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { isAbortError } from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 import type { LinkPreviewer } from '../_common/embed-block-helper/index.js';
 import type { EmbedYoutubeBlockComponent } from './embed-youtube-block.js';

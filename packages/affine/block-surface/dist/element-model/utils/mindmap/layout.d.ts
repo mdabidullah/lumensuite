@@ -1,4 +1,4 @@
-import { LayoutType } from '@blocksuite/affine-model';
+import { LayoutType } from '@lumensuite/affine-model';
 import type { MindmapElementModel } from '../../mindmap.js';
 export declare const NODE_VERTICAL_SPACING = 45;
 export declare const NODE_HORIZONTAL_SPACING = 110;
@@ -18,7 +18,7 @@ export type NodeDetail = {
 export type MindmapNode = {
     id: string;
     detail: NodeDetail;
-    element: BlockSuite.SurfaceElementModel;
+    element: LumenSuite.SurfaceElementModel;
     children: MindmapNode[];
     /**
      * This property override the preferredDir or default layout direction.

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { sleep } from '@blocksuite/global/utils';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { sleep } from '@lumensuite/global/utils';
 import { offset } from '@floating-ui/dom';
 import { computed } from '@lit-labs/preact-signals';
 import { html } from 'lit';

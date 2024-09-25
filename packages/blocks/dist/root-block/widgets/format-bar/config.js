@@ -1,10 +1,10 @@
-import { BoldIcon, BulletedListIcon, CheckBoxIcon, CodeIcon, CopyIcon, DatabaseTableViewIcon20, DeleteIcon, DuplicateIcon, Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon, Heading5Icon, Heading6Icon, ItalicIcon, LinkedDocIcon, LinkIcon, MoreVerticalIcon, NumberedListIcon, QuoteIcon, StrikethroughIcon, TextIcon, UnderlineIcon, } from '@blocksuite/affine-components/icons';
-import { createSimplePortal } from '@blocksuite/affine-components/portal';
-import { toast } from '@blocksuite/affine-components/toast';
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertExists } from '@blocksuite/global/utils';
-import { Slice } from '@blocksuite/store';
+import { BoldIcon, BulletedListIcon, CheckBoxIcon, CodeIcon, CopyIcon, DatabaseTableViewIcon20, DeleteIcon, DuplicateIcon, Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon, Heading5Icon, Heading6Icon, ItalicIcon, LinkedDocIcon, LinkIcon, MoreVerticalIcon, NumberedListIcon, QuoteIcon, StrikethroughIcon, TextIcon, UnderlineIcon, } from '@lumensuite/affine-components/icons';
+import { createSimplePortal } from '@lumensuite/affine-components/portal';
+import { toast } from '@lumensuite/affine-components/toast';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertExists } from '@lumensuite/global/utils';
+import { Slice } from '@lumensuite/store';
 import { html } from 'lit';
 import { DATABASE_CONVERT_WHITE_LIST } from '../../../_common/configs/quick-action/database-convert-view.js';
 import { convertSelectedBlocksToLinkedDoc, getTitleFromSelectedModels, notifyDocCreated, promptDocTitle, } from '../../../_common/utils/render-linked-doc.js';

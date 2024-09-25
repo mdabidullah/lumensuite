@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { UIEventState, UIEventStateContext, } from './base.js';
 import { ClipboardControl } from './control/clipboard.js';
@@ -163,7 +163,7 @@ export class UIEventDispatcher extends LifeCycleWatcher {
                 break;
             }
             default: {
-                throw new BlockSuiteError(ErrorCode.EventDispatcherError, `Unknown event scope source: ${state.sourceType}`);
+                throw new LumenSuiteError(ErrorCode.EventDispatcherError, `Unknown event scope source: ${state.sourceType}`);
             }
         }
         return output;

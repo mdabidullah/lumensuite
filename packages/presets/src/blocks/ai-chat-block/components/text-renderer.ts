@@ -1,18 +1,18 @@
-import type { AffineAIPanelState } from '@blocksuite/blocks';
+import type { AffineAIPanelState } from '@lumensuite/blocks';
 
 import {
   BlockStdScope,
   type EditorHost,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   CodeBlockComponent,
   DividerBlockComponent,
   ListBlockComponent,
   ParagraphBlockComponent,
   SpecProvider,
-} from '@blocksuite/blocks';
-import { BlockViewType, type Doc, type Query } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { BlockViewType, type Doc, type Query } from '@lumensuite/store';
 import { css, html, LitElement, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

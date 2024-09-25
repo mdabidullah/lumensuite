@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 import { EmbedLoomBlockComponent } from './embed-loom-block.js';
 noop(EmbedLoomBlockComponent);
 export * from './embed-loom-block.js';

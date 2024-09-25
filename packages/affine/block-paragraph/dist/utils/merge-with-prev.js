@@ -1,6 +1,6 @@
-import { asyncSetInlineRange, focusTextModel, } from '@blocksuite/affine-components/rich-text';
-import { EMBED_BLOCK_FLAVOUR_LIST } from '@blocksuite/affine-shared/consts';
-import { focusTitle, getDocTitleInlineEditor, getPrevContentBlock, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { asyncSetInlineRange, focusTextModel, } from '@lumensuite/affine-components/rich-text';
+import { EMBED_BLOCK_FLAVOUR_LIST } from '@lumensuite/affine-shared/consts';
+import { focusTitle, getDocTitleInlineEditor, getPrevContentBlock, matchFlavours, } from '@lumensuite/affine-shared/utils';
 /**
  * Merge the paragraph with prev block
  *

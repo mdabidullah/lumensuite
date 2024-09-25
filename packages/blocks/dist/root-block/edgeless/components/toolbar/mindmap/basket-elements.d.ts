@@ -1,6 +1,6 @@
 import type { TemplateResult } from 'lit';
-import { type MindmapStyle } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { type MindmapStyle } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 import type { EdgelessRootBlockComponent } from '../../../edgeless-root-block.js';
 import type { EdgelessRootService } from '../../../edgeless-root-service.js';
 export type ConfigProperty = 'x' | 'y' | 'r' | 's' | 'z' | 'o';

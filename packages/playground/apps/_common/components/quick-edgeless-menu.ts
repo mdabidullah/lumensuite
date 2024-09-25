@@ -1,15 +1,15 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
-import type { DeltaInsert } from '@blocksuite/inline';
-import type { AffineEditorContainer } from '@blocksuite/presets';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
+import type { DeltaInsert } from '@lumensuite/inline';
+import type { AffineEditorContainer } from '@lumensuite/presets';
 
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import {
   type AffineTextAttributes,
   type DocMode,
   DocModeProvider,
-} from '@blocksuite/blocks';
-import { EdgelessRootService, printToPdf } from '@blocksuite/blocks';
-import { type DocCollection, Text } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { EdgelessRootService, printToPdf } from '@lumensuite/blocks';
+import { type DocCollection, Text } from '@lumensuite/store';
 import '@shoelace-style/shoelace/dist/components/alert/alert.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import '@shoelace-style/shoelace/dist/components/button-group/button-group.js';
@@ -248,7 +248,7 @@ export class QuickEdgelessMenu extends ShadowlessElement {
     const html = document.querySelector('html');
 
     this._dark = dark;
-    localStorage.setItem('blocksuite:dark', dark ? 'true' : 'false');
+    localStorage.setItem('lumensuite:dark', dark ? 'true' : 'false');
     if (!html) return;
     html.dataset.theme = dark ? 'dark' : 'light';
 
@@ -437,7 +437,7 @@ export class QuickEdgelessMenu extends ShadowlessElement {
                 <sl-divider></sl-divider>
                 <a
                   target="_blank"
-                  href="https://github.com/toeverything/blocksuite"
+                  href="https://github.com/toeverything/lumensuite"
                 >
                   <sl-menu-item>
                     <sl-icon slot="prefix" name="github"></sl-icon>
@@ -579,7 +579,7 @@ export class QuickEdgelessMenu extends ShadowlessElement {
   private accessor _canUndo = false;
 
   @state()
-  private accessor _dark = localStorage.getItem('blocksuite:dark') === 'true';
+  private accessor _dark = localStorage.getItem('lumensuite:dark') === 'true';
 
   @state()
   private accessor _docMode: DocMode = 'page';

@@ -1,5 +1,5 @@
-import { BlockService } from '@blocksuite/block-std';
-import { Slot } from '@blocksuite/store';
+import { BlockService } from '@lumensuite/block-std';
+import { Slot } from '@lumensuite/store';
 export declare class MindmapService extends BlockService {
     static readonly flavour: "affine:page";
     requestCenter: Slot<void>;

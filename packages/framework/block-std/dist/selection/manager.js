@@ -1,6 +1,6 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
-import { nanoid } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
+import { nanoid } from '@lumensuite/store';
 import { computed, signal } from '@lit-labs/preact-signals';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { BlockSelection, CursorSelection, SurfaceSelection, TextSelection, } from './variants/index.js';
@@ -32,7 +32,7 @@ export class SelectionManager extends LifeCycleWatcher {
         this._jsonToSelection = (json) => {
             const ctor = this._selectionConstructors[json.type];
             if (!ctor) {
-                throw new BlockSuiteError(ErrorCode.SelectionError, `Unknown selection type: ${json.type}`);
+                throw new LumenSuiteError(ErrorCode.SelectionError, `Unknown selection type: ${json.type}`);
             }
             return ctor.fromJSON(json);
         };
@@ -105,7 +105,7 @@ export class SelectionManager extends LifeCycleWatcher {
     create(type, ...args) {
         const ctor = this._selectionConstructors[type];
         if (!ctor) {
-            throw new BlockSuiteError(ErrorCode.SelectionError, `Unknown selection type: ${type}`);
+            throw new LumenSuiteError(ErrorCode.SelectionError, `Unknown selection type: ${type}`);
         }
         return new ctor(...args);
     }

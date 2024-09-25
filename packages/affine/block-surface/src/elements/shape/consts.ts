@@ -1,4 +1,4 @@
-import type { StrokeStyle } from '@blocksuite/affine-model';
+import type { StrokeStyle } from '@lumensuite/affine-model';
 
 export interface GeneralShapeOptions {
   x: number;

@@ -17,7 +17,7 @@ export declare class SurfaceSelection extends BaseSelection {
     toJSON(): Record<string, unknown>;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Selection {
             surface: typeof SurfaceSelection;
         }

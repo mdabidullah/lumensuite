@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { DefaultInlineManagerExtension, } from '@blocksuite/affine-components/rich-text';
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
-import { getViewportElement, isValidUrl, } from '@blocksuite/affine-shared/utils';
-import { BaseCellRenderer } from '@blocksuite/data-view';
-import { IS_MAC } from '@blocksuite/global/env';
-import { assertExists } from '@blocksuite/global/utils';
+import { DefaultInlineManagerExtension, } from '@lumensuite/affine-components/rich-text';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
+import { getViewportElement, isValidUrl, } from '@lumensuite/affine-shared/utils';
+import { BaseCellRenderer } from '@lumensuite/data-view';
+import { IS_MAC } from '@lumensuite/global/env';
+import { assertExists } from '@lumensuite/global/utils';
 import { css } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';

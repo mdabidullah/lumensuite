@@ -1,4 +1,4 @@
-import type { EmbedGithubModel, EmbedGithubStyles } from '@blocksuite/affine-model';
+import type { EmbedGithubModel, EmbedGithubStyles } from '@lumensuite/affine-model';
 import type { EmbedGithubBlockService } from './embed-github-service.js';
 import { EmbedBlockComponent } from '../_common/embed-block-helper/embed-block-element.js';
 export declare class EmbedGithubBlockComponent extends EmbedBlockComponent<EmbedGithubModel, EmbedGithubBlockService> {

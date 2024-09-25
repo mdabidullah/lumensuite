@@ -45,13 +45,13 @@ import { customElement, property } from 'lit/decorators.js';
  * ```ts
  * render() {
  *   return html`${showPortal
- *     ? html`<blocksuite-portal .template=${portalTemplate}></blocksuite-portal>`
+ *     ? html`<lumensuite-portal .template=${portalTemplate}></lumensuite-portal>`
  *     : null}`;
  * };
  * ```
  */
 let Portal = (() => {
-    let _classDecorators = [customElement('blocksuite-portal')];
+    let _classDecorators = [customElement('lumensuite-portal')];
     let _classDescriptor;
     let _classExtraInitializers = [];
     let _classThis;
@@ -88,7 +88,7 @@ let Portal = (() => {
                     ...(typeof this.shadowDom !== 'boolean' ? this.shadowDom : {}),
                 })
                 : portalRoot;
-            portalRoot.classList.add('blocksuite-portal');
+            portalRoot.classList.add('lumensuite-portal');
             this.container.append(portalRoot);
             this._portalRoot = portalRoot;
             return renderRoot;

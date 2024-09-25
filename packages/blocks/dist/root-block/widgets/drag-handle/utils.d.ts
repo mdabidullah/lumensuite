@@ -1,7 +1,7 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { BaseSelection, BlockComponent, EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
-import { Point } from '@blocksuite/global/utils';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { BaseSelection, BlockComponent, EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
+import { Point } from '@lumensuite/global/utils';
 import { type DropResult, type OnDragEndProps } from './config.js';
 export declare const getDragHandleContainerHeight: (model: BlockModel) => number;
 export declare const containChildBlock: (blocks: BlockComponent[], childModel: BlockModel) => boolean;
@@ -14,8 +14,8 @@ export declare const includeTextSelection: (selections: BaseSelection[]) => bool
  */
 export declare const isBlockIdEqual: (id1: string | null | undefined, id2: string | null | undefined) => boolean;
 export declare const isOutOfNoteBlock: (editorHost: EditorHost, noteBlock: Element, point: Point, scale: number) => boolean;
-export declare const getClosestNoteBlock: (editorHost: EditorHost, rootComponent: BlockComponent, point: Point) => BlockComponent<BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null | undefined;
-export declare const getClosestBlockByPoint: (editorHost: EditorHost, rootComponent: BlockComponent, point: Point) => BlockComponent<BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+export declare const getClosestNoteBlock: (editorHost: EditorHost, rootComponent: BlockComponent, point: Point) => BlockComponent<BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null | undefined;
+export declare const getClosestBlockByPoint: (editorHost: EditorHost, rootComponent: BlockComponent, point: Point) => BlockComponent<BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
 export declare function calcDropTarget(point: Point, model: BlockModel, element: Element, draggingElements: BlockComponent[], scale: number, 
 /**
  * Allow the dragging block to be dropped as sublist

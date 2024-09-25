@@ -1,14 +1,14 @@
 import type {
   BaseElementProps,
   PointTestOptions,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 import type {
   Bound,
   IBound,
   IVec,
   PointLocation,
   SerializedXYWH,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import {
   type Color,
@@ -20,13 +20,13 @@ import {
   TextAlign,
   type TextStyleProps,
   TextVerticalAlign,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   field,
   GfxPrimitiveElementModel,
   local,
-} from '@blocksuite/block-std/gfx';
-import { DocCollection, type Y } from '@blocksuite/store';
+} from '@lumensuite/block-std/gfx';
+import { DocCollection, type Y } from '@lumensuite/store';
 
 import {
   LineColor,
@@ -183,7 +183,7 @@ export class ShapeElementModel extends GfxPrimitiveElementModel<ShapeProps> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceElementModelMap {
       shape: ShapeElementModel;
     }

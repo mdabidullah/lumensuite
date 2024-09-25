@@ -1,8 +1,8 @@
 import type {
   SurfaceBlockModel,
   SurfaceBlockTransformer,
-} from '@blocksuite/affine-block-surface';
-import type { ConnectorElementModel } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-block-surface';
+import type { ConnectorElementModel } from '@lumensuite/affine-model';
 
 import {
   assertExists,
@@ -10,7 +10,7 @@ import {
   Bound,
   getCommonBound,
   Slot,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import {
   type BlockModel,
   type BlockSnapshot,
@@ -19,7 +19,7 @@ import {
   Job,
   type SnapshotReturn,
   type Y,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 /**
  * Those block contains other block's id
@@ -200,7 +200,7 @@ export class TemplateJob {
         assertExists(modelData);
 
         doc.addBlock(
-          modelData.flavour as BlockSuite.Flavour,
+          modelData.flavour as LumenSuite.Flavour,
           {
             ...modelData.props,
             id: modelData.id,

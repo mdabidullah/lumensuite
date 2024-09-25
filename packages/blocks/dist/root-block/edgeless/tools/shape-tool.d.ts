@@ -1,5 +1,5 @@
-import type { ShapeName } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { ShapeName } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
 import type { SelectionArea } from '../services/tools-manager.js';
 import type { EdgelessTool } from '../types.js';
 import { EdgelessToolController } from './edgeless-tool.js';
@@ -40,7 +40,7 @@ export declare class ShapeToolController extends EdgelessToolController<ShapeToo
     setDisableOverlay(disable: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             shape: ShapeToolController;
         }

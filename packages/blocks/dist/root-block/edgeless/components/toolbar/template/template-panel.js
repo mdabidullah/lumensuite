@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { requestConnectedFrame, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, getCommonBound } from '@blocksuite/global/utils';
+import { requestConnectedFrame, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, getCommonBound } from '@lumensuite/global/utils';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

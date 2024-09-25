@@ -1,4 +1,4 @@
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
 import type { GroupManager } from '../../core/common/group-by/helper.js';
 import type { TableSingleView } from './table-view-manager.js';
 import { DataViewBase } from '../../core/view/data-view-base.js';

@@ -1,7 +1,7 @@
-import type { Column } from '@blocksuite/affine-model';
-import type { DataViewDataType } from '@blocksuite/data-view';
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
-import { BlockModel } from '@blocksuite/store';
+import type { Column } from '@lumensuite/affine-model';
+import type { DataViewDataType } from '@lumensuite/data-view';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
+import { BlockModel } from '@lumensuite/store';
 type Props = {
     title: string;
     views: DataViewDataType[];
@@ -19,7 +19,7 @@ export declare class DataViewBlockModel extends BlockModel<Props> {
 export declare const DataViewBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<Props>;
+        props: import("@lumensuite/store").PropsGetter<Props>;
         flavour: "affine:data-view";
     } & {
         role: "hub";
@@ -28,7 +28,7 @@ export declare const DataViewBlockSchema: {
         children: string[];
     };
     onUpgrade?: ((data: Props, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<Props>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<Props>) | undefined;
 };
 export {};
 //# sourceMappingURL=data-view-model.d.ts.map

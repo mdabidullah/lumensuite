@@ -1,5 +1,5 @@
-import type { ImageBlockModel } from '@blocksuite/affine-model';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 import type { ImageBlockFallbackCard } from './components/image-block-fallback.js';
 import type { ImageBlockService } from './image-service.js';
 import './components/image-block-fallback.js';

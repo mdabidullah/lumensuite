@@ -1,5 +1,5 @@
-import type { IBound } from '@blocksuite/global/utils';
-import type { Doc } from '@blocksuite/store';
+import type { IBound } from '@lumensuite/global/utils';
+import type { Doc } from '@lumensuite/store';
 import { type GfxModel } from './gfx-block-model.js';
 import { SurfaceBlockModel } from './surface/surface-model.js';
 export declare const DEFAULT_GRID_SIZE = 3000;

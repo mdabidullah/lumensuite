@@ -1,10 +1,10 @@
 import type { PropertyValues } from 'lit';
-import { type MenuOptions } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { type MenuOptions } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { SingleView } from '../../view-manager/single-view.js';
 import { KanbanSingleView } from '../../../view-presets/kanban/kanban-view-manager.js';
 import { TableSingleView } from '../../../view-presets/table/table-view-manager.js';
-declare const GroupSetting_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const GroupSetting_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class GroupSetting extends GroupSetting_base {
     static styles: import("lit").CSSResult;
     connectedCallback(): void;

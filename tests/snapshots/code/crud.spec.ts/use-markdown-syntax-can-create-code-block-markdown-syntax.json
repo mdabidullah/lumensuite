@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -38,7 +38,7 @@
           "version": 1,
           "props": {
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": []
             },
             "language": null,
@@ -55,7 +55,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "aaa"
@@ -73,7 +73,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "bbb"
@@ -90,7 +90,7 @@
               "props": {
                 "type": "text",
                 "text": {
-                  "$blocksuite:internal:text$": true,
+                  "$lumensuite:internal:text$": true,
                   "delta": [
                     {
                       "insert": "ccc"

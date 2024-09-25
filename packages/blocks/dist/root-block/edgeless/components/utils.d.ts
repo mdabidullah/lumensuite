@@ -1,5 +1,5 @@
-import type { IVec } from '@blocksuite/global/utils';
-import { Bound } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 export declare function generateCursorUrl(angle?: number, fallback?: import("lit").CSSResult): string;
 export declare function getCommonRectStyle(rect: DOMRect, active?: boolean, selected?: boolean, rotate?: number): {
     '--affine-border-width': string;

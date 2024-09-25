@@ -10,7 +10,7 @@ import type { ExtensionType } from './extension.js';
  *
  * @example
  * ```ts
- * import { BlockViewExtension } from '@blocksuite/block-std';
+ * import { BlockViewExtension } from '@lumensuite/block-std';
  *
  * const MyListBlockViewExtension = BlockViewExtension(
  *   'affine:list',
@@ -18,5 +18,5 @@ import type { ExtensionType } from './extension.js';
  * );
  * ```
  */
-export declare function BlockViewExtension(flavour: BlockSuite.Flavour, view: BlockViewType): ExtensionType;
+export declare function BlockViewExtension(flavour: LumenSuite.Flavour, view: BlockViewType): ExtensionType;
 //# sourceMappingURL=block-view.d.ts.map

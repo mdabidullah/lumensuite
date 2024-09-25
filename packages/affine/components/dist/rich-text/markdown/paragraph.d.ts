@@ -1,5 +1,5 @@
-import type { ParagraphType } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { ParagraphType } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 export declare function toParagraph(std: BlockStdScope, model: BlockModel, type: ParagraphType, prefix: string): string | undefined;
 //# sourceMappingURL=paragraph.d.ts.map

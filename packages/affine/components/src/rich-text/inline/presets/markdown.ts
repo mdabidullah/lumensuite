@@ -1,11 +1,11 @@
 /* eslint-disable no-useless-escape */
 
-import type { BlockComponent, ExtensionType } from '@blocksuite/block-std';
+import type { BlockComponent, ExtensionType } from '@lumensuite/block-std';
 
 import {
   KEYBOARD_ALLOW_DEFAULT,
   KEYBOARD_PREVENT_DEFAULT,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 
 import { InlineMarkdownExtension } from '../../extension/markdown-matcher.js';
 

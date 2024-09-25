@@ -1,9 +1,9 @@
+import { CenterPeekIcon, MoreHorizontalIcon } from '@blocksuite/icons/lit';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { CenterPeekIcon, MoreHorizontalIcon } from '@blocksuite/icons/lit';
+} from '@lumensuite/block-std';
 import { css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

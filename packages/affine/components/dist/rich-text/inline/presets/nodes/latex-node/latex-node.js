@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@blocksuite/block-std';
-import { ZERO_WIDTH_NON_JOINER, ZERO_WIDTH_SPACE, } from '@blocksuite/inline';
+import { ShadowlessElement, SignalWatcher, WithDisposable, } from '@lumensuite/block-std';
+import { ZERO_WIDTH_NON_JOINER, ZERO_WIDTH_SPACE, } from '@lumensuite/inline';
 import { effect, signal } from '@lit-labs/preact-signals';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';

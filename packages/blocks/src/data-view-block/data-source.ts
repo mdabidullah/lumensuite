@@ -1,19 +1,19 @@
-import type { Column } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { Block, Doc } from '@blocksuite/store';
+import type { Column } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { Block, Doc } from '@lumensuite/store';
 
 import {
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   type ColumnMeta,
   createUniComponentFromWebComponent,
   DataSourceBase,
   type DetailSlots,
-} from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { assertExists, Slot } from '@blocksuite/global/utils';
+} from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { assertExists, Slot } from '@lumensuite/global/utils';
 
 import type { BlockMeta } from './block-meta/base.js';
 import type { DataViewBlockModel } from './data-view-model.js';

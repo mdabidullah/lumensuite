@@ -1,6 +1,6 @@
-import { NoteDisplayMode } from '@blocksuite/affine-model';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
-declare const NoteDisplayModePanel_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const NoteDisplayModePanel_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class NoteDisplayModePanel extends NoteDisplayModePanel_base {
     static styles: import("lit").CSSResult;
     private _DisplayModeIcon;

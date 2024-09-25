@@ -1,20 +1,20 @@
-import type { BlockCollection, DocCollection } from '@blocksuite/store';
+import type { BlockCollection, DocCollection } from '@lumensuite/store';
 
-import { BlockServiceWatcher, type EditorHost } from '@blocksuite/block-std';
+import { BlockServiceWatcher, type EditorHost } from '@lumensuite/block-std';
 import {
   CommunityCanvasTextFonts,
   FontConfigExtension,
   type PageRootService,
   QuickSearchProvider,
   SpecProvider,
-} from '@blocksuite/blocks';
+} from '@lumensuite/blocks';
 import {
   AffineFormatBarWidget,
   DocModeProvider,
   toolbarDefaultConfig,
-} from '@blocksuite/blocks';
-import { assertExists } from '@blocksuite/global/utils';
-import { AffineEditorContainer, CommentPanel } from '@blocksuite/presets';
+} from '@lumensuite/blocks';
+import { assertExists } from '@lumensuite/global/utils';
+import { AffineEditorContainer, CommentPanel } from '@lumensuite/presets';
 
 import { CustomFramePanel } from '../../_common/components/custom-frame-panel.js';
 import { CustomOutlinePanel } from '../../_common/components/custom-outline-panel.js';

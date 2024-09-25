@@ -1,10 +1,10 @@
-import type { Doc } from '@blocksuite/store';
-import { type EditorHost, ShadowlessElement } from '@blocksuite/block-std';
-import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@blocksuite/blocks';
+import type { Doc } from '@lumensuite/store';
+import { type EditorHost, ShadowlessElement } from '@lumensuite/block-std';
+import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@lumensuite/blocks';
 import { type PropertyValues } from 'lit';
 import '../card/frame-card.js';
 export declare const AFFINE_FRAME_PANEL_BODY = "affine-frame-panel-body";
-declare const FramePanelBody_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FramePanelBody_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FramePanelBody extends FramePanelBody_base {
     static styles: import("lit").CSSResult;
     private _clearDocDisposables;

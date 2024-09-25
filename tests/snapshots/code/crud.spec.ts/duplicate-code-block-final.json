@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -38,7 +38,7 @@
           "version": 1,
           "props": {
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "let a: u8 = 7"
@@ -47,7 +47,7 @@
             },
             "language": "rust",
             "wrap": true,
-            "caption": "BlockSuite"
+            "caption": "LumenSuite"
           },
           "children": []
         },
@@ -58,7 +58,7 @@
           "version": 1,
           "props": {
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "let a: u8 = 7"
@@ -67,7 +67,7 @@
             },
             "language": "rust",
             "wrap": true,
-            "caption": "BlockSuite"
+            "caption": "LumenSuite"
           },
           "children": []
         }

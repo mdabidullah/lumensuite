@@ -1,6 +1,6 @@
-import type { Viewport } from '@blocksuite/block-std/gfx';
-import type { PointLocation } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { Viewport } from '@lumensuite/block-std/gfx';
+import type { PointLocation } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 
 import {
   type CanvasElementWithText,
@@ -8,7 +8,7 @@ import {
   GRID_GAP_MAX,
   GRID_GAP_MIN,
   MindmapElementModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   type AttachmentBlockModel,
   type BookmarkBlockModel,
@@ -27,8 +27,8 @@ import {
   type NoteBlockModel,
   ShapeElementModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import { Bound, deserializeXYWH } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { Bound, deserializeXYWH } from '@lumensuite/global/utils';
 
 import type { Connectable } from '../../../_common/utils/index.js';
 import type { GfxBlockModel } from '../block-model.js';
@@ -39,25 +39,25 @@ import { getElementsWithoutGroup } from './group.js';
 const { clamp, getQuadBoundsWithRotation } = CommonUtils;
 
 export function isMindmapNode(
-  element: GfxBlockModel | BlockSuite.EdgelessModel | null
+  element: GfxBlockModel | LumenSuite.EdgelessModel | null
 ) {
   return element?.group instanceof MindmapElementModel;
 }
 
 export function isTopLevelBlock(
-  selectable: BlockModel | BlockSuite.EdgelessModel | BlockModel | null
+  selectable: BlockModel | LumenSuite.EdgelessModel | BlockModel | null
 ): selectable is GfxBlockModel {
   return !!selectable && 'flavour' in selectable;
 }
 
 export function isNoteBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is NoteBlockModel {
   return !!element && 'flavour' in element && element.flavour === 'affine:note';
 }
 
 export function isEdgelessTextBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EdgelessTextBlockModel {
   return (
     !!element &&
@@ -67,7 +67,7 @@ export function isEdgelessTextBlock(
 }
 
 export function isFrameBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is FrameBlockModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:frame'
@@ -75,7 +75,7 @@ export function isFrameBlock(
 }
 
 export function isImageBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is ImageBlockModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:image'
@@ -83,7 +83,7 @@ export function isImageBlock(
 }
 
 export function isAttachmentBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is AttachmentBlockModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:attachment'
@@ -91,7 +91,7 @@ export function isAttachmentBlock(
 }
 
 export function isBookmarkBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is BookmarkBlockModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:bookmark'
@@ -99,7 +99,7 @@ export function isBookmarkBlock(
 }
 
 export function isEmbeddedBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedBlockModel {
   return (
     !!element && 'flavour' in element && /affine:embed-*/.test(element.flavour)
@@ -114,7 +114,7 @@ export function isEmbeddedBlock(
  * @deprecated
  */
 export function isAIChatBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ) {
   return (
     !!element &&
@@ -124,7 +124,7 @@ export function isAIChatBlock(
 }
 
 export function isEmbeddedLinkBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ) {
   return (
     isEmbeddedBlock(element) &&
@@ -134,7 +134,7 @@ export function isEmbeddedLinkBlock(
 }
 
 export function isEmbedGithubBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedGithubModel {
   return (
     !!element &&
@@ -144,7 +144,7 @@ export function isEmbedGithubBlock(
 }
 
 export function isEmbedYoutubeBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedYoutubeModel {
   return (
     !!element &&
@@ -154,7 +154,7 @@ export function isEmbedYoutubeBlock(
 }
 
 export function isEmbedLoomBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedLoomModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:embed-loom'
@@ -162,7 +162,7 @@ export function isEmbedLoomBlock(
 }
 
 export function isEmbedFigmaBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedFigmaModel {
   return (
     !!element &&
@@ -172,7 +172,7 @@ export function isEmbedFigmaBlock(
 }
 
 export function isEmbedLinkedDocBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedLinkedDocModel {
   return (
     !!element &&
@@ -182,7 +182,7 @@ export function isEmbedLinkedDocBlock(
 }
 
 export function isEmbedSyncedDocBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedSyncedDocModel {
   return (
     !!element &&
@@ -192,7 +192,7 @@ export function isEmbedSyncedDocBlock(
 }
 
 export function isEmbedHtmlBlock(
-  element: BlockModel | BlockSuite.EdgelessModel | null
+  element: BlockModel | LumenSuite.EdgelessModel | null
 ): element is EmbedHtmlModel {
   return (
     !!element && 'flavour' in element && element.flavour === 'affine:embed-html'
@@ -200,13 +200,13 @@ export function isEmbedHtmlBlock(
 }
 
 export function isCanvasElement(
-  selectable: BlockSuite.EdgelessModel | null
-): selectable is BlockSuite.SurfaceModel {
+  selectable: LumenSuite.EdgelessModel | null
+): selectable is LumenSuite.SurfaceModel {
   return !isTopLevelBlock(selectable);
 }
 
 export function isCanvasElementWithText(
-  element: BlockSuite.EdgelessModel
+  element: LumenSuite.EdgelessModel
 ): element is CanvasElementWithText {
   return (
     element instanceof TextElementModel || element instanceof ShapeElementModel
@@ -214,7 +214,7 @@ export function isCanvasElementWithText(
 }
 
 export function isConnectable(
-  element: BlockSuite.EdgelessModel | null
+  element: LumenSuite.EdgelessModel | null
 ): element is Connectable {
   return !!element && element.connectable;
 }
@@ -258,7 +258,7 @@ export function getBackgroundGrid(zoom: number, showGrid: boolean) {
   };
 }
 
-export function getSelectedRect(selected: BlockSuite.EdgelessModel[]): DOMRect {
+export function getSelectedRect(selected: LumenSuite.EdgelessModel[]): DOMRect {
   if (selected.length === 0) {
     return new DOMRect();
   }
@@ -305,7 +305,7 @@ export type SelectableProps = {
 };
 
 export function getSelectableBounds(
-  selected: BlockSuite.EdgelessModel[]
+  selected: LumenSuite.EdgelessModel[]
 ): Map<string, SelectableProps> {
   const bounds = new Map();
   getElementsWithoutGroup(selected).forEach(ele => {

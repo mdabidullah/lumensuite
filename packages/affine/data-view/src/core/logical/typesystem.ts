@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 export interface TUnion {
   type: 'union';
@@ -133,7 +133,7 @@ export class DataDefine<Data extends DataTypeShape = Record<string, unknown>> {
   isSuperOf(subType: TDataType): boolean {
     const dataDefine = this.dataMap.get(subType.name);
     if (!dataDefine) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DatabaseBlockError,
         'data config not found'
       );
@@ -240,7 +240,7 @@ export class Typesystem {
     if (this.isDataType(sub)) {
       const dataDefine = this.dataMap.get(sub.name);
       if (!dataDefine) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.DatabaseBlockError,
           'data config not found'
         );
@@ -273,7 +273,7 @@ export class Typesystem {
         case 'array':
           return tArray(subst(type.ele));
         case 'function':
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.DatabaseBlockError,
             'not implement yet'
           );

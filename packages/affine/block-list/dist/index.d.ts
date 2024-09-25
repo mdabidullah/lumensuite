@@ -4,7 +4,7 @@ export * from './list-block.js';
 export * from './list-service.js';
 export * from './list-spec.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:list': ListBlockService;
         }

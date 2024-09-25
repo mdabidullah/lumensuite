@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getPageRootByElement, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { getPageRootByElement, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { autoPlacement, autoUpdate, computePosition, flip, offset, shift, } from '@floating-ui/dom';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';

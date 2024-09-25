@@ -1,8 +1,8 @@
+import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
 import {
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
-import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-shared/utils';
 
 import type { TType } from '../../core/logical/typesystem.js';
 import type { ViewManager } from '../../core/view-manager/view-manager.js';

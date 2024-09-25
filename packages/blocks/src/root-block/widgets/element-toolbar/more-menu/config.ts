@@ -1,8 +1,5 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound } from '@blocksuite/global/utils';
 import {
   ArrowDownBigBottomIcon,
   ArrowDownBigIcon,
@@ -18,6 +15,9 @@ import {
   OpenInNewIcon,
   ResetIcon,
 } from '@blocksuite/icons/lit';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound } from '@lumensuite/global/utils';
 
 import type { AttachmentBlockComponent } from '../../../../attachment-block/attachment-block.js';
 import type { BookmarkBlockComponent } from '../../../../bookmark-block/bookmark-block.js';

@@ -1,4 +1,4 @@
-import type { Bound, IVec, IVec3 } from '@blocksuite/global/utils';
+import type { Bound, IVec, IVec3 } from '@lumensuite/global/utils';
 export declare class Graph<V extends IVec | IVec3 = IVec> {
     private points;
     private blocks;

@@ -1,6 +1,6 @@
 import { type BlockModel } from '../schema/index.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             page: BlockModel;
         }

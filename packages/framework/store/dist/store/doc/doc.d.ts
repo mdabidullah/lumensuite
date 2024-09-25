@@ -1,4 +1,4 @@
-import { type Disposable, Slot } from '@blocksuite/global/utils';
+import { type Disposable, Slot } from '@lumensuite/global/utils';
 import type { BlockModel, Schema } from '../../schema/index.js';
 import type { BlockCollection, BlockProps } from './block-collection.js';
 import type { DocCRUD } from './crud.js';
@@ -52,9 +52,9 @@ export declare class Doc {
         }>;
     };
     private get _yBlocks();
-    get awarenessStore(): import("../../index.js").AwarenessStore<BlockSuiteFlags>;
-    get awarenessSync(): import("@blocksuite/sync").AwarenessEngine;
-    get blobSync(): import("@blocksuite/sync").BlobEngine;
+    get awarenessStore(): import("../../index.js").AwarenessStore<LumenSuiteFlags>;
+    get awarenessSync(): import("@lumensuite/sync").AwarenessEngine;
+    get blobSync(): import("@lumensuite/sync").BlobEngine;
     get blockCollection(): BlockCollection;
     get blocks(): import("@preact/signals-core").Signal<Record<string, Block>>;
     get blockSize(): number;
@@ -63,7 +63,7 @@ export declare class Doc {
     get captureSync(): () => void;
     get clear(): () => void;
     get collection(): import("../collection.js").DocCollection;
-    get docSync(): import("@blocksuite/sync").DocEngine;
+    get docSync(): import("@lumensuite/sync").DocEngine;
     get generateBlockId(): () => string;
     get history(): import("yjs").UndoManager;
     get id(): string;
@@ -75,7 +75,7 @@ export declare class Doc {
     get redo(): () => void;
     get resetHistory(): () => void;
     get root(): BlockModel<object, object & {}> | null;
-    get rootDoc(): import("../../index.js").BlockSuiteDoc;
+    get rootDoc(): import("../../index.js").LumenSuiteDoc;
     get schema(): Schema;
     get spaceDoc(): import("yjs").Doc;
     get Text(): typeof import("../../index.js").Text;
@@ -86,7 +86,7 @@ export declare class Doc {
     private _getSiblings;
     private _onBlockAdded;
     private _onBlockRemoved;
-    addBlock<Key extends BlockSuite.Flavour>(flavour: Key, blockProps?: BlockSuite.ModelProps<BlockSuite.BlockModels[Key]>, parent?: BlockModel | string | null, parentIndex?: number): string;
+    addBlock<Key extends LumenSuite.Flavour>(flavour: Key, blockProps?: LumenSuite.ModelProps<LumenSuite.BlockModels[Key]>, parent?: BlockModel | string | null, parentIndex?: number): string;
     addBlock(flavour: never, blockProps?: Partial<BlockProps & Omit<BlockProps, 'flavour'>>, parent?: BlockModel | string | null, parentIndex?: number): string;
     addBlocks(blocks: Array<{
         flavour: string;
@@ -117,7 +117,7 @@ export declare class Doc {
     getParent(target: BlockModel | string): BlockModel | null;
     getPrev(block: BlockModel | string): BlockModel<object, object & {}> | null;
     getPrevs(block: BlockModel | string): BlockModel<object, object & {}>[];
-    getSchemaByFlavour(flavour: BlockSuite.Flavour): {
+    getSchemaByFlavour(flavour: LumenSuite.Flavour): {
         version: number;
         model: {
             flavour: string;

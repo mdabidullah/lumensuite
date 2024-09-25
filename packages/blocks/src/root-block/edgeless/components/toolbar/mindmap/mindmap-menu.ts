@@ -1,14 +1,14 @@
-import type { MindmapStyle } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Bound } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { MindmapStyle } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Bound } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 
-import { toast } from '@blocksuite/affine-components/toast';
-import { once } from '@blocksuite/affine-shared/utils';
-import { modelContext, stdContext } from '@blocksuite/block-std';
-import { ErrorCode } from '@blocksuite/global/exceptions';
 import { consume } from '@lit/context';
 import { computed, SignalWatcher } from '@lit-labs/preact-signals';
+import { toast } from '@lumensuite/affine-components/toast';
+import { once } from '@lumensuite/affine-shared/utils';
+import { modelContext, stdContext } from '@lumensuite/block-std';
+import { ErrorCode } from '@lumensuite/global/exceptions';
 import { css, html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

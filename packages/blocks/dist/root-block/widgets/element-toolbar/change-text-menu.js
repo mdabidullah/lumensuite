@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ConnectorUtils, normalizeShapeBound, TextUtils, } from '@blocksuite/affine-block-surface';
-import { SmallArrowDownIcon, TextAlignCenterIcon, TextAlignLeftIcon, TextAlignRightIcon, } from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
-import { FontFamily, FontStyle, FontWeight, TextAlign, } from '@blocksuite/affine-model';
-import { ConnectorElementModel, EdgelessTextBlockModel, LINE_COLORS, ShapeElementModel, TextElementModel, } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, countBy, maxBy } from '@blocksuite/global/utils';
+import { ConnectorUtils, normalizeShapeBound, TextUtils, } from '@lumensuite/affine-block-surface';
+import { SmallArrowDownIcon, TextAlignCenterIcon, TextAlignLeftIcon, TextAlignRightIcon, } from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
+import { FontFamily, FontStyle, FontWeight, TextAlign, } from '@lumensuite/affine-model';
+import { ConnectorElementModel, EdgelessTextBlockModel, LINE_COLORS, ShapeElementModel, TextElementModel, } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, countBy, maxBy } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

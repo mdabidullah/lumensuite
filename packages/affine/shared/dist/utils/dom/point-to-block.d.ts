@@ -1,5 +1,5 @@
-import type { Point, Rect } from '@blocksuite/global/utils';
-import { type BlockComponent } from '@blocksuite/block-std';
+import type { Point, Rect } from '@lumensuite/global/utils';
+import { type BlockComponent } from '@lumensuite/block-std';
 /**
  * Returns the closest block element by a point in the rect.
  *
@@ -42,8 +42,8 @@ export declare function getClosestBlockComponentByElement(element: Element | nul
  * Returns rect of the block element.
  *
  * Compatible with Safari!
- * https://github.com/toeverything/blocksuite/issues/902
- * https://github.com/toeverything/blocksuite/pull/1121
+ * https://github.com/toeverything/lumensuite/issues/902
+ * https://github.com/toeverything/lumensuite/pull/1121
  */
 export declare function getRectByBlockComponent(element: Element | BlockComponent): DOMRect;
 /**

@@ -1,5 +1,5 @@
-import { isFormatSupported } from '@blocksuite/affine-components/rich-text';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
+import { isFormatSupported } from '@lumensuite/affine-components/rich-text';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
 import { html } from 'lit';
 import { HighlightButton } from './highlight/highlight-button.js';
 import { ParagraphButton } from './paragraph-button.js';

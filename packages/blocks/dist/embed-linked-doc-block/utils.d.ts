@@ -1,4 +1,4 @@
-import type { EmbedLinkedDocModel, EmbedLinkedDocStyles } from '@blocksuite/affine-model';
+import type { EmbedLinkedDocModel, EmbedLinkedDocStyles } from '@lumensuite/affine-model';
 import type { TemplateResult } from 'lit';
 type EmbedCardImages = {
     LoadingIcon: TemplateResult<1>;

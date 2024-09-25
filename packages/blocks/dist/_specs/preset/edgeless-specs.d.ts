@@ -1,3 +1,3 @@
-import type { ExtensionType } from '@blocksuite/block-std';
+import type { ExtensionType } from '@lumensuite/block-std';
 export declare const EdgelessEditorBlockSpecs: ExtensionType[];
 //# sourceMappingURL=edgeless-specs.d.ts.map

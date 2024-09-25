@@ -1,6 +1,6 @@
 # Block Spec
 
-In BlockSuite, a `BlockSpec` defines the structure and interactive elements for a specific block type within the editor. BlockSuite editors are typically composed entirely of block specs, with the top-level UI often implemented as a dedicated block, usually of the `affine:page` type.
+In LumenSuite, a `BlockSpec` defines the structure and interactive elements for a specific block type within the editor. LumenSuite editors are typically composed entirely of block specs, with the top-level UI often implemented as a dedicated block, usually of the `affine:page` type.
 
 A block spec contains the following properties:
 
@@ -14,12 +14,12 @@ A block spec contains the following properties:
 
 ## Example
 
-Note that in block spec, the definition of `view` is related to UI frameworks. By default, we provide a `@blocksuite/lit` package to help build a lit block view. But it's still possible to use other UI frameworks. We'll introduce later about how to write custom block renderers.
+Note that in block spec, the definition of `view` is related to UI frameworks. By default, we provide a `@lumensuite/lit` package to help build a lit block view. But it's still possible to use other UI frameworks. We'll introduce later about how to write custom block renderers.
 
 Here is a example of a lit-based block spec:
 
 ```ts
-import type { BlockSpec } from '@blocksuite/block-std';
+import type { BlockSpec } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 
 const MyBlockSepc: BlockSpec = {

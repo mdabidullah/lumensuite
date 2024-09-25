@@ -2,8 +2,8 @@ import type {
   BlockComponent,
   EditorHost,
   PointerEventState,
-} from '@blocksuite/block-std';
-import type { Disposable, Point, Rect } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import type { Disposable, Point, Rect } from '@lumensuite/global/utils';
 
 import type { DragPreview } from './components/drag-preview.js';
 

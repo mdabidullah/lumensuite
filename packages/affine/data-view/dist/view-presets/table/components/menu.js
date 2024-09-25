@@ -1,4 +1,4 @@
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
 import { CopyIcon, DeleteIcon, ExpandFullIcon, MoveLeftIcon, MoveRightIcon, } from '@blocksuite/icons/lit';
 import { html } from 'lit';
 import { TableRowSelection } from '../types.js';

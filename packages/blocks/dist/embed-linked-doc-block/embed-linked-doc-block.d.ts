@@ -1,4 +1,4 @@
-import type { DocMode, EmbedLinkedDocModel, EmbedLinkedDocStyles, ReferenceInfo } from '@blocksuite/affine-model';
+import type { DocMode, EmbedLinkedDocModel, EmbedLinkedDocStyles, ReferenceInfo } from '@lumensuite/affine-model';
 import type { SurfaceRefBlockService } from '../surface-ref-block/index.js';
 import type { SurfaceRefRenderer } from '../surface-ref-block/surface-ref-renderer.js';
 import type { EmbedLinkedDocBlockConfig } from './embed-linked-doc-config.js';
@@ -20,7 +20,7 @@ export declare class EmbedLinkedDocBlockComponent extends EmbedBlockComponent<Em
     get config(): EmbedLinkedDocBlockConfig;
     get docTitle(): string;
     get editorMode(): DocMode;
-    get linkedDoc(): import("@blocksuite/store").Doc | null;
+    get linkedDoc(): import("@lumensuite/store").Doc | null;
     get referenceInfo(): ReferenceInfo;
     private _handleDoubleClick;
     private _isDocEmpty;

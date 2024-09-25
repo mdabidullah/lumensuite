@@ -1,6 +1,6 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { assertEquals } from '@blocksuite/global/utils';
-import { DocCollection, type Text } from '@blocksuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { assertEquals } from '@lumensuite/global/utils';
+import { DocCollection, type Text } from '@lumensuite/store';
 import { css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { createRef, ref } from 'lit/directives/ref.js';

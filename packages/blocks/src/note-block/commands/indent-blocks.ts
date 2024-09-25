@@ -1,5 +1,5 @@
-import type { Command } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { Command } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
 export const indentBlocks: Command<
   never,
@@ -63,7 +63,7 @@ export const indentBlocks: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       indentBlocks: typeof indentBlocks;
     }

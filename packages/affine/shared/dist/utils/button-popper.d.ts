@@ -1,4 +1,4 @@
-import type { Disposable } from '@blocksuite/global/utils';
+import type { Disposable } from '@lumensuite/global/utils';
 import { type Rect } from '@floating-ui/dom';
 export declare function listenClickAway(element: HTMLElement, onClickAway: () => void): Disposable;
 type Display = 'show' | 'hidden';

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockComponent, RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/block-std';
-import { GfxControllerIdentifier, } from '@blocksuite/block-std/gfx';
-import { Bound, values } from '@blocksuite/global/utils';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockComponent, RANGE_SYNC_EXCLUDE_ATTR } from '@lumensuite/block-std';
+import { GfxControllerIdentifier, } from '@lumensuite/block-std/gfx';
+import { Bound, values } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { ConnectorElementModel } from './element-model/index.js';

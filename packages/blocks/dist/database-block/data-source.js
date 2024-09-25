@@ -1,8 +1,8 @@
-import { insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
-import { createUniComponentFromWebComponent, DataSourceBase, uniMap, ViewManagerBase, } from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { assertExists } from '@blocksuite/global/utils';
-import { Text } from '@blocksuite/store';
+import { insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
+import { createUniComponentFromWebComponent, DataSourceBase, uniMap, ViewManagerBase, } from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { assertExists } from '@lumensuite/global/utils';
+import { Text } from '@lumensuite/store';
 import { computed } from '@lit-labs/preact-signals';
 import { getIcon } from './block-icons.js';
 import { databaseBlockAllColumnMap, databaseBlockColumnList, databaseColumnConverts, } from './columns/index.js';

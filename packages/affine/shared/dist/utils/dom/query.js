@@ -1,4 +1,4 @@
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
 const ATTR_SELECTOR = `[${BLOCK_ID_ATTR}]`;
 export function getModelByElement(element) {
     const closestBlock = element.closest(ATTR_SELECTOR);

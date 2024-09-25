@@ -1,11 +1,17 @@
-import type { DatabaseBlockModel } from '@blocksuite/affine-model';
+import type { DatabaseBlockModel } from '@lumensuite/affine-model';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { popMenu } from '@blocksuite/affine-components/context-menu';
-import { toast } from '@blocksuite/affine-components/toast';
-import { DatabaseBlockSchema } from '@blocksuite/affine-model';
-import { NOTE_SELECTOR } from '@blocksuite/affine-shared/consts';
-import { RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/block-std';
+import {
+  CopyIcon,
+  DeleteIcon,
+  MoreHorizontalIcon,
+} from '@blocksuite/icons/lit';
+import { computed } from '@lit-labs/preact-signals';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
+import { toast } from '@lumensuite/affine-components/toast';
+import { DatabaseBlockSchema } from '@lumensuite/affine-model';
+import { NOTE_SELECTOR } from '@lumensuite/affine-shared/consts';
+import { RANGE_SYNC_EXCLUDE_ATTR } from '@lumensuite/block-std';
 import {
   DatabaseSelection,
   DataView,
@@ -17,16 +23,10 @@ import {
   type DataViewWidgetProps,
   defineUniComponent,
   renderUniLit,
-} from '@blocksuite/data-view';
-import { widgetPresets } from '@blocksuite/data-view/widget-presets';
-import { Rect } from '@blocksuite/global/utils';
-import {
-  CopyIcon,
-  DeleteIcon,
-  MoreHorizontalIcon,
-} from '@blocksuite/icons/lit';
-import { Slice } from '@blocksuite/store';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/data-view';
+import { widgetPresets } from '@lumensuite/data-view/widget-presets';
+import { Rect } from '@lumensuite/global/utils';
+import { Slice } from '@lumensuite/store';
 import { css, html, nothing, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

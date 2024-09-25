@@ -1,4 +1,4 @@
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 import { GfxCompatible } from '../../utils/index.js';
 export const BookmarkStyles = [
     'vertical',

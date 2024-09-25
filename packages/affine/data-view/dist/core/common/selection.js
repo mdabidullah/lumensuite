@@ -1,4 +1,4 @@
-import { BaseSelection } from '@blocksuite/block-std';
+import { BaseSelection } from '@lumensuite/block-std';
 import { z } from 'zod';
 const TableViewSelectionSchema = z.union([
     z.object({

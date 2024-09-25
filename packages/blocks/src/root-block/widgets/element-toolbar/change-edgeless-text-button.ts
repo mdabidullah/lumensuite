@@ -1,4 +1,4 @@
-import type { EdgelessTextBlockModel } from '@blocksuite/affine-model';
+import type { EdgelessTextBlockModel } from '@lumensuite/affine-model';
 
 import { html, nothing } from 'lit';
 

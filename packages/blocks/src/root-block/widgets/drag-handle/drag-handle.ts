@@ -1,5 +1,5 @@
-import type { NoteBlockModel, RootBlockModel } from '@blocksuite/affine-model';
-import type { IVec } from '@blocksuite/global/utils';
+import type { NoteBlockModel, RootBlockModel } from '@lumensuite/affine-model';
+import type { IVec } from '@lumensuite/global/utils';
 
 import {
   findNoteBlockModel,
@@ -9,7 +9,7 @@ import {
   isInsideEdgelessEditor,
   isInsidePageEditor,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   BLOCK_ID_ATTR,
   type BlockComponent,
@@ -17,15 +17,15 @@ import {
   type PointerEventState,
   type UIEventHandler,
   WidgetComponent,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   Bound,
   DisposableGroup,
   Point,
   Rect,
   throttle,
-} from '@blocksuite/global/utils';
-import { type BlockModel, BlockViewType, type Query } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { type BlockModel, BlockViewType, type Query } from '@lumensuite/store';
 import { html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

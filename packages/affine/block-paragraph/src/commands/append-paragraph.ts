@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { getLastNoteBlock } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { getLastNoteBlock } from '@lumensuite/affine-shared/utils';
 
 /**
  * Append a paragraph block at the end of the whole page.
@@ -31,7 +31,7 @@ export const appendParagraphCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       appendParagraph: typeof appendParagraphCommand;
     }

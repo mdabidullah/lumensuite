@@ -1,10 +1,10 @@
 # Adapter
 
-Adapter works as a bridge between different formats of data and the BlockSuite [`Snapshot`](./data-synchronization#snapshot-api) (i.e., the JSON-serialized block tree). It enables you to import and export data from and to BlockSuite documents.
+Adapter works as a bridge between different formats of data and the LumenSuite [`Snapshot`](./data-synchronization#snapshot-api) (i.e., the JSON-serialized block tree). It enables you to import and export data from and to LumenSuite documents.
 
 ## Base Adapter
 
-[`BaseAdapter`](/api/@blocksuite/store/classes/BaseAdapter) provides you with a skeleton to build your own adapter. It is an abstract class that you can extend and implement the following methods:
+[`BaseAdapter`](/api/@lumensuite/store/classes/BaseAdapter) provides you with a skeleton to build your own adapter. It is an abstract class that you can extend and implement the following methods:
 
 ```ts
 export abstract class BaseAdapter<AdapterTarget = unknown> {
@@ -39,7 +39,7 @@ export abstract class BaseAdapter<AdapterTarget = unknown> {
 }
 ```
 
-Methods `fromDocSnapshot`, `fromBlockSnapshot`, `fromSliceSnapshot` are used to convert the data from the BlockSuite Snapshot to the target format. Methods `toDocSnapshot`, `toBlockSnapshot`, `toSliceSnapshot` are used to convert the data from the target format to the BlockSuite Snapshot.
+Methods `fromDocSnapshot`, `fromBlockSnapshot`, `fromSliceSnapshot` are used to convert the data from the LumenSuite Snapshot to the target format. Methods `toDocSnapshot`, `toBlockSnapshot`, `toSliceSnapshot` are used to convert the data from the target format to the LumenSuite Snapshot.
 
 Method `toSliceSnapshot` can return `null` if the target format cannot be converted to a slice using this adapter. It enables some components like clipboard to determine whether the adapter can handle the data. If not, it will try other adapters according to the priority.
 
@@ -68,14 +68,14 @@ const markdownResult = await adapter.fromDocSnapshot({
 
 ## AST Walker
 
-[ASTWalker](/api/@blocksuite/store/classes/ASTWalker) is a helper class that helps you to transform from and to different ASTs (Abstract Syntax Trees). For example, you can use it to transform from BlockSuite Snapshot (which can be treated as AST) to Markdown AST and then export to Markdown. Unlike other AST walkers, it does not only traverse the AST, but also gives you the ability to build a new AST with the data from the original AST.
+[ASTWalker](/api/@lumensuite/store/classes/ASTWalker) is a helper class that helps you to transform from and to different ASTs (Abstract Syntax Trees). For example, you can use it to transform from LumenSuite Snapshot (which can be treated as AST) to Markdown AST and then export to Markdown. Unlike other AST walkers, it does not only traverse the AST, but also gives you the ability to build a new AST with the data from the original AST.
 
 It is recommended to use ASTWalker to build text-based adapters.
 
 ### Sample AST Walker
 
 ```ts
-import { ASTWalker } from '@blocksuite/store';
+import { ASTWalker } from '@lumensuite/store';
 
 //                           ONode          TNode
 const walker = new ASTWalker<BlockSnapshot, MarkdownAST>();

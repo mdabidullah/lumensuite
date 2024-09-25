@@ -1,8 +1,8 @@
-import type { BlockComponent, Command } from '@blocksuite/block-std';
+import type { BlockComponent, Command } from '@lumensuite/block-std';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
-function getPrevSibling(std: BlockSuite.Std, path: string) {
+function getPrevSibling(std: LumenSuite.Std, path: string) {
   const view = std.view;
   const block = view.getBlock(path);
   if (!block) return null;
@@ -11,7 +11,7 @@ function getPrevSibling(std: BlockSuite.Std, path: string) {
   return view.getBlock(prev.id);
 }
 
-function getPrevBlock(std: BlockSuite.Std, path: string) {
+function getPrevBlock(std: LumenSuite.Std, path: string) {
   const view = std.view;
 
   const prev: BlockComponent | null = getPrevSibling(std, path);
@@ -51,7 +51,7 @@ export const getPrevBlockCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       prevBlock?: BlockComponent;
     }

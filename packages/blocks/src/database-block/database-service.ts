@@ -1,13 +1,13 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import {
   type DatabaseBlockModel,
   DatabaseBlockSchema,
-} from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
-import { DatabaseSelection, type ViewMeta } from '@blocksuite/data-view';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
+import { DatabaseSelection, type ViewMeta } from '@lumensuite/data-view';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { assertExists } from '@lumensuite/global/utils';
 
 import {
   addColumn,

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { GeneralStyleIcon, ScribbledStyleIcon, } from '@blocksuite/affine-components/icons';
-import { DEFAULT_SHAPE_FILL_COLOR, LineColor, SHAPE_FILL_COLORS, ShapeStyle, ShapeType, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { SignalWatcher } from '@blocksuite/block-std';
+import { GeneralStyleIcon, ScribbledStyleIcon, } from '@lumensuite/affine-components/icons';
+import { DEFAULT_SHAPE_FILL_COLOR, LineColor, SHAPE_FILL_COLORS, ShapeStyle, ShapeType, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { computed, signal } from '@lit-labs/preact-signals';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

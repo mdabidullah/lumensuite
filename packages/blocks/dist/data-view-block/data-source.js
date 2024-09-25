@@ -1,7 +1,7 @@
-import { insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
-import { createUniComponentFromWebComponent, DataSourceBase, } from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { assertExists, Slot } from '@blocksuite/global/utils';
+import { insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
+import { createUniComponentFromWebComponent, DataSourceBase, } from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { assertExists, Slot } from '@lumensuite/global/utils';
 import { databaseBlockAllColumnMap, databaseColumnConverts, } from '../database-block/columns/index.js';
 import { BlockRenderer } from '../database-block/detail-panel/block-renderer.js';
 import { blockMetaMap } from './block-meta/index.js';

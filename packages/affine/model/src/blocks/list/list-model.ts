@@ -1,6 +1,6 @@
-import type { SchemaToModel, Text } from '@blocksuite/store';
+import type { SchemaToModel, Text } from '@lumensuite/store';
 
-import { defineBlockSchema } from '@blocksuite/store';
+import { defineBlockSchema } from '@lumensuite/store';
 
 // `toggle` type has been deprecated, do not use it
 export type ListType = 'bulleted' | 'numbered' | 'todo' | 'toggle';
@@ -41,7 +41,7 @@ export const ListBlockSchema = defineBlockSchema({
 export type ListBlockModel = SchemaToModel<typeof ListBlockSchema>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:list': ListBlockModel;
     }

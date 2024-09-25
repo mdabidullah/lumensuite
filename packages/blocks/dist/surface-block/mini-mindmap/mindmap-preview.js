@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MindmapStyleFour, MindmapStyleOne, MindmapStyleThree, MindmapStyleTwo, } from '@blocksuite/affine-components/icons';
-import { MindmapStyle } from '@blocksuite/affine-model';
-import { BlockStdScope, WithDisposable, } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
-import { DocCollection, IdGeneratorType, Job, Schema, } from '@blocksuite/store';
+import { MindmapStyleFour, MindmapStyleOne, MindmapStyleThree, MindmapStyleTwo, } from '@lumensuite/affine-components/icons';
+import { MindmapStyle } from '@lumensuite/affine-model';
+import { BlockStdScope, WithDisposable, } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
+import { DocCollection, IdGeneratorType, Job, Schema, } from '@lumensuite/store';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

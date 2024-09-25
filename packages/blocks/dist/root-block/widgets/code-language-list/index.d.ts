@@ -1,5 +1,5 @@
-import type { CodeBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { CodeBlockComponent } from '../../../code-block/index.js';
 import './components/lang-button.js';
 export declare const AFFINE_CODE_LANGUAGE_LIST_WIDGET = "affine-code-language-list-widget";

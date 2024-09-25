@@ -1,5 +1,5 @@
 export declare function createEmptyDoc(): {
-    doc: import("@blocksuite/store").Doc;
-    init(): import("@blocksuite/store").Doc;
+    doc: import("@lumensuite/store").Doc;
+    init(): import("@lumensuite/store").Doc;
 };
 //# sourceMappingURL=index.d.ts.map

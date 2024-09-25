@@ -1,4 +1,4 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 import type { AffineTextAttributes } from '../extension/index.js';
 export declare const toggleBold: Command;
 export declare const toggleItalic: Command;
@@ -11,7 +11,7 @@ export declare const isTextStyleActive: Command<never, never, {
     key: keyof AffineTextAttributes;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             textStyle?: AffineTextAttributes;
         }

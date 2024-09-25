@@ -1,11 +1,12 @@
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { popMenu } from '@blocksuite/affine-components/context-menu';
+import { computed } from '@lit-labs/preact-signals';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import {
   CopyIcon,
   DeleteIcon,
   MoreHorizontalIcon,
-} from '@blocksuite/affine-components/icons';
-import { RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/block-std';
+} from '@lumensuite/affine-components/icons';
+import { RANGE_SYNC_EXCLUDE_ATTR } from '@lumensuite/block-std';
 import {
   DatabaseSelection,
   type DataSource,
@@ -17,10 +18,9 @@ import {
   type DataViewWidgetProps,
   defineUniComponent,
   renderUniLit,
-} from '@blocksuite/data-view';
-import { widgetPresets } from '@blocksuite/data-view/widget-presets';
-import { Slice } from '@blocksuite/store';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/data-view';
+import { widgetPresets } from '@lumensuite/data-view/widget-presets';
+import { Slice } from '@lumensuite/store';
 import { css, nothing, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';

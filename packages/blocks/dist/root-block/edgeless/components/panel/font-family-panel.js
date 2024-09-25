@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { TextUtils } from '@blocksuite/affine-block-surface';
-import { CheckIcon } from '@blocksuite/affine-components/icons';
-import { FontFamily, FontFamilyList } from '@blocksuite/affine-model';
+import { TextUtils } from '@lumensuite/affine-block-surface';
+import { CheckIcon } from '@lumensuite/affine-components/icons';
+import { FontFamily, FontFamilyList } from '@lumensuite/affine-model';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

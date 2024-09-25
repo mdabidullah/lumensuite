@@ -3,7 +3,7 @@ export * from './embed-html-block.js';
 export * from './embed-html-service.js';
 export * from './embed-html-spec.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:embed-html': EmbedHtmlBlockService;
         }

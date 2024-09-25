@@ -1,10 +1,10 @@
-import type { ListBlockModel } from '@blocksuite/affine-model';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { ListBlockModel } from '@lumensuite/affine-model';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import {
   getNextContinuousNumberedLists,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 /**
  * correct target is a numbered list, which is divided into two steps:

@@ -1278,7 +1278,7 @@ test('verify cursor position after changing block type', async ({ page }) => {
   expect(anchorOffset2).toBe(6);
 });
 
-// https://github.com/toeverything/blocksuite/issues/3613
+// https://github.com/toeverything/lumensuite/issues/3613
 test('should scroll page properly by wheel after inserting a new block and selecting it', async ({
   page,
 }) => {

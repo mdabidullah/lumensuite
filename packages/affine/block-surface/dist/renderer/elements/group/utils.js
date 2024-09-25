@@ -1,5 +1,5 @@
-import { FontWeight } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { FontWeight } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 import { getFontString, getLineHeight, getLineWidth, truncateTextByWidth, } from '../text/utils.js';
 import { GROUP_TITLE_FONT, GROUP_TITLE_FONT_SIZE, GROUP_TITLE_OFFSET, GROUP_TITLE_PADDING, } from './consts.js';
 export function titleRenderParams(group, zoom) {

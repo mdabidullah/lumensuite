@@ -1,9 +1,9 @@
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { DeltaInsert } from '@lumensuite/inline';
 
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   type AssetsManager,
   ASTWalker,
@@ -22,7 +22,7 @@ import {
   type SliceSnapshot,
   type ToBlockSnapshotPayload,
   type ToDocSnapshotPayload,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { MarkdownAdapter } from './markdown.js';
 
@@ -154,7 +154,7 @@ export class MixTextAdapter extends BaseAdapter<MixText> {
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: line,
@@ -184,7 +184,7 @@ export class MixTextAdapter extends BaseAdapter<MixText> {
         flavour: 'affine:page',
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: [
               {
                 insert: 'Untitled',
@@ -221,7 +221,7 @@ export class MixTextAdapter extends BaseAdapter<MixText> {
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: line,

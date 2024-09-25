@@ -1,11 +1,12 @@
 import type {
   FrameBlockModel,
   ParagraphBlockModel,
-} from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
 
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
+import { GroupingIcon, TeXIcon } from '@blocksuite/icons/lit';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
 import {
   ArrowDownBigIcon,
   ArrowUpBigIcon,
@@ -25,23 +26,22 @@ import {
   TodayIcon,
   TomorrowIcon,
   YesterdayIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   clearMarksOnDiscontinuousInput,
   getInlineEditorByModel,
   REFERENCE_NODE,
   textFormatConfigs,
-} from '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
+} from '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
 import {
   createDefaultDoc,
   getImageFilesFromLocal,
   matchFlavours,
   openFileOrFiles,
-} from '@blocksuite/affine-shared/utils';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { GroupingIcon, TeXIcon } from '@blocksuite/icons/lit';
-import { Slice, Text } from '@blocksuite/store';
+} from '@lumensuite/affine-shared/utils';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { Slice, Text } from '@lumensuite/store';
 
 import type { DataViewBlockComponent } from '../../../data-view-block/index.js';
 import type { RootBlockComponent } from '../../types.js';
@@ -72,7 +72,7 @@ import {
 
 export type SlashMenuConfig = {
   triggerKeys: string[];
-  ignoreBlockTypes: BlockSuite.Flavour[];
+  ignoreBlockTypes: LumenSuite.Flavour[];
   items: SlashMenuItem[];
   maxHeight: number;
   tooltipTimeout: number;

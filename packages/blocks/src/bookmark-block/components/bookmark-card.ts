@@ -1,8 +1,8 @@
-import { WebIcon16 } from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { getHostName } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
 import { OpenInNewIcon } from '@blocksuite/icons/lit';
+import { WebIcon16 } from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { getHostName } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

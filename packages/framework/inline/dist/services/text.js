@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { intersectInlineRange } from '../utils/inline-range.js';
 export class InlineTextService {
     get yText() {
@@ -51,7 +51,7 @@ export class InlineTextService {
             }
             const normalizedAttributes = this.editor.attributeService.normalizeAttributes(attributes);
             if (!text || !text.length) {
-                throw new BlockSuiteError(ErrorCode.InlineEditorError, 'text must not be empty');
+                throw new LumenSuiteError(ErrorCode.InlineEditorError, 'text must not be empty');
             }
             this.transact(() => {
                 this.yText.delete(inlineRange.index, inlineRange.length);

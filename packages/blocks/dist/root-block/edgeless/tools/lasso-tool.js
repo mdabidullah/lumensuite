@@ -1,6 +1,6 @@
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { Bound, getBoundFromPoints, getPolygonPathFromPoints, linePolygonIntersects, noop, pointInPolygon, rotatePoints, Vec, } from '@blocksuite/global/utils';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { Bound, getBoundFromPoints, getPolygonPathFromPoints, linePolygonIntersects, noop, pointInPolygon, rotatePoints, Vec, } from '@lumensuite/global/utils';
 import { LassoMode } from '../../../_common/types.js';
 import { EdgelessToolController } from './edgeless-tool.js';
 class LassoOverlay extends Overlay {

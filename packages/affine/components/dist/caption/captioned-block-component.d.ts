@@ -1,5 +1,5 @@
-import type { BlockModel } from '@blocksuite/store';
-import { BlockComponent, type BlockService } from '@blocksuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
+import { BlockComponent, type BlockService } from '@lumensuite/block-std';
 import { type StyleInfo } from 'lit/directives/style-map.js';
 import type { BlockCaptionEditor } from './block-caption.js';
 export declare class CaptionedBlockComponent<Model extends BlockModel = BlockModel, Service extends BlockService = BlockService, WidgetName extends string = string> extends BlockComponent<Model, Service, WidgetName> {

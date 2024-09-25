@@ -1,5 +1,5 @@
-import type { AttachmentBlockModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { AttachmentBlockModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
 export declare const RenameModal: ({ editorHost, model, abortController, }: {
     editorHost: EditorHost;
     model: AttachmentBlockModel;

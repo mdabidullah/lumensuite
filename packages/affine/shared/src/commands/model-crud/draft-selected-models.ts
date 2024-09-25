@@ -1,10 +1,10 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
 import {
   type BlockModel,
   type DraftModel,
   toDraftModel,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 export const draftSelectedModelsCommand: Command<
   'selectedModels',
@@ -47,7 +47,7 @@ export const draftSelectedModelsCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       draftedModels?: Promise<DraftModel<BlockModel<object>>[]>;
     }

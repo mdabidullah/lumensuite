@@ -32,17 +32,17 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { focusTextModel, } from '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
-import { BRACKET_PAIRS, NOTE_SELECTOR } from '@blocksuite/affine-shared/consts';
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { getInlineRangeProvider } from '@blocksuite/block-std';
-import { IS_MAC } from '@blocksuite/global/env';
-import { noop } from '@blocksuite/global/utils';
-import { INLINE_ROOT_ATTR, } from '@blocksuite/inline';
-import { Slice } from '@blocksuite/store';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { focusTextModel, } from '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
+import { BRACKET_PAIRS, NOTE_SELECTOR } from '@lumensuite/affine-shared/consts';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { getInlineRangeProvider } from '@lumensuite/block-std';
+import { IS_MAC } from '@lumensuite/global/env';
+import { noop } from '@lumensuite/global/utils';
+import { INLINE_ROOT_ATTR, } from '@lumensuite/inline';
+import { Slice } from '@lumensuite/store';
 import { computed, effect, signal, } from '@lit-labs/preact-signals';
 import { html, nothing } from 'lit';
 import { customElement, query } from 'lit/decorators.js';

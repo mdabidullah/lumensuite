@@ -1,13 +1,13 @@
 import type {
   AttachmentBlockModel,
   AttachmentBlockProps,
-} from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { toast } from '@blocksuite/affine-components/toast';
-import { defaultAttachmentProps } from '@blocksuite/affine-model';
-import { humanFileSize } from '@blocksuite/affine-shared/utils';
+import { toast } from '@lumensuite/affine-components/toast';
+import { defaultAttachmentProps } from '@lumensuite/affine-model';
+import { humanFileSize } from '@lumensuite/affine-shared/utils';
 
 import type { AttachmentBlockComponent } from './attachment-block.js';
 

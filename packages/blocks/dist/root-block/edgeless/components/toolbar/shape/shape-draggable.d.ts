@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import type { DraggableShape } from './utils.js';
 import { EdgelessDraggableElementController } from '../common/draggable/draggable-element.controller.js';
-declare const EdgelessToolbarShapeDraggable_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessToolbarShapeDraggable_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessToolbarShapeDraggable extends EdgelessToolbarShapeDraggable_base {
     static styles: import("lit").CSSResult;
     draggableController: EdgelessDraggableElementController<DraggableShape>;

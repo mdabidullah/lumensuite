@@ -1,8 +1,8 @@
-import { ImportIcon, LinkedDocIcon, LinkedEdgelessIcon, NewDocIcon, } from '@blocksuite/affine-components/icons';
-import { insertLinkedNode, } from '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
-import { DocModeProvider, TelemetryProvider, } from '@blocksuite/affine-shared/services';
-import { createDefaultDoc, isFuzzyMatch, } from '@blocksuite/affine-shared/utils';
+import { ImportIcon, LinkedDocIcon, LinkedEdgelessIcon, NewDocIcon, } from '@lumensuite/affine-components/icons';
+import { insertLinkedNode, } from '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
+import { DocModeProvider, TelemetryProvider, } from '@lumensuite/affine-shared/services';
+import { createDefaultDoc, isFuzzyMatch, } from '@lumensuite/affine-shared/utils';
 import { showImportModal } from './import-doc/index.js';
 const DEFAULT_DOC_NAME = 'Untitled';
 const DISPLAY_NAME_LENGTH = 8;

@@ -1,13 +1,13 @@
-import type { BlockService, EditorHost } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockService, EditorHost } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 
 import {
   getClosestBlockComponentByPoint,
   isInsidePageEditor,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { assertExists, Point } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { assertExists, Point } from '@lumensuite/global/utils';
 
 import type { DragIndicator } from './drag-indicator.js';
 

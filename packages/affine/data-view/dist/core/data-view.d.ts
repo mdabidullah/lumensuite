@@ -1,6 +1,6 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 import type { ReferenceElement } from '@floating-ui/dom';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type ReadonlySignal } from '@lit-labs/preact-signals';
 import { type TemplateResult } from 'lit';
 import type { DataSource } from './common/data-source/base.js';
@@ -30,7 +30,7 @@ export type DataViewRendererConfig = {
     onDrag?: DataViewProps['onDrag'];
     std: BlockStdScope;
 };
-declare const DataViewRenderer_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DataViewRenderer_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DataViewRenderer extends DataViewRenderer_base {
     static styles: import("lit").CSSResult;
     private _view;

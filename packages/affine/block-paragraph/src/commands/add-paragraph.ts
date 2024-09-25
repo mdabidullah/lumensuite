@@ -1,6 +1,6 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
 
 /**
  * Add a paragraph next to the current block.
@@ -56,7 +56,7 @@ export const addParagraphCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       addParagraph: typeof addParagraphCommand;
     }

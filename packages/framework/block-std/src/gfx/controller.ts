@@ -1,12 +1,12 @@
-import type { ServiceIdentifier } from '@blocksuite/global/di';
-import type { BlockModel } from '@blocksuite/store';
+import type { ServiceIdentifier } from '@lumensuite/global/di';
+import type { BlockModel } from '@lumensuite/store';
 
 import {
   Bound,
   DisposableGroup,
   type IBound,
   last,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { BlockStdScope } from '../scope/block-std-scope.js';
 import type { SurfaceBlockModel } from './surface/surface-model.js';

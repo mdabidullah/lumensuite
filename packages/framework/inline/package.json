@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/inline",
+  "name": "@lumensuite/inline",
   "version": "0.17.5",
   "description": "A micro editor.",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "build": "tsc",
     "test:unit": "nx vite:test --run",
@@ -41,7 +41,7 @@
     }
   },
   "dependencies": {
-    "@blocksuite/global": "workspace:*",
+    "@lumensuite/global": "workspace:*",
     "zod": "catalog:"
   }
 }

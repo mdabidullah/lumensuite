@@ -1,4 +1,4 @@
-import { viewPresets } from '@blocksuite/data-view/view-presets';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
 export const databaseBlockViews = [
     viewPresets.tableViewConfig,
     viewPresets.kanbanViewConfig,

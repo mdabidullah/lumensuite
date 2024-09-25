@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { Array as YArray, Map as YMap } from 'yjs';
 import { Boxed } from './boxed.js';
 import { Text } from './text.js';
@@ -43,7 +43,7 @@ export class ReactiveYArray extends BaseReactiveYData {
                 },
                 set: (target, p, value, receiver) => {
                     if (typeof p !== 'string') {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
                     }
                     const index = Number(p);
                     if (this._skipNext || Number.isNaN(index)) {
@@ -56,11 +56,11 @@ export class ReactiveYArray extends BaseReactiveYData {
                     }
                     const reactive = proxies.get(this._ySource);
                     if (!reactive) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
                     }
                     const doc = this._ySource.doc;
                     if (!doc) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
                     }
                     const yData = native2Y(value);
                     this._transact(doc, () => {
@@ -77,15 +77,15 @@ export class ReactiveYArray extends BaseReactiveYData {
                 },
                 deleteProperty: (target, p) => {
                     if (typeof p !== 'string') {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
                     }
                     const proxied = proxies.get(this._ySource);
                     if (!proxied) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
                     }
                     const doc = this._ySource.doc;
                     if (!doc) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
                     }
                     const index = Number(p);
                     if (this._skipNext || Number.isNaN(index)) {
@@ -147,7 +147,7 @@ export class ReactiveYMap extends BaseReactiveYData {
                 },
                 set: (target, p, value, receiver) => {
                     if (typeof p !== 'string') {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
                     }
                     if (this._skipNext) {
                         return Reflect.set(target, p, value, receiver);
@@ -159,11 +159,11 @@ export class ReactiveYMap extends BaseReactiveYData {
                     }
                     const reactive = proxies.get(this._ySource);
                     if (!reactive) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
                     }
                     const doc = this._ySource.doc;
                     if (!doc) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
                     }
                     const yData = native2Y(value);
                     this._transact(doc, () => {
@@ -177,18 +177,18 @@ export class ReactiveYMap extends BaseReactiveYData {
                 },
                 deleteProperty: (target, p) => {
                     if (typeof p !== 'string') {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'key cannot be a symbol');
                     }
                     if (this._skipNext) {
                         return Reflect.deleteProperty(target, p);
                     }
                     const proxied = proxies.get(this._ySource);
                     if (!proxied) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
                     }
                     const doc = this._ySource.doc;
                     if (!doc) {
-                        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
+                        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not bound to a Y.Doc');
                     }
                     this._transact(doc, () => {
                         this._ySource.delete(p);
@@ -239,14 +239,14 @@ export function createYProxy(yAbstract, options = {}) {
 export function stashProp(yAbstract, prop) {
     const proxy = proxies.get(yAbstract);
     if (!proxy) {
-        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
     }
     proxy.stash(prop);
 }
 export function popProp(yAbstract, prop) {
     const proxy = proxies.get(yAbstract);
     if (!proxy) {
-        throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
+        throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'YData is not subscribed before changes');
     }
     proxy.pop(prop);
 }

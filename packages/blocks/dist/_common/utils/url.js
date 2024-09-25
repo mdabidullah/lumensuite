@@ -1,6 +1,6 @@
-import { DarkLoadingIcon, EmbedCardDarkBannerIcon, EmbedCardDarkCubeIcon, EmbedCardDarkHorizontalIcon, EmbedCardDarkListIcon, EmbedCardDarkVerticalIcon, EmbedCardLightBannerIcon, EmbedCardLightCubeIcon, EmbedCardLightHorizontalIcon, EmbedCardLightListIcon, EmbedCardLightVerticalIcon, LightLoadingIcon, } from '@blocksuite/affine-components/icons';
-import { DocModes } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { DarkLoadingIcon, EmbedCardDarkBannerIcon, EmbedCardDarkCubeIcon, EmbedCardDarkHorizontalIcon, EmbedCardDarkListIcon, EmbedCardDarkVerticalIcon, EmbedCardLightBannerIcon, EmbedCardLightCubeIcon, EmbedCardLightHorizontalIcon, EmbedCardLightListIcon, EmbedCardLightVerticalIcon, LightLoadingIcon, } from '@lumensuite/affine-components/icons';
+import { DocModes } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 export function getEmbedCardIcons() {
     const theme = ThemeObserver.mode;
     if (theme === 'light') {

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { createInlineKeyDownHandler, InlineEditor, } from '@blocksuite/inline';
-import { DocCollection, Text } from '@blocksuite/store';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { createInlineKeyDownHandler, InlineEditor, } from '@lumensuite/inline';
+import { DocCollection, Text } from '@lumensuite/store';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

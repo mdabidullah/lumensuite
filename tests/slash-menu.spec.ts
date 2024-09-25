@@ -507,7 +507,7 @@ test('should slash menu works with fast type', async ({ page }) => {
 test('should clean slash string after soft enter', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/1126',
+    description: 'https://github.com/toeverything/lumensuite/issues/1126',
   });
   await enterPlaygroundRoom(page);
   const { paragraphId } = await initEmptyParagraphState(page);
@@ -812,7 +812,7 @@ test.describe('slash menu with customize menu', () => {
       const editor = document.querySelector('affine-editor-container');
       if (!editor) throw new Error("Can't find affine-editor-container");
 
-      const SlashMenuWidget = window.$blocksuite.blocks.AffineSlashMenuWidget;
+      const SlashMenuWidget = window.$lumensuite.blocks.AffineSlashMenuWidget;
       class CustomSlashMenu extends SlashMenuWidget {
         override config = {
           ...SlashMenuWidget.DEFAULT_CONFIG,
@@ -828,13 +828,13 @@ test.describe('slash menu with customize menu', () => {
       // see https://stackoverflow.com/questions/41521812/illegal-constructor-with-ecmascript-6
       customElements.define('affine-custom-slash-menu', CustomSlashMenu);
 
-      const pageSpecs = window.$blocksuite.blocks.PageEditorBlockSpecs;
+      const pageSpecs = window.$lumensuite.blocks.PageEditorBlockSpecs;
       editor.pageSpecs = [
         ...pageSpecs,
         {
           setup: di => {
             di.override(
-              window.$blocksuite.identifiers.WidgetViewMapIdentifier(
+              window.$lumensuite.identifiers.WidgetViewMapIdentifier(
                 'affine:page'
               ),
               // @ts-ignore
@@ -871,7 +871,7 @@ test.describe('slash menu with customize menu', () => {
 
       const editor = document.querySelector('affine-editor-container');
       if (!editor) throw new Error("Can't find affine-editor-container");
-      const SlashMenuWidget = window.$blocksuite.blocks.AffineSlashMenuWidget;
+      const SlashMenuWidget = window.$lumensuite.blocks.AffineSlashMenuWidget;
 
       class CustomSlashMenu extends SlashMenuWidget {
         override config = {
@@ -902,13 +902,13 @@ test.describe('slash menu with customize menu', () => {
       // see https://stackoverflow.com/questions/41521812/illegal-constructor-with-ecmascript-6
       customElements.define('affine-custom-slash-menu', CustomSlashMenu);
 
-      const pageSpecs = window.$blocksuite.blocks.PageEditorBlockSpecs;
+      const pageSpecs = window.$lumensuite.blocks.PageEditorBlockSpecs;
       editor.pageSpecs = [
         ...pageSpecs,
         {
           setup: di =>
             di.override(
-              window.$blocksuite.identifiers.WidgetViewMapIdentifier(
+              window.$lumensuite.identifiers.WidgetViewMapIdentifier(
                 'affine:page'
               ),
               // @ts-ignore

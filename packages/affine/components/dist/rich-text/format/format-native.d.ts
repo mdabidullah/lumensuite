@@ -1,4 +1,4 @@
-import { type Command } from '@blocksuite/block-std';
+import { type Command } from '@lumensuite/block-std';
 import type { AffineTextAttributes } from '../extension/index.js';
 export declare const formatNativeCommand: Command<never, never, {
     range?: Range;
@@ -6,7 +6,7 @@ export declare const formatNativeCommand: Command<never, never, {
     mode?: 'replace' | 'merge';
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             formatNative: typeof formatNativeCommand;
         }

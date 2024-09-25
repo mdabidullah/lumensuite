@@ -1,6 +1,6 @@
 import type { EdgelessRootService } from '../root-block/index.js';
 import { EmbedHtmlBlockComponent } from './embed-html-block.js';
-declare const EmbedEdgelessHtmlBlockComponent_base: typeof EmbedHtmlBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessHtmlBlockComponent_base: typeof EmbedHtmlBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessHtmlBlockComponent extends EmbedEdgelessHtmlBlockComponent_base {
     get rootService(): EdgelessRootService;
     renderGfxBlock(): unknown;

@@ -1,9 +1,9 @@
-import { ConnectorUtils, MindmapElementModel, MindmapUtils, } from '@blocksuite/affine-block-surface';
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { ConnectorElementModel, GroupElementModel, ShapeElementModel, TextElementModel, } from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { clamp, handleNativeRangeAtPoint, resetNativeSelection, } from '@blocksuite/affine-shared/utils';
-import { Bound, DisposableGroup, intersects, noop, Vec, } from '@blocksuite/global/utils';
+import { ConnectorUtils, MindmapElementModel, MindmapUtils, } from '@lumensuite/affine-block-surface';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { ConnectorElementModel, GroupElementModel, ShapeElementModel, TextElementModel, } from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { clamp, handleNativeRangeAtPoint, resetNativeSelection, } from '@lumensuite/affine-shared/utils';
+import { Bound, DisposableGroup, intersects, noop, Vec, } from '@lumensuite/global/utils';
 import { isSelectSingleMindMap } from '../../../_common/edgeless/mindmap/index.js';
 import { edgelessElementsBound } from '../utils/bound-utils.js';
 import { prepareCloneData } from '../utils/clone-utils.js';

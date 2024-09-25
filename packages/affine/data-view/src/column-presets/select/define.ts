@@ -1,4 +1,4 @@
-import { nanoid } from '@blocksuite/store';
+import { nanoid } from '@lumensuite/store';
 
 import type { SelectColumnData } from '../../core/column/types.js';
 import type { SelectTag } from '../../core/utils/tags/multi-tag-select.js';

@@ -1,6 +1,6 @@
-import type { IVec } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 
 import type { EdgelessTool } from '../../edgeless/types.js';
 import type {

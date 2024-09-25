@@ -95,7 +95,7 @@ import {
   sign,
   toDegree,
   toRadian,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 
 import { generateElementId, normalizeWheelDeltaY } from './utils/index.js';
@@ -147,7 +147,7 @@ export const CommonUtils = {
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:surface': SurfaceBlockService;
     }

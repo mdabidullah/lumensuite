@@ -1,4 +1,4 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 
 export const ensureBlockInContainer = (
   block: BlockComponent,

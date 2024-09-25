@@ -5,11 +5,11 @@ import {
   DuplicateIcon,
   OpenIcon,
   RefreshIcon,
-} from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { toast } from '@blocksuite/affine-components/toast';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Slice } from '@blocksuite/store';
+} from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { toast } from '@lumensuite/affine-components/toast';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Slice } from '@lumensuite/store';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
@@ -103,7 +103,7 @@ export class EmbedCardMoreMenu extends WithDisposable(LitElement) {
     const parent = doc.getParent(model);
     const index = parent?.children.indexOf(model);
     doc.addBlock(
-      model.flavour as BlockSuite.Flavour,
+      model.flavour as LumenSuite.Flavour,
       duplicateProps,
       parent,
       index

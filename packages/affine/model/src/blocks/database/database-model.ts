@@ -1,6 +1,6 @@
-import type { MigrationRunner, Text } from '@blocksuite/store';
+import type { MigrationRunner, Text } from '@lumensuite/store';
 
-import { BlockModel, defineBlockSchema, nanoid } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema, nanoid } from '@lumensuite/store';
 
 import type { Column, SerializedCells, ViewBasicDataType } from './types.js';
 

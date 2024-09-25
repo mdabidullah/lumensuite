@@ -1,4 +1,4 @@
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 import type { SurfaceBlockModel } from './surface-model.js';
 import type { SurfaceBlockService } from './surface-service.js';
 export declare class SurfaceBlockVoidComponent extends BlockComponent<SurfaceBlockModel, SurfaceBlockService> {

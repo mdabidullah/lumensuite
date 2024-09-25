@@ -1,4 +1,4 @@
-import { createIdentifier } from '@blocksuite/global/di';
+import { createIdentifier } from '@lumensuite/global/di';
 export const BlockServiceIdentifier = createIdentifier('BlockService');
 export const BlockFlavourIdentifier = createIdentifier('BlockFlavour');
 export const CommandIdentifier = createIdentifier('Commands');

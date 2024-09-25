@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { Peekable } from '@blocksuite/affine-components/peek';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { Peekable } from '@lumensuite/affine-components/peek';
 import { html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

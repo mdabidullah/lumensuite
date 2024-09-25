@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { AIStarIcon } from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
+import { AIStarIcon } from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { getAllDescendantElements } from '../../edgeless/utils/tree.js';

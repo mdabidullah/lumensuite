@@ -1,7 +1,7 @@
-import type { BlockSelection, Command } from '@blocksuite/block-std';
+import type { BlockSelection, Command } from '@lumensuite/block-std';
 export declare const getBlockSelectionsCommand: Command<never, 'currentBlockSelections'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             currentBlockSelections?: BlockSelection[];
         }

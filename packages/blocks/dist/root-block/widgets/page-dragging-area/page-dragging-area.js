@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getScrollContainer, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
-import { BlockComponent, WidgetComponent } from '@blocksuite/block-std';
-import { assertInstanceOf } from '@blocksuite/global/utils';
+import { getScrollContainer, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
+import { BlockComponent, WidgetComponent } from '@lumensuite/block-std';
+import { assertInstanceOf } from '@lumensuite/global/utils';
 import { html, nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

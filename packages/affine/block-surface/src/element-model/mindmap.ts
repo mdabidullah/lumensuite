@@ -2,30 +2,30 @@ import type {
   BaseElementProps,
   SerializedElement,
   SurfaceBlockModel,
-} from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH, XYWH } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH, XYWH } from '@lumensuite/global/utils';
 
 import {
   LayoutType,
   LocalConnectorElementModel,
   MindmapStyle,
   TextResizing,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   convert,
   field,
   GfxGroupLikeElementModel,
   observe,
   watch,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 import {
   assertType,
   deserializeXYWH,
   keys,
   last,
   pick,
-} from '@blocksuite/global/utils';
-import { DocCollection, type Y } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection, type Y } from '@lumensuite/store';
 import { generateKeyBetween } from 'fractional-indexing';
 import { z } from 'zod';
 
@@ -922,7 +922,7 @@ export class MindmapElementModel extends GfxGroupLikeElementModel<MindmapElement
     }
 
     const stashed = new Set<
-      BlockSuite.SurfaceElementModel | LocalConnectorElementModel
+      LumenSuite.SurfaceElementModel | LocalConnectorElementModel
     >();
     const traverse = (node: MindmapNode, parent: MindmapNode | null) => {
       node.element.stash('xywh');
@@ -1066,7 +1066,7 @@ export class MindmapElementModel extends GfxGroupLikeElementModel<MindmapElement
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceGroupLikeModelMap {
       mindmap: MindmapElementModel;
     }

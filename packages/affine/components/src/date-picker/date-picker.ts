@@ -1,4 +1,4 @@
-import { WithDisposable } from '@blocksuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
 import { isSameDay, isSameMonth, isToday } from 'date-fns';
 import {
   html,

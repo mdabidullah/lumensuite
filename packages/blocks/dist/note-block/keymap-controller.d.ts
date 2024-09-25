@@ -1,4 +1,4 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 import type { ReactiveController, ReactiveControllerHost } from 'lit';
 export declare class KeymapController implements ReactiveController {
     private _anchorSel;

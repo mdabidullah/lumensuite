@@ -1,4 +1,4 @@
-import type { ExtensionType } from '@blocksuite/block-std';
+import type { ExtensionType } from '@lumensuite/block-std';
 export declare class SpecBuilder {
     private _value;
     get value(): ExtensionType[];

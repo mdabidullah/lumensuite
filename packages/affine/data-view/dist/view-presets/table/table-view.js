@@ -33,8 +33,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     return useValue ? value : void 0;
 };
 // related component
-import { popMenu } from '@blocksuite/affine-components/context-menu';
-import { insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
+import { insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
 import { AddCursorIcon } from '@blocksuite/icons/lit';
 import { css } from 'lit';
 import { customElement } from 'lit/decorators.js';

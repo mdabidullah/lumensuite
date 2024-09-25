@@ -1,6 +1,6 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

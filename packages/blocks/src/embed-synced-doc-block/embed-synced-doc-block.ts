@@ -1,23 +1,23 @@
 import {
   EmbedEdgelessIcon,
   EmbedPageIcon,
-} from '@blocksuite/affine-components/icons';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { REFERENCE_NODE } from '@blocksuite/affine-components/rich-text';
+} from '@lumensuite/affine-components/icons';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { REFERENCE_NODE } from '@lumensuite/affine-components/rich-text';
 import {
   type DocMode,
   type EmbedSyncedDocModel,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-model';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   BlockServiceWatcher,
   BlockStdScope,
   type EditorHost,
-} from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { BlockViewType, DocCollection, type Query } from '@blocksuite/store';
+} from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { BlockViewType, DocCollection, type Query } from '@lumensuite/store';
 import { html, type PropertyValues } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

@@ -1,7 +1,5 @@
 import type { TemplateResult } from 'lit';
 
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
 import {
   ArrowDownSmallIcon,
   ConvertIcon,
@@ -10,6 +8,8 @@ import {
   MoreHorizontalIcon,
   PlusIcon,
 } from '@blocksuite/icons/lit';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

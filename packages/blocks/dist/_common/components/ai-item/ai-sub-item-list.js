@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EnterIcon } from '@blocksuite/affine-components/icons';
-import { EditorHost, PropTypes, requiredProperties, WithDisposable, } from '@blocksuite/block-std';
+import { EnterIcon } from '@lumensuite/affine-components/icons';
+import { EditorHost, PropTypes, requiredProperties, WithDisposable, } from '@lumensuite/block-std';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

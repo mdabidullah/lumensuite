@@ -5,7 +5,7 @@
   "version": 2,
   "props": {
     "title": {
-      "$blocksuite:internal:text$": true,
+      "$lumensuite:internal:text$": true,
       "delta": []
     }
   },
@@ -39,7 +39,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "abcfg"
@@ -56,7 +56,7 @@
               "props": {
                 "type": "text",
                 "text": {
-                  "$blocksuite:internal:text$": true,
+                  "$lumensuite:internal:text$": true,
                   "delta": [
                     {
                       "insert": "hijlm"
@@ -76,7 +76,7 @@
           "props": {
             "type": "text",
             "text": {
-              "$blocksuite:internal:text$": true,
+              "$lumensuite:internal:text$": true,
               "delta": [
                 {
                   "insert": "op"

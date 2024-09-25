@@ -1,9 +1,9 @@
-import type { BlockCaptionEditor } from '@blocksuite/affine-components/caption';
-import type { ImageBlockModel } from '@blocksuite/affine-model';
+import type { BlockCaptionEditor } from '@lumensuite/affine-components/caption';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
 
-import '@blocksuite/affine-components/caption';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { GfxBlockComponent } from '@blocksuite/block-std';
+import '@lumensuite/affine-components/caption';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { GfxBlockComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

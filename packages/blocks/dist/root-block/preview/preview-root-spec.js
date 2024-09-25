@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { PageRootService } from '../page/page-root-service.js';
 export const PreviewPageSpec = [

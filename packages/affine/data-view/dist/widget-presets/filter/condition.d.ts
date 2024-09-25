@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type FilterGroup, type SingleFilter, type Variable } from '../../core/common/ast.js';
 import '../../core/common/literal/define.js';
 import '../../core/common/ref/ref.js';
-declare const FilterConditionView_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FilterConditionView_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FilterConditionView extends FilterConditionView_base {
     static styles: import("lit").CSSResult;
     private _setRef;

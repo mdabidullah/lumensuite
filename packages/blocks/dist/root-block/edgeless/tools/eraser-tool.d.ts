@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import { EdgelessToolController } from './edgeless-tool.js';
 type EraserTool = {
     type: 'eraser';
@@ -32,7 +32,7 @@ export declare class EraserToolController extends EdgelessToolController<EraserT
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             eraser: EraserToolController;
         }

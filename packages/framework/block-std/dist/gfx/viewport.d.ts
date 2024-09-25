@@ -1,4 +1,4 @@
-import { Bound, type IPoint, type IVec, Slot } from '@blocksuite/global/utils';
+import { Bound, type IPoint, type IVec, Slot } from '@lumensuite/global/utils';
 export declare const ZOOM_MAX = 6;
 export declare const ZOOM_MIN = 0.1;
 export declare class Viewport {

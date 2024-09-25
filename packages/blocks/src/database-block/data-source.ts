@@ -1,10 +1,11 @@
-import type { DatabaseBlockModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { DatabaseBlockModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
 
+import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
 import {
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   type ColumnMeta,
   createUniComponentFromWebComponent,
@@ -17,11 +18,10 @@ import {
   type ViewManager,
   ViewManagerBase,
   type ViewMeta,
-} from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { assertExists } from '@blocksuite/global/utils';
-import { type BlockModel, Text } from '@blocksuite/store';
-import { computed, type ReadonlySignal } from '@lit-labs/preact-signals';
+} from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { assertExists } from '@lumensuite/global/utils';
+import { type BlockModel, Text } from '@lumensuite/store';
 
 import { getIcon } from './block-icons.js';
 import {

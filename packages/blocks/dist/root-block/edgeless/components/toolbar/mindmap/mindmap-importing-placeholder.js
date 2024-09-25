@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { LightLoadingIcon } from '@blocksuite/affine-components/icons';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { LightLoadingIcon } from '@lumensuite/affine-components/icons';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, unsafeCSS } from 'lit';
 import { customElement } from 'lit/decorators.js';

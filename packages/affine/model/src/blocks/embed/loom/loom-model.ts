@@ -1,4 +1,4 @@
-import { BlockModel } from '@blocksuite/store';
+import { BlockModel } from '@lumensuite/store';
 
 import type { EmbedCardStyle } from '../../../utils/index.js';
 
@@ -24,7 +24,7 @@ export class EmbedLoomModel extends defineEmbedModel<EmbedLoomBlockProps>(
 ) {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:embed-loom': EmbedLoomModel;
     }

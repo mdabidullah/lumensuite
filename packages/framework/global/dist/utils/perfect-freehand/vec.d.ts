@@ -1,4 +1,4 @@
-import type { IVec } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
 /**
  * Negate a vector.
  * @param A

@@ -1,4 +1,4 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 export const dedentBlocksToRoot = (ctx, next) => {
     let { blockIds } = ctx;
     const { std, stopCapture = true } = ctx;

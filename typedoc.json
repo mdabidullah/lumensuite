@@ -18,7 +18,7 @@
   "includeVersion": false,
   "logLevel": "Error",
   "readme": "none",
-  "name": "BlockSuite API Documentation",
+  "name": "LumenSuite API Documentation",
   "entryFileName": "index.md",
   "outputFileStrategy": "members",
   "hidePageHeader": true

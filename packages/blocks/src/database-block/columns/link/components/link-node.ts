@@ -1,5 +1,5 @@
-import { isValidUrl } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { isValidUrl } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

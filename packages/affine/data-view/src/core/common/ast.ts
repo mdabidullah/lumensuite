@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { TType } from '../logical/typesystem.js';
 import type { UniComponent } from '../utils/uni-component/uni-component.js';
@@ -65,7 +65,7 @@ export const getRefType = (vars: Variable[], ref: VariableOrProperty) => {
 export const firstFilterName = (vars: Variable[], ref: VariableOrProperty) => {
   const type = getRefType(vars, ref);
   if (!type) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.DatabaseBlockError,
       `can't resolve ref type`
     );
@@ -92,7 +92,7 @@ export const firstFilter = (vars: Variable[]): SingleFilter => {
   };
   const filter = firstFilterName(vars, ref);
   if (!filter) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.DatabaseBlockError,
       `can't match any filter`
     );

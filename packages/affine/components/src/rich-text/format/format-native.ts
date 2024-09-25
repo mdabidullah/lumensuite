@@ -2,8 +2,8 @@ import {
   BLOCK_ID_ATTR,
   type BlockComponent,
   type Command,
-} from '@blocksuite/block-std';
-import { INLINE_ROOT_ATTR, type InlineRootElement } from '@blocksuite/inline';
+} from '@lumensuite/block-std';
+import { INLINE_ROOT_ATTR, type InlineRootElement } from '@lumensuite/inline';
 
 import type { AffineTextAttributes } from '../extension/index.js';
 
@@ -37,7 +37,7 @@ export const formatNativeCommand: Command<
       const block = el.closest<BlockComponent>(`[${BLOCK_ID_ATTR}]`);
       if (block) {
         return FORMAT_NATIVE_SUPPORT_FLAVOURS.includes(
-          block.model.flavour as BlockSuite.Flavour
+          block.model.flavour as LumenSuite.Flavour
         );
       }
       return false;
@@ -57,7 +57,7 @@ export const formatNativeCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       formatNative: typeof formatNativeCommand;
     }

@@ -1,4 +1,3 @@
-import { popMenu } from '@blocksuite/affine-components/context-menu';
 import {
   ArrowRightSmallIcon,
   DeleteIcon,
@@ -8,6 +7,7 @@ import {
   InfoIcon,
   MoreHorizontalIcon,
 } from '@blocksuite/icons/lit';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import { css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

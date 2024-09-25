@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { effect, signal } from '@preact/signals-core';
 import { createMutex } from 'lib0/mutex.js';
 import * as Y from 'yjs';
@@ -92,7 +92,7 @@ export class SyncController {
         const _mutex = this._mutex;
         const schema = this.schema.flavourSchemaMap.get(this.flavour);
         if (!schema) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${this.flavour} not found`);
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${this.flavour} not found`);
         }
         const model = schema.model.toModel?.() ?? new BlockModel();
         const signalWithProps = Object.entries(props).reduce((acc, [key, value]) => {
@@ -212,17 +212,17 @@ export class SyncController {
             }
         });
         if (!id) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'block id is not found when creating model');
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'block id is not found when creating model');
         }
         if (!flavour) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'block flavour is not found when creating model');
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'block flavour is not found when creating model');
         }
         if (!yChildren) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'block children is not found when creating model');
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'block children is not found when creating model');
         }
         const schema = this.schema.flavourSchemaMap.get(flavour);
         if (!schema) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${flavour} not found`);
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${flavour} not found`);
         }
         const defaultProps = schema.model.props?.(internalPrimitives);
         if (typeof version !== 'number') {

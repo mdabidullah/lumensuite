@@ -1,6 +1,7 @@
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
 
-import { HoverController } from '@blocksuite/affine-components/hover';
+import { offset, shift } from '@floating-ui/dom';
+import { HoverController } from '@lumensuite/affine-components/hover';
 import {
   CaptionIcon,
   CenterPeekIcon,
@@ -8,17 +9,16 @@ import {
   MoreVerticalIcon,
   OpenIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
+} from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
 import {
   cloneGroups,
   type MenuItem,
   type MenuItemGroup,
   renderGroups,
   renderToolbarSeparator,
-} from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { offset, shift } from '@floating-ui/dom';
+} from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { html, nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';

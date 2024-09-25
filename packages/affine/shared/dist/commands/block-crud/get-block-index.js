@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 export const getBlockIndexCommand = (ctx, next) => {
     const path = ctx.path ?? ctx.currentSelectionPath;
     assertExists(path, '`path` is required, you need to pass it in args or ctx before adding this command to the pipeline.');

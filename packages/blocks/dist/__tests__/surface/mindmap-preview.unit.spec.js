@@ -1,4 +1,4 @@
-import { DocCollection, Schema } from '@blocksuite/store';
+import { DocCollection, Schema } from '@lumensuite/store';
 import { describe, expect, test } from 'vitest';
 import { markdownToMindmap } from '../../surface-block/mini-mindmap/mindmap-preview.js';
 describe('markdownToMindmap: convert markdown list to a mind map tree', () => {

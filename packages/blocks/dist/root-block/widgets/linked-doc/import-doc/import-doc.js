@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CloseIcon, ExportToHTMLIcon, ExportToMarkdownIcon, HelpIcon, NewIcon, NotionIcon, } from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
-import { sha } from '@blocksuite/global/utils';
-import { extMimeMap, } from '@blocksuite/store';
-import { Job } from '@blocksuite/store';
+import { CloseIcon, ExportToHTMLIcon, ExportToMarkdownIcon, HelpIcon, NewIcon, NotionIcon, } from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
+import { sha } from '@lumensuite/global/utils';
+import { extMimeMap, } from '@lumensuite/store';
+import { Job } from '@lumensuite/store';
 import { html, LitElement } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { MarkdownAdapter } from '../../../../_common/adapters/markdown.js';
@@ -58,7 +58,7 @@ export async function importMarkDown(collection, text, fileName) {
             }
             payload.snapshot.meta.title = fileName;
             payload.snapshot.blocks.props.title = {
-                '$blocksuite:internal:text$': true,
+                '$lumensuite:internal:text$': true,
                 delta: [
                     {
                         insert: fileName,

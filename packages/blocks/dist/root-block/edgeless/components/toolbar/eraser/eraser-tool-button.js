@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EdgelessEraserDarkIcon, EdgelessEraserLightIcon, } from '@blocksuite/affine-components/icons';
+import { EdgelessEraserDarkIcon, EdgelessEraserLightIcon, } from '@lumensuite/affine-components/icons';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { getTooltipWithShortcut } from '../../utils.js';

@@ -1,4 +1,4 @@
-import { BlockViewExtension, CommandExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, CommandExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { commands } from './commands/index.js';
 import './embed-edgeless-linked-doc-block.js';

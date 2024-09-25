@@ -1,5 +1,5 @@
-import { AffineEditorContainer } from '@blocksuite/presets';
-import { type DocCollection, Text } from '@blocksuite/store';
+import { AffineEditorContainer } from '@lumensuite/presets';
+import { type DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils.js';
 

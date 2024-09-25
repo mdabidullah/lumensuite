@@ -11,16 +11,16 @@ export type IfAllKeysOptional<T, Yes, No> =
 type MakeOptionalIfEmpty<T> = IfAllKeysOptional<T, void | T, T>;
 
 export interface InitCommandCtx {
-  std: BlockSuite.Std;
+  std: LumenSuite.Std;
 }
 
-export type CommandKeyToData<K extends BlockSuite.CommandDataName> = Pick<
-  BlockSuite.CommandContext,
+export type CommandKeyToData<K extends LumenSuite.CommandDataName> = Pick<
+  LumenSuite.CommandContext,
   K
 >;
 export type Command<
-  In extends BlockSuite.CommandDataName = never,
-  Out extends BlockSuite.CommandDataName = never,
+  In extends LumenSuite.CommandDataName = never,
+  Out extends LumenSuite.CommandDataName = never,
   InData extends object = {},
 > = (
   ctx: CommandKeyToData<In> & InitCommandCtx & InData,
@@ -37,20 +37,20 @@ type OutDataOfCommand<C> =
   C extends Command<any, infer K, any> ? CommandKeyToData<K> : never;
 
 type CommonMethods<In extends object = {}> = {
-  inline: <InlineOut extends BlockSuite.CommandDataName = never>(
-    command: Command<Extract<keyof In, BlockSuite.CommandDataName>, InlineOut>
+  inline: <InlineOut extends LumenSuite.CommandDataName = never>(
+    command: Command<Extract<keyof In, LumenSuite.CommandDataName>, InlineOut>
   ) => Chain<In & CommandKeyToData<InlineOut>>;
-  try: <InlineOut extends BlockSuite.CommandDataName = never>(
+  try: <InlineOut extends LumenSuite.CommandDataName = never>(
     fn: (chain: Chain<In>) => Chain<In & CommandKeyToData<InlineOut>>[]
   ) => Chain<In & CommandKeyToData<InlineOut>>;
-  tryAll: <InlineOut extends BlockSuite.CommandDataName = never>(
+  tryAll: <InlineOut extends LumenSuite.CommandDataName = never>(
     fn: (chain: Chain<In>) => Chain<In & CommandKeyToData<InlineOut>>[]
   ) => Chain<In & CommandKeyToData<InlineOut>>;
   run(): [
     result: boolean,
-    ctx: CommandKeyToData<Extract<keyof In, BlockSuite.CommandDataName>>,
+    ctx: CommandKeyToData<Extract<keyof In, LumenSuite.CommandDataName>>,
   ];
-  with<T extends Partial<BlockSuite.CommandContext>>(value: T): Chain<In & T>;
+  with<T extends Partial<LumenSuite.CommandContext>>(value: T): Chain<In & T>;
 };
 
 type Cmds = {
@@ -58,18 +58,18 @@ type Cmds = {
 };
 
 export type Chain<In extends object = {}> = CommonMethods<In> & {
-  [K in keyof BlockSuite.Commands]: (
+  [K in keyof LumenSuite.Commands]: (
     data: MakeOptionalIfEmpty<
-      Omit1<InDataOfCommand<BlockSuite.Commands[K]>, In>
+      Omit1<InDataOfCommand<LumenSuite.Commands[K]>, In>
     >
-  ) => Chain<In & OutDataOfCommand<BlockSuite.Commands[K]>>;
+  ) => Chain<In & OutDataOfCommand<LumenSuite.Commands[K]>>;
 } & Cmds;
 
-export type ExecCommandResult<K extends keyof BlockSuite.Commands> =
-  OutDataOfCommand<BlockSuite.Commands[K]>;
+export type ExecCommandResult<K extends keyof LumenSuite.Commands> =
+  OutDataOfCommand<LumenSuite.Commands[K]>;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext extends InitCommandCtx {}
 
     interface Commands {}

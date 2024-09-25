@@ -1,9 +1,9 @@
-import { type BlockStdScope, ShadowlessElement } from '@blocksuite/block-std';
-import { type DeltaInsert, type InlineEditor } from '@blocksuite/inline';
+import { type BlockStdScope, ShadowlessElement } from '@lumensuite/block-std';
+import { type DeltaInsert, type InlineEditor } from '@lumensuite/inline';
 import type { AffineTextAttributes } from '../../../../extension/index.js';
 import './latex-editor-menu.js';
 import './latex-editor-unit.js';
-declare const AffineLatexNode_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AffineLatexNode_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AffineLatexNode extends AffineLatexNode_base {
     static styles: import("lit").CSSResult;
     private _editorAbortController;

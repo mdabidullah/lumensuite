@@ -1,5 +1,5 @@
-import { NOTE_WIDTH } from '@blocksuite/affine-model';
-import { assertExists } from '@blocksuite/global/utils';
+import { NOTE_WIDTH } from '@lumensuite/affine-model';
+import { assertExists } from '@lumensuite/global/utils';
 import { expect } from '@playwright/test';
 
 import {
@@ -314,7 +314,7 @@ test('Before and after switching to Edgeless, the previous zoom ratio and positi
 }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/2479',
+    description: 'https://github.com/toeverything/lumensuite/issues/2479',
   });
   await enterPlaygroundRoom(page);
   await initEmptyEdgelessState(page);

@@ -1,4 +1,4 @@
-import type { Rect } from '@blocksuite/global/utils';
+import type { Rect } from '@lumensuite/global/utils';
 import { LitElement } from 'lit';
 export declare class DragIndicator extends LitElement {
     static styles: import("lit").CSSResult;

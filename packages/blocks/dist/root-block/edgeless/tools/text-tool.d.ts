@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import { EdgelessToolController } from './edgeless-tool.js';
 export type TextTool = {
     type: 'text';
@@ -21,7 +21,7 @@ export declare class TextToolController extends EdgelessToolController<TextTool>
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             text: TextToolController;
         }

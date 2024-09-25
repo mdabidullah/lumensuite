@@ -1,14 +1,14 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
-import { BaseAdapter } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
+import { BaseAdapter } from '@lumensuite/store';
 import { decodeClipboardBlobs, encodeClipboardBlobs } from './utils.js';
 export class ClipboardAdapter extends BaseAdapter {
     static { this.MIME = 'BLOCKSUITE/SNAPSHOT'; }
     fromBlockSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.fromBlockSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.fromBlockSnapshot is not implemented');
     }
     fromDocSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.fromDocSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.fromDocSnapshot is not implemented');
     }
     async fromSliceSnapshot(payload) {
         const snapshot = payload.snapshot;
@@ -25,10 +25,10 @@ export class ClipboardAdapter extends BaseAdapter {
         };
     }
     toBlockSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.toBlockSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.toBlockSnapshot is not implemented');
     }
     toDocSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.toDocSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ClipboardAdapter.toDocSnapshot is not implemented');
     }
     toSliceSnapshot(payload) {
         const json = JSON.parse(payload.file);

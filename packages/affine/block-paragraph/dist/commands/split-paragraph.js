@@ -1,5 +1,5 @@
-import { focusTextModel, getInlineEditorByModel, } from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { focusTextModel, getInlineEditorByModel, } from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 export const splitParagraphCommand = (ctx, next) => {
     const { std } = ctx;
     const { doc, host, selection } = std;

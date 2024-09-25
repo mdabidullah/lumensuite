@@ -11,11 +11,11 @@ import type {
   ToBlockSnapshotPayload,
   ToDocSnapshotPayload,
   ToSliceSnapshotPayload,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists } from '@blocksuite/global/utils';
-import { BaseAdapter } from '@blocksuite/store';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists } from '@lumensuite/global/utils';
+import { BaseAdapter } from '@lumensuite/store';
 
 import { decodeClipboardBlobs, encodeClipboardBlobs } from './utils.js';
 
@@ -31,7 +31,7 @@ export class ClipboardAdapter extends BaseAdapter<string> {
   override fromBlockSnapshot(
     _payload: FromBlockSnapshotPayload
   ): Promise<FromBlockSnapshotResult<string>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'ClipboardAdapter.fromBlockSnapshot is not implemented'
     );
@@ -40,7 +40,7 @@ export class ClipboardAdapter extends BaseAdapter<string> {
   override fromDocSnapshot(
     _payload: FromDocSnapshotPayload
   ): Promise<FromDocSnapshotResult<string>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'ClipboardAdapter.fromDocSnapshot is not implemented'
     );
@@ -66,7 +66,7 @@ export class ClipboardAdapter extends BaseAdapter<string> {
   override toBlockSnapshot(
     _payload: ToBlockSnapshotPayload<string>
   ): Promise<BlockSnapshot> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'ClipboardAdapter.toBlockSnapshot is not implemented'
     );
@@ -75,7 +75,7 @@ export class ClipboardAdapter extends BaseAdapter<string> {
   override toDocSnapshot(
     _payload: ToDocSnapshotPayload<string>
   ): Promise<DocSnapshot> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'ClipboardAdapter.toDocSnapshot is not implemented'
     );

@@ -6,11 +6,11 @@ import {
   ScissorsIcon,
   ShrinkIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   type EditorMenuButton,
   renderToolbarSeparator,
-} from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/toolbar';
 import {
   type ColorScheme,
   DEFAULT_NOTE_BACKGROUND_COLOR,
@@ -18,10 +18,10 @@ import {
   type NoteBlockModel,
   NoteDisplayMode,
   type StrokeStyle,
-} from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists, Bound, countBy, maxBy } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists, Bound, countBy, maxBy } from '@lumensuite/global/utils';
 import { html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';

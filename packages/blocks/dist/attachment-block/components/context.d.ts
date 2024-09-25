@@ -4,10 +4,10 @@ export declare class AttachmentToolbarMoreMenuContext extends MenuContext {
     blockComponent: AttachmentBlockComponent;
     abortController: AbortController;
     close: () => void;
-    get doc(): import("@blocksuite/store").Doc;
-    get host(): import("@blocksuite/block-std").EditorHost;
-    get selectedBlockModels(): import("@blocksuite/affine-model").AttachmentBlockModel[];
-    get std(): import("@blocksuite/block-std").BlockStdScope;
+    get doc(): import("@lumensuite/store").Doc;
+    get host(): import("@lumensuite/block-std").EditorHost;
+    get selectedBlockModels(): import("@lumensuite/affine-model").AttachmentBlockModel[];
+    get std(): import("@lumensuite/block-std").BlockStdScope;
     constructor(blockComponent: AttachmentBlockComponent, abortController: AbortController);
     isEmpty(): boolean;
     isMultiple(): boolean;

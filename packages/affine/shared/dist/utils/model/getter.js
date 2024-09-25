@@ -1,4 +1,4 @@
-import { NoteDisplayMode } from '@blocksuite/affine-model';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
 import { matchFlavours } from './checker.js';
 export function findAncestorModel(model, match) {
     let curModel = model;

@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Job } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Job } from '@lumensuite/store';
 import * as lz from 'lz-string';
 import rehypeParse from 'rehype-parse';
 import { unified } from 'unified';
@@ -140,7 +140,7 @@ export class Clipboard extends LifeCycleWatcher {
                 const json = this.readFromClipboard(data);
                 const slice = await this._getSnapshotByPriority(type => json[type], doc, parent, index);
                 if (!slice) {
-                    throw new BlockSuiteError(ErrorCode.TransformerError, 'No snapshot found');
+                    throw new LumenSuiteError(ErrorCode.TransformerError, 'No snapshot found');
                 }
                 return slice;
             }
@@ -194,11 +194,11 @@ export class Clipboard extends LifeCycleWatcher {
         const items = clipboardData.getData('text/html');
         const domParser = new DOMParser();
         const doc = domParser.parseFromString(items, 'text/html');
-        const dom = doc.querySelector('[data-blocksuite-snapshot]');
+        const dom = doc.querySelector('[data-lumensuite-snapshot]');
         if (!dom) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'No snapshot found');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'No snapshot found');
         }
-        const json = JSON.parse(lz.decompressFromEncodedURIComponent(dom.dataset.blocksuiteSnapshot));
+        const json = JSON.parse(lz.decompressFromEncodedURIComponent(dom.dataset.lumensuiteSnapshot));
         return json;
     }
     async writeToClipboard(updateItems) {
@@ -215,7 +215,7 @@ export class Clipboard extends LifeCycleWatcher {
         delete items['text/html'];
         delete items['image/png'];
         const snapshot = lz.compressToEncodedURIComponent(JSON.stringify(items));
-        const html = `<div data-blocksuite-snapshot=${snapshot}>${innerHTML}</div>`;
+        const html = `<div data-lumensuite-snapshot=${snapshot}>${innerHTML}</div>`;
         const htmlBlob = new Blob([html], {
             type: 'text/html',
         });

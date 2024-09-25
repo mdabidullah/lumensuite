@@ -1,12 +1,12 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import { BlockComponent } from '@blocksuite/block-std';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import { BlockComponent } from '@lumensuite/block-std';
 import type { MindmapService } from './service.js';
 export declare class MindmapSurfaceBlock extends BlockComponent<SurfaceBlockModel> {
     private _renderer?;
     private get _grid();
     private get _layer();
     get mindmapService(): MindmapService;
-    get viewport(): import("@blocksuite/block-std/gfx").Viewport;
+    get viewport(): import("@lumensuite/block-std/gfx").Viewport;
     constructor();
     private _adjustNodeWidth;
     private _resizeEffect;

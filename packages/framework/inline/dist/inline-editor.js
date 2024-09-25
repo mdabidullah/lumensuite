@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, DisposableGroup, Slot } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists, DisposableGroup, Slot } from '@lumensuite/global/utils';
 import { nothing, render } from 'lit';
 import * as Y from 'yjs';
 import { INLINE_ROOT_ATTR } from './consts.js';
@@ -74,7 +74,7 @@ export class InlineEditor {
         this._mounted = false;
         this._onYTextChange = (_, transaction) => {
             if (this.yText.toString().includes('\r')) {
-                throw new BlockSuiteError(ErrorCode.InlineEditorError, 'yText must not contain "\\r" because it will break the range synchronization');
+                throw new LumenSuiteError(ErrorCode.InlineEditorError, 'yText must not contain "\\r" because it will break the range synchronization');
             }
             this.slots.textChange.emit();
             Promise.resolve()
@@ -159,10 +159,10 @@ export class InlineEditor {
         this.toDomRange = this.rangeService.toDomRange;
         this.toInlineRange = this.rangeService.toInlineRange;
         if (!yText.doc) {
-            throw new BlockSuiteError(ErrorCode.InlineEditorError, 'yText must be attached to a Y.Doc');
+            throw new LumenSuiteError(ErrorCode.InlineEditorError, 'yText must be attached to a Y.Doc');
         }
         if (yText.toString().includes('\r')) {
-            throw new BlockSuiteError(ErrorCode.InlineEditorError, 'yText must not contain "\\r" because it will break the range synchronization');
+            throw new LumenSuiteError(ErrorCode.InlineEditorError, 'yText must not contain "\\r" because it will break the range synchronization');
         }
         const { isEmbed = () => false, hooks = {}, inlineRangeProvider = null, vLineRenderer = null, } = ops;
         this._yText = yText;
@@ -222,7 +222,7 @@ export class InlineEditor {
     transact(fn) {
         const doc = this.yText.doc;
         if (!doc) {
-            throw new BlockSuiteError(ErrorCode.InlineEditorError, 'yText is not attached to a doc');
+            throw new LumenSuiteError(ErrorCode.InlineEditorError, 'yText is not attached to a doc');
         }
         doc.transact(fn, doc.clientID);
     }

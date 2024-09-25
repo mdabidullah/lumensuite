@@ -1,5 +1,5 @@
-import { toggleLinkPopup } from '@blocksuite/affine-components/rich-text';
-import { INLINE_ROOT_ATTR } from '@blocksuite/inline';
+import { toggleLinkPopup } from '@lumensuite/affine-components/rich-text';
+import { INLINE_ROOT_ATTR } from '@lumensuite/inline';
 import { generateTextStyleCommand, getCombinedTextStyle } from './utils.js';
 export const toggleBold = generateTextStyleCommand('bold');
 export const toggleItalic = generateTextStyleCommand('italic');

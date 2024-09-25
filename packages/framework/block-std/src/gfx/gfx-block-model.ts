@@ -2,9 +2,9 @@ import type {
   Constructor,
   IVec,
   SerializedXYWH,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import {
   Bound,
   getBoundsWithRotation,
@@ -14,8 +14,8 @@ import {
   polygonGetPointTangent,
   polygonNearestPoint,
   rotatePoints,
-} from '@blocksuite/global/utils';
-import { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { BlockModel } from '@lumensuite/store';
 
 import type { EditorHost } from '../view/index.js';
 import type {
@@ -158,7 +158,7 @@ export function GfxCompatible<
     }
 
     if (Object.getPrototypeOf(currentClass.prototype) === null) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.GfxBlockElementError,
         'The SuperClass is not a subclass of BlockModel'
       );

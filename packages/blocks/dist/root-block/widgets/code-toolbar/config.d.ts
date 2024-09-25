@@ -1,4 +1,4 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 import type { CodeBlockToolbarContext } from './context.js';
 export declare const PRIMARY_GROUPS: MenuItemGroup<CodeBlockToolbarContext>[];
 export declare const clipboardGroup: MenuItemGroup<CodeBlockToolbarContext>;

@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { DatePicker } from '@blocksuite/affine-components/date-picker';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
+import { DatePicker } from '@lumensuite/affine-components/date-picker';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
 import { flip, offset } from '@floating-ui/dom';
 import { baseTheme } from '@toeverything/theme';
 import { format } from 'date-fns/format';

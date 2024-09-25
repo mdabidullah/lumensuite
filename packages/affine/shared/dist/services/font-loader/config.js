@@ -1,4 +1,4 @@
-import { FontFamily, FontStyle, FontWeight } from '@blocksuite/affine-model';
+import { FontFamily, FontStyle, FontWeight } from '@lumensuite/affine-model';
 export const AffineCanvasTextFonts = [
     // Inter, https://fonts.cdnfonts.com/css/inter?styles=29139,29134,29135,29136,29140,29141
     {

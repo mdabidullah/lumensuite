@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import type { EdgelessTool } from '../../../types.js';
 import './template-panel.js';
-declare const EdgelessTemplateButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessTemplateButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessTemplateButton extends EdgelessTemplateButton_base {
     static styles: import("lit").CSSResult;
     private _cleanup;

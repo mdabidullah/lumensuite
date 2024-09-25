@@ -1,11 +1,11 @@
-import { createLitPortal } from '@blocksuite/affine-components/portal';
+import { flip, offset } from '@floating-ui/dom';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
 import {
   EditorHost,
   PropTypes,
   requiredProperties,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { flip, offset } from '@floating-ui/dom';
+} from '@lumensuite/block-std';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

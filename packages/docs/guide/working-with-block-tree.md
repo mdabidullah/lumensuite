@@ -8,14 +8,14 @@ In previous examples, we demonstrated how a `doc` collaborates with an `editor`.
 
 ## Block Tree Basics
 
-In BlockSuite, each `doc` object manages an independent block tree composed of various types of blocks. These blocks can be defined through the [`BlockSchema`](./block-schema.md), which specifies their fields and permissible nesting relationships among different block types. Each block type has a unique `block.flavour`, following a `namespace:name` naming structure. Since the preset editors in BlockSuite are derived from the [AFFiNE](https://github.com/toeverything/AFFiNE) project, the default editable blocks use the `affine` prefix.
+In LumenSuite, each `doc` object manages an independent block tree composed of various types of blocks. These blocks can be defined through the [`BlockSchema`](./block-schema.md), which specifies their fields and permissible nesting relationships among different block types. Each block type has a unique `block.flavour`, following a `namespace:name` naming structure. Since the preset editors in LumenSuite are derived from the [AFFiNE](https://github.com/toeverything/AFFiNE) project, the default editable blocks use the `affine` prefix.
 
 To manipulate blocks, you can utilize several primary APIs under `doc`:
 
-- [`doc.addBlock`](/api/@blocksuite/store/classes/Doc.html#addblock)
-- [`doc.updateBlock`](/api/@blocksuite/store/classes/Doc.html#updateblock)
-- [`doc.deleteBlock`](/api/@blocksuite/store/classes/Doc.html#deleteblock)
-- [`doc.getBlockById`](/api/@blocksuite/store/classes/Doc.html#getblockbyid)
+- [`doc.addBlock`](/api/@lumensuite/store/classes/Doc.html#addblock)
+- [`doc.updateBlock`](/api/@lumensuite/store/classes/Doc.html#updateblock)
+- [`doc.deleteBlock`](/api/@lumensuite/store/classes/Doc.html#deleteblock)
+- [`doc.getBlockById`](/api/@lumensuite/store/classes/Doc.html#getblockbyid)
 
 Here is an example demonstrating the manipulation of the block tree through these APIs:
 
@@ -40,17 +40,17 @@ doc.updateBlock(modelA, { type: 'h1' });
 doc.deleteBlock(modelA);
 ```
 
-This example creates a subset of the block tree hierarchy defaultly used in `@blocksuite/presets`, illustrated as follows:
+This example creates a subset of the block tree hierarchy defaultly used in `@lumensuite/presets`, illustrated as follows:
 
 ![block-nesting](../images/block-nesting.png)
 
-In BlockSuite, you need to initialize a valid document structure before attaching it to editors, which is also why it requires `init()` after `createEmptyDoc()`.
+In LumenSuite, you need to initialize a valid document structure before attaching it to editors, which is also why it requires `init()` after `createEmptyDoc()`.
 
 ::: info
-The block tree hierarchy is specific to the preset editors. At the framework level, `@blocksuite/store` does **NOT** treat the "first-party" `affine:*` blocks with any special way. Feel free to add blocks from different namespaces for the block tree!
+The block tree hierarchy is specific to the preset editors. At the framework level, `@lumensuite/store` does **NOT** treat the "first-party" `affine:*` blocks with any special way. Feel free to add blocks from different namespaces for the block tree!
 :::
 
-All block operations on `doc` are automatically recorded and can be reversed using [`doc.undo()`](/api/@blocksuite/store/classes/Doc.html#undo) and [`doc.redo()`](/api/@blocksuite/store/classes/Doc.html#redo). By default, operations within a certain period are automatically merged into a single record. However, you can explicitly add a history record during operations by inserting [`doc.captureSync()`](/api/@blocksuite/store/classes/Doc.html#capturesync) between block operations:
+All block operations on `doc` are automatically recorded and can be reversed using [`doc.undo()`](/api/@lumensuite/store/classes/Doc.html#undo) and [`doc.redo()`](/api/@lumensuite/store/classes/Doc.html#redo). By default, operations within a certain period are automatically merged into a single record. However, you can explicitly add a history record during operations by inserting [`doc.captureSync()`](/api/@lumensuite/store/classes/Doc.html#capturesync) between block operations:
 
 ```ts
 const rootId = doc.addBlock('affine:page');
@@ -73,9 +73,9 @@ const { host } = editor;
 const { spec, selection, command } = host.std;
 ```
 
-Firstly, let's explain the newly introduced `host` and `std`, which are determined by the framework-agnostic architecture of BlockSuite:
+Firstly, let's explain the newly introduced `host` and `std`, which are determined by the framework-agnostic architecture of LumenSuite:
 
-- As [mentioned before](./component-types#composing-editors-by-blocks), the `editor.host` - also known as the [`EditorHost`](/api/@blocksuite/block-std/) component, is a container for mounting block UI components. It handles the heavy lifting involved in mapping the **block tree** to the **component tree**.
+- As [mentioned before](./component-types#composing-editors-by-blocks), the `editor.host` - also known as the [`EditorHost`](/api/@lumensuite/block-std/) component, is a container for mounting block UI components. It handles the heavy lifting involved in mapping the **block tree** to the **component tree**.
 - Regardless of the framework used to implement `EditorHost`, they can access the same headless standard library designed for editable blocks through `host.std`. For example, `std.spec` contains all the registered [`BlockSpec`](./block-spec)s.
 
 ::: tip
@@ -88,7 +88,7 @@ As the runtime for the block tree, this is the mental model inside the `editor`:
 
 ## Selecting Blocks
 
-The essence of editor lies in allowing users to **dynamically select and modify** the data. In BlockSuite, you can use the `SelectionManager`, which is responsible for managing selections, through `std.selection` or `host.selection`. As an example, after selecting some blocks in the editor, you can execute the following code snippets line by line in the console:
+The essence of editor lies in allowing users to **dynamically select and modify** the data. In LumenSuite, you can use the `SelectionManager`, which is responsible for managing selections, through `std.selection` or `host.selection`. As an example, after selecting some blocks in the editor, you can execute the following code snippets line by line in the console:
 
 ```ts
 // Get current selection state
@@ -104,7 +104,7 @@ selection.set(cached);
 selection.set([cached[0]]);
 ```
 
-In `block-std`, BlockSuite implements several atomic selection types for `SelectionManager`, such as `TextSelection` and `BlockSelection`. The content currently selected by the user is automatically divided into these primitive selection data structures, recorded in the list returned by `selection.value`. Through `selection.set()`, you can also programmatically control the current selection state of the editor.
+In `block-std`, LumenSuite implements several atomic selection types for `SelectionManager`, such as `TextSelection` and `BlockSelection`. The content currently selected by the user is automatically divided into these primitive selection data structures, recorded in the list returned by `selection.value`. Through `selection.set()`, you can also programmatically control the current selection state of the editor.
 
 This allows the selection manager to handle different types of selections, as shown in the following illustration, using the same API:
 
@@ -127,7 +127,7 @@ In `selection.value`, different types of selection states can coexist simultaneo
 ];
 ```
 
-For the more complex native [selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection), the `TextSelection` can be used to model it. It marks the start and end positions of the native selection in the block through the `from` and `to` fields, recording only the `index` and `length` of the inline text sequence in the respective block. This simplification is made possible by the architecture of BlockSuite, where editable blocks use `@blocksuite/inline` as the rich text editing component. Each block tree node's rich text content is rendered independently into different inline editors, eliminating nesting between rich text instances:
+For the more complex native [selection](https://developer.mozilla.org/en-US/docs/Web/API/Selection), the `TextSelection` can be used to model it. It marks the start and end positions of the native selection in the block through the `from` and `to` fields, recording only the `index` and `length` of the inline text sequence in the respective block. This simplification is made possible by the architecture of LumenSuite, where editable blocks use `@lumensuite/inline` as the rich text editing component. Each block tree node's rich text content is rendered independently into different inline editors, eliminating nesting between rich text instances:
 
 ![flat-inlines](../images/flat-inlines.png)
 
@@ -150,11 +150,11 @@ function getFirstSelectedModel(host: EditorHost) {
 }
 ```
 
-This direct usage is not very convenient. Also, as BlockSuite encourages completely splitting the editor into different [`BlockSpec`](./block-spec)s ([recall here](./component-types#composing-editors-by-blocks)), which indicates that methods and properties globally available in the editor should also be implemented on the block level. A mechanism is needed at this point to organize such code, ensuring maintainability in large projects. This is why BlockSuite introduces the concept of [`BlockService`](./block-service).
+This direct usage is not very convenient. Also, as LumenSuite encourages completely splitting the editor into different [`BlockSpec`](./block-spec)s ([recall here](./component-types#composing-editors-by-blocks)), which indicates that methods and properties globally available in the editor should also be implemented on the block level. A mechanism is needed at this point to organize such code, ensuring maintainability in large projects. This is why LumenSuite introduces the concept of [`BlockService`](./block-service).
 
 ### Service
 
-In BlockSuite, service is used for registering state or methods specific to a certain block type. For example, instead of implementing the `getFirstSelectedModel` method yourself, you can use shortcuts predefined on `RootService`:
+In LumenSuite, service is used for registering state or methods specific to a certain block type. For example, instead of implementing the `getFirstSelectedModel` method yourself, you can use shortcuts predefined on `RootService`:
 
 ```ts
 const rootService = host.spec.getService('affine:page');
@@ -165,7 +165,7 @@ rootService.selectedModel;
 rootService.selectedBlocks;
 ```
 
-Here, `getService` is used to obtain the service corresponding to a certain block spec. Each service is a plain class, existing as a singleton throughout the lifecycle of the `host` (with a corresponding [`mounted`](/api/@blocksuite/block-std/classes/BlockService.html#mounted) lifecycle hook). Some typical uses of service include:
+Here, `getService` is used to obtain the service corresponding to a certain block spec. Each service is a plain class, existing as a singleton throughout the lifecycle of the `host` (with a corresponding [`mounted`](/api/@lumensuite/block-std/classes/BlockService.html#mounted) lifecycle hook). Some typical uses of service include:
 
 - For blocks that serve as the root node of the block tree, common editor APIs can be registered on their services for application developers.
 - For blocks requiring specific dynamic configurations, service can be used to pass in corresponding options. For example, a service can accept configurations related to image uploading for image block.
@@ -174,8 +174,8 @@ Here, `getService` is used to obtain the service corresponding to a certain bloc
 As an example, the following code more specifically shows how the two getters `selectedBlocks` and `selectedModels` mentioned earlier are implemented using a service:
 
 ```ts
-import { BlockService } from '@blocksuite/block-std';
-import type { BlockComponent } from '@blocksuite/lit';
+import { BlockService } from '@lumensuite/block-std';
+import type { BlockComponent } from '@lumensuite/lit';
 import type { RootBlockModel } from './root-model.js';
 
 export class RootService extends BlockService<RootBlockModel> {
@@ -211,9 +211,9 @@ export class RootService extends BlockService<RootBlockModel> {
 
 ### Commands
 
-Besides the service, this code snippet also utilizes the chain of commands occurring on `this.std.command` (the [`CommandManager`](/api/@blocksuite/block-std/classes/CommandManager)). This is about using predefined [`Command`](./command)s.
+Besides the service, this code snippet also utilizes the chain of commands occurring on `this.std.command` (the [`CommandManager`](/api/@lumensuite/block-std/classes/CommandManager)). This is about using predefined [`Command`](./command)s.
 
-In BlockSuite, you can always control the editor solely through direct operations on `host` and `doc`. However, in the real world, it's often necessary to treat some operations as variables, dynamically constructing control flow (e.g., dynamically combining different subsequent processing logics based on current selection states). This is where commands really shines. **It allows complex sequences of operations to be recorded as reusable chains, and also simplifies the context sharing between operations**.
+In LumenSuite, you can always control the editor solely through direct operations on `host` and `doc`. However, in the real world, it's often necessary to treat some operations as variables, dynamically constructing control flow (e.g., dynamically combining different subsequent processing logics based on current selection states). This is where commands really shines. **It allows complex sequences of operations to be recorded as reusable chains, and also simplifies the context sharing between operations**.
 
 The code at the end of the previous section demonstrates the basic usage of commands:
 
@@ -223,7 +223,7 @@ The code at the end of the previous section demonstrates the basic usage of comm
 - The `inline` method transfers the state on the command context object to the outside or executes other side effects.
 - The `run` method is used to finally execute the command chain. The context will be destroyed after the command chain execution.
 
-In the above methods, task-specific commands like `getSelectedBlock` are not implemented by the command manager but are registered by individual blocks. In fact, since BlockSuite separates the framework-specific `host` from the framework-agnostic `block-std`.
+In the above methods, task-specific commands like `getSelectedBlock` are not implemented by the command manager but are registered by individual blocks. In fact, since LumenSuite separates the framework-specific `host` from the framework-agnostic `block-std`.
 
 You can refer to the [`Command`](./command) documentation for more advanced uses of commands.
 
@@ -235,10 +235,10 @@ We plan to continue supplementing and documenting some of the most commonly used
 
 So far, we have introduced almost all the main parts that make up a block spec. Now, it's time to learn how to create new block types.
 
-In BlockSuite, the block spec is built from three main components: [`schema`](./block-schema), [`service`](./block-service), and [`view`](./block-view). Among these, the definition of the `view` part is specific to the frontend framework used. For example, in the case of `PageEditor` and `EdgelessEditor` based on `@blocksuite/lit`, the block specs are defined with lit primitives in this way:
+In LumenSuite, the block spec is built from three main components: [`schema`](./block-schema), [`service`](./block-service), and [`view`](./block-view). Among these, the definition of the `view` part is specific to the frontend framework used. For example, in the case of `PageEditor` and `EdgelessEditor` based on `@lumensuite/lit`, the block specs are defined with lit primitives in this way:
 
 ```ts
-import type { BlockSpec } from '@blocksuite/block-std';
+import type { BlockSpec } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 
 const MyBlockSpec: BlockSpec = {
@@ -265,15 +265,15 @@ This design aims at balancing ease of use with customizability. Both the service
 
 ::: info
 
-- In terms of cross-framework support, the biggest difference between BlockSuite and other popular editor frameworks is that **BlockSuite has no DOM host of its own**. Instead, it implements a middleware like `@blocksuite/lit`, mapping the block tree to the framework's component tree. Thus, the entire content area of a BlockSuite editor is natively controlled by different frameworks, rather than creating many different framework component subtrees within a BlockSuite-controlled DOM tree through excessive use of `createRoot`.
-- The reason BlockSuite uses lit by default is that as a web component framework, the lit component tree IS the DOM tree natively. This simplifies the three-phase update process of `block tree -> component tree -> DOM tree` to just `block tree -> component (DOM) tree`.
+- In terms of cross-framework support, the biggest difference between LumenSuite and other popular editor frameworks is that **LumenSuite has no DOM host of its own**. Instead, it implements a middleware like `@lumensuite/lit`, mapping the block tree to the framework's component tree. Thus, the entire content area of a LumenSuite editor is natively controlled by different frameworks, rather than creating many different framework component subtrees within a LumenSuite-controlled DOM tree through excessive use of `createRoot`.
+- The reason LumenSuite uses lit by default is that as a web component framework, the lit component tree IS the DOM tree natively. This simplifies the three-phase update process of `block tree -> component tree -> DOM tree` to just `block tree -> component (DOM) tree`.
   :::
 
-Furthermore, BlockSuite also supports defining the most commonly used type of custom block in a more straightforward way: the _embed block_. **This type of block does not nest other blocks and manages its internal area's state entirely on its own**. For example, to create a GitHub link card that can be displayed in `PageEditor`, you can start by defining the model:
+Furthermore, LumenSuite also supports defining the most commonly used type of custom block in a more straightforward way: the _embed block_. **This type of block does not nest other blocks and manages its internal area's state entirely on its own**. For example, to create a GitHub link card that can be displayed in `PageEditor`, you can start by defining the model:
 
 ```ts
-import { BlockModel } from '@blocksuite/store';
-import { defineEmbedModel } from '@blocksuite/blocks';
+import { BlockModel } from '@lumensuite/store';
+import { defineEmbedModel } from '@lumensuite/blocks';
 
 // Define strongly typed block model
 export class EmbedGithubModel extends defineEmbedModel<{
@@ -285,7 +285,7 @@ export class EmbedGithubModel extends defineEmbedModel<{
 Then based on this model, a lit-based UI component for the block can be defined:
 
 ```ts
-import { EmbedBlockComponent } from '@blocksuite/blocks';
+import { EmbedBlockComponent } from '@lumensuite/blocks';
 import type { EmbedGithubBlockModel } from './embed-github-model.js';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
@@ -310,7 +310,7 @@ export class EmbedGithubBlock extends EmbedBlockComponent<EmbedGithubModel> {
 As next step, we can further define the corresponding `BlockSpec`:
 
 ```ts
-import { createEmbedBlock } from '@blocksuite/blocks';
+import { createEmbedBlock } from '@lumensuite/blocks';
 import { EmbedGithubBlockModel } from './embed-github-model.js';
 
 export const EmbedGithubBlockSpec = createEmbedBlock({
@@ -333,7 +333,7 @@ Finally, by inserting this `BlockSpec` into the `host.specs` array, you can expa
 
 ```ts
 // ...
-import { PageEditorBlockSpecs } from '@blocksuite/blocks';
+import { PageEditorBlockSpecs } from '@lumensuite/blocks';
 import { EmbedGithubBlockSpec } from './embed-block-spec.js';
 
 const editor = new PageEditor();
@@ -345,14 +345,14 @@ After completing the above steps, you can insert the new block type into the blo
 
 ```ts
 const props = {
-  owner: 'toeverything', // The company behind BlockSuite and AFFiNE 🤫
-  repo: 'https://github.com/toeverything/blocksuite',
+  owner: 'toeverything', // The company behind LumenSuite and AFFiNE 🤫
+  repo: 'https://github.com/toeverything/lumensuite',
 };
 
 // The 'affine' prefix is kept by default, but you can also override it.
 doc.addBlock('affine:embed-github', props, parentId);
 ```
 
-You can view the [source code](https://github.com/toeverything/blocksuite/tree/master/packages/blocks/src/embed-github-block) for the above example in BlockSuite repository.
+You can view the [source code](https://github.com/toeverything/lumensuite/tree/master/packages/blocks/src/embed-github-block) for the above example in LumenSuite repository.
 
-Combining the earlier example of composing `PageEditor` entirely based on block spec ([recall here](./component-types#composing-editors-by-blocks)), this should give you a more direct understanding of BlockSuite's extensibility.
+Combining the earlier example of composing `PageEditor` entirely based on block spec ([recall here](./component-types#composing-editors-by-blocks)), this should give you a more direct understanding of LumenSuite's extensibility.

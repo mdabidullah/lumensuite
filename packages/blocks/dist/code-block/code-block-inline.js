@@ -1,4 +1,4 @@
-import { BackgroundInlineSpecExtension, BoldInlineSpecExtension, CodeInlineSpecExtension, ColorInlineSpecExtension, InlineManagerExtension, InlineSpecExtension, ItalicInlineSpecExtension, LatexInlineSpecExtension, LinkInlineSpecExtension, StrikeInlineSpecExtension, UnderlineInlineSpecExtension, } from '@blocksuite/affine-components/rich-text';
+import { BackgroundInlineSpecExtension, BoldInlineSpecExtension, CodeInlineSpecExtension, ColorInlineSpecExtension, InlineManagerExtension, InlineSpecExtension, ItalicInlineSpecExtension, LatexInlineSpecExtension, LinkInlineSpecExtension, StrikeInlineSpecExtension, UnderlineInlineSpecExtension, } from '@lumensuite/affine-components/rich-text';
 import { html } from 'lit';
 import { z } from 'zod';
 export const CodeBlockUnitSpecExtension = InlineSpecExtension({

@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { AlignBottomIcon, AlignDistributeHorizontallyIcon, AlignDistributeVerticallyIcon, AlignHorizontallyIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, AlignVerticallyIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { ConnectorElementModel, GroupElementModel, } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { AlignBottomIcon, AlignDistributeHorizontallyIcon, AlignDistributeVerticallyIcon, AlignHorizontallyIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, AlignVerticallyIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { ConnectorElementModel, GroupElementModel, } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

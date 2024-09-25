@@ -1,4 +1,4 @@
-import type { BlockCommands } from '@blocksuite/block-std';
+import type { BlockCommands } from '@lumensuite/block-std';
 
 import { insertEmbedLinkedDocCommand } from './insert-embed-linked-doc.js';
 import { insertLinkByQuickSearchCommand } from './insert-link-by-quick-search.js';

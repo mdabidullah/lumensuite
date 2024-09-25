@@ -1,8 +1,8 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { Container } from '@blocksuite/global/di';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { Container } from '@lumensuite/global/di';
 
-import { Extension } from '@blocksuite/block-std';
-import { createIdentifier } from '@blocksuite/global/di';
+import { Extension } from '@lumensuite/block-std';
+import { createIdentifier } from '@lumensuite/global/di';
 
 export type EmbedOptions = {
   flavour: string;

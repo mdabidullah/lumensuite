@@ -1,4 +1,4 @@
-import { type BlockComponent } from '@blocksuite/block-std';
+import { type BlockComponent } from '@lumensuite/block-std';
 import { LitElement, type PropertyValues } from 'lit';
 declare const BlockSelection_base: typeof LitElement;
 /**

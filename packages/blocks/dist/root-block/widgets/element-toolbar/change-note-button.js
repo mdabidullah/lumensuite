@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ExpandIcon, LineStyleIcon, NoteCornerIcon, NoteShadowIcon, ScissorsIcon, ShrinkIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator, } from '@blocksuite/affine-components/toolbar';
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NOTE_BACKGROUND_COLORS, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists, Bound, countBy, maxBy } from '@blocksuite/global/utils';
+import { ExpandIcon, LineStyleIcon, NoteCornerIcon, NoteShadowIcon, ScissorsIcon, ShrinkIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator, } from '@lumensuite/affine-components/toolbar';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NOTE_BACKGROUND_COLORS, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists, Bound, countBy, maxBy } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';

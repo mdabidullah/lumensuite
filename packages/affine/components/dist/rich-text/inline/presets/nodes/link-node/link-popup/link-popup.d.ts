@@ -1,9 +1,9 @@
-import type { BlockComponent } from '@blocksuite/block-std';
-import type { InlineRange } from '@blocksuite/inline/types';
+import type { BlockComponent } from '@lumensuite/block-std';
+import type { InlineRange } from '@lumensuite/inline/types';
 import { LitElement } from 'lit';
 import type { EditorIconButton } from '../../../../../../toolbar/index.js';
 import type { AffineInlineEditor } from '../../../affine-inline-specs.js';
-declare const LinkPopup_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LinkPopup_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class LinkPopup extends LinkPopup_base {
     static styles: import("lit").CSSResult;
     private _bodyOverflowStyle;
@@ -17,11 +17,11 @@ export declare class LinkPopup extends LinkPopup_base {
     private _viewTemplate;
     private get _canConvertToEmbedView();
     private get _isBookmarkAllowed();
-    get block(): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+    get block(): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
     get currentLink(): string | null | undefined;
     get currentText(): string;
-    get host(): import("@blocksuite/block-std").EditorHost | undefined;
-    get std(): import("@blocksuite/block-std").BlockStdScope | undefined;
+    get host(): import("@lumensuite/block-std").EditorHost | undefined;
+    get std(): import("@lumensuite/block-std").BlockStdScope | undefined;
     private _confirmBtnTemplate;
     private _convertToCardView;
     private _convertToEmbedView;

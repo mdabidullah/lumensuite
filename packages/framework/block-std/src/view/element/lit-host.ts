@@ -1,14 +1,14 @@
 /* eslint-disable lit/binding-positions, lit/no-invalid-html */
 
+import { createContext, provide } from '@lit/context';
 import {
-  BlockSuiteError,
   ErrorCode,
   handleError,
-} from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
-import { Doc } from '@blocksuite/store';
-import { type BlockModel, BlockViewType } from '@blocksuite/store';
-import { createContext, provide } from '@lit/context';
+  LumenSuiteError,
+} from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
+import { Doc } from '@lumensuite/store';
+import { type BlockModel, BlockViewType } from '@lumensuite/store';
 import { css, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
@@ -84,7 +84,7 @@ export class EditorHost extends SignalWatcher(
   };
 
   /**
-   * Render a block model manually instead of let blocksuite render it.
+   * Render a block model manually instead of let lumensuite render it.
    * If you render the same block model multiple times,
    * the event flow and data binding will be broken.
    * Only use this method as a last resort.
@@ -132,7 +132,7 @@ export class EditorHost extends SignalWatcher(
     super.connectedCallback();
 
     if (!this.doc.root) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.NoRootModelError,
         'This doc is missing root block. Please initialize the default block structure before connecting the editor to DOM.'
       );
@@ -198,7 +198,7 @@ export class EditorHost extends SignalWatcher(
 
   @provide({ context: stdContext })
   @property({ attribute: false })
-  accessor std!: BlockSuite.Std;
+  accessor std!: LumenSuite.Std;
 }
 
 declare global {

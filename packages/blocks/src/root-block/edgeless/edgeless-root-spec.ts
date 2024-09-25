@@ -1,14 +1,14 @@
 import {
   DocModeService,
   EmbedOptionService,
-} from '@blocksuite/affine-shared/services';
+} from '@lumensuite/affine-shared/services';
 import {
   BlockViewExtension,
   CommandExtension,
   type ExtensionType,
   WidgetViewMapExtension,
-} from '@blocksuite/block-std';
-import { BlockServiceWatcher, FlavourExtension } from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
+import { BlockServiceWatcher, FlavourExtension } from '@lumensuite/block-std';
 import { literal, unsafeStatic } from 'lit/static-html.js';
 
 import { commands } from '../commands/index.js';

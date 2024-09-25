@@ -1,7 +1,7 @@
-import { EmbedLoomBlockSchema, } from '@blocksuite/affine-model';
-import { EmbedLoomStyles } from '@blocksuite/affine-model';
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
-import { BlockService } from '@blocksuite/block-std';
+import { EmbedLoomBlockSchema, } from '@lumensuite/affine-model';
+import { EmbedLoomStyles } from '@lumensuite/affine-model';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
+import { BlockService } from '@lumensuite/block-std';
 import { LinkPreviewer } from '../_common/embed-block-helper/index.js';
 import { loomUrlRegex } from './embed-loom-model.js';
 import { queryEmbedLoomData } from './utils.js';

@@ -1,4 +1,4 @@
-import { sha } from '@blocksuite/global/utils';
+import { sha } from '@lumensuite/global/utils';
 /**
  * # BlobEngine
  *

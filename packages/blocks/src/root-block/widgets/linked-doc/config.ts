@@ -1,4 +1,4 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
 
 import {
@@ -6,20 +6,20 @@ import {
   LinkedDocIcon,
   LinkedEdgelessIcon,
   NewDocIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   type AffineInlineEditor,
   insertLinkedNode,
-} from '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
+} from '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
 import {
   DocModeProvider,
   TelemetryProvider,
-} from '@blocksuite/affine-shared/services';
+} from '@lumensuite/affine-shared/services';
 import {
   createDefaultDoc,
   isFuzzyMatch,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 import { showImportModal } from './import-doc/index.js';
 

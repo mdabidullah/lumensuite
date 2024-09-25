@@ -1,4 +1,4 @@
-import { ShapeStyle } from '@blocksuite/affine-model';
+import { ShapeStyle } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
 export declare class EdgelessShapeStylePanel extends LitElement {
     static styles: import("lit").CSSResult;

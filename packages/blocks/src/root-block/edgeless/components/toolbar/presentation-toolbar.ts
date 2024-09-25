@@ -1,15 +1,15 @@
-import type { FrameBlockModel } from '@blocksuite/affine-model';
+import type { FrameBlockModel } from '@lumensuite/affine-model';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
 import {
   FrameNavigatorNextIcon,
   FrameNavigatorPrevIcon,
   NavigatorExitFullScreenIcon,
   NavigatorFullScreenIcon,
   StopAIIcon,
-} from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { Bound } from '@lumensuite/global/utils';
 import { cssVar } from '@toeverything/theme';
 import { css, html, LitElement, nothing, type PropertyValues } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

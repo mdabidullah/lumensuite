@@ -1,5 +1,5 @@
-import type { EdgelessRootBlockComponent, PageRootBlockComponent, SurfaceBlockComponent } from '@blocksuite/blocks';
-import type { Doc } from '@blocksuite/store';
+import type { EdgelessRootBlockComponent, PageRootBlockComponent, SurfaceBlockComponent } from '@lumensuite/blocks';
+import type { Doc } from '@lumensuite/store';
 import type { AffineEditorContainer } from '../../index.js';
 export declare function getSurface(doc: Doc, editor: AffineEditorContainer): SurfaceBlockComponent;
 export declare function getDocRootBlock(doc: Doc, editor: AffineEditorContainer, mode: 'page'): PageRootBlockComponent;

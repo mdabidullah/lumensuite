@@ -1,6 +1,6 @@
-import type { SurfaceSelection } from '@blocksuite/block-std';
-import type { Bound } from '@blocksuite/global/utils';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import type { SurfaceSelection } from '@lumensuite/block-std';
+import type { Bound } from '@lumensuite/global/utils';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 import type { EdgelessRootService } from '../edgeless-root-service.js';
 import type { EdgelessToolController } from '../tools/index.js';
@@ -13,7 +13,7 @@ type AbstractClassConstructor<T = object> = Constructor<T> & {
 export type EdgelessToolConstructor = AbstractClassConstructor<EdgelessToolController>;
 export interface EdgelessHoverState {
     rect: Bound;
-    content: BlockSuite.EdgelessModel;
+    content: LumenSuite.EdgelessModel;
 }
 export interface SelectionArea {
     start: DOMPoint;
@@ -46,6 +46,9 @@ export declare class EdgelessToolsManager {
     setEdgelessTool: (edgelessTool: EdgelessTool, state?: EdgelessSelectionState | SurfaceSelection[], restoreToLastSelection?: boolean) => void;
     get container(): EdgelessRootBlockComponent;
     get controllers(): Record<string, EdgelessToolController<import("../tools/text-tool.js").TextTool | {
+        type: "pan";
+        panning: boolean;
+    } | {
         type: "brush";
     } | import("../tools/connector-tool.js").ConnectorTool | {
         type: "copilot";
@@ -58,15 +61,15 @@ export declare class EdgelessToolsManager {
         type: "frame";
     } | import("../tools/lasso-tool.js").LassoTool | {
         type: "mindmap";
-    } | import("../tools/note-tool.js").NoteTool | {
-        type: "pan";
-        panning: boolean;
-    } | import("../tools/shape-tool.js").ShapeTool | {
+    } | import("../tools/note-tool.js").NoteTool | import("../tools/shape-tool.js").ShapeTool | {
         type: "default";
     } | {
         type: "template";
     }>>;
     get currentController(): EdgelessToolController<import("../tools/text-tool.js").TextTool | {
+        type: "pan";
+        panning: boolean;
+    } | {
         type: "brush";
     } | import("../tools/connector-tool.js").ConnectorTool | {
         type: "copilot";
@@ -79,16 +82,13 @@ export declare class EdgelessToolsManager {
         type: "frame";
     } | import("../tools/lasso-tool.js").LassoTool | {
         type: "mindmap";
-    } | import("../tools/note-tool.js").NoteTool | {
-        type: "pan";
-        panning: boolean;
-    } | import("../tools/shape-tool.js").ShapeTool | {
+    } | import("../tools/note-tool.js").NoteTool | import("../tools/shape-tool.js").ShapeTool | {
         type: "default";
     } | {
         type: "template";
     }>;
-    get dispatcher(): import("@blocksuite/block-std").UIEventDispatcher;
-    get doc(): import("@blocksuite/store").Doc;
+    get dispatcher(): import("@lumensuite/block-std").UIEventDispatcher;
+    get doc(): import("@lumensuite/store").Doc;
     get dragging(): boolean;
     get draggingArea(): DOMRect | null;
     get edgelessTool(): EdgelessTool;

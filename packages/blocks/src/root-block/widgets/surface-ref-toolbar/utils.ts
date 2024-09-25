@@ -1,7 +1,7 @@
-import type { CanvasRenderer } from '@blocksuite/affine-block-surface';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { CanvasRenderer } from '@lumensuite/affine-block-surface';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 
 import type { SurfaceRefBlockComponent } from '../../../surface-ref-block/surface-ref-block.js';
 
@@ -12,7 +12,7 @@ export const edgelessToBlob = async (
   options: {
     surfaceRefBlock: SurfaceRefBlockComponent;
     surfaceRenderer: CanvasRenderer;
-    edgelessElement: BlockSuite.EdgelessModel;
+    edgelessElement: LumenSuite.EdgelessModel;
   }
 ): Promise<Blob> => {
   const { edgelessElement } = options;

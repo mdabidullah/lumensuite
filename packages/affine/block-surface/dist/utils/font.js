@@ -1,4 +1,4 @@
-import { IS_FIREFOX } from '@blocksuite/global/env';
+import { IS_FIREFOX } from '@lumensuite/global/env';
 export function wrapFontFamily(fontFamily) {
     return `"${fontFamily}"`;
 }

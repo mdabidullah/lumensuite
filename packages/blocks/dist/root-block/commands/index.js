@@ -1,6 +1,6 @@
-import { getSelectedPeekableBlocksCommand, peekSelectedBlockCommand, } from '@blocksuite/affine-components/peek';
-import { textCommands } from '@blocksuite/affine-components/rich-text';
-import { copySelectedModelsCommand, deleteSelectedModelsCommand, draftSelectedModelsCommand, getSelectedModelsCommand, } from '@blocksuite/affine-shared/commands';
+import { getSelectedPeekableBlocksCommand, peekSelectedBlockCommand, } from '@lumensuite/affine-components/peek';
+import { textCommands } from '@lumensuite/affine-components/rich-text';
+import { copySelectedModelsCommand, deleteSelectedModelsCommand, draftSelectedModelsCommand, getSelectedModelsCommand, } from '@lumensuite/affine-shared/commands';
 export const commands = {
     // models
     copySelectedModels: copySelectedModelsCommand,

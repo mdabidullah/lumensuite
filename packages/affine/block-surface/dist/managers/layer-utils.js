@@ -1,4 +1,4 @@
-import { nToLast } from '@blocksuite/global/utils';
+import { nToLast } from '@lumensuite/global/utils';
 import { SurfaceGroupLikeModel } from '../element-model/base.js';
 export function getLayerEndZIndex(layers, layerIndex) {
     const layer = layers[layerIndex];

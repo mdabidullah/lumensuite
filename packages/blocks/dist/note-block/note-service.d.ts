@@ -1,11 +1,11 @@
-import { BlockService } from '@blocksuite/block-std';
+import { BlockService } from '@lumensuite/block-std';
 export declare class NoteBlockService extends BlockService {
     static readonly flavour: "affine:note";
     private _dragHandleOption;
     mounted(): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:note': NoteBlockService;
         }

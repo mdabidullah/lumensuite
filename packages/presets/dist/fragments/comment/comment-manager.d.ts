@@ -1,5 +1,5 @@
-import type { EditorHost, TextSelection } from '@blocksuite/block-std';
-import { type Y } from '@blocksuite/store';
+import type { EditorHost, TextSelection } from '@lumensuite/block-std';
+import { type Y } from '@lumensuite/store';
 export interface CommentMeta {
     id: string;
     date: number;

@@ -6,11 +6,11 @@ export declare abstract class BaseSelection {
     static readonly type: string;
     readonly blockId: string;
     get group(): string;
-    get type(): BlockSuite.SelectionType;
+    get type(): LumenSuite.SelectionType;
     constructor({ blockId }: BaseSelectionOptions);
     static fromJSON(_: Record<string, unknown>): BaseSelection;
     abstract equals(other: BaseSelection): boolean;
-    is<T extends BlockSuite.SelectionType>(type: T): this is BlockSuite.SelectionInstance[T];
+    is<T extends LumenSuite.SelectionType>(type: T): this is LumenSuite.SelectionInstance[T];
     abstract toJSON(): Record<string, unknown>;
 }
 //# sourceMappingURL=base.d.ts.map

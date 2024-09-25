@@ -1,5 +1,5 @@
 import type { TemplateResult } from 'lit';
-import { ColorScheme, MindmapStyle } from '@blocksuite/affine-model';
+import { ColorScheme, MindmapStyle } from '@lumensuite/affine-model';
 import { type DraggableTool } from './basket-elements.js';
 export type ToolbarMindmapItem = {
     type: 'mindmap';

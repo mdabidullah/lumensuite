@@ -50,7 +50,7 @@ test.describe('mime', () => {
   });
 
   test('should not paste bad svg', async ({ page }) => {
-    expectConsoleMessage(page, 'BlockSuiteError: val does not exist', 'error');
+    expectConsoleMessage(page, 'LumenSuiteError: val does not exist', 'error');
     expectConsoleMessage(page, 'Error: Image sourceId is missing!', 'warning');
 
     await commonSetup(page);
@@ -177,7 +177,7 @@ test.describe('pasting URLs', () => {
     await commonSetup(page);
     await waitNextFrame(page);
     await pasteContent(page, {
-      'text/plain': 'https://github.com/toeverything/blocksuite/pull/7217',
+      'text/plain': 'https://github.com/toeverything/lumensuite/pull/7217',
     });
 
     await expect(

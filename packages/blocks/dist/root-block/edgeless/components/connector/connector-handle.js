@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WithDisposable } from '@blocksuite/block-std';
-import { DisposableGroup, Vec } from '@blocksuite/global/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { DisposableGroup, Vec } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

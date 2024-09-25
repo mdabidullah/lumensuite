@@ -1,4 +1,4 @@
-import { BaseSelection } from '@blocksuite/block-std';
+import { BaseSelection } from '@lumensuite/block-std';
 export declare class ImageSelection extends BaseSelection {
     static group: string;
     static type: string;
@@ -7,7 +7,7 @@ export declare class ImageSelection extends BaseSelection {
     toJSON(): Record<string, unknown>;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Selection {
             image: typeof ImageSelection;
         }

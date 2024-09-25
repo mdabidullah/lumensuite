@@ -10,7 +10,7 @@ export declare class KeyboardEventState extends UIEventState {
     constructor({ event, composing }: KeyboardEventStateOptions);
 }
 declare global {
-    interface BlockSuiteUIEventState {
+    interface LumenSuiteUIEventState {
         keyboardState: KeyboardEventState;
     }
 }

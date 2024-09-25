@@ -1,9 +1,9 @@
-import type { GfxCompatibleProps } from '@blocksuite/affine-model';
-import type { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import type { BlockModel } from '@blocksuite/store';
+import type { GfxCompatibleProps } from '@lumensuite/affine-model';
+import type { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import type { BlockModel } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { type BlockService, type GfxBlockComponent } from '@blocksuite/block-std';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { type BlockService, type GfxBlockComponent } from '@lumensuite/block-std';
 import { type StyleInfo } from 'lit/directives/style-map.js';
 import { type EmbedCardStyle } from '../utils/index.js';
 export declare class EmbedBlockComponent<Model extends BlockModel<GfxCompatibleProps> = BlockModel<GfxCompatibleProps>, Service extends BlockService = BlockService, WidgetName extends string = string> extends CaptionedBlockComponent<Model, Service, WidgetName> {

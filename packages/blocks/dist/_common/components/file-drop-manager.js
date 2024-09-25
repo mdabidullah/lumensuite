@@ -1,5 +1,5 @@
-import { getClosestBlockComponentByPoint, isInsidePageEditor, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { assertExists, Point } from '@blocksuite/global/utils';
+import { getClosestBlockComponentByPoint, isInsidePageEditor, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { assertExists, Point } from '@lumensuite/global/utils';
 import { calcDropTarget } from '../../_common/utils/index.js';
 export class FileDropManager {
     static { this._dropResult = null; }

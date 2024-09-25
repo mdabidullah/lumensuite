@@ -1,8 +1,8 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { ZERO_WIDTH_SPACE } from '@blocksuite/inline/consts';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { ZERO_WIDTH_SPACE } from '@lumensuite/inline/consts';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

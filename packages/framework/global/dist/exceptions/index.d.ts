@@ -1,5 +1,5 @@
 import type { ErrorCode } from './code.js';
-export declare class BlockSuiteError extends Error {
+export declare class LumenSuiteError extends Error {
     code: ErrorCode;
     isFatal: boolean;
     constructor(code: ErrorCode, message: string);

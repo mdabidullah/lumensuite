@@ -1,8 +1,8 @@
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
-import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, getShapeType, ShapeType, } from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { Bound, noop } from '@blocksuite/global/utils';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
+import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, getShapeType, ShapeType, } from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { Bound, noop } from '@lumensuite/global/utils';
 import { hasClassNameInList } from '../../../_common/utils/index.js';
 import { EXCLUDING_MOUSE_OUT_CLASS_LIST, SHAPE_OVERLAY_HEIGHT, SHAPE_OVERLAY_OPTIONS, SHAPE_OVERLAY_WIDTH, } from '../utils/consts.js';
 import { ShapeOverlay } from '../utils/tool-overlay.js';

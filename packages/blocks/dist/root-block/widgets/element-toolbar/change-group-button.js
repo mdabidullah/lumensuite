@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { NoteIcon, RenameIcon, UngroupButtonIcon, } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { deserializeXYWH, serializeXYWH } from '@blocksuite/global/utils';
+import { NoteIcon, RenameIcon, UngroupButtonIcon, } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { deserializeXYWH, serializeXYWH } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';

@@ -1,4 +1,4 @@
-import { type DocCollection } from '@blocksuite/store';
+import { type DocCollection } from '@lumensuite/store';
 import { LitElement, type PropertyValues } from 'lit';
 import '../../../../_common/components/loader.js';
 export type OnSuccessHandler = (pageIds: string[], options: {
@@ -14,7 +14,7 @@ export declare function importNotion(collection: DocCollection, file: File): Pro
     isWorkspaceFile: boolean;
     hasMarkdown: boolean;
 }>;
-declare const ImportDoc_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const ImportDoc_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class ImportDoc extends ImportDoc_base {
     private collection;
     private onSuccess?;

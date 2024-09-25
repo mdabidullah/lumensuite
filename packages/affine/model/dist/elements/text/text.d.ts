@@ -1,9 +1,9 @@
-import type { BaseElementProps } from '@blocksuite/block-std/gfx';
-import type { IVec, SerializedXYWH } from '@blocksuite/global/utils';
-import { type Color, FontFamily, FontStyle, FontWeight, TextAlign, type TextStyleProps } from '@blocksuite/affine-model';
-import { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
-import { Bound } from '@blocksuite/global/utils';
-import { type Y } from '@blocksuite/store';
+import type { BaseElementProps } from '@lumensuite/block-std/gfx';
+import type { IVec, SerializedXYWH } from '@lumensuite/global/utils';
+import { type Color, FontFamily, FontStyle, FontWeight, TextAlign, type TextStyleProps } from '@lumensuite/affine-model';
+import { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
+import { Bound } from '@lumensuite/global/utils';
+import { type Y } from '@lumensuite/store';
 export type TextElementProps = BaseElementProps & {
     text: Y.Text;
     hasMaxWidth?: boolean;
@@ -12,7 +12,7 @@ export declare class TextElementModel extends GfxPrimitiveElementModel<TextEleme
     get type(): string;
     static propsToY(props: Record<string, unknown>): Record<string, unknown>;
     containsBound(bounds: Bound): boolean;
-    getLineIntersections(start: IVec, end: IVec): import("@blocksuite/global/utils").PointLocation[] | null;
+    getLineIntersections(start: IVec, end: IVec): import("@lumensuite/global/utils").PointLocation[] | null;
     getNearestPoint(point: IVec): IVec;
     includesPoint(x: number, y: number): boolean;
     accessor color: Color;
@@ -27,7 +27,7 @@ export declare class TextElementModel extends GfxPrimitiveElementModel<TextEleme
     accessor xywh: SerializedXYWH;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface SurfaceElementModelMap {
             text: TextElementModel;
         }

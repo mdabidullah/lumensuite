@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getModelByElement, getRootByElement, } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { INLINE_ROOT_ATTR, ZERO_WIDTH_NON_JOINER, ZERO_WIDTH_SPACE, } from '@blocksuite/inline';
+import { getModelByElement, getRootByElement, } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { INLINE_ROOT_ATTR, ZERO_WIDTH_NON_JOINER, ZERO_WIDTH_SPACE, } from '@lumensuite/inline';
 import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';
@@ -157,7 +157,7 @@ let AffineReference = (() => {
         get std() {
             const std = this.block?.std;
             if (!std) {
-                throw new BlockSuiteError(ErrorCode.ValueNotExists, 'std not found in reference node');
+                throw new LumenSuiteError(ErrorCode.ValueNotExists, 'std not found in reference node');
             }
             return std;
         }

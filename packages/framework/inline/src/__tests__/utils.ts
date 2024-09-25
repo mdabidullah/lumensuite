@@ -2,7 +2,7 @@ import type {
   DeltaInsert,
   InlineEditor,
   InlineRange,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 
 import { expect, type Page } from '@playwright/test';
 

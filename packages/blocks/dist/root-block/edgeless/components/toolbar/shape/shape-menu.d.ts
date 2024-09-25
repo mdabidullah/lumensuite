@@ -1,4 +1,4 @@
-import { type ShapeName } from '@blocksuite/affine-model';
+import { type ShapeName } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../../edgeless-root-block.js';
 import '../../buttons/tool-icon-button.js';

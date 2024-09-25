@@ -1,12 +1,12 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 
-import { BLOCK_ID_ATTR, ShadowlessElement } from '@blocksuite/block-std';
+import { BLOCK_ID_ATTR, ShadowlessElement } from '@lumensuite/block-std';
 import {
   type DeltaInsert,
   INLINE_ROOT_ATTR,
   type InlineRootElement,
   ZERO_WIDTH_SPACE,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ref } from 'lit/directives/ref.js';

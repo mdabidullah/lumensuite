@@ -1,6 +1,6 @@
 import type * as Y from 'yjs';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { InlineRange } from '../types.js';
 
@@ -269,7 +269,7 @@ export function inlineRangeToDomRange(
 
     const texts = getTextNodesFromElement(lineElements[i]);
     if (texts.length === 0) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'text node in v-text not found'
       );
@@ -308,14 +308,14 @@ export function inlineRangeToDomRange(
   if (isInEmbedElement(startText)) {
     const anchorVElement = startText.parentElement?.closest('v-element');
     if (!anchorVElement) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'failed to find vElement for a text note in an embed element'
       );
     }
     const nextSibling = anchorVElement.nextElementSibling;
     if (!nextSibling) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'failed to find nextSibling sibling of an embed element'
       );
@@ -323,7 +323,7 @@ export function inlineRangeToDomRange(
 
     const texts = getTextNodesFromElement(nextSibling);
     if (texts.length === 0) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'text node in v-text not found'
       );
@@ -340,14 +340,14 @@ export function inlineRangeToDomRange(
   if (isInEmbedElement(endText)) {
     const focusVElement = endText.parentElement?.closest('v-element');
     if (!focusVElement) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'failed to find vElement for a text note in an embed element'
       );
     }
     const nextSibling = focusVElement.nextElementSibling;
     if (!nextSibling) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'failed to find nextSibling sibling of an embed element'
       );
@@ -355,7 +355,7 @@ export function inlineRangeToDomRange(
 
     const texts = getTextNodesFromElement(nextSibling);
     if (texts.length === 0) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'text node in v-text not found'
       );

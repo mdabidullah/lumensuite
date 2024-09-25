@@ -1,5 +1,5 @@
-import { CancelWrapIcon, CaptionIcon, CopyIcon, DeleteIcon, DuplicateIcon, WrapIcon, } from '@blocksuite/affine-components/icons';
-import { isInsidePageEditor } from '@blocksuite/affine-shared/utils';
+import { CancelWrapIcon, CaptionIcon, CopyIcon, DeleteIcon, DuplicateIcon, WrapIcon, } from '@lumensuite/affine-components/icons';
+import { isInsidePageEditor } from '@lumensuite/affine-shared/utils';
 import { html } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { duplicateCodeBlock } from './utils.js';

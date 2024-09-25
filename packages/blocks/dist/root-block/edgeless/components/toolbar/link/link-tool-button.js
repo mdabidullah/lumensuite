@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { LinkIcon } from '@blocksuite/affine-components/icons';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
+import { LinkIcon } from '@lumensuite/affine-components/icons';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { getTooltipWithShortcut } from '../../utils.js';

@@ -1,5 +1,5 @@
-import { ConfirmIcon } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
+import { ConfirmIcon } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
 import { html } from 'lit';
 import { createRef, ref } from 'lit/directives/ref.js';
 import { renameStyles } from './styles.js';

@@ -1,8 +1,8 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { EdgelessRootBlockComponent } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { EdgelessRootBlockComponent } from '@lumensuite/blocks';
 import { LitElement, type PropertyValues } from 'lit';
 export declare const AFFINE_FRAMES_SETTING_MENU = "affine-frames-setting-menu";
-declare const FramesSettingMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FramesSettingMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FramesSettingMenu extends FramesSettingMenu_base {
     static styles: import("lit").CSSResult;
     private _onBlackBackgroundChange;

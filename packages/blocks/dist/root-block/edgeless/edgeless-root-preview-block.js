@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import '@blocksuite/affine-block-surface';
-import { FontLoaderService } from '@blocksuite/affine-shared/services';
-import { BlockComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import '@lumensuite/affine-block-surface';
+import { FontLoaderService } from '@lumensuite/affine-shared/services';
+import { BlockComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { requestThrottledConnectedFrame } from '../../_common/utils/index.js';

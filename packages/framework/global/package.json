@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/global",
+  "name": "@lumensuite/global",
   "version": "0.17.5",
   "types": "./index.d.ts",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "test:unit": "nx vite:test --run",
     "test:unit:coverage": "nx vite:test --run --coverage",

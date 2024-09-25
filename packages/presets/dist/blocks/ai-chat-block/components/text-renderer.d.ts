@@ -1,11 +1,11 @@
-import type { AffineAIPanelState } from '@blocksuite/blocks';
-import { type EditorHost } from '@blocksuite/block-std';
+import type { AffineAIPanelState } from '@lumensuite/blocks';
+import { type EditorHost } from '@lumensuite/block-std';
 import { LitElement, nothing, type PropertyValues } from 'lit';
 export type TextRendererOptions = {
     maxHeight?: number;
     customHeading?: boolean;
 };
-declare const TextRenderer_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const TextRenderer_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class TextRenderer extends TextRenderer_base {
     static styles: import("lit").CSSResult;
     private _answers;

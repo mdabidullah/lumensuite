@@ -1,4 +1,4 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 import type { BlockService } from '../../extension/index.js';
 export declare const modelContext: {
     __context__: BlockModel<object, object & {}>;

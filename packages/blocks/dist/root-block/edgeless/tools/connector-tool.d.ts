@@ -1,6 +1,6 @@
-import type { ConnectorMode } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
+import type { ConnectorMode } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
 import type { EdgelessTool } from '../types.js';
 import { EdgelessToolController } from './edgeless-tool.js';
 export type ConnectorTool = {
@@ -16,7 +16,7 @@ export declare class ConnectorToolController extends EdgelessToolController<Conn
     private _sourceLocations;
     private _startPoint;
     readonly tool: ConnectorTool;
-    get connector(): import("@blocksuite/affine-block-surface").ConnectionOverlay;
+    get connector(): import("@lumensuite/affine-block-surface").ConnectionOverlay;
     private _createConnector;
     afterModeSwitch(): void;
     beforeModeSwitch(edgelessTool: EdgelessTool): void;
@@ -33,10 +33,10 @@ export declare class ConnectorToolController extends EdgelessToolController<Conn
     onContainerTripleClick(): void;
     onPressShiftKey(_: boolean): void;
     onPressSpaceBar(_pressed: boolean): void;
-    quickConnect(point: IVec, element: BlockSuite.EdgelessModel): void;
+    quickConnect(point: IVec, element: LumenSuite.EdgelessModel): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             connector: ConnectorToolController;
         }

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { isInsideBlockByFlavour } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { isInsideBlockByFlavour } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { computePosition, inline, offset, shift } from '@floating-ui/dom';
 import { effect } from '@lit-labs/preact-signals';
 import { html, LitElement, nothing } from 'lit';

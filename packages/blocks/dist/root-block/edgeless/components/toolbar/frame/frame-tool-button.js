@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowUpIcon, LargeFrameIcon, } from '@blocksuite/affine-components/icons';
+import { ArrowUpIcon, LargeFrameIcon, } from '@lumensuite/affine-components/icons';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

@@ -1,4 +1,4 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 /**
  * Example:
  - Line1  <-(cursor here)

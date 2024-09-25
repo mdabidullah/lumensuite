@@ -1,5 +1,5 @@
-import { ConnectorCWithArrowIcon, ConnectorIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, } from '@blocksuite/affine-components/icons';
-import { ConnectorMode } from '@blocksuite/affine-model';
+import { ConnectorCWithArrowIcon, ConnectorIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, } from '@lumensuite/affine-components/icons';
+import { ConnectorMode } from '@lumensuite/affine-model';
 export const buildConnectorDenseMenu = edgeless => {
     const prevMode = edgeless.service.editPropsStore.lastProps$.value.connector.mode;
     const isSelected = edgeless.tools.edgelessTool.type === 'connector';

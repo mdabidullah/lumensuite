@@ -3,11 +3,11 @@ import {
   ConnectorMode,
   type LocalConnectorElementModel,
   type PointStyle,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   getBezierParameters,
   type PointLocation,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { RoughCanvas } from '../../../utils/rough/canvas.js';
 import type { CanvasRenderer } from '../../canvas-renderer.js';

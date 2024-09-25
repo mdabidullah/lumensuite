@@ -1,5 +1,5 @@
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { Bound, deserializeXYWH, Point } from '@blocksuite/global/utils';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { Bound, deserializeXYWH, Point } from '@lumensuite/global/utils';
 import { isConnectable, isTopLevelBlock } from '../utils/query.js';
 const ALIGN_THRESHOLD = 5;
 export class EdgelessSnapManager extends Overlay {

@@ -1,6 +1,6 @@
-import type { ServiceProvider } from '@blocksuite/global/di';
-import type { Doc } from '@blocksuite/store';
-import { Container } from '@blocksuite/global/di';
+import type { ServiceProvider } from '@lumensuite/global/di';
+import type { Doc } from '@lumensuite/store';
+import { Container } from '@lumensuite/global/di';
 import type { BlockService, ExtensionType } from '../extension/index.js';
 import { Clipboard } from '../clipboard/index.js';
 import { CommandManager } from '../command/index.js';
@@ -21,22 +21,22 @@ export declare class BlockStdScope {
     readonly provider: ServiceProvider;
     private get _lifeCycleWatchers();
     get clipboard(): Clipboard;
-    get collection(): import("@blocksuite/store").DocCollection;
+    get collection(): import("@lumensuite/store").DocCollection;
     get command(): CommandManager;
     get event(): UIEventDispatcher;
-    get get(): <T>(identifier: import("@blocksuite/global/di").GeneralServiceIdentifier<T>, options?: import("@blocksuite/global/di").ResolveOptions) => T;
-    get getOptional(): <T>(identifier: import("@blocksuite/global/di").GeneralServiceIdentifier<T>, options?: import("@blocksuite/global/di").ResolveOptions) => T | null;
+    get get(): <T>(identifier: import("@lumensuite/global/di").GeneralServiceIdentifier<T>, options?: import("@lumensuite/global/di").ResolveOptions) => T;
+    get getOptional(): <T>(identifier: import("@lumensuite/global/di").GeneralServiceIdentifier<T>, options?: import("@lumensuite/global/di").ResolveOptions) => T | null;
     get host(): EditorHost;
     get range(): RangeManager;
     get selection(): SelectionManager;
     get view(): ViewStore;
     constructor(options: BlockStdOptions);
-    getConfig<Key extends BlockSuite.ConfigKeys>(flavour: Key): BlockSuite.BlockConfigs[Key] | null;
+    getConfig<Key extends LumenSuite.ConfigKeys>(flavour: Key): LumenSuite.BlockConfigs[Key] | null;
     /**
      * @deprecated
      * BlockService will be removed in the future.
      */
-    getService<Key extends BlockSuite.ServiceKeys>(flavour: Key): BlockSuite.BlockServices[Key];
+    getService<Key extends LumenSuite.ServiceKeys>(flavour: Key): LumenSuite.BlockServices[Key];
     getService<Service extends BlockService>(flavour: string): Service;
     getView(flavour: string): import("../index.js").BlockViewType | null;
     mount(): void;
@@ -44,7 +44,7 @@ export declare class BlockStdScope {
     unmount(): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
         }
         interface BlockConfigs {

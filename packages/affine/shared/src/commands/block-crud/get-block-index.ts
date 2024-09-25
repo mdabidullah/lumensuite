@@ -1,6 +1,6 @@
-import type { BlockComponent, Command } from '@blocksuite/block-std';
+import type { BlockComponent, Command } from '@lumensuite/block-std';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 export const getBlockIndexCommand: Command<
   'currentSelectionPath',
@@ -32,7 +32,7 @@ export const getBlockIndexCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       blockIndex?: number;
       parentBlock?: BlockComponent;

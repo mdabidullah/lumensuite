@@ -1,6 +1,6 @@
-import type { Boxed, Y } from '@blocksuite/store';
-import { type Constructor, Slot } from '@blocksuite/global/utils';
-import { BlockModel } from '@blocksuite/store';
+import type { Boxed, Y } from '@lumensuite/store';
+import { type Constructor, Slot } from '@lumensuite/global/utils';
+import { BlockModel } from '@lumensuite/store';
 import { type BaseElementProps, GfxGroupLikeElementModel, GfxPrimitiveElementModel } from './element-model.js';
 export type SurfaceBlockProps = {
     elements: Boxed<Y.Map<Y.Map<unknown>>>;

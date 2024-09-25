@@ -1,7 +1,7 @@
-import type { UIEventStateContext } from '@blocksuite/block-std';
+import type { UIEventStateContext } from '@lumensuite/block-std';
 import type { ReactiveController } from 'lit';
 
-import { toast } from '@blocksuite/affine-components/toast';
+import { toast } from '@lumensuite/affine-components/toast';
 
 import type { Cell } from '../../../core/view-manager/cell.js';
 import type { Row } from '../../../core/view-manager/row.js';
@@ -14,7 +14,7 @@ import {
   type TableViewSelectionWithType,
 } from '../types.js';
 
-const BLOCKSUITE_DATABASE_TABLE = 'blocksuite/database/table';
+const BLOCKSUITE_DATABASE_TABLE = 'lumensuite/database/table';
 type JsonAreaData = string[][];
 const TEXT = 'text/plain';
 

@@ -1,11 +1,11 @@
-import { elementRenderers, } from '@blocksuite/affine-block-surface';
-import { ConnectionOverlay, MindmapElementModel, SurfaceGroupLikeModel, } from '@blocksuite/affine-block-surface';
-import { RootBlockSchema, } from '@blocksuite/affine-model';
-import { clamp } from '@blocksuite/affine-shared/utils';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Bound, getCommonBound, last } from '@blocksuite/global/utils';
-import { Slot } from '@blocksuite/store';
+import { elementRenderers, } from '@lumensuite/affine-block-surface';
+import { ConnectionOverlay, MindmapElementModel, SurfaceGroupLikeModel, } from '@lumensuite/affine-block-surface';
+import { RootBlockSchema, } from '@lumensuite/affine-model';
+import { clamp } from '@lumensuite/affine-shared/utils';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Bound, getCommonBound, last } from '@lumensuite/global/utils';
+import { Slot } from '@lumensuite/store';
 import { getSurfaceBlock } from '../../surface-ref-block/utils.js';
 import { RootService } from '../root-service.js';
 import { GfxBlockModel } from './block-model.js';
@@ -108,7 +108,7 @@ export class EdgelessRootService extends RootService {
         this.TemplateJob = TemplateJob;
         const surface = getSurfaceBlock(this.doc);
         if (!surface) {
-            throw new BlockSuiteError(ErrorCode.NoSurfaceModelError, 'This doc is missing surface block in edgeless.');
+            throw new LumenSuiteError(ErrorCode.NoSurfaceModelError, 'This doc is missing surface block in edgeless.');
         }
         this._surface = surface;
         this._frame = new EdgelessFrameManager(this);

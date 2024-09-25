@@ -1,6 +1,6 @@
 import type { ReactiveController, ReactiveElement } from 'lit';
-import { type AdvancedPortalOptions } from '@blocksuite/affine-components/portal';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { type AdvancedPortalOptions } from '@lumensuite/affine-components/portal';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import type { HoverOptions } from './types.js';
 import { whenHover } from './when-hover.js';
 type OptionsParams = Omit<ReturnType<typeof whenHover>, 'setFloating' | 'dispose'> & {

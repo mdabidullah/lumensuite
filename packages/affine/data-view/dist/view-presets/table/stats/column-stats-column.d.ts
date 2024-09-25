@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { GroupData } from '../../../core/common/group-by/helper.js';
 import type { StatsFunction } from '../../../core/common/stats/type.js';
 import type { TableColumn } from '../table-view-manager.js';
-declare const DatabaseColumnStatsCell_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatabaseColumnStatsCell_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DatabaseColumnStatsCell extends DatabaseColumnStatsCell_base {
     static styles: import("lit").CSSResult;
     cellValues$: import("@preact/signals-core").ReadonlySignal<unknown[]>;

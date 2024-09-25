@@ -2,9 +2,9 @@ import {
   MinusIcon,
   PlusIcon,
   ViewBarIcon,
-} from '@blocksuite/affine-components/icons';
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
+} from '@lumensuite/affine-components/icons';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

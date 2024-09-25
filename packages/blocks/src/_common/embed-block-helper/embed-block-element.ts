@@ -1,11 +1,11 @@
-import type { GfxCompatibleProps } from '@blocksuite/affine-model';
-import type { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import type { BlockModel } from '@blocksuite/store';
+import type { GfxCompatibleProps } from '@lumensuite/affine-model';
+import type { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import type { BlockModel } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   blockComponentSymbol,
   type BlockService,
@@ -13,8 +13,8 @@ import {
   GfxElementSymbol,
   isGfxBlockComponent,
   toGfxBlockComponent,
-} from '@blocksuite/block-std';
-import { Bound, Point } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { Bound, Point } from '@lumensuite/global/utils';
 import { html, render } from 'lit';
 import { query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
@@ -53,7 +53,7 @@ export class EmbedBlockComponent<
       if (
         !anchorComponent ||
         !matchFlavours(anchorComponent.model, [
-          this.flavour as keyof BlockSuite.BlockModels,
+          this.flavour as keyof LumenSuite.BlockModels,
         ])
       )
         return false;
@@ -98,7 +98,7 @@ export class EmbedBlockComponent<
       if (
         draggingElements.length !== 1 ||
         !matchFlavours(draggingElements[0].model, [
-          this.flavour as keyof BlockSuite.BlockModels,
+          this.flavour as keyof LumenSuite.BlockModels,
         ])
       )
         return false;

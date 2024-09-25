@@ -1,12 +1,12 @@
-import type { Command } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { Command } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 type UpdateBlockConfig = {
-    flavour: BlockSuite.Flavour;
+    flavour: LumenSuite.Flavour;
     props?: Record<string, unknown>;
 };
 export declare const updateBlockType: Command<'selectedBlocks', 'updatedBlocks', UpdateBlockConfig>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             updatedBlocks?: BlockModel[];
         }

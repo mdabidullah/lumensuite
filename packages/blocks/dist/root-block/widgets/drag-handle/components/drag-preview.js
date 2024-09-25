@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { Point } from '@blocksuite/global/utils';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { Point } from '@lumensuite/global/utils';
 import { baseTheme } from '@toeverything/theme';
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

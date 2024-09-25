@@ -1,4 +1,4 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
 import { effect } from '@lit-labs/preact-signals';
 

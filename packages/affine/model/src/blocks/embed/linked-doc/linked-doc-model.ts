@@ -1,4 +1,4 @@
-import { BlockModel } from '@blocksuite/store';
+import { BlockModel } from '@lumensuite/store';
 
 import type { ReferenceInfo } from '../../../consts/doc.js';
 import type { EmbedCardStyle } from '../../../utils/index.js';
@@ -23,7 +23,7 @@ export class EmbedLinkedDocModel extends defineEmbedModel<EmbedLinkedDocBlockPro
 ) {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:embed-linked-doc': EmbedLinkedDocModel;
     }

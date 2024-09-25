@@ -3,19 +3,19 @@ import type {
   FrameBlockModel,
   ImageBlockModel,
   NoteBlockModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getBlockProps, matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BlockStdScope, type EditorHost } from '@blocksuite/block-std';
-import { assertExists, Bound, getCommonBound } from '@blocksuite/global/utils';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getBlockProps, matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BlockStdScope, type EditorHost } from '@lumensuite/block-std';
+import { assertExists, Bound, getCommonBound } from '@lumensuite/global/utils';
 import {
   type BlockModel,
   BlockViewType,
   type Doc,
   type Query,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import { css, render, type TemplateResult } from 'lit';
 
 import type { EmbedLinkedDocBlockComponent } from '../../embed-linked-doc-block/embed-linked-doc-block.js';
@@ -463,7 +463,7 @@ export function addBlocksToDoc(
   // Add current block to linked doc
   const blockProps = getBlockProps(model);
   const newModelId = targetDoc.addBlock(
-    model.flavour as BlockSuite.Flavour,
+    model.flavour as LumenSuite.Flavour,
     blockProps,
     parentId
   );
@@ -555,7 +555,7 @@ export function createLinkedDocFromNote(
 
 export function createLinkedDocFromEdgelessElements(
   host: EditorHost,
-  elements: BlockSuite.EdgelessModel[],
+  elements: LumenSuite.EdgelessModel[],
   docTitle?: string
 ) {
   const linkedDoc = host.doc.collection.createDoc({});
@@ -585,7 +585,7 @@ export function createLinkedDocFromEdgelessElements(
           }
 
           newId = linkedDoc.addBlock(
-            model.flavour as BlockSuite.Flavour,
+            model.flavour as LumenSuite.Flavour,
             blockProps,
             surfaceId
           );

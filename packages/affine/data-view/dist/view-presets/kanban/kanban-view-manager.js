@@ -1,4 +1,4 @@
-import { insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
+import { insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
 import { computed } from '@lit-labs/preact-signals';
 import { emptyFilterGroup } from '../../core/common/ast.js';
 import { defaultGroupBy } from '../../core/common/group-by.js';

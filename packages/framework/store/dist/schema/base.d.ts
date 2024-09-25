@@ -1,6 +1,6 @@
 import type { Signal } from '@preact/signals-core';
 import type * as Y from 'yjs';
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import { z } from 'zod';
 import type { YBlock } from '../store/doc/block/index.js';
 import type { Doc } from '../store/index.js';

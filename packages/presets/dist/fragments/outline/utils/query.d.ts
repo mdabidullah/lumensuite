@@ -1,5 +1,5 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
-import { type NoteBlockModel, type NoteDisplayMode, type ParagraphBlockModel, type RootBlockModel } from '@blocksuite/blocks';
+import type { BlockModel, Doc } from '@lumensuite/store';
+import { type NoteBlockModel, type NoteDisplayMode, type ParagraphBlockModel, type RootBlockModel } from '@lumensuite/blocks';
 type OutlineNoteItem = {
     note: NoteBlockModel;
     /**

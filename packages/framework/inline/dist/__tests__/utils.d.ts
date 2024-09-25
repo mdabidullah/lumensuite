@@ -1,4 +1,4 @@
-import type { DeltaInsert, InlineRange } from '@blocksuite/inline';
+import type { DeltaInsert, InlineRange } from '@lumensuite/inline';
 import { type Page } from '@playwright/test';
 export declare function type(page: Page, content: string): Promise<void>;
 export declare function press(page: Page, content: string): Promise<void>;

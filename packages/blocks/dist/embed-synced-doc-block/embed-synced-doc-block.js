@@ -32,15 +32,15 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EmbedEdgelessIcon, EmbedPageIcon, } from '@blocksuite/affine-components/icons';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { REFERENCE_NODE } from '@blocksuite/affine-components/rich-text';
-import { NoteDisplayMode, } from '@blocksuite/affine-model';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockServiceWatcher, BlockStdScope, } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { BlockViewType, DocCollection } from '@blocksuite/store';
+import { EmbedEdgelessIcon, EmbedPageIcon, } from '@lumensuite/affine-components/icons';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { REFERENCE_NODE } from '@lumensuite/affine-components/rich-text';
+import { NoteDisplayMode, } from '@lumensuite/affine-model';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockServiceWatcher, BlockStdScope, } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { BlockViewType, DocCollection } from '@lumensuite/store';
 import { html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

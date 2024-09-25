@@ -2,7 +2,7 @@ import type {
   BlockComponent,
   BlockStdScope,
   DisposableClass,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import type { LitElement, TemplateResult } from 'lit';
 
 export type PeekableClass = { std: BlockStdScope } & DisposableClass &

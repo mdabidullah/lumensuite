@@ -1,15 +1,15 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { Color, ShapeElementModel } from '@blocksuite/affine-model';
-import type { Bound } from '@blocksuite/global/utils';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { Color, ShapeElementModel } from '@lumensuite/affine-model';
+import type { Bound } from '@lumensuite/global/utils';
 
 import {
   CanvasRenderer,
   elementRenderers,
   fitContent,
-} from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockComponent } from '@blocksuite/block-std';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
+} from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockComponent } from '@lumensuite/block-std';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
 import { html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 

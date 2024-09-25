@@ -1,5 +1,5 @@
-import { columnType, tRichText } from '@blocksuite/data-view';
-import { Text } from '@blocksuite/store';
+import { columnType, tRichText } from '@lumensuite/data-view';
+import { Text } from '@lumensuite/store';
 import { toYText } from '../utils.js';
 export const richTextColumnType = columnType('rich-text');
 export const richTextColumnModelConfig = richTextColumnType.modelConfig({

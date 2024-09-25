@@ -10,7 +10,7 @@ import { LitElement } from 'lit';
  * ```ts
  * render() {
  *   return html`${showPortal
- *     ? html`<blocksuite-portal .template=${portalTemplate}></blocksuite-portal>`
+ *     ? html`<lumensuite-portal .template=${portalTemplate}></lumensuite-portal>`
  *     : null}`;
  * };
  * ```
@@ -26,7 +26,7 @@ export declare class Portal extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'blocksuite-portal': Portal;
+        'lumensuite-portal': Portal;
     }
 }
 //# sourceMappingURL=portal.d.ts.map

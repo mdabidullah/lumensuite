@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 import { EdgelessToolController } from './edgeless-tool.js';
 export class TemplateToolController extends EdgelessToolController {
     constructor() {

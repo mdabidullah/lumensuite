@@ -1,8 +1,8 @@
-import type { CodeBlockModel } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
 import type { ThemedToken } from 'shiki';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import '@blocksuite/affine-components/rich-text';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import '@lumensuite/affine-components/rich-text';
 import { type Signal } from '@lit-labs/preact-signals';
 import { type TemplateResult } from 'lit';
 import type { CodeBlockService } from './code-block-service.js';
@@ -14,7 +14,7 @@ export declare class CodeBlockComponent extends CaptionedBlockComponent<CodeBloc
     clipboardController: CodeClipboardController;
     highlightTokens$: Signal<ThemedToken[][]>;
     languageName$: Signal<string>;
-    get inlineEditor(): import("@blocksuite/inline").InlineEditor<{
+    get inlineEditor(): import("@lumensuite/inline").InlineEditor<{
         bold?: true | null | undefined;
         italic?: true | null | undefined;
         underline?: true | null | undefined;
@@ -22,9 +22,9 @@ export declare class CodeBlockComponent extends CaptionedBlockComponent<CodeBloc
         code?: true | null | undefined;
         link?: string | null | undefined;
     }> | undefined;
-    get inlineManager(): import("@blocksuite/affine-components/rich-text").InlineManager;
+    get inlineManager(): import("@lumensuite/affine-components/rich-text").InlineManager;
     get readonly(): boolean;
-    get topContenteditableElement(): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+    get topContenteditableElement(): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
     private _updateHighlightTokens;
     connectedCallback(): void;
     copyCode(): void;

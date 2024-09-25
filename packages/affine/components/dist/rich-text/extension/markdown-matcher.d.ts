@@ -1,7 +1,7 @@
-import type { ExtensionType } from '@blocksuite/block-std';
-import { type ServiceIdentifier } from '@blocksuite/global/di';
+import type { ExtensionType } from '@lumensuite/block-std';
+import { type ServiceIdentifier } from '@lumensuite/global/di';
 import type { AffineTextAttributes, InlineMarkdownMatch } from './type.js';
-export declare const MarkdownMatcherIdentifier: ServiceIdentifier<InlineMarkdownMatch<AffineTextAttributes>> & ((variant: import("@blocksuite/global/di").ServiceVariant) => ServiceIdentifier<InlineMarkdownMatch<AffineTextAttributes>>);
+export declare const MarkdownMatcherIdentifier: ServiceIdentifier<InlineMarkdownMatch<AffineTextAttributes>> & ((variant: import("@lumensuite/global/di").ServiceVariant) => ServiceIdentifier<InlineMarkdownMatch<AffineTextAttributes>>);
 export declare function InlineMarkdownExtension(matcher: InlineMarkdownMatch<AffineTextAttributes>): ExtensionType & {
     identifier: ServiceIdentifier<InlineMarkdownMatch<AffineTextAttributes>>;
 };

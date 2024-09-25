@@ -1,13 +1,13 @@
 import type {
   EdgelessRootBlockComponent,
   NoteBlockModel,
-} from '@blocksuite/blocks';
-import type { Doc } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import type { Doc } from '@lumensuite/store';
 
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { BlocksUtils, NoteDisplayMode } from '@blocksuite/blocks';
-import { Bound, DisposableGroup } from '@blocksuite/global/utils';
 import { effect, signal } from '@lit-labs/preact-signals';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { BlocksUtils, NoteDisplayMode } from '@lumensuite/blocks';
+import { Bound, DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

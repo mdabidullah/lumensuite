@@ -1,14 +1,14 @@
-import { createPopup } from '@blocksuite/affine-components/context-menu';
-import {
-  ShadowlessElement,
-  SignalWatcher,
-  WithDisposable,
-} from '@blocksuite/block-std';
 import {
   ArrowLeftBigIcon,
   InvisibleIcon,
   ViewIcon,
 } from '@blocksuite/icons/lit';
+import { createPopup } from '@lumensuite/affine-components/context-menu';
+import {
+  ShadowlessElement,
+  SignalWatcher,
+  WithDisposable,
+} from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

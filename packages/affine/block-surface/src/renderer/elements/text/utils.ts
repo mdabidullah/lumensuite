@@ -3,14 +3,14 @@ import type {
   FontStyle,
   FontWeight,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import type { Bound } from '@blocksuite/global/utils';
-import type { Y } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { Bound } from '@lumensuite/global/utils';
+import type { Y } from '@lumensuite/store';
 
 import {
   getPointsFromBoundsWithRotation,
   rotatePoints,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import {
   getFontFacesByFontFamily,

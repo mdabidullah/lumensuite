@@ -1,5 +1,5 @@
-import { toast } from '@blocksuite/affine-components/toast';
-import { assertExists } from '@blocksuite/global/utils';
+import { toast } from '@lumensuite/affine-components/toast';
+import { assertExists } from '@lumensuite/global/utils';
 const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 // Use a lookup table to find the index.
 const lookup = typeof Uint8Array === 'undefined' ? [] : new Uint8Array(256);

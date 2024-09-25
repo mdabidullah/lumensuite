@@ -1,4 +1,4 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import { focusTextModel } from '../dom.js';
 export function toCode(std, model, prefixText, language) {
     if (matchFlavours(model, ['affine:paragraph']) && model.type === 'quote') {

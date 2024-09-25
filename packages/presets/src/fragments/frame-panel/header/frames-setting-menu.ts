@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { EdgelessRootBlockComponent } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { EdgelessRootBlockComponent } from '@lumensuite/blocks';
 
-import { WithDisposable } from '@blocksuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, type PropertyValues } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 

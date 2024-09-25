@@ -1,7 +1,7 @@
-import { CopyIcon, DeleteIcon, DuplicateIcon, RefreshIcon, } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { getBlockProps } from '@blocksuite/affine-shared/utils';
-import { Slice } from '@blocksuite/store';
+import { CopyIcon, DeleteIcon, DuplicateIcon, RefreshIcon, } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { getBlockProps } from '@lumensuite/affine-shared/utils';
+import { Slice } from '@lumensuite/store';
 import { isAttachmentBlock, isBookmarkBlock, isEmbeddedLinkBlock, isImageBlock, } from '../../edgeless/utils/query.js';
 export const BUILT_IN_GROUPS = [
     {

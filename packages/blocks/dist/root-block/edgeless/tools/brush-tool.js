@@ -1,6 +1,6 @@
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertExists, noop } from '@blocksuite/global/utils';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertExists, noop } from '@lumensuite/global/utils';
 import { EdgelessToolController } from './edgeless-tool.js';
 export class BrushToolController extends EdgelessToolController {
     constructor() {

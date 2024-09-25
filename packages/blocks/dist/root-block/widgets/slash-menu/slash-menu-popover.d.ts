@@ -1,4 +1,4 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
 import { LitElement, nothing, type PropertyValues } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 import type { SlashMenuActionItem, SlashMenuContext, SlashMenuStaticConfig, SlashMenuStaticItem } from './config.js';
@@ -6,7 +6,7 @@ type InnerSlashMenuContext = SlashMenuContext & {
     tooltipTimeout: number;
     onClickItem: (item: SlashMenuActionItem) => void;
 };
-declare const SlashMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const SlashMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class SlashMenu extends SlashMenu_base {
     private inlineEditor;
     private abortController;
@@ -24,7 +24,7 @@ export declare class SlashMenu extends SlashMenu_base {
         height: number;
     }) => void;
     private get _query();
-    get host(): import("@blocksuite/block-std").EditorHost;
+    get host(): import("@lumensuite/block-std").EditorHost;
     constructor(inlineEditor: AffineInlineEditor, abortController?: AbortController);
     connectedCallback(): void;
     render(): import("lit").TemplateResult<1>;
@@ -35,7 +35,7 @@ export declare class SlashMenu extends SlashMenu_base {
     accessor slashMenuElement: HTMLElement;
     accessor triggerKey: string;
 }
-declare const InnerSlashMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const InnerSlashMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class InnerSlashMenu extends InnerSlashMenu_base {
     static styles: import("lit").CSSResult;
     private _closeSubMenu;

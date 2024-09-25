@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 export const getTableContainer = (ele) => {
     const element = ele.closest('.affine-database-table-container');
     assertExists(element);

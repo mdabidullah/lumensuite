@@ -1,6 +1,6 @@
-import { PANEL_BASE } from '@blocksuite/affine-shared/styles';
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
+import { PANEL_BASE } from '@lumensuite/affine-shared/styles';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

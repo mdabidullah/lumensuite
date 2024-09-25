@@ -2,7 +2,7 @@ import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { property } from 'lit/decorators.js';
 
 import type { GroupRenderProps } from '../matcher.js';

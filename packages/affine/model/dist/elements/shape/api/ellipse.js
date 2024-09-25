@@ -1,5 +1,5 @@
-import { clamp, getPointsFromBoundsWithRotation, lineEllipseIntersects, pointInEllipse, pointInPolygon, rotatePoints, toRadian, } from '@blocksuite/global/utils';
-import { Bound, PointLocation, Vec } from '@blocksuite/global/utils';
+import { clamp, getPointsFromBoundsWithRotation, lineEllipseIntersects, pointInEllipse, pointInPolygon, rotatePoints, toRadian, } from '@lumensuite/global/utils';
+import { Bound, PointLocation, Vec } from '@lumensuite/global/utils';
 import { DEFAULT_CENTRAL_AREA_RATIO } from '../../../consts/index.js';
 export const ellipse = {
     points({ x, y, w, h }) {

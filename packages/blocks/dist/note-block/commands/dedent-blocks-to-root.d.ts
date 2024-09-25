@@ -1,10 +1,10 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const dedentBlocksToRoot: Command<never, never, {
     blockIds?: string[];
     stopCapture?: boolean;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             dedentBlocksToRoot: typeof dedentBlocksToRoot;
         }

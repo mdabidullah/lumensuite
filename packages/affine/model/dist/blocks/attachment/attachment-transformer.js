@@ -1,4 +1,4 @@
-import { BaseBlockTransformer } from '@blocksuite/store';
+import { BaseBlockTransformer } from '@lumensuite/store';
 export class AttachmentBlockTransformer extends BaseBlockTransformer {
     async fromSnapshot(payload) {
         const snapshotRet = await super.fromSnapshot(payload);

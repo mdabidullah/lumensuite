@@ -1,21 +1,21 @@
 import type {
   MindmapElementModel,
   SurfaceBlockModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 
 import {
   MindmapStyleFour,
   MindmapStyleOne,
   MindmapStyleThree,
   MindmapStyleTwo,
-} from '@blocksuite/affine-components/icons';
-import { MindmapStyle } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-components/icons';
+import { MindmapStyle } from '@lumensuite/affine-model';
 import {
   BlockStdScope,
   type EditorHost,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import {
   type Doc,
   DocCollection,
@@ -23,7 +23,7 @@ import {
   IdGeneratorType,
   Job,
   Schema,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

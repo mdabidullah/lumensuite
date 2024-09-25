@@ -1,5 +1,5 @@
-import { type ShapeName, ShapeType } from '@blocksuite/affine-model';
-import { SignalWatcher } from '@blocksuite/block-std';
+import { type ShapeName, ShapeType } from '@lumensuite/affine-model';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

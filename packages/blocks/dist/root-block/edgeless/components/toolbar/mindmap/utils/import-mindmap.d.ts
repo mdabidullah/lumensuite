@@ -1,4 +1,4 @@
-import type { Bound } from '@blocksuite/global/utils';
+import type { Bound } from '@lumensuite/global/utils';
 type MindMapNode = {
     children: MindMapNode[];
     text: string;

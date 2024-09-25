@@ -1,4 +1,4 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 import type { GfxBlockElementModel, GfxModel } from '../gfx/gfx-block-model.js';
 import type { Layer } from '../gfx/layer.js';
 import type { SurfaceBlockModel } from '../gfx/surface/surface-model.js';

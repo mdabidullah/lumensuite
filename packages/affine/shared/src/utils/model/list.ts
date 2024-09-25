@@ -1,6 +1,6 @@
-import type { ListBlockModel } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { ListBlockModel } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import { matchFlavours } from './checker.js';
 

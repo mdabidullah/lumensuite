@@ -1,4 +1,4 @@
-import { isEqual } from '@blocksuite/global/utils';
+import { isEqual } from '@lumensuite/global/utils';
 export const fetchImage = async (url, init, proxy) => {
     try {
         if (!proxy) {
@@ -52,15 +52,15 @@ export const fetchable = (url) => url.startsWith('http:') ||
     url.startsWith('data:');
 export const createText = (s) => {
     return {
-        '$blocksuite:internal:text$': true,
+        '$lumensuite:internal:text$': true,
         delta: s.length === 0 ? [] : [{ insert: s }],
     };
 };
 export const isText = (o) => {
     if (typeof o === 'object' &&
         o !== null &&
-        '$blocksuite:internal:text$' in o) {
-        return o['$blocksuite:internal:text$'] === true;
+        '$lumensuite:internal:text$' in o) {
+        return o['$lumensuite:internal:text$'] === true;
     }
     return false;
 };

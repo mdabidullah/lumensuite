@@ -1,4 +1,4 @@
-import { BlockService } from '@blocksuite/block-std';
+import { BlockService } from '@lumensuite/block-std';
 import type { RootBlockComponent } from '../root-block/types.js';
 import { FileDropManager } from '../_common/components/file-drop-manager.js';
 export declare class ImageBlockService extends BlockService {

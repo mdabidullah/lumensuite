@@ -1,5 +1,5 @@
-import { ConnectorMode, } from '@blocksuite/affine-model';
-import { getBezierParameters, } from '@blocksuite/global/utils';
+import { ConnectorMode, } from '@lumensuite/affine-model';
+import { getBezierParameters, } from '@lumensuite/global/utils';
 import { isConnectorWithLabel } from '../../../element-model/utils/connector.js';
 import { deltaInsertsToChunks, getFontString, getLineHeight, getTextWidth, isRTL, wrapTextDeltas, } from '../text/utils.js';
 import { DEFAULT_ARROW_SIZE, getArrowOptions, renderArrow, renderCircle, renderDiamond, renderTriangle, } from './utils.js';

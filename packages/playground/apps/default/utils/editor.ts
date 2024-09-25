@@ -1,19 +1,19 @@
-import type { BlockCollection, DocCollection } from '@blocksuite/store';
+import type { BlockCollection, DocCollection } from '@lumensuite/store';
 
 import {
   BlockServiceWatcher,
   type EditorHost,
   type ExtensionType,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   CommunityCanvasTextFonts,
   DocModeProvider,
   FontConfigExtension,
   type PageRootService,
   QuickSearchProvider,
-} from '@blocksuite/blocks';
-import { assertExists } from '@blocksuite/global/utils';
-import { AffineEditorContainer } from '@blocksuite/presets';
+} from '@lumensuite/blocks';
+import { assertExists } from '@lumensuite/global/utils';
+import { AffineEditorContainer } from '@lumensuite/presets';
 
 import { DocsPanel } from '../../_common/components/docs-panel.js';
 import { LeftSidePanel } from '../../_common/components/left-side-panel.js';

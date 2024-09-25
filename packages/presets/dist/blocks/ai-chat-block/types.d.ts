@@ -10,8 +10,8 @@ declare const ChatMessageSchema: z.ZodObject<{
     avatarUrl: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    role: "user" | "assistant";
     content: string;
+    role: "user" | "assistant";
     createdAt: string;
     attachments?: string[] | undefined;
     userId?: string | undefined;
@@ -19,8 +19,8 @@ declare const ChatMessageSchema: z.ZodObject<{
     avatarUrl?: string | undefined;
 }, {
     id: string;
-    role: "user" | "assistant";
     content: string;
+    role: "user" | "assistant";
     createdAt: string;
     attachments?: string[] | undefined;
     userId?: string | undefined;
@@ -38,8 +38,8 @@ export declare const ChatMessagesSchema: z.ZodArray<z.ZodObject<{
     avatarUrl: z.ZodOptional<z.ZodString>;
 }, "strip", z.ZodTypeAny, {
     id: string;
-    role: "user" | "assistant";
     content: string;
+    role: "user" | "assistant";
     createdAt: string;
     attachments?: string[] | undefined;
     userId?: string | undefined;
@@ -47,8 +47,8 @@ export declare const ChatMessagesSchema: z.ZodArray<z.ZodObject<{
     avatarUrl?: string | undefined;
 }, {
     id: string;
-    role: "user" | "assistant";
     content: string;
+    role: "user" | "assistant";
     createdAt: string;
     attachments?: string[] | undefined;
     userId?: string | undefined;

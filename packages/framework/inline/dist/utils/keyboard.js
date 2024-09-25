@@ -1,4 +1,4 @@
-import { IS_IOS, IS_MAC } from '@blocksuite/global/env';
+import { IS_IOS, IS_MAC } from '@lumensuite/global/env';
 const SHORT_KEY_PROPERTY = IS_IOS || IS_MAC ? 'metaKey' : 'ctrlKey';
 export const KEYBOARD_PREVENT_DEFAULT = false;
 export const KEYBOARD_ALLOW_DEFAULT = true;

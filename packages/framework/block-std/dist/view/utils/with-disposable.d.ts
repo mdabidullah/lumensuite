@@ -1,5 +1,5 @@
 import type { LitElement } from 'lit';
-import { type Constructor, DisposableGroup } from '@blocksuite/global/utils';
+import { type Constructor, DisposableGroup } from '@lumensuite/global/utils';
 export declare class DisposableClass {
     protected _disposables: DisposableGroup;
     readonly disposables: DisposableGroup;

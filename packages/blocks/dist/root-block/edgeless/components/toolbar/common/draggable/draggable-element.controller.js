@@ -1,4 +1,4 @@
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { render, } from 'lit';
 import { mouseResolver, touchResolver, } from './event-resolver.js';
 import { createShapeDraggingOverlay, defaultInfo, } from './overlay-factory.js';

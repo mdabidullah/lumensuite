@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { createDefaultDoc, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BlockStdScope, ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { createDefaultDoc, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { BlockStdScope, ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 let NoteRenderer = (() => {

@@ -1,4 +1,4 @@
-import type { EmbedHtmlModel, EmbedHtmlStyles } from '@blocksuite/affine-model';
+import type { EmbedHtmlModel, EmbedHtmlStyles } from '@lumensuite/affine-model';
 
 import { html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

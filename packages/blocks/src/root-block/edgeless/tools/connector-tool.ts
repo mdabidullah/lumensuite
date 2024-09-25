@@ -2,23 +2,23 @@ import type {
   Connection,
   ConnectorElementModel,
   ConnectorMode,
-} from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IBound, IVec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IBound, IVec } from '@lumensuite/global/utils';
 
 import {
   calculateNearestLocation,
   CanvasElementType,
   ConnectorEndpointLocations,
   ConnectorEndpointLocationsOnTriangle,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   GroupElementModel,
   ShapeElementModel,
   ShapeType,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound, noop } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound, noop } from '@lumensuite/global/utils';
 
 import type { EdgelessTool } from '../types.js';
 
@@ -225,7 +225,7 @@ export class ConnectorToolController extends EdgelessToolController<ConnectorToo
     noop();
   }
 
-  quickConnect(point: IVec, element: BlockSuite.EdgelessModel) {
+  quickConnect(point: IVec, element: LumenSuite.EdgelessModel) {
     this._startPoint = this._service.viewport.toModelCoord(point[0], point[1]);
     this._mode = ConnectorToolMode.Quick;
     this._sourceBounds = Bound.deserialize(element.xywh);
@@ -257,7 +257,7 @@ export class ConnectorToolController extends EdgelessToolController<ConnectorToo
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       connector: ConnectorToolController;
     }

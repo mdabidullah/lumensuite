@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import { type BacklinkData } from './utils.js';
-declare const BacklinkButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const BacklinkButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class BacklinkButton extends BacklinkButton_base {
     static styles: import("lit").CSSResult;
     private _backlinks;

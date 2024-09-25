@@ -1,5 +1,5 @@
-import { assertExists } from '@blocksuite/global/utils';
-import { type BlockModel, type Doc, Text } from '@blocksuite/store';
+import { assertExists } from '@lumensuite/global/utils';
+import { type BlockModel, type Doc, Text } from '@lumensuite/store';
 
 /**
  * This file should only contain functions that are used to
@@ -40,7 +40,7 @@ export function mergeToCodeModel(models: BlockModel[]) {
 
 export function transformModel(
   model: BlockModel,
-  flavour: BlockSuite.Flavour,
+  flavour: LumenSuite.Flavour,
   props?: Parameters<Doc['addBlock']>[1]
 ) {
   const doc = model.doc;

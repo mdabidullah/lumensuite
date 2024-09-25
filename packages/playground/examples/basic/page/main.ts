@@ -1,6 +1,6 @@
-import { createEmptyDoc, PageEditor } from '@blocksuite/presets';
-import '@blocksuite/presets/themes/affine.css';
-import { Text } from '@blocksuite/store';
+import { createEmptyDoc, PageEditor } from '@lumensuite/presets';
+import '@lumensuite/presets/themes/affine.css';
+import { Text } from '@lumensuite/store';
 
 const doc = createEmptyDoc().init();
 const editor = new PageEditor();

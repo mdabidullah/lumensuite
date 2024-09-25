@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 function getNext(std, block) {
     const view = std.view;
     const next = std.doc.getNext(block.model);

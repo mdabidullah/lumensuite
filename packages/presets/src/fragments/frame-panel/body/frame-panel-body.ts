@@ -1,17 +1,17 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
 import {
   type EditorHost,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   DocModeProvider,
   type EdgelessRootBlockComponent,
   type FrameBlockModel,
-} from '@blocksuite/blocks';
-import { Bound, DisposableGroup } from '@blocksuite/global/utils';
+} from '@lumensuite/blocks';
+import { Bound, DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

@@ -1,17 +1,17 @@
-import type { FrameBlockModel } from '@blocksuite/affine-model';
+import type { FrameBlockModel } from '@lumensuite/affine-model';
 
-import { BlockServiceWatcher, BlockStdScope } from '@blocksuite/block-std';
+import { BlockServiceWatcher, BlockStdScope } from '@lumensuite/block-std';
 import {
   type EditorHost,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   Bound,
   deserializeXYWH,
   DisposableGroup,
-} from '@blocksuite/global/utils';
-import { BlockViewType, type Doc, type Query } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { BlockViewType, type Doc, type Query } from '@lumensuite/store';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

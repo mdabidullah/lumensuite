@@ -1,5 +1,5 @@
-import { ReferenceInfoSchema } from '@blocksuite/affine-model';
-import { StdIdentifier } from '@blocksuite/block-std';
+import { ReferenceInfoSchema } from '@lumensuite/affine-model';
+import { StdIdentifier } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { z } from 'zod';
 import { InlineSpecExtension, } from '../../extension/index.js';

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { on, once, } from '@blocksuite/blocks';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { on, once, } from '@lumensuite/blocks';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

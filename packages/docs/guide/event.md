@@ -1,10 +1,10 @@
 # Event
 
-This document introduces the handling of UI events, event flows within the block tree, and the implementation of hotkeys in BlockSuite.
+This document introduces the handling of UI events, event flows within the block tree, and the implementation of hotkeys in LumenSuite.
 
 ## Handling UI Events
 
-For UI events such as `click` in editor, there is an underlying event dispatcher in `@blocksuite/block-std` to dispatch events. With the dispatcher, you can handle events in your [block view](./block-view) implementation in this manner:
+For UI events such as `click` in editor, there is an underlying event dispatcher in `@lumensuite/block-std` to dispatch events. With the dispatcher, you can handle events in your [block view](./block-view) implementation in this manner:
 
 ```ts
 @customElements('my-block')

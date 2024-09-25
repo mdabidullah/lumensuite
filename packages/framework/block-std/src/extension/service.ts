@@ -1,7 +1,7 @@
-import type { Container } from '@blocksuite/global/di';
+import type { Container } from '@lumensuite/global/di';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { DisposableGroup } from '@lumensuite/global/utils';
 
 import type { EventName, UIEventHandler } from '../event/index.js';
 import type { BlockStdScope } from '../scope/index.js';
@@ -19,7 +19,7 @@ import { Extension } from './extension.js';
  * BlockService is deprecated. You should reconsider where to put your feature.
  *
  * BlockService is a legacy extension that is used to provide services to the block.
- * In the previous version of BlockSuite, block service provides a way to extend the block.
+ * In the previous version of LumenSuite, block service provides a way to extend the block.
  * However, in the new version, we recommend using the new extension system.
  */
 export abstract class BlockService extends Extension {
@@ -61,7 +61,7 @@ export abstract class BlockService extends Extension {
 
   static override setup(di: Container) {
     if (!this.flavour) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ValueNotExists,
         'Flavour is not defined in the BlockService'
       );

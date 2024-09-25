@@ -6,8 +6,6 @@ import type {
 } from '@floating-ui/dom';
 import type { TemplateResult } from 'lit';
 
-import { rangeWrap } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
 import {
   ArrowRightSmallIcon,
   CheckBoxCkeckSolidIcon,
@@ -21,6 +19,8 @@ import {
   offset,
   shift,
 } from '@floating-ui/dom';
+import { rangeWrap } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

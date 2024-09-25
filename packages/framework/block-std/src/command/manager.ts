@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type {
   Chain,
@@ -30,10 +30,10 @@ import { cmdSymbol } from './consts.js';
  *  return;
  * ```
  *
- * You should always add the command to the global interface `BlockSuite.Commands`
+ * You should always add the command to the global interface `LumenSuite.Commands`
  * ```ts
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface Commands {
  *       'myCommand': typeof myCommand
  *     }
@@ -53,7 +53,7 @@ import { cmdSymbol } from './consts.js';
  * }
  *
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface CommandContext {
  *       // All command input and output data should be defined here
  *       // The keys should be optional
@@ -132,7 +132,7 @@ export class CommandManager extends LifeCycleWatcher {
   private _commands = new Map<string, Command>();
 
   private _createChain = (
-    methods: Record<BlockSuite.CommandName, unknown>,
+    methods: Record<LumenSuite.CommandName, unknown>,
     _cmds: Command[]
   ): Chain => {
     const getCommandCtx = this._getCommandCtx;
@@ -146,7 +146,7 @@ export class CommandManager extends LifeCycleWatcher {
         let success = false;
         try {
           const cmds = this[cmdSymbol];
-          ctx = runCmds(ctx as BlockSuite.CommandContext, [
+          ctx = runCmds(ctx as LumenSuite.CommandContext, [
             ...cmds,
             (_, next) => {
               success = true;
@@ -284,14 +284,14 @@ export class CommandManager extends LifeCycleWatcher {
    * Register a command to the command manager
    * @param name
    * @param command
-   * Make sure to also add the command to the global interface `BlockSuite.Commands`
+   * Make sure to also add the command to the global interface `LumenSuite.Commands`
    * ```ts
    * const myCommand: Command = (ctx, next) => {
    *   // do something
    * }
    *
    * declare global {
-   *   namespace BlockSuite {
+   *   namespace LumenSuite {
    *     interface Commands {
    *       'myCommand': typeof myCommand
    *     }
@@ -299,9 +299,9 @@ export class CommandManager extends LifeCycleWatcher {
    * }
    * ```
    */
-  add<N extends BlockSuite.CommandName>(
+  add<N extends LumenSuite.CommandName>(
     name: N,
-    command: BlockSuite.Commands[N]
+    command: LumenSuite.Commands[N]
   ): CommandManager;
 
   add(name: string, command: Command) {
@@ -312,7 +312,7 @@ export class CommandManager extends LifeCycleWatcher {
   override created() {
     const add = this.add.bind(this);
     this.std.provider.getAll(CommandIdentifier).forEach((command, key) => {
-      add(key as keyof BlockSuite.Commands, command);
+      add(key as keyof LumenSuite.Commands, command);
     });
   }
 
@@ -326,19 +326,19 @@ export class CommandManager extends LifeCycleWatcher {
    * @returns { success, ...data } - success is a boolean to indicate if the command is successful,
    *  data is the final context after running the command
    */
-  exec<K extends keyof BlockSuite.Commands>(
+  exec<K extends keyof LumenSuite.Commands>(
     command: K,
     ...payloads: IfAllKeysOptional<
-      Omit<InDataOfCommand<BlockSuite.Commands[K]>, keyof InitCommandCtx>,
+      Omit<InDataOfCommand<LumenSuite.Commands[K]>, keyof InitCommandCtx>,
       [
         inData: void | Omit<
-          InDataOfCommand<BlockSuite.Commands[K]>,
+          InDataOfCommand<LumenSuite.Commands[K]>,
           keyof InitCommandCtx
         >,
       ],
       [
         inData: Omit<
-          InDataOfCommand<BlockSuite.Commands[K]>,
+          InDataOfCommand<LumenSuite.Commands[K]>,
           keyof InitCommandCtx
         >,
       ]
@@ -347,7 +347,7 @@ export class CommandManager extends LifeCycleWatcher {
     const cmdFunc = this._commands.get(command);
 
     if (!cmdFunc) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.CommandError,
         `The command "${command}" not found`
       );
@@ -372,7 +372,7 @@ export class CommandManager extends LifeCycleWatcher {
   }
 }
 
-function runCmds(ctx: BlockSuite.CommandContext, [cmd, ...rest]: Command[]) {
+function runCmds(ctx: LumenSuite.CommandContext, [cmd, ...rest]: Command[]) {
   let _ctx = ctx;
   if (cmd) {
     cmd(ctx, data => {

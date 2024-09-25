@@ -5,8 +5,8 @@ import {
   type PageRootService,
   type QuickSearchService,
   toast,
-} from '@blocksuite/blocks';
-import { type DocCollection, Slot } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { type DocCollection, Slot } from '@lumensuite/store';
 
 function getModeFromStorage() {
   const mapJson = localStorage.getItem('playground:docMode');

@@ -1,4 +1,4 @@
-import type { EmbedHtmlModel, EmbedHtmlStyles } from '@blocksuite/affine-model';
+import type { EmbedHtmlModel, EmbedHtmlStyles } from '@lumensuite/affine-model';
 import { type StyleInfo } from 'lit/directives/style-map.js';
 import type { EmbedHtmlBlockService } from './embed-html-service.js';
 import { EmbedBlockComponent } from '../_common/embed-block-helper/index.js';

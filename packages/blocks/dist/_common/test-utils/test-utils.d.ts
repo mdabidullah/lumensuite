@@ -6,7 +6,7 @@ declare class DocTestUtils {
 export declare class TestUtils {
     docTestUtils: DocTestUtils;
 }
-import type { BlockSnapshot, SliceSnapshot } from '@blocksuite/store';
+import type { BlockSnapshot, SliceSnapshot } from '@lumensuite/store';
 export declare function nanoidReplacement(snapshot: BlockSnapshot | SliceSnapshot): any;
 export {};
 //# sourceMappingURL=test-utils.d.ts.map

@@ -1,6 +1,6 @@
-import { getClosestBlockComponentByElement, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { Rect } from '@blocksuite/global/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { getClosestBlockComponentByElement, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { Rect } from '@lumensuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { DropFlags, getDropRectByPoint, getRectByBlockComponent, } from './query.js';
 /**
  * Calculates the drop target.

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BlockSelection, TextSelection, } from '@blocksuite/block-std';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BlockSelection, TextSelection, } from '@lumensuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { computed } from '@lit-labs/preact-signals';
 import { css, html, nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';

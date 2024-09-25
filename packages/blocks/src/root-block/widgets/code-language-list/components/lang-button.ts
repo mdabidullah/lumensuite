@@ -1,6 +1,6 @@
-import { ArrowDownIcon } from '@blocksuite/affine-components/icons';
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { ArrowDownIcon } from '@lumensuite/affine-components/icons';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { css, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';
@@ -92,7 +92,7 @@ export class LanguageListButton extends WithDisposable(
   override connectedCallback(): void {
     super.connectedCallback();
 
-    const langList = localStorage.getItem('blocksuite:code-block:lang-list');
+    const langList = localStorage.getItem('lumensuite:code-block:lang-list');
     if (langList) {
       this._sortedBundledLanguages = JSON.parse(langList);
     } else {
@@ -107,7 +107,7 @@ export class LanguageListButton extends WithDisposable(
 
     this.disposables.add(() => {
       localStorage.setItem(
-        'blocksuite:code-block:lang-list',
+        'lumensuite:code-block:lang-list',
         JSON.stringify(this._sortedBundledLanguages)
       );
     });

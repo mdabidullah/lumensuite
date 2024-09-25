@@ -1,5 +1,5 @@
-import type { GfxController, GfxModel } from '@blocksuite/block-std/gfx';
-import type { IBound, IVec, IVec3 } from '@blocksuite/global/utils';
+import type { GfxController, GfxModel } from '@lumensuite/block-std/gfx';
+import type { IBound, IVec, IVec3 } from '@lumensuite/global/utils';
 
 import {
   type BrushElementModel,
@@ -8,7 +8,7 @@ import {
   ConnectorMode,
   GroupElementModel,
   type LocalConnectorElementModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   almostEqual,
   assertEquals,
@@ -30,14 +30,14 @@ import {
   sign,
   toRadian,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import { isConnectorWithLabel } from '../element-model/utils/connector.js';
 import { Overlay } from '../renderer/canvas-renderer.js';
 import { AStarRunner } from '../utils/a-star.js';
 
 export type Connectable = Exclude<
-  BlockSuite.EdgelessModel,
+  LumenSuite.EdgelessModel,
   ConnectorElementModel | BrushElementModel | GroupElementModel
 >;
 

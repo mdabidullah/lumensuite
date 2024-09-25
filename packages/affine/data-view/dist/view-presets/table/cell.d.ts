@@ -1,9 +1,9 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DataViewCellLifeCycle } from '../../core/column/index.js';
 import type { SingleView } from '../../core/view-manager/single-view.js';
 import type { TableColumn } from './table-view-manager.js';
 import { type TableViewSelectionWithType } from './types.js';
-declare const DatabaseCellContainer_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatabaseCellContainer_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DatabaseCellContainer extends DatabaseCellContainer_base {
     static styles: import("lit").CSSResult;
     private _cell;

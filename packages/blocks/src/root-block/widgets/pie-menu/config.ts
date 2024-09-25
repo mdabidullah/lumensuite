@@ -22,7 +22,7 @@ import {
   ToolsIcon,
   TriangleIcon,
   ViewBarIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   ConnectorMode,
   LINE_COLORS,
@@ -30,8 +30,8 @@ import {
   SHAPE_STROKE_COLORS,
   ShapeStyle,
   ShapeType,
-} from '@blocksuite/affine-model';
-import { isControlledKeyboardEvent } from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-model';
+import { isControlledKeyboardEvent } from '@lumensuite/affine-shared/utils';
 import { html } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 

@@ -1,7 +1,7 @@
 import type {
   EmbedLinkedDocModel,
   EmbedLinkedDocStyles,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import type { TemplateResult } from 'lit';
 
 import {
@@ -10,8 +10,8 @@ import {
   EmbedPageIcon,
   LightLoadingIcon,
   ReloadIcon,
-} from '@blocksuite/affine-components/icons';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-components/icons';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 
 import {
   DarkSyncedDocErrorBanner,

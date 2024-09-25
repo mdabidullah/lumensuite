@@ -1,4 +1,4 @@
-# @blocksuite/blocks
+# @lumensuite/blocks
 
 ## 0.17.5
 
@@ -13,17 +13,17 @@
   - Inline extensions
   - Mindmap remember last settings
 - Updated dependencies [debf65c]
-  - @blocksuite/affine-block-list@0.17.5
-  - @blocksuite/affine-block-paragraph@0.17.5
-  - @blocksuite/affine-block-surface@0.17.5
-  - @blocksuite/affine-components@0.17.5
-  - @blocksuite/data-view@0.17.5
-  - @blocksuite/affine-model@0.17.5
-  - @blocksuite/affine-shared@0.17.5
-  - @blocksuite/block-std@0.17.5
-  - @blocksuite/global@0.17.5
-  - @blocksuite/inline@0.17.5
-  - @blocksuite/store@0.17.5
+  - @lumensuite/affine-block-list@0.17.5
+  - @lumensuite/affine-block-paragraph@0.17.5
+  - @lumensuite/affine-block-surface@0.17.5
+  - @lumensuite/affine-components@0.17.5
+  - @lumensuite/data-view@0.17.5
+  - @lumensuite/affine-model@0.17.5
+  - @lumensuite/affine-shared@0.17.5
+  - @lumensuite/block-std@0.17.5
+  - @lumensuite/global@0.17.5
+  - @lumensuite/inline@0.17.5
+  - @lumensuite/store@0.17.5
 
 ## 0.17.4
 
@@ -31,17 +31,17 @@
 
 - 9978a71: Create git tag
 - Updated dependencies [9978a71]
-  - @blocksuite/affine-block-list@0.17.4
-  - @blocksuite/affine-block-paragraph@0.17.4
-  - @blocksuite/affine-block-surface@0.17.4
-  - @blocksuite/affine-components@0.17.4
-  - @blocksuite/data-view@0.17.4
-  - @blocksuite/affine-model@0.17.4
-  - @blocksuite/affine-shared@0.17.4
-  - @blocksuite/block-std@0.17.4
-  - @blocksuite/global@0.17.4
-  - @blocksuite/inline@0.17.4
-  - @blocksuite/store@0.17.4
+  - @lumensuite/affine-block-list@0.17.4
+  - @lumensuite/affine-block-paragraph@0.17.4
+  - @lumensuite/affine-block-surface@0.17.4
+  - @lumensuite/affine-components@0.17.4
+  - @lumensuite/data-view@0.17.4
+  - @lumensuite/affine-model@0.17.4
+  - @lumensuite/affine-shared@0.17.4
+  - @lumensuite/block-std@0.17.4
+  - @lumensuite/global@0.17.4
+  - @lumensuite/inline@0.17.4
+  - @lumensuite/store@0.17.4
 
 ## 0.17.3
 
@@ -49,17 +49,17 @@
 
 - be60caf: Generate git tag
 - Updated dependencies [be60caf]
-  - @blocksuite/affine-block-list@0.17.3
-  - @blocksuite/affine-block-paragraph@0.17.3
-  - @blocksuite/affine-block-surface@0.17.3
-  - @blocksuite/affine-components@0.17.3
-  - @blocksuite/data-view@0.17.3
-  - @blocksuite/affine-model@0.17.3
-  - @blocksuite/affine-shared@0.17.3
-  - @blocksuite/block-std@0.17.3
-  - @blocksuite/global@0.17.3
-  - @blocksuite/inline@0.17.3
-  - @blocksuite/store@0.17.3
+  - @lumensuite/affine-block-list@0.17.3
+  - @lumensuite/affine-block-paragraph@0.17.3
+  - @lumensuite/affine-block-surface@0.17.3
+  - @lumensuite/affine-components@0.17.3
+  - @lumensuite/data-view@0.17.3
+  - @lumensuite/affine-model@0.17.3
+  - @lumensuite/affine-shared@0.17.3
+  - @lumensuite/block-std@0.17.3
+  - @lumensuite/global@0.17.3
+  - @lumensuite/inline@0.17.3
+  - @lumensuite/store@0.17.3
 
 ## 0.17.2
 
@@ -67,48 +67,48 @@
 
 - 5543e32: Fix missing export in dataview
 - Updated dependencies [5543e32]
-  - @blocksuite/data-view@0.17.2
-  - @blocksuite/affine-block-list@0.17.2
-  - @blocksuite/affine-block-paragraph@0.17.2
-  - @blocksuite/affine-block-surface@0.17.2
-  - @blocksuite/affine-components@0.17.2
-  - @blocksuite/affine-model@0.17.2
-  - @blocksuite/affine-shared@0.17.2
-  - @blocksuite/block-std@0.17.2
-  - @blocksuite/global@0.17.2
-  - @blocksuite/inline@0.17.2
-  - @blocksuite/store@0.17.2
+  - @lumensuite/data-view@0.17.2
+  - @lumensuite/affine-block-list@0.17.2
+  - @lumensuite/affine-block-paragraph@0.17.2
+  - @lumensuite/affine-block-surface@0.17.2
+  - @lumensuite/affine-components@0.17.2
+  - @lumensuite/affine-model@0.17.2
+  - @lumensuite/affine-shared@0.17.2
+  - @lumensuite/block-std@0.17.2
+  - @lumensuite/global@0.17.2
+  - @lumensuite/inline@0.17.2
+  - @lumensuite/store@0.17.2
 
 ## 0.17.1
 
 ### Patch Changes
 
-- 21b5d47: BlockSuite 0.17.1
+- 21b5d47: LumenSuite 0.17.1
 
-  Add @blocksuite/data-view package.
+  Add @lumensuite/data-view package.
   Make font loader an extension.
   Frame improvement.
   Fix missing xywh when copy/paste mind map.
   Fix connector label text.
 
 - Updated dependencies [21b5d47]
-  - @blocksuite/affine-block-list@0.17.1
-  - @blocksuite/affine-block-paragraph@0.17.1
-  - @blocksuite/affine-block-surface@0.17.1
-  - @blocksuite/affine-components@0.17.1
-  - @blocksuite/data-view@0.17.1
-  - @blocksuite/affine-model@0.17.1
-  - @blocksuite/affine-shared@0.17.1
-  - @blocksuite/block-std@0.17.1
-  - @blocksuite/global@0.17.1
-  - @blocksuite/inline@0.17.1
-  - @blocksuite/store@0.17.1
+  - @lumensuite/affine-block-list@0.17.1
+  - @lumensuite/affine-block-paragraph@0.17.1
+  - @lumensuite/affine-block-surface@0.17.1
+  - @lumensuite/affine-components@0.17.1
+  - @lumensuite/data-view@0.17.1
+  - @lumensuite/affine-model@0.17.1
+  - @lumensuite/affine-shared@0.17.1
+  - @lumensuite/block-std@0.17.1
+  - @lumensuite/global@0.17.1
+  - @lumensuite/inline@0.17.1
+  - @lumensuite/store@0.17.1
 
 ## 0.17.0
 
 ### Minor Changes
 
-- 767180a: BlockSuite 0.17.0
+- 767180a: LumenSuite 0.17.0
 
   ## New features:
 
@@ -131,13 +131,13 @@
 ### Patch Changes
 
 - Updated dependencies [767180a]
-  - @blocksuite/affine-block-list@0.17.0
-  - @blocksuite/affine-block-paragraph@0.17.0
-  - @blocksuite/affine-block-surface@0.17.0
-  - @blocksuite/affine-components@0.17.0
-  - @blocksuite/affine-model@0.17.0
-  - @blocksuite/affine-shared@0.17.0
-  - @blocksuite/block-std@0.17.0
-  - @blocksuite/global@0.17.0
-  - @blocksuite/inline@0.17.0
-  - @blocksuite/store@0.17.0
+  - @lumensuite/affine-block-list@0.17.0
+  - @lumensuite/affine-block-paragraph@0.17.0
+  - @lumensuite/affine-block-surface@0.17.0
+  - @lumensuite/affine-components@0.17.0
+  - @lumensuite/affine-model@0.17.0
+  - @lumensuite/affine-shared@0.17.0
+  - @lumensuite/block-std@0.17.0
+  - @lumensuite/global@0.17.0
+  - @lumensuite/inline@0.17.0
+  - @lumensuite/store@0.17.0

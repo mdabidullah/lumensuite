@@ -1,7 +1,7 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
 
-import { LayoutType, type ShapeElementModel } from '@blocksuite/affine-model';
-import { assertType } from '@blocksuite/global/utils';
+import { LayoutType, type ShapeElementModel } from '@lumensuite/affine-model';
+import { assertType } from '@lumensuite/global/utils';
 
 import type { MindmapElementModel } from '../../mindmap.js';
 import type { MindmapNode } from './layout.js';

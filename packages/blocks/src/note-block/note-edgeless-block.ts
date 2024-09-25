@@ -1,27 +1,27 @@
-import type { NoteBlockModel } from '@blocksuite/affine-model';
-import type { BlockComponent, EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { NoteBlockModel } from '@lumensuite/affine-model';
+import type { BlockComponent, EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { MoreIndicatorIcon } from '@blocksuite/affine-components/icons';
+import { MoreIndicatorIcon } from '@lumensuite/affine-components/icons';
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
   StrokeStyle,
-} from '@blocksuite/affine-model';
-import { EDGELESS_BLOCK_CHILD_PADDING } from '@blocksuite/affine-shared/consts';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-model';
+import { EDGELESS_BLOCK_CHILD_PADDING } from '@lumensuite/affine-shared/consts';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   getClosestBlockComponentByPoint,
   handleNativeRangeAtPoint,
   matchFlavours,
   stopPropagation,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   ShadowlessElement,
   toGfxBlockComponent,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { almostEqual, Bound, clamp, Point } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { almostEqual, Bound, clamp, Point } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

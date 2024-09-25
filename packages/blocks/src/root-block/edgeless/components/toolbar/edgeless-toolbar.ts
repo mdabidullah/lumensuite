@@ -1,20 +1,20 @@
+import { offset } from '@floating-ui/dom';
+import { ContextProvider } from '@lit/context';
 import {
   type MenuHandler,
   popMenu,
-} from '@blocksuite/affine-components/context-menu';
+} from '@lumensuite/affine-components/context-menu';
 import {
   ArrowLeftSmallIcon,
   ArrowRightSmallIcon,
   MoreHorizontalIcon,
-} from '@blocksuite/affine-components/icons';
-import { ColorScheme } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { debounce } from '@blocksuite/global/utils';
-import { Slot } from '@blocksuite/store';
-import { offset } from '@floating-ui/dom';
-import { ContextProvider } from '@lit/context';
+} from '@lumensuite/affine-components/icons';
+import { ColorScheme } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { debounce } from '@lumensuite/global/utils';
+import { Slot } from '@lumensuite/store';
 import { baseTheme, cssVar } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

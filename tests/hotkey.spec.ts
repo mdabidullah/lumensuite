@@ -664,7 +664,7 @@ test('should forwardDelete works when delete multi characters', async ({
 }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/3122',
+    description: 'https://github.com/toeverything/lumensuite/issues/3122',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);
@@ -679,7 +679,7 @@ test('should forwardDelete works when delete multi characters', async ({
 test('should drag multiple block and input text works', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/2982',
+    description: 'https://github.com/toeverything/lumensuite/issues/2982',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);
@@ -758,7 +758,7 @@ test('Enter key should as expected after setting heading by shortkey', async ({
 }, testInfo) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/4987',
+    description: 'https://github.com/toeverything/lumensuite/issues/4987',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);

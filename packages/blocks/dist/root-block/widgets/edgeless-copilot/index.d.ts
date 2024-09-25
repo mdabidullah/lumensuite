@@ -1,6 +1,6 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 import type { AIItemGroupConfig } from '../../../_common/components/ai-item/types.js';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';

@@ -1,7 +1,7 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
-import type { Doc } from '@blocksuite/store';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
+import type { Doc } from '@lumensuite/store';
 
-import { nToLast } from '@blocksuite/global/utils';
+import { nToLast } from '@lumensuite/global/utils';
 
 import type { SurfaceBlockModel } from '../surface-model.js';
 import type { Layer } from './layer-manager.js';
@@ -30,7 +30,7 @@ export function updateLayersZIndex(layers: Layer[], startIdx: number) {
 }
 
 export function getElementIndex(indexable: GfxModel) {
-  const groups = indexable.groups as BlockSuite.SurfaceGroupLikeModel[];
+  const groups = indexable.groups as LumenSuite.SurfaceGroupLikeModel[];
 
   if (groups.length) {
     const groupIndexes = groups
@@ -81,7 +81,7 @@ export function isInRange(edges: [GfxModel, GfxModel], target: GfxModel) {
 export function renderableInEdgeless(
   doc: Doc,
   surface: SurfaceBlockModel,
-  block: BlockSuite.EdgelessBlockModelType
+  block: LumenSuite.EdgelessBlockModelType
 ) {
   const parent = doc.getParent(block);
 
@@ -99,8 +99,8 @@ export function compare(a: GfxModel, b: GfxModel) {
   } else if (b instanceof SurfaceGroupLikeModel && b.hasDescendant(a)) {
     return SortOrder.AFTER;
   } else {
-    const aGroups = a.groups as BlockSuite.SurfaceGroupLikeModel[];
-    const bGroups = b.groups as BlockSuite.SurfaceGroupLikeModel[];
+    const aGroups = a.groups as LumenSuite.SurfaceGroupLikeModel[];
+    const bGroups = b.groups as LumenSuite.SurfaceGroupLikeModel[];
 
     let i = 1;
     let aGroup: GfxModel | undefined = nToLast(aGroups, i);

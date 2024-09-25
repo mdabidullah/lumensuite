@@ -1,5 +1,5 @@
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { type DataSource, type DataViewProps, type DataViewSelection, type DataViewWidget } from '@blocksuite/data-view';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { type DataSource, type DataViewProps, type DataViewSelection, type DataViewWidget } from '@lumensuite/data-view';
 import type { DataViewBlockModel } from './data-view-model.js';
 import { type AffineInnerModalWidget } from '../root-block/index.js';
 export declare class DataViewBlockComponent extends CaptionedBlockComponent<DataViewBlockModel> {
@@ -16,8 +16,8 @@ export declare class DataViewBlockComponent extends CaptionedBlockComponent<Data
     toolsWidget: DataViewWidget;
     get dataSource(): DataSource;
     get innerModalWidget(): AffineInnerModalWidget;
-    get topContenteditableElement(): import("@blocksuite/block-std").BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
-    get view(): import("@blocksuite/data-view").DataViewExpose | undefined;
+    get topContenteditableElement(): import("@lumensuite/block-std").BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
+    get view(): import("@lumensuite/data-view").DataViewExpose | undefined;
     private renderDatabaseOps;
     connectedCallback(): void;
     renderBlock(): import("lit").TemplateResult;

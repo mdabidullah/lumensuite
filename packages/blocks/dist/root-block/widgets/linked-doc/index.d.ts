@@ -1,6 +1,6 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { type LinkedMenuGroup } from './config.js';
 import { LinkedDocPopover } from './linked-doc-popover.js';
 export declare const AFFINE_LINKED_DOC_WIDGET = "affine-linked-doc-widget";
@@ -15,7 +15,7 @@ export interface LinkedWidgetConfig {
      * [[ -> @
      */
     convertTriggerKey: boolean;
-    ignoreBlockTypes: (keyof BlockSuite.BlockModels)[];
+    ignoreBlockTypes: (keyof LumenSuite.BlockModels)[];
     getMenus: (query: string, abort: () => void, editorHost: EditorHost, inlineEditor: AffineInlineEditor) => Promise<LinkedMenuGroup[]>;
 }
 export declare class AffineLinkedDocWidget extends WidgetComponent {

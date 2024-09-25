@@ -1,10 +1,10 @@
-import type { EditorHost, TextRangePoint } from '@blocksuite/block-std';
+import type { EditorHost, TextRangePoint } from '@lumensuite/block-std';
 import type {
   BlockSnapshot,
   DraftModel,
   JobMiddleware,
   JobSlots,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { matchFlavours } from '../../../_common/utils/index.js';
 

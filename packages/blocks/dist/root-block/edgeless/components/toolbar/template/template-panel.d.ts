@@ -4,7 +4,7 @@ import type { Template } from './template-type.js';
 import { EdgelessDraggableElementController } from '../common/draggable/draggable-element.controller.js';
 import './overlay-scrollbar.js';
 import './template-loading.js';
-declare const EdgelessTemplatePanel_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessTemplatePanel_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessTemplatePanel extends EdgelessTemplatePanel_base {
     static styles: import("lit").CSSResult;
     static templates: {

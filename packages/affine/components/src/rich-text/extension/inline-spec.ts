@@ -1,10 +1,10 @@
-import type { ExtensionType } from '@blocksuite/block-std';
+import type { ExtensionType } from '@lumensuite/block-std';
 
 import {
   createIdentifier,
   type ServiceIdentifier,
   type ServiceProvider,
-} from '@blocksuite/global/di';
+} from '@lumensuite/global/di';
 
 import type { AffineTextAttributes, InlineSpecs } from './type.js';
 

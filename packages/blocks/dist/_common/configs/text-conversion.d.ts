@@ -4,7 +4,7 @@ import type { TemplateResult } from 'lit';
  * which are also used for registering hotkeys for converting block flavours.
  */
 export interface TextConversionConfig {
-    flavour: BlockSuite.Flavour;
+    flavour: LumenSuite.Flavour;
     type?: string;
     name: string;
     description?: string;

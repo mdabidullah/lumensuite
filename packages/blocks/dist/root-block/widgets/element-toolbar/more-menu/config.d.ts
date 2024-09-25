@@ -1,4 +1,4 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 import type { ElementToolbarMoreMenuContext } from './context.js';
 export declare const sectionGroup: MenuItemGroup<ElementToolbarMoreMenuContext>;
 export declare const reorderGroup: MenuItemGroup<ElementToolbarMoreMenuContext>;

@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CenterPeekIcon, CopyIcon, DeleteIcon, DuplicateIcon, OpenIcon, RefreshIcon, } from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { toast } from '@blocksuite/affine-components/toast';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Slice } from '@blocksuite/store';
+import { CenterPeekIcon, CopyIcon, DeleteIcon, DuplicateIcon, OpenIcon, RefreshIcon, } from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { toast } from '@lumensuite/affine-components/toast';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Slice } from '@lumensuite/store';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { isEmbedLinkedDocBlock, isEmbedSyncedDocBlock, } from '../../../root-block/edgeless/utils/query.js';

@@ -1,7 +1,7 @@
 var _a;
-import { gfxContainerSymbol, SurfaceBlockModel, } from '@blocksuite/block-std/gfx';
-import { Bound } from '@blocksuite/global/utils';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { gfxContainerSymbol, SurfaceBlockModel, } from '@lumensuite/block-std/gfx';
+import { Bound } from '@lumensuite/global/utils';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 import { GfxCompatible } from '../../utils/index.js';
 export const FrameBlockSchema = defineBlockSchema({
     flavour: 'affine:frame',

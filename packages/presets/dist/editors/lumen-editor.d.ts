@@ -1,7 +1,7 @@
-import type { Doc } from '@blocksuite/store';
-import { BlockStdScope, EditorHost, ShadowlessElement } from '@blocksuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { BlockStdScope, EditorHost, ShadowlessElement } from '@lumensuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
-declare const LumenEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LumenEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class LumenEditor extends LumenEditor_base {
     static styles: import("lit").CSSResult;
     get host(): EditorHost | null;
@@ -11,7 +11,7 @@ export declare class LumenEditor extends LumenEditor_base {
     willUpdate(changedProperties: Map<string | number | symbol, unknown>): void;
     accessor doc: Doc;
     accessor editor: TemplateResult;
-    accessor specs: import("@blocksuite/block-std").ExtensionType[];
+    accessor specs: import("@lumensuite/block-std").ExtensionType[];
     accessor std: BlockStdScope;
 }
 declare global {

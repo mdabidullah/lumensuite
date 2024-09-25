@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CanvasElementType, CommonUtils, normalizeShapeBound, TextUtils, } from '@blocksuite/affine-block-surface';
-import { ConnectorElementModel, FrameBlockModel, NoteBlockModel, ShapeElementModel, TextElementModel, } from '@blocksuite/affine-model';
-import { clamp, requestThrottledConnectedFrame, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertType, Bound, deserializeXYWH, pickValues, Slot, } from '@blocksuite/global/utils';
+import { CanvasElementType, CommonUtils, normalizeShapeBound, TextUtils, } from '@lumensuite/affine-block-surface';
+import { ConnectorElementModel, FrameBlockModel, NoteBlockModel, ShapeElementModel, TextElementModel, } from '@lumensuite/affine-model';
+import { clamp, requestThrottledConnectedFrame, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertType, Bound, deserializeXYWH, pickValues, Slot, } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';

@@ -1,15 +1,15 @@
-import type { RichText } from '@blocksuite/affine-components/rich-text';
-import { FrameBlockModel } from '@blocksuite/affine-model';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { RichText } from '@lumensuite/affine-components/rich-text';
+import { FrameBlockModel } from '@lumensuite/affine-model';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
 import { type FrameBlockComponent } from '../../../../frame-block/index.js';
-declare const EdgelessFrameTitleEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessFrameTitleEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessFrameTitleEditor extends EdgelessFrameTitleEditor_base {
     static styles: import("lit").CSSResult;
-    get editorHost(): import("@blocksuite/block-std").EditorHost;
+    get editorHost(): import("@lumensuite/block-std").EditorHost;
     get frameBlock(): FrameBlockComponent | null;
-    get inlineEditor(): import("@blocksuite/affine-components/rich-text").AffineInlineEditor;
-    get inlineEditorContainer(): import("@blocksuite/inline/inline-editor").InlineRootElement<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>;
+    get inlineEditor(): import("@lumensuite/affine-components/rich-text").AffineInlineEditor;
+    get inlineEditorContainer(): import("@lumensuite/inline/inline-editor").InlineRootElement<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>;
     private _unmount;
     connectedCallback(): void;
     firstUpdated(): void;

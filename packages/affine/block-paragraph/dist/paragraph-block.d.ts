@@ -1,7 +1,7 @@
-import type { ParagraphBlockModel } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import '@blocksuite/affine-components/rich-text';
+import type { ParagraphBlockModel } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import '@lumensuite/affine-components/rich-text';
 import { type TemplateResult } from 'lit';
 import type { ParagraphBlockService } from './paragraph-service.js';
 export declare class ParagraphBlockComponent extends CaptionedBlockComponent<ParagraphBlockModel, ParagraphBlockService> {
@@ -10,8 +10,8 @@ export declare class ParagraphBlockComponent extends CaptionedBlockComponent<Par
     private _displayPlaceholder;
     private _inlineRangeProvider;
     private _isInDatabase;
-    get attributeRenderer(): import("@blocksuite/inline").AttributeRenderer<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>;
-    get attributesSchema(): import("zod").ZodObject<Record<keyof import("@blocksuite/affine-components/rich-text").AffineTextAttributes, import("zod").ZodTypeAny>, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
+    get attributeRenderer(): import("@lumensuite/inline").AttributeRenderer<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>;
+    get attributesSchema(): import("zod").ZodObject<Record<keyof import("@lumensuite/affine-components/rich-text").AffineTextAttributes, import("zod").ZodTypeAny>, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
         bold?: any;
         link?: any;
         strike?: any;
@@ -19,9 +19,9 @@ export declare class ParagraphBlockComponent extends CaptionedBlockComponent<Par
         background?: any;
         latex?: any;
         reference?: any;
-        code?: any;
         italic?: any;
         underline?: any;
+        code?: any;
     }, {
         bold?: any;
         link?: any;
@@ -30,16 +30,16 @@ export declare class ParagraphBlockComponent extends CaptionedBlockComponent<Par
         background?: any;
         latex?: any;
         reference?: any;
-        code?: any;
         italic?: any;
         underline?: any;
+        code?: any;
     }>;
-    get embedChecker(): (delta: import("@blocksuite/inline").DeltaInsert<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>) => boolean;
+    get embedChecker(): (delta: import("@lumensuite/inline").DeltaInsert<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>) => boolean;
     get inEdgelessText(): boolean;
-    get inlineEditor(): import("@blocksuite/affine-components/rich-text").AffineInlineEditor | null | undefined;
-    get inlineManager(): import("@blocksuite/affine-components/rich-text").InlineManager;
-    get markdownShortcutHandler(): (context: import("@blocksuite/inline").KeyboardBindingContext<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>, undoManager: import("yjs").UndoManager) => boolean;
-    get topContenteditableElement(): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null;
+    get inlineEditor(): import("@lumensuite/affine-components/rich-text").AffineInlineEditor | null | undefined;
+    get inlineManager(): import("@lumensuite/affine-components/rich-text").InlineManager;
+    get markdownShortcutHandler(): (context: import("@lumensuite/inline").KeyboardBindingContext<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>, undoManager: import("yjs").UndoManager) => boolean;
+    get topContenteditableElement(): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null;
     connectedCallback(): void;
     getUpdateComplete(): Promise<boolean>;
     renderBlock(): TemplateResult<1>;

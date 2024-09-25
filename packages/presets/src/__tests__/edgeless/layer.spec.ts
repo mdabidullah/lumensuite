@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 import type {
   EdgelessRootBlockComponent,
   NoteBlockModel,
-} from '@blocksuite/blocks';
+} from '@lumensuite/blocks';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { type BlockModel, DocCollection } from '@blocksuite/store';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { type BlockModel, DocCollection } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 import { wait } from '../utils/common.js';
@@ -866,7 +866,7 @@ test('the actual rendering z-index should satisfy the logic order of their index
 });
 
 describe('index generator', () => {
-  let preinsertedShape: BlockSuite.SurfaceElementModel;
+  let preinsertedShape: LumenSuite.SurfaceElementModel;
   let preinsertedNote: NoteBlockModel;
 
   beforeEach(() => {
@@ -879,7 +879,7 @@ describe('index generator', () => {
 
     preinsertedShape = service.getElementById(
       shapeId
-    )! as BlockSuite.SurfaceElementModel;
+    )! as LumenSuite.SurfaceElementModel;
     preinsertedNote = service.getElementById(noteId)! as NoteBlockModel;
   });
 

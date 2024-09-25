@@ -1,5 +1,5 @@
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import { correctNumberedListsOrderToPrev } from './utils.js';
 export const indentListCommand = (ctx, next) => {
     let { blockId, inlineIndex } = ctx;

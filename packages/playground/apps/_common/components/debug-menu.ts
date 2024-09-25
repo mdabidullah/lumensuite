@@ -1,9 +1,9 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
-import type { DeltaInsert } from '@blocksuite/inline/types';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
+import type { DeltaInsert } from '@lumensuite/inline/types';
 import type { SlDropdown } from '@shoelace-style/shoelace';
 import type { Pane } from 'tweakpane';
 
-import { type EditorHost, ShadowlessElement } from '@blocksuite/block-std';
+import { type EditorHost, ShadowlessElement } from '@lumensuite/block-std';
 import {
   type AffineTextAttributes,
   ColorVariables,
@@ -22,10 +22,10 @@ import {
   type SurfaceBlockComponent,
   toast,
   ZipTransformer,
-} from '@blocksuite/blocks';
-import { assertExists } from '@blocksuite/global/utils';
-import { AffineEditorContainer, type CommentPanel } from '@blocksuite/presets';
-import { type DocCollection, Job, Text } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { assertExists } from '@lumensuite/global/utils';
+import { AffineEditorContainer, type CommentPanel } from '@lumensuite/presets';
+import { type DocCollection, Job, Text } from '@lumensuite/store';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import '@shoelace-style/shoelace/dist/components/button-group/button-group.js';
 import '@shoelace-style/shoelace/dist/components/color-picker/color-picker.js';
@@ -153,7 +153,7 @@ function initStyleDebugMenu(
 }
 
 function getDarkModeConfig(): boolean {
-  const updatedDarkModeConfig = localStorage.getItem('blocksuite:dark');
+  const updatedDarkModeConfig = localStorage.getItem('lumensuite:dark');
   if (updatedDarkModeConfig !== null) {
     return updatedDarkModeConfig === 'true';
   }
@@ -357,7 +357,7 @@ export class DebugMenu extends ShadowlessElement {
     const html = document.querySelector('html');
 
     this._dark = dark;
-    localStorage.setItem('blocksuite:dark', dark ? 'true' : 'false');
+    localStorage.setItem('lumensuite:dark', dark ? 'true' : 'false');
     if (!html) return;
     html.dataset.theme = dark ? 'dark' : 'light';
 

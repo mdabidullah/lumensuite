@@ -1,4 +1,4 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import * as icons from '@blocksuite/icons/lit';
 export declare class AffineLitIcon extends ShadowlessElement {
     static styles: import("lit").CSSResult;

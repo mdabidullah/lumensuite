@@ -1,7 +1,7 @@
-import type { TextSelection } from '@blocksuite/block-std';
+import type { TextSelection } from '@lumensuite/block-std';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { INLINE_ROOT_ATTR, type InlineRootElement } from '@blocksuite/inline';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { INLINE_ROOT_ATTR, type InlineRootElement } from '@lumensuite/inline';
 
 import type { BlockComponent } from '../view/element/block-component.js';
 
@@ -102,7 +102,7 @@ export class RangeManager extends LifeCycleWatcher {
 
     const firstElement = this.getClosestBlock(range.startContainer);
     if (!firstElement) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.SelectionError,
         'First element not found'
       );

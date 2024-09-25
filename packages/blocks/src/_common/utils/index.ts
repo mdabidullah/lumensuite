@@ -14,4 +14,4 @@ export {
   once,
   openFileOrFiles,
   requestThrottledConnectedFrame,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';

@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BLOCK_ID_ATTR, ShadowlessElement } from '@blocksuite/block-std';
-import { INLINE_ROOT_ATTR, ZERO_WIDTH_SPACE, } from '@blocksuite/inline';
+import { BLOCK_ID_ATTR, ShadowlessElement } from '@lumensuite/block-std';
+import { INLINE_ROOT_ATTR, ZERO_WIDTH_SPACE, } from '@lumensuite/inline';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { ref } from 'lit/directives/ref.js';

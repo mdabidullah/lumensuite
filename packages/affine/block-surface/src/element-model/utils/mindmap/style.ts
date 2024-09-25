@@ -1,4 +1,4 @@
-import type { ShapeElementModel } from '@blocksuite/affine-model';
+import type { ShapeElementModel } from '@lumensuite/affine-model';
 
 import {
   ConnectorMode,
@@ -8,8 +8,8 @@ import {
   MindmapStyle,
   ShapeFillColor,
   StrokeStyle,
-} from '@blocksuite/affine-model';
-import { last } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { last } from '@lumensuite/global/utils';
 
 import type { MindmapNode } from './layout.js';
 

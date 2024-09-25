@@ -1,15 +1,15 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost, UIEventStateContext } from '@blocksuite/block-std';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost, UIEventStateContext } from '@lumensuite/block-std';
 
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
 import {
   getCurrentNativeRange,
   getViewportElement,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { DisposableGroup, throttle } from '@blocksuite/global/utils';
-import { InlineEditor } from '@blocksuite/inline';
+} from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { DisposableGroup, throttle } from '@lumensuite/global/utils';
+import { InlineEditor } from '@lumensuite/inline';
 import { customElement } from 'lit/decorators.js';
 
 import { getPopperPosition } from '../../../root-block/utils/position.js';
@@ -29,7 +29,7 @@ export interface LinkedWidgetConfig {
    * [[ -> @
    */
   convertTriggerKey: boolean;
-  ignoreBlockTypes: (keyof BlockSuite.BlockModels)[];
+  ignoreBlockTypes: (keyof LumenSuite.BlockModels)[];
   getMenus: (
     query: string,
     abort: () => void,

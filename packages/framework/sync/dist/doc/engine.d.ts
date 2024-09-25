@@ -1,5 +1,5 @@
 import type { Doc } from 'yjs';
-import { type Logger, Slot } from '@blocksuite/global/utils';
+import { type Logger, Slot } from '@lumensuite/global/utils';
 import type { DocSource } from './source.js';
 import { SharedPriorityTarget } from '../utils/async-queue.js';
 import { DocEngineStep } from './consts.js';

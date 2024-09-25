@@ -1,7 +1,7 @@
-import type { IVec } from '@blocksuite/global/utils';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { assertExists, Bound, Vec } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { assertExists, Bound, Vec } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 
 import {

@@ -1,4 +1,4 @@
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { type UIEventHandler, UIEventStateContext } from './base.js';
 declare const eventNames: readonly ["click", "doubleClick", "tripleClick", "pointerDown", "pointerMove", "pointerUp", "pointerOut", "dragStart", "dragMove", "dragEnd", "pinch", "pan", "keyDown", "keyUp", "selectionChange", "compositionStart", "compositionUpdate", "compositionEnd", "cut", "copy", "paste", "beforeInput", "blur", "focus", "drop", "contextMenu", "wheel"];
@@ -26,7 +26,7 @@ export declare class UIEventDispatcher extends LifeCycleWatcher {
     private get _currentSelections();
     get active(): boolean;
     get host(): import("../view/index.js").EditorHost;
-    constructor(std: BlockSuite.Std);
+    constructor(std: LumenSuite.Std);
     private _bindEvents;
     private _buildEventScopeBySelection;
     private _buildEventScopeByTarget;

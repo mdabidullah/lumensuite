@@ -1,19 +1,19 @@
-import type { AttachmentBlockModel } from '@blocksuite/affine-model';
+import type { AttachmentBlockModel } from '@lumensuite/affine-model';
 
+import { flip, offset } from '@floating-ui/dom';
 import {
   CaptionIcon,
   DownloadIcon,
   EditIcon,
   MoreVerticalIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
+} from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
 import {
   cloneGroups,
   renderGroups,
   renderToolbarSeparator,
-} from '@blocksuite/affine-components/toolbar';
-import { flip, offset } from '@floating-ui/dom';
+} from '@lumensuite/affine-components/toolbar';
 import { html, nothing } from 'lit';
 import { join } from 'lit/directives/join.js';
 import { repeat } from 'lit/directives/repeat.js';

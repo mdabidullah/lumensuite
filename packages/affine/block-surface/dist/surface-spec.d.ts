@@ -1,4 +1,4 @@
-import { type ExtensionType } from '@blocksuite/block-std';
+import { type ExtensionType } from '@lumensuite/block-std';
 import './surface-block-void.js';
 export declare const PageSurfaceBlockSpec: ExtensionType[];
 export declare const EdgelessSurfaceBlockSpec: ExtensionType[];

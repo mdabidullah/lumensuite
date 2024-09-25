@@ -1,7 +1,7 @@
 import type {
   BaseElementProps,
   PointTestOptions,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 
 import {
   convert,
@@ -9,7 +9,7 @@ import {
   field,
   GfxPrimitiveElementModel,
   watch,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 import {
   Bound,
   getBoundFromPoints,
@@ -27,7 +27,7 @@ import {
   type SerializedXYWH,
   transformPointsToNewBound,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { Color } from '../../consts/index.js';
 
@@ -221,7 +221,7 @@ export class BrushElementModel extends GfxPrimitiveElementModel<BrushProps> {
 type Instance = GfxPrimitiveElementModel<BrushProps> & BrushProps;
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceElementModelMap {
       brush: BrushElementModel;
     }

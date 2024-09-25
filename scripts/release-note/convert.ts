@@ -26,7 +26,7 @@ function analyzeReleaseNotes(filePath: string): string {
       prCount++;
       // extract pull request info
       const prInfo = line.match(
-        /\* (.*): (.*) by @(.*) in https:\/\/github.com\/toeverything\/blocksuite\/pull\/(\d+)/
+        /\* (.*): (.*) by @(.*) in https:\/\/github.com\/toeverything\/lumensuite\/pull\/(\d+)/
       );
       if (prInfo) {
         const [, type, description, contributor, prNumber] = prInfo;

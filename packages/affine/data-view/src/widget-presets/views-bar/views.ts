@@ -1,8 +1,4 @@
 import {
-  popFilterableSimpleMenu,
-  popMenu,
-} from '@blocksuite/affine-components/context-menu';
-import {
   AddCursorIcon,
   DeleteIcon,
   DuplicateIcon,
@@ -10,6 +6,10 @@ import {
   MoveLeftIcon,
   MoveRightIcon,
 } from '@blocksuite/icons/lit';
+import {
+  popFilterableSimpleMenu,
+  popMenu,
+} from '@lumensuite/affine-components/context-menu';
 import { css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

@@ -1,21 +1,21 @@
-import type { ParagraphBlockModel } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
-import type { InlineRangeProvider } from '@blocksuite/inline';
+import type { ParagraphBlockModel } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
+import type { InlineRangeProvider } from '@lumensuite/inline';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import { effect, signal } from '@lit-labs/preact-signals';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 import {
   DefaultInlineManagerExtension,
   type RichText,
-} from '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/rich-text';
+} from '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/rich-text';
 import {
   BLOCK_CHILDREN_CONTAINER_PADDING_LEFT,
   NOTE_SELECTOR,
-} from '@blocksuite/affine-shared/consts';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { getInlineRangeProvider } from '@blocksuite/block-std';
-import { effect, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-shared/consts';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { getInlineRangeProvider } from '@lumensuite/block-std';
 import { html, nothing, type TemplateResult } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 

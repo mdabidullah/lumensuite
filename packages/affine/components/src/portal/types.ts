@@ -1,10 +1,10 @@
-import type { Slot } from '@blocksuite/global/utils';
 import type {
   AutoUpdateOptions,
   ComputePositionConfig,
   ComputePositionReturn,
   ReferenceElement,
 } from '@floating-ui/dom';
+import type { Slot } from '@lumensuite/global/utils';
 import type { RenderOptions, TemplateResult } from 'lit';
 
 /**
@@ -37,7 +37,7 @@ export type PortalOptions = {
   renderOptions?: RenderOptions;
   /**
    * Defaults to `true`.
-   * If true, the portalRoot will be added a class `blocksuite-portal`. It's useful for finding the portalRoot.
+   * If true, the portalRoot will be added a class `lumensuite-portal`. It's useful for finding the portalRoot.
    */
   identifyWrapper?: boolean;
 

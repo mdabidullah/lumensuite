@@ -1,9 +1,9 @@
-import type { NoteBlockModel } from '@blocksuite/affine-model';
-import { ShapeElementModel } from '@blocksuite/affine-model';
+import type { NoteBlockModel } from '@lumensuite/affine-model';
+import { ShapeElementModel } from '@lumensuite/affine-model';
 import { LitElement, nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
 import type { SelectedRect } from '../rects/edgeless-selected-rect.js';
-declare const EdgelessAutoComplete_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessAutoComplete_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessAutoComplete extends EdgelessAutoComplete_base {
     static styles: import("lit").CSSResult;
     private _autoCompleteOverlay;

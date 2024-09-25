@@ -1,6 +1,6 @@
-import type { Text } from '@blocksuite/store';
+import type { Text } from '@lumensuite/store';
 
-import { columnType, tRichText } from '@blocksuite/data-view';
+import { columnType, tRichText } from '@lumensuite/data-view';
 
 export const titleColumnType = columnType('title');
 

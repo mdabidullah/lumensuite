@@ -1,4 +1,4 @@
-import { ConnectorElementModel } from '@blocksuite/affine-model';
+import { ConnectorElementModel } from '@lumensuite/affine-model';
 export function isConnectorWithLabel(model) {
     return model instanceof ConnectorElementModel && model.hasLabel();
 }

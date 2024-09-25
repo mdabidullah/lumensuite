@@ -1,4 +1,4 @@
-type MatchEvent<T extends string> = T extends UIEventStateType ? BlockSuiteUIEventState[T] : UIEventState;
+type MatchEvent<T extends string> = T extends UIEventStateType ? LumenSuiteUIEventState[T] : UIEventState;
 export declare class UIEventState {
     event: Event;
     /** when extends, override it with pattern `xxxState` */
@@ -8,16 +8,16 @@ export declare class UIEventState {
 export declare class UIEventStateContext {
     private _map;
     add: <State extends UIEventState = UIEventState>(state: State) => void;
-    get: <Type extends UIEventStateType = keyof BlockSuiteUIEventState>(type: Type) => MatchEvent<Type>;
+    get: <Type extends UIEventStateType = keyof LumenSuiteUIEventState>(type: Type) => MatchEvent<Type>;
     has: (type: UIEventStateType) => boolean;
     static from(...states: UIEventState[]): UIEventStateContext;
 }
 export type UIEventHandler = (context: UIEventStateContext) => boolean | null | undefined | void;
 declare global {
-    interface BlockSuiteUIEventState {
+    interface LumenSuiteUIEventState {
         defaultState: UIEventState;
     }
-    type UIEventStateType = keyof BlockSuiteUIEventState;
+    type UIEventStateType = keyof LumenSuiteUIEventState;
 }
 export {};
 //# sourceMappingURL=base.d.ts.map

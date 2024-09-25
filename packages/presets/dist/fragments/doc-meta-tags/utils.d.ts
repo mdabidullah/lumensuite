@@ -1,5 +1,5 @@
-import type { AffineTextAttributes } from '@blocksuite/blocks';
-import type { DocMeta } from '@blocksuite/store';
+import type { AffineTextAttributes } from '@lumensuite/blocks';
+import type { DocMeta } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
 export declare const DOC_BLOCK_CHILD_PADDING = 24;
 export declare const DEFAULT_DOC_NAME = "Untitled";

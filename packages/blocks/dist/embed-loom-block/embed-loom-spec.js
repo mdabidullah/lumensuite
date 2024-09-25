@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import './embed-edgeless-loom-bock.js';
 import { EmbedLoomBlockService } from './embed-loom-service.js';

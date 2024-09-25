@@ -1,5 +1,5 @@
 {
-  "name": "@blocksuite/e2e",
+  "name": "@lumensuite/e2e",
   "version": "0.16.0",
   "private": true,
   "type": "module",
@@ -8,13 +8,13 @@
     "test": "playwright test"
   },
   "dependencies": {
-    "@blocksuite/global": "workspace:*",
-    "@blocksuite/affine-model": "workspace:*",
-    "@blocksuite/block-std": "workspace:*",
-    "@blocksuite/presets": "workspace:*"
+    "@lumensuite/global": "workspace:*",
+    "@lumensuite/affine-model": "workspace:*",
+    "@lumensuite/block-std": "workspace:*",
+    "@lumensuite/presets": "workspace:*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/toeverything/blocksuite.git"
+    "url": "https://github.com/toeverything/lumensuite.git"
   }
 }

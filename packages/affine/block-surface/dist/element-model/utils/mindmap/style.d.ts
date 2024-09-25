@@ -1,4 +1,4 @@
-import { ConnectorMode, FontFamily, FontWeight, MindmapStyle, ShapeFillColor, StrokeStyle } from '@blocksuite/affine-model';
+import { ConnectorMode, FontFamily, FontWeight, MindmapStyle, ShapeFillColor, StrokeStyle } from '@lumensuite/affine-model';
 import type { MindmapNode } from './layout.js';
 export type NodeStyle = {
     radius: number;

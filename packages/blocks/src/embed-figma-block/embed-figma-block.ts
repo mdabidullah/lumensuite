@@ -1,9 +1,9 @@
 import type {
   EmbedFigmaModel,
   EmbedFigmaStyles,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { OpenIcon } from '@blocksuite/affine-components/icons';
+import { OpenIcon } from '@lumensuite/affine-components/icons';
 import { html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
@@ -123,7 +123,7 @@ export class EmbedFigmaBlockComponent extends EmbedBlockComponent<
             <div class="affine-embed-figma">
               <div class="affine-embed-figma-iframe-container">
                 <iframe
-                  src=${`https://www.figma.com/embed?embed_host=blocksuite&url=${url}`}
+                  src=${`https://www.figma.com/embed?embed_host=lumensuite&url=${url}`}
                   allowfullscreen
                 ></iframe>
 

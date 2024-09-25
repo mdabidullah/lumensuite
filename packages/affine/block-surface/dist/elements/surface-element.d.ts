@@ -1,4 +1,4 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 import type { CanvasElementType } from '../element-model/index.js';
 export interface ISurfaceElement {
     id: string;

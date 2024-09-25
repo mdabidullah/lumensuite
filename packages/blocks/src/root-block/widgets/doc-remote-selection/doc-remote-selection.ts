@@ -1,14 +1,14 @@
-import type { UserInfo } from '@blocksuite/store';
+import type { UserInfo } from '@lumensuite/store';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { computed } from '@lit-labs/preact-signals';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import {
   type BaseSelection,
   BlockSelection,
   TextSelection,
-} from '@blocksuite/block-std';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

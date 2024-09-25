@@ -1,10 +1,10 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { isInsideBlockByFlavour } from '@blocksuite/affine-shared/utils';
-import { assertType } from '@blocksuite/global/utils';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { isInsideBlockByFlavour } from '@lumensuite/affine-shared/utils';
+import { assertType } from '@lumensuite/global/utils';
 
 import type { TextConversionConfig } from '../../../_common/configs/text-conversion.js';
 import type {

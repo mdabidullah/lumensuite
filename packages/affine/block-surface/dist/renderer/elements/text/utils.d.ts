@@ -1,6 +1,6 @@
-import type { FontFamily, FontStyle, FontWeight, TextElementModel } from '@blocksuite/affine-model';
-import type { Bound } from '@blocksuite/global/utils';
-import type { Y } from '@blocksuite/store';
+import type { FontFamily, FontStyle, FontWeight, TextElementModel } from '@lumensuite/affine-model';
+import type { Bound } from '@lumensuite/global/utils';
+import type { Y } from '@lumensuite/store';
 export type TextDelta = {
     insert: string;
     attributes?: Record<string, unknown>;

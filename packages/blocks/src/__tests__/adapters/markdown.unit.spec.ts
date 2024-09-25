@@ -3,13 +3,13 @@ import type {
   DocSnapshot,
   JobMiddleware,
   SliceSnapshot,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
-import { AssetsManager, MemoryBlobCRUD } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import { AssetsManager, MemoryBlobCRUD } from '@lumensuite/store';
 import { describe, expect, test } from 'vitest';
 
 import { MarkdownAdapter } from '../../_common/adapters/markdown.js';
@@ -25,7 +25,7 @@ describe('snapshot to markdown', () => {
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -58,7 +58,7 @@ describe('snapshot to markdown', () => {
               props: {
                 language: 'python',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'import this',
@@ -89,7 +89,7 @@ describe('snapshot to markdown', () => {
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -122,7 +122,7 @@ describe('snapshot to markdown', () => {
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -138,7 +138,7 @@ describe('snapshot to markdown', () => {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'bbb',
@@ -155,7 +155,7 @@ describe('snapshot to markdown', () => {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ccc',
@@ -171,7 +171,7 @@ describe('snapshot to markdown', () => {
                       props: {
                         type: 'text',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'ddd',
@@ -188,7 +188,7 @@ describe('snapshot to markdown', () => {
                       props: {
                         type: 'text',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'eee',
@@ -204,7 +204,7 @@ describe('snapshot to markdown', () => {
                       flavour: 'affine:paragraph',
                       props: {
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'fff',
@@ -224,7 +224,7 @@ describe('snapshot to markdown', () => {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ggg',
@@ -243,7 +243,7 @@ describe('snapshot to markdown', () => {
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'hhh',
@@ -288,7 +288,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -321,7 +321,7 @@ hhh
               props: {
                 type: 'bulleted',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -339,7 +339,7 @@ hhh
                   props: {
                     type: 'bulleted',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'bbb',
@@ -357,7 +357,7 @@ hhh
                       props: {
                         type: 'bulleted',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'ccc',
@@ -378,7 +378,7 @@ hhh
                   props: {
                     type: 'bulleted',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ddd',
@@ -399,7 +399,7 @@ hhh
               props: {
                 type: 'bulleted',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'eee',
@@ -436,7 +436,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -469,7 +469,7 @@ hhh
               props: {
                 type: 'todo',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -487,7 +487,7 @@ hhh
                   props: {
                     type: 'todo',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'bbb',
@@ -505,7 +505,7 @@ hhh
                       props: {
                         type: 'todo',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'ccc',
@@ -526,7 +526,7 @@ hhh
                   props: {
                     type: 'todo',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ddd',
@@ -547,7 +547,7 @@ hhh
               props: {
                 type: 'todo',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'eee',
@@ -586,7 +586,7 @@ hhh
       version: 2,
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -630,7 +630,7 @@ hhh
               props: {
                 type: 'numbered',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -649,7 +649,7 @@ hhh
                   props: {
                     type: 'numbered',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'bbb',
@@ -669,7 +669,7 @@ hhh
                   props: {
                     type: 'numbered',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ccc',
@@ -691,7 +691,7 @@ hhh
               props: {
                 type: 'numbered',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'ddd',
@@ -728,7 +728,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -761,7 +761,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa ',
@@ -800,7 +800,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -833,7 +833,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa ',
@@ -872,7 +872,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -905,7 +905,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa ',
@@ -941,7 +941,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -974,7 +974,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -1014,7 +1014,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -1047,7 +1047,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -1087,7 +1087,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -1135,7 +1135,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [],
                 },
               },
@@ -1195,7 +1195,7 @@ hhh
             'block:O8dpIDiP7-': {
               columnId: 'block:O8dpIDiP7-',
               value: {
-                '$blocksuite:internal:text$': true,
+                '$lumensuite:internal:text$': true,
                 delta: [
                   {
                     insert: 'test2',
@@ -1223,7 +1223,7 @@ hhh
             'block:O8dpIDiP7-': {
               columnId: 'block:O8dpIDiP7-',
               value: {
-                '$blocksuite:internal:text$': true,
+                '$lumensuite:internal:text$': true,
                 delta: [
                   {
                     insert: 'test1',
@@ -1346,7 +1346,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'Task 1',
@@ -1363,7 +1363,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'Task 2',
@@ -1396,7 +1396,7 @@ hhh
       flavour: 'affine:page',
       props: {
         title: {
-          '$blocksuite:internal:text$': true,
+          '$lumensuite:internal:text$': true,
           delta: [],
         },
       },
@@ -1429,7 +1429,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'aaa',
@@ -1445,7 +1445,7 @@ hhh
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'bbb',
@@ -1462,7 +1462,7 @@ hhh
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ccc',
@@ -1478,7 +1478,7 @@ hhh
                       props: {
                         type: 'text',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'ddd',
@@ -1495,7 +1495,7 @@ hhh
                       props: {
                         type: 'text',
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'eee',
@@ -1520,7 +1520,7 @@ hhh
                       flavour: 'affine:paragraph',
                       props: {
                         text: {
-                          '$blocksuite:internal:text$': true,
+                          '$lumensuite:internal:text$': true,
                           delta: [
                             {
                               insert: 'fff',
@@ -1540,7 +1540,7 @@ hhh
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ggg',
@@ -1559,7 +1559,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'hhh',
@@ -1618,7 +1618,7 @@ hhh
         version: 2,
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: [
               {
                 insert: 'Deepest Doc',
@@ -1666,7 +1666,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [],
                   },
                 },
@@ -1680,7 +1680,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'Hello, This is deepest doc.',
@@ -1711,7 +1711,7 @@ hhh
         version: 2,
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: [
               {
                 insert: 'Synced Doc',
@@ -1759,7 +1759,7 @@ hhh
                 props: {
                   type: 'h1',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'Heading 1',
@@ -1777,7 +1777,7 @@ hhh
                 props: {
                   type: 'h2',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'heading 2',
@@ -1795,7 +1795,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'paragraph',
@@ -1813,7 +1813,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'strike',
@@ -1833,7 +1833,7 @@ hhh
                 version: 1,
                 props: {
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'Hello world!',
@@ -1884,7 +1884,7 @@ hhh
         version: 2,
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: [
               {
                 insert: 'Test Doc',
@@ -1932,7 +1932,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'Hello',
@@ -1964,7 +1964,7 @@ hhh
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'World!',
@@ -2030,7 +2030,7 @@ describe('markdown to snapshot', () => {
           props: {
             language: 'python',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'import this',
@@ -2075,7 +2075,7 @@ describe('markdown to snapshot', () => {
               props: {
                 language: 'python',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: '    import this',
@@ -2130,7 +2130,7 @@ describe('markdown to snapshot', () => {
               props: {
                 language: 'python',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: '```python\n    import this\n```',
@@ -2185,7 +2185,7 @@ describe('markdown to snapshot', () => {
               props: {
                 language: 'python',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: '````python\n    import this\n````',
@@ -2252,7 +2252,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa',
@@ -2269,7 +2269,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '    bbb',
@@ -2286,7 +2286,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '    ccc',
@@ -2303,7 +2303,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '        ddd',
@@ -2320,7 +2320,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '        eee',
@@ -2336,7 +2336,7 @@ hhh
           flavour: 'affine:paragraph',
           props: {
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '        fff',
@@ -2354,7 +2354,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '    ggg',
@@ -2371,7 +2371,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'hhh',
@@ -2422,7 +2422,7 @@ hhh
           props: {
             type: 'bulleted',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa',
@@ -2440,7 +2440,7 @@ hhh
               props: {
                 type: 'bulleted',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'bbb',
@@ -2458,7 +2458,7 @@ hhh
                   props: {
                     type: 'bulleted',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ccc',
@@ -2479,7 +2479,7 @@ hhh
               props: {
                 type: 'bulleted',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'ddd',
@@ -2500,7 +2500,7 @@ hhh
           props: {
             type: 'bulleted',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'eee',
@@ -2553,7 +2553,7 @@ hhh
           props: {
             type: 'todo',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa',
@@ -2571,7 +2571,7 @@ hhh
               props: {
                 type: 'todo',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'bbb',
@@ -2589,7 +2589,7 @@ hhh
                   props: {
                     type: 'todo',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: [
                         {
                           insert: 'ccc',
@@ -2610,7 +2610,7 @@ hhh
               props: {
                 type: 'todo',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'ddd',
@@ -2631,7 +2631,7 @@ hhh
           props: {
             type: 'todo',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'eee',
@@ -2674,7 +2674,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa ',
@@ -2728,7 +2728,7 @@ hhh
               props: {
                 type: 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: ' ',
@@ -2785,7 +2785,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa ',
@@ -2835,7 +2835,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa ',
@@ -2886,7 +2886,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa',
@@ -2937,7 +2937,7 @@ hhh
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: 'aaa',
@@ -3007,7 +3007,7 @@ hhh
               },
             ],
             title: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [],
             },
             cells: {
@@ -3015,7 +3015,7 @@ hhh
                 'matchesReplaceMap[10]': {
                   columnId: 'matchesReplaceMap[10]',
                   value: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'eee',
@@ -3026,7 +3026,7 @@ hhh
                 'matchesReplaceMap[11]': {
                   columnId: 'matchesReplaceMap[11]',
                   value: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: 'fff',
@@ -3064,7 +3064,7 @@ hhh
               flavour: 'affine:paragraph',
               props: {
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: [
                     {
                       insert: 'ddd',
@@ -3108,7 +3108,7 @@ hhh
           flavour: 'affine:paragraph',
           props: {
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: '<aaa>',

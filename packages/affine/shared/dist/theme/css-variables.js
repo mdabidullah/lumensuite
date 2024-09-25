@@ -1,5 +1,5 @@
 /* CSS variables. You need to handle all places where `CSS variables` are marked. */
-import { LINE_COLORS, SHAPE_FILL_COLORS } from '@blocksuite/affine-model';
+import { LINE_COLORS, SHAPE_FILL_COLORS } from '@lumensuite/affine-model';
 export const ColorVariables = [
     '--affine-brand-color',
     '--affine-primary-color',

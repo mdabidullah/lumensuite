@@ -1,4 +1,4 @@
-import { BlockService } from '@blocksuite/block-std';
+import { BlockService } from '@lumensuite/block-std';
 export declare class DividerBlockService extends BlockService {
     static readonly flavour: "affine:divider";
 }

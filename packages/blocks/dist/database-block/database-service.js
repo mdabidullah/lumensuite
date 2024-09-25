@@ -1,8 +1,8 @@
-import { DatabaseBlockSchema, } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
-import { DatabaseSelection } from '@blocksuite/data-view';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { assertExists } from '@blocksuite/global/utils';
+import { DatabaseBlockSchema, } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
+import { DatabaseSelection } from '@lumensuite/data-view';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { assertExists } from '@lumensuite/global/utils';
 import { addColumn, applyColumnUpdate, databaseViewAddView, databaseViewInitEmpty, databaseViewInitTemplate, updateCell, updateView, } from './utils.js';
 export class DatabaseBlockService extends BlockService {
     constructor() {

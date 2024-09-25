@@ -1,4 +1,4 @@
-import { createIdentifier, } from '@blocksuite/global/di';
+import { createIdentifier, } from '@lumensuite/global/di';
 export const InlineSpecIdentifier = createIdentifier('AffineInlineSpec');
 export function InlineSpecExtension(nameOrSpec, getSpec) {
     if (typeof nameOrSpec === 'string') {

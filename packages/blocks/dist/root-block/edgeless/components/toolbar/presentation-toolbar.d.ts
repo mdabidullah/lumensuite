@@ -2,7 +2,7 @@ import { LitElement, type PropertyValues } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
 import type { EdgelessTool } from '../../types.js';
 import './present/navigator-setting-button.js';
-declare const PresentationToolbar_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("./mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const PresentationToolbar_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("./mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class PresentationToolbar extends PresentationToolbar_base {
     static styles: import("lit").CSSResult;
     private _cachedIndex;
@@ -12,7 +12,7 @@ export declare class PresentationToolbar extends PresentationToolbar_base {
     private set _cachedPresentHideToolbar(value);
     private get _frames();
     get dense(): boolean;
-    get host(): import("@blocksuite/block-std").EditorHost;
+    get host(): import("@lumensuite/block-std").EditorHost;
     constructor(edgeless: EdgelessRootBlockComponent);
     private _bindHotKey;
     private _exitPresentation;

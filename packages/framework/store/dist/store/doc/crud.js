@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import * as Y from 'yjs';
 import { native2Y } from '../../reactive/index.js';
 import { internalPrimitives, } from '../../schema/index.js';
@@ -36,7 +36,7 @@ export class DocCRUD {
     addBlock(id, flavour, initialProps = {}, parent, parentIndex) {
         const schema = this._schema.flavourSchemaMap.get(flavour);
         if (!schema) {
-            throw new BlockSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${flavour} not found`);
+            throw new LumenSuiteError(ErrorCode.ModelCRUDError, `schema for flavour: ${flavour} not found`);
         }
         const parentFlavour = parent
             ? this._yBlocks.get(parent)?.get('sys:flavour')
@@ -98,7 +98,7 @@ export class DocCRUD {
             if (bringChildrenTo) {
                 const bringChildrenToModel = () => {
                     if (!bringChildrenTo) {
-                        throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'bringChildrenTo is not provided when deleting block');
+                        throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'bringChildrenTo is not provided when deleting block');
                     }
                     const model = this._yBlocks.get(bringChildrenTo);
                     if (!model)
@@ -192,7 +192,7 @@ export class DocCRUD {
             }
             const last = children[children.length - 1];
             if (this.getNext(last) !== blockId) {
-                throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'The blocks to move are not contiguous under their parent');
+                throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'The blocks to move are not contiguous under their parent');
             }
             children.push(blockId);
         });
@@ -226,7 +226,7 @@ export class DocCRUD {
                     .toArray()
                     .findIndex(id => id === targetSibling);
                 if (targetIndex === -1) {
-                    throw new BlockSuiteError(ErrorCode.ModelCRUDError, 'Target sibling not found');
+                    throw new LumenSuiteError(ErrorCode.ModelCRUDError, 'Target sibling not found');
                 }
                 insertIndex = shouldInsertBeforeSibling
                     ? targetIndex

@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils, MindmapElementModel, TextUtils, } from '@blocksuite/affine-block-surface';
-import { TextResizing } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { RANGE_SYNC_EXCLUDE_ATTR, ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
-import { assertExists, Bound, Vec } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { CommonUtils, MindmapElementModel, TextUtils, } from '@lumensuite/affine-block-surface';
+import { TextResizing } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { RANGE_SYNC_EXCLUDE_ATTR, ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
+import { assertExists, Bound, Vec } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { html, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

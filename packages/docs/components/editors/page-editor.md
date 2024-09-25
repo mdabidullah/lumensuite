@@ -2,7 +2,7 @@
 
 This editor component is designed for conventional flow content editing, offering functionalities aligned with rich text editors based on the frameworks like ProseMirror or Slate.
 
-<iframe src="https://try-blocksuite.vercel.app/starter/?init" frameborder="no" width="100%" height="500"></iframe>
+<iframe src="https://try-lumensuite.vercel.app/starter/?init" frameborder="no" width="100%" height="500"></iframe>
 
 ## Features
 
@@ -13,18 +13,18 @@ This editor component is designed for conventional flow content editing, offerin
 - Two types of selections, including native text selection and block-level selection.
 - Cross-block dragging and multiple widget toolbars.
 
-Moreover, this editor inherits capabilities built into the BlockSuite framework, including:
+Moreover, this editor inherits capabilities built into the LumenSuite framework, including:
 
 - Per-user undo/redo stack
 - Real-time collaboration
 - [Document streaming](../../guide/data-synchronization#document-streaming)
 
-Notably, the BlockSuite framework allows runtime compatibility between the page editor and the edgeless editor, beyond mere static file format compatibility. This means you can dynamically attach the same doc object to different instances of the page editor and edgeless editor.
+Notably, the LumenSuite framework allows runtime compatibility between the page editor and the edgeless editor, beyond mere static file format compatibility. This means you can dynamically attach the same doc object to different instances of the page editor and edgeless editor.
 
 ## Usage
 
 ```ts
-import { PageEditor } from '@blocksuite/presets';
+import { PageEditor } from '@lumensuite/presets';
 
 const editor = new PageEditor();
 ```
@@ -33,7 +33,7 @@ Assigning a [`doc`](../../guide/working-with-block-tree#block-tree-basics) objec
 
 ## Integration
 
-Like all BlockSuite editors, the editor UI is entirely composed of the combination of [block specs](../../guide/block-spec). A specialized [root block](../blocks/root-block) spec serves as the root node of the document and implements all top-level document UI, with main widgets also mounted on the Accordingly, commonly used editing APIs are provided in the page service.
+Like all LumenSuite editors, the editor UI is entirely composed of the combination of [block specs](../../guide/block-spec). A specialized [root block](../blocks/root-block) spec serves as the root node of the document and implements all top-level document UI, with main widgets also mounted on the Accordingly, commonly used editing APIs are provided in the page service.
 
 To integrate and customize this editor, you can:
 
@@ -45,7 +45,7 @@ To integrate and customize this editor, you can:
 
 ## Reference
 
-- [`PageEditor`](/api/@blocksuite/presets/classes/PageEditor.html)
-- [`PageRootService`](/api/@blocksuite/blocks/classes/PageRootService.html)
+- [`PageEditor`](/api/@lumensuite/presets/classes/PageEditor.html)
+- [`PageRootService`](/api/@lumensuite/blocks/classes/PageRootService.html)
 
 Since `PageEditor` is a native web component, all DOM-related properties are inherited.

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CloseIcon, DatabaseKanbanViewIcon, DatabaseTableViewIcon, } from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { assertExists } from '@blocksuite/global/utils';
+import { CloseIcon, DatabaseKanbanViewIcon, DatabaseTableViewIcon, } from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { applyColumnUpdate, databaseViewInitConvert, } from '../../../database-block/utils.js';

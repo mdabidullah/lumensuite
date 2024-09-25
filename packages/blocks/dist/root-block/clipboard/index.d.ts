@@ -1,6 +1,6 @@
-import type { BlockComponent, UIEventHandler } from '@blocksuite/block-std';
-import type { BlockSnapshot, Doc } from '@blocksuite/store';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import type { BlockComponent, UIEventHandler } from '@lumensuite/block-std';
+import type { BlockSnapshot, Doc } from '@lumensuite/store';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { copyMiddleware, pasteMiddleware } from './middlewares/index.js';
 export declare class PageClipboard {
     private _copySelected;

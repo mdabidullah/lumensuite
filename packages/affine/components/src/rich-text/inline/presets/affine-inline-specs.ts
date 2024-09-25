@@ -1,7 +1,7 @@
-import type { InlineEditor, InlineRootElement } from '@blocksuite/inline';
+import type { InlineEditor, InlineRootElement } from '@lumensuite/inline';
 
-import { ReferenceInfoSchema } from '@blocksuite/affine-model';
-import { StdIdentifier } from '@blocksuite/block-std';
+import { ReferenceInfoSchema } from '@lumensuite/affine-model';
+import { StdIdentifier } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { z } from 'zod';
 

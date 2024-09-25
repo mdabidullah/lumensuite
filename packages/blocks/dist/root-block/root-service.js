@@ -1,6 +1,6 @@
-import { RootBlockSchema } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockService } from '@blocksuite/block-std';
+import { RootBlockSchema } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockService } from '@lumensuite/block-std';
 import { FileDropManager, } from '../_common/components/file-drop-manager.js';
 import { DEFAULT_IMAGE_PROXY_ENDPOINT } from '../_common/consts.js';
 import { ExportManager } from '../_common/export-manager/export-manager.js';

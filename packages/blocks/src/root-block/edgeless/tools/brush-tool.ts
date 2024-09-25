@@ -1,10 +1,10 @@
-import type { BrushElementModel } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
+import type { BrushElementModel } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertExists, noop } from '@blocksuite/global/utils';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertExists, noop } from '@lumensuite/global/utils';
 
 import { EdgelessToolController } from './edgeless-tool.js';
 
@@ -223,7 +223,7 @@ export class BrushToolController extends EdgelessToolController<BrushTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       brush: BrushToolController;
     }

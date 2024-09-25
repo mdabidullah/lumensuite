@@ -1,4 +1,4 @@
-import type { Container } from '@blocksuite/global/di';
+import type { Container } from '@lumensuite/global/di';
 import type { BlockStdScope } from '../scope/index.js';
 import type { BlockService } from './service.js';
 import { LifeCycleWatcher } from './lifecycle-watcher.js';

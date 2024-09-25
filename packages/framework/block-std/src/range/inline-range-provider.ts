@@ -1,11 +1,11 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
 import {
   INLINE_ROOT_ATTR,
   type InlineRange,
   type InlineRangeProvider,
   type InlineRangeUpdatedProp,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 
 import type { TextSelection } from '../selection/index.js';
 import type { BlockComponent } from '../view/element/block-component.js';
@@ -68,7 +68,7 @@ export const getInlineRangeProvider: (
     }
 
     if (!element.model.text) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.SelectionError,
         'element to set text selection has no text'
       );

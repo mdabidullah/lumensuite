@@ -1,7 +1,7 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { Command } from '@blocksuite/block-std';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { Command } from '@lumensuite/block-std';
 
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
 
 import { insertEmbedCard } from '../../_common/embed-block-helper/insert-embed-card.js';
 
@@ -25,7 +25,7 @@ export const insertBookmarkCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       insertBookmark: typeof insertBookmarkCommand;
     }

@@ -1,4 +1,4 @@
-import { DocCollection } from '@blocksuite/store';
+import { DocCollection } from '@lumensuite/store';
 export class CommentManager {
     get _command() {
         return this.host.command;

@@ -6,7 +6,7 @@ export * from './ai-chat-spec.js';
 export * from './consts.js';
 export * from './types.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlocksModels {
             'affine:embed-ai-chat': AIChatBlockModel;
         }

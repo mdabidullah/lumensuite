@@ -7,7 +7,7 @@ import type { ExtensionType } from './extension.js';
  *
  * @example
  * ```ts
- * import { CommandExtension } from '@blocksuite/block-std';
+ * import { CommandExtension } from '@lumensuite/block-std';
  *
  * const MyCommandExtension = CommandExtension({
  *   'my-command': MyCommand

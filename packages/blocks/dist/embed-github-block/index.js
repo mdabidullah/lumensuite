@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 import { EmbedGithubBlockComponent } from './embed-github-block.js';
 noop(EmbedGithubBlockComponent);
 export * from './embed-github-block.js';

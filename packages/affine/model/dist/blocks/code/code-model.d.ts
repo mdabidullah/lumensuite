@@ -1,4 +1,4 @@
-import { type SchemaToModel, type Text } from '@blocksuite/store';
+import { type SchemaToModel, type Text } from '@lumensuite/store';
 interface CodeBlockProps {
     text: Text;
     language: string | null;
@@ -8,7 +8,7 @@ interface CodeBlockProps {
 export declare const CodeBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<CodeBlockProps>;
+        props: import("@lumensuite/store").PropsGetter<CodeBlockProps>;
         flavour: "affine:code";
     } & {
         version: number;
@@ -17,11 +17,11 @@ export declare const CodeBlockSchema: {
         children: never[];
     };
     onUpgrade?: ((data: CodeBlockProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<CodeBlockProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<CodeBlockProps>) | undefined;
 };
 export type CodeBlockModel = SchemaToModel<typeof CodeBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:code': CodeBlockModel;
         }

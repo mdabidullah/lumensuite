@@ -2,18 +2,18 @@ import type {
   BezierCurveParameters,
   IVec,
   PointLocation,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import {
   type ConnectorElementModel,
   ConnectorMode,
   type LocalConnectorElementModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   getBezierParameters,
   getBezierTangent,
   Vec,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { RoughCanvas } from '../../../utils/rough/canvas.js';
 

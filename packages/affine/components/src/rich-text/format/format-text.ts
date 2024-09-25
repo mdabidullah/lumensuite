@@ -1,6 +1,6 @@
-import type { Command, TextSelection } from '@blocksuite/block-std';
+import type { Command, TextSelection } from '@lumensuite/block-std';
 
-import { INLINE_ROOT_ATTR, type InlineRootElement } from '@blocksuite/inline';
+import { INLINE_ROOT_ATTR, type InlineRootElement } from '@lumensuite/inline';
 
 import type { AffineTextAttributes } from '../extension/index.js';
 
@@ -28,7 +28,7 @@ export const formatTextCommand: Command<
       textSelection,
       filter: el =>
         FORMAT_TEXT_SUPPORT_FLAVOURS.includes(
-          el.model.flavour as BlockSuite.Flavour
+          el.model.flavour as LumenSuite.Flavour
         ),
       types: ['text'],
     })
@@ -95,7 +95,7 @@ export const formatTextCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       formatText: typeof formatTextCommand;
     }

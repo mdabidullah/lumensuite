@@ -2,7 +2,7 @@ import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { property } from 'lit/decorators.js';
 
 import type { DataViewExpose } from '../view/data-view.js';

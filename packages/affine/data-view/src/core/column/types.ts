@@ -1,4 +1,4 @@
-import type { Disposable } from '@blocksuite/global/utils';
+import type { Disposable } from '@lumensuite/global/utils';
 
 import type { TType } from '../logical/index.js';
 import type { SelectTag } from '../utils/tags/multi-tag-select.js';

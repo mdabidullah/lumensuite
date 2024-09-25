@@ -1,5 +1,5 @@
-import type { ColorScheme } from '@blocksuite/affine-model';
-import type { Slot } from '@blocksuite/store';
+import type { ColorScheme } from '@lumensuite/affine-model';
+import type { Slot } from '@lumensuite/store';
 import type { EdgelessToolbar } from './edgeless-toolbar.js';
 export interface EdgelessToolbarSlots {
     resize: Slot<{

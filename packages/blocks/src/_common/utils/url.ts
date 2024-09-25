@@ -1,4 +1,4 @@
-import type { DocMode, ReferenceInfo } from '@blocksuite/affine-model';
+import type { DocMode, ReferenceInfo } from '@lumensuite/affine-model';
 import type { TemplateResult } from 'lit';
 
 import {
@@ -14,9 +14,9 @@ import {
   EmbedCardLightListIcon,
   EmbedCardLightVerticalIcon,
   LightLoadingIcon,
-} from '@blocksuite/affine-components/icons';
-import { DocModes } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-components/icons';
+import { DocModes } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 
 type EmbedCardIcons = {
   LoadingIcon: TemplateResult<1>;

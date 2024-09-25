@@ -1,9 +1,9 @@
-import { Overlay, renderableInEdgeless, } from '@blocksuite/affine-block-surface';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { isGfxContainerElm } from '@blocksuite/block-std/gfx';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Bound, deserializeXYWH, DisposableGroup, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { Overlay, renderableInEdgeless, } from '@lumensuite/affine-block-surface';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { isGfxContainerElm } from '@lumensuite/block-std/gfx';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Bound, deserializeXYWH, DisposableGroup, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { GfxBlockModel } from './block-model.js';
 import { edgelessElementsBound } from './utils/bound-utils.js';
 import { isFrameBlock } from './utils/query.js';
@@ -88,7 +88,7 @@ export class EdgelessFrameManager {
         }, surfaceModel);
         const frameModel = this._rootService.getElementById(id);
         if (!frameModel || !isFrameBlock(frameModel)) {
-            throw new BlockSuiteError(ErrorCode.GfxBlockElementError, 'Frame model is not found');
+            throw new LumenSuiteError(ErrorCode.GfxBlockElementError, 'Frame model is not found');
         }
         return frameModel;
     }

@@ -1,10 +1,10 @@
-import type { GfxController, GfxModel } from '@blocksuite/block-std/gfx';
-import type { IBound, IVec } from '@blocksuite/global/utils';
-import { type BrushElementModel, type Connection, type ConnectorElementModel, GroupElementModel, type LocalConnectorElementModel } from '@blocksuite/affine-model';
-import { Bound, PointLocation } from '@blocksuite/global/utils';
+import type { GfxController, GfxModel } from '@lumensuite/block-std/gfx';
+import type { IBound, IVec } from '@lumensuite/global/utils';
+import { type BrushElementModel, type Connection, type ConnectorElementModel, GroupElementModel, type LocalConnectorElementModel } from '@lumensuite/affine-model';
+import { Bound, PointLocation } from '@lumensuite/global/utils';
 import { Overlay } from '../renderer/canvas-renderer.js';
 import { AStarRunner } from '../utils/a-star.js';
-export type Connectable = Exclude<BlockSuite.EdgelessModel, ConnectorElementModel | BrushElementModel | GroupElementModel>;
+export type Connectable = Exclude<LumenSuite.EdgelessModel, ConnectorElementModel | BrushElementModel | GroupElementModel>;
 export type OrthogonalConnectorInput = {
     startBound: Bound | null;
     endBound: Bound | null;

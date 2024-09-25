@@ -1,8 +1,8 @@
-import type { AttachmentBlockModel, BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedHtmlModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel, ImageBlockModel } from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { AttachmentBlockModel, BookmarkBlockModel, EmbedFigmaModel, EmbedGithubModel, EmbedHtmlModel, EmbedLinkedDocModel, EmbedLoomModel, EmbedSyncedDocModel, EmbedYoutubeModel, ImageBlockModel } from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type TemplateResult } from 'lit';
-declare const SurfaceRefGenericBlockPortal_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const SurfaceRefGenericBlockPortal_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class SurfaceRefGenericBlockPortal extends SurfaceRefGenericBlockPortal_base {
     static styles: import("lit").CSSResult;
     firstUpdated(): void;

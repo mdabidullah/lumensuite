@@ -1,7 +1,7 @@
-import type { HoverController } from '@blocksuite/affine-components/hover';
+import type { HoverController } from '@lumensuite/affine-components/hover';
 import type { EdgelessRootService } from '../root-block/index.js';
 import { AttachmentBlockComponent } from './attachment-block.js';
-declare const AttachmentEdgelessBlockComponent_base: typeof AttachmentBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const AttachmentEdgelessBlockComponent_base: typeof AttachmentBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class AttachmentEdgelessBlockComponent extends AttachmentEdgelessBlockComponent_base {
     protected _whenHover: HoverController | null;
     protected get embedView(): undefined;

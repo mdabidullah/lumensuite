@@ -1,8 +1,8 @@
-import type { DocMode } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Container } from '@blocksuite/global/di';
-import { Extension } from '@blocksuite/block-std';
-import { type Disposable } from '@blocksuite/global/utils';
+import type { DocMode } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Container } from '@lumensuite/global/di';
+import { Extension } from '@lumensuite/block-std';
+import { type Disposable } from '@lumensuite/global/utils';
 export interface DocModeProvider {
     /**
      * Set the primary mode of the doc.
@@ -47,7 +47,7 @@ export interface DocModeProvider {
      */
     getEditorMode: () => DocMode | null;
 }
-export declare const DocModeProvider: import("@blocksuite/global/di").ServiceIdentifier<DocModeProvider> & ((variant: import("@blocksuite/global/di").ServiceVariant) => import("@blocksuite/global/di").ServiceIdentifier<DocModeProvider>);
+export declare const DocModeProvider: import("@lumensuite/global/di").ServiceIdentifier<DocModeProvider> & ((variant: import("@lumensuite/global/di").ServiceVariant) => import("@lumensuite/global/di").ServiceIdentifier<DocModeProvider>);
 export declare class DocModeService extends Extension implements DocModeProvider {
     std: BlockStdScope;
     constructor(std: BlockStdScope);

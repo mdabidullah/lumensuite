@@ -1,4 +1,4 @@
-import type { EdgelessTextBlockModel } from '@blocksuite/affine-model';
+import type { EdgelessTextBlockModel } from '@lumensuite/affine-model';
 import { nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import './change-text-menu.js';

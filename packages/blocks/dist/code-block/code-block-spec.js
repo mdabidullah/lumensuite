@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, WidgetViewMapExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, WidgetViewMapExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { CodeBlockInlineManagerExtension, CodeBlockUnitSpecExtension, } from './code-block-inline.js';
 import { CodeBlockService } from './code-block-service.js';

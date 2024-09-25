@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import { EdgelessToolController } from './edgeless-tool.js';
 
@@ -69,7 +69,7 @@ export class TemplateToolController extends EdgelessToolController<TemplateTool>
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       template: TemplateToolController;
     }

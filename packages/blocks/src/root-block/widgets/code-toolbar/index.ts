@@ -1,13 +1,13 @@
 import type {
   AdvancedMenuItem,
   MenuItemGroup,
-} from '@blocksuite/affine-components/toolbar';
-import type { CodeBlockModel } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-components/toolbar';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
 
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { cloneGroups } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
 import { limitShift, shift } from '@floating-ui/dom';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { cloneGroups } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { AddTextIcon, ConnectorCWithArrowIcon, ConnectorEndpointNoneIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, FlipDirectionIcon, FrontEndpointArrowIcon, FrontEndpointCircleIcon, FrontEndpointDiamondIcon, FrontEndpointTriangleIcon, GeneralStyleIcon, RearEndpointArrowIcon, RearEndpointCircleIcon, RearEndpointDiamondIcon, RearEndpointTriangleIcon, ScribbledStyleIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
-import { ConnectorEndpoint, ConnectorMode, DEFAULT_FRONT_END_POINT_STYLE, DEFAULT_REAR_END_POINT_STYLE, PointStyle, } from '@blocksuite/affine-model';
-import { LINE_COLORS, LineWidth, StrokeStyle } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { countBy, maxBy } from '@blocksuite/global/utils';
+import { AddTextIcon, ConnectorCWithArrowIcon, ConnectorEndpointNoneIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, FlipDirectionIcon, FrontEndpointArrowIcon, FrontEndpointCircleIcon, FrontEndpointDiamondIcon, FrontEndpointTriangleIcon, GeneralStyleIcon, RearEndpointArrowIcon, RearEndpointCircleIcon, RearEndpointDiamondIcon, RearEndpointTriangleIcon, ScribbledStyleIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
+import { ConnectorEndpoint, ConnectorMode, DEFAULT_FRONT_END_POINT_STYLE, DEFAULT_REAR_END_POINT_STYLE, PointStyle, } from '@lumensuite/affine-model';
+import { LINE_COLORS, LineWidth, StrokeStyle } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { countBy, maxBy } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

@@ -1,11 +1,11 @@
-import { getScrollContainer } from '@blocksuite/affine-shared/utils';
+import { PlusIcon } from '@blocksuite/icons/lit';
+import { autoUpdate } from '@floating-ui/dom';
+import { getScrollContainer } from '@lumensuite/affine-shared/utils';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { PlusIcon } from '@blocksuite/icons/lit';
-import { autoUpdate } from '@floating-ui/dom';
+} from '@lumensuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

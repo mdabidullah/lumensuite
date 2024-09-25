@@ -1,6 +1,6 @@
-import { ListBlockSpec } from '@blocksuite/affine-block-list';
-import { ParagraphBlockSpec } from '@blocksuite/affine-block-paragraph';
-import { RichTextExtensions } from '@blocksuite/affine-components/rich-text';
+import { ListBlockSpec } from '@lumensuite/affine-block-list';
+import { ParagraphBlockSpec } from '@lumensuite/affine-block-paragraph';
+import { RichTextExtensions } from '@lumensuite/affine-components/rich-text';
 import { AttachmentBlockSpec } from '../attachment-block/attachment-spec.js';
 import { BookmarkBlockSpec } from '../bookmark-block/bookmark-spec.js';
 import { CodeBlockSpec } from '../code-block/code-block-spec.js';

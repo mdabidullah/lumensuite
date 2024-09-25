@@ -12,7 +12,7 @@ import { ConfigIdentifier } from '../identifier.js';
  *
  * @example
  * ```ts
- * import { ConfigExtension } from '@blocksuite/block-std';
+ * import { ConfigExtension } from '@lumensuite/block-std';
  * const MyConfigExtension = ConfigExtension('my-flavour', config);
  * ```
  */

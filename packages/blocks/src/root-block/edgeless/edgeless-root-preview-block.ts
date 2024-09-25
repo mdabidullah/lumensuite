@@ -1,15 +1,15 @@
 import type {
   SurfaceBlockComponent,
   SurfaceBlockModel,
-} from '@blocksuite/affine-block-surface';
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { SurfaceSelection } from '@blocksuite/block-std';
-import type { IBound } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-block-surface';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { SurfaceSelection } from '@lumensuite/block-std';
+import type { IBound } from '@lumensuite/global/utils';
 
-import '@blocksuite/affine-block-surface';
-import { FontLoaderService } from '@blocksuite/affine-shared/services';
-import { BlockComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import '@lumensuite/affine-block-surface';
+import { FontLoaderService } from '@lumensuite/affine-shared/services';
+import { BlockComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 

@@ -1,6 +1,6 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 
-import { noop, Point } from '@blocksuite/global/utils';
+import { noop, Point } from '@lumensuite/global/utils';
 
 import type { SelectionArea } from '../services/tools-manager.js';
 import type { EdgelessTool } from '../types.js';
@@ -234,7 +234,7 @@ export class NoteToolController extends EdgelessToolController<NoteTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       note: NoteToolController;
     }

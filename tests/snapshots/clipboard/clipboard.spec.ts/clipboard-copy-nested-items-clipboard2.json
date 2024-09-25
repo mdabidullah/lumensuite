@@ -7,7 +7,7 @@
     "props": {
       "type": "text",
       "text": {
-        "$blocksuite:internal:text$": true,
+        "$lumensuite:internal:text$": true,
         "delta": [
           {
             "insert": "hi"
@@ -25,7 +25,7 @@
     "props": {
       "type": "text",
       "text": {
-        "$blocksuite:internal:text$": true,
+        "$lumensuite:internal:text$": true,
         "delta": [
           {
             "insert": "j"

@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { findNoteBlockModel, getBlockComponentsExcludeSubtrees, getCurrentNativeRange, getScrollContainer, isInsideEdgelessEditor, isInsidePageEditor, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, BlockStdScope, WidgetComponent, } from '@blocksuite/block-std';
-import { Bound, DisposableGroup, Point, Rect, throttle, } from '@blocksuite/global/utils';
-import { BlockViewType } from '@blocksuite/store';
+import { findNoteBlockModel, getBlockComponentsExcludeSubtrees, getCurrentNativeRange, getScrollContainer, isInsideEdgelessEditor, isInsidePageEditor, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, BlockStdScope, WidgetComponent, } from '@lumensuite/block-std';
+import { Bound, DisposableGroup, Point, Rect, throttle, } from '@lumensuite/global/utils';
+import { BlockViewType } from '@lumensuite/store';
 import { html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

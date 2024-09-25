@@ -1,7 +1,7 @@
-# `@blocksuite/sync`
+# `@lumensuite/sync`
 
-BlockSuite data synchronization engine.
+LumenSuite data synchronization engine.
 
 ## Documentation
 
-Checkout [blocksuite.io](https://blocksuite.io/) for comprehensive documentation.
+Checkout [lumensuite.io](https://lumensuite.io/) for comprehensive documentation.

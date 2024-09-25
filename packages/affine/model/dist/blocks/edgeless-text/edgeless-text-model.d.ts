@@ -1,5 +1,5 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 import { type TextStyleProps } from '../../consts/index.js';
 type EdgelessTextProps = {
     xywh: SerializedXYWH;
@@ -11,7 +11,7 @@ type EdgelessTextProps = {
 export declare const EdgelessTextBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<EdgelessTextProps>;
+        props: import("@lumensuite/store").PropsGetter<EdgelessTextProps>;
         flavour: "affine:edgeless-text";
     } & {
         version: number;
@@ -20,15 +20,15 @@ export declare const EdgelessTextBlockSchema: {
         children: string[];
     };
     onUpgrade?: ((data: EdgelessTextProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<EdgelessTextProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<EdgelessTextProps>) | undefined;
 };
 declare const EdgelessTextBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<EdgelessTextProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<EdgelessTextProps>;
 };
 export declare class EdgelessTextBlockModel extends EdgelessTextBlockModel_base implements GfxElementGeometry {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:edgeless-text': EdgelessTextBlockModel;
         }

@@ -1,9 +1,9 @@
-import { ColorScheme, DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { getFilenameFromContentDisposition } from '@blocksuite/affine-shared/utils';
-import { sha } from '@blocksuite/global/utils';
-import { BlockSnapshotSchema, getAssetName, nanoid, } from '@blocksuite/store';
-import { ASTWalker, BaseAdapter } from '@blocksuite/store';
+import { ColorScheme, DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { getFilenameFromContentDisposition } from '@lumensuite/affine-shared/utils';
+import { sha } from '@lumensuite/global/utils';
+import { BlockSnapshotSchema, getAssetName, nanoid, } from '@lumensuite/store';
+import { ASTWalker, BaseAdapter } from '@lumensuite/store';
 import { collapseWhiteSpace } from 'collapse-white-space';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
@@ -287,7 +287,7 @@ export class HtmlAdapter extends BaseAdapter {
                             props: {
                                 language: codeLang ?? 'Plain Text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(codeText, {
                                         trim: false,
                                         pre: true,
@@ -315,7 +315,7 @@ export class HtmlAdapter extends BaseAdapter {
                                 props: {
                                     type: 'quote',
                                     text: {
-                                        '$blocksuite:internal:text$': true,
+                                        '$lumensuite:internal:text$': true,
                                         delta: this._hastToDelta(hastGetTextChildrenOnlyAst(o.node)),
                                     },
                                 },
@@ -360,7 +360,7 @@ export class HtmlAdapter extends BaseAdapter {
                                 props: {
                                     type: 'text',
                                     text: {
-                                        '$blocksuite:internal:text$': true,
+                                        '$lumensuite:internal:text$': true,
                                         delta: this._hastToDelta(o.node),
                                     },
                                 },
@@ -381,7 +381,7 @@ export class HtmlAdapter extends BaseAdapter {
                                     ? 'quote'
                                     : 'text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(o.node),
                                 },
                             },
@@ -419,7 +419,7 @@ export class HtmlAdapter extends BaseAdapter {
                             props: {
                                 type: listType,
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: listType !== 'toggle'
                                         ? this._hastToDelta(o.node)
                                         : this._hastToDelta(hastQuerySelector(o.node, 'summary') ?? o.node),
@@ -465,7 +465,7 @@ export class HtmlAdapter extends BaseAdapter {
                             props: {
                                 type: o.node.tagName,
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(o.node),
                                 },
                             },
@@ -611,7 +611,7 @@ export class HtmlAdapter extends BaseAdapter {
                         }, 'children')
                             .openNode({
                             type: 'comment',
-                            value: 'BlockSuiteDocTitlePlaceholder',
+                            value: 'LumenSuiteDocTitlePlaceholder',
                         })
                             .closeNode();
                         break;
@@ -900,7 +900,7 @@ export class HtmlAdapter extends BaseAdapter {
             assets: payload.assets,
         });
         return {
-            file: file.replace('<!--BlockSuiteDocTitlePlaceholder-->', `<h1>${payload.snapshot.meta.title}</h1>`),
+            file: file.replace('<!--LumenSuiteDocTitlePlaceholder-->', `<h1>${payload.snapshot.meta.title}</h1>`),
             assetsIds,
         };
     }
@@ -969,7 +969,7 @@ export class HtmlAdapter extends BaseAdapter {
                 flavour: 'affine:page',
                 props: {
                     title: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: this._hastToDelta(titleAst ?? {
                             type: 'text',
                             value: 'Untitled',

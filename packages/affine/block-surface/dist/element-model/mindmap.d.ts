@@ -1,8 +1,8 @@
-import type { BaseElementProps, SerializedElement, SurfaceBlockModel } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH, XYWH } from '@blocksuite/global/utils';
-import { LayoutType, LocalConnectorElementModel, MindmapStyle } from '@blocksuite/affine-model';
-import { GfxGroupLikeElementModel } from '@blocksuite/block-std/gfx';
-import { type Y } from '@blocksuite/store';
+import type { BaseElementProps, SerializedElement, SurfaceBlockModel } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH, XYWH } from '@lumensuite/global/utils';
+import { LayoutType, LocalConnectorElementModel, MindmapStyle } from '@lumensuite/affine-model';
+import { GfxGroupLikeElementModel } from '@lumensuite/block-std/gfx';
+import { type Y } from '@lumensuite/store';
 import { z } from 'zod';
 import type { MindmapNode, MindmapRoot, NodeDetail } from './utils/mindmap/layout.js';
 import type { ConnectorStyle, MindmapStyleGetter } from './utils/mindmap/style.js';
@@ -120,7 +120,7 @@ export declare class MindmapElementModel extends GfxGroupLikeElementModel<Mindma
     accessor style: MindmapStyle;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface SurfaceGroupLikeModelMap {
             mindmap: MindmapElementModel;
         }

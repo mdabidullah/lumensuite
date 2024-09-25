@@ -1,6 +1,6 @@
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { DeltaInsert } from '@lumensuite/inline';
 
-import { isEqual } from '@blocksuite/global/utils';
+import { isEqual } from '@lumensuite/global/utils';
 
 export const fetchImage = async (
   url: string,
@@ -69,7 +69,7 @@ export const fetchable = (url: string) =>
 
 export const createText = (s: string) => {
   return {
-    '$blocksuite:internal:text$': true,
+    '$lumensuite:internal:text$': true,
     delta: s.length === 0 ? [] : [{ insert: s }],
   };
 };
@@ -77,9 +77,9 @@ export const isText = (o: unknown) => {
   if (
     typeof o === 'object' &&
     o !== null &&
-    '$blocksuite:internal:text$' in o
+    '$lumensuite:internal:text$' in o
   ) {
-    return o['$blocksuite:internal:text$'] === true;
+    return o['$lumensuite:internal:text$'] === true;
   }
   return false;
 };

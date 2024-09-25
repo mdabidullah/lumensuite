@@ -1,17 +1,17 @@
-import type { DatabaseBlockModel } from '@blocksuite/affine-model';
-import type { DetailSlotProps, SingleView } from '@blocksuite/data-view';
+import type { DatabaseBlockModel } from '@lumensuite/affine-model';
+import type { DetailSlotProps, SingleView } from '@lumensuite/data-view';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
 import {
   createDefaultDoc,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   BlockStdScope,
   type EditorHost,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 

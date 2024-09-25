@@ -1,9 +1,9 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { SingleView } from '../../view-manager/single-view.js';
 import type { DetailSlots } from '../data-source/base.js';
 import './field.js';
 import { DetailSelection } from './selection.js';
-declare const RecordDetail_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const RecordDetail_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class RecordDetail extends RecordDetail_base {
     static styles: import("lit").CSSResult;
     _clickAddProperty: () => void;

@@ -1,5 +1,5 @@
 <template>
-  <h1>BlockSuite Blog</h1>
+  <h1>LumenSuite Blog</h1>
   <div class="blog-posts-container">
     <div class="blog-post" v-for="post in posts">
       <a :href="post.url">

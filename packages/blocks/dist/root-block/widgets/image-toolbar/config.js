@@ -1,4 +1,4 @@
-import { BookmarkIcon, CaptionIcon, CopyIcon, DeleteIcon, DownloadIcon, DuplicateIcon, } from '@blocksuite/affine-components/icons';
+import { BookmarkIcon, CaptionIcon, CopyIcon, DeleteIcon, DownloadIcon, DuplicateIcon, } from '@lumensuite/affine-components/icons';
 import { html } from 'lit';
 import { ifDefined } from 'lit/directives/if-defined.js';
 import { duplicate } from './utils.js';

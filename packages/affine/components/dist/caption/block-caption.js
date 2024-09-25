@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { docContext, modelContext, ShadowlessElement, stdContext, WithDisposable, } from '@blocksuite/block-std';
-import { Text } from '@blocksuite/store';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { docContext, modelContext, ShadowlessElement, stdContext, WithDisposable, } from '@lumensuite/block-std';
+import { Text } from '@lumensuite/store';
 import { consume } from '@lit/context';
 import { css, html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

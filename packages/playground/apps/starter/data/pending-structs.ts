@@ -1,4 +1,4 @@
-import { DocCollection, Text } from '@blocksuite/store';
+import { DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils.js';
 

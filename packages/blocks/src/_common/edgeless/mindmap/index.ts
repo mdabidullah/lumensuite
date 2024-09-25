@@ -1,20 +1,20 @@
-import type { Viewport } from '@blocksuite/block-std/gfx';
+import type { Viewport } from '@lumensuite/block-std/gfx';
 
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
 
-export function isMindmapNode(el: BlockSuite.EdgelessModel) {
+export function isMindmapNode(el: LumenSuite.EdgelessModel) {
   return (
     el.group instanceof MindmapElementModel || el instanceof MindmapElementModel
   );
 }
 
-export function isSelectSingleMindMap(els: BlockSuite.EdgelessModel[]) {
+export function isSelectSingleMindMap(els: LumenSuite.EdgelessModel[]) {
   return els.length === 1 && els[0].group instanceof MindmapElementModel;
 }
 
 export function isElementOutsideViewport(
   viewport: Viewport,
-  element: BlockSuite.EdgelessModel,
+  element: LumenSuite.EdgelessModel,
   padding: [number, number] = [0, 0]
 ) {
   const elementBound = element.elementBound;
@@ -32,7 +32,7 @@ export function isElementOutsideViewport(
 
 export function getNearestTranslation(
   viewport: Viewport,
-  element: BlockSuite.EdgelessModel,
+  element: LumenSuite.EdgelessModel,
   padding: [number, number] = [0, 0]
 ) {
   const viewportBound = viewport.viewportBounds;

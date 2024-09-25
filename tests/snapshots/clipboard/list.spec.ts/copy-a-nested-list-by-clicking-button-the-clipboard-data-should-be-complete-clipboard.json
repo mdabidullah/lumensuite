@@ -7,7 +7,7 @@
     "props": {
       "type": "bulleted",
       "text": {
-        "$blocksuite:internal:text$": true,
+        "$lumensuite:internal:text$": true,
         "delta": [
           {
             "insert": "aaa"
@@ -27,7 +27,7 @@
         "props": {
           "type": "bulleted",
           "text": {
-            "$blocksuite:internal:text$": true,
+            "$lumensuite:internal:text$": true,
             "delta": [
               {
                 "insert": "bbb"
@@ -47,7 +47,7 @@
             "props": {
               "type": "bulleted",
               "text": {
-                "$blocksuite:internal:text$": true,
+                "$lumensuite:internal:text$": true,
                 "delta": [
                   {
                     "insert": "ccc"

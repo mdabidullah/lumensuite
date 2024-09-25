@@ -1,11 +1,11 @@
 {
-  "name": "@blocksuite/docs",
+  "name": "@lumensuite/docs",
   "version": "0.17.5",
-  "description": "BlockSuite documentation",
+  "description": "LumenSuite documentation",
   "private": true,
   "keywords": [],
   "author": "toeverything",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "license": "MPL-2.0",
   "type": "module",
   "devDependencies": {
@@ -24,9 +24,9 @@
     "preview": "pnpm run typedoc && vitepress preview"
   },
   "dependencies": {
-    "@blocksuite/blocks": "workspace:*",
-    "@blocksuite/presets": "workspace:*",
-    "@blocksuite/store": "workspace:*",
+    "@lumensuite/blocks": "workspace:*",
+    "@lumensuite/presets": "workspace:*",
+    "@lumensuite/store": "workspace:*",
     "date-fns": "catalog:",
     "markdown-it-container": "^4.0.0",
     "vitepress-plugin-sandpack": "^1.1.4"

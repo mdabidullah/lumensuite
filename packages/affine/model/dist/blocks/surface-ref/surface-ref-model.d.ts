@@ -1,4 +1,4 @@
-import { type SchemaToModel } from '@blocksuite/store';
+import { type SchemaToModel } from '@lumensuite/store';
 type SurfaceRefProps = {
     reference: string;
     caption: string;
@@ -7,7 +7,7 @@ type SurfaceRefProps = {
 export declare const SurfaceRefBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<SurfaceRefProps>;
+        props: import("@lumensuite/store").PropsGetter<SurfaceRefProps>;
         flavour: "affine:surface-ref";
     } & {
         version: number;
@@ -15,11 +15,11 @@ export declare const SurfaceRefBlockSchema: {
         parent: string[];
     };
     onUpgrade?: ((data: SurfaceRefProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<SurfaceRefProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<SurfaceRefProps>) | undefined;
 };
 export type SurfaceRefBlockModel = SchemaToModel<typeof SurfaceRefBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:surface-ref': SurfaceRefBlockModel;
         }

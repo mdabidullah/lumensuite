@@ -1,7 +1,7 @@
-# `@blocksuite/blocks`
+# `@lumensuite/blocks`
 
-Default BlockSuite editable blocks. Used in [AFFiNE](https://affine.pro/).
+Default LumenSuite editable blocks. Used in [AFFiNE](https://affine.pro/).
 
 ## Documentation
 
-Checkout [blocksuite.io](https://blocksuite.io/) for comprehensive documentation.
+Checkout [lumensuite.io](https://lumensuite.io/) for comprehensive documentation.

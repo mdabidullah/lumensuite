@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-escape */
-import { KEYBOARD_ALLOW_DEFAULT, KEYBOARD_PREVENT_DEFAULT, } from '@blocksuite/inline';
+import { KEYBOARD_ALLOW_DEFAULT, KEYBOARD_PREVENT_DEFAULT, } from '@lumensuite/inline';
 import { InlineMarkdownExtension } from '../../extension/markdown-matcher.js';
 // inline markdown match rules:
 // covert: ***test*** + space

@@ -4,10 +4,10 @@ import type {
   GfxLocalElementModel,
   GfxModel,
   GfxPrimitiveElementModel,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {}
     type EdgelessBlockModelKeyType = keyof EdgelessBlockModelMap;
     type EdgelessBlockModelType =

@@ -1,6 +1,6 @@
-import type { ServiceIdentifier } from '@blocksuite/global/di';
-import type { BlockModel } from '@blocksuite/store';
-import { Bound, type IBound } from '@blocksuite/global/utils';
+import type { ServiceIdentifier } from '@lumensuite/global/di';
+import type { BlockModel } from '@lumensuite/store';
+import { Bound, type IBound } from '@lumensuite/global/utils';
 import type { BlockStdScope } from '../scope/block-std-scope.js';
 import type { SurfaceBlockModel } from './surface/surface-model.js';
 import { LifeCycleWatcher } from '../extension/lifecycle-watcher.js';
@@ -16,7 +16,7 @@ export declare class GfxController extends LifeCycleWatcher {
     readonly grid: GridManager;
     readonly layer: LayerManager;
     readonly viewport: Viewport;
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     get surface(): SurfaceBlockModel | null;
     constructor(std: BlockStdScope);
     /**

@@ -1,5 +1,5 @@
-import { assertType } from '@blocksuite/global/utils';
-import { Text } from '@blocksuite/store';
+import { assertType } from '@lumensuite/global/utils';
+import { Text } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 import { wait } from '../utils/common.js';
 import { addNote, getDocRootBlock } from '../utils/edgeless.js';

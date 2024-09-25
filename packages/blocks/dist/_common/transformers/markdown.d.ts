@@ -1,4 +1,4 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 declare function exportDoc(doc: Doc): Promise<void>;
 type ImportMarkdownOptions = {
     doc: Doc;

@@ -1,9 +1,9 @@
-/// <reference types="@blocksuite/affine-shared/commands" />
+/// <reference types="@lumensuite/affine-shared/commands" />
 import type {
   BlockComponent,
   Command,
   InitCommandCtx,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 
 import { isPeekable, peek } from './peekable.js';
 
@@ -41,7 +41,7 @@ export const peekSelectedBlockCommand: Command<'selectedBlocks'> = (
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       selectedPeekableBlocks?: BlockComponent[];
     }

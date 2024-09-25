@@ -1,5 +1,5 @@
-import { LayoutType, NoteDisplayMode, } from '@blocksuite/blocks';
-import { DocCollection } from '@blocksuite/store';
+import { LayoutType, NoteDisplayMode, } from '@lumensuite/blocks';
+import { DocCollection } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 import { wait } from '../utils/common.js';
 import { addNote, getDocRootBlock } from '../utils/edgeless.js';

@@ -3,18 +3,18 @@ import type {
   ConnectorElementModel,
   NoteBlockModel,
   ShapeElementModel,
-} from '@blocksuite/affine-model';
-import type { XYWH } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { XYWH } from '@lumensuite/global/utils';
 
 import {
   CanvasElementType,
   CommonUtils,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   FontFamilyIcon,
   FrameIcon,
   SmallNoteIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   DEFAULT_SHAPE_FILL_COLOR,
@@ -27,16 +27,16 @@ import {
   GroupElementModel,
   ShapeStyle,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { WithDisposable } from '@blocksuite/block-std';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { WithDisposable } from '@lumensuite/block-std';
 import {
   assertInstanceOf,
   Bound,
   serializeXYWH,
   Vec,
-} from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

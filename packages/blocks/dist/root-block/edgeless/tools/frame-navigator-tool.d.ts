@@ -22,7 +22,7 @@ export declare class PresentToolController extends EdgelessToolController<FrameN
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             'frame-navigator': PresentToolController;
         }

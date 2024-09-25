@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockServiceWatcher, BlockStdScope } from '@blocksuite/block-std';
-import { ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
-import { Bound, deserializeXYWH, DisposableGroup, } from '@blocksuite/global/utils';
-import { BlockViewType } from '@blocksuite/store';
+import { BlockServiceWatcher, BlockStdScope } from '@lumensuite/block-std';
+import { ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
+import { Bound, deserializeXYWH, DisposableGroup, } from '@lumensuite/global/utils';
+import { BlockViewType } from '@lumensuite/store';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

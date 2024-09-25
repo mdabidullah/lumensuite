@@ -1,5 +1,5 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
-import type { Doc } from '@blocksuite/store';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
+import type { Doc } from '@lumensuite/store';
 import type { SurfaceBlockModel } from '../surface-model.js';
 import type { Layer } from './layer-manager.js';
 export declare function getLayerEndZIndex(layers: Layer[], layerIndex: number): number;
@@ -14,7 +14,7 @@ export declare enum SortOrder {
     SAME = 0
 }
 export declare function isInRange(edges: [GfxModel, GfxModel], target: GfxModel): boolean;
-export declare function renderableInEdgeless(doc: Doc, surface: SurfaceBlockModel, block: BlockSuite.EdgelessBlockModelType): boolean;
+export declare function renderableInEdgeless(doc: Doc, surface: SurfaceBlockModel, block: LumenSuite.EdgelessBlockModelType): boolean;
 /**
  * A comparator function for sorting elements in the surface.
  * SortOrder.AFTER means a should be rendered after b and so on.

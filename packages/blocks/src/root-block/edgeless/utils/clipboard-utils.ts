@@ -4,9 +4,9 @@ import type {
   FrameBlockModel,
   ImageBlockModel,
   NoteBlockModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { groupBy } from '@blocksuite/global/utils';
+import { groupBy } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 
@@ -24,7 +24,7 @@ import {
 const offset = 10;
 export async function duplicate(
   edgeless: EdgelessRootBlockComponent,
-  elements: BlockSuite.EdgelessModel[],
+  elements: LumenSuite.EdgelessModel[],
   select = true
 ) {
   const { clipboardController } = edgeless;
@@ -50,7 +50,7 @@ export async function duplicate(
     });
   }
 }
-export const splitElements = (elements: BlockSuite.EdgelessModel[]) => {
+export const splitElements = (elements: LumenSuite.EdgelessModel[]) => {
   const { notes, frames, shapes, images, edgelessTexts, embedSyncedDocs } =
     groupBy(getElementsWithoutGroup(elements), element => {
       if (isNoteBlock(element)) {
@@ -67,7 +67,7 @@ export const splitElements = (elements: BlockSuite.EdgelessModel[]) => {
       return 'shapes';
     }) as {
       notes: NoteBlockModel[];
-      shapes: BlockSuite.SurfaceModel[];
+      shapes: LumenSuite.SurfaceModel[];
       frames: FrameBlockModel[];
       images: ImageBlockModel[];
       edgelessTexts: EdgelessTextBlockModel[];

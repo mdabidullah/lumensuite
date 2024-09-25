@@ -135,7 +135,7 @@ test('snapshot to model', async () => {
 });
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       page: BlockModel;
     }

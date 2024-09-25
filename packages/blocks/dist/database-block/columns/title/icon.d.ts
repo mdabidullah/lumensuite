@@ -1,4 +1,4 @@
-import { BaseCellRenderer } from '@blocksuite/data-view';
+import { BaseCellRenderer } from '@lumensuite/data-view';
 export declare class IconCell extends BaseCellRenderer<string> {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

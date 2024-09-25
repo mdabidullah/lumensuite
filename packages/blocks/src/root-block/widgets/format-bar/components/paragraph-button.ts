@@ -1,10 +1,10 @@
-import type { ParagraphBlockModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { ParagraphBlockModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { whenHover } from '@blocksuite/affine-components/hover';
-import { ArrowDownIcon } from '@blocksuite/affine-components/icons';
-import { assertExists } from '@blocksuite/global/utils';
 import { computePosition, flip, offset, shift } from '@floating-ui/dom';
+import { whenHover } from '@lumensuite/affine-components/hover';
+import { ArrowDownIcon } from '@lumensuite/affine-components/icons';
+import { assertExists } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { ref, type RefOrCallback } from 'lit/directives/ref.js';
 import { repeat } from 'lit/directives/repeat.js';

@@ -1,6 +1,6 @@
-import type { Container } from '@blocksuite/global/di';
+import type { Container } from '@lumensuite/global/di';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { BlockStdScope } from '../scope/index.js';
 
@@ -33,7 +33,7 @@ export abstract class LifeCycleWatcher extends Extension {
 
   static override setup(di: Container) {
     if (!this.key) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ValueNotExists,
         'Key is not defined in the LifeCycleWatcher'
       );

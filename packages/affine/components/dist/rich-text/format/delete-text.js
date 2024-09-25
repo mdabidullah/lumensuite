@@ -1,4 +1,4 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 export const deleteTextCommand = (ctx, next) => {
     const textSelection = ctx.textSelection ?? ctx.currentTextSelection;
     if (!textSelection)

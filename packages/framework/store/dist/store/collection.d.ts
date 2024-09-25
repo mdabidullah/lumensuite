@@ -1,11 +1,11 @@
-import { type Logger, Slot } from '@blocksuite/global/utils';
-import { AwarenessEngine, type AwarenessSource, BlobEngine, type BlobSource, DocEngine, type DocSource } from '@blocksuite/sync';
+import { type Logger, Slot } from '@lumensuite/global/utils';
+import { AwarenessEngine, type AwarenessSource, BlobEngine, type BlobSource, DocEngine, type DocSource } from '@lumensuite/sync';
 import * as Y from 'yjs';
 import type { Schema } from '../schema/index.js';
 import type { IdGenerator } from '../utils/id-generator.js';
 import type { Doc, Query } from './doc/index.js';
 import type { IdGeneratorType } from './id.js';
-import { AwarenessStore, BlockSuiteDoc } from '../yjs/index.js';
+import { AwarenessStore, LumenSuiteDoc } from '../yjs/index.js';
 import { DocCollectionAddonType } from './addon/index.js';
 import { BlockCollection, type GetDocOptions } from './doc/block-collection.js';
 import { DocCollectionMeta, type DocMeta } from './meta.js';
@@ -13,7 +13,7 @@ export type DocCollectionOptions = {
     schema: Schema;
     id?: string;
     idGenerator?: IdGeneratorType | IdGenerator;
-    defaultFlags?: Partial<BlockSuiteFlags>;
+    defaultFlags?: Partial<LumenSuiteFlags>;
     logger?: Logger;
     docSources?: {
         main: DocSource;
@@ -35,7 +35,7 @@ export declare class DocCollection extends DocCollectionAddonType {
     readonly awarenessSync: AwarenessEngine;
     readonly blobSync: BlobEngine;
     readonly blockCollections: Map<string, BlockCollection>;
-    readonly doc: BlockSuiteDoc;
+    readonly doc: LumenSuiteDoc;
     readonly docSync: DocEngine;
     readonly id: string;
     readonly idGenerator: IdGenerator;

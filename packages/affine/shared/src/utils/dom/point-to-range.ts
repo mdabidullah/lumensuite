@@ -1,4 +1,4 @@
-import { IS_FIREFOX } from '@blocksuite/global/env';
+import { IS_FIREFOX } from '@lumensuite/global/env';
 
 declare global {
   interface Document {
@@ -35,7 +35,7 @@ export function caretRangeFromPoint(
     return null;
   }
 
-  // See https://github.com/toeverything/blocksuite/issues/1382
+  // See https://github.com/toeverything/lumensuite/issues/1382
   const rangeRects = range?.getClientRects();
   if (
     rangeRects &&

@@ -1,5 +1,5 @@
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { handleNativeRangeAtPoint } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { handleNativeRangeAtPoint } from '@lumensuite/affine-shared/utils';
 import { DEFAULT_NOTE_HEIGHT, DEFAULT_NOTE_WIDTH, NOTE_MIN_HEIGHT, } from './consts.js';
 export function addNote(edgeless, point, options, width = DEFAULT_NOTE_WIDTH, height = DEFAULT_NOTE_HEIGHT) {
     const noteId = edgeless.addNoteWithPoint(point, {

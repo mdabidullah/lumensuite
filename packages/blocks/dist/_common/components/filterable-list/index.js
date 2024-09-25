@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { createLitPortal, } from '@blocksuite/affine-components/portal';
-import { WithDisposable } from '@blocksuite/block-std';
+import { createLitPortal, } from '@lumensuite/affine-components/portal';
+import { WithDisposable } from '@lumensuite/block-std';
 import { DoneIcon, SearchIcon } from '@blocksuite/icons/lit';
 import { autoPlacement, offset, size } from '@floating-ui/dom';
 import { html, LitElement, nothing } from 'lit';

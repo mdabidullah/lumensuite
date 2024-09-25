@@ -1,5 +1,5 @@
-import { Bound } from '@blocksuite/global/utils';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { Bound } from '@lumensuite/global/utils';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 import { DEFAULT_NOTE_BACKGROUND_COLOR, DEFAULT_NOTE_BORDER_SIZE, DEFAULT_NOTE_BORDER_STYLE, DEFAULT_NOTE_CORNER, DEFAULT_NOTE_SHADOW, NOTE_WIDTH, NoteDisplayMode, } from '../../consts/index.js';
 import { GfxCompatible } from '../../utils/index.js';
 export const NoteBlockSchema = defineBlockSchema({

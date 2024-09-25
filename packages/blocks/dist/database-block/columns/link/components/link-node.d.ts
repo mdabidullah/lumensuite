@@ -1,4 +1,4 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 export declare class LinkNode extends ShadowlessElement {
     static styles: import("lit").CSSResult;
     protected render(): import("lit").TemplateResult<1>;

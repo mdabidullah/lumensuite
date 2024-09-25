@@ -1,8 +1,8 @@
-import { MoreIcon } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
 import { offset } from '@floating-ui/dom';
+import { MoreIcon } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 

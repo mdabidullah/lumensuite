@@ -1,4 +1,4 @@
-import { Point } from '@blocksuite/global/utils';
+import { Point } from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 describe('Point', () => {
     it('should return a min point', () => {

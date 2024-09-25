@@ -1,15 +1,15 @@
-import type { EmbedOptions } from '@blocksuite/affine-shared/types';
-import type { BlockComponent } from '@blocksuite/block-std';
-import type { InlineRange } from '@blocksuite/inline/types';
+import type { EmbedOptions } from '@lumensuite/affine-shared/types';
+import type { BlockComponent } from '@lumensuite/block-std';
+import type { InlineRange } from '@lumensuite/inline/types';
 
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
+import { computePosition, inline, offset, shift } from '@floating-ui/dom';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
 import {
   getHostName,
   isValidUrl,
   normalizeUrl,
-} from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, WithDisposable } from '@blocksuite/block-std';
-import { computePosition, inline, offset, shift } from '@floating-ui/dom';
+} from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, WithDisposable } from '@lumensuite/block-std';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

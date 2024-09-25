@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { AddCursorIcon } from '@blocksuite/icons/lit';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

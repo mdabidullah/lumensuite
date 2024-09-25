@@ -1,6 +1,6 @@
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { assertExists, } from '@blocksuite/global/utils';
-import { Bound } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { assertExists, } from '@lumensuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { NOTE_MIN_WIDTH } from '../../utils/consts.js';
 import { HandleDirection } from './resize-handles.js';
 const { rotatePoints, getQuadBoundsWithRotation } = CommonUtils;

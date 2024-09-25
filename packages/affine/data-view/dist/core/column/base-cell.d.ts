@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { Cell } from '../view-manager/cell.js';
 import type { CellRenderProps, DataViewCellLifeCycle } from './manager.js';
-declare const BaseCellRenderer_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const BaseCellRenderer_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare abstract class BaseCellRenderer<Value, Data extends Record<string, unknown> = Record<string, unknown>> extends BaseCellRenderer_base implements DataViewCellLifeCycle, CellRenderProps<Data, Value> {
     readonly$: import("@preact/signals-core").ReadonlySignal<boolean>;
     value$: import("@preact/signals-core").ReadonlySignal<Value | undefined>;

@@ -1,8 +1,8 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { MoreHorizontalIcon } from '@blocksuite/affine-components/icons';
-import { WithDisposable } from '@blocksuite/block-std';
+import { MoreHorizontalIcon } from '@lumensuite/affine-components/icons';
+import { WithDisposable } from '@lumensuite/block-std';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, query, queryAll, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

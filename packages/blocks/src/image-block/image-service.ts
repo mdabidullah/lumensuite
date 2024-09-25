@@ -1,12 +1,12 @@
-import { ImageBlockSchema } from '@blocksuite/affine-model';
-import { ImageSelection } from '@blocksuite/affine-shared/selection';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
+import { ImageBlockSchema } from '@lumensuite/affine-model';
+import { ImageSelection } from '@lumensuite/affine-shared/selection';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
 import {
   isInsideEdgelessEditor,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { BlockService } from '@blocksuite/block-std';
-import { Bound, Point } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { BlockService } from '@lumensuite/block-std';
+import { Bound, Point } from '@lumensuite/global/utils';
 import { render } from 'lit';
 
 import type { EdgelessRootService } from '../root-block/edgeless/edgeless-root-service.js';

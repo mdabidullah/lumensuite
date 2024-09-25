@@ -13,7 +13,7 @@ import { BlockViewIdentifier } from '../identifier.js';
  *
  * @example
  * ```ts
- * import { BlockViewExtension } from '@blocksuite/block-std';
+ * import { BlockViewExtension } from '@lumensuite/block-std';
  *
  * const MyListBlockViewExtension = BlockViewExtension(
  *   'affine:list',
@@ -22,7 +22,7 @@ import { BlockViewIdentifier } from '../identifier.js';
  * ```
  */
 export function BlockViewExtension(
-  flavour: BlockSuite.Flavour,
+  flavour: LumenSuite.Flavour,
   view: BlockViewType
 ): ExtensionType {
   return {

@@ -1,4 +1,4 @@
-import '@blocksuite/affine-shared/commands';
+import '@lumensuite/affine-shared/commands';
 export * from './blocks/index.js';
 export * from './editors/index.js';
 export * from './fragments/index.js';

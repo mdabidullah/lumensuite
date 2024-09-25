@@ -1,5 +1,5 @@
-import { BlockService } from '@blocksuite/block-std';
-import { Slot } from '@blocksuite/store';
+import { BlockService } from '@lumensuite/block-std';
+import { Slot } from '@lumensuite/store';
 import type { RootBlockComponent } from '../root-block/types.js';
 import { FileDropManager } from '../_common/components/file-drop-manager.js';
 export declare class AttachmentBlockService extends BlockService {

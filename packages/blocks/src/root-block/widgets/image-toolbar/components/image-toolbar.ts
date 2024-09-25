@@ -1,13 +1,13 @@
 import type {
   EditorIconButton,
   MenuItemGroup,
-} from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/toolbar';
 
-import { MoreVerticalIcon } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { assertExists, noop } from '@blocksuite/global/utils';
 import { flip, offset } from '@floating-ui/dom';
+import { MoreVerticalIcon } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { assertExists, noop } from '@lumensuite/global/utils';
 import { html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

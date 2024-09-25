@@ -1,4 +1,4 @@
-import { isMarkdownPrefix, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { isMarkdownPrefix, matchFlavours, } from '@lumensuite/affine-shared/utils';
 import { getInlineEditorByModel } from '../dom.js';
 import { toDivider } from './divider.js';
 import { toList } from './list.js';

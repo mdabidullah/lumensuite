@@ -1,5 +1,5 @@
-import type { BookmarkBlockModel } from '@blocksuite/affine-model';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import type { BookmarkBlockModel } from '@lumensuite/affine-model';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 import { type StyleInfo, styleMap } from 'lit/directives/style-map.js';
 import type { BookmarkBlockService } from './bookmark-service.js';
 import './components/bookmark-card.js';

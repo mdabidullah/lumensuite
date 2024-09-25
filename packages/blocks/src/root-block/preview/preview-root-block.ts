@@ -1,5 +1,5 @@
 // import { PageRootBlockComponent } from '../page/page-root-block.js';
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

@@ -1,5 +1,5 @@
 import { BookmarkBlockComponent } from './bookmark-block.js';
-declare const BookmarkEdgelessBlockComponent_base: typeof BookmarkBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const BookmarkEdgelessBlockComponent_base: typeof BookmarkBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class BookmarkEdgelessBlockComponent extends BookmarkEdgelessBlockComponent_base {
     getRenderingRect(): {
         x: number;

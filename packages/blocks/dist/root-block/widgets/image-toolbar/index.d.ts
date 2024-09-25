@@ -1,6 +1,6 @@
-import type { AdvancedMenuItem, MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import type { ImageBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { AdvancedMenuItem, MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { ImageBlockComponent } from '../../../image-block/image-block.js';
 import './components/image-toolbar.js';
 import { ImageToolbarContext } from './context.js';

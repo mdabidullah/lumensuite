@@ -2,8 +2,8 @@ import {
   on,
   once,
   requestConnectedFrame,
-} from '@blocksuite/affine-shared/utils';
-import { DisposableGroup } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 

@@ -1,14 +1,14 @@
-# `@blocksuite/inline`
+# `@lumensuite/inline`
 
 This package is a minimal rich text component for inline editing. It uses an external [`Y.Text`](https://docs.yjs.dev/api/shared-types/y.text) as it source of truth. Every `inlineEditor` instance attaches to an independant `Y.Text`, so rich text content in different block nodes can be splitted into different inline editors, making complex content conveniently composable. This significantly reduces the complexity required to implement traditional rich text editing features.
 
 ![flat-inlines](../images/flat-inlines.png)
 
-You can use `InlineEditor` without other BlockSuite dependencies:
+You can use `InlineEditor` without other LumenSuite dependencies:
 
 ```ts
 import * as Y from 'yjs';
-import { InlineEditor } from '@blocksuite/inline';
+import { InlineEditor } from '@lumensuite/inline';
 
 const doc = new Y.Doc();
 const yText = doc.getText('text');
@@ -18,8 +18,8 @@ const myEditor = document.getElementById('my-editor');
 inlineEditor.mount(myEditor);
 ```
 
-The [inline editor playground](https://try-blocksuite.vercel.app/examples/inline/)
-is used for online testing and you can also check out the [source code](https://github.com/toeverything/blocksuite/tree/master/packages/playground/examples/inline) in its repository.
+The [inline editor playground](https://try-lumensuite.vercel.app/examples/inline/)
+is used for online testing and you can also check out the [source code](https://github.com/toeverything/lumensuite/tree/master/packages/playground/examples/inline) in its repository.
 
 ## Attributes
 
@@ -113,4 +113,4 @@ You will see there is a `v-text` in the template, it is a custom element that re
 
 ## Rich Text Component
 
-If you find the `InlineEditor` features may be limited or a bit verbose to use, you can refer to or directly use the [rich-text](https://github.com/toeverything/blocksuite/blob/f71df00ce18e3f300caad914aaedf63267158885/packages/blocks/src/components/rich-text/rich-text.ts) encapsulated in the `@blocksuite/blocks` package. It contains basic editing features like copy/cut/paste, undo/redo (including range restore).
+If you find the `InlineEditor` features may be limited or a bit verbose to use, you can refer to or directly use the [rich-text](https://github.com/toeverything/lumensuite/blob/f71df00ce18e3f300caad914aaedf63267158885/packages/blocks/src/components/rich-text/rich-text.ts) encapsulated in the `@lumensuite/blocks` package. It contains basic editing features like copy/cut/paste, undo/redo (including range restore).

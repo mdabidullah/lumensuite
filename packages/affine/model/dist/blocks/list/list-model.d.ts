@@ -1,4 +1,4 @@
-import type { SchemaToModel, Text } from '@blocksuite/store';
+import type { SchemaToModel, Text } from '@lumensuite/store';
 export type ListType = 'bulleted' | 'numbered' | 'todo' | 'toggle';
 export interface ListProps {
     type: ListType;
@@ -10,7 +10,7 @@ export interface ListProps {
 export declare const ListBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<ListProps>;
+        props: import("@lumensuite/store").PropsGetter<ListProps>;
         flavour: "affine:list";
     } & {
         version: number;
@@ -18,11 +18,11 @@ export declare const ListBlockSchema: {
         parent: string[];
     };
     onUpgrade?: ((data: ListProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<ListProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<ListProps>) | undefined;
 };
 export type ListBlockModel = SchemaToModel<typeof ListBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:list': ListBlockModel;
         }

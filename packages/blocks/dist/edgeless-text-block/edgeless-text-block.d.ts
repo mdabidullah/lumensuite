@@ -1,5 +1,5 @@
-import type { EdgelessTextBlockModel } from '@blocksuite/affine-model';
-import { GfxBlockComponent } from '@blocksuite/block-std';
+import type { EdgelessTextBlockModel } from '@lumensuite/affine-model';
+import { GfxBlockComponent } from '@lumensuite/block-std';
 import type { EdgelessRootBlockComponent, EdgelessRootService } from '../root-block/index.js';
 import type { EdgelessTextBlockService } from './edgeless-text-service.js';
 export declare const EDGELESS_TEXT_BLOCK_MIN_WIDTH = 50;

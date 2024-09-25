@@ -1,5 +1,5 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
-import { type GfxElementGeometry } from '@blocksuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
+import { type GfxElementGeometry } from '@lumensuite/block-std/gfx';
 type LatexProps = {
     xywh: SerializedXYWH;
     index: string;
@@ -10,7 +10,7 @@ type LatexProps = {
 export declare const LatexBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<LatexProps>;
+        props: import("@lumensuite/store").PropsGetter<LatexProps>;
         flavour: "affine:latex";
     } & {
         version: number;
@@ -18,15 +18,15 @@ export declare const LatexBlockSchema: {
         parent: string[];
     };
     onUpgrade?: ((data: LatexProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<LatexProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<LatexProps>) | undefined;
 };
 declare const LatexBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<LatexProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<LatexProps>;
 };
 export declare class LatexBlockModel extends LatexBlockModel_base implements GfxElementGeometry {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:latex': LatexBlockModel;
         }

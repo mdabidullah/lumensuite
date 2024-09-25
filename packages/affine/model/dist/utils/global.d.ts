@@ -1,6 +1,6 @@
-import type { GfxBlockElementModel, GfxGroupLikeElementModel, GfxLocalElementModel, GfxModel, GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
+import type { GfxBlockElementModel, GfxGroupLikeElementModel, GfxLocalElementModel, GfxModel, GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
         }
         type EdgelessBlockModelKeyType = keyof EdgelessBlockModelMap;

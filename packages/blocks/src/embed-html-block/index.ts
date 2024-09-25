@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import type { EmbedHtmlBlockService } from './embed-html-service.js';
 
@@ -10,7 +10,7 @@ export * from './embed-html-service.js';
 export * from './embed-html-spec.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:embed-html': EmbedHtmlBlockService;
     }

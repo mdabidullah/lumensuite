@@ -1,32 +1,32 @@
-import type { Cell, Column, ColumnUpdater, DatabaseBlockModel, ViewBasicDataType } from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
-import { type ViewMeta } from '@blocksuite/data-view';
+import type { Cell, Column, ColumnUpdater, DatabaseBlockModel, ViewBasicDataType } from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
+import { type ViewMeta } from '@lumensuite/data-view';
 export declare const databaseViewInitEmpty: (model: DatabaseBlockModel, viewMeta: ViewMeta) => void;
 export declare const databaseViewInitConvert: (model: DatabaseBlockModel, viewMeta: ViewMeta) => void;
 export declare const databaseViewInitTemplate: (model: DatabaseBlockModel, viewMeta: ViewMeta) => void;
-export declare const databaseViewAddView: (model: DatabaseBlockModel, viewMeta: ViewMeta) => import("@blocksuite/data-view").BasicViewDataType<"table", {
-    columns: import("@blocksuite/data-view/view-presets").TableViewColumn[];
-    filter: import("@blocksuite/data-view").FilterGroup;
-    groupBy?: import("@blocksuite/data-view").GroupBy;
-    groupProperties?: import("@blocksuite/data-view").GroupProperty[];
-    sort?: import("@blocksuite/data-view").Sort;
+export declare const databaseViewAddView: (model: DatabaseBlockModel, viewMeta: ViewMeta) => import("@lumensuite/data-view").BasicViewDataType<"table", {
+    columns: import("@lumensuite/data-view/view-presets").TableViewColumn[];
+    filter: import("@lumensuite/data-view").FilterGroup;
+    groupBy?: import("@lumensuite/data-view").GroupBy;
+    groupProperties?: import("@lumensuite/data-view").GroupProperty[];
+    sort?: import("@lumensuite/data-view").Sort;
     header?: {
         titleColumn?: string;
         iconColumn?: string;
         imageColumn?: string;
     };
-}> | import("@blocksuite/data-view").BasicViewDataType<"kanban", {
-    columns: import("@blocksuite/data-view/view-presets").KanbanViewColumn[];
-    filter: import("@blocksuite/data-view").FilterGroup;
-    groupBy?: import("@blocksuite/data-view").GroupBy;
-    sort?: import("@blocksuite/data-view").Sort;
+}> | import("@lumensuite/data-view").BasicViewDataType<"kanban", {
+    columns: import("@lumensuite/data-view/view-presets").KanbanViewColumn[];
+    filter: import("@lumensuite/data-view").FilterGroup;
+    groupBy?: import("@lumensuite/data-view").GroupBy;
+    sort?: import("@lumensuite/data-view").Sort;
     header: {
         titleColumn?: string;
         iconColumn?: string;
         coverColumn?: string;
     };
-    groupProperties: import("@blocksuite/data-view").GroupProperty[];
+    groupProperties: import("@lumensuite/data-view").GroupProperty[];
 }>;
 export declare function addColumn(model: DatabaseBlockModel, position: InsertToPosition, column: Omit<Column, 'id'> & {
     id?: string;

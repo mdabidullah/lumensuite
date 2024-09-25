@@ -1,5 +1,5 @@
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { ASTWalker, BaseAdapter, BlockSnapshotSchema, nanoid, } from '@blocksuite/store';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { ASTWalker, BaseAdapter, BlockSnapshotSchema, nanoid, } from '@lumensuite/store';
 import { MarkdownAdapter } from './markdown.js';
 export class MixTextAdapter extends BaseAdapter {
     constructor(job) {
@@ -95,7 +95,7 @@ export class MixTextAdapter extends BaseAdapter {
                     props: {
                         type: 'text',
                         text: {
-                            '$blocksuite:internal:text$': true,
+                            '$lumensuite:internal:text$': true,
                             delta: [
                                 {
                                     insert: line,
@@ -124,7 +124,7 @@ export class MixTextAdapter extends BaseAdapter {
                 flavour: 'affine:page',
                 props: {
                     title: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: [
                             {
                                 insert: 'Untitled',
@@ -161,7 +161,7 @@ export class MixTextAdapter extends BaseAdapter {
                                 props: {
                                     type: 'text',
                                     text: {
-                                        '$blocksuite:internal:text$': true,
+                                        '$lumensuite:internal:text$': true,
                                         delta: [
                                             {
                                                 insert: line,

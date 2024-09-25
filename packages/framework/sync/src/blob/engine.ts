@@ -1,4 +1,4 @@
-import { type Logger, sha } from '@blocksuite/global/utils';
+import { type Logger, sha } from '@lumensuite/global/utils';
 
 import type { BlobSource } from './source.js';
 

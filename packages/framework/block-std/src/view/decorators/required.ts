@@ -1,7 +1,7 @@
-import type { Constructor } from '@blocksuite/global/utils';
+import type { Constructor } from '@lumensuite/global/utils';
 import type { LitElement } from 'lit';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 type ValidatorFunction = (value: unknown) => boolean;
 
@@ -28,13 +28,13 @@ function validatePropTypes<T extends InstanceType<Constructor>>(
   for (const [propName, validator] of Object.entries(propTypes)) {
     const key = propName as keyof T;
     if (instance[key] === undefined) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DefaultRuntimeError,
         `Property ${propName} is required to ${instance.constructor.name}.`
       );
     }
     if (validator && !validator(instance[key])) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DefaultRuntimeError,
         `Property ${propName} is invalid to ${instance.constructor.name}.`
       );

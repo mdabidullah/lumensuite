@@ -1,4 +1,4 @@
-import type { EmbedYoutubeBlockUrlData, EmbedYoutubeModel } from '@blocksuite/affine-model';
+import type { EmbedYoutubeBlockUrlData, EmbedYoutubeModel } from '@lumensuite/affine-model';
 import type { LinkPreviewer } from '../_common/embed-block-helper/index.js';
 import type { EmbedYoutubeBlockComponent } from './embed-youtube-block.js';
 export declare function queryEmbedYoutubeData(embedYoutubeModel: EmbedYoutubeModel, linkPreviewer: LinkPreviewer, signal?: AbortSignal): Promise<Partial<EmbedYoutubeBlockUrlData>>;

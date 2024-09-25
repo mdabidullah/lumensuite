@@ -1,5 +1,5 @@
-import { assertExists } from '@blocksuite/global/utils';
-import { INLINE_ROOT_ATTR } from '@blocksuite/inline';
+import { assertExists } from '@lumensuite/global/utils';
+import { INLINE_ROOT_ATTR } from '@lumensuite/inline';
 import { FORMAT_BLOCK_SUPPORT_FLAVOURS } from './consts.js';
 // for block selection
 export const formatBlockCommand = (ctx, next) => {

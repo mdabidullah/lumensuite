@@ -1,5 +1,5 @@
-import { toGfxBlockComponent } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { toGfxBlockComponent } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

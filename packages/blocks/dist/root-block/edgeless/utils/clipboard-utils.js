@@ -1,4 +1,4 @@
-import { groupBy } from '@blocksuite/global/utils';
+import { groupBy } from '@lumensuite/global/utils';
 import { edgelessElementsBound } from './bound-utils.js';
 import { getSortedCloneElements, prepareCloneData } from './clone-utils.js';
 import { getElementsWithoutGroup } from './group.js';

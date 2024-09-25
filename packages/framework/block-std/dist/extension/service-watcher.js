@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { BlockServiceIdentifier, LifeCycleWatcherIdentifier, StdIdentifier, } from '../identifier.js';
 import { LifeCycleWatcher } from './lifecycle-watcher.js';
 const idMap = new Map();
@@ -16,7 +16,7 @@ export class BlockServiceWatcher extends LifeCycleWatcher {
     }
     static setup(di) {
         if (!this.flavour) {
-            throw new BlockSuiteError(ErrorCode.ValueNotExists, 'Flavour is not defined in the BlockServiceWatcher');
+            throw new LumenSuiteError(ErrorCode.ValueNotExists, 'Flavour is not defined in the BlockServiceWatcher');
         }
         const id = idMap.get(this.flavour) ?? 0;
         idMap.set(this.flavour, id + 1);

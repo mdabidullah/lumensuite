@@ -1,11 +1,11 @@
-/// <reference types="@blocksuite/global" />
-import '@blocksuite/affine-block-paragraph';
-import '@blocksuite/affine-block-list';
-import '@blocksuite/affine-block-surface';
-import '@blocksuite/affine-components/context-menu';
-import '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/toolbar';
-import { deserializeXYWH, Point } from '@blocksuite/global/utils';
+/// <reference types="@lumensuite/global" />
+import '@lumensuite/affine-block-paragraph';
+import '@lumensuite/affine-block-list';
+import '@lumensuite/affine-block-surface';
+import '@lumensuite/affine-components/context-menu';
+import '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/toolbar';
+import { deserializeXYWH, Point } from '@lumensuite/global/utils';
 import { matchFlavours } from './_common/utils/index.js';
 import './code-block/highlight/affine-code-unit.js';
 import './database-block/index.js';
@@ -51,22 +51,22 @@ export * from './root-block/index.js';
 export * from './schemas.js';
 export { markdownToMindmap, MiniMindmapPreview, } from './surface-block/mini-mindmap/mindmap-preview.js';
 export * from './surface-ref-block/index.js';
-export * from '@blocksuite/affine-block-list';
-export * from '@blocksuite/affine-block-paragraph';
-export * from '@blocksuite/affine-block-surface';
-export {} from '@blocksuite/affine-components/context-menu';
-export { HoverController, whenHover, } from '@blocksuite/affine-components/hover';
-export { ArrowDownSmallIcon, CloseIcon, DocIcon, DualLinkIcon16, LinkedDocIcon, PlusIcon, TagsIcon, } from '@blocksuite/affine-components/icons';
-export * from '@blocksuite/affine-components/icons';
-export { isPeekable, peek, Peekable, PeekableController, } from '@blocksuite/affine-components/peek';
-export { createLitPortal, createSimplePortal, } from '@blocksuite/affine-components/portal';
-export { AffineReference, InlineManager, ReferenceNodeConfig, RichText, } from '@blocksuite/affine-components/rich-text';
-export { toast } from '@blocksuite/affine-components/toast';
-export { groupsToActions, renderActions, renderGroups, renderToolbarSeparator, Tooltip, } from '@blocksuite/affine-components/toolbar';
-export * from '@blocksuite/affine-model';
-export * from '@blocksuite/affine-shared/services';
-export { ColorVariables, FontFamilyVariables, SizeVariables, StyleVariables, ThemeObserver, } from '@blocksuite/affine-shared/theme';
-export { createButtonPopper, createDefaultDoc, findNoteBlockModel, isInsideEdgelessEditor, isInsidePageEditor, matchFlavours, on, once, openFileOrFiles, printToPdf, } from '@blocksuite/affine-shared/utils';
+export * from '@lumensuite/affine-block-list';
+export * from '@lumensuite/affine-block-paragraph';
+export * from '@lumensuite/affine-block-surface';
+export {} from '@lumensuite/affine-components/context-menu';
+export { HoverController, whenHover, } from '@lumensuite/affine-components/hover';
+export { ArrowDownSmallIcon, CloseIcon, DocIcon, DualLinkIcon16, LinkedDocIcon, PlusIcon, TagsIcon, } from '@lumensuite/affine-components/icons';
+export * from '@lumensuite/affine-components/icons';
+export { isPeekable, peek, Peekable, PeekableController, } from '@lumensuite/affine-components/peek';
+export { createLitPortal, createSimplePortal, } from '@lumensuite/affine-components/portal';
+export { AffineReference, InlineManager, ReferenceNodeConfig, RichText, } from '@lumensuite/affine-components/rich-text';
+export { toast } from '@lumensuite/affine-components/toast';
+export { groupsToActions, renderActions, renderGroups, renderToolbarSeparator, Tooltip, } from '@lumensuite/affine-components/toolbar';
+export * from '@lumensuite/affine-model';
+export * from '@lumensuite/affine-shared/services';
+export { ColorVariables, FontFamilyVariables, SizeVariables, StyleVariables, ThemeObserver, } from '@lumensuite/affine-shared/theme';
+export { createButtonPopper, createDefaultDoc, findNoteBlockModel, isInsideEdgelessEditor, isInsidePageEditor, matchFlavours, on, once, openFileOrFiles, printToPdf, } from '@lumensuite/affine-shared/utils';
 export const BlocksUtils = {
     splitElements,
     matchFlavours,
@@ -86,7 +86,7 @@ const env = typeof globalThis !== 'undefined'
 const importIdentifier = '__ $BLOCKSUITE_BLOCKS$ __';
 if (env[importIdentifier] === true) {
     // https://github.com/yjs/yjs/issues/438
-    console.error('@blocksuite/blocks was already imported. This breaks constructor checks and will lead to issues!');
+    console.error('@lumensuite/blocks was already imported. This breaks constructor checks and will lead to issues!');
 }
 env[importIdentifier] = true;
 //# sourceMappingURL=index.js.map

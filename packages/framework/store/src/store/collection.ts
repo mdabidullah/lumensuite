@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { type Logger, NoopLogger, Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { type Logger, NoopLogger, Slot } from '@lumensuite/global/utils';
 import {
   AwarenessEngine,
   type AwarenessSource,
@@ -9,7 +9,7 @@ import {
   type DocSource,
   MemoryBlobSource,
   NoopDocSource,
-} from '@blocksuite/sync';
+} from '@lumensuite/sync';
 import clonedeep from 'lodash.clonedeep';
 import merge from 'lodash.merge';
 import { Awareness } from 'y-protocols/awareness.js';
@@ -22,7 +22,7 @@ import type { IdGeneratorType } from './id.js';
 
 import {
   AwarenessStore,
-  BlockSuiteDoc,
+  LumenSuiteDoc,
   type RawAwarenessState,
 } from '../yjs/index.js';
 import { DocCollectionAddonType, test } from './addon/index.js';
@@ -34,7 +34,7 @@ export type DocCollectionOptions = {
   schema: Schema;
   id?: string;
   idGenerator?: IdGeneratorType | IdGenerator;
-  defaultFlags?: Partial<BlockSuiteFlags>;
+  defaultFlags?: Partial<LumenSuiteFlags>;
   logger?: Logger;
   docSources?: {
     main: DocSource;
@@ -61,7 +61,7 @@ const FLAGS_PRESET = {
   enable_color_picker: false,
   enable_mind_map_import: false,
   readonly: {},
-} satisfies BlockSuiteFlags;
+} satisfies LumenSuiteFlags;
 
 export interface StackItem {
   meta: Map<'cursor-location' | 'selection-state', unknown>;
@@ -81,7 +81,7 @@ export class DocCollection extends DocCollectionAddonType {
 
   readonly blockCollections = new Map<string, BlockCollection>();
 
-  readonly doc: BlockSuiteDoc;
+  readonly doc: LumenSuiteDoc;
 
   readonly docSync: DocEngine;
 
@@ -138,7 +138,7 @@ export class DocCollection extends DocCollectionAddonType {
     this._schema = schema;
 
     this.id = id || '';
-    this.doc = new BlockSuiteDoc({ guid: id });
+    this.doc = new LumenSuiteDoc({ guid: id });
     this.awarenessStore = new AwarenessStore(
       new Awareness<RawAwarenessState>(this.doc),
       merge(clonedeep(FLAGS_PRESET), defaultFlags)
@@ -210,7 +210,7 @@ export class DocCollection extends DocCollectionAddonType {
   createDoc(options: { id?: string; query?: Query } = {}) {
     const { id: docId = this.idGenerator(), query } = options;
     if (this._hasDoc(docId)) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         'doc already exists'
       );
@@ -249,7 +249,7 @@ export class DocCollection extends DocCollectionAddonType {
   removeDoc(docId: string) {
     const docMeta = this.meta.getDocMeta(docId);
     if (!docMeta) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         `doc meta not found: ${docId}`
       );

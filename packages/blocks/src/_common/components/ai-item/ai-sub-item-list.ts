@@ -1,10 +1,10 @@
-import { EnterIcon } from '@blocksuite/affine-components/icons';
+import { EnterIcon } from '@lumensuite/affine-components/icons';
 import {
   EditorHost,
   PropTypes,
   requiredProperties,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

@@ -1,6 +1,6 @@
-import { SurfaceBlockModel as BaseSurfaceModel } from '@blocksuite/block-std/gfx';
-import { DisposableGroup } from '@blocksuite/global/utils';
-import { Boxed, defineBlockSchema, DocCollection, Text, } from '@blocksuite/store';
+import { SurfaceBlockModel as BaseSurfaceModel } from '@lumensuite/block-std/gfx';
+import { DisposableGroup } from '@lumensuite/global/utils';
+import { Boxed, defineBlockSchema, DocCollection, Text, } from '@lumensuite/store';
 import { elementsCtorMap } from './element-model/index.js';
 import { connectorMiddleware } from './middlewares/connector.js';
 import { groupRelationMiddleware } from './middlewares/group.js';

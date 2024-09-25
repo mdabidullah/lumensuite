@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { DefaultInlineManagerExtension, } from '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/rich-text';
-import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT, NOTE_SELECTOR, } from '@blocksuite/affine-shared/consts';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { getInlineRangeProvider } from '@blocksuite/block-std';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { DefaultInlineManagerExtension, } from '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/rich-text';
+import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT, NOTE_SELECTOR, } from '@lumensuite/affine-shared/consts';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { getInlineRangeProvider } from '@lumensuite/block-std';
 import { effect, signal } from '@lit-labs/preact-signals';
 import { html, nothing } from 'lit';
 import { customElement, query } from 'lit/decorators.js';

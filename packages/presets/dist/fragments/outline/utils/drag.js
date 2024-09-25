@@ -1,4 +1,4 @@
-import { on, once } from '@blocksuite/blocks';
+import { on, once } from '@lumensuite/blocks';
 /**
  * start drag notes
  * @param notes notes to drag

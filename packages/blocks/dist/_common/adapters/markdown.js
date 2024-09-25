@@ -1,7 +1,7 @@
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { getFilenameFromContentDisposition } from '@blocksuite/affine-shared/utils';
-import { assertExists, sha } from '@blocksuite/global/utils';
-import { ASTWalker, BaseAdapter, BlockSnapshotSchema, getAssetName, nanoid, } from '@blocksuite/store';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { getFilenameFromContentDisposition } from '@lumensuite/affine-shared/utils';
+import { assertExists, sha } from '@lumensuite/global/utils';
+import { ASTWalker, BaseAdapter, BlockSnapshotSchema, getAssetName, nanoid, } from '@lumensuite/store';
 import { format } from 'date-fns/format';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
@@ -27,7 +27,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             props: {
                                 type: 'text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: [
                                         {
                                             insert: o.node.value,
@@ -49,7 +49,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             props: {
                                 language: o.node.lang ?? 'Plain Text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: [
                                         {
                                             insert: o.node.value,
@@ -71,7 +71,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             props: {
                                 type: 'text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._mdastToDelta(o.node),
                                 },
                             },
@@ -89,7 +89,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             props: {
                                 type: `h${o.node.depth}`,
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._mdastToDelta(o.node),
                                 },
                             },
@@ -107,7 +107,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             props: {
                                 type: 'quote',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._mdastToDelta(o.node),
                                 },
                             },
@@ -133,7 +133,7 @@ export class MarkdownAdapter extends BaseAdapter {
                                         ? 'numbered'
                                         : 'bulleted',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: o.node.children[0] &&
                                         o.node.children[0].type === 'paragraph'
                                         ? this._mdastToDelta(o.node.children[0])
@@ -262,7 +262,7 @@ export class MarkdownAdapter extends BaseAdapter {
                                     },
                                 ],
                                 title: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: [],
                                 },
                                 cells,
@@ -282,7 +282,7 @@ export class MarkdownAdapter extends BaseAdapter {
                             flavour: 'affine:paragraph',
                             props: {
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._mdastToDelta(o.node.children[0]),
                                 },
                                 type: 'text',
@@ -861,7 +861,7 @@ export class MarkdownAdapter extends BaseAdapter {
                 flavour: 'affine:page',
                 props: {
                     title: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: [
                             {
                                 insert: 'Untitled',

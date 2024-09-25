@@ -1,5 +1,5 @@
-import { EMBED_BLOCK_FLAVOUR_LIST } from '@blocksuite/affine-shared/consts';
-import { getNextContentBlock, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { EMBED_BLOCK_FLAVOUR_LIST } from '@lumensuite/affine-shared/consts';
+import { getNextContentBlock, matchFlavours, } from '@lumensuite/affine-shared/utils';
 export function forwardDelete(std) {
     const { doc, host } = std;
     const text = std.selection.find('text');

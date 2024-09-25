@@ -1,8 +1,8 @@
-import type { EditorHost, SurfaceSelection } from '@blocksuite/block-std';
-import type { Slot } from '@blocksuite/global/utils';
-import { BlockComponent } from '@blocksuite/block-std';
-import { type Viewport } from '@blocksuite/block-std/gfx';
-import { Bound } from '@blocksuite/global/utils';
+import type { EditorHost, SurfaceSelection } from '@lumensuite/block-std';
+import type { Slot } from '@lumensuite/global/utils';
+import { BlockComponent } from '@lumensuite/block-std';
+import { type Viewport } from '@lumensuite/block-std/gfx';
+import { Bound } from '@lumensuite/global/utils';
 import type { Overlay } from './renderer/canvas-renderer.js';
 import type { ElementRenderer } from './renderer/elements/index.js';
 import type { SurfaceBlockModel } from './surface-model.js';

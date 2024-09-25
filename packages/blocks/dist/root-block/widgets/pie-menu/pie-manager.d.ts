@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/store';
+import { Slot } from '@lumensuite/store';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import type { PieMenuId } from '../../types.js';
 import type { PieMenuSchema } from './base.js';

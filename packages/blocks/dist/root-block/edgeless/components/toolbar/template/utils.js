@@ -1,4 +1,4 @@
-import { on } from '@blocksuite/affine-shared/utils';
+import { on } from '@lumensuite/affine-shared/utils';
 export function onClickOutside(target, fn) {
     return on(document, 'click', (evt) => {
         if (target.contains(evt.target))

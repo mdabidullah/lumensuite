@@ -1,15 +1,15 @@
-import type { BlockComponent, Command } from '@blocksuite/block-std';
+import type { BlockComponent, Command } from '@lumensuite/block-std';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
-function getNext(std: BlockSuite.Std, block: BlockComponent) {
+function getNext(std: LumenSuite.Std, block: BlockComponent) {
   const view = std.view;
   const next = std.doc.getNext(block.model);
   if (!next) return null;
   return view.getBlock(next.id);
 }
 
-function getNextBlock(std: BlockSuite.Std, path: string) {
+function getNextBlock(std: LumenSuite.Std, path: string) {
   const view = std.view;
   const focusBlock = view.getBlock(path);
   if (!focusBlock) return null;
@@ -51,7 +51,7 @@ export const getNextBlockCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       nextBlock?: BlockComponent;
     }

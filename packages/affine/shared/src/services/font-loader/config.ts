@@ -1,4 +1,4 @@
-import { FontFamily, FontStyle, FontWeight } from '@blocksuite/affine-model';
+import { FontFamily, FontStyle, FontWeight } from '@lumensuite/affine-model';
 
 export interface FontConfig {
   font: string;

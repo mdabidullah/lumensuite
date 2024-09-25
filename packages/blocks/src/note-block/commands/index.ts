@@ -1,4 +1,4 @@
-import type { BlockCommands, BlockComponent } from '@blocksuite/block-std';
+import type { BlockCommands, BlockComponent } from '@lumensuite/block-std';
 
 import {
   getBlockIndexCommand,
@@ -6,7 +6,7 @@ import {
   getNextBlockCommand,
   getPrevBlockCommand,
   getSelectedBlocksCommand,
-} from '@blocksuite/affine-shared/commands';
+} from '@lumensuite/affine-shared/commands';
 
 import { updateBlockType } from './block-type.js';
 import { dedentBlock } from './dedent-block.js';
@@ -41,7 +41,7 @@ export const commands: BlockCommands = {
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       focusBlock?: BlockComponent | null;
       anchorBlock?: BlockComponent | null;

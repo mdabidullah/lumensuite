@@ -1,11 +1,11 @@
-import type { BlockComponent, PointerEventState } from '@blocksuite/block-std';
+import type { BlockComponent, PointerEventState } from '@lumensuite/block-std';
 
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
 import {
   getClosestBlockComponentByElement,
   getModelByElement,
-} from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from '../root-block/index.js';
 

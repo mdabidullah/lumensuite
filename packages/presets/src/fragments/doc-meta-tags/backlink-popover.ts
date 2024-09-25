@@ -1,5 +1,5 @@
-import { WithDisposable } from '@blocksuite/block-std';
-import { DualLinkIcon16, scrollbarStyle } from '@blocksuite/blocks';
+import { WithDisposable } from '@lumensuite/block-std';
+import { DualLinkIcon16, scrollbarStyle } from '@lumensuite/blocks';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, unsafeCSS } from 'lit';
 import { customElement, state } from 'lit/decorators.js';

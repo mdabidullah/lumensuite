@@ -1,12 +1,12 @@
-import type { ImageSelection } from '@blocksuite/affine-shared/selection';
+import type { ImageSelection } from '@lumensuite/affine-shared/selection';
 import type {
   BlockSelection,
   Command,
   TextSelection,
-} from '@blocksuite/block-std';
-import type { RoleType } from '@blocksuite/store';
+} from '@lumensuite/block-std';
+import type { RoleType } from '@lumensuite/store';
 
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 
 export const getSelectedBlocksCommand: Command<
   'currentTextSelection' | 'currentBlockSelections' | 'currentImageSelections',
@@ -16,7 +16,7 @@ export const getSelectedBlocksCommand: Command<
     blockSelections?: BlockSelection[];
     imageSelections?: ImageSelection[];
     filter?: (el: BlockComponent) => boolean;
-    types?: Extract<BlockSuite.SelectionType, 'block' | 'text' | 'image'>[];
+    types?: Extract<LumenSuite.SelectionType, 'block' | 'text' | 'image'>[];
     roles?: RoleType[];
     mode?: 'all' | 'flat' | 'highest';
   }
@@ -148,7 +148,7 @@ export const getSelectedBlocksCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       selectedBlocks?: BlockComponent[];
     }

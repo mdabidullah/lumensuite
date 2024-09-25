@@ -14,7 +14,7 @@ import {
   NumberedListIcon,
   QuoteIcon,
   TextIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 
 import type { NoteChildrenFlavour } from '../../../../../_common/utils/index.js';
 

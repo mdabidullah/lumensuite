@@ -1,5 +1,5 @@
-import type { ShapeElementModel, TextAlign, TextVerticalAlign } from '@blocksuite/affine-model';
-import type { Bound } from '@blocksuite/global/utils';
+import type { ShapeElementModel, TextAlign, TextVerticalAlign } from '@lumensuite/affine-model';
+import type { Bound } from '@lumensuite/global/utils';
 import type { CanvasRenderer } from '../../canvas-renderer.js';
 import { type TextDelta } from '../text/utils.js';
 export type Colors = {

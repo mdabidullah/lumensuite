@@ -1,10 +1,10 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { UserInfo } from '@blocksuite/store';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { UserInfo } from '@lumensuite/store';
 
-import { RemoteCursor } from '@blocksuite/affine-components/icons';
-import { requestThrottledConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists, pickValues } from '@blocksuite/global/utils';
+import { RemoteCursor } from '@lumensuite/affine-components/icons';
+import { requestThrottledConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists, pickValues } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
@@ -121,7 +121,7 @@ export class EdgelessRemoteSelectionWidget extends WidgetComponent<
 
         const elements = selection.elements
           .map(id => block.service.getElementById(id))
-          .filter(element => element) as BlockSuite.EdgelessModel[];
+          .filter(element => element) as LumenSuite.EdgelessModel[];
         const rect = getSelectedRect(elements);
 
         if (rect.width === 0 || rect.height === 0) return;

@@ -1,10 +1,10 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 
 import {
   type BlockComponent,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

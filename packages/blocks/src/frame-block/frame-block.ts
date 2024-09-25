@@ -1,8 +1,9 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
 
-import { ColorScheme, FrameBlockModel } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { consume } from '@lit/context';
+import { ColorScheme, FrameBlockModel } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   docContext,
   GfxBlockComponent,
@@ -11,10 +12,9 @@ import {
   SignalWatcher,
   stdContext,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
-import { Bound, type SerializedXYWH } from '@blocksuite/global/utils';
-import { consume } from '@lit/context';
+} from '@lumensuite/block-std';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
+import { Bound, type SerializedXYWH } from '@lumensuite/global/utils';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html, nothing, unsafeCSS } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

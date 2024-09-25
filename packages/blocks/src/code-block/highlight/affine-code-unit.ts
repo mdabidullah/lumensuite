@@ -1,8 +1,8 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
 import type { ThemedToken } from 'shiki';
 
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { type DeltaInsert, ZERO_WIDTH_SPACE } from '@blocksuite/inline';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { type DeltaInsert, ZERO_WIDTH_SPACE } from '@lumensuite/inline';
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

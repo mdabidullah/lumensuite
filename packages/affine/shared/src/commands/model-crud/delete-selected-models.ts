@@ -1,6 +1,6 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 export const deleteSelectedModelsCommand: Command<'selectedModels'> = (
   ctx,
@@ -20,7 +20,7 @@ export const deleteSelectedModelsCommand: Command<'selectedModels'> = (
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       deleteSelectedModels: typeof deleteSelectedModelsCommand;
     }

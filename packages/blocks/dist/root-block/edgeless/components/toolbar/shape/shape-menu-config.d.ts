@@ -8,7 +8,7 @@ type Config = {
     disabled: boolean;
 };
 export declare const ShapeComponentConfig: Config[];
-export declare const ShapeComponentConfigMap: Record<import("@blocksuite/affine-model").ShapeName, Config>;
+export declare const ShapeComponentConfigMap: Record<import("@lumensuite/affine-model").ShapeName, Config>;
 export declare const SHAPE_COLOR_PREFIX = "--affine-palette-shape-";
 export declare const LINE_COLOR_PREFIX = "--affine-palette-line-";
 export {};

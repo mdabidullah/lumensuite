@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/block-std",
+  "name": "@lumensuite/block-std",
   "version": "0.17.5",
-  "description": "Std for blocksuite blocks",
+  "description": "Std for lumensuite blocks",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "build": "tsc",
     "test:unit": "nx vite:test --run",
@@ -15,9 +15,9 @@
   "author": "toeverything",
   "license": "MPL-2.0",
   "dependencies": {
-    "@blocksuite/global": "workspace:*",
-    "@blocksuite/inline": "workspace:*",
-    "@blocksuite/store": "workspace:*",
+    "@lumensuite/global": "workspace:*",
+    "@lumensuite/inline": "workspace:*",
+    "@lumensuite/store": "workspace:*",
     "@lit-labs/preact-signals": "catalog:",
     "@lit/context": "catalog:",
     "@types/hast": "^3.0.4",

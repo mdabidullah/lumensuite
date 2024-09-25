@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { DEFAULT_ROUGHNESS, FontFamily, FontStyle, FontWeight, StrokeStyle, TextAlign, TextVerticalAlign, } from '@blocksuite/affine-model';
-import { field, GfxPrimitiveElementModel, local, } from '@blocksuite/block-std/gfx';
-import { DocCollection } from '@blocksuite/store';
+import { DEFAULT_ROUGHNESS, FontFamily, FontStyle, FontWeight, StrokeStyle, TextAlign, TextVerticalAlign, } from '@lumensuite/affine-model';
+import { field, GfxPrimitiveElementModel, local, } from '@lumensuite/block-std/gfx';
+import { DocCollection } from '@lumensuite/store';
 import { LineColor, ShapeFillColor, ShapeStyle, ShapeTextFontSize, ShapeType, TextResizing, } from '../../consts/index.js';
 import { shapeMethods } from './api/index.js';
 export const SHAPE_TEXT_PADDING = 20;

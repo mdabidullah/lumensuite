@@ -1,5 +1,5 @@
-import type { DividerBlockModel } from '@blocksuite/affine-model';
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import type { DividerBlockModel } from '@lumensuite/affine-model';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 export declare class DividerBlockComponent extends CaptionedBlockComponent<DividerBlockModel> {
     static styles: import("lit").CSSResult;
     connectedCallback(): void;

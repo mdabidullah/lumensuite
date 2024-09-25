@@ -1,7 +1,7 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { BlockComponent } from '@blocksuite/block-std';
-import { type MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { BlockComponent } from '@lumensuite/block-std';
+import { type MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 import type { FormatBarContext } from './context.js';
 import '../../../_common/components/button.js';
@@ -17,13 +17,13 @@ export declare class AffineFormatBarWidget extends WidgetComponent {
     private get _selectionManager();
     get displayType(): "text" | "none" | "block" | "native";
     get nativeRange(): Range | null;
-    get selectedBlocks(): BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string>[];
+    get selectedBlocks(): BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string>[];
     private _calculatePlacement;
     private _listenFloatingElement;
     private _selectionEqual;
     private _shouldDisplay;
     addBlockTypeSwitch(config: {
-        flavour: BlockSuite.Flavour;
+        flavour: LumenSuite.Flavour;
         icon: ParagraphActionConfigItem['icon'];
         type?: string;
         name?: string;

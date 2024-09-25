@@ -1,4 +1,4 @@
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
 import { BLOCK_CHILDREN_CONTAINER_PADDING_LEFT } from '../../consts/index.js';
 import { clamp } from '../math.js';
 import { matchFlavours } from '../model/checker.js';
@@ -27,7 +27,7 @@ function isRootOrNoteOrSurface(element) {
     return matchFlavours(element.model, [
         'affine:page',
         'affine:note',
-        // @ts-ignore TODO: migrate surface model to @blocksuite/affine-model
+        // @ts-ignore TODO: migrate surface model to @lumensuite/affine-model
         'affine:surface',
     ]);
 }
@@ -202,8 +202,8 @@ export function getClosestBlockComponentByElement(element) {
  * Returns rect of the block element.
  *
  * Compatible with Safari!
- * https://github.com/toeverything/blocksuite/issues/902
- * https://github.com/toeverything/blocksuite/pull/1121
+ * https://github.com/toeverything/lumensuite/issues/902
+ * https://github.com/toeverything/lumensuite/pull/1121
  */
 export function getRectByBlockComponent(element) {
     if (isDatabase(element))

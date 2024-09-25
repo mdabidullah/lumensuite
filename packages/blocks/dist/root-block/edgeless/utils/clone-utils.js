@@ -1,7 +1,7 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { ConnectorElementModel, GroupElementModel, } from '@blocksuite/affine-model';
-import { isGfxContainerElm, } from '@blocksuite/block-std/gfx';
-import { Job } from '@blocksuite/store';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { ConnectorElementModel, GroupElementModel, } from '@lumensuite/affine-model';
+import { isGfxContainerElm, } from '@lumensuite/block-std/gfx';
+import { Job } from '@lumensuite/store';
 import { GfxBlockModel } from '../block-model.js';
 import { getAllDescendantElements, getTopElements } from './tree.js';
 /**

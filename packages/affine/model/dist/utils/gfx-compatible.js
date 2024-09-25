@@ -1,5 +1,5 @@
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { BlockModel } from '@blocksuite/store';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { BlockModel } from '@lumensuite/store';
 export function GfxCompatible(BlockModelSuperClass) {
     if (BlockModelSuperClass === BlockModel) {
         return GfxBlockElementModel;

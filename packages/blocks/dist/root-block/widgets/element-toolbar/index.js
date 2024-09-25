@@ -32,14 +32,14 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { ConnectorCWithArrowIcon } from '@blocksuite/affine-components/icons';
-import { cloneGroups, renderToolbarSeparator, } from '@blocksuite/affine-components/toolbar';
-import { ConnectorMode, GroupElementModel, ShapeElementModel, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { atLeastNMatches, groupBy, pickValues } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { ConnectorCWithArrowIcon } from '@lumensuite/affine-components/icons';
+import { cloneGroups, renderToolbarSeparator, } from '@lumensuite/affine-components/toolbar';
+import { ConnectorMode, GroupElementModel, ShapeElementModel, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { atLeastNMatches, groupBy, pickValues } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';

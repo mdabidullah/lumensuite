@@ -1,7 +1,7 @@
-import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@blocksuite/affine-shared/consts';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getLastNoteBlock } from '@blocksuite/affine-shared/utils';
-import { Bound, Vec } from '@blocksuite/global/utils';
+import { EMBED_CARD_HEIGHT, EMBED_CARD_WIDTH, } from '@lumensuite/affine-shared/consts';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getLastNoteBlock } from '@lumensuite/affine-shared/utils';
+import { Bound, Vec } from '@lumensuite/global/utils';
 import { getRootByEditorHost } from '../utils/query.js';
 function getParentModelBySelection(doc, mode, selected) {
     const currentMode = mode;

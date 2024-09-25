@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MoreIndicatorIcon } from '@blocksuite/affine-components/icons';
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, StrokeStyle, } from '@blocksuite/affine-model';
-import { EDGELESS_BLOCK_CHILD_PADDING } from '@blocksuite/affine-shared/consts';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { getClosestBlockComponentByPoint, handleNativeRangeAtPoint, matchFlavours, stopPropagation, } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, toGfxBlockComponent, WithDisposable, } from '@blocksuite/block-std';
-import { almostEqual, Bound, clamp, Point } from '@blocksuite/global/utils';
+import { MoreIndicatorIcon } from '@lumensuite/affine-components/icons';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, StrokeStyle, } from '@lumensuite/affine-model';
+import { EDGELESS_BLOCK_CHILD_PADDING } from '@lumensuite/affine-shared/consts';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { getClosestBlockComponentByPoint, handleNativeRangeAtPoint, matchFlavours, stopPropagation, } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, toGfxBlockComponent, WithDisposable, } from '@lumensuite/block-std';
+import { almostEqual, Bound, clamp, Point } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

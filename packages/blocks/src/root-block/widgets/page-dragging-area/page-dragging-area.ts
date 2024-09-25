@@ -1,12 +1,12 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
+import type { RootBlockModel } from '@lumensuite/affine-model';
 
 import {
   getScrollContainer,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, type PointerEventState } from '@blocksuite/block-std';
-import { BlockComponent, WidgetComponent } from '@blocksuite/block-std';
-import { assertInstanceOf } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, type PointerEventState } from '@lumensuite/block-std';
+import { BlockComponent, WidgetComponent } from '@lumensuite/block-std';
+import { assertInstanceOf } from '@lumensuite/global/utils';
 import { html, nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

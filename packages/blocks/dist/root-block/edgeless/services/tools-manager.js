@@ -1,6 +1,6 @@
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { IS_MAC } from '@blocksuite/global/env';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { IS_MAC } from '@lumensuite/global/env';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { isMiddleButtonPressed, isRightButtonPressed, } from '../../../_common/utils/index.js';
 import { CopilotSelectionController } from '../tools/copilot-tool.js';
 import { edgelessElementsBound } from '../utils/bound-utils.js';

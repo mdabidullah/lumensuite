@@ -1,5 +1,5 @@
-import { createPopup } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { createPopup } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

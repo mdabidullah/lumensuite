@@ -1,3 +1,3 @@
-# `@blocksuite/inline`
+# `@lumensuite/inline`
 
-Inline rich text editing component for BlockSuite. Checkout the docs at [blocksuite.io/inline](https://blocksuite.io/guide/inline.html).
+Inline rich text editing component for LumenSuite. Checkout the docs at [lumensuite.io/inline](https://lumensuite.io/guide/inline.html).

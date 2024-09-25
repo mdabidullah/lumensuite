@@ -1,5 +1,5 @@
-import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, DEFAULT_SHAPE_TEXT_COLOR, TextAlign, } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, DEFAULT_SHAPE_TEXT_COLOR, TextAlign, } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 import { deltaInsertsToChunks, getFontMetrics, getFontString, getLineWidth, isRTL, measureTextInDOM, wrapTextDeltas, } from '../text/utils.js';
 import { diamond } from './diamond.js';
 import { ellipse } from './ellipse.js';

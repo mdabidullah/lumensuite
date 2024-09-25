@@ -1,9 +1,3 @@
-import { popMenu } from '@blocksuite/affine-components/context-menu';
-import {
-  ShadowlessElement,
-  SignalWatcher,
-  WithDisposable,
-} from '@blocksuite/block-std';
 import {
   DeleteIcon,
   DuplicateIcon,
@@ -11,6 +5,12 @@ import {
   MoveRightIcon,
 } from '@blocksuite/icons/lit';
 import { computed } from '@lit-labs/preact-signals';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
+import {
+  ShadowlessElement,
+  SignalWatcher,
+  WithDisposable,
+} from '@lumensuite/block-std';
 import { css } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { GROUP_TITLE_FONT_SIZE, GROUP_TITLE_OFFSET, GROUP_TITLE_PADDING, } from '@blocksuite/affine-block-surface';
-import { RANGE_SYNC_EXCLUDE_ATTR, ShadowlessElement, WithDisposable, } from '@blocksuite/block-std';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { GROUP_TITLE_FONT_SIZE, GROUP_TITLE_OFFSET, GROUP_TITLE_PADDING, } from '@lumensuite/affine-block-surface';
+import { RANGE_SYNC_EXCLUDE_ATTR, ShadowlessElement, WithDisposable, } from '@lumensuite/block-std';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { html, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

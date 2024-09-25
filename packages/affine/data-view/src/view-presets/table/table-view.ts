@@ -1,10 +1,10 @@
 // related component
-import { popMenu } from '@blocksuite/affine-components/context-menu';
+import { AddCursorIcon } from '@blocksuite/icons/lit';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import {
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
-import { AddCursorIcon } from '@blocksuite/icons/lit';
+} from '@lumensuite/affine-shared/utils';
 import { css } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';

@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { createPopup, popMenu, } from '@blocksuite/affine-components/context-menu';
-import { rangeWrap } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { createPopup, popMenu, } from '@lumensuite/affine-components/context-menu';
+import { rangeWrap } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { CloseIcon, DeleteIcon, MoreHorizontalIcon, PlusIcon, } from '@blocksuite/icons/lit';
-import { nanoid } from '@blocksuite/store';
+import { nanoid } from '@lumensuite/store';
 import { autoPlacement, flip, offset } from '@floating-ui/dom';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

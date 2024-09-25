@@ -6,7 +6,7 @@ import '../../edgeless/components/panel/align-panel.js';
 import '../../edgeless/components/panel/font-family-panel.js';
 import '../../edgeless/components/panel/font-weight-and-style-panel.js';
 import '../../edgeless/components/panel/size-panel.js';
-declare const EdgelessChangeTextMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeTextMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeTextMenu extends EdgelessChangeTextMenu_base {
     static styles: import("lit").CSSResult;
     private _setFontFamily;
@@ -19,8 +19,8 @@ export declare class EdgelessChangeTextMenu extends EdgelessChangeTextMenu_base 
     get service(): import("../../index.js").EdgelessRootService;
     render(): Iterable<symbol | TemplateResult<1>>;
     accessor edgeless: EdgelessRootBlockComponent;
-    accessor elements: BlockSuite.EdgelessTextModelType[];
-    accessor elementType: BlockSuite.EdgelessTextModelKeyType;
+    accessor elements: LumenSuite.EdgelessTextModelType[];
+    accessor elementType: LumenSuite.EdgelessTextModelKeyType;
     accessor textColorButton: EdgelessColorPickerButton;
 }
 declare global {

@@ -1,8 +1,8 @@
-import type { UIEventStateContext } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
+import type { UIEventStateContext } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { WidgetComponent } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 

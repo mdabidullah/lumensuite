@@ -1,4 +1,4 @@
-import { BulletedListIcon, CheckBoxIcon, CodeBlockIcon, DividerIcon, Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon, Heading5Icon, Heading6Icon, NumberedListIcon, QuoteIcon, TextIcon, } from '@blocksuite/affine-components/icons';
+import { BulletedListIcon, CheckBoxIcon, CodeBlockIcon, DividerIcon, Heading1Icon, Heading2Icon, Heading3Icon, Heading4Icon, Heading5Icon, Heading6Icon, NumberedListIcon, QuoteIcon, TextIcon, } from '@lumensuite/affine-components/icons';
 export const BUTTON_GROUP_LENGTH = 10;
 const LIST_ITEMS = [
     {

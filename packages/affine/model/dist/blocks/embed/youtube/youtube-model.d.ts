@@ -15,7 +15,7 @@ export type EmbedYoutubeBlockProps = {
     caption: string | null;
 } & EmbedYoutubeBlockUrlData;
 declare const EmbedYoutubeModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<{
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<{
         style: (typeof EmbedYoutubeStyles)[number];
         url: string;
         caption: string | null;
@@ -24,7 +24,7 @@ declare const EmbedYoutubeModel_base: {
 export declare class EmbedYoutubeModel extends EmbedYoutubeModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-youtube': EmbedYoutubeModel;
         }

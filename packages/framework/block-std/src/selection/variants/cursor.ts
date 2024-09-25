@@ -45,7 +45,7 @@ export class CursorSelection extends BaseSelection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Selection {
       cursor: typeof CursorSelection;
     }

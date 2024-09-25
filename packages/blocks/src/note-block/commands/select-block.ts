@@ -1,4 +1,4 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
 export const selectBlock: Command<'focusBlock'> = (ctx, next) => {
   const { focusBlock, std } = ctx;
@@ -16,7 +16,7 @@ export const selectBlock: Command<'focusBlock'> = (ctx, next) => {
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       selectBlock: typeof selectBlock;
     }

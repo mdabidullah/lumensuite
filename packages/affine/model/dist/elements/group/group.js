@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { field, GfxGroupLikeElementModel, local, observe, } from '@blocksuite/block-std/gfx';
-import { Bound, keys, linePolygonIntersects, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { field, GfxGroupLikeElementModel, local, observe, } from '@lumensuite/block-std/gfx';
+import { Bound, keys, linePolygonIntersects, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 let GroupElementModel = (() => {
     let _classSuper = GfxGroupLikeElementModel;
     let _children_decorators;

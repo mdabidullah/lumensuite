@@ -1,5 +1,5 @@
-import { LinkIcon } from '@blocksuite/affine-components/icons';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
+import { LinkIcon } from '@lumensuite/affine-components/icons';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
 export const buildLinkDenseMenu = edgeless => ({
     type: 'action',
     name: 'Link',

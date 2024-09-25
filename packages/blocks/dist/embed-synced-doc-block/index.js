@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 import { EmbedSyncedDocBlockComponent } from './embed-synced-doc-block.js';
 noop(EmbedSyncedDocBlockComponent);
 export * from './embed-synced-doc-block.js';

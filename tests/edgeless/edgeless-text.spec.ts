@@ -1,6 +1,6 @@
 import type { EdgelessTextBlockComponent } from '@blocks/edgeless-text-block/edgeless-text-block.js';
 
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { expect, type Page } from '@playwright/test';
 
 import {
@@ -161,7 +161,7 @@ test.describe('edgeless text block', () => {
   });
 
   test('edgeless text width fixed when drag moving', async ({ page }) => {
-    // https://github.com/toeverything/blocksuite/pull/7486
+    // https://github.com/toeverything/lumensuite/pull/7486
 
     await setEdgelessTool(page, 'default');
     await page.mouse.dblclick(130, 140, {
@@ -211,7 +211,7 @@ test.describe('edgeless text block', () => {
   test('edgeless text should maintain selection when deleting across multiple lines', async ({
     page,
   }) => {
-    // https://github.com/toeverything/blocksuite/pull/7443
+    // https://github.com/toeverything/lumensuite/pull/7443
 
     await setEdgelessTool(page, 'default');
     await page.mouse.dblclick(130, 140, {
@@ -238,7 +238,7 @@ test.describe('edgeless text block', () => {
   test('edgeless text should not blur after pressing backspace', async ({
     page,
   }) => {
-    // https://github.com/toeverything/blocksuite/pull/7555
+    // https://github.com/toeverything/lumensuite/pull/7555
 
     await setEdgelessTool(page, 'default');
     await page.mouse.dblclick(130, 140, {

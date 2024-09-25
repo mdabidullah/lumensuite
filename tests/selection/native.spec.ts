@@ -757,7 +757,7 @@ test('drag to select tagged text, and input character', async ({ page }) => {
 test('Change title when first content is divider', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/1004',
+    description: 'https://github.com/toeverything/lumensuite/issues/1004',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);
@@ -866,7 +866,7 @@ test('the cursor should move to closest editor block when clicking outside conta
 }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/pull/570',
+    description: 'https://github.com/toeverything/lumensuite/pull/570',
   });
   // This test only works in playwright or touch device!
   test.fail();
@@ -1518,7 +1518,7 @@ test('press ArrowLeft in the start of first paragraph should not focus on title'
 test('should not scroll page when mouse is click down', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/5034',
+    description: 'https://github.com/toeverything/lumensuite/issues/5034',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);
@@ -1601,7 +1601,7 @@ test('scroll vertically when adding multiple blocks', async ({ page }) => {
 test('click to select divided', async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/4547',
+    description: 'https://github.com/toeverything/lumensuite/issues/4547',
   });
 
   await enterPlaygroundRoom(page);
@@ -1626,7 +1626,7 @@ test('auto-scroll when creating a new paragraph-block by pressing enter', async 
 }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/4547',
+    description: 'https://github.com/toeverything/lumensuite/issues/4547',
   });
 
   await enterPlaygroundRoom(page);

@@ -1,4 +1,4 @@
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { type SlashMenuActionItem, type SlashMenuContext, type SlashMenuGroupDivider, type SlashMenuItem, type SlashMenuItemGenerator, type SlashSubMenu } from './config.js';
 export { insertContent } from './utils.js';
 export type AffineSlashMenuContext = SlashMenuContext;

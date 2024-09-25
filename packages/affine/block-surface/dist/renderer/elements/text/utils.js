@@ -1,4 +1,4 @@
-import { getPointsFromBoundsWithRotation, rotatePoints, } from '@blocksuite/global/utils';
+import { getPointsFromBoundsWithRotation, rotatePoints, } from '@lumensuite/global/utils';
 import { getFontFacesByFontFamily, wrapFontFamily, } from '../../../utils/font.js';
 const getMeasureCtx = (function initMeasureContext() {
     let ctx = null;

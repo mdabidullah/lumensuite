@@ -1,6 +1,6 @@
-import type { AdvancedMenuItem, MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import type { CodeBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { AdvancedMenuItem, MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { CodeBlockComponent } from '../../../code-block/code-block.js';
 import './components/code-toolbar.js';
 import { CodeBlockToolbarContext } from './context.js';

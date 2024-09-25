@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { diffUpdate, encodeStateVectorFromUpdate, mergeUpdates } from 'yjs';
 
 import type { DocSource } from '../source.js';
@@ -41,7 +41,7 @@ export class BroadcastChannelDocSource implements DocSource {
 
   name = 'broadcast-channel';
 
-  constructor(readonly channelName: string = 'blocksuite:doc') {
+  constructor(readonly channelName: string = 'lumensuite:doc') {
     this.channel.addEventListener('message', this._onMessage);
 
     this.channel.postMessage({

@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 export declare class ImageResizeManager {
     private _activeComponent;
     private _dragMoveTarget;

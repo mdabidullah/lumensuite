@@ -1,7 +1,7 @@
-import type { GroupElementModel } from '@blocksuite/affine-model';
+import type { GroupElementModel } from '@lumensuite/affine-model';
 
-import { FontWeight } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { FontWeight } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 
 import {
   getFontString,

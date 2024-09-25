@@ -1,5 +1,5 @@
-import { BlockService } from '@blocksuite/block-std';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
+import { BlockService } from '@lumensuite/block-std';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
 import { SurfaceBlockSchema } from './surface-model.js';
 export class SurfaceBlockService extends BlockService {
     static { this.flavour = SurfaceBlockSchema.model.flavour; }

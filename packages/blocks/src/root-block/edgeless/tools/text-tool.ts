@@ -1,7 +1,7 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { noop } from '@blocksuite/global/utils';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { noop } from '@lumensuite/global/utils';
 
 import { addText } from '../utils/text.js';
 import { EdgelessToolController } from './edgeless-tool.js';
@@ -94,7 +94,7 @@ export class TextToolController extends EdgelessToolController<TextTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       text: TextToolController;
     }

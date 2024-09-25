@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 export const getSlots = () => {
     return {
         mounted: new Slot(),

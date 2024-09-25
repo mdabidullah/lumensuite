@@ -1,8 +1,8 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
 
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { Point } from '@blocksuite/global/utils';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { Point } from '@lumensuite/global/utils';
 import { baseTheme } from '@toeverything/theme';
 import { html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

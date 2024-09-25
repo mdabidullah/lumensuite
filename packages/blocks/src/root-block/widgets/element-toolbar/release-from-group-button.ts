@@ -1,6 +1,6 @@
-import { ReleaseFromGroupButtonIcon } from '@blocksuite/affine-components/icons';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
+import { ReleaseFromGroupButtonIcon } from '@lumensuite/affine-components/icons';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

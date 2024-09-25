@@ -1,11 +1,11 @@
-import type { FrameBlockModel, RichText } from '@blocksuite/blocks';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { FrameBlockModel, RichText } from '@lumensuite/blocks';
+import { ShadowlessElement } from '@lumensuite/block-std';
 export declare const AFFINE_FRAME_TITLE_EDITOR = "affine-frame-card-title-editor";
-declare const FrameCardTitleEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FrameCardTitleEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FrameCardTitleEditor extends FrameCardTitleEditor_base {
     static styles: import("lit").CSSResult;
     private _isComposing;
-    get inlineEditor(): import("@blocksuite/blocks").AffineInlineEditor | null;
+    get inlineEditor(): import("@lumensuite/blocks").AffineInlineEditor | null;
     private _unmount;
     firstUpdated(): void;
     getUpdateComplete(): Promise<boolean>;

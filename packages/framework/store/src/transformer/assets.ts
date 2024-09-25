@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 interface BlobCRUD {
   get: (key: string) => Promise<Blob | null> | Blob | null;
@@ -72,7 +72,7 @@ export class AssetsManager {
   async writeToBlob(blobId: string) {
     const blob = this._assetsMap.get(blobId);
     if (!blob) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         'Blob ${blobId} not found in assets manager'
       );

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import '@blocksuite/affine-components/caption';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { GfxBlockComponent } from '@blocksuite/block-std';
+import '@lumensuite/affine-components/caption';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { GfxBlockComponent } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

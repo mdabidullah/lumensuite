@@ -1,4 +1,4 @@
-import type { TextElementModel } from '@blocksuite/affine-model';
+import type { TextElementModel } from '@lumensuite/affine-model';
 
 import type { CanvasRenderer } from '../../canvas-renderer.js';
 

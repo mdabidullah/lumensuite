@@ -1,6 +1,6 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
-import { type AffineInlineEditor, insertLinkedNode } from '@blocksuite/affine-components/rich-text';
+import { type AffineInlineEditor, insertLinkedNode } from '@lumensuite/affine-components/rich-text';
 export type LinkedMenuItem = {
     key: string;
     name: string;

@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, SignalWatcher } from '@blocksuite/block-std';
+import { ShadowlessElement, SignalWatcher } from '@lumensuite/block-std';
 import { customElement, property } from 'lit/decorators.js';
 let AnyRender = (() => {
     let _classDecorators = [customElement('any-render')];

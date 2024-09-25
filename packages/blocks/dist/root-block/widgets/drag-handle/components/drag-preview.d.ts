@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { Point } from '@blocksuite/global/utils';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { Point } from '@lumensuite/global/utils';
 export declare class DragPreview extends ShadowlessElement {
     offset: Point;
     constructor(offset?: Point);

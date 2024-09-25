@@ -1,4 +1,4 @@
-import { defineBlockSchema } from '@blocksuite/store';
+import { defineBlockSchema } from '@lumensuite/store';
 export const SurfaceRefBlockSchema = defineBlockSchema({
     flavour: 'affine:surface-ref',
     props: () => ({

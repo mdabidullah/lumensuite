@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowRightIcon, EnterIcon } from '@blocksuite/affine-components/icons';
-import { EditorHost, PropTypes, requiredProperties, WithDisposable, } from '@blocksuite/block-std';
+import { ArrowRightIcon, EnterIcon } from '@lumensuite/affine-components/icons';
+import { EditorHost, PropTypes, requiredProperties, WithDisposable, } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import './ai-sub-item-list.js';

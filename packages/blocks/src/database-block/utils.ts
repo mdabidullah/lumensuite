@@ -4,14 +4,14 @@ import type {
   ColumnUpdater,
   DatabaseBlockModel,
   ViewBasicDataType,
-} from '@blocksuite/affine-model';
-import type { BlockModel } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { BlockModel } from '@lumensuite/store';
 
 import {
   arrayMove,
   insertPositionToIndex,
   type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 import {
   type ColumnMeta,
   type DataViewDataType,
@@ -20,11 +20,11 @@ import {
   getTagColor,
   groupByMatcher,
   type ViewMeta,
-} from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { columnModelPresets } from '@blocksuite/data-view/column-pure-presets';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { nanoid } from '@blocksuite/store';
+} from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { columnModelPresets } from '@lumensuite/data-view/column-pure-presets';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { nanoid } from '@lumensuite/store';
 
 import { databaseBlockAllColumnMap } from './columns/index.js';
 import { titlePureColumnConfig } from './columns/title/define.js';
@@ -81,7 +81,7 @@ const initMap: Record<
     };
     const column = allowList.sort((a, b) => getWeight(b) - getWeight(a))[0];
     if (!column) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DatabaseBlockError,
         'not implement yet'
       );

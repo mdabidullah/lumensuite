@@ -1,5 +1,5 @@
-import { Bound, getElementsBound } from '@blocksuite/global/utils';
-import { Slot } from '@blocksuite/store';
+import { Bound, getElementsBound } from '@lumensuite/global/utils';
+import { Slot } from '@lumensuite/store';
 import { AFFINE_AI_PANEL_WIDGET, } from '../../widgets/ai-panel/ai-panel.js';
 import { EdgelessToolController } from './edgeless-tool.js';
 export class CopilotSelectionController extends EdgelessToolController {

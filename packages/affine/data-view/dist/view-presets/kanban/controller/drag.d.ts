@@ -1,4 +1,4 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
 import type { ReactiveController } from 'lit';
 import type { DataViewKanban } from '../kanban-view.js';
 import { KanbanCard } from '../card.js';

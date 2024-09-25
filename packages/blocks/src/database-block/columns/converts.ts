@@ -1,12 +1,12 @@
-import { clamp } from '@blocksuite/affine-shared/utils';
+import { clamp } from '@lumensuite/affine-shared/utils';
 import {
   createColumnConvert,
   getTagColor,
   type SelectTag,
-} from '@blocksuite/data-view';
-import { presetColumnConverts } from '@blocksuite/data-view/column-presets';
-import { columnModelPresets } from '@blocksuite/data-view/column-pure-presets';
-import { nanoid, Text } from '@blocksuite/store';
+} from '@lumensuite/data-view';
+import { presetColumnConverts } from '@lumensuite/data-view/column-presets';
+import { columnModelPresets } from '@lumensuite/data-view/column-pure-presets';
+import { nanoid, Text } from '@lumensuite/store';
 
 import { richTextColumnModelConfig } from './rich-text/define.js';
 

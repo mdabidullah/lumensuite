@@ -1,4 +1,4 @@
-import { noop, Point } from '@blocksuite/global/utils';
+import { noop, Point } from '@lumensuite/global/utils';
 import { hasClassNameInList, } from '../../../_common/utils/index.js';
 import { EXCLUDING_MOUSE_OUT_CLASS_LIST, NOTE_INIT_HEIGHT, NOTE_MIN_WIDTH, } from '../utils/consts.js';
 import { addNote } from '../utils/note.js';

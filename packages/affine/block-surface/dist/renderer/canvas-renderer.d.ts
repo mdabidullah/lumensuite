@@ -1,7 +1,7 @@
-import type { GridManager, LayerManager, Viewport } from '@blocksuite/block-std/gfx';
-import type { IBound } from '@blocksuite/global/utils';
-import { type Color, ColorScheme } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/global/utils';
+import type { GridManager, LayerManager, Viewport } from '@lumensuite/block-std/gfx';
+import type { IBound } from '@lumensuite/global/utils';
+import { type Color, ColorScheme } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/global/utils';
 import type { ElementRenderer } from './elements/index.js';
 import { SurfaceElementModel } from '../element-model/base.js';
 import { RoughCanvas } from '../utils/rough/canvas.js';

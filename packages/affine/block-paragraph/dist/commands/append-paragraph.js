@@ -1,5 +1,5 @@
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { getLastNoteBlock } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { getLastNoteBlock } from '@lumensuite/affine-shared/utils';
 /**
  * Append a paragraph block at the end of the whole page.
  */

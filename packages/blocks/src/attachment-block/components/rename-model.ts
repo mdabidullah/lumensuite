@@ -1,8 +1,8 @@
-import type { AttachmentBlockModel } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { AttachmentBlockModel } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { ConfirmIcon } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
+import { ConfirmIcon } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
 import { html } from 'lit';
 import { createRef, ref } from 'lit/directives/ref.js';
 

@@ -4,11 +4,11 @@ import type {
   EmbedGithubModel,
   EmbedLoomModel,
   EmbedYoutubeModel,
-} from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
+} from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { toast } from '@blocksuite/affine-components/toast';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { toast } from '@lumensuite/affine-components/toast';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

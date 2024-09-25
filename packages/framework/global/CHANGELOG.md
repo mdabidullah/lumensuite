@@ -1,4 +1,4 @@
-# @blocksuite/global
+# @lumensuite/global
 
 ## 0.17.5
 
@@ -35,9 +35,9 @@
 
 ### Patch Changes
 
-- 21b5d47: BlockSuite 0.17.1
+- 21b5d47: LumenSuite 0.17.1
 
-  Add @blocksuite/data-view package.
+  Add @lumensuite/data-view package.
   Make font loader an extension.
   Frame improvement.
   Fix missing xywh when copy/paste mind map.
@@ -47,7 +47,7 @@
 
 ### Minor Changes
 
-- 767180a: BlockSuite 0.17.0
+- 767180a: LumenSuite 0.17.0
 
   ## New features:
 

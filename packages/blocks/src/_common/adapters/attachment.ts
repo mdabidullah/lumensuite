@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { sha } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { sha } from '@lumensuite/global/utils';
 import {
   type AssetsManager,
   BaseAdapter,
@@ -15,7 +15,7 @@ import {
   type SliceSnapshot,
   type ToBlockSnapshotPayload,
   type ToDocSnapshotPayload,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 export type Attachment = File[];
 
@@ -33,7 +33,7 @@ export class AttachmentAdapter extends BaseAdapter<Attachment> {
   override fromBlockSnapshot(
     _payload: FromBlockSnapshotPayload
   ): Promise<FromBlockSnapshotResult<Attachment>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'AttachmentAdapter.fromBlockSnapshot is not implemented.'
     );
@@ -42,7 +42,7 @@ export class AttachmentAdapter extends BaseAdapter<Attachment> {
   override fromDocSnapshot(
     _payload: FromDocSnapshotPayload
   ): Promise<FromDocSnapshotResult<Attachment>> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'AttachmentAdapter.fromDocSnapshot is not implemented.'
     );
@@ -72,7 +72,7 @@ export class AttachmentAdapter extends BaseAdapter<Attachment> {
   override toBlockSnapshot(
     _payload: ToBlockSnapshotPayload<Attachment>
   ): Promise<BlockSnapshot> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'AttachmentAdapter.toBlockSnapshot is not implemented.'
     );
@@ -81,7 +81,7 @@ export class AttachmentAdapter extends BaseAdapter<Attachment> {
   override toDocSnapshot(
     _payload: ToDocSnapshotPayload<Attachment>
   ): Promise<DocSnapshot> {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.TransformerNotImplementedError,
       'AttachmentAdapter.toDocSnapshot is not implemented.'
     );

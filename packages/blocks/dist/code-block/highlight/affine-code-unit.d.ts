@@ -1,9 +1,9 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { type DeltaInsert } from '@blocksuite/inline';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { type DeltaInsert } from '@lumensuite/inline';
 export declare class AffineCodeUnit extends ShadowlessElement {
     get codeBlock(): import("../code-block.js").CodeBlockComponent | null;
-    get vElement(): import("@blocksuite/inline").VElement<{
+    get vElement(): import("@lumensuite/inline").VElement<{
         bold?: true | null | undefined;
         italic?: true | null | undefined;
         underline?: true | null | undefined;

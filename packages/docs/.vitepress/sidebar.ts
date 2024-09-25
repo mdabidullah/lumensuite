@@ -83,15 +83,15 @@ export const guide: DefaultTheme.NavItem[] = [
     ],
   },
   {
-    text: 'Developing BlockSuite',
+    text: 'Developing LumenSuite',
     items: [
       {
         text: 'Building Packages',
-        link: '//github.com/toeverything/blocksuite/blob/master/BUILDING.md',
+        link: '//github.com/toeverything/lumensuite/blob/master/BUILDING.md',
       },
       {
         text: 'Running Tests',
-        link: '//github.com/toeverything/blocksuite/blob/master/BUILDING.md#testing',
+        link: '//github.com/toeverything/lumensuite/blob/master/BUILDING.md#testing',
       },
     ],
   },
@@ -101,17 +101,17 @@ export const reference: DefaultTheme.NavItem[] = [
   {
     text: 'API Reference',
     items: [
-      { text: '@blocksuite/store', link: 'api/@blocksuite/store/index' },
+      { text: '@lumensuite/store', link: 'api/@lumensuite/store/index' },
       {
-        text: '@blocksuite/block-std',
-        link: 'api/@blocksuite/block-std/index',
+        text: '@lumensuite/block-std',
+        link: 'api/@lumensuite/block-std/index',
       },
-      { text: '@blocksuite/inline', link: 'api/@blocksuite/inline/index' },
+      { text: '@lumensuite/inline', link: 'api/@lumensuite/inline/index' },
       {
-        text: '@blocksuite/presets',
-        link: 'api/@blocksuite/presets/index',
+        text: '@lumensuite/presets',
+        link: 'api/@lumensuite/presets/index',
       },
-      { text: '@blocksuite/blocks', link: 'api/@blocksuite/blocks/index' },
+      { text: '@lumensuite/blocks', link: 'api/@lumensuite/blocks/index' },
     ],
   },
 ];

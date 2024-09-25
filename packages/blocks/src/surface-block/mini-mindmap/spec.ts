@@ -1,13 +1,13 @@
-import type { BlockSchema } from '@blocksuite/store';
+import type { BlockSchema } from '@lumensuite/store';
 import type { z } from 'zod';
 
-import { SurfaceBlockSchema } from '@blocksuite/affine-block-surface';
-import { RootBlockSchema } from '@blocksuite/affine-model';
+import { SurfaceBlockSchema } from '@lumensuite/affine-block-surface';
+import { RootBlockSchema } from '@lumensuite/affine-model';
 import {
   BlockViewExtension,
   type ExtensionType,
   FlavourExtension,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 
 import { MindmapService } from './service.js';

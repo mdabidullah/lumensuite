@@ -1,12 +1,12 @@
-import type { Y } from '@blocksuite/store';
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { type AttributeRenderer, type DeltaInsert, type InlineRangeProvider, type KeyboardBindingContext, type VLine } from '@blocksuite/inline';
-import { Text } from '@blocksuite/store';
+import type { Y } from '@lumensuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { type AttributeRenderer, type DeltaInsert, type InlineRangeProvider, type KeyboardBindingContext, type VLine } from '@lumensuite/inline';
+import { Text } from '@lumensuite/store';
 import { type TemplateResult } from 'lit';
 import { z } from 'zod';
 import type { AffineTextAttributes } from './extension/index.js';
 import type { AffineInlineEditor } from './inline/index.js';
-declare const RichText_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const RichText_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class RichText extends RichText_base {
     #private;
     static styles: import("lit").CSSResult;

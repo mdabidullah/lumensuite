@@ -1,32 +1,32 @@
-import type { CodeBlockModel } from '@blocksuite/affine-model';
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { CodeBlockModel } from '@lumensuite/affine-model';
+import type { BlockComponent } from '@lumensuite/block-std';
 import type { ThemedToken } from 'shiki';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import {
-  focusTextModel,
-  type RichText,
-} from '@blocksuite/affine-components/rich-text';
-import '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
-import { BRACKET_PAIRS, NOTE_SELECTOR } from '@blocksuite/affine-shared/consts';
-import { getViewportElement } from '@blocksuite/affine-shared/utils';
-import { getInlineRangeProvider } from '@blocksuite/block-std';
-import { IS_MAC } from '@blocksuite/global/env';
-import { noop } from '@blocksuite/global/utils';
-import {
-  INLINE_ROOT_ATTR,
-  type InlineRangeProvider,
-  type InlineRootElement,
-  type VLine,
-} from '@blocksuite/inline';
-import { Slice } from '@blocksuite/store';
 import {
   computed,
   effect,
   type Signal,
   signal,
 } from '@lit-labs/preact-signals';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import {
+  focusTextModel,
+  type RichText,
+} from '@lumensuite/affine-components/rich-text';
+import '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
+import { BRACKET_PAIRS, NOTE_SELECTOR } from '@lumensuite/affine-shared/consts';
+import { getViewportElement } from '@lumensuite/affine-shared/utils';
+import { getInlineRangeProvider } from '@lumensuite/block-std';
+import { IS_MAC } from '@lumensuite/global/env';
+import { noop } from '@lumensuite/global/utils';
+import {
+  INLINE_ROOT_ATTR,
+  type InlineRangeProvider,
+  type InlineRootElement,
+  type VLine,
+} from '@lumensuite/inline';
+import { Slice } from '@lumensuite/store';
 import { html, nothing, type TemplateResult } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

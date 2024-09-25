@@ -1,4 +1,4 @@
-import { keys } from '@blocksuite/global/utils';
+import { keys } from '@lumensuite/global/utils';
 
 import type {
   Template,

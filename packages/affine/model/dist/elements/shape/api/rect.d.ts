@@ -1,6 +1,6 @@
-import type { PointTestOptions } from '@blocksuite/block-std/gfx';
-import type { IBound, IVec } from '@blocksuite/global/utils';
-import { Bound, PointLocation } from '@blocksuite/global/utils';
+import type { PointTestOptions } from '@lumensuite/block-std/gfx';
+import type { IBound, IVec } from '@lumensuite/global/utils';
+import { Bound, PointLocation } from '@lumensuite/global/utils';
 import type { ShapeElementModel } from '../shape.js';
 export declare const rect: {
     points({ x, y, w, h }: IBound): number[][];

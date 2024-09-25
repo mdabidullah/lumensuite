@@ -1,7 +1,7 @@
-import type { ColorScheme } from '@blocksuite/affine-model';
-import type { Constructor } from '@blocksuite/global/utils';
+import type { ColorScheme } from '@lumensuite/affine-model';
+import type { Constructor } from '@lumensuite/global/utils';
 import type { LitElement } from 'lit';
-import { type DisposableClass } from '@blocksuite/block-std';
+import { type DisposableClass } from '@lumensuite/block-std';
 import type { EdgelessRootBlockComponent } from '../../../edgeless-root-block.js';
 import type { EdgelessTool } from '../../../types.js';
 import type { EdgelessToolbar } from '../edgeless-toolbar.js';

@@ -1,4 +1,4 @@
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import { focusTextModel } from '../dom.js';
 import { beforeConvert } from './utils.js';
 export function toParagraph(std, model, type, prefix) {

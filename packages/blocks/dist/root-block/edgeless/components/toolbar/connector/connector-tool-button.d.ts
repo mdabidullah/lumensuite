@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import '../../buttons/toolbar-button.js';
 import './connector-menu.js';
-declare const EdgelessConnectorToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
+declare const EdgelessConnectorToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
 export declare class EdgelessConnectorToolButton extends EdgelessConnectorToolButton_base {
     static styles: import("lit").CSSResult;
     private _mode$;

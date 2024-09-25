@@ -1,4 +1,4 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 import type { OutlinePanelBody } from '../body/outline-panel-body.js';
 /**
  * start drag notes

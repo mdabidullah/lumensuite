@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 import { correctNumberedListsOrderToPrev } from './utils.js';
 
@@ -126,7 +126,7 @@ export const dedentListCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       dedentList: typeof dedentListCommand;
     }

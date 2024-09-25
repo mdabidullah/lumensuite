@@ -1,9 +1,9 @@
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { DeltaInsert } from '@lumensuite/inline';
 
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   type AssetsManager,
   ASTWalker,
@@ -21,7 +21,7 @@ import {
   type SliceSnapshot,
   type ToBlockSnapshotPayload,
   type ToDocSnapshotPayload,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 export type PlainText = string;
 
@@ -144,7 +144,7 @@ export class PlainTextAdapter extends BaseAdapter<PlainText> {
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: line,
@@ -174,7 +174,7 @@ export class PlainTextAdapter extends BaseAdapter<PlainText> {
         flavour: 'affine:page',
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: [
               {
                 insert: 'Untitled',
@@ -211,7 +211,7 @@ export class PlainTextAdapter extends BaseAdapter<PlainText> {
                 props: {
                   type: 'text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: [
                       {
                         insert: line,
@@ -254,7 +254,7 @@ export class PlainTextAdapter extends BaseAdapter<PlainText> {
           props: {
             type: 'text',
             text: {
-              '$blocksuite:internal:text$': true,
+              '$lumensuite:internal:text$': true,
               delta: [
                 {
                   insert: line,

@@ -1,5 +1,5 @@
-import { asyncSetInlineRange, focusTextModel, } from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { asyncSetInlineRange, focusTextModel, } from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import { onModelTextUpdated } from '../../root-block/utils/callback.js';
 import { mergeToCodeModel, transformModel, } from '../../root-block/utils/operations/model.js';
 export const updateBlockType = (ctx, next) => {

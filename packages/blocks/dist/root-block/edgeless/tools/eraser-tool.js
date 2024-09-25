@@ -1,5 +1,5 @@
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { Bound, noop } from '@blocksuite/global/utils';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { Bound, noop } from '@lumensuite/global/utils';
 import { deleteElements } from '../utils/crud.js';
 import { isTopLevelBlock } from '../utils/query.js';
 import { EdgelessToolController } from './edgeless-tool.js';

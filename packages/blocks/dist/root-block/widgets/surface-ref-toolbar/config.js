@@ -1,6 +1,6 @@
-import { CopyIcon, DeleteIcon, DownloadIcon, } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { downloadBlob } from '@blocksuite/affine-shared/utils';
+import { CopyIcon, DeleteIcon, DownloadIcon, } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { downloadBlob } from '@lumensuite/affine-shared/utils';
 import { edgelessToBlob, writeImageBlobToClipboard } from './utils.js';
 export const BUILT_IN_GROUPS = [
     {

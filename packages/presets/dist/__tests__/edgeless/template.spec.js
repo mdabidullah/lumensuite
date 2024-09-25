@@ -1,4 +1,4 @@
-import { EdgelessTemplatePanel, } from '@blocksuite/blocks';
+import { EdgelessTemplatePanel, } from '@lumensuite/blocks';
 import { beforeEach, expect, test } from 'vitest';
 import { setupEditor } from '../utils/setup.js';
 beforeEach(async () => {

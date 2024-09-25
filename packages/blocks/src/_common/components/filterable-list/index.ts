@@ -1,10 +1,10 @@
+import { DoneIcon, SearchIcon } from '@blocksuite/icons/lit';
+import { autoPlacement, offset, type Placement, size } from '@floating-ui/dom';
 import {
   type AdvancedPortalOptions,
   createLitPortal,
-} from '@blocksuite/affine-components/portal';
-import { WithDisposable } from '@blocksuite/block-std';
-import { DoneIcon, SearchIcon } from '@blocksuite/icons/lit';
-import { autoPlacement, offset, type Placement, size } from '@floating-ui/dom';
+} from '@lumensuite/affine-components/portal';
+import { WithDisposable } from '@lumensuite/block-std';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

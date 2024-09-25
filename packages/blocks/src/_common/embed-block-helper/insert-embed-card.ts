@@ -1,14 +1,14 @@
-import type { DocMode, EmbedCardStyle } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { DocMode, EmbedCardStyle } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
 import {
   EMBED_CARD_HEIGHT,
   EMBED_CARD_WIDTH,
-} from '@blocksuite/affine-shared/consts';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { getLastNoteBlock } from '@blocksuite/affine-shared/utils';
-import { Bound, Vec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/consts';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { getLastNoteBlock } from '@lumensuite/affine-shared/utils';
+import { Bound, Vec } from '@lumensuite/global/utils';
 
 import type { EdgelessRootBlockComponent } from '../../root-block/edgeless/index.js';
 

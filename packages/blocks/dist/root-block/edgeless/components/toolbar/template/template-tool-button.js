@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowDownSmallIcon } from '@blocksuite/affine-components/icons';
-import { once } from '@blocksuite/affine-shared/utils';
+import { ArrowDownSmallIcon } from '@lumensuite/affine-components/icons';
+import { once } from '@lumensuite/affine-shared/utils';
 import { arrow, autoUpdate, computePosition, offset, shift, } from '@floating-ui/dom';
 import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';

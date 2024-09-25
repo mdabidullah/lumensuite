@@ -1,7 +1,7 @@
-import type { XYWH } from '@blocksuite/global/utils';
-import { type Options, Overlay, type RoughCanvas } from '@blocksuite/affine-block-surface';
-import { type Color, type ShapeStyle } from '@blocksuite/affine-model';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import type { XYWH } from '@lumensuite/global/utils';
+import { type Options, Overlay, type RoughCanvas } from '@lumensuite/affine-block-surface';
+import { type Color, type ShapeStyle } from '@lumensuite/affine-model';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 export declare abstract class Shape {
     options: Options;

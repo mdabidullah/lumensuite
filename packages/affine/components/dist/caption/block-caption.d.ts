@@ -1,12 +1,12 @@
-import type { DocMode } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import type { DocMode } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 export interface BlockCaptionProps {
     caption: string | null | undefined;
 }
-declare const BlockCaptionEditor_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const BlockCaptionEditor_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class BlockCaptionEditor<Model extends BlockModel<BlockCaptionProps> = BlockModel<BlockCaptionProps>> extends BlockCaptionEditor_base {
     static styles: import("lit").CSSResult;
     private _focus;

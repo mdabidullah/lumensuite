@@ -1,10 +1,10 @@
-import type { Command, EditorHost } from '@blocksuite/block-std';
+import type { Command, EditorHost } from '@lumensuite/block-std';
 
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
 import {
   getNextContinuousNumberedLists,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 import { correctNumberedListsOrderToPrev } from './utils.js';
 
@@ -203,7 +203,7 @@ export const splitListCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       splitList: typeof splitListCommand;
     }

@@ -3,7 +3,7 @@ import type { NoteTool } from '../../../tools/note-tool.js';
 import type { EdgelessTool } from '../../../types.js';
 import '../../buttons/tool-icon-button.js';
 import './note-menu.js';
-declare const EdgelessNoteToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
+declare const EdgelessNoteToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
 export declare class EdgelessNoteToolButton extends EdgelessNoteToolButton_base {
     static styles: import("lit").CSSResult;
     private _noteMenu;

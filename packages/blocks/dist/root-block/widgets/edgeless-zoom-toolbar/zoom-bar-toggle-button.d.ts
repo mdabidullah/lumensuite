@@ -1,6 +1,6 @@
 import { LitElement, nothing } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const ZoomBarToggleButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const ZoomBarToggleButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class ZoomBarToggleButton extends ZoomBarToggleButton_base {
     static styles: import("lit").CSSResult;
     private _abortController;

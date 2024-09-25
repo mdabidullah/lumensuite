@@ -1,5 +1,5 @@
-import { EmbedSyncedDocBlockSchema } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
+import { EmbedSyncedDocBlockSchema } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
 export class EmbedSyncedDocBlockService extends BlockService {
     static { this.flavour = EmbedSyncedDocBlockSchema.model.flavour; }
 }

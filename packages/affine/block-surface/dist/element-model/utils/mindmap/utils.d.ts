@@ -1,4 +1,4 @@
-import { LayoutType, type ShapeElementModel } from '@blocksuite/affine-model';
+import { LayoutType, type ShapeElementModel } from '@lumensuite/affine-model';
 import type { MindmapElementModel } from '../../mindmap.js';
 import type { MindmapNode } from './layout.js';
 export declare function getHoveredArea(target: ShapeElementModel, position: [number, number], layoutDir: LayoutType): 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';

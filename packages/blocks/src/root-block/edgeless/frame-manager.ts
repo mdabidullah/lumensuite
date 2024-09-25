@@ -1,21 +1,21 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { FrameBlockModel, NoteBlockModel } from '@blocksuite/affine-model';
-import type { Doc } from '@blocksuite/store';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { FrameBlockModel, NoteBlockModel } from '@lumensuite/affine-model';
+import type { Doc } from '@lumensuite/store';
 
 import {
   Overlay,
   renderableInEdgeless,
-} from '@blocksuite/affine-block-surface';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { isGfxContainerElm } from '@blocksuite/block-std/gfx';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+} from '@lumensuite/affine-block-surface';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { isGfxContainerElm } from '@lumensuite/block-std/gfx';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import {
   Bound,
   deserializeXYWH,
   DisposableGroup,
   type IVec,
-} from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 import type { EdgelessRootService } from '../../index.js';
 
@@ -33,7 +33,7 @@ export class FrameOverlay extends Overlay {
 
   private _frame: FrameBlockModel | null = null;
 
-  private _innerElements: BlockSuite.EdgelessModel[] = [];
+  private _innerElements: LumenSuite.EdgelessModel[] = [];
 
   private get _frameManager() {
     return this._edgelessService.frame;
@@ -136,7 +136,7 @@ export class EdgelessFrameManager {
     const frameModel = this._rootService.getElementById(id);
 
     if (!frameModel || !isFrameBlock(frameModel)) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.GfxBlockElementError,
         'Frame model is not found'
       );
@@ -210,7 +210,7 @@ export class EdgelessFrameManager {
    */
   addElementsToFrame(
     frame: FrameBlockModel,
-    elements: BlockSuite.EdgelessModel[]
+    elements: LumenSuite.EdgelessModel[]
   ) {
     if (frame.childElementIds === undefined) {
       elements = [...elements, ...this.getChildElementsInFrame(frame)];
@@ -263,7 +263,7 @@ export class EdgelessFrameManager {
     return frameModel;
   }
 
-  createFrameOnElements(elements: BlockSuite.EdgelessModel[]) {
+  createFrameOnElements(elements: LumenSuite.EdgelessModel[]) {
     let bound = edgelessElementsBound(
       this._rootService.selection.selectedElements
     );
@@ -318,7 +318,7 @@ export class EdgelessFrameManager {
    * 1. The frame doesn't have `childElements`, return all elements in the frame bound but not owned by another frame.
    * 2. Return all child elements of the frame if `childElements` exists.
    */
-  getChildElementsInFrame(frame: FrameBlockModel): BlockSuite.EdgelessModel[] {
+  getChildElementsInFrame(frame: FrameBlockModel): LumenSuite.EdgelessModel[] {
     if (frame.childElementIds === undefined) {
       return this.getElementsInFrameBound(frame).filter(
         element => this.getParentFrame(element) !== null
@@ -338,7 +338,7 @@ export class EdgelessFrameManager {
    */
   getElementsInFrameBound(frame: FrameBlockModel, fullyContained = true) {
     const bound = Bound.deserialize(frame.xywh);
-    const elements: BlockSuite.EdgelessModel[] = this._rootService.gfx.grid
+    const elements: LumenSuite.EdgelessModel[] = this._rootService.gfx.grid
       .search(bound, fullyContained)
       .filter(element => element !== frame);
 
@@ -358,7 +358,7 @@ export class EdgelessFrameManager {
     return null;
   }
 
-  getParentFrame(element: BlockSuite.EdgelessModel) {
+  getParentFrame(element: LumenSuite.EdgelessModel) {
     return this.frames.find(frame => {
       return frame.childIds.includes(element.id);
     });
@@ -370,7 +370,7 @@ export class EdgelessFrameManager {
     });
   }
 
-  removeParentFrame(element: BlockSuite.EdgelessModel) {
+  removeParentFrame(element: LumenSuite.EdgelessModel) {
     const parentFrame = this.getParentFrame(element);
     if (parentFrame) {
       // eslint-disable-next-line unicorn/prefer-dom-node-remove
@@ -412,7 +412,7 @@ export function getBlocksInFrameBound(
       doc,
       model,
       fullyContained
-    ) as BlockSuite.EdgelessBlockModelType[]
+    ) as LumenSuite.EdgelessBlockModelType[]
   ).concat(
     surfaceModel[0].children.filter(ele => {
       if (ele.id === model.id) return;
@@ -424,6 +424,6 @@ export function getBlocksInFrameBound(
       }
 
       return false;
-    }) as BlockSuite.EdgelessBlockModelType[]
+    }) as LumenSuite.EdgelessBlockModelType[]
   );
 }

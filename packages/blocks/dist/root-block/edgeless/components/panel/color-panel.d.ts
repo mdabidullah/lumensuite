@@ -1,4 +1,4 @@
-import { LineColor } from '@blocksuite/affine-model';
+import { LineColor } from '@lumensuite/affine-model';
 import { LitElement } from 'lit';
 export declare class ColorEvent extends Event {
     detail: string;

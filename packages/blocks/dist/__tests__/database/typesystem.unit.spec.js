@@ -1,4 +1,4 @@
-import { tArray, tFunction, tTypeRef, tTypeVar, tUnion, tUnknown, typesystem, } from '@blocksuite/data-view';
+import { tArray, tFunction, tTypeRef, tTypeVar, tUnion, tUnknown, typesystem, } from '@lumensuite/data-view';
 import { describe, expect, test } from 'vitest';
 export const tString = typesystem.defineData({
     name: 'String',

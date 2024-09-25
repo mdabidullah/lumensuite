@@ -1,11 +1,11 @@
-import type { BlockStdScope, UIEventHandler } from '@blocksuite/block-std';
-import type { InlineEditor } from '@blocksuite/inline';
+import type { BlockStdScope, UIEventHandler } from '@lumensuite/block-std';
+import type { InlineEditor } from '@lumensuite/inline';
 
-import { BRACKET_PAIRS } from '@blocksuite/affine-shared/consts';
+import { BRACKET_PAIRS } from '@lumensuite/affine-shared/consts';
 import {
   createDefaultDoc,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-shared/utils';
 
 import { getInlineEditorByModel } from '../dom.js';
 import { insertLinkedNode } from '../linked-node.js';
@@ -71,7 +71,7 @@ export const bracketKeymap = (
             .slice(inlineRange.index, inlineRange.index + inlineRange.length);
           if (!isCodeBlock && pair.name === 'square bracket') {
             // [[Selected text]] should automatically be converted to a Linked doc with the title "Selected text".
-            // See https://github.com/toeverything/blocksuite/issues/2730
+            // See https://github.com/toeverything/lumensuite/issues/2730
             const success = tryConvertToLinkedDoc(std, inlineEditor);
             if (success) return true;
           }

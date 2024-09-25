@@ -1,9 +1,9 @@
 # Slot
 
-BlockSuite extensively uses `Slot` to manage events that are not DOM-native. You can think of it as a type-safe event emitter or a simplified RxJS [Observable](https://rxjs.dev/guide/observable):
+LumenSuite extensively uses `Slot` to manage events that are not DOM-native. You can think of it as a type-safe event emitter or a simplified RxJS [Observable](https://rxjs.dev/guide/observable):
 
 ```ts
-import { Slot } from '@blocksuite/store';
+import { Slot } from '@lumensuite/store';
 
 // Create a new slot
 const slot = new Slot<{ name: string }>();

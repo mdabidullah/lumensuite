@@ -1,8 +1,8 @@
-import type { ListProps, ListType } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { ListProps, ListType } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { matchFlavours, toNumberedList } from '@blocksuite/affine-shared/utils';
+import { matchFlavours, toNumberedList } from '@lumensuite/affine-shared/utils';
 
 import { focusTextModel } from '../dom.js';
 import { beforeConvert } from './utils.js';

@@ -1,5 +1,5 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import type { EditorHost } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import type { AffineEditorContainer } from '../../../editors/editor-container.js';
 export declare function scrollToBlock(editor: AffineEditorContainer, blockId: string): void;
 export declare function isBlockBeforeViewportCenter(blockId: string, editorHost: EditorHost): boolean;

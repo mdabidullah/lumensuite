@@ -1,6 +1,5 @@
 import type { CSSResult } from 'lit';
 
-import { assertExists } from '@blocksuite/global/utils';
 import {
   arrow,
   type ComputePositionReturn,
@@ -8,6 +7,7 @@ import {
   offset,
   type Placement,
 } from '@floating-ui/dom';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { type StyleInfo, styleMap } from 'lit/directives/style-map.js';

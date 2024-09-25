@@ -1,4 +1,4 @@
-import { createIdentifier } from '@blocksuite/global/di';
+import { createIdentifier } from '@lumensuite/global/di';
 
 export interface QuickSearchService {
   searchDoc: (options: {

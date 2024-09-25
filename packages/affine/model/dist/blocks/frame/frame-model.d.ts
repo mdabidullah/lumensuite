@@ -1,6 +1,6 @@
-import { type GfxBlockElementModel, type GfxContainerElement, gfxContainerSymbol, type GfxElementGeometry, type GfxModel, type PointTestOptions } from '@blocksuite/block-std/gfx';
-import { Bound, type SerializedXYWH } from '@blocksuite/global/utils';
-import { type Text } from '@blocksuite/store';
+import { type GfxBlockElementModel, type GfxContainerElement, gfxContainerSymbol, type GfxElementGeometry, type GfxModel, type PointTestOptions } from '@lumensuite/block-std/gfx';
+import { Bound, type SerializedXYWH } from '@lumensuite/global/utils';
+import { type Text } from '@lumensuite/store';
 import type { Color } from '../../consts/index.js';
 export type FrameBlockProps = {
     title: Text;
@@ -12,7 +12,7 @@ export type FrameBlockProps = {
 export declare const FrameBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<FrameBlockProps>;
+        props: import("@lumensuite/store").PropsGetter<FrameBlockProps>;
         flavour: "affine:frame";
     } & {
         version: number;
@@ -21,7 +21,7 @@ export declare const FrameBlockSchema: {
         children: never[];
     };
     onUpgrade?: ((data: FrameBlockProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<FrameBlockProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<FrameBlockProps>) | undefined;
 };
 declare const FrameBlockModel_base: {
     new (): GfxBlockElementModel<FrameBlockProps>;
@@ -30,15 +30,15 @@ export declare class FrameBlockModel extends FrameBlockModel_base implements Gfx
     [gfxContainerSymbol]: true;
     get childElements(): GfxModel[];
     get childIds(): string[];
-    addChild(element: BlockSuite.EdgelessModel | string): void;
+    addChild(element: LumenSuite.EdgelessModel | string): void;
     containsBound(bound: Bound): boolean;
     hasDescendant(element: string | GfxModel): boolean;
     includesPoint(x: number, y: number, _: PointTestOptions): boolean;
     intersectsBound(selectedBound: Bound): boolean;
-    removeChild(element: BlockSuite.EdgelessModel | string): void;
+    removeChild(element: LumenSuite.EdgelessModel | string): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:frame': FrameBlockModel;
         }

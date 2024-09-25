@@ -4,7 +4,7 @@ import type { EdgelessTool } from '../../../types.js';
 import { type NoteChildrenFlavour } from '../../../../../_common/utils/index.js';
 import '../../buttons/tool-icon-button.js';
 import '../common/slide-menu.js';
-declare const EdgelessNoteMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessNoteMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessNoteMenu extends EdgelessNoteMenu_base {
     static styles: import("lit").CSSResult;
     type: EdgelessTool['type'];

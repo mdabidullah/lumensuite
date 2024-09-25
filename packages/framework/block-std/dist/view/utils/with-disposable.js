@@ -1,4 +1,4 @@
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { DisposableGroup } from '@lumensuite/global/utils';
 /**
  * Mixin that adds a `_disposables: DisposableGroup` property to the class.
  *

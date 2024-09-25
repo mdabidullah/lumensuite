@@ -4,11 +4,11 @@ import type {
   Doc,
   JobMiddleware,
   Slice,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 import type { RootContentMap } from 'hast';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Job } from '@blocksuite/store';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Job } from '@lumensuite/store';
 import * as lz from 'lz-string';
 import rehypeParse from 'rehype-parse';
 import { unified } from 'unified';
@@ -217,7 +217,7 @@ export class Clipboard extends LifeCycleWatcher {
         index
       );
       if (!slice) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.TransformerError,
           'No snapshot found'
         );
@@ -295,16 +295,16 @@ export class Clipboard extends LifeCycleWatcher {
     const items = clipboardData.getData('text/html');
     const domParser = new DOMParser();
     const doc = domParser.parseFromString(items, 'text/html');
-    const dom = doc.querySelector<HTMLDivElement>('[data-blocksuite-snapshot]');
+    const dom = doc.querySelector<HTMLDivElement>('[data-lumensuite-snapshot]');
     if (!dom) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.TransformerError,
         'No snapshot found'
       );
     }
     const json = JSON.parse(
       lz.decompressFromEncodedURIComponent(
-        dom.dataset.blocksuiteSnapshot as string
+        dom.dataset.lumensuiteSnapshot as string
       )
     );
     return json;
@@ -332,7 +332,7 @@ export class Clipboard extends LifeCycleWatcher {
     delete items['image/png'];
 
     const snapshot = lz.compressToEncodedURIComponent(JSON.stringify(items));
-    const html = `<div data-blocksuite-snapshot=${snapshot}>${innerHTML}</div>`;
+    const html = `<div data-lumensuite-snapshot=${snapshot}>${innerHTML}</div>`;
     const htmlBlob = new Blob([html], {
       type: 'text/html',
     });

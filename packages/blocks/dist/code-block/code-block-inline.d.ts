@@ -1,7 +1,7 @@
-export declare const CodeBlockUnitSpecExtension: import("@blocksuite/block-std").ExtensionType & {
-    identifier: import("@blocksuite/global/di").ServiceIdentifier<import("@blocksuite/affine-components/rich-text").InlineSpecs<import("@blocksuite/affine-components/rich-text").AffineTextAttributes>>;
+export declare const CodeBlockUnitSpecExtension: import("@lumensuite/block-std").ExtensionType & {
+    identifier: import("@lumensuite/global/di").ServiceIdentifier<import("@lumensuite/affine-components/rich-text").InlineSpecs<import("@lumensuite/affine-components/rich-text").AffineTextAttributes>>;
 };
-export declare const CodeBlockInlineManagerExtension: import("@blocksuite/block-std").ExtensionType & {
-    identifier: import("@blocksuite/global/di").ServiceIdentifier<import("@blocksuite/affine-components/rich-text").InlineManager>;
+export declare const CodeBlockInlineManagerExtension: import("@lumensuite/block-std").ExtensionType & {
+    identifier: import("@lumensuite/global/di").ServiceIdentifier<import("@lumensuite/affine-components/rich-text").InlineManager>;
 };
 //# sourceMappingURL=code-block-inline.d.ts.map

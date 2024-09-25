@@ -1,32 +1,32 @@
-import type { BlockCaptionEditor } from '@blocksuite/affine-components/caption';
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
-import type { Doc } from '@blocksuite/store';
+import type { BlockCaptionEditor } from '@lumensuite/affine-components/caption';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
+import type { Doc } from '@lumensuite/store';
 
 import {
   type SurfaceBlockModel,
   SurfaceElementModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   EdgelessModeIcon,
   FrameIcon,
   MoreDeleteIcon,
-} from '@blocksuite/affine-components/icons';
-import { Peekable } from '@blocksuite/affine-components/peek';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { requestConnectedFrame } from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-components/icons';
+import { Peekable } from '@lumensuite/affine-components/peek';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { requestConnectedFrame } from '@lumensuite/affine-shared/utils';
 import {
   type BaseSelection,
   BlockStdScope,
   type EditorHost,
-} from '@blocksuite/block-std';
-import { BlockComponent, BlockServiceWatcher } from '@blocksuite/block-std';
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std';
+import { BlockComponent, BlockServiceWatcher } from '@lumensuite/block-std';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
 import {
   Bound,
   deserializeXYWH,
   type SerializedXYWH,
-} from '@blocksuite/global/utils';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { css, html, nothing, type TemplateResult } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';
@@ -232,7 +232,7 @@ export class SurfaceRefBlockComponent extends BlockComponent<
 
   private _previewSpec = SpecProvider.getInstance().getSpec('edgeless:preview');
 
-  private _referencedModel: BlockSuite.EdgelessModel | null = null;
+  private _referencedModel: LumenSuite.EdgelessModel | null = null;
 
   private _referenceXYWH: SerializedXYWH | null = null;
 
@@ -306,7 +306,7 @@ export class SurfaceRefBlockComponent extends BlockComponent<
     this._surfaceModel = surfaceModel;
 
     const findReferencedModel = (): [
-      BlockSuite.EdgelessModel | null,
+      LumenSuite.EdgelessModel | null,
       string,
     ] => {
       if (!this.model.reference) return [null, this.doc.id];
@@ -484,7 +484,7 @@ export class SurfaceRefBlockComponent extends BlockComponent<
   }
 
   private _renderMask(
-    referencedModel: BlockSuite.EdgelessModel,
+    referencedModel: LumenSuite.EdgelessModel,
     flavourOrType: string
   ) {
     const title = 'title' in referencedModel ? referencedModel.title : '';
@@ -503,7 +503,7 @@ export class SurfaceRefBlockComponent extends BlockComponent<
     `;
   }
 
-  private _renderRefContent(referencedModel: BlockSuite.EdgelessModel) {
+  private _renderRefContent(referencedModel: LumenSuite.EdgelessModel) {
     const [, , w, h] = deserializeXYWH(referencedModel.xywh);
     const flavourOrType =
       'flavour' in referencedModel

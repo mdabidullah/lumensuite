@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { getCurrentNativeRange, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists, debounce, DisposableGroup, throttle, } from '@blocksuite/global/utils';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { getCurrentNativeRange, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists, debounce, DisposableGroup, throttle, } from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 import { getPopperPosition } from '../../utils/position.js';
 import { defaultSlashMenuConfig, } from './config.js';
@@ -115,7 +115,7 @@ let AffineSlashMenuWidget = (() => {
                             rootComponent: rootComponent,
                         }),
                     };
-                    // Wait for dom update, see this case https://github.com/toeverything/blocksuite/issues/2611
+                    // Wait for dom update, see this case https://github.com/toeverything/lumensuite/issues/2611
                     requestAnimationFrame(() => {
                         const curRange = getCurrentNativeRange();
                         if (!curRange)

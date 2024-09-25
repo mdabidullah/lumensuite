@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { toast } from '@blocksuite/affine-components/toast';
-import { once } from '@blocksuite/affine-shared/utils';
-import { modelContext, stdContext } from '@blocksuite/block-std';
-import { ErrorCode } from '@blocksuite/global/exceptions';
+import { toast } from '@lumensuite/affine-components/toast';
+import { once } from '@lumensuite/affine-shared/utils';
+import { modelContext, stdContext } from '@lumensuite/block-std';
+import { ErrorCode } from '@lumensuite/global/exceptions';
 import { consume } from '@lit/context';
 import { computed, SignalWatcher } from '@lit-labs/preact-signals';
 import { css, html, LitElement, nothing } from 'lit';

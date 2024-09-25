@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 export const tUnion = (list) => ({
     type: 'union',
     title: 'union',
@@ -74,7 +74,7 @@ export class DataDefine {
     isSuperOf(subType) {
         const dataDefine = this.dataMap.get(subType.name);
         if (!dataDefine) {
-            throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'data config not found');
+            throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'data config not found');
         }
         return dataDefine.isSubOfByName(this.config.name);
     }
@@ -144,7 +144,7 @@ export class Typesystem {
         if (this.isDataType(sub)) {
             const dataDefine = this.dataMap.get(sub.name);
             if (!dataDefine) {
-                throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'data config not found');
+                throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'data config not found');
             }
             if (!this.isDataType(superType)) {
                 return false;
@@ -172,7 +172,7 @@ export class Typesystem {
                 case 'array':
                     return tArray(subst(type.ele));
                 case 'function':
-                    throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'not implement yet');
+                    throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'not implement yet');
             }
         };
         const result = tFunction({

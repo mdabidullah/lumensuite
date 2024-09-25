@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import './embed-edgeless-youtube-block.js';
 import { EmbedYoutubeBlockService } from './embed-youtube-service.js';

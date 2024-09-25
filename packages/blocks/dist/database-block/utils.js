@@ -1,9 +1,9 @@
-import { arrayMove, insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
-import { defaultGroupBy, getTagColor, groupByMatcher, } from '@blocksuite/data-view';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { columnModelPresets } from '@blocksuite/data-view/column-pure-presets';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { nanoid } from '@blocksuite/store';
+import { arrayMove, insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
+import { defaultGroupBy, getTagColor, groupByMatcher, } from '@lumensuite/data-view';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { columnModelPresets } from '@lumensuite/data-view/column-pure-presets';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { nanoid } from '@lumensuite/store';
 import { databaseBlockAllColumnMap } from './columns/index.js';
 import { titlePureColumnConfig } from './columns/title/define.js';
 const initMap = {
@@ -46,7 +46,7 @@ const initMap = {
         };
         const column = allowList.sort((a, b) => getWeight(b) - getWeight(a))[0];
         if (!column) {
-            throw new BlockSuiteError(ErrorCode.DatabaseBlockError, 'not implement yet');
+            throw new LumenSuiteError(ErrorCode.DatabaseBlockError, 'not implement yet');
         }
         return {
             id,

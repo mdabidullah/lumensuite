@@ -4,10 +4,10 @@ import type {
   DocCollection,
   DocSnapshot,
   JobMiddleware,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
-import { sha } from '@blocksuite/global/utils';
-import { extMimeMap, getAssetName, Job } from '@blocksuite/store';
+import { sha } from '@lumensuite/global/utils';
+import { extMimeMap, getAssetName, Job } from '@lumensuite/store';
 
 import { Unzip, Zip } from '../transformers/utils.js';
 import { replaceIdMiddleware, titleMiddleware } from './middlewares.js';

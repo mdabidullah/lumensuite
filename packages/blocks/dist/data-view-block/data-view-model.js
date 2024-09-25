@@ -1,5 +1,5 @@
-import { arrayMove, insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { arrayMove, insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 export class DataViewBlockModel extends BlockModel {
     constructor() {
         super();

@@ -1,5 +1,5 @@
-import { NoteDisplayMode } from '@blocksuite/blocks';
-import { clamp, DisposableGroup } from '@blocksuite/global/utils';
+import { NoteDisplayMode } from '@lumensuite/blocks';
+import { clamp, DisposableGroup } from '@lumensuite/global/utils';
 import { getDocTitleByEditorHost } from '../../doc-title/doc-title.js';
 import { getHeadingBlocksFromDoc } from './query.js';
 export function scrollToBlock(editor, blockId) {

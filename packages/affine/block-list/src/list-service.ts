@@ -1,9 +1,9 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 
-import { textKeymap } from '@blocksuite/affine-components/rich-text';
-import { ListBlockSchema } from '@blocksuite/affine-model';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { BlockService } from '@blocksuite/block-std';
+import { textKeymap } from '@lumensuite/affine-components/rich-text';
+import { ListBlockSchema } from '@lumensuite/affine-model';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { BlockService } from '@lumensuite/block-std';
 
 import { correctNumberedListsOrderToPrev } from './commands/utils.js';
 import { listKeymap } from './list-keymap.js';

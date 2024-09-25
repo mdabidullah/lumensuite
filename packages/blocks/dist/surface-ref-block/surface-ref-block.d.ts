@@ -1,7 +1,7 @@
-import type { BlockCaptionEditor } from '@blocksuite/affine-components/caption';
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
-import { type EditorHost } from '@blocksuite/block-std';
-import { BlockComponent } from '@blocksuite/block-std';
+import type { BlockCaptionEditor } from '@lumensuite/affine-components/caption';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
+import { type EditorHost } from '@lumensuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
 import type { SurfaceRefBlockService } from './surface-ref-service.js';
 export declare class SurfaceRefBlockComponent extends BlockComponent<SurfaceRefBlockModel, SurfaceRefBlockService> {
@@ -11,7 +11,7 @@ export declare class SurfaceRefBlockComponent extends BlockComponent<SurfaceRefB
     private _referencedModel;
     private _referenceXYWH;
     private get _shouldRender();
-    get referenceModel(): import("@blocksuite/block-std/gfx").GfxModel | null;
+    get referenceModel(): import("@lumensuite/block-std/gfx").GfxModel | null;
     private _deleteThis;
     private _focusBlock;
     private _initHotkey;

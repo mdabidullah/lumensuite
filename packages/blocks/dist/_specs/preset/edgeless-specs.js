@@ -1,5 +1,5 @@
-import { EdgelessSurfaceBlockSpec } from '@blocksuite/affine-block-surface';
-import { FontLoaderService } from '@blocksuite/affine-shared/services';
+import { EdgelessSurfaceBlockSpec } from '@lumensuite/affine-block-surface';
+import { FontLoaderService } from '@lumensuite/affine-shared/services';
 import { EdgelessTextBlockSpec } from '../../edgeless-text-block/edgeless-text-spec.js';
 import { FrameBlockSpec } from '../../frame-block/frame-spec.js';
 import { LatexBlockSpec } from '../../latex-block/latex-spec.js';

@@ -1,7 +1,7 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 import { LitElement } from 'lit';
 import type { CodeBlockToolbarContext } from '../context.js';
-declare const AffineCodeToolbar_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AffineCodeToolbar_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AffineCodeToolbar extends AffineCodeToolbar_base {
     static styles: import("lit").CSSResult;
     private _currentOpenMenu;

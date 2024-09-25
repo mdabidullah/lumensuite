@@ -1,2 +1,2 @@
-export { GfxBlockElementModel as GfxBlockModel } from '@blocksuite/block-std/gfx';
+export { GfxBlockElementModel as GfxBlockModel } from '@lumensuite/block-std/gfx';
 //# sourceMappingURL=block-model.d.ts.map

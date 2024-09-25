@@ -1,9 +1,9 @@
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { getFilenameFromContentDisposition } from '@blocksuite/affine-shared/utils';
-import { getTagColor } from '@blocksuite/data-view';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { isEqual, sha } from '@blocksuite/global/utils';
-import { ASTWalker, BaseAdapter, getAssetName, nanoid, } from '@blocksuite/store';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { getFilenameFromContentDisposition } from '@lumensuite/affine-shared/utils';
+import { getTagColor } from '@lumensuite/data-view';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { isEqual, sha } from '@lumensuite/global/utils';
+import { ASTWalker, BaseAdapter, getAssetName, nanoid, } from '@lumensuite/store';
 import { collapseWhiteSpace } from 'collapse-white-space';
 import rehypeParse from 'rehype-parse';
 import { unified } from 'unified';
@@ -227,7 +227,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                             props: {
                                 language: 'Plain Text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(codeText, {
                                         trim: false,
                                         pre: true,
@@ -250,7 +250,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                             props: {
                                 type: 'quote',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(hastGetTextChildrenOnlyAst(o.node), { pageMap }),
                                 },
                             },
@@ -274,7 +274,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                     ? 'quote'
                                     : 'text',
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(o.node, { pageMap }),
                                 },
                             },
@@ -296,7 +296,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                             props: {
                                 type: o.node.tagName,
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: this._hastToDelta(o.node, { pageMap }),
                                 },
                             },
@@ -334,7 +334,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                             props: {
                                 type: listType,
                                 text: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: listType !== 'toggle'
                                         ? this._hastToDelta(o.node, { pageMap })
                                         : this._hastToDelta(hastQuerySelector(o.node, 'summary') ?? o.node, { pageMap }),
@@ -377,7 +377,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                 props: {
                                     type: 'text',
                                     text: {
-                                        '$blocksuite:internal:text$': true,
+                                        '$lumensuite:internal:text$': true,
                                         delta: this._hastToDelta(o.node, { pageMap }),
                                     },
                                 },
@@ -397,7 +397,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                 props: {
                                     type: 'text',
                                     text: {
-                                        '$blocksuite:internal:text$': true,
+                                        '$lumensuite:internal:text$': true,
                                         delta: this._hastToDelta(o.node, { pageMap }),
                                     },
                                 },
@@ -610,7 +610,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                             flavour: 'affine:paragraph',
                                             props: {
                                                 text: {
-                                                    '$blocksuite:internal:text$': true,
+                                                    '$lumensuite:internal:text$': true,
                                                     delta: this._hastToDelta(child),
                                                 },
                                                 type: 'text',
@@ -624,7 +624,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                         flavour: 'affine:paragraph',
                                         props: {
                                             text: {
-                                                '$blocksuite:internal:text$': true,
+                                                '$lumensuite:internal:text$': true,
                                                 delta: this._hastToDelta(child),
                                             },
                                             type: 'text',
@@ -643,7 +643,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                         flavour: 'affine:paragraph',
                                         props: {
                                             text: {
-                                                '$blocksuite:internal:text$': true,
+                                                '$lumensuite:internal:text$': true,
                                                 delta: this._hastToDelta(child, { pageMap }),
                                             },
                                             type: 'text',
@@ -814,7 +814,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                                     },
                                 ],
                                 title: {
-                                    '$blocksuite:internal:text$': true,
+                                    '$lumensuite:internal:text$': true,
                                     delta: [],
                                 },
                                 columns,
@@ -841,13 +841,13 @@ export class NotionHtmlAdapter extends BaseAdapter {
         return unified().use(rehypeParse).parse(notionHtml);
     }
     fromBlockSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromBlockSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromBlockSnapshot is not implemented');
     }
     fromDocSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromDocSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromDocSnapshot is not implemented');
     }
     fromSliceSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromSliceSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'NotionHtmlAdapter.fromSliceSnapshot is not implemented');
     }
     toBlockSnapshot(payload) {
         const notionHtmlAst = this._htmlToAst(payload.file);
@@ -900,7 +900,7 @@ export class NotionHtmlAdapter extends BaseAdapter {
                 flavour: 'affine:page',
                 props: {
                     title: {
-                        '$blocksuite:internal:text$': true,
+                        '$lumensuite:internal:text$': true,
                         delta: this._hastToDelta(titleAst ?? {
                             type: 'text',
                             value: 'Untitled',

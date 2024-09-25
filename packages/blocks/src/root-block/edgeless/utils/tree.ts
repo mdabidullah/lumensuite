@@ -1,4 +1,4 @@
-import { isGfxContainerElm } from '@blocksuite/block-std/gfx';
+import { isGfxContainerElm } from '@lumensuite/block-std/gfx';
 
 /**
  * Get the top elements from the list of elements, which are in some tree structures.
@@ -18,14 +18,14 @@ import { isGfxContainerElm } from '@blocksuite/block-std/gfx';
  *
  * The result should be `[F1, F2, E6, E3, E4]`.
  */
-export function getTopElements(elements: BlockSuite.EdgelessModel[]) {
-  const topElements = new Set<BlockSuite.EdgelessModel>(elements);
-  const visitedElements = new Map<BlockSuite.EdgelessModel, boolean>();
+export function getTopElements(elements: LumenSuite.EdgelessModel[]) {
+  const topElements = new Set<LumenSuite.EdgelessModel>(elements);
+  const visitedElements = new Map<LumenSuite.EdgelessModel, boolean>();
   elements.forEach(element => {
     visitedElements.set(element, false);
   });
 
-  const traverse = (element: BlockSuite.EdgelessModel) => {
+  const traverse = (element: LumenSuite.EdgelessModel) => {
     // Skip if not in the list
     if (!visitedElements.has(element)) return;
 
@@ -53,12 +53,12 @@ export function getTopElements(elements: BlockSuite.EdgelessModel[]) {
  * Get all descendant elements of the given element.
  */
 export function getAllDescendantElements(
-  element: BlockSuite.EdgelessModel,
+  element: LumenSuite.EdgelessModel,
   includeSelf = false
 ) {
-  const elements: BlockSuite.EdgelessModel[] = [];
+  const elements: LumenSuite.EdgelessModel[] = [];
 
-  const traverse = (element: BlockSuite.EdgelessModel) => {
+  const traverse = (element: LumenSuite.EdgelessModel) => {
     elements.push(element);
 
     if (isGfxContainerElm(element)) {

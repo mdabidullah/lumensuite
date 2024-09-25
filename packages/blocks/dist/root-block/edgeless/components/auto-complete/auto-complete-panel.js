@@ -32,13 +32,13 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CanvasElementType, CommonUtils, } from '@blocksuite/affine-block-surface';
-import { FontFamilyIcon, FrameIcon, SmallNoteIcon, } from '@blocksuite/affine-components/icons';
-import { DEFAULT_NOTE_BACKGROUND_COLOR, DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, DEFAULT_TEXT_COLOR, FontFamily, FontStyle, FontWeight, getShapeName, GroupElementModel, ShapeStyle, TextElementModel, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertInstanceOf, Bound, serializeXYWH, Vec, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { CanvasElementType, CommonUtils, } from '@lumensuite/affine-block-surface';
+import { FontFamilyIcon, FrameIcon, SmallNoteIcon, } from '@lumensuite/affine-components/icons';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, DEFAULT_TEXT_COLOR, FontFamily, FontStyle, FontWeight, getShapeName, GroupElementModel, ShapeStyle, TextElementModel, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertInstanceOf, Bound, serializeXYWH, Vec, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { baseTheme } from '@toeverything/theme';
 import { css, html, LitElement, nothing, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

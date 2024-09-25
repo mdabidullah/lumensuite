@@ -1,4 +1,4 @@
-import { nToLast } from '@blocksuite/global/utils';
+import { nToLast } from '@lumensuite/global/utils';
 import { isGfxContainerElm, } from '../gfx/surface/element-model.js';
 export function getLayerEndZIndex(layers, layerIndex) {
     const layer = layers[layerIndex];

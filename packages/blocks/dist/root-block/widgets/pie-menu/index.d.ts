@@ -1,5 +1,5 @@
-import type { IVec } from '@blocksuite/global/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 import type { PieMenuSchema } from './base.js';
 import { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';

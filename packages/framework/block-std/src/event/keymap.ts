@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import { base, keyName } from 'w3c-keyname';
 
 import type { UIEventHandler } from './base.js';
@@ -41,7 +41,7 @@ function normalizeKeyName(name: string) {
       return;
     }
 
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.EventDispatcherError,
       'Unrecognized modifier name: ' + mod
     );

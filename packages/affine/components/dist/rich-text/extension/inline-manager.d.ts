@@ -1,7 +1,7 @@
-import type { Y } from '@blocksuite/store';
-import { type BlockStdScope, type ExtensionType } from '@blocksuite/block-std';
-import { type ServiceIdentifier } from '@blocksuite/global/di';
-import { type AttributeRenderer, type DeltaInsert, type KeyboardBindingContext } from '@blocksuite/inline';
+import type { Y } from '@lumensuite/store';
+import { type BlockStdScope, type ExtensionType } from '@lumensuite/block-std';
+import { type ServiceIdentifier } from '@lumensuite/global/di';
+import { type AttributeRenderer, type DeltaInsert, type KeyboardBindingContext } from '@lumensuite/inline';
 import { type ZodObject, type ZodTypeAny } from 'zod';
 import type { AffineTextAttributes, InlineMarkdownMatch, InlineSpecs } from './type.js';
 export declare class InlineManager {
@@ -14,7 +14,7 @@ export declare class InlineManager {
     readonly specs: Array<InlineSpecs<AffineTextAttributes>>;
     constructor(std: BlockStdScope, markdownMatches: InlineMarkdownMatch<AffineTextAttributes>[], ...specs: Array<InlineSpecs<AffineTextAttributes>>);
 }
-export declare const InlineManagerIdentifier: ServiceIdentifier<InlineManager> & ((variant: import("@blocksuite/global/di").ServiceVariant) => ServiceIdentifier<InlineManager>);
+export declare const InlineManagerIdentifier: ServiceIdentifier<InlineManager> & ((variant: import("@lumensuite/global/di").ServiceVariant) => ServiceIdentifier<InlineManager>);
 export type InlineManagerExtensionConfig = {
     id: string;
     enableMarkdown?: boolean;

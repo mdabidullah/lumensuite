@@ -1,5 +1,5 @@
-import { Container } from '@blocksuite/global/di';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { Container } from '@lumensuite/global/di';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { Clipboard } from '../clipboard/index.js';
 import { CommandManager } from '../command/index.js';
 import { UIEventDispatcher } from '../event/index.js';
@@ -56,7 +56,7 @@ export class BlockStdScope {
     }
     constructor(options) {
         this._getHost = () => {
-            throw new BlockSuiteError(ErrorCode.ValueNotExists, 'Host is not ready to use, the `render` method should be called first');
+            throw new LumenSuiteError(ErrorCode.ValueNotExists, 'Host is not ready to use, the `render` method should be called first');
         };
         this.doc = options.doc;
         this.extensions = [...internalExtensions, ...options.extensions];

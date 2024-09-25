@@ -1,6 +1,6 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
-import { Slice } from '@blocksuite/store';
+import { Slice } from '@lumensuite/store';
 
 export const copySelectedModelsCommand: Command<'draftedModels' | 'onCopy'> = (
   ctx,
@@ -26,7 +26,7 @@ export const copySelectedModelsCommand: Command<'draftedModels' | 'onCopy'> = (
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       onCopy?: () => void;
     }

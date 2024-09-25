@@ -1,17 +1,17 @@
-import type { ShapeElementModel, ShapeName } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IVec } from '@blocksuite/global/utils';
+import type { ShapeElementModel, ShapeName } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IVec } from '@lumensuite/global/utils';
 
-import { CanvasElementType } from '@blocksuite/affine-block-surface';
+import { CanvasElementType } from '@lumensuite/affine-block-surface';
 import {
   DEFAULT_SHAPE_FILL_COLOR,
   DEFAULT_SHAPE_STROKE_COLOR,
   getShapeType,
   ShapeType,
-} from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { Bound, noop } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { Bound, noop } from '@lumensuite/global/utils';
 
 import type { SelectionArea } from '../services/tools-manager.js';
 import type { EdgelessTool } from '../types.js';
@@ -381,7 +381,7 @@ export class ShapeToolController extends EdgelessToolController<ShapeTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       shape: ShapeToolController;
     }

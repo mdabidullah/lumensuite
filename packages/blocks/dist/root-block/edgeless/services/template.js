@@ -1,5 +1,5 @@
-import { assertExists, assertType, Bound, getCommonBound, Slot, } from '@blocksuite/global/utils';
-import { DocSnapshotSchema, Job, } from '@blocksuite/store';
+import { assertExists, assertType, Bound, getCommonBound, Slot, } from '@lumensuite/global/utils';
+import { DocSnapshotSchema, Job, } from '@lumensuite/store';
 /**
  * Those block contains other block's id
  * should defer the loading

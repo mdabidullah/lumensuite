@@ -1,4 +1,4 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 import type { TemplateResult } from 'lit';
 
 import type { AffineReference } from './reference-node.js';

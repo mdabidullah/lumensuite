@@ -1,4 +1,4 @@
-import { GfxLocalElementModel } from '@blocksuite/block-std/gfx';
+import { GfxLocalElementModel } from '@lumensuite/block-std/gfx';
 import { ConnectorMode, DEFAULT_ROUGHNESS, StrokeStyle, } from '../../consts/index.js';
 export class LocalConnectorElementModel extends GfxLocalElementModel {
     constructor() {

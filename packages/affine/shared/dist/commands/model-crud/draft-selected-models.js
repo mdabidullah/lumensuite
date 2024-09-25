@@ -1,4 +1,4 @@
-import { toDraftModel, } from '@blocksuite/store';
+import { toDraftModel, } from '@lumensuite/store';
 export const draftSelectedModelsCommand = (ctx, next) => {
     const models = ctx.selectedModels;
     if (!models) {

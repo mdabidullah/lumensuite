@@ -1,9 +1,9 @@
-import { type AdvancedPortalOptions } from '@blocksuite/affine-components/portal';
+import { type AdvancedPortalOptions } from '@lumensuite/affine-components/portal';
 import { type Placement } from '@floating-ui/dom';
 import { LitElement } from 'lit';
 import type { FilterableListItem, FilterableListOptions } from './types.js';
 export * from './types.js';
-declare const FilterableListComponent_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FilterableListComponent_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FilterableListComponent<Props = unknown> extends FilterableListComponent_base {
     static styles: import("lit").CSSResult;
     private _buildContent;

@@ -1,14 +1,14 @@
-import type { Color } from '@blocksuite/affine-model';
-import type { EditorHost, SurfaceSelection } from '@blocksuite/block-std';
-import type { Slot } from '@blocksuite/global/utils';
+import type { Color } from '@lumensuite/affine-model';
+import type { EditorHost, SurfaceSelection } from '@lumensuite/block-std';
+import type { Slot } from '@lumensuite/global/utils';
 
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockComponent, RANGE_SYNC_EXCLUDE_ATTR } from '@blocksuite/block-std';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockComponent, RANGE_SYNC_EXCLUDE_ATTR } from '@lumensuite/block-std';
 import {
   GfxControllerIdentifier,
   type Viewport,
-} from '@blocksuite/block-std/gfx';
-import { Bound, values } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std/gfx';
+import { Bound, values } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 

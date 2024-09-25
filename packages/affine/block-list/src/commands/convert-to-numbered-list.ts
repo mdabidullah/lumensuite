@@ -1,6 +1,6 @@
-import type { Command, EditorHost } from '@blocksuite/block-std';
+import type { Command, EditorHost } from '@lumensuite/block-std';
 
-import { toNumberedList } from '@blocksuite/affine-shared/utils';
+import { toNumberedList } from '@lumensuite/affine-shared/utils';
 
 export const convertToNumberedListCommand: Command<
   never,
@@ -28,7 +28,7 @@ export const convertToNumberedListCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       convertToNumberedList: typeof convertToNumberedListCommand;
     }

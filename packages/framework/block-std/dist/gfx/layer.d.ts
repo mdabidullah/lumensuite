@@ -1,6 +1,6 @@
-import type { Doc } from '@blocksuite/store';
-import { GfxBlockElementModel } from '@blocksuite/block-std/gfx';
-import { Slot } from '@blocksuite/global/utils';
+import type { Doc } from '@lumensuite/store';
+import { GfxBlockElementModel } from '@lumensuite/block-std/gfx';
+import { Slot } from '@lumensuite/global/utils';
 import type { GfxModel } from './gfx-block-model.js';
 import { SortOrder } from '../utils/layer.js';
 import { GfxPrimitiveElementModel } from './surface/element-model.js';

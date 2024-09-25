@@ -1,7 +1,7 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { diffUpdate, encodeStateVectorFromUpdate, mergeUpdates } from 'yjs';
 export class BroadcastChannelDocSource {
-    constructor(channelName = 'blocksuite:doc') {
+    constructor(channelName = 'lumensuite:doc') {
         this.channelName = channelName;
         this._onMessage = (event) => {
             if (event.data.type === 'init') {

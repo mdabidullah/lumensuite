@@ -1,6 +1,6 @@
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound } from '@blocksuite/global/utils';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound } from '@lumensuite/global/utils';
 import { ArrowDownBigBottomIcon, ArrowDownBigIcon, ArrowUpBigIcon, ArrowUpBigTopIcon, CenterPeekIcon, CopyIcon, DeleteIcon, DuplicateIcon, FrameIcon, GroupIcon, LinkedPageIcon, OpenInNewIcon, ResetIcon, } from '@blocksuite/icons/lit';
 import { createLinkedDocFromEdgelessElements, createLinkedDocFromNote, notifyDocCreated, promptDocTitle, } from '../../../../_common/utils/render-linked-doc.js';
 import { edgelessElementsBound } from '../../../edgeless/utils/bound-utils.js';

@@ -1,4 +1,4 @@
-import { columnPresets } from '@blocksuite/data-view/column-presets';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
 import { linkColumnConfig } from './link/cell-renderer.js';
 import { richTextColumnConfig } from './rich-text/cell-renderer.js';
 import { titleColumnConfig } from './title/cell-renderer.js';

@@ -1,4 +1,4 @@
-import { LineColor, LineWidth, ShapeFillColor, StrokeStyle } from '@blocksuite/affine-model';
+import { LineColor, LineWidth, ShapeFillColor, StrokeStyle } from '@lumensuite/affine-model';
 export declare const BOOKMARK_MIN_WIDTH = 450;
 export declare const NOTE_MIN_WIDTH: number;
 export declare const NOTE_MIN_HEIGHT = 78;

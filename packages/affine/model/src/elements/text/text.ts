@@ -1,5 +1,5 @@
-import type { BaseElementProps } from '@blocksuite/block-std/gfx';
-import type { IVec, SerializedXYWH } from '@blocksuite/global/utils';
+import type { BaseElementProps } from '@lumensuite/block-std/gfx';
+import type { IVec, SerializedXYWH } from '@lumensuite/global/utils';
 
 import {
   type Color,
@@ -8,16 +8,16 @@ import {
   FontWeight,
   TextAlign,
   type TextStyleProps,
-} from '@blocksuite/affine-model';
-import { field, GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
+} from '@lumensuite/affine-model';
+import { field, GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
 import {
   Bound,
   getPointsFromBoundsWithRotation,
   linePolygonIntersects,
   pointInPolygon,
   polygonNearestPoint,
-} from '@blocksuite/global/utils';
-import { DocCollection, type Y } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection, type Y } from '@lumensuite/store';
 
 export type TextElementProps = BaseElementProps & {
   text: Y.Text;
@@ -92,7 +92,7 @@ export class TextElementModel extends GfxPrimitiveElementModel<TextElementProps>
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceElementModelMap {
       text: TextElementModel;
     }

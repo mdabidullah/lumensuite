@@ -1,8 +1,8 @@
-import type { BaseElementProps, PointTestOptions, SerializedElement } from '@blocksuite/block-std/gfx';
-import type { IVec, SerializedXYWH, XYWH } from '@blocksuite/global/utils';
-import { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
-import { Bound, PointLocation } from '@blocksuite/global/utils';
-import { type Y } from '@blocksuite/store';
+import type { BaseElementProps, PointTestOptions, SerializedElement } from '@lumensuite/block-std/gfx';
+import type { IVec, SerializedXYWH, XYWH } from '@lumensuite/global/utils';
+import { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
+import { Bound, PointLocation } from '@lumensuite/global/utils';
+import { type Y } from '@lumensuite/store';
 import { type Color, ConnectorLabelOffsetAnchor, ConnectorMode, type PointStyle, StrokeStyle, type TextStyleProps } from '../../consts/index.js';
 export type SerializedConnection = {
     id?: string;
@@ -128,7 +128,7 @@ export declare class ConnectorElementModel extends GfxPrimitiveElementModel<Conn
     accessor xywh: SerializedXYWH;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface SurfaceElementModelMap {
             connector: ConnectorElementModel;
         }

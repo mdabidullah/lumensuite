@@ -1,6 +1,6 @@
-import { toast } from '@blocksuite/affine-components/toast';
-import { defaultAttachmentProps } from '@blocksuite/affine-model';
-import { humanFileSize } from '@blocksuite/affine-shared/utils';
+import { toast } from '@lumensuite/affine-components/toast';
+import { defaultAttachmentProps } from '@lumensuite/affine-model';
+import { humanFileSize } from '@lumensuite/affine-shared/utils';
 import { allowEmbed } from './embed.js';
 export function cloneAttachmentProperties(model) {
     const clonedProps = {};

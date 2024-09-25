@@ -1,19 +1,19 @@
 ---
-title: CRDT-Native Data Flow in BlockSuite
+title: CRDT-Native Data Flow in LumenSuite
 date: 2023-04-15
 authors:
   - name: Yifeng Wang
     link: 'https://twitter.com/ewind1994'
   - name: Saul-Mirone
     link: 'https://github.com/Saul-Mirone'
-excerpt: To make editors intuitive and collaboration-ready, BlockSuite ensure that regardless of whether you are collaborating with others or not, the application code should be unaware of it. This article introduce how this is designed.
+excerpt: To make editors intuitive and collaboration-ready, LumenSuite ensure that regardless of whether you are collaborating with others or not, the application code should be unaware of it. This article introduce how this is designed.
 ---
 
-# CRDT-Native Data Flow in BlockSuite
+# CRDT-Native Data Flow in LumenSuite
 
 <BlogPostMeta />
 
-To make editors intuitive and collaboration-ready, BlockSuite ensure that regardless of whether you are collaborating with others or not, the application code should be unaware of it. This article introduce how this is designed.
+To make editors intuitive and collaboration-ready, LumenSuite ensure that regardless of whether you are collaborating with others or not, the application code should be unaware of it. This article introduce how this is designed.
 
 ## CRDT as Single Source of Truth
 
@@ -29,7 +29,7 @@ Although this is an intuitive and common practice, it requires synchronization b
 - This bidirectional binding is not that easy to implement reliably and requires non-trivial modifications.
 - Application-layer code often needs to distinguish whether an update comes from a remote source, which increases complexity.
 
-As an alternative, BlockSuite chooses to directly use the CRDT model as the single source of truth (since BlockSuite uses [Yjs](https://github.com/yjs/yjs), we also call it _YModel_ here). This means that regardless of whether the update comes from local or remote sources, the same process will be performed:
+As an alternative, LumenSuite chooses to directly use the CRDT model as the single source of truth (since LumenSuite uses [Yjs](https://github.com/yjs/yjs), we also call it _YModel_ here). This means that regardless of whether the update comes from local or remote sources, the same process will be performed:
 
 1. Firstly modify YModel, triggering the corresponding [`Y.Event`](https://docs.yjs.dev/api/y.event) that contains all incremental state changes in this update.
 2. Update the model nodes in the block tree based on the `Y.Event`.
@@ -60,9 +60,9 @@ const blockModel = doc.root.children[0].children[2];
 doc.deleteBlock(blockModel);
 ```
 
-At this point, BlockSuite does not directly modify the block tree under doc.root, but instead first modifies the underlying YBlock. After the CRDT state is changed, Yjs generates a corresponding [Y.Event](https://docs.yjs.dev/api/y.event) data structure, which contains all the incremental state changes in this update (similar to patches in git and virtual DOM). BlockSuite will always use this as the basis
+At this point, LumenSuite does not directly modify the block tree under doc.root, but instead first modifies the underlying YBlock. After the CRDT state is changed, Yjs generates a corresponding [Y.Event](https://docs.yjs.dev/api/y.event) data structure, which contains all the incremental state changes in this update (similar to patches in git and virtual DOM). LumenSuite will always use this as the basis
 
-At this point, BlockSuite does not directly modify the block tree under `doc.root`, but will instead firstly modify the underlying YBlock. After the CRDT state is changed, Yjs will generate the corresponding `Y.Event`, which is similar to incremental patches in git and virtual DOM. BlockSuite will always use this as the basis to synchronize the block models, then trigger the corresponding slot events for UI updates.
+At this point, LumenSuite does not directly modify the block tree under `doc.root`, but will instead firstly modify the underlying YBlock. After the CRDT state is changed, Yjs will generate the corresponding `Y.Event`, which is similar to incremental patches in git and virtual DOM. LumenSuite will always use this as the basis to synchronize the block models, then trigger the corresponding slot events for UI updates.
 
 In this example, as the parent of `ParagraphBlock 2`, the `model.childrenUpdated` slot event of `NoteBlock` will be triggered. This will enable the corresponding component in the UI framework component tree to refresh itself. Since each child block has an ID, this is very conducive to combining the common list key optimizations in UI frameworks, achieving on-demand block component updates.
 
@@ -70,13 +70,13 @@ But the real power lies in the fact that if this block tree is being concurrentl
 
 ## Unidirectional Update Flow
 
-Besides the block tree that uses CRDT as its single source of truth, BlockSuite also manages shared states that do not require a history of changes, such as the awareness state of each user's cursor position. Additionally, some user metadata may not be shared among all users.
+Besides the block tree that uses CRDT as its single source of truth, LumenSuite also manages shared states that do not require a history of changes, such as the awareness state of each user's cursor position. Additionally, some user metadata may not be shared among all users.
 
-In BlockSuite, the management of these state types follows a consistent, unidirectional pattern, enabling an intuitive one-way update flow that efficiently translates state changes into visual updates.
+In LumenSuite, the management of these state types follows a consistent, unidirectional pattern, enabling an intuitive one-way update flow that efficiently translates state changes into visual updates.
 
-The complete state update process in BlockSuite involves several distinct steps, particularly when handling editor-related UI interactions:
+The complete state update process in LumenSuite involves several distinct steps, particularly when handling editor-related UI interactions:
 
-1. **UI Event Handling**: View components generate UI events like clicks and drags, initiating corresponding callbacks. In BlockSuite, it is recommended to model and reuse these interactions using commands.
+1. **UI Event Handling**: View components generate UI events like clicks and drags, initiating corresponding callbacks. In LumenSuite, it is recommended to model and reuse these interactions using commands.
 2. **State Manipulation via Commands**: Commands can manipulate the editor state to accomplish UI updates.
 3. **State-Driven View Updates**: Upon state changes, slot events are used to notify and update view components accordingly.
 
@@ -86,4 +86,4 @@ This update mechanism is depicted in the diagram above. Concepts such as [comman
 
 ## Summary
 
-In summary, by utilizing the CRDT model as the single source of truth, the application layer code can remain agnostic to whether updates originate from local or remote sources. This simplifies synchronization and reduces complexity. This approach enables applications to acquire real-time collaboration capabilities without necessitating intrusive modifications or adaptations, which is a key reason why the BlockSuite editor has been inherently _collaborative_ from day one.
+In summary, by utilizing the CRDT model as the single source of truth, the application layer code can remain agnostic to whether updates originate from local or remote sources. This simplifies synchronization and reduces complexity. This approach enables applications to acquire real-time collaboration capabilities without necessitating intrusive modifications or adaptations, which is a key reason why the LumenSuite editor has been inherently _collaborative_ from day one.

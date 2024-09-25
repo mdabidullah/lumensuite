@@ -3,12 +3,12 @@ import {
   BlockServiceIdentifier,
   type ExtensionType,
   StdIdentifier,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   AttachmentBlockService,
   EdgelessEditorBlockSpecs,
   PageEditorBlockSpecs,
-} from '@blocksuite/blocks';
+} from '@lumensuite/blocks';
 
 class CustomAttachmentBlockService extends AttachmentBlockService {
   override mounted(): void {

@@ -1,5 +1,5 @@
-import type { BlockSnapshot, DocSnapshot, FromBlockSnapshotPayload, FromBlockSnapshotResult, FromDocSnapshotPayload, FromDocSnapshotResult, FromSliceSnapshotPayload, FromSliceSnapshotResult, SliceSnapshot, ToBlockSnapshotPayload, ToDocSnapshotPayload, ToSliceSnapshotPayload } from '@blocksuite/store';
-import { BaseAdapter } from '@blocksuite/store';
+import type { BlockSnapshot, DocSnapshot, FromBlockSnapshotPayload, FromBlockSnapshotResult, FromDocSnapshotPayload, FromDocSnapshotResult, FromSliceSnapshotPayload, FromSliceSnapshotResult, SliceSnapshot, ToBlockSnapshotPayload, ToDocSnapshotPayload, ToSliceSnapshotPayload } from '@lumensuite/store';
+import { BaseAdapter } from '@lumensuite/store';
 export type FileSnapshot = {
     name: string;
     type: string;

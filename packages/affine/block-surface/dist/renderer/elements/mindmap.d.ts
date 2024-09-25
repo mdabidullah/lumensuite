@@ -1,4 +1,4 @@
-import type { IBound } from '@blocksuite/global/utils';
+import type { IBound } from '@lumensuite/global/utils';
 import type { MindmapElementModel } from '../../element-model/mindmap.js';
 import type { RoughCanvas } from '../../utils/rough/canvas.js';
 import type { CanvasRenderer } from '../canvas-renderer.js';

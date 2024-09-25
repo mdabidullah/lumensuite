@@ -1,4 +1,4 @@
-import { insertPositionToIndex, } from '@blocksuite/affine-shared/utils';
+import { insertPositionToIndex, } from '@lumensuite/affine-shared/utils';
 import { computed } from '@lit-labs/preact-signals';
 import { groupByMatcher } from './matcher.js';
 export class GroupManager {

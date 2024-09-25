@@ -42,11 +42,11 @@ const createNoRestrictedImports = packagePath => {
             {
               group: ['**/*.css', '**/*.css?*'],
               message:
-                'Do not import CSS directly, see https://github.com/toeverything/blocksuite/issues/525',
+                'Do not import CSS directly, see https://github.com/toeverything/lumensuite/issues/525',
               allowTypeImports: false,
             },
             {
-              group: [`@blocksuite/${packagePath}`],
+              group: [`@lumensuite/${packagePath}`],
               message: 'Do not import package itself',
               allowTypeImports: false,
             },

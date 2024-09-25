@@ -1,9 +1,9 @@
-import type { Column } from '@blocksuite/affine-model';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { Block, Doc } from '@blocksuite/store';
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
-import { type ColumnMeta, DataSourceBase, type DetailSlots } from '@blocksuite/data-view';
-import { Slot } from '@blocksuite/global/utils';
+import type { Column } from '@lumensuite/affine-model';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { Block, Doc } from '@lumensuite/store';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
+import { type ColumnMeta, DataSourceBase, type DetailSlots } from '@lumensuite/data-view';
+import { Slot } from '@lumensuite/global/utils';
 import type { DataViewBlockModel } from './data-view-model.js';
 import { blockMetaMap } from './block-meta/index.js';
 export type BlockQueryDataSourceConfig = {
@@ -24,7 +24,7 @@ export declare class BlockQueryDataSource extends DataSourceBase {
     get detailSlots(): DetailSlots;
     get properties(): string[];
     get rows(): string[];
-    get workspace(): import("@blocksuite/store").DocCollection;
+    get workspace(): import("@lumensuite/store").DocCollection;
     constructor(host: EditorHost, block: DataViewBlockModel, config: BlockQueryDataSourceConfig);
     private getProperty;
     private newColumnName;

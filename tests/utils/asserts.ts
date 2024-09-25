@@ -4,14 +4,14 @@ import type {
   RichText,
   RootBlockModel,
 } from '@blocks/index.js';
-import type { BlockComponent, EditorHost } from '@blocksuite/block-std';
 import type { InlineRootElement } from '@inline/inline-editor.js';
+import type { BlockComponent, EditorHost } from '@lumensuite/block-std';
 import type { BlockModel } from '@store/index.js';
 import type { JSXElement } from '@store/utils/jsx.js';
 
-import { NOTE_WIDTH } from '@blocksuite/affine-model';
-import { BLOCK_ID_ATTR } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { NOTE_WIDTH } from '@lumensuite/affine-model';
+import { BLOCK_ID_ATTR } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { expect, type Locator, type Page } from '@playwright/test';
 import { COLLECTION_VERSION, PAGE_VERSION } from '@store/consts.js';
 import {
@@ -551,7 +551,7 @@ export async function assertBlockType(
 export async function assertBlockFlavour(
   page: Page,
   id: string | number,
-  flavour: BlockSuite.Flavour
+  flavour: LumenSuite.Flavour
 ) {
   const actual = await page.evaluate(
     ({ id }) => {
@@ -738,7 +738,7 @@ export async function assertStoreMatchJSX(
   expect(formattedJSX, formattedJSX).toEqual(snapshot.trimStart());
 }
 
-type MimeType = 'text/plain' | 'blocksuite/x-c+w' | 'text/html';
+type MimeType = 'text/plain' | 'lumensuite/x-c+w' | 'text/html';
 
 export function assertClipItems(_page: Page, _key: MimeType, _value: unknown) {
   // FIXME: use original clipboard API

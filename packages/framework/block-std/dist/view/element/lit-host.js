@@ -33,10 +33,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockSuiteError, ErrorCode, handleError, } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
-import { Doc } from '@blocksuite/store';
-import { BlockViewType } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode, handleError, } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
+import { Doc } from '@lumensuite/store';
+import { BlockViewType } from '@lumensuite/store';
 import { createContext, provide } from '@lit/context';
 import { css, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
@@ -103,7 +103,7 @@ let EditorHost = (() => {
         connectedCallback() {
             super.connectedCallback();
             if (!this.doc.root) {
-                throw new BlockSuiteError(ErrorCode.NoRootModelError, 'This doc is missing root block. Please initialize the default block structure before connecting the editor to DOM.');
+                throw new LumenSuiteError(ErrorCode.NoRootModelError, 'This doc is missing root block. Please initialize the default block structure before connecting the editor to DOM.');
             }
             this.std.mount();
             this.tabIndex = 0;
@@ -191,7 +191,7 @@ let EditorHost = (() => {
     ></${tag}>`;
             };
             /**
-             * Render a block model manually instead of let blocksuite render it.
+             * Render a block model manually instead of let lumensuite render it.
              * If you render the same block model multiple times,
              * the event flow and data binding will be broken.
              * Only use this method as a last resort.

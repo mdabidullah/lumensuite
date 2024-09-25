@@ -1,5 +1,5 @@
-import { ConnectorMode, } from '@blocksuite/affine-model';
-import { getBezierParameters, getBezierTangent, Vec, } from '@blocksuite/global/utils';
+import { ConnectorMode, } from '@lumensuite/affine-model';
+import { getBezierParameters, getBezierTangent, Vec, } from '@lumensuite/global/utils';
 export const DEFAULT_ARROW_SIZE = 15;
 export function getArrowPoints(points, size = 10, mode, bezierParameters, endPoint = 'Rear', radians = Math.PI / 4) {
     const anchorPoint = getPointWithTangent(points, mode, endPoint, bezierParameters);

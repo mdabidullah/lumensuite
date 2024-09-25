@@ -1,7 +1,7 @@
-import type { Doc } from '@blocksuite/store';
-import { FrameBlockModel } from '@blocksuite/affine-model';
-import { GfxBlockElementModel, type GfxModel } from '@blocksuite/block-std/gfx';
-import { Slot } from '@blocksuite/global/utils';
+import type { Doc } from '@lumensuite/store';
+import { FrameBlockModel } from '@lumensuite/affine-model';
+import { GfxBlockElementModel, type GfxModel } from '@lumensuite/block-std/gfx';
+import { Slot } from '@lumensuite/global/utils';
 import type { SurfaceBlockModel } from '../surface-model.js';
 import { SurfaceElementModel } from '../element-model/base.js';
 import { GridManager } from './grid-manager.js';
@@ -44,7 +44,7 @@ export declare class LayerManager {
     blocks: GfxBlockElementModel[];
     blocksGrid: GridManager<GfxBlockElementModel>;
     canvasElements: SurfaceElementModel[];
-    canvasGrid: GridManager<SurfaceElementModel<import("@blocksuite/block-std/gfx").BaseElementProps>>;
+    canvasGrid: GridManager<SurfaceElementModel<import("@lumensuite/block-std/gfx").BaseElementProps>>;
     canvasLayers: {
         set: Set<SurfaceElementModel>;
         /**

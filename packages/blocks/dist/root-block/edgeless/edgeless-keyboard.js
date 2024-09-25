@@ -1,10 +1,10 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { LayoutType } from '@blocksuite/affine-model';
-import { ConnectorElementModel, ConnectorMode, EdgelessTextBlockModel, GroupElementModel, NoteDisplayMode, } from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { IS_MAC } from '@blocksuite/global/env';
-import { Bound } from '@blocksuite/global/utils';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { LayoutType } from '@lumensuite/affine-model';
+import { ConnectorElementModel, ConnectorMode, EdgelessTextBlockModel, GroupElementModel, NoteDisplayMode, } from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { IS_MAC } from '@lumensuite/global/env';
+import { Bound } from '@lumensuite/global/utils';
 import { getNearestTranslation, isElementOutsideViewport, isSelectSingleMindMap, } from '../../_common/edgeless/mindmap/index.js';
 import { LassoMode } from '../../_common/types.js';
 import { EdgelessTextBlockComponent } from '../../edgeless-text-block/edgeless-text-block.js';

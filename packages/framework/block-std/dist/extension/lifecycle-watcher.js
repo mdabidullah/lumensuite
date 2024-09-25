@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { LifeCycleWatcherIdentifier, StdIdentifier } from '../identifier.js';
 import { Extension } from './extension.js';
 /**
@@ -25,7 +25,7 @@ export class LifeCycleWatcher extends Extension {
     }
     static setup(di) {
         if (!this.key) {
-            throw new BlockSuiteError(ErrorCode.ValueNotExists, 'Key is not defined in the LifeCycleWatcher');
+            throw new LumenSuiteError(ErrorCode.ValueNotExists, 'Key is not defined in the LifeCycleWatcher');
         }
         di.add(this, [
             StdIdentifier,

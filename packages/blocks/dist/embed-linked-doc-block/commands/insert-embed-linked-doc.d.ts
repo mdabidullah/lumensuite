@@ -1,9 +1,9 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const insertEmbedLinkedDocCommand: Command<never, 'insertedLinkType', {
     docId: string;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             insertEmbedLinkedDoc: typeof insertEmbedLinkedDocCommand;
         }

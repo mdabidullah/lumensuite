@@ -1,17 +1,17 @@
-import type { DocMode } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { BlockModel, Doc } from '@blocksuite/store';
+import type { DocMode } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { BlockModel, Doc } from '@lumensuite/store';
 
-import { stopPropagation } from '@blocksuite/affine-shared/utils';
+import { consume } from '@lit/context';
+import { stopPropagation } from '@lumensuite/affine-shared/utils';
 import {
   docContext,
   modelContext,
   ShadowlessElement,
   stdContext,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { Text } from '@blocksuite/store';
-import { consume } from '@lit/context';
+} from '@lumensuite/block-std';
+import { Text } from '@lumensuite/store';
 import { css, html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 

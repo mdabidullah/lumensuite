@@ -1,4 +1,4 @@
-import { BlockViewExtension, CommandExtension, FlavourExtension, WidgetViewMapExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, CommandExtension, FlavourExtension, WidgetViewMapExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import { commands } from './commands/index.js';
 import { ImageBlockService } from './image-service.js';

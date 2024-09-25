@@ -1,8 +1,8 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
-import { BlockStdScope, EditorHost, type ExtensionType, ShadowlessElement } from '@blocksuite/block-std';
-import { type AbstractEditor, type DocMode } from '@blocksuite/blocks';
+import type { BlockModel, Doc } from '@lumensuite/store';
+import { BlockStdScope, EditorHost, type ExtensionType, ShadowlessElement } from '@lumensuite/block-std';
+import { type AbstractEditor, type DocMode } from '@lumensuite/blocks';
 import '../fragments/doc-title/doc-title.js';
-declare const LumenEditorContainer_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LumenEditorContainer_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class LumenEditorContainer extends LumenEditorContainer_base implements AbstractEditor {
     static styles: import("lit").CSSResult;
     private _doc;

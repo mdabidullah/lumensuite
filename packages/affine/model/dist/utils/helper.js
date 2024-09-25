@@ -1,4 +1,4 @@
-import { defineBlockSchema, } from '@blocksuite/store';
+import { defineBlockSchema, } from '@lumensuite/store';
 import { GfxCompatible } from './gfx-compatible.js';
 export function defineEmbedModel(BlockModelSuperClass) {
     return GfxCompatible(BlockModelSuperClass);

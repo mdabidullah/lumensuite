@@ -1,6 +1,6 @@
-import { DocModeService, EmbedOptionService, } from '@blocksuite/affine-shared/services';
-import { BlockViewExtension, CommandExtension, WidgetViewMapExtension, } from '@blocksuite/block-std';
-import { BlockServiceWatcher, FlavourExtension } from '@blocksuite/block-std';
+import { DocModeService, EmbedOptionService, } from '@lumensuite/affine-shared/services';
+import { BlockViewExtension, CommandExtension, WidgetViewMapExtension, } from '@lumensuite/block-std';
+import { BlockServiceWatcher, FlavourExtension } from '@lumensuite/block-std';
 import { literal, unsafeStatic } from 'lit/static-html.js';
 import { commands } from '../commands/index.js';
 import { AFFINE_DOC_REMOTE_SELECTION_WIDGET } from '../widgets/doc-remote-selection/doc-remote-selection.js';

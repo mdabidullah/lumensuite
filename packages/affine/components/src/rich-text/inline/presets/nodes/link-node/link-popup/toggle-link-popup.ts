@@ -1,4 +1,4 @@
-import type { InlineRange } from '@blocksuite/inline';
+import type { InlineRange } from '@lumensuite/inline';
 
 import type { AffineInlineEditor } from '../../../affine-inline-specs.js';
 

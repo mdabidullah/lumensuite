@@ -1,5 +1,5 @@
-import { MarkdownTransformer } from '@blocksuite/blocks';
-import { type DocCollection, Text } from '@blocksuite/store';
+import { MarkdownTransformer } from '@lumensuite/blocks';
+import { type DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils.js';
 
@@ -10,7 +10,7 @@ export const preset: InitFn = async (collection: DocCollection, id: string) => {
   doc.load();
   // Add root block and surface block at root level
   const rootId = doc.addBlock('affine:page', {
-    title: new Text('BlockSuite Playground'),
+    title: new Text('LumenSuite Playground'),
   });
   doc.addBlock('affine:surface', {}, rootId);
 
@@ -32,5 +32,5 @@ export const preset: InitFn = async (collection: DocCollection, id: string) => {
 };
 
 preset.id = 'preset';
-preset.displayName = 'BlockSuite Starter';
+preset.displayName = 'LumenSuite Starter';
 preset.description = 'Start from friendly introduction';

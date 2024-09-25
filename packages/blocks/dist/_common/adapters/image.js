@@ -1,12 +1,12 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { sha } from '@blocksuite/global/utils';
-import { BaseAdapter, nanoid, } from '@blocksuite/store';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { sha } from '@lumensuite/global/utils';
+import { BaseAdapter, nanoid, } from '@lumensuite/store';
 export class ImageAdapter extends BaseAdapter {
     fromBlockSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.fromBlockSnapshot is not implemented.');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.fromBlockSnapshot is not implemented.');
     }
     fromDocSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.fromDocSnapshot is not implemented.');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.fromDocSnapshot is not implemented.');
     }
     fromSliceSnapshot(payload) {
         const images = [];
@@ -25,10 +25,10 @@ export class ImageAdapter extends BaseAdapter {
         return Promise.resolve({ file: images, assetsIds: [] });
     }
     toBlockSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.toBlockSnapshot is not implemented.');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.toBlockSnapshot is not implemented.');
     }
     toDocSnapshot(_payload) {
-        throw new BlockSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.toDocSnapshot is not implemented');
+        throw new LumenSuiteError(ErrorCode.TransformerNotImplementedError, 'ImageAdapter.toDocSnapshot is not implemented');
     }
     async toSliceSnapshot(payload) {
         const content = [];

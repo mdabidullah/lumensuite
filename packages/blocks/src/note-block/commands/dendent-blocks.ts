@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
+import type { Command } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 export const dedentBlocks: Command<
   never,
@@ -60,7 +60,7 @@ export const dedentBlocks: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       dedentBlocks: typeof dedentBlocks;
     }

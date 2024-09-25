@@ -1,4 +1,4 @@
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { BlockComponent } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 export declare class BlockZeroWidth extends LitElement {
     static styles: import("lit").CSSResult;

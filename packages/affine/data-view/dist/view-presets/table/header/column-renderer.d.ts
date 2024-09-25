@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { Column } from '../../../core/view-manager/column.js';
 import type { TableSingleView } from '../table-view-manager.js';
-declare const DataViewColumnPreview_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DataViewColumnPreview_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DataViewColumnPreview extends DataViewColumnPreview_base {
     static styles: import("lit").CSSResult;
     private renderGroup;

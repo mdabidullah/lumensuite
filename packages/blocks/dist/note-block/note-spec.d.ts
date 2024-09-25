@@ -1,4 +1,4 @@
-import { type ExtensionType } from '@blocksuite/block-std';
+import { type ExtensionType } from '@lumensuite/block-std';
 export declare const NoteBlockSpec: ExtensionType[];
 export declare const EdgelessNoteBlockSpec: ExtensionType[];
 //# sourceMappingURL=note-spec.d.ts.map

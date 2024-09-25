@@ -9,7 +9,7 @@ export {
 } from './surface-ref-spec.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:surface-ref': SurfaceRefBlockService;
     }

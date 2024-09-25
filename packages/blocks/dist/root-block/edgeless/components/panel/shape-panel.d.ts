@@ -1,12 +1,12 @@
-import { ShapeStyle } from '@blocksuite/affine-model';
-import { Slot } from '@blocksuite/global/utils';
+import { ShapeStyle } from '@lumensuite/affine-model';
+import { Slot } from '@lumensuite/global/utils';
 import { LitElement } from 'lit';
 import type { ShapeTool } from '../../tools/shape-tool.js';
 import '../buttons/tool-icon-button.js';
 export declare class EdgelessShapePanel extends LitElement {
     static styles: import("lit").CSSResult;
     slots: {
-        select: Slot<import("@blocksuite/affine-model").ShapeName>;
+        select: Slot<import("@lumensuite/affine-model").ShapeName>;
     };
     private _onSelect;
     disconnectedCallback(): void;

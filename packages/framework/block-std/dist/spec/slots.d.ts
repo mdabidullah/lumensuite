@@ -1,4 +1,4 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import type { BlockService } from '../extension/service.js';
 import type { BlockComponent, WidgetComponent } from '../view/index.js';
 export type BlockSpecSlots<Service extends BlockService = BlockService> = {

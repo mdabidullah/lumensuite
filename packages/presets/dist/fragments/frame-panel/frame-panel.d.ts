@@ -1,16 +1,16 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type PropertyValues } from 'lit';
 import type { AffineEditorContainer } from '../../index.js';
 import './body/frame-panel-body.js';
 import './header/frame-panel-header.js';
 export declare const AFFINE_FRAME_PANEL = "affine-frame-panel";
-declare const FramePanel_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FramePanel_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FramePanel extends FramePanel_base {
     static styles: import("lit").CSSResult;
     private _editorDisposables;
-    get doc(): import("@blocksuite/store").Doc;
-    get edgeless(): import("@blocksuite/blocks").EdgelessRootBlockComponent | null;
-    get host(): import("@blocksuite/block-std").EditorHost | null;
+    get doc(): import("@lumensuite/store").Doc;
+    get edgeless(): import("@lumensuite/blocks").EdgelessRootBlockComponent | null;
+    get host(): import("@lumensuite/block-std").EditorHost | null;
     private _clearEditorDisposables;
     private _setEditorDisposables;
     connectedCallback(): void;

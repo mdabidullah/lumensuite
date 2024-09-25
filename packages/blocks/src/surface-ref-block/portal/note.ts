@@ -1,20 +1,20 @@
-import type { CanvasRenderer } from '@blocksuite/affine-block-surface';
-import type { NoteBlockModel } from '@blocksuite/affine-model';
+import type { CanvasRenderer } from '@lumensuite/affine-block-surface';
+import type { NoteBlockModel } from '@lumensuite/affine-model';
 
 import {
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
   NoteShadow,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import {
   BlockStdScope,
   type EditorHost,
   RANGE_QUERY_EXCLUDE_ATTR,
-} from '@blocksuite/block-std';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { deserializeXYWH } from '@blocksuite/global/utils';
-import { type BlockModel, BlockViewType, type Query } from '@blocksuite/store';
+} from '@lumensuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { deserializeXYWH } from '@lumensuite/global/utils';
+import { type BlockModel, BlockViewType, type Query } from '@lumensuite/store';
 import { css, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

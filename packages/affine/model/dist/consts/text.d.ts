@@ -37,13 +37,13 @@ export declare enum FontStyle {
     Normal = "normal"
 }
 export declare enum FontFamily {
-    BebasNeue = "blocksuite:surface:BebasNeue",
-    Inter = "blocksuite:surface:Inter",
-    Kalam = "blocksuite:surface:Kalam",
-    Lora = "blocksuite:surface:Lora",
-    OrelegaOne = "blocksuite:surface:OrelegaOne",
-    Poppins = "blocksuite:surface:Poppins",
-    Satoshi = "blocksuite:surface:Satoshi"
+    BebasNeue = "lumensuite:surface:BebasNeue",
+    Inter = "lumensuite:surface:Inter",
+    Kalam = "lumensuite:surface:Kalam",
+    Lora = "lumensuite:surface:Lora",
+    OrelegaOne = "lumensuite:surface:OrelegaOne",
+    Poppins = "lumensuite:surface:Poppins",
+    Satoshi = "lumensuite:surface:Satoshi"
 }
 export declare const FontFamilyMap: Record<FontFamily, "BebasNeue" | "Inter" | "Kalam" | "Lora" | "OrelegaOne" | "Poppins" | "Satoshi">;
 export declare const FontFamilyList: { [K in FontFamily]: [K, (typeof FontFamilyMap)[K]]; }[FontFamily][];

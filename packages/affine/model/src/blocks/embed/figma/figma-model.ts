@@ -1,4 +1,4 @@
-import { BlockModel } from '@blocksuite/store';
+import { BlockModel } from '@lumensuite/store';
 
 import type { EmbedCardStyle } from '../../../utils/index.js';
 
@@ -22,7 +22,7 @@ export class EmbedFigmaModel extends defineEmbedModel<EmbedFigmaBlockProps>(
 ) {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:embed-figma': EmbedFigmaModel;
     }

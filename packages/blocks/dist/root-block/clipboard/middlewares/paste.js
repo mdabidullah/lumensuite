@@ -1,7 +1,7 @@
-import { QuickSearchProvider, TelemetryProvider, } from '@blocksuite/affine-shared/services';
-import { BLOCK_ID_ATTR, } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { DocCollection, fromJSON, } from '@blocksuite/store';
+import { QuickSearchProvider, TelemetryProvider, } from '@lumensuite/affine-shared/services';
+import { BLOCK_ID_ATTR, } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { DocCollection, fromJSON, } from '@lumensuite/store';
 import { matchFlavours } from '../../../_common/utils/index.js';
 import { extractSearchParams } from '../../../_common/utils/url.js';
 function findLastMatchingNode(root, fn) {

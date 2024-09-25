@@ -1,22 +1,13 @@
 import type {
   AffineTextAttributes,
   RichText,
-} from '@blocksuite/affine-components/rich-text';
+} from '@lumensuite/affine-components/rich-text';
 import type {
   BaseSelection,
   BlockComponent,
   CursorSelection,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { isFormatSupported } from '@blocksuite/affine-components/rich-text';
-import {
-  cloneGroups,
-  type MenuItemGroup,
-} from '@blocksuite/affine-components/toolbar';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists, DisposableGroup } from '@blocksuite/global/utils';
 import {
   autoUpdate,
   computePosition,
@@ -26,6 +17,15 @@ import {
   type ReferenceElement,
   shift,
 } from '@floating-ui/dom';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { isFormatSupported } from '@lumensuite/affine-components/rich-text';
+import {
+  cloneGroups,
+  type MenuItemGroup,
+} from '@lumensuite/affine-components/toolbar';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists, DisposableGroup } from '@lumensuite/global/utils';
 import { html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 
@@ -420,7 +420,7 @@ export class AffineFormatBarWidget extends WidgetComponent {
   }
 
   addBlockTypeSwitch(config: {
-    flavour: BlockSuite.Flavour;
+    flavour: LumenSuite.Flavour;
     icon: ParagraphActionConfigItem['icon'];
     type?: string;
     name?: string;

@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { TextUtils } from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { GfxBlockComponent } from '@blocksuite/block-std';
-import { Bound } from '@blocksuite/global/utils';
+import { TextUtils } from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { GfxBlockComponent } from '@lumensuite/block-std';
+import { Bound } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

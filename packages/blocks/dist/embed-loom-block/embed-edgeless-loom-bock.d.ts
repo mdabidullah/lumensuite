@@ -1,5 +1,5 @@
 import { EmbedLoomBlockComponent } from './embed-loom-block.js';
-declare const EmbedEdgelessLoomBlockComponent_base: typeof EmbedLoomBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessLoomBlockComponent_base: typeof EmbedLoomBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessLoomBlockComponent extends EmbedEdgelessLoomBlockComponent_base {
 }
 declare global {

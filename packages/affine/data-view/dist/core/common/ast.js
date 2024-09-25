@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { filterMatcher } from '../../widget-presets/filter/matcher/matcher.js';
 import { propertyMatcher } from '../logical/property-matcher.js';
 export const getRefType = (vars, ref) => {
@@ -11,7 +11,7 @@ export const getRefType = (vars, ref) => {
 export const firstFilterName = (vars, ref) => {
     const type = getRefType(vars, ref);
     if (!type) {
-        throw new BlockSuiteError(ErrorCode.DatabaseBlockError, `can't resolve ref type`);
+        throw new LumenSuiteError(ErrorCode.DatabaseBlockError, `can't resolve ref type`);
     }
     return filterMatcher.match(type)?.name;
 };
@@ -30,7 +30,7 @@ export const firstFilter = (vars) => {
     };
     const filter = firstFilterName(vars, ref);
     if (!filter) {
-        throw new BlockSuiteError(ErrorCode.DatabaseBlockError, `can't match any filter`);
+        throw new LumenSuiteError(ErrorCode.DatabaseBlockError, `can't match any filter`);
     }
     return {
         type: 'filter',

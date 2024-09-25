@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowUpIcon, ConnectorCWithArrowIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, } from '@blocksuite/affine-components/icons';
-import { ConnectorMode, getConnectorModeName } from '@blocksuite/affine-model';
-import { SignalWatcher } from '@blocksuite/block-std';
+import { ArrowUpIcon, ConnectorCWithArrowIcon, ConnectorLWithArrowIcon, ConnectorXWithArrowIcon, } from '@lumensuite/affine-components/icons';
+import { ConnectorMode, getConnectorModeName } from '@lumensuite/affine-model';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { computed } from '@lit-labs/preact-signals';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';

@@ -1,5 +1,5 @@
-import { ConnectorMode, GroupElementModel, } from '@blocksuite/affine-model';
-import { almostEqual, assertEquals, assertExists, assertType, Bound, clamp, getBezierCurveBoundingBox, getBezierParameters, getBoundFromPoints, getBoundsWithRotation, getPointFromBoundsWithRotation, isOverlap, isVecZero, last, lineIntersects, PI2, PointLocation, sign, toRadian, Vec, } from '@blocksuite/global/utils';
+import { ConnectorMode, GroupElementModel, } from '@lumensuite/affine-model';
+import { almostEqual, assertEquals, assertExists, assertType, Bound, clamp, getBezierCurveBoundingBox, getBezierParameters, getBoundFromPoints, getBoundsWithRotation, getPointFromBoundsWithRotation, isOverlap, isVecZero, last, lineIntersects, PI2, PointLocation, sign, toRadian, Vec, } from '@lumensuite/global/utils';
 import { isConnectorWithLabel } from '../element-model/utils/connector.js';
 import { Overlay } from '../renderer/canvas-renderer.js';
 import { AStarRunner } from '../utils/a-star.js';

@@ -1,4 +1,4 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 export declare class MindMapPlaceholder extends ShadowlessElement {
     static styles: import("lit").CSSResult;
     render(): import("lit").TemplateResult<1>;

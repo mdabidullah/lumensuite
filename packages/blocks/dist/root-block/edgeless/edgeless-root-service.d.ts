@@ -1,10 +1,10 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { GfxController, GfxModel, LayerManager, PointTestOptions } from '@blocksuite/block-std/gfx';
-import { type ElementRenderer, type Overlay, type ReorderingDirection, type SurfaceBlockModel, type SurfaceContext } from '@blocksuite/affine-block-surface';
-import { ConnectionOverlay } from '@blocksuite/affine-block-surface';
-import { type ConnectorElementModel, type FrameBlockModel, type GroupElementModel } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
-import { type BlockModel, Slot } from '@blocksuite/store';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { GfxController, GfxModel, LayerManager, PointTestOptions } from '@lumensuite/block-std/gfx';
+import { type ElementRenderer, type Overlay, type ReorderingDirection, type SurfaceBlockModel, type SurfaceContext } from '@lumensuite/affine-block-surface';
+import { ConnectionOverlay } from '@lumensuite/affine-block-surface';
+import { type ConnectorElementModel, type FrameBlockModel, type GroupElementModel } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
+import { type BlockModel, Slot } from '@lumensuite/store';
 import type { EdgelessToolConstructor } from './services/tools-manager.js';
 import { RootService } from '../root-service.js';
 import { GfxBlockModel } from './block-model.js';
@@ -25,6 +25,9 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
     overlays: Record<string, Overlay>;
     slots: {
         edgelessToolUpdated: Slot<import("./tools/text-tool.js").TextTool | {
+            type: "pan";
+            panning: boolean;
+        } | {
             type: "brush";
         } | import("./tools/connector-tool.js").ConnectorTool | {
             type: "copilot";
@@ -37,10 +40,7 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
             type: "frame";
         } | import("./tools/lasso-tool.js").LassoTool | {
             type: "mindmap";
-        } | import("./tools/note-tool.js").NoteTool | {
-            type: "pan";
-            panning: boolean;
-        } | import("./tools/shape-tool.js").ShapeTool | {
+        } | import("./tools/note-tool.js").NoteTool | import("./tools/shape-tool.js").ShapeTool | {
             type: "default";
         } | {
             type: "template";
@@ -48,8 +48,8 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
         pressShiftKeyUpdated: Slot<boolean>;
         cursorUpdated: Slot<string>;
         copyAsPng: Slot<{
-            blocks: BlockSuite.EdgelessBlockModelType[];
-            shapes: BlockSuite.SurfaceModel[];
+            blocks: LumenSuite.EdgelessBlockModelType[];
+            shapes: LumenSuite.SurfaceModel[];
         }>;
         readonlyUpdated: Slot<boolean>;
         draggingAreaUpdated: Slot<void>;
@@ -86,12 +86,12 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
     /**
      * sorted canvas elements
      */
-    get elements(): import("@blocksuite/affine-block-surface").SurfaceElementModel<import("@blocksuite/block-std/gfx").BaseElementProps>[];
+    get elements(): import("@lumensuite/affine-block-surface").SurfaceElementModel<import("@lumensuite/block-std/gfx").BaseElementProps>[];
     get frame(): EdgelessFrameManager;
     get frameOverlay(): FrameOverlay;
     get frames(): FrameBlockModel[];
     get gfx(): GfxController;
-    get host(): import("@blocksuite/block-std").EditorHost;
+    get host(): import("@lumensuite/block-std").EditorHost;
     get layer(): LayerManager;
     get locked(): boolean;
     set locked(locked: boolean);
@@ -99,7 +99,7 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
     get snap(): EdgelessSnapManager;
     get surface(): SurfaceBlockModel;
     get tool(): EdgelessToolsManager;
-    get viewport(): import("@blocksuite/block-std/gfx").Viewport;
+    get viewport(): import("@lumensuite/block-std/gfx").Viewport;
     get zoom(): number;
     constructor(std: BlockStdScope, flavourProvider: {
         flavour: string;
@@ -108,13 +108,13 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
     private _initSlotEffects;
     addBlock(flavour: string, props: Record<string, unknown>, parent?: string | BlockModel, parentIndex?: number): string;
     addElement<T extends Record<string, unknown>>(type: string, props: T): string;
-    createGroup(elements: BlockSuite.EdgelessModel[] | string[]): string;
+    createGroup(elements: LumenSuite.EdgelessModel[] | string[]): string;
     createGroupFromSelected(): string | undefined;
     createTemplateJob(type: 'template' | 'sticker'): TemplateJob;
     generateIndex(type: string): string;
-    getConnectors(element: BlockSuite.EdgelessModel | string): ConnectorElementModel[];
-    getElementById(id: string): BlockSuite.EdgelessModel | null;
-    getElementsByType<K extends keyof BlockSuite.SurfaceElementModelMap>(type: K): BlockSuite.SurfaceElementModelMap[K][];
+    getConnectors(element: LumenSuite.EdgelessModel | string): ConnectorElementModel[];
+    getElementById(id: string): LumenSuite.EdgelessModel | null;
+    getElementsByType<K extends keyof LumenSuite.SurfaceElementModelMap>(type: K): LumenSuite.SurfaceElementModelMap[K][];
     getFitToScreenData(padding?: [number, number, number, number], inputBounds?: Bound[]): {
         zoom: number;
         centerX: number;
@@ -126,10 +126,10 @@ export declare class EdgelessRootService extends RootService implements SurfaceC
      * group, we will pick the group instead. If that picked group is currently selected, then
      * we will pick the element itself.
      */
-    pickElementInGroup(x: number, y: number, options?: PointTestOptions): BlockSuite.EdgelessModel | null;
+    pickElementInGroup(x: number, y: number, options?: PointTestOptions): LumenSuite.EdgelessModel | null;
     registerTool(Tool: EdgelessToolConstructor): void;
-    removeElement(id: string | BlockSuite.EdgelessModel): void;
-    reorderElement(element: BlockSuite.EdgelessModel, direction: ReorderingDirection): void;
+    removeElement(id: string | LumenSuite.EdgelessModel): void;
+    reorderElement(element: LumenSuite.EdgelessModel, direction: ReorderingDirection): void;
     setZoomByAction(action: ZoomAction): void;
     setZoomByStep(step: number): void;
     ungroup(group: GroupElementModel): void;

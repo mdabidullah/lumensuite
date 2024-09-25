@@ -5,7 +5,7 @@ type Command1 = Command<never, 'commandData1', {
 type Command2 = Command<'commandData1', 'commandData2'>;
 type Command3 = Command<'commandData1' | 'commandData2', 'commandData3'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             commandData1?: string;
             commandData2?: string;

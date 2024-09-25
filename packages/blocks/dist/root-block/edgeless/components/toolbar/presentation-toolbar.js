@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { FrameNavigatorNextIcon, FrameNavigatorPrevIcon, NavigatorExitFullScreenIcon, NavigatorFullScreenIcon, StopAIIcon, } from '@blocksuite/affine-components/icons';
-import { toast } from '@blocksuite/affine-components/toast';
-import { Bound } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { FrameNavigatorNextIcon, FrameNavigatorPrevIcon, NavigatorExitFullScreenIcon, NavigatorFullScreenIcon, StopAIIcon, } from '@lumensuite/affine-components/icons';
+import { toast } from '@lumensuite/affine-components/toast';
+import { Bound } from '@lumensuite/global/utils';
 import { cssVar } from '@toeverything/theme';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';

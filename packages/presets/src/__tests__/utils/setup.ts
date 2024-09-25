@@ -1,18 +1,18 @@
-import type { BlockCollection } from '@blocksuite/store';
+import type { BlockCollection } from '@lumensuite/store';
 
 import {
   CommunityCanvasTextFonts,
   type DocMode,
   FontConfigExtension,
-} from '@blocksuite/blocks';
-import { AffineSchemas } from '@blocksuite/blocks/schemas';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/blocks';
+import { AffineSchemas } from '@lumensuite/blocks/schemas';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   DocCollection,
   IdGeneratorType,
   Schema,
   Text,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { AffineEditorContainer } from '../../index.js';
 

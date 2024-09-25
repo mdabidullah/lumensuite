@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { on, once, stopPropagation } from '@blocksuite/affine-shared/utils';
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
+import { on, once, stopPropagation } from '@lumensuite/affine-shared/utils';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
 import { batch, computed, signal } from '@lit-labs/preact-signals';
 import { html, LitElement } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';

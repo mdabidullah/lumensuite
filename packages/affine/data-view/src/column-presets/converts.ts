@@ -1,4 +1,4 @@
-import { clamp } from '@blocksuite/affine-shared/utils';
+import { clamp } from '@lumensuite/affine-shared/utils';
 
 import { createColumnConvert } from '../core/index.js';
 import { multiSelectColumnModelConfig } from './multi-select/define.js';

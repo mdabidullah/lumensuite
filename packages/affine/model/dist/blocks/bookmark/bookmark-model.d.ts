@@ -1,5 +1,5 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 import type { EmbedCardStyle, LinkPreviewData } from '../../utils/index.js';
 export interface BookmarkBlockEdgelessProps {
     index: string;
@@ -15,7 +15,7 @@ export type BookmarkBlockProps = {
 export declare const BookmarkBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<BookmarkBlockProps>;
+        props: import("@lumensuite/store").PropsGetter<BookmarkBlockProps>;
         flavour: "affine:bookmark";
     } & {
         version: number;
@@ -23,15 +23,15 @@ export declare const BookmarkBlockSchema: {
         parent: string[];
     };
     onUpgrade?: ((data: BookmarkBlockProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<BookmarkBlockProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<BookmarkBlockProps>) | undefined;
 };
 declare const BookmarkBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<BookmarkBlockProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<BookmarkBlockProps>;
 };
 export declare class BookmarkBlockModel extends BookmarkBlockModel_base implements GfxElementGeometry {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:bookmark': BookmarkBlockModel;
         }

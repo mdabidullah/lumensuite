@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { DEFAULT_IMAGE_PROXY_ENDPOINT } from '../consts.js';
 export const replaceIdMiddleware = ({ slots, collection }) => {
     const idMap = new Map();

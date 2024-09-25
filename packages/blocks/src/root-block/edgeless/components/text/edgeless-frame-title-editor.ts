@@ -1,12 +1,12 @@
-import type { RichText } from '@blocksuite/affine-components/rich-text';
+import type { RichText } from '@lumensuite/affine-components/rich-text';
 
-import { FrameBlockModel } from '@blocksuite/affine-model';
+import { FrameBlockModel } from '@lumensuite/affine-model';
 import {
   RANGE_SYNC_EXCLUDE_ATTR,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';

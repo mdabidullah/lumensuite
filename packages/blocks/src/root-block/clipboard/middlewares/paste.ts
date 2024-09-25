@@ -1,18 +1,18 @@
-import type { ParagraphBlockModel } from '@blocksuite/affine-model';
+import type { ParagraphBlockModel } from '@lumensuite/affine-model';
 
 import {
   QuickSearchProvider,
   type QuickSearchService,
   TelemetryProvider,
-} from '@blocksuite/affine-shared/services';
+} from '@lumensuite/affine-shared/services';
 import {
   BLOCK_ID_ATTR,
   type BlockComponent,
   type EditorHost,
   type TextRangePoint,
   type TextSelection,
-} from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   type BlockModel,
   type BlockSnapshot,
@@ -22,7 +22,7 @@ import {
   type JobMiddleware,
   type SliceSnapshot,
   type Text,
-} from '@blocksuite/store';
+} from '@lumensuite/store';
 
 import { matchFlavours } from '../../../_common/utils/index.js';
 import { extractSearchParams } from '../../../_common/utils/url.js';

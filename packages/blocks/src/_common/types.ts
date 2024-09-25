@@ -1,12 +1,12 @@
-import type { RefNodeSlots } from '@blocksuite/affine-components/rich-text';
+import type { RefNodeSlots } from '@lumensuite/affine-components/rich-text';
 import type {
   BrushElementModel,
   ConnectorElementModel,
   DocMode,
   GroupElementModel,
-} from '@blocksuite/affine-model';
-import type { Slot } from '@blocksuite/global/utils';
-import type { Doc } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import type { Slot } from '@lumensuite/global/utils';
+import type { Doc } from '@lumensuite/store';
 
 /** Common context interface definition for block models. */
 
@@ -25,9 +25,9 @@ export type AbstractEditor = {
 } & HTMLElement;
 
 export type Connectable = Exclude<
-  BlockSuite.EdgelessModel,
+  LumenSuite.EdgelessModel,
   ConnectorElementModel | BrushElementModel | GroupElementModel
 >;
 
-export type { EmbedCardStyle } from '@blocksuite/affine-model';
-export * from '@blocksuite/affine-shared/types';
+export type { EmbedCardStyle } from '@lumensuite/affine-model';
+export * from '@lumensuite/affine-shared/types';

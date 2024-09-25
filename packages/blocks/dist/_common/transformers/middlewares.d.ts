@@ -1,4 +1,4 @@
-import type { JobMiddleware } from '@blocksuite/store';
+import type { JobMiddleware } from '@lumensuite/store';
 export declare const replaceIdMiddleware: JobMiddleware;
 export declare const customImageProxyMiddleware: (imageProxyURL: string) => JobMiddleware;
 export declare const titleMiddleware: JobMiddleware;

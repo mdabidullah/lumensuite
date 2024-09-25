@@ -1,4 +1,4 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
 /**
  * @example
@@ -56,7 +56,7 @@ export const dedentBlock: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       dedentBlock: typeof dedentBlock;
     }

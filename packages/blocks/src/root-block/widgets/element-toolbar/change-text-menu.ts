@@ -2,14 +2,14 @@ import {
   ConnectorUtils,
   normalizeShapeBound,
   TextUtils,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   SmallArrowDownIcon,
   TextAlignCenterIcon,
   TextAlignLeftIcon,
   TextAlignRightIcon,
-} from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
 import {
   type ColorScheme,
   FontFamily,
@@ -17,16 +17,16 @@ import {
   FontWeight,
   TextAlign,
   type TextStyleProps,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   ConnectorElementModel,
   EdgelessTextBlockModel,
   LINE_COLORS,
   ShapeElementModel,
   TextElementModel,
-} from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { Bound, countBy, maxBy } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { Bound, countBy, maxBy } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';
@@ -80,14 +80,14 @@ const TEXT_ALIGN_CHOOSE: [TextAlign, () => TemplateResult<1>][] = [
 ] as const;
 
 function countByField<K extends keyof Omit<TextStyleProps, 'color'>>(
-  elements: BlockSuite.EdgelessTextModelType[],
+  elements: LumenSuite.EdgelessTextModelType[],
   field: K
 ) {
   return countBy(elements, element => extractField(element, field));
 }
 
 function extractField<K extends keyof Omit<TextStyleProps, 'color'>>(
-  element: BlockSuite.EdgelessTextModelType,
+  element: LumenSuite.EdgelessTextModelType,
   field: K
 ) {
   //TODO: It's not a very good handling method.
@@ -105,23 +105,23 @@ function extractField<K extends keyof Omit<TextStyleProps, 'color'>>(
 }
 
 function getMostCommonValue<K extends keyof Omit<TextStyleProps, 'color'>>(
-  elements: BlockSuite.EdgelessTextModelType[],
+  elements: LumenSuite.EdgelessTextModelType[],
   field: K
 ) {
   const values = countByField(elements, field);
   return maxBy(Object.entries(values), ([_k, count]) => count);
 }
 
-function getMostCommonAlign(elements: BlockSuite.EdgelessTextModelType[]) {
+function getMostCommonAlign(elements: LumenSuite.EdgelessTextModelType[]) {
   const max = getMostCommonValue(elements, 'textAlign');
   return max ? (max[0] as TextAlign) : TextAlign.Left;
 }
 
 function getMostCommonColor(
-  elements: BlockSuite.EdgelessTextModelType[],
+  elements: LumenSuite.EdgelessTextModelType[],
   colorScheme: ColorScheme
 ): string {
-  const colors = countBy(elements, (ele: BlockSuite.EdgelessTextModelType) => {
+  const colors = countBy(elements, (ele: LumenSuite.EdgelessTextModelType) => {
     const color =
       ele instanceof ConnectorElementModel ? ele.labelStyle.color : ele.color;
     return typeof color === 'object'
@@ -132,28 +132,28 @@ function getMostCommonColor(
   return max ? (max[0] as string) : GET_DEFAULT_LINE_COLOR();
 }
 
-function getMostCommonFontFamily(elements: BlockSuite.EdgelessTextModelType[]) {
+function getMostCommonFontFamily(elements: LumenSuite.EdgelessTextModelType[]) {
   const max = getMostCommonValue(elements, 'fontFamily');
   return max ? (max[0] as FontFamily) : FontFamily.Inter;
 }
 
-function getMostCommonFontSize(elements: BlockSuite.EdgelessTextModelType[]) {
+function getMostCommonFontSize(elements: LumenSuite.EdgelessTextModelType[]) {
   const max = getMostCommonValue(elements, 'fontSize');
   return max ? Number(max[0]) : FONT_SIZE_LIST[0].value;
 }
 
-function getMostCommonFontStyle(elements: BlockSuite.EdgelessTextModelType[]) {
+function getMostCommonFontStyle(elements: LumenSuite.EdgelessTextModelType[]) {
   const max = getMostCommonValue(elements, 'fontStyle');
   return max ? (max[0] as FontStyle) : FontStyle.Normal;
 }
 
-function getMostCommonFontWeight(elements: BlockSuite.EdgelessTextModelType[]) {
+function getMostCommonFontWeight(elements: LumenSuite.EdgelessTextModelType[]) {
   const max = getMostCommonValue(elements, 'fontWeight');
   return max ? (max[0] as FontWeight) : FontWeight.Regular;
 }
 
 function buildProps(
-  element: BlockSuite.EdgelessTextModelType,
+  element: LumenSuite.EdgelessTextModelType,
   props: { [K in keyof TextStyleProps]?: TextStyleProps[K] }
 ) {
   if (element instanceof ConnectorElementModel) {
@@ -236,7 +236,7 @@ export class EdgelessChangeTextMenu extends WithDisposable(LitElement) {
     });
   };
 
-  private _updateElementBound = (element: BlockSuite.EdgelessTextModelType) => {
+  private _updateElementBound = (element: LumenSuite.EdgelessTextModelType) => {
     const elementType = this.elementType;
     if (elementType === 'text' && element instanceof TextElementModel) {
       // the change of font family will change the bound of the text
@@ -512,10 +512,10 @@ export class EdgelessChangeTextMenu extends WithDisposable(LitElement) {
   accessor edgeless!: EdgelessRootBlockComponent;
 
   @property({ attribute: false })
-  accessor elements!: BlockSuite.EdgelessTextModelType[];
+  accessor elements!: LumenSuite.EdgelessTextModelType[];
 
   @property({ attribute: false })
-  accessor elementType!: BlockSuite.EdgelessTextModelKeyType;
+  accessor elementType!: LumenSuite.EdgelessTextModelKeyType;
 
   @query('edgeless-color-picker-button.text-color')
   accessor textColorButton!: EdgelessColorPickerButton;

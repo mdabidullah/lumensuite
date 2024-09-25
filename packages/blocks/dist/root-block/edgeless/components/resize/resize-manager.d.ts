@@ -1,5 +1,5 @@
-import { type IPoint, type PointLocation } from '@blocksuite/global/utils';
-import { Bound } from '@blocksuite/global/utils';
+import { type IPoint, type PointLocation } from '@lumensuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import type { SelectableProps } from '../../utils/query.js';
 import { HandleDirection, type ResizeMode } from './resize-handles.js';
 type DragStartHandler = () => void;

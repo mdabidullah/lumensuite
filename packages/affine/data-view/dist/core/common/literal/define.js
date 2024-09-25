@@ -1,4 +1,4 @@
-import { createPopup, popMenu, } from '@blocksuite/affine-components/context-menu';
+import { createPopup, popMenu, } from '@lumensuite/affine-components/context-menu';
 import { html } from 'lit';
 import { styleMap } from 'lit/directives/style-map.js';
 import { tBoolean, tDate, tNumber, tString, tTag, } from '../../logical/data-type.js';

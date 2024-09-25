@@ -1,5 +1,5 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { IVec, SerializedXYWH, XYWH } from '@blocksuite/global/utils';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { IVec, SerializedXYWH, XYWH } from '@lumensuite/global/utils';
 
 import {
   Bound,
@@ -13,8 +13,8 @@ import {
   polygonNearestPoint,
   randomSeed,
   rotatePoints,
-} from '@blocksuite/global/utils';
-import { DocCollection, type Y } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection, type Y } from '@lumensuite/store';
 import { createMutex } from 'lib0/mutex';
 
 import type { GfxBlockElementModel, GfxModel } from '../gfx-block-model.js';

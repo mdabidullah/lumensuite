@@ -1,4 +1,4 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 import { LitElement } from 'lit';
 export declare class Loader extends LitElement {
     static styles: import("lit").CSSResult;

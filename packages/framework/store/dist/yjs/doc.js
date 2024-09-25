@@ -1,6 +1,6 @@
 import * as Y from 'yjs';
 import { createYProxy } from '../reactive/proxy.js';
-export class BlockSuiteDoc extends Y.Doc {
+export class LumenSuiteDoc extends Y.Doc {
     constructor() {
         super(...arguments);
         this._spaces = this.getMap('spaces');

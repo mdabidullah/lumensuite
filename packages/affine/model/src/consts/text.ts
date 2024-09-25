@@ -46,13 +46,13 @@ export enum FontStyle {
 }
 
 export enum FontFamily {
-  BebasNeue = 'blocksuite:surface:BebasNeue',
-  Inter = 'blocksuite:surface:Inter',
-  Kalam = 'blocksuite:surface:Kalam',
-  Lora = 'blocksuite:surface:Lora',
-  OrelegaOne = 'blocksuite:surface:OrelegaOne',
-  Poppins = 'blocksuite:surface:Poppins',
-  Satoshi = 'blocksuite:surface:Satoshi',
+  BebasNeue = 'lumensuite:surface:BebasNeue',
+  Inter = 'lumensuite:surface:Inter',
+  Kalam = 'lumensuite:surface:Kalam',
+  Lora = 'lumensuite:surface:Lora',
+  OrelegaOne = 'lumensuite:surface:OrelegaOne',
+  Poppins = 'lumensuite:surface:Poppins',
+  Satoshi = 'lumensuite:surface:Satoshi',
 }
 
 export const FontFamilyMap = createEnumMap(FontFamily);

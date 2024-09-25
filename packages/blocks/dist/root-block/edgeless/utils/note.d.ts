@@ -1,4 +1,4 @@
-import type { Point } from '@blocksuite/global/utils';
+import type { Point } from '@lumensuite/global/utils';
 import type { NoteChildrenFlavour } from '../../../_common/utils/index.js';
 import type { EdgelessRootBlockComponent } from '../edgeless-root-block.js';
 export type NoteOptions = {

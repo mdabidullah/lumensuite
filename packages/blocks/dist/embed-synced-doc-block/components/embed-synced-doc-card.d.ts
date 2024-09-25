@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { SurfaceRefRenderer } from '../../surface-ref-block/surface-ref-renderer.js';
 import type { SurfaceRefBlockService } from '../../surface-ref-block/surface-ref-service.js';
 import type { EmbedSyncedDocBlockComponent } from '../embed-synced-doc-block.js';
-declare const EmbedSyncedDocCard_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EmbedSyncedDocCard_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EmbedSyncedDocCard extends EmbedSyncedDocCard_base {
     static styles: import("lit").CSSResult;
     private _dragging;
@@ -13,11 +13,11 @@ export declare class EmbedSyncedDocCard extends EmbedSyncedDocCard_base {
         isDeleted: boolean;
         isCycle: boolean;
     };
-    get editorMode(): import("@blocksuite/affine-model").DocMode;
-    get host(): import("@blocksuite/block-std").EditorHost;
-    get linkedDoc(): import("@blocksuite/store").Doc | null;
-    get model(): import("@blocksuite/affine-model").EmbedSyncedDocModel;
-    get std(): import("@blocksuite/block-std").BlockStdScope;
+    get editorMode(): import("@lumensuite/affine-model").DocMode;
+    get host(): import("@lumensuite/block-std").EditorHost;
+    get linkedDoc(): import("@lumensuite/store").Doc | null;
+    get model(): import("@lumensuite/affine-model").EmbedSyncedDocModel;
+    get std(): import("@lumensuite/block-std").BlockStdScope;
     private _handleClick;
     private _isDocEmpty;
     private _selectBlock;

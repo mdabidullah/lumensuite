@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowDownIcon } from '@blocksuite/affine-components/icons';
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { noop } from '@blocksuite/global/utils';
+import { ArrowDownIcon } from '@lumensuite/affine-components/icons';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { noop } from '@lumensuite/global/utils';
 import { css, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';
@@ -94,7 +94,7 @@ let LanguageListButton = (() => {
   `; }
         connectedCallback() {
             super.connectedCallback();
-            const langList = localStorage.getItem('blocksuite:code-block:lang-list');
+            const langList = localStorage.getItem('lumensuite:code-block:lang-list');
             if (langList) {
                 this._sortedBundledLanguages = JSON.parse(langList);
             }
@@ -106,7 +106,7 @@ let LanguageListButton = (() => {
                 }));
             }
             this.disposables.add(() => {
-                localStorage.setItem('blocksuite:code-block:lang-list', JSON.stringify(this._sortedBundledLanguages));
+                localStorage.setItem('lumensuite:code-block:lang-list', JSON.stringify(this._sortedBundledLanguages));
             });
         }
         render() {

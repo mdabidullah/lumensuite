@@ -1,5 +1,5 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
-import type { IBound } from '@blocksuite/global/utils';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
+import type { IBound } from '@lumensuite/global/utils';
 export declare class GridManager<T extends GfxModel> {
     private _elementToGrids;
     private _externalElementToGrids;

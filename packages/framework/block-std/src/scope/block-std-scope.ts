@@ -1,8 +1,8 @@
-import type { ServiceProvider } from '@blocksuite/global/di';
-import type { Doc } from '@blocksuite/store';
+import type { ServiceProvider } from '@lumensuite/global/di';
+import type { Doc } from '@lumensuite/store';
 
-import { Container } from '@blocksuite/global/di';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { Container } from '@lumensuite/global/di';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { BlockService, ExtensionType } from '../extension/index.js';
 
@@ -96,7 +96,7 @@ export class BlockStdScope {
 
   constructor(options: BlockStdOptions) {
     this._getHost = () => {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ValueNotExists,
         'Host is not ready to use, the `render` method should be called first'
       );
@@ -118,9 +118,9 @@ export class BlockStdScope {
     });
   }
 
-  getConfig<Key extends BlockSuite.ConfigKeys>(
+  getConfig<Key extends LumenSuite.ConfigKeys>(
     flavour: Key
-  ): BlockSuite.BlockConfigs[Key] | null;
+  ): LumenSuite.BlockConfigs[Key] | null;
 
   getConfig(flavour: string) {
     const config = this.provider.getOptional(ConfigIdentifier(flavour));
@@ -135,9 +135,9 @@ export class BlockStdScope {
    * @deprecated
    * BlockService will be removed in the future.
    */
-  getService<Key extends BlockSuite.ServiceKeys>(
+  getService<Key extends LumenSuite.ServiceKeys>(
     flavour: Key
-  ): BlockSuite.BlockServices[Key];
+  ): LumenSuite.BlockServices[Key];
   getService<Service extends BlockService>(flavour: string): Service;
   getService(flavour: string): BlockService {
     return this.get(BlockServiceIdentifier(flavour));
@@ -173,7 +173,7 @@ export class BlockStdScope {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {}
     interface BlockConfigs {}
 

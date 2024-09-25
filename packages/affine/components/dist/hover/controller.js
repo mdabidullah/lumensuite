@@ -1,5 +1,5 @@
-import { createLitPortal, } from '@blocksuite/affine-components/portal';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { createLitPortal, } from '@lumensuite/affine-components/portal';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { whenHover } from './when-hover.js';
 const DEFAULT_HOVER_OPTIONS = {
     transition: {

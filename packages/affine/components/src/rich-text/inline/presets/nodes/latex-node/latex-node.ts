@@ -1,17 +1,17 @@
+import { effect, signal } from '@lit-labs/preact-signals';
 import {
   type BlockComponent,
   type BlockStdScope,
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   type DeltaInsert,
   type InlineEditor,
   ZERO_WIDTH_NON_JOINER,
   ZERO_WIDTH_SPACE,
-} from '@blocksuite/inline';
-import { effect, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/inline';
 import { cssVar } from '@toeverything/theme';
 import { cssVarV2 } from '@toeverything/theme/v2';
 import katex from 'katex';

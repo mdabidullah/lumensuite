@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { on, once, requestConnectedFrame, } from '@blocksuite/affine-shared/utils';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { on, once, requestConnectedFrame, } from '@lumensuite/affine-shared/utils';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 /**

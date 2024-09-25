@@ -1,9 +1,9 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 import type {
   Chain,
   CommandKeyToData,
   InitCommandCtx,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 
 import {
   BoldIcon,
@@ -29,13 +29,13 @@ import {
   StrikethroughIcon,
   TextIcon,
   UnderlineIcon,
-} from '@blocksuite/affine-components/icons';
-import { createSimplePortal } from '@blocksuite/affine-components/portal';
-import { toast } from '@blocksuite/affine-components/toast';
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertExists } from '@blocksuite/global/utils';
-import { Slice } from '@blocksuite/store';
+} from '@lumensuite/affine-components/icons';
+import { createSimplePortal } from '@lumensuite/affine-components/portal';
+import { toast } from '@lumensuite/affine-components/toast';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertExists } from '@lumensuite/global/utils';
+import { Slice } from '@lumensuite/store';
 import { html, type TemplateResult } from 'lit';
 
 import type { AffineFormatBarWidget } from './format-bar.js';

@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import { effect, signal } from '@preact/signals-core';
 import { createMutex } from 'lib0/mutex.js';
 import * as Y from 'yjs';
@@ -125,7 +125,7 @@ export class SyncController {
     const _mutex = this._mutex;
     const schema = this.schema.flavourSchemaMap.get(this.flavour);
     if (!schema) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         `schema for flavour: ${this.flavour} not found`
       );
@@ -265,19 +265,19 @@ export class SyncController {
     });
 
     if (!id) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         'block id is not found when creating model'
       );
     }
     if (!flavour) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         'block flavour is not found when creating model'
       );
     }
     if (!yChildren) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         'block children is not found when creating model'
       );
@@ -285,7 +285,7 @@ export class SyncController {
 
     const schema = this.schema.flavourSchemaMap.get(flavour);
     if (!schema) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         `schema for flavour: ${flavour} not found`
       );

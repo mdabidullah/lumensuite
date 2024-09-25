@@ -1,4 +1,4 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
 export function isMindmapNode(el) {
     return (el.group instanceof MindmapElementModel || el instanceof MindmapElementModel);
 }

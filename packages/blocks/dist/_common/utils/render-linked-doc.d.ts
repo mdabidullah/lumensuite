@@ -1,6 +1,6 @@
-import type { DocMode, NoteBlockModel } from '@blocksuite/affine-model';
-import { type EditorHost } from '@blocksuite/block-std';
-import { type BlockModel, type Doc } from '@blocksuite/store';
+import type { DocMode, NoteBlockModel } from '@lumensuite/affine-model';
+import { type EditorHost } from '@lumensuite/block-std';
+import { type BlockModel, type Doc } from '@lumensuite/store';
 import type { EmbedLinkedDocBlockComponent } from '../../embed-linked-doc-block/embed-linked-doc-block.js';
 import type { EmbedSyncedDocCard } from '../../embed-synced-doc-block/components/embed-synced-doc-card.js';
 export declare const embedNoteContentStyles: import("lit").CSSResult;
@@ -15,5 +15,5 @@ export declare function addBlocksToDoc(targetDoc: Doc, model: BlockModel, parent
 export declare function convertSelectedBlocksToLinkedDoc(doc: Doc, selectedModels: BlockModel[], docTitle?: string): Doc;
 export declare function createLinkedDocFromBlocks(doc: Doc, blocks: BlockModel[], docTitle?: string): Doc;
 export declare function createLinkedDocFromNote(doc: Doc, note: NoteBlockModel, docTitle?: string): Doc;
-export declare function createLinkedDocFromEdgelessElements(host: EditorHost, elements: BlockSuite.EdgelessModel[], docTitle?: string): Doc;
+export declare function createLinkedDocFromEdgelessElements(host: EditorHost, elements: LumenSuite.EdgelessModel[], docTitle?: string): Doc;
 //# sourceMappingURL=render-linked-doc.d.ts.map

@@ -1,4 +1,4 @@
-import { almostEqual, assertExists } from '@blocksuite/global/utils';
+import { almostEqual, assertExists } from '@lumensuite/global/utils';
 import { Graph } from './graph.js';
 import { PriorityQueue } from './priority-queue.js';
 function cost(point, point2) {

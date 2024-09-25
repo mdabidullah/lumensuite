@@ -1,6 +1,6 @@
-import { type MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import { type RootBlockModel } from '@blocksuite/affine-model';
-import { WidgetComponent } from '@blocksuite/block-std';
+import { type MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import { type RootBlockModel } from '@lumensuite/affine-model';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
 import type { RootBlockComponent } from '../../types.js';
 import '../../../_common/components/button.js';

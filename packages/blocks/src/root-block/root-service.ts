@@ -1,10 +1,10 @@
-import type { PeekViewService } from '@blocksuite/affine-components/peek';
-import type { RefNodeSlots } from '@blocksuite/affine-components/rich-text';
-import type { BlockComponent } from '@blocksuite/block-std';
+import type { PeekViewService } from '@lumensuite/affine-components/peek';
+import type { RefNodeSlots } from '@lumensuite/affine-components/rich-text';
+import type { BlockComponent } from '@lumensuite/block-std';
 
-import { RootBlockSchema } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockService } from '@blocksuite/block-std';
+import { RootBlockSchema } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockService } from '@lumensuite/block-std';
 
 import type { NotificationService } from '../_common/components/index.js';
 import type { RootBlockComponent } from './types.js';
@@ -116,7 +116,7 @@ export abstract class RootService extends BlockService {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:page': RootService;
     }

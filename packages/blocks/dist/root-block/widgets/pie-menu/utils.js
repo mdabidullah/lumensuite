@@ -1,4 +1,4 @@
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import { ShapeToolController } from '../../edgeless/tools/shape-tool.js';
 export function updateShapeOverlay(rootComponent) {

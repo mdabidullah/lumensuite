@@ -1,11 +1,11 @@
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { BlockStdScope } from '@lumensuite/block-std';
 import type {
   GfxController,
   GfxModel,
   LayerManager,
   PointTestOptions,
-} from '@blocksuite/block-std/gfx';
-import type { IBound } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std/gfx';
+import type { IBound } from '@lumensuite/global/utils';
 
 import {
   type ElementRenderer,
@@ -14,24 +14,24 @@ import {
   type ReorderingDirection,
   type SurfaceBlockModel,
   type SurfaceContext,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   ConnectionOverlay,
   MindmapElementModel,
   SurfaceGroupLikeModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   type ConnectorElementModel,
   type FrameBlockModel,
   type GroupElementModel,
   type ReferenceInfo,
   RootBlockSchema,
-} from '@blocksuite/affine-model';
-import { clamp } from '@blocksuite/affine-shared/utils';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Bound, getCommonBound, last } from '@blocksuite/global/utils';
-import { type BlockModel, Slot } from '@blocksuite/store';
+} from '@lumensuite/affine-model';
+import { clamp } from '@lumensuite/affine-shared/utils';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Bound, getCommonBound, last } from '@lumensuite/global/utils';
+import { type BlockModel, Slot } from '@lumensuite/store';
 
 import type { EdgelessToolConstructor } from './services/tools-manager.js';
 import type { EdgelessTool } from './types.js';
@@ -86,8 +86,8 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     pressShiftKeyUpdated: new Slot<boolean>(),
     cursorUpdated: new Slot<string>(),
     copyAsPng: new Slot<{
-      blocks: BlockSuite.EdgelessBlockModelType[];
-      shapes: BlockSuite.SurfaceModel[];
+      blocks: LumenSuite.EdgelessBlockModelType[];
+      shapes: LumenSuite.SurfaceModel[];
     }>(),
     readonlyUpdated: new Slot<boolean>(),
     draggingAreaUpdated: new Slot(),
@@ -196,7 +196,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     super(std, flavourProvider);
     const surface = getSurfaceBlock(this.doc);
     if (!surface) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.NoSurfaceModelError,
         'This doc is missing surface block in edgeless.'
       );
@@ -244,7 +244,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     parent?: string | BlockModel,
     parentIndex?: number
   ) {
-    const key = getLastPropsKey(flavour as BlockSuite.EdgelessModelKeys, props);
+    const key = getLastPropsKey(flavour as LumenSuite.EdgelessModelKeys, props);
     if (key) {
       props = this.editPropsStore.applyLastProps(key, props);
     }
@@ -257,7 +257,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
   }
 
   addElement<T extends Record<string, unknown>>(type: string, props: T) {
-    const key = getLastPropsKey(type as BlockSuite.EdgelessModelKeys, props);
+    const key = getLastPropsKey(type as LumenSuite.EdgelessModelKeys, props);
     if (key) {
       props = this.editPropsStore.applyLastProps(key, props) as T;
     }
@@ -270,7 +270,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     return this._surface.addElement(nProps);
   }
 
-  createGroup(elements: BlockSuite.EdgelessModel[] | string[]) {
+  createGroup(elements: LumenSuite.EdgelessModel[] | string[]) {
     const groups = this.elements.filter(
       el => el.type === 'group'
     ) as GroupElementModel[];
@@ -370,22 +370,22 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     return this.layer.generateIndex(type);
   }
 
-  getConnectors(element: BlockSuite.EdgelessModel | string) {
+  getConnectors(element: LumenSuite.EdgelessModel | string) {
     const id = typeof element === 'string' ? element : element.id;
 
     return this.surface.getConnectors(id) as ConnectorElementModel[];
   }
 
-  getElementById(id: string): BlockSuite.EdgelessModel | null {
+  getElementById(id: string): LumenSuite.EdgelessModel | null {
     const el =
       this._surface.getElementById(id) ??
-      (this.doc.getBlockById(id) as BlockSuite.EdgelessBlockModelType | null);
+      (this.doc.getBlockById(id) as LumenSuite.EdgelessBlockModelType | null);
     return el;
   }
 
-  getElementsByType<K extends keyof BlockSuite.SurfaceElementModelMap>(
+  getElementsByType<K extends keyof LumenSuite.SurfaceElementModelMap>(
     type: K
-  ): BlockSuite.SurfaceElementModelMap[K][] {
+  ): LumenSuite.SurfaceElementModelMap[K][] {
     return this.surface.getElementsByType(type);
   }
 
@@ -447,7 +447,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     x: number,
     y: number,
     options?: PointTestOptions
-  ): BlockSuite.EdgelessModel | null {
+  ): LumenSuite.EdgelessModel | null {
     const selectionManager = this._selection;
     const results = this.gfx.getElementByPoint(x, y, {
       ...options,
@@ -480,14 +480,14 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
       }
     }
 
-    return (picked ?? first) as BlockSuite.EdgelessModel | null;
+    return (picked ?? first) as LumenSuite.EdgelessModel | null;
   }
 
   registerTool(Tool: EdgelessToolConstructor) {
     return this.tool.register(Tool);
   }
 
-  removeElement(id: string | BlockSuite.EdgelessModel) {
+  removeElement(id: string | LumenSuite.EdgelessModel) {
     id = typeof id === 'string' ? id : id.id;
 
     const el = this.getElementById(id);
@@ -503,7 +503,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
   }
 
   reorderElement(
-    element: BlockSuite.EdgelessModel,
+    element: LumenSuite.EdgelessModel,
     direction: ReorderingDirection
   ) {
     const index = this.layer.getReorderedIndex(element, direction);
@@ -591,7 +591,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     const element = this._surface.getElementById(id);
     if (element) {
       const key = getLastPropsKey(
-        element.type as BlockSuite.EdgelessModelKeys,
+        element.type as LumenSuite.EdgelessModelKeys,
         { ...element.yMap.toJSON(), ...props }
       );
       key && this.editPropsStore.recordLastProps(key, props);
@@ -602,7 +602,7 @@ export class EdgelessRootService extends RootService implements SurfaceContext {
     const block = this.doc.getBlockById(id);
     if (block) {
       const key = getLastPropsKey(
-        block.flavour as BlockSuite.EdgelessModelKeys,
+        block.flavour as LumenSuite.EdgelessModelKeys,
         { ...block.yBlock.toJSON(), ...props }
       );
       key && this.editPropsStore.recordLastProps(key, props);

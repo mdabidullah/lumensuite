@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const EdgelessReleaseFromGroupButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessReleaseFromGroupButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessReleaseFromGroupButton extends EdgelessReleaseFromGroupButton_base {
     private _releaseFromGroup;
     protected render(): import("lit").TemplateResult<1>;

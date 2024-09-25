@@ -1,4 +1,4 @@
-import { CopyIcon, DeleteIcon, DownloadIcon, DuplicateIcon, RefreshIcon, } from '@blocksuite/affine-components/icons';
+import { CopyIcon, DeleteIcon, DownloadIcon, DuplicateIcon, RefreshIcon, } from '@lumensuite/affine-components/icons';
 import { cloneAttachmentProperties } from '../utils.js';
 export const BUILT_IN_GROUPS = [
     {

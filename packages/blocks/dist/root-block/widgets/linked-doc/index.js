@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { getCurrentNativeRange, getViewportElement, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { DisposableGroup, throttle } from '@blocksuite/global/utils';
-import { InlineEditor } from '@blocksuite/inline';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { getCurrentNativeRange, getViewportElement, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { DisposableGroup, throttle } from '@lumensuite/global/utils';
+import { InlineEditor } from '@lumensuite/inline';
 import { customElement } from 'lit/decorators.js';
 import { getPopperPosition } from '../../../root-block/utils/position.js';
 import { getMenus } from './config.js';

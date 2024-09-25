@@ -1,5 +1,5 @@
 import { EmbedFigmaBlockComponent } from './embed-figma-block.js';
-declare const EmbedEdgelessBlockComponent_base: typeof EmbedFigmaBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessBlockComponent_base: typeof EmbedFigmaBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessBlockComponent extends EmbedEdgelessBlockComponent_base {
 }
 declare global {

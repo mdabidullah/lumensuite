@@ -1,4 +1,4 @@
-# @blocksuite/block-std
+# @lumensuite/block-std
 
 ## 0.17.5
 
@@ -13,9 +13,9 @@
   - Inline extensions
   - Mindmap remember last settings
 - Updated dependencies [debf65c]
-  - @blocksuite/global@0.17.5
-  - @blocksuite/inline@0.17.5
-  - @blocksuite/store@0.17.5
+  - @lumensuite/global@0.17.5
+  - @lumensuite/inline@0.17.5
+  - @lumensuite/store@0.17.5
 
 ## 0.17.4
 
@@ -23,9 +23,9 @@
 
 - 9978a71: Create git tag
 - Updated dependencies [9978a71]
-  - @blocksuite/global@0.17.4
-  - @blocksuite/inline@0.17.4
-  - @blocksuite/store@0.17.4
+  - @lumensuite/global@0.17.4
+  - @lumensuite/inline@0.17.4
+  - @lumensuite/store@0.17.4
 
 ## 0.17.3
 
@@ -33,9 +33,9 @@
 
 - be60caf: Generate git tag
 - Updated dependencies [be60caf]
-  - @blocksuite/global@0.17.3
-  - @blocksuite/inline@0.17.3
-  - @blocksuite/store@0.17.3
+  - @lumensuite/global@0.17.3
+  - @lumensuite/inline@0.17.3
+  - @lumensuite/store@0.17.3
 
 ## 0.17.2
 
@@ -43,32 +43,32 @@
 
 - 5543e32: Fix missing export in dataview
 - Updated dependencies [5543e32]
-  - @blocksuite/global@0.17.2
-  - @blocksuite/inline@0.17.2
-  - @blocksuite/store@0.17.2
+  - @lumensuite/global@0.17.2
+  - @lumensuite/inline@0.17.2
+  - @lumensuite/store@0.17.2
 
 ## 0.17.1
 
 ### Patch Changes
 
-- 21b5d47: BlockSuite 0.17.1
+- 21b5d47: LumenSuite 0.17.1
 
-  Add @blocksuite/data-view package.
+  Add @lumensuite/data-view package.
   Make font loader an extension.
   Frame improvement.
   Fix missing xywh when copy/paste mind map.
   Fix connector label text.
 
 - Updated dependencies [21b5d47]
-  - @blocksuite/global@0.17.1
-  - @blocksuite/inline@0.17.1
-  - @blocksuite/store@0.17.1
+  - @lumensuite/global@0.17.1
+  - @lumensuite/inline@0.17.1
+  - @lumensuite/store@0.17.1
 
 ## 0.17.0
 
 ### Minor Changes
 
-- 767180a: BlockSuite 0.17.0
+- 767180a: LumenSuite 0.17.0
 
   ## New features:
 
@@ -91,6 +91,6 @@
 ### Patch Changes
 
 - Updated dependencies [767180a]
-  - @blocksuite/global@0.17.0
-  - @blocksuite/inline@0.17.0
-  - @blocksuite/store@0.17.0
+  - @lumensuite/global@0.17.0
+  - @lumensuite/inline@0.17.0
+  - @lumensuite/store@0.17.0

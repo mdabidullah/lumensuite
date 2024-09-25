@@ -1,4 +1,4 @@
-import { isStrictUrl } from '@blocksuite/affine-shared/utils';
+import { isStrictUrl } from '@lumensuite/affine-shared/utils';
 const EDGE_IGNORED_ATTRIBUTES = ['code', 'link'];
 const GLOBAL_IGNORED_ATTRIBUTES = [];
 const autoIdentifyLink = (ctx) => {

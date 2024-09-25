@@ -1,6 +1,6 @@
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { isInsideBlockByFlavour } from '@blocksuite/affine-shared/utils';
-import { assertType } from '@blocksuite/global/utils';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { isInsideBlockByFlavour } from '@lumensuite/affine-shared/utils';
+import { assertType } from '@lumensuite/global/utils';
 import { slashMenuToolTips } from './tooltips/index.js';
 export function isGroupDivider(item) {
     return 'groupName' in item;

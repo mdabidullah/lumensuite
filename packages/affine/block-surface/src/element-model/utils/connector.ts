@@ -1,9 +1,9 @@
-import type { GfxModel } from '@blocksuite/block-std/gfx';
+import type { GfxModel } from '@lumensuite/block-std/gfx';
 
-import { ConnectorElementModel } from '@blocksuite/affine-model';
+import { ConnectorElementModel } from '@lumensuite/affine-model';
 
 export function isConnectorWithLabel(
-  model: GfxModel | BlockSuite.SurfaceLocalModel
+  model: GfxModel | LumenSuite.SurfaceLocalModel
 ) {
   return model instanceof ConnectorElementModel && model.hasLabel();
 }

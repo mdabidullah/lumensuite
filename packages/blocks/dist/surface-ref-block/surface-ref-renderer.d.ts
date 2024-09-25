@@ -1,9 +1,9 @@
-import type { SurfaceBlockModel, SurfaceBlockService } from '@blocksuite/affine-block-surface';
-import type { BlockStdScope } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
-import { CanvasRenderer } from '@blocksuite/affine-block-surface';
-import { Viewport } from '@blocksuite/block-std/gfx';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import type { SurfaceBlockModel, SurfaceBlockService } from '@lumensuite/affine-block-surface';
+import type { BlockStdScope } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { CanvasRenderer } from '@lumensuite/affine-block-surface';
+import { Viewport } from '@lumensuite/block-std/gfx';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 export declare class SurfaceRefRenderer {
     readonly id: string;
     readonly doc: Doc;
@@ -28,7 +28,7 @@ export declare class SurfaceRefRenderer {
     });
     private _initSurfaceModel;
     private _initSurfaceRenderer;
-    getModel(id: string): BlockSuite.EdgelessModel | null;
+    getModel(id: string): LumenSuite.EdgelessModel | null;
     mount(): void;
     unmount(): void;
 }

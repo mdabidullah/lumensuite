@@ -1,3 +1,4 @@
+import { autoUpdate, computePosition, flip, offset } from '@floating-ui/dom';
 import {
   CaptionIcon,
   CenterPeekIcon,
@@ -8,32 +9,31 @@ import {
   OpenIcon,
   PaletteIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
-import { isPeekable, peek } from '@blocksuite/affine-components/peek';
-import { toast } from '@blocksuite/affine-components/toast';
+} from '@lumensuite/affine-components/icons';
+import { isPeekable, peek } from '@lumensuite/affine-components/peek';
+import { toast } from '@lumensuite/affine-components/toast';
 import {
   cloneGroups,
   type MenuItem,
   type MenuItemGroup,
   renderGroups,
   renderToolbarSeparator,
-} from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/toolbar';
 import {
   type BookmarkBlockModel,
   BookmarkStyles,
   type EmbedGithubModel,
   type EmbedLinkedDocModel,
   type RootBlockModel,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 import {
   EmbedOptionProvider,
   type EmbedOptions,
-} from '@blocksuite/affine-shared/services';
-import { getHostName } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { type BlockModel, DocCollection } from '@blocksuite/store';
-import { autoUpdate, computePosition, flip, offset } from '@floating-ui/dom';
+} from '@lumensuite/affine-shared/services';
+import { getHostName } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
+import { type BlockModel, DocCollection } from '@lumensuite/store';
 import { html, nothing, type TemplateResult } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

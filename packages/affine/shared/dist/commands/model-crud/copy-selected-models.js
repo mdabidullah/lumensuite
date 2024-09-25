@@ -1,4 +1,4 @@
-import { Slice } from '@blocksuite/store';
+import { Slice } from '@lumensuite/store';
 export const copySelectedModelsCommand = (ctx, next) => {
     const models = ctx.draftedModels;
     if (!models) {

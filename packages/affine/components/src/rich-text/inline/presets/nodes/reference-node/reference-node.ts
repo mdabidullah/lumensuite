@@ -1,20 +1,20 @@
-import type { ReferenceInfo, RootBlockModel } from '@blocksuite/affine-model';
-import type { Doc, DocMeta } from '@blocksuite/store';
+import type { ReferenceInfo, RootBlockModel } from '@lumensuite/affine-model';
+import type { Doc, DocMeta } from '@lumensuite/store';
 
 import {
   getModelByElement,
   getRootByElement,
-} from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, type BlockComponent } from '@blocksuite/block-std';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+} from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, type BlockComponent } from '@lumensuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import {
   type DeltaInsert,
   INLINE_ROOT_ATTR,
   type InlineRootElement,
   ZERO_WIDTH_NON_JOINER,
   ZERO_WIDTH_SPACE,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 import { css, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';
@@ -187,7 +187,7 @@ export class AffineReference extends WithDisposable(ShadowlessElement) {
   get std() {
     const std = this.block?.std;
     if (!std) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ValueNotExists,
         'std not found in reference node'
       );

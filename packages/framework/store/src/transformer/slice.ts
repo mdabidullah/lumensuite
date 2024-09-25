@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { Doc } from '../store/index.js';
 import type { DraftModel } from './draft.js';
@@ -38,7 +38,7 @@ export class Slice {
     const meta = doc.collection.meta;
     const { pageVersion, workspaceVersion } = meta;
     if (!pageVersion || !workspaceVersion) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         'pageVersion or workspaceVersion not found when creating slice'
       );

@@ -124,7 +124,7 @@ describe('schema', () => {
 });
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:note-block-video': BlockModel;
       'affine:note-invalid-block-video': BlockModel;

@@ -7,7 +7,7 @@ import './utils/declare-test-window.js';
 import { scoped, test } from './utils/playwright.js';
 
 const bookMarkUrl = 'http://localhost';
-const embedUrl = 'https://github.com/toeverything/blocksuite/pull/7217';
+const embedUrl = 'https://github.com/toeverything/lumensuite/pull/7217';
 
 test.beforeEach(async ({ page }) => {
   await page.route(

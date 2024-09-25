@@ -1,11 +1,11 @@
-import type { Y } from '@blocksuite/store';
-import { type BlockStdScope, ShadowlessElement } from '@blocksuite/block-std';
+import type { Y } from '@lumensuite/store';
+import { type BlockStdScope, ShadowlessElement } from '@lumensuite/block-std';
 import { type Signal } from '@lit-labs/preact-signals';
 import { type ThemedToken } from 'shiki';
-export declare const LatexEditorInlineManagerExtension: import("@blocksuite/block-std").ExtensionType & {
-    identifier: import("@blocksuite/global/di").ServiceIdentifier<import("../../../../extension/inline-manager.js").InlineManager>;
+export declare const LatexEditorInlineManagerExtension: import("@lumensuite/block-std").ExtensionType & {
+    identifier: import("@lumensuite/global/di").ServiceIdentifier<import("../../../../extension/inline-manager.js").InlineManager>;
 };
-declare const LatexEditorMenu_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LatexEditorMenu_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class LatexEditorMenu extends LatexEditorMenu_base {
     static styles: import("lit").CSSResult;
     highlightTokens$: Signal<ThemedToken[][]>;

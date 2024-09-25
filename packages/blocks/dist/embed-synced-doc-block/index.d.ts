@@ -2,7 +2,7 @@ import type { EmbedSyncedDocBlockService } from './embed-synced-doc-service.js';
 export * from './embed-synced-doc-block.js';
 export * from './embed-synced-doc-service.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:embed-synced-doc': EmbedSyncedDocBlockService;
         }

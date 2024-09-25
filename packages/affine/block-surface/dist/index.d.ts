@@ -34,7 +34,7 @@ export { AStarRunner } from './utils/a-star.js';
 export { RoughCanvas } from './utils/rough/canvas.js';
 export type { Options } from './utils/rough/core.js';
 export { sortIndex } from './utils/sort.js';
-import { almostEqual, clamp, getBoundsWithRotation, getPointFromBoundsWithRotation, getPointsFromBoundsWithRotation, getQuadBoundsWithRotation, getStroke, getSvgPathFromStroke, intersects, isOverlap, isPointIn, lineIntersects, linePolygonIntersects, normalizeDegAngle, polygonGetPointTangent, polygonNearestPoint, polygonPointDistance, polyLineNearestPoint, rotatePoints, sign, toDegree, toRadian } from '@blocksuite/global/utils';
+import { almostEqual, clamp, getBoundsWithRotation, getPointFromBoundsWithRotation, getPointsFromBoundsWithRotation, getQuadBoundsWithRotation, getStroke, getSvgPathFromStroke, intersects, isOverlap, isPointIn, lineIntersects, linePolygonIntersects, normalizeDegAngle, polygonGetPointTangent, polygonNearestPoint, polygonPointDistance, polyLineNearestPoint, rotatePoints, sign, toDegree, toRadian } from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 import { generateElementId, normalizeWheelDeltaY } from './utils/index.js';
 export declare const ConnectorUtils: {
@@ -51,7 +51,7 @@ export declare const TextUtils: {
     wrapFontFamily: typeof wrapFontFamily;
     getFontFaces: () => any[];
     getFontFacesByFontFamily: typeof getFontFacesByFontFamily;
-    isSameFontFamily: (fontFamily: import("@blocksuite/affine-model").FontFamily | string) => (fontFace: FontFace) => boolean;
+    isSameFontFamily: (fontFamily: import("@lumensuite/affine-model").FontFamily | string) => (fontFace: FontFace) => boolean;
 };
 export declare const CommonUtils: {
     almostEqual: typeof almostEqual;
@@ -81,7 +81,7 @@ export declare const CommonUtils: {
     toRadian: typeof toRadian;
 };
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:surface': SurfaceBlockService;
         }

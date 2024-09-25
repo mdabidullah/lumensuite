@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
-import { getHostName, isValidUrl, normalizeUrl, } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, WithDisposable } from '@blocksuite/block-std';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
+import { getHostName, isValidUrl, normalizeUrl, } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, WithDisposable } from '@lumensuite/block-std';
 import { computePosition, inline, offset, shift } from '@floating-ui/dom';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';

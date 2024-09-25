@@ -7,7 +7,7 @@ export interface CodeBlockConfig {
     langs?: BundledLanguageInfo[];
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockConfigs {
             'affine:code': CodeBlockConfig;
         }

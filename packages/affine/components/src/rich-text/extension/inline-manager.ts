@@ -1,14 +1,14 @@
-import type { Y } from '@blocksuite/store';
+import type { Y } from '@lumensuite/store';
 
 import {
   type BlockStdScope,
   type ExtensionType,
   StdIdentifier,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import {
   createIdentifier,
   type ServiceIdentifier,
-} from '@blocksuite/global/di';
+} from '@lumensuite/global/di';
 import {
   type AttributeRenderer,
   baseTextAttributes,
@@ -16,7 +16,7 @@ import {
   getDefaultAttributeRenderer,
   KEYBOARD_ALLOW_DEFAULT,
   type KeyboardBindingContext,
-} from '@blocksuite/inline';
+} from '@lumensuite/inline';
 import { z, type ZodObject, type ZodTypeAny } from 'zod';
 
 import type {

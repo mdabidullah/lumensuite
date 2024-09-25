@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import type { EmbedFigmaBlockService } from './embed-figma-service.js';
 
@@ -10,7 +10,7 @@ export * from './embed-figma-model.js';
 export * from './embed-figma-spec.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:embed-figma': EmbedFigmaBlockService;
     }

@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { AffineEditorContainer } from '../../editors/editor-container.js';
 import { CommentManager } from './comment-manager.js';
-declare const CommentPanel_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const CommentPanel_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class CommentPanel extends CommentPanel_base {
     static styles: import("lit").CSSResult;
     commentManager: CommentManager | null;

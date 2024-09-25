@@ -1,10 +1,10 @@
-import type { BlockModel } from '@blocksuite/store';
+import type { BlockModel } from '@lumensuite/store';
 import type { TemplateResult } from 'lit';
 import type { RootBlockComponent } from '../../types.js';
 import { type SlashMenuTooltip } from './tooltips/index.js';
 export type SlashMenuConfig = {
     triggerKeys: string[];
-    ignoreBlockTypes: BlockSuite.Flavour[];
+    ignoreBlockTypes: LumenSuite.Flavour[];
     items: SlashMenuItem[];
     maxHeight: number;
     tooltipTimeout: number;

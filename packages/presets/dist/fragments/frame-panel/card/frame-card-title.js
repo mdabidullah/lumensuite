@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { DisposableGroup } from '@blocksuite/global/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { FrameCardTitleEditor } from './frame-card-title-editor.js';

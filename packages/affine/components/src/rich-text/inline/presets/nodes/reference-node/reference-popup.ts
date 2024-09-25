@@ -1,12 +1,12 @@
-import type { ReferenceInfo } from '@blocksuite/affine-model';
-import type { InlineRange } from '@blocksuite/inline';
+import type { ReferenceInfo } from '@lumensuite/affine-model';
+import type { InlineRange } from '@lumensuite/inline';
 
-import { isInsideBlockByFlavour } from '@blocksuite/affine-shared/utils';
-import { BLOCK_ID_ATTR, type BlockComponent } from '@blocksuite/block-std';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
 import { computePosition, inline, offset, shift } from '@floating-ui/dom';
 import { effect } from '@lit-labs/preact-signals';
+import { isInsideBlockByFlavour } from '@lumensuite/affine-shared/utils';
+import { BLOCK_ID_ATTR, type BlockComponent } from '@lumensuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';

@@ -1,4 +1,4 @@
-import { defineBlockSchema } from '@blocksuite/store';
+import { defineBlockSchema } from '@lumensuite/store';
 export const ParagraphBlockSchema = defineBlockSchema({
     flavour: 'affine:paragraph',
     props: internal => ({

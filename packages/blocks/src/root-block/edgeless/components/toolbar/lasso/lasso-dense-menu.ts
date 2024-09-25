@@ -1,7 +1,7 @@
 import {
   LassoFreeHandIcon,
   LassoPolygonalIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 
 import type { DenseMenuBuilder } from '../common/type.js';
 

@@ -1,8 +1,8 @@
 import {
   getBlockProps,
   isInsidePageEditor,
-} from '@blocksuite/affine-shared/utils';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { assertExists } from '@lumensuite/global/utils';
 
 import type { ImageBlockComponent } from '../../../image-block/image-block.js';
 
@@ -20,7 +20,7 @@ export function duplicate(
 
   const index = parent?.children.indexOf(model);
   const duplicateId = doc.addBlock(
-    model.flavour as BlockSuite.Flavour,
+    model.flavour as LumenSuite.Flavour,
     duplicateProps,
     parent,
     index + 1

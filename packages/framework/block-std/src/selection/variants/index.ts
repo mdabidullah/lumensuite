@@ -4,7 +4,7 @@ export * from './surface.js';
 export * from './text.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     type SelectionType = keyof Selection;
 
     type SelectionInstance = {

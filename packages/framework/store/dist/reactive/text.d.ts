@@ -1,4 +1,4 @@
-import type { BaseTextAttributes, DeltaInsert } from '@blocksuite/inline';
+import type { BaseTextAttributes, DeltaInsert } from '@lumensuite/inline';
 import { type Signal } from '@preact/signals-core';
 import * as Y from 'yjs';
 export interface OptionalAttributes {

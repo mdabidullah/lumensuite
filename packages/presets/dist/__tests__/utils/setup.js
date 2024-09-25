@@ -1,7 +1,7 @@
-import { CommunityCanvasTextFonts, FontConfigExtension, } from '@blocksuite/blocks';
-import { AffineSchemas } from '@blocksuite/blocks/schemas';
-import { assertExists } from '@blocksuite/global/utils';
-import { DocCollection, IdGeneratorType, Schema, Text, } from '@blocksuite/store';
+import { CommunityCanvasTextFonts, FontConfigExtension, } from '@lumensuite/blocks';
+import { AffineSchemas } from '@lumensuite/blocks/schemas';
+import { assertExists } from '@lumensuite/global/utils';
+import { DocCollection, IdGeneratorType, Schema, Text, } from '@lumensuite/store';
 import { AffineEditorContainer } from '../../index.js';
 function createCollectionOptions() {
     const schema = new Schema();

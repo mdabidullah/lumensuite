@@ -1,5 +1,5 @@
-import { type ParagraphBlockModel } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
+import { type ParagraphBlockModel } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
 export declare class ParagraphBlockService extends BlockService {
     static readonly flavour: "affine:paragraph";
     placeholderGenerator: (model: ParagraphBlockModel) => string;

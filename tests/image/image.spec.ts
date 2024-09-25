@@ -123,7 +123,7 @@ test('enter shortcut on focusing embed block and its caption', async ({
 
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/2495',
+    description: 'https://github.com/toeverything/lumensuite/issues/2495',
   });
 
   // blur

@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { css, html, nothing } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import './zoom-bar-toggle-button.js';

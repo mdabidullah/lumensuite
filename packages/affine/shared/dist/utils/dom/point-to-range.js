@@ -1,4 +1,4 @@
-import { IS_FIREFOX } from '@blocksuite/global/env';
+import { IS_FIREFOX } from '@lumensuite/global/env';
 /**
  * A wrapper for the browser's `caretPositionFromPoint` and `caretRangeFromPoint`,
  * but adapted for different browsers.
@@ -15,7 +15,7 @@ export function caretRangeFromPoint(clientX, clientY) {
     if (!range) {
         return null;
     }
-    // See https://github.com/toeverything/blocksuite/issues/1382
+    // See https://github.com/toeverything/lumensuite/issues/1382
     const rangeRects = range?.getClientRects();
     if (rangeRects &&
         rangeRects.length === 2 &&

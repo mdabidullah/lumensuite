@@ -1,6 +1,6 @@
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
 import { CloseIcon } from '@blocksuite/icons/lit';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

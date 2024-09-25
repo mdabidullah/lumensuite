@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { rangeWrap } from '@blocksuite/affine-shared/utils';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { rangeWrap } from '@lumensuite/affine-shared/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { ArrowRightSmallIcon, CheckBoxCkeckSolidIcon, CheckBoxUnIcon, DoneIcon, } from '@blocksuite/icons/lit';
 import { autoUpdate, computePosition, flip, offset, shift, } from '@floating-ui/dom';
 import { css, html, nothing } from 'lit';

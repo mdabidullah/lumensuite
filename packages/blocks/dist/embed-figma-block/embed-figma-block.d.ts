@@ -1,4 +1,4 @@
-import type { EmbedFigmaModel, EmbedFigmaStyles } from '@blocksuite/affine-model';
+import type { EmbedFigmaModel, EmbedFigmaStyles } from '@lumensuite/affine-model';
 import type { EmbedFigmaBlockService } from './embed-figma-service.js';
 import { EmbedBlockComponent } from '../_common/embed-block-helper/embed-block-element.js';
 export declare class EmbedFigmaBlockComponent extends EmbedBlockComponent<EmbedFigmaModel, EmbedFigmaBlockService> {

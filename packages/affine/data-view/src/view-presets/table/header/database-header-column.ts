@@ -1,19 +1,4 @@
 import {
-  type Menu,
-  type NormalMenu,
-  popMenu,
-} from '@blocksuite/affine-components/context-menu';
-import {
-  insertPositionToIndex,
-  type InsertToPosition,
-} from '@blocksuite/affine-shared/utils';
-import {
-  ShadowlessElement,
-  SignalWatcher,
-  WithDisposable,
-} from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import {
   DeleteIcon,
   DuplicateIcon,
   InsertLeftIcon,
@@ -21,6 +6,21 @@ import {
   MoveLeftIcon,
   MoveRightIcon,
 } from '@blocksuite/icons/lit';
+import {
+  type Menu,
+  type NormalMenu,
+  popMenu,
+} from '@lumensuite/affine-components/context-menu';
+import {
+  insertPositionToIndex,
+  type InsertToPosition,
+} from '@lumensuite/affine-shared/utils';
+import {
+  ShadowlessElement,
+  SignalWatcher,
+  WithDisposable,
+} from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

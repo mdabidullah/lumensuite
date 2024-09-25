@@ -1,6 +1,6 @@
-import type { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import type { ShapeElementModel } from '@blocksuite/affine-model';
-import { LayoutType, MindmapStyle } from '@blocksuite/affine-model';
+import type { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import type { ShapeElementModel } from '@lumensuite/affine-model';
+import { LayoutType, MindmapStyle } from '@lumensuite/affine-model';
 import { LitElement, nothing, type TemplateResult } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 interface LayoutItem {
@@ -20,7 +20,7 @@ declare class EdgelessChangeMindmapLayoutPanel extends LitElement {
     accessor mindmapLayout: LayoutType | null;
     accessor onSelect: (style: LayoutType) => void;
 }
-declare const EdgelessChangeMindmapButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessChangeMindmapButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessChangeMindmapButton extends EdgelessChangeMindmapButton_base {
     private _updateLayoutType;
     private _updateStyle;

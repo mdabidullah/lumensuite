@@ -1,5 +1,5 @@
-import { ListBlockSchema } from '@blocksuite/affine-model';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
+import { ListBlockSchema } from '@lumensuite/affine-model';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
 import { richTextColumnConfig } from '../../database-block/columns/rich-text/cell-renderer.js';
 import { createBlockMeta } from './base.js';
 export const todoMeta = createBlockMeta({

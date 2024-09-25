@@ -3,8 +3,8 @@ import {
   ConnectorIcon,
   ConnectorLWithArrowIcon,
   ConnectorXWithArrowIcon,
-} from '@blocksuite/affine-components/icons';
-import { ConnectorMode } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-components/icons';
+import { ConnectorMode } from '@lumensuite/affine-model';
 
 import type { DenseMenuBuilder } from '../common/type.js';
 

@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import '../buttons/tool-icon-button.js';
-declare const EdgelessNoteShadowPanel_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessNoteShadowPanel_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessNoteShadowPanel extends EdgelessNoteShadowPanel_base {
     static styles: import("lit").CSSResult;
     render(): unknown;

@@ -1,4 +1,4 @@
-import type { Constructor } from '@blocksuite/global/utils';
+import type { Constructor } from '@lumensuite/global/utils';
 import type { LitElement } from 'lit';
 type ValidatorFunction = (value: unknown) => boolean;
 export declare const PropTypes: {

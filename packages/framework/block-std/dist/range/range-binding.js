@@ -1,4 +1,4 @@
-import { throttle } from '@blocksuite/global/utils';
+import { throttle } from '@lumensuite/global/utils';
 import { blockComponentSymbol } from '../view/element/consts.js';
 import { BLOCK_ID_ATTR } from '../view/index.js';
 import { RANGE_SYNC_EXCLUDE_ATTR } from './consts.js';

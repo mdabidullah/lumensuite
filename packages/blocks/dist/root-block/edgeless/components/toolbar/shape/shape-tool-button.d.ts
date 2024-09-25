@@ -2,7 +2,7 @@ import { LitElement } from 'lit';
 import '../../buttons/toolbar-button.js';
 import './shape-draggable.js';
 import './shape-menu.js';
-declare const EdgelessShapeToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessShapeToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessShapeToolButton extends EdgelessShapeToolButton_base {
     static styles: import("lit").CSSResult;
     private _handleShapeClick;

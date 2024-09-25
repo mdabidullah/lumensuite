@@ -2,8 +2,8 @@ import type {
   ShapeElementModel,
   TextAlign,
   TextVerticalAlign,
-} from '@blocksuite/affine-model';
-import type { Bound, SerializedXYWH } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { Bound, SerializedXYWH } from '@lumensuite/global/utils';
 
 import type { CanvasRenderer } from '../../canvas-renderer.js';
 

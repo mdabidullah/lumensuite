@@ -1,8 +1,8 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 import type { AIPanelErrorConfig, CopyConfig } from '../../type.js';
 import '../finish-tip.js';
-declare const AIPanelError_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AIPanelError_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AIPanelError extends AIPanelError_base {
     static styles: import("lit").CSSResult;
     private _getResponseGroup;

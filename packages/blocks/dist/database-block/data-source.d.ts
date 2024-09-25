@@ -1,6 +1,6 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import { type InsertToPosition } from '@blocksuite/affine-shared/utils';
-import { type ColumnMeta, type DatabaseFlags, DataSourceBase, type DataViewDataType, type DataViewTypes, type DetailSlots, type ViewManager, type ViewMeta } from '@blocksuite/data-view';
+import type { EditorHost } from '@lumensuite/block-std';
+import { type InsertToPosition } from '@lumensuite/affine-shared/utils';
+import { type ColumnMeta, type DatabaseFlags, DataSourceBase, type DataViewDataType, type DataViewTypes, type DetailSlots, type ViewManager, type ViewMeta } from '@lumensuite/data-view';
 import { type ReadonlySignal } from '@lit-labs/preact-signals';
 export type DatabaseBlockDataSourceConfig = {
     pageId: string;
@@ -19,7 +19,7 @@ export declare class DatabaseBlockDataSource extends DataSourceBase {
     viewMetas: ViewMeta[];
     get addPropertyConfigList(): ColumnMeta<any, any, any>[];
     get detailSlots(): DetailSlots;
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     constructor(host: EditorHost, config: DatabaseBlockDataSourceConfig);
     private _runCapture;
     private getModelById;

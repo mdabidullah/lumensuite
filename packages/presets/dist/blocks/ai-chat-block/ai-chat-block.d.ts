@@ -1,11 +1,11 @@
-import { BlockComponent } from '@blocksuite/block-std';
+import { BlockComponent } from '@lumensuite/block-std';
 import type { AIChatBlockModel } from './ai-chat-model.js';
 import './components/ai-chat-messages.js';
 export declare class AIChatBlockComponent extends BlockComponent<AIChatBlockModel> {
     static styles: import("lit").CSSResult;
     private _deserializeChatMessages;
-    get _peekViewService(): import("@blocksuite/blocks").PeekViewService | null;
-    get _rootService(): import("@blocksuite/blocks").RootService;
+    get _peekViewService(): import("@lumensuite/blocks").PeekViewService | null;
+    get _rootService(): import("@lumensuite/blocks").RootService;
     renderBlock(): import("lit").TemplateResult<1>;
 }
 declare global {

@@ -1,10 +1,10 @@
-import type { FrameBlockModel } from '@blocksuite/affine-model';
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IPoint, IVec } from '@blocksuite/global/utils';
+import type { FrameBlockModel } from '@lumensuite/affine-model';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IPoint, IVec } from '@lumensuite/global/utils';
 
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { Bound, noop, Vec } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { Bound, noop, Vec } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 
 import { getTopElements } from '../utils/tree.js';
 import { EdgelessToolController } from './edgeless-tool.js';
@@ -141,7 +141,7 @@ export class FrameToolController extends EdgelessToolController<FrameTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       frame: FrameToolController;
     }

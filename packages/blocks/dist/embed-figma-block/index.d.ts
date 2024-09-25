@@ -3,7 +3,7 @@ export * from './embed-figma-block.js';
 export * from './embed-figma-model.js';
 export * from './embed-figma-spec.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockServices {
             'affine:embed-figma': EmbedFigmaBlockService;
         }

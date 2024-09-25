@@ -1,5 +1,5 @@
-import { WithDisposable } from '@blocksuite/block-std';
-import { createButtonPopper } from '@blocksuite/blocks';
+import { WithDisposable } from '@lumensuite/block-std';
+import { createButtonPopper } from '@lumensuite/blocks';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 

@@ -38,7 +38,7 @@ export declare function downloadBlob(blob: Blob, name: string): void;
  * Similarly, when converting from an attachment block to an image block,
  * we need to save the attachment's name.
  *
- * See also https://github.com/toeverything/blocksuite/pull/4583#pullrequestreview-1610662677
+ * See also https://github.com/toeverything/lumensuite/pull/4583#pullrequestreview-1610662677
  *
  * @internal
  */

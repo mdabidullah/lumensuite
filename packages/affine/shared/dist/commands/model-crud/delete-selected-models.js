@@ -1,4 +1,4 @@
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 export const deleteSelectedModelsCommand = (ctx, next) => {
     const models = ctx.selectedModels;
     assertExists(models, '`selectedModels` is required, you need to use `getSelectedModels` command before adding this command to the pipeline.');

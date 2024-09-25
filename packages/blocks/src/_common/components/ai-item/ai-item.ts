@@ -1,10 +1,10 @@
-import { ArrowRightIcon, EnterIcon } from '@blocksuite/affine-components/icons';
+import { ArrowRightIcon, EnterIcon } from '@lumensuite/affine-components/icons';
 import {
   EditorHost,
   PropTypes,
   requiredProperties,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 

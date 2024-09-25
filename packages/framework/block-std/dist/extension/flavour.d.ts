@@ -7,7 +7,7 @@ import type { ExtensionType } from './extension.js';
  *
  * @example
  * ```ts
- * import { FlavourExtension } from '@blocksuite/block-std';
+ * import { FlavourExtension } from '@lumensuite/block-std';
  *
  * const MyFlavourExtension = FlavourExtension('my-flavour');
  * ```

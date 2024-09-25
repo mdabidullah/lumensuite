@@ -1,5 +1,5 @@
-import { CheckIcon } from '@blocksuite/affine-components/icons';
-import { clamp, stopPropagation } from '@blocksuite/affine-shared/utils';
+import { CheckIcon } from '@lumensuite/affine-components/icons';
+import { clamp, stopPropagation } from '@lumensuite/affine-shared/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

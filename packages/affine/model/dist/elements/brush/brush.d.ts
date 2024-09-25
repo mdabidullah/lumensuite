@@ -1,6 +1,6 @@
-import type { BaseElementProps, PointTestOptions } from '@blocksuite/block-std/gfx';
-import { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
-import { Bound, type IVec, type IVec3, PointLocation, type SerializedXYWH } from '@blocksuite/global/utils';
+import type { BaseElementProps, PointTestOptions } from '@lumensuite/block-std/gfx';
+import { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
+import { Bound, type IVec, type IVec3, PointLocation, type SerializedXYWH } from '@lumensuite/global/utils';
 import type { Color } from '../../consts/index.js';
 export type BrushProps = BaseElementProps & {
     /**
@@ -31,7 +31,7 @@ export declare class BrushElementModel extends GfxPrimitiveElementModel<BrushPro
     accessor xywh: SerializedXYWH;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface SurfaceElementModelMap {
             brush: BrushElementModel;
         }

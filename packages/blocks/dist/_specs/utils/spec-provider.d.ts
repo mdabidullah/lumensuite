@@ -1,4 +1,4 @@
-import type { ExtensionType } from '@blocksuite/block-std';
+import type { ExtensionType } from '@lumensuite/block-std';
 import { SpecBuilder } from './spec-builder.js';
 export declare class SpecProvider {
     static instance: SpecProvider;

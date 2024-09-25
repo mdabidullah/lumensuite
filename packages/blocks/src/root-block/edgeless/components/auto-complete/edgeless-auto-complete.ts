@@ -3,33 +3,33 @@ import type {
   ConnectorElementModel,
   NoteBlockModel,
   ShapeType,
-} from '@blocksuite/affine-model';
-import type { Bound, IVec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import type { Bound, IVec } from '@lumensuite/global/utils';
 
 import {
   CanvasElementType,
   Overlay,
   type RoughCanvas,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   ConnectorPathGenerator,
   MindmapElementModel,
-} from '@blocksuite/affine-block-surface';
+} from '@lumensuite/affine-block-surface';
 import {
   AutoCompleteArrowIcon,
   MindMapChildIcon,
   MindMapSiblingIcon,
   NoteAutoCompleteIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   DEFAULT_SHAPE_STROKE_COLOR,
   LayoutType,
   ShapeElementModel,
   shapeMethods,
-} from '@blocksuite/affine-model';
-import { handleNativeRangeAtPoint } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists, DisposableGroup, Vec } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { handleNativeRangeAtPoint } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists, DisposableGroup, Vec } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

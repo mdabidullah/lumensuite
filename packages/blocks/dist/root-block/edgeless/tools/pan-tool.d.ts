@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import { EdgelessToolController } from './edgeless-tool.js';
 type PanTool = {
     type: 'pan';
@@ -23,7 +23,7 @@ export declare class PanToolController extends EdgelessToolController<PanTool> {
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             pan: PanToolController;
         }

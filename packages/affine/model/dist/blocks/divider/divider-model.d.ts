@@ -1,8 +1,8 @@
-import { type SchemaToModel } from '@blocksuite/store';
+import { type SchemaToModel } from '@lumensuite/store';
 export declare const DividerBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<object>;
+        props: import("@lumensuite/store").PropsGetter<object>;
         flavour: "affine:divider";
     } & {
         version: number;
@@ -10,11 +10,11 @@ export declare const DividerBlockSchema: {
         children: never[];
     };
     onUpgrade?: ((data: object, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<object>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<object>) | undefined;
 };
 export type DividerBlockModel = SchemaToModel<typeof DividerBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:divider': DividerBlockModel;
         }

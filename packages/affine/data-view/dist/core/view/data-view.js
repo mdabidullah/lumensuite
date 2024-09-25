@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 export const viewType = (type) => ({
     type,
     modelConfig: (model) => ({
@@ -21,7 +21,7 @@ export class ViewRendererManager {
     getView(type) {
         const view = this.map.get(type);
         if (!view) {
-            throw new BlockSuiteError(ErrorCode.DatabaseBlockError, `${type} is not exist`);
+            throw new LumenSuiteError(ErrorCode.DatabaseBlockError, `${type} is not exist`);
         }
         return view;
     }

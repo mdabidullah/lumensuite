@@ -1,4 +1,4 @@
-import { matchFlavours, toNumberedList } from '@blocksuite/affine-shared/utils';
+import { matchFlavours, toNumberedList } from '@lumensuite/affine-shared/utils';
 import { focusTextModel } from '../dom.js';
 import { beforeConvert } from './utils.js';
 export function toList(std, model, listType, prefix, otherProperties) {

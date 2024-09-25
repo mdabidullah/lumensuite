@@ -1,13 +1,13 @@
-import type { Point } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
+import type { Point } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
 
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 import {
   BLOCK_ID_ATTR,
   type BlockComponent,
   type EditorHost,
-} from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 
 import type { RootBlockComponent } from '../../index.js';
 
@@ -74,8 +74,8 @@ function isEdgelessChildNote({ classList }: Element) {
  * Returns rect of the block element.
  *
  * Compatible with Safari!
- * https://github.com/toeverything/blocksuite/issues/902
- * https://github.com/toeverything/blocksuite/pull/1121
+ * https://github.com/toeverything/lumensuite/issues/902
+ * https://github.com/toeverything/lumensuite/pull/1121
  */
 export function getRectByBlockComponent(element: Element | BlockComponent) {
   if (isDatabase(element)) return element.getBoundingClientRect();

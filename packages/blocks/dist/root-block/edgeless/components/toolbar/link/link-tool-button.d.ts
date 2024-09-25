@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-declare const EdgelessLinkToolButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
+declare const EdgelessLinkToolButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/quick-tool.mixin.js").QuickToolMixinClass>;
 export declare class EdgelessLinkToolButton extends EdgelessLinkToolButton_base {
     static styles: import("lit").CSSResult;
     type: "default";

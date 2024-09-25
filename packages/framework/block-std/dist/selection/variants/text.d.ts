@@ -27,7 +27,7 @@ export declare class TextSelection extends BaseSelection {
     toJSON(): Record<string, unknown>;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Selection {
             text: typeof TextSelection;
         }

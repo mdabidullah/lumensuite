@@ -1,5 +1,5 @@
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { assertExists } from '@blocksuite/global/utils';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { assertExists } from '@lumensuite/global/utils';
 import { expect, type Page } from '@playwright/test';
 
 import {

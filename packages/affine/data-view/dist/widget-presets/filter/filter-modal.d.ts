@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { FilterGroup, Variable } from '../../core/common/ast.js';
 import './filter-group.js';
 import './filter-root.js';
-declare const AdvancedFilterModal_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const AdvancedFilterModal_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class AdvancedFilterModal extends AdvancedFilterModal_base {
     static styles: import("lit").CSSResult;
     connectedCallback(): void;

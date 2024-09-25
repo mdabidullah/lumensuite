@@ -1,14 +1,14 @@
-import type { SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { CursorSelection, SurfaceSelection } from '@blocksuite/block-std';
+import type { SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { CursorSelection, SurfaceSelection } from '@lumensuite/block-std';
 
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { GroupElementModel } from '@blocksuite/affine-model';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { GroupElementModel } from '@lumensuite/affine-model';
 import {
   assertType,
   DisposableGroup,
   groupBy,
   Slot,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 
 import type { EdgelessRootService } from '../edgeless-root-service.js';
 
@@ -112,7 +112,7 @@ export class EdgelessSelectionManager {
   }
 
   get selectedElements() {
-    const elements: BlockSuite.EdgelessModel[] = [];
+    const elements: LumenSuite.EdgelessModel[] = [];
 
     this.selectedIds.forEach(id => {
       const el = this.service.getElementById(id);

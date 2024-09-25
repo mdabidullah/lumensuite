@@ -1,14 +1,14 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import {
   type EdgelessRootBlockComponent,
   type FrameBlockModel,
   on,
   once,
-} from '@blocksuite/blocks';
-import { DisposableGroup } from '@blocksuite/global/utils';
+} from '@lumensuite/blocks';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

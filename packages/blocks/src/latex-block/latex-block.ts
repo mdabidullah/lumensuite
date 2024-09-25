@@ -1,9 +1,9 @@
-import type { LatexBlockModel } from '@blocksuite/affine-model';
 import type { Placement } from '@floating-ui/dom';
+import type { LatexBlockModel } from '@lumensuite/affine-model';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
 import { effect } from '@lit-labs/preact-signals';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
 import katex from 'katex';
 import { html, render } from 'lit';
 import { customElement, query } from 'lit/decorators.js';

@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ArrowDownIcon } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
-import { isControlledKeyboardEvent, isFuzzyMatch, substringMatchScore, } from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { ArrowDownIcon } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
+import { isControlledKeyboardEvent, isFuzzyMatch, substringMatchScore, } from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { autoPlacement, offset } from '@floating-ui/dom';
 import { html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';

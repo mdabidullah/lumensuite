@@ -1,8 +1,8 @@
-import { type EditorHost } from '@blocksuite/block-std';
+import { type EditorHost } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 import type { AIItemGroupConfig } from '../../../_common/components/ai-item/types.js';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
-declare const EdgelessCopilotToolbarEntry_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessCopilotToolbarEntry_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessCopilotToolbarEntry extends EdgelessCopilotToolbarEntry_base {
     static styles: import("lit").CSSResult;
     private _showCopilotPanel;

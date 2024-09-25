@@ -1,7 +1,7 @@
 import type { DatabaseBlockModel, ListType, RichText } from '@blocks/index.js';
-import type { EditorHost } from '@blocksuite/block-std';
-import type { AffineEditorContainer } from '@blocksuite/presets';
 import type { InlineRange, InlineRootElement } from '@inline/index.js';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { AffineEditorContainer } from '@lumensuite/presets';
 import type { CustomFramePanel } from '@playground/apps/_common/components/custom-frame-panel.js';
 import type { CustomOutlinePanel } from '@playground/apps/_common/components/custom-outline-panel.js';
 import type { CustomOutlineViewer } from '@playground/apps/_common/components/custom-outline-viewer.js';
@@ -10,7 +10,7 @@ import type { DocsPanel } from '@playground/apps/_common/components/docs-panel.j
 import type { ConsoleMessage, Locator, Page } from '@playwright/test';
 import type { BlockModel } from '@store/schema/index.js';
 
-import { assertExists } from '@blocksuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { expect } from '@playwright/test';
 import { uuidv4 } from '@store/utils/id-generator.js';
 import lz from 'lz-string';
@@ -28,7 +28,7 @@ import {
 
 declare global {
   interface WindowEventMap {
-    'blocksuite:doc-ready': CustomEvent<string>;
+    'lumensuite:doc-ready': CustomEvent<string>;
   }
 }
 
@@ -65,7 +65,7 @@ async function initEmptyEditor({
   multiEditor = false,
 }: {
   page: Page;
-  flags?: Partial<BlockSuiteFlags>;
+  flags?: Partial<LumenSuiteFlags>;
   noInit?: boolean;
   multiEditor?: boolean;
 }) {
@@ -85,7 +85,7 @@ async function initEmptyEditor({
         for (const [key, value] of Object.entries(flags)) {
           doc.awarenessStore.setFlag(key as keyof typeof flags, value);
         }
-        // add app root from https://github.com/toeverything/blocksuite/commit/947201981daa64c5ceeca5fd549460c34e2dabfa
+        // add app root from https://github.com/toeverything/lumensuite/commit/947201981daa64c5ceeca5fd549460c34e2dabfa
         const appRoot = document.querySelector('#app');
         if (!appRoot) {
           throw new Error('Cannot find app root element(#app).');
@@ -96,10 +96,10 @@ async function initEmptyEditor({
           editor.autofocus = true;
           editor.pageSpecs = [
             ...editor.pageSpecs,
-            window.$blocksuite.extensions.FontConfigExtension,
+            window.$lumensuite.extensions.FontConfigExtension,
             {
               setup: di => {
-                di.addImpl(window.$blocksuite.identifiers.QuickSearchProvider, {
+                di.addImpl(window.$lumensuite.identifiers.QuickSearchProvider, {
                   searchDoc: () => Promise.resolve(null),
                 });
               },
@@ -107,8 +107,8 @@ async function initEmptyEditor({
             {
               setup: di => {
                 di.override(
-                  window.$blocksuite.identifiers.DocModeProvider,
-                  window.$blocksuite.mockServices.mockDocModeService(
+                  window.$lumensuite.identifiers.DocModeProvider,
+                  window.$lumensuite.mockServices.mockDocModeService(
                     () => editor.mode,
                     mode => editor.switchEditor(mode)
                   )
@@ -118,10 +118,10 @@ async function initEmptyEditor({
           ];
           editor.edgelessSpecs = [
             ...editor.edgelessSpecs,
-            window.$blocksuite.extensions.FontConfigExtension,
+            window.$lumensuite.extensions.FontConfigExtension,
             {
               setup: di => {
-                di.addImpl(window.$blocksuite.identifiers.QuickSearchProvider, {
+                di.addImpl(window.$lumensuite.identifiers.QuickSearchProvider, {
                   searchDoc: () => Promise.resolve(null),
                 });
               },
@@ -129,8 +129,8 @@ async function initEmptyEditor({
             {
               setup: di => {
                 di.override(
-                  window.$blocksuite.identifiers.DocModeProvider,
-                  window.$blocksuite.mockServices.mockDocModeService(
+                  window.$lumensuite.identifiers.DocModeProvider,
+                  window.$lumensuite.mockServices.mockDocModeService(
                     () => editor.mode,
                     mode => editor.switchEditor(mode)
                   )
@@ -197,7 +197,7 @@ async function initEmptyEditor({
               },
             });
             window.dispatchEvent(
-              new CustomEvent('blocksuite:doc-ready', { detail: doc.id })
+              new CustomEvent('lumensuite:doc-ready', { detail: doc.id })
             );
           })
           .catch(console.error);
@@ -308,7 +308,7 @@ export function expectConsoleMessage(
 }
 
 export type PlaygroundRoomOptions = {
-  flags?: Partial<BlockSuiteFlags>;
+  flags?: Partial<LumenSuiteFlags>;
   room?: string;
   blobSource?: ('idb' | 'mock')[];
   noInit?: boolean;
@@ -366,8 +366,8 @@ export async function enterPlaygroundRoom(
   });
 
   await page.evaluate(() => {
-    if (typeof window.$blocksuite !== 'object') {
-      throw new Error('window.$blocksuite is not object');
+    if (typeof window.$lumensuite !== 'object') {
+      throw new Error('window.$lumensuite is not object');
     }
   }, []);
   return room;
@@ -391,7 +391,7 @@ export async function waitNextFrame(
 export async function waitForPageReady(page: Page) {
   await page.evaluate(async () => {
     return new Promise<void>(resolve => {
-      window.addEventListener('blocksuite:doc-ready', () => resolve(), {
+      window.addEventListener('lumensuite:doc-ready', () => resolve(), {
         once: true,
       });
     });
@@ -1029,7 +1029,7 @@ export async function getClipboardHTML(page: Page) {
     const text = await data?.text();
     const html = new DOMParser().parseFromString(text ?? '', 'text/html');
     const container = html.querySelector<HTMLDivElement>(
-      '[data-blocksuite-snapshot]'
+      '[data-lumensuite-snapshot]'
     );
     if (!container) {
       return '';
@@ -1059,9 +1059,9 @@ export async function getClipboardCustomData(page: Page, type: string) {
     const text = await data?.text();
     const html = new DOMParser().parseFromString(text ?? '', 'text/html');
     const container = html.querySelector<HTMLDivElement>(
-      '[data-blocksuite-snapshot]'
+      '[data-lumensuite-snapshot]'
     );
-    return container?.dataset.blocksuiteSnapshot ?? '';
+    return container?.dataset.lumensuiteSnapshot ?? '';
   });
 
   const decompressed = lz.decompressFromEncodedURIComponent(dataInClipboard);
@@ -1471,7 +1471,7 @@ export async function mockQuickSearch(
   // mock quick search service
   await page.evaluate(mapping => {
     const quickSearchService = window.host.std.get(
-      window.$blocksuite.identifiers.QuickSearchProvider
+      window.$lumensuite.identifiers.QuickSearchProvider
     );
     quickSearchService.searchDoc = options => {
       return new Promise(resolve => {

@@ -1,12 +1,12 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { nothing } from 'lit';
 import type { Comment, CommentManager } from './comment-manager.js';
-declare const CommentInput_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const CommentInput_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class CommentInput extends CommentInput_base {
     static styles: import("lit").CSSResult;
     private _cancel;
     private _submit;
-    get host(): import("@blocksuite/block-std").EditorHost;
+    get host(): import("@lumensuite/block-std").EditorHost;
     render(): typeof nothing | import("lit").TemplateResult<1>;
     private accessor _editor;
     accessor manager: CommentManager;

@@ -1,9 +1,9 @@
+import { computed } from '@lit-labs/preact-signals';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/block-std';
 import { property } from 'lit/decorators.js';
 
 import type { Cell } from '../view-manager/cell.js';

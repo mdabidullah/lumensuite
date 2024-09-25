@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { WithDisposable } from '@blocksuite/block-std';
-import { createButtonPopper } from '@blocksuite/blocks';
+import { WithDisposable } from '@lumensuite/block-std';
+import { createButtonPopper } from '@lumensuite/blocks';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { SettingsIcon, SortingIcon } from '../../_common/icons.js';

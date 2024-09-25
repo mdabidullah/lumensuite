@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import type { EdgelessTool } from '../../../types.js';
-declare const EdgelessFrameMenu_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
+declare const EdgelessFrameMenu_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("../mixins/tool.mixin.js").EdgelessToolbarToolClass>;
 export declare class EdgelessFrameMenu extends EdgelessFrameMenu_base {
     static styles: import("lit").CSSResult;
     type: EdgelessTool['type'];

@@ -1,9 +1,9 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const selectBlocksBetween: Command<'focusBlock' | 'anchorBlock', never, {
     tail: boolean;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             selectBlocksBetween: typeof selectBlocksBetween;
         }

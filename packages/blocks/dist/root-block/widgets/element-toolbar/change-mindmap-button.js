@@ -32,11 +32,11 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MindmapBalanceLayoutIcon, MindmapLeftLayoutIcon, MindmapRightLayoutIcon, MindmapStyleFour, MindmapStyleIcon, MindmapStyleOne, MindmapStyleThree, MindmapStyleTwo, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
-import { LayoutType, MindmapStyle } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { countBy, maxBy } from '@blocksuite/global/utils';
+import { MindmapBalanceLayoutIcon, MindmapLeftLayoutIcon, MindmapRightLayoutIcon, MindmapStyleFour, MindmapStyleIcon, MindmapStyleOne, MindmapStyleThree, MindmapStyleTwo, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
+import { LayoutType, MindmapStyle } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { countBy, maxBy } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { join } from 'lit/directives/join.js';

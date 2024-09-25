@@ -1,4 +1,4 @@
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import type { TemplateJob } from './template.js';
 export declare const replaceIdMiddleware: (job: TemplateJob) => void;
 export declare const createInsertPlaceMiddleware: (targetPlace: Bound) => (job: TemplateJob) => void;

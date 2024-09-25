@@ -1,4 +1,4 @@
-import { asyncGetBlockComponent, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { asyncGetBlockComponent, matchFlavours, } from '@lumensuite/affine-shared/utils';
 /**
  * In most cases, you not need RichText, you can use {@link getInlineEditorByModel} instead.
  */
@@ -23,7 +23,7 @@ export function getInlineEditorByModel(editorHost, model) {
     const blockModel = typeof model === 'string'
         ? editorHost.std.doc.getBlock(model)?.model
         : model;
-    // @ts-ignore TODO: migrate database model to `@blocksuite/affine-model`
+    // @ts-ignore TODO: migrate database model to `@lumensuite/affine-model`
     if (!blockModel || matchFlavours(blockModel, ['affine:database'])) {
         // Not support database model since it's may be have multiple inline editor instances.
         // Support to enter the editing state through the Enter key in the database.

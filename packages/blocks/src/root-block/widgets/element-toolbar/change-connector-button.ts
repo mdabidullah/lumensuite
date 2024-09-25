@@ -16,8 +16,8 @@ import {
   RearEndpointTriangleIcon,
   ScribbledStyleIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
 import {
   type ColorScheme,
   type ConnectorElementModel,
@@ -28,10 +28,10 @@ import {
   DEFAULT_FRONT_END_POINT_STYLE,
   DEFAULT_REAR_END_POINT_STYLE,
   PointStyle,
-} from '@blocksuite/affine-model';
-import { LINE_COLORS, LineWidth, StrokeStyle } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { countBy, maxBy } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { LINE_COLORS, LineWidth, StrokeStyle } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { countBy, maxBy } from '@lumensuite/global/utils';
 import { html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { choose } from 'lit/directives/choose.js';

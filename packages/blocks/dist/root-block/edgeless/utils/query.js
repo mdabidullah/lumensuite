@@ -1,6 +1,6 @@
-import { CommonUtils, GRID_GAP_MAX, GRID_GAP_MIN, MindmapElementModel, } from '@blocksuite/affine-block-surface';
-import { ConnectorElementModel, ShapeElementModel, TextElementModel, } from '@blocksuite/affine-model';
-import { Bound, deserializeXYWH } from '@blocksuite/global/utils';
+import { CommonUtils, GRID_GAP_MAX, GRID_GAP_MIN, MindmapElementModel, } from '@lumensuite/affine-block-surface';
+import { ConnectorElementModel, ShapeElementModel, TextElementModel, } from '@lumensuite/affine-model';
+import { Bound, deserializeXYWH } from '@lumensuite/global/utils';
 import { getElementsWithoutGroup } from './group.js';
 const { clamp, getQuadBoundsWithRotation } = CommonUtils;
 export function isMindmapNode(element) {

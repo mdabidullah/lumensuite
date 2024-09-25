@@ -1,4 +1,4 @@
-import { nanoid } from '@blocksuite/store';
+import { nanoid } from '@lumensuite/store';
 import { columnType } from '../../core/column/column-config.js';
 import { tTag } from '../../core/logical/data-type.js';
 import { tArray } from '../../core/logical/typesystem.js';

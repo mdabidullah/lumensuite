@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { signal } from '@preact/signals-core';
 import * as Y from 'yjs';
 export class Text {
@@ -57,7 +57,7 @@ export class Text {
     _transact(callback) {
         const doc = this._yText.doc;
         if (!doc) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to transact text! yText is not attached to a doc');
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to transact text! yText is not attached to a doc');
         }
         doc.transact(() => {
             callback();
@@ -87,7 +87,7 @@ export class Text {
             return;
         }
         if (index < 0 || length < 0 || index + length > this._yText.length) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to delete text! Index or length out of range, index: ' +
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to delete text! Index or length out of range, index: ' +
                 index +
                 ', length: ' +
                 length +
@@ -104,7 +104,7 @@ export class Text {
             return;
         }
         if (index < 0 || length < 0 || index + length > this._yText.length) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to format text! Index or length out of range, index: ' +
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to format text! Index or length out of range, index: ' +
                 index +
                 ', length: ' +
                 length +
@@ -120,7 +120,7 @@ export class Text {
             return;
         }
         if (index < 0 || index > this._yText.length) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to insert text! Index or length out of range, index: ' +
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to insert text! Index or length out of range, index: ' +
                 index +
                 ', length: ' +
                 length +
@@ -144,7 +144,7 @@ export class Text {
     }
     replace(index, length, content, attributes) {
         if (index < 0 || length < 0 || index + length > this._yText.length) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to replace text! The length of the text is' +
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to replace text! The length of the text is' +
                 this._yText.length +
                 ', but you are trying to replace from' +
                 index +
@@ -222,7 +222,7 @@ export class Text {
      */
     split(index, length = 0) {
         if (index < 0 || length < 0 || index + length > this._yText.length) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'Failed to split text! Index or length out of range, index: ' +
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'Failed to split text! Index or length out of range, index: ' +
                 index +
                 ', length: ' +
                 length +
@@ -231,7 +231,7 @@ export class Text {
         }
         const deltas = this._yText.toDelta();
         if (!(deltas instanceof Array)) {
-            throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'This text cannot be split because we failed to get the deltas of it.');
+            throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'This text cannot be split because we failed to get the deltas of it.');
         }
         let tmpIndex = 0;
         const rightDeltas = [];
@@ -250,7 +250,7 @@ export class Text {
                 tmpIndex += insert.length;
             }
             else {
-                throw new BlockSuiteError(ErrorCode.ReactiveProxyError, 'This text cannot be split because it contains non-string insert.');
+                throw new LumenSuiteError(ErrorCode.ReactiveProxyError, 'This text cannot be split because it contains non-string insert.');
             }
         }
         this.delete(index, this.length - index);

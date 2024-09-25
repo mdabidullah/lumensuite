@@ -1,4 +1,4 @@
-import { getImageSelectionsCommand } from '@blocksuite/affine-shared/commands';
+import { getImageSelectionsCommand } from '@lumensuite/affine-shared/commands';
 export const commands = {
     getImageSelections: getImageSelectionsCommand,
 };

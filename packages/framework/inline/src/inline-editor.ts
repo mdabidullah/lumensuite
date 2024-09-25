@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, DisposableGroup, Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { assertExists, DisposableGroup, Slot } from '@lumensuite/global/utils';
 import { nothing, render, type TemplateResult } from 'lit';
 import * as Y from 'yjs';
 
@@ -68,7 +68,7 @@ export class InlineEditor<
 
   private _onYTextChange = (_: Y.YTextEvent, transaction: Y.Transaction) => {
     if (this.yText.toString().includes('\r')) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'yText must not contain "\\r" because it will break the range synchronization'
       );
@@ -290,14 +290,14 @@ export class InlineEditor<
     } = {}
   ) {
     if (!yText.doc) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'yText must be attached to a Y.Doc'
       );
     }
 
     if (yText.toString().includes('\r')) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'yText must not contain "\\r" because it will break the range synchronization'
       );
@@ -382,7 +382,7 @@ export class InlineEditor<
   transact(fn: () => void): void {
     const doc = this.yText.doc;
     if (!doc) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.InlineEditorError,
         'yText is not attached to a doc'
       );

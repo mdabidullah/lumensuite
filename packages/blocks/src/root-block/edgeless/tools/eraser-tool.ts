@@ -1,8 +1,8 @@
-import type { PointerEventState } from '@blocksuite/block-std';
-import type { IPoint, IVec } from '@blocksuite/global/utils';
+import type { PointerEventState } from '@lumensuite/block-std';
+import type { IPoint, IVec } from '@lumensuite/global/utils';
 
-import { CommonUtils, Overlay } from '@blocksuite/affine-block-surface';
-import { Bound, noop } from '@blocksuite/global/utils';
+import { CommonUtils, Overlay } from '@lumensuite/affine-block-surface';
+import { Bound, noop } from '@lumensuite/global/utils';
 
 import { deleteElements } from '../utils/crud.js';
 import { isTopLevelBlock } from '../utils/query.js';
@@ -26,11 +26,11 @@ type EraserTool = {
 };
 
 export class EraserToolController extends EdgelessToolController<EraserTool> {
-  private _erasables = new Set<BlockSuite.EdgelessModel>();
+  private _erasables = new Set<LumenSuite.EdgelessModel>();
 
   private _eraserPoints: IVec[] = [];
 
-  private _eraseTargets = new Set<BlockSuite.EdgelessModel>();
+  private _eraseTargets = new Set<LumenSuite.EdgelessModel>();
 
   private _loop = () => {
     const now = Date.now();
@@ -196,7 +196,7 @@ export class EraserToolController extends EdgelessToolController<EraserTool> {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       eraser: EraserToolController;
     }

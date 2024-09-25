@@ -1,13 +1,13 @@
-import type { FrameBlockModel, RootBlockModel } from '@blocksuite/affine-model';
-import { type MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { FrameBlockModel, RootBlockModel } from '@lumensuite/affine-model';
+import { type MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { nothing, type TemplateResult } from 'lit';
 import type { EdgelessRootBlockComponent } from '../../edgeless/edgeless-root-block.js';
 import type { ElementToolbarMoreMenuContext } from './more-menu/context.js';
 import './more-menu/button.js';
 type CustomEntry = {
     render: (edgeless: EdgelessRootBlockComponent) => TemplateResult | null;
-    when: (model: BlockSuite.EdgelessModel[]) => boolean;
+    when: (model: LumenSuite.EdgelessModel[]) => boolean;
 };
 export declare const EDGELESS_ELEMENT_TOOLBAR_WIDGET = "edgeless-element-toolbar-widget";
 export declare class EdgelessElementToolbarWidget extends WidgetComponent<RootBlockModel, EdgelessRootBlockComponent> {
@@ -18,7 +18,10 @@ export declare class EdgelessElementToolbarWidget extends WidgetComponent<RootBl
     get edgeless(): EdgelessRootBlockComponent;
     get selection(): import("../../edgeless/services/selection-manager.js").EdgelessSelectionManager;
     get slots(): {
-        edgelessToolUpdated: import("@blocksuite/global/utils").Slot<import("../../edgeless/tools/text-tool.js").TextTool | {
+        edgelessToolUpdated: import("@lumensuite/global/utils").Slot<import("../../edgeless/tools/text-tool.js").TextTool | {
+            type: "pan";
+            panning: boolean;
+        } | {
             type: "brush";
         } | import("../../edgeless/tools/connector-tool.js").ConnectorTool | {
             type: "copilot";
@@ -31,33 +34,30 @@ export declare class EdgelessElementToolbarWidget extends WidgetComponent<RootBl
             type: "frame";
         } | import("../../edgeless/tools/lasso-tool.js").LassoTool | {
             type: "mindmap";
-        } | import("../../edgeless/tools/note-tool.js").NoteTool | {
-            type: "pan";
-            panning: boolean;
-        } | import("../../edgeless/tools/shape-tool.js").ShapeTool | {
+        } | import("../../edgeless/tools/note-tool.js").NoteTool | import("../../edgeless/tools/shape-tool.js").ShapeTool | {
             type: "default";
         } | {
             type: "template";
         }>;
-        pressShiftKeyUpdated: import("@blocksuite/global/utils").Slot<boolean>;
-        cursorUpdated: import("@blocksuite/global/utils").Slot<string>;
-        copyAsPng: import("@blocksuite/global/utils").Slot<{
-            blocks: BlockSuite.EdgelessBlockModelType[];
-            shapes: BlockSuite.SurfaceModel[];
+        pressShiftKeyUpdated: import("@lumensuite/global/utils").Slot<boolean>;
+        cursorUpdated: import("@lumensuite/global/utils").Slot<string>;
+        copyAsPng: import("@lumensuite/global/utils").Slot<{
+            blocks: LumenSuite.EdgelessBlockModelType[];
+            shapes: LumenSuite.SurfaceModel[];
         }>;
-        readonlyUpdated: import("@blocksuite/global/utils").Slot<boolean>;
-        draggingAreaUpdated: import("@blocksuite/global/utils").Slot<void>;
-        navigatorSettingUpdated: import("@blocksuite/global/utils").Slot<{
+        readonlyUpdated: import("@lumensuite/global/utils").Slot<boolean>;
+        draggingAreaUpdated: import("@lumensuite/global/utils").Slot<void>;
+        navigatorSettingUpdated: import("@lumensuite/global/utils").Slot<{
             hideToolbar?: boolean;
             blackBackground?: boolean;
             fillScreen?: boolean;
         }>;
-        navigatorFrameChanged: import("@blocksuite/global/utils").Slot<FrameBlockModel>;
-        fullScreenToggled: import("@blocksuite/global/utils").Slot<void>;
-        elementResizeStart: import("@blocksuite/global/utils").Slot<void>;
-        elementResizeEnd: import("@blocksuite/global/utils").Slot<void>;
-        toggleNoteSlicer: import("@blocksuite/global/utils").Slot<void>;
-        docLinkClicked: import("@blocksuite/global/utils").Slot<{
+        navigatorFrameChanged: import("@lumensuite/global/utils").Slot<FrameBlockModel>;
+        fullScreenToggled: import("@lumensuite/global/utils").Slot<void>;
+        elementResizeStart: import("@lumensuite/global/utils").Slot<void>;
+        elementResizeEnd: import("@lumensuite/global/utils").Slot<void>;
+        toggleNoteSlicer: import("@lumensuite/global/utils").Slot<void>;
+        docLinkClicked: import("@lumensuite/global/utils").Slot<{
             pageId: string;
             params?: {
                 mode?: "page" | "edgeless" | undefined;
@@ -65,12 +65,12 @@ export declare class EdgelessElementToolbarWidget extends WidgetComponent<RootBl
                 elementIds?: string[] | undefined;
             } | undefined;
         }>;
-        tagClicked: import("@blocksuite/global/utils").Slot<{
+        tagClicked: import("@lumensuite/global/utils").Slot<{
             tagId: string;
         }>;
-        toolbarLocked: import("@blocksuite/global/utils").Slot<boolean>;
+        toolbarLocked: import("@lumensuite/global/utils").Slot<boolean>;
     };
-    get surface(): import("@blocksuite/affine-block-surface").SurfaceBlockComponent;
+    get surface(): import("@lumensuite/affine-block-surface").SurfaceBlockComponent;
     private _groupSelected;
     private _recalculatePosition;
     private _renderQuickConnectButton;

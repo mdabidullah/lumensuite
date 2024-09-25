@@ -2,7 +2,7 @@ import type {
   ColorScheme,
   ShapeElementModel,
   ShapeProps,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
 import {
   AddTextIcon,
@@ -10,8 +10,8 @@ import {
   GeneralStyleIcon,
   ScribbledStyleIcon,
   SmallArrowDownIcon,
-} from '@blocksuite/affine-components/icons';
-import { renderToolbarSeparator } from '@blocksuite/affine-components/toolbar';
+} from '@lumensuite/affine-components/icons';
+import { renderToolbarSeparator } from '@lumensuite/affine-components/toolbar';
 import {
   DEFAULT_SHAPE_FILL_COLOR,
   DEFAULT_SHAPE_STROKE_COLOR,
@@ -24,9 +24,9 @@ import {
   SHAPE_STROKE_COLORS,
   ShapeStyle,
   StrokeStyle,
-} from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
-import { countBy, maxBy } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
+import { countBy, maxBy } from '@lumensuite/global/utils';
 import { css, html, LitElement, nothing, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { cache } from 'lit/directives/cache.js';

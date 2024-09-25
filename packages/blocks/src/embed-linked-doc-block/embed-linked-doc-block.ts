@@ -3,14 +3,14 @@ import type {
   EmbedLinkedDocModel,
   EmbedLinkedDocStyles,
   ReferenceInfo,
-} from '@blocksuite/affine-model';
+} from '@lumensuite/affine-model';
 
-import { BlockLinkIcon } from '@blocksuite/affine-components/icons';
-import { isPeekable, Peekable } from '@blocksuite/affine-components/peek';
-import { REFERENCE_NODE } from '@blocksuite/affine-components/rich-text';
-import { DocModeProvider } from '@blocksuite/affine-shared/services';
-import { assertExists, Bound } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { BlockLinkIcon } from '@lumensuite/affine-components/icons';
+import { isPeekable, Peekable } from '@lumensuite/affine-components/peek';
+import { REFERENCE_NODE } from '@lumensuite/affine-components/rich-text';
+import { DocModeProvider } from '@lumensuite/affine-shared/services';
+import { assertExists, Bound } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { html, nothing } from 'lit';
 import { customElement, property, queryAsync, state } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

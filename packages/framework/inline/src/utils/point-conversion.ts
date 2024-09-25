@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 import type { VElement, VLine } from '../components/index.js';
 import type { DomPoint, TextPoint } from '../types.js';
@@ -60,7 +60,7 @@ export function textPointToDomPoint(
   rootElement: HTMLElement
 ): DomPoint | null {
   if (rootElement.dataset.vRoot !== 'true') {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.InlineEditorError,
       'textRangeToDomPoint should be called with editor root element'
     );
@@ -83,7 +83,7 @@ export function textPointToDomPoint(
 
   const textParentElement = text.parentElement;
   if (!textParentElement) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.InlineEditorError,
       'text element parent not found'
     );
@@ -92,7 +92,7 @@ export function textPointToDomPoint(
   const lineElement = textParentElement.closest('v-line');
 
   if (!lineElement) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.InlineEditorError,
       'line element not found'
     );

@@ -1,6 +1,6 @@
-import type { Color } from '@blocksuite/affine-model';
+import type { Color } from '@lumensuite/affine-model';
 
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

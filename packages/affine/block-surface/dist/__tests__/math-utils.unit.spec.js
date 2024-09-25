@@ -1,5 +1,5 @@
-import { almostEqual, isPointOnLineSegment, lineEllipseIntersects, lineIntersects, linePolygonIntersects, linePolylineIntersects, pointAlmostEqual, polygonGetPointTangent, rotatePoints, toDegree, toRadian, } from '@blocksuite/global/utils';
-import { assertExists } from '@blocksuite/global/utils';
+import { almostEqual, isPointOnLineSegment, lineEllipseIntersects, lineIntersects, linePolygonIntersects, linePolylineIntersects, pointAlmostEqual, polygonGetPointTangent, rotatePoints, toDegree, toRadian, } from '@lumensuite/global/utils';
+import { assertExists } from '@lumensuite/global/utils';
 import { describe, expect, it } from 'vitest';
 describe('Line', () => {
     it('should intersect', () => {

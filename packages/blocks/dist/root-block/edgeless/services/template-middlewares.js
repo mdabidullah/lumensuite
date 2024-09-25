@@ -1,5 +1,5 @@
-import { CommonUtils, sortIndex } from '@blocksuite/affine-block-surface';
-import { assertExists, assertType, Bound } from '@blocksuite/global/utils';
+import { CommonUtils, sortIndex } from '@lumensuite/affine-block-surface';
+import { assertExists, assertType, Bound } from '@lumensuite/global/utils';
 export const replaceIdMiddleware = (job) => {
     const regeneratedIdMap = new Map();
     job.slots.beforeInsert.on(payload => {

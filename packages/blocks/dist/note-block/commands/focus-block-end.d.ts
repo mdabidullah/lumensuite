@@ -1,7 +1,7 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const focusBlockEnd: Command<'focusBlock'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             focusBlockEnd: typeof focusBlockEnd;
         }

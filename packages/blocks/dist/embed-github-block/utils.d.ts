@@ -1,4 +1,4 @@
-import type { EmbedGithubBlockUrlData, EmbedGithubModel } from '@blocksuite/affine-model';
+import type { EmbedGithubBlockUrlData, EmbedGithubModel } from '@lumensuite/affine-model';
 import { nothing } from 'lit';
 import type { LinkPreviewer } from '../_common/embed-block-helper/index.js';
 import type { EmbedGithubBlockComponent } from './embed-github-block.js';

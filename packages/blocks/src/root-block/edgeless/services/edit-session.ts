@@ -1,13 +1,13 @@
-import type { BlockService } from '@blocksuite/block-std';
+import type { BlockService } from '@lumensuite/block-std';
 
-import { getShapeName, type ShapeProps } from '@blocksuite/affine-model';
-import { ColorSchema, NodePropsSchema } from '@blocksuite/affine-shared/utils';
+import { computed, type Signal, signal } from '@lit-labs/preact-signals';
+import { getShapeName, type ShapeProps } from '@lumensuite/affine-model';
+import { ColorSchema, NodePropsSchema } from '@lumensuite/affine-shared/utils';
 import {
   type DeepPartial,
   DisposableGroup,
   Slot,
-} from '@blocksuite/global/utils';
-import { computed, type Signal, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/global/utils';
 import clonedeep from 'lodash.clonedeep';
 import isPlainObject from 'lodash.isplainobject';
 import merge from 'lodash.merge';
@@ -17,7 +17,7 @@ const LastPropsSchema = NodePropsSchema;
 export type LastProps = z.infer<typeof NodePropsSchema>;
 export type LastPropsKey = keyof LastProps;
 
-const SESSION_PROP_KEY = 'blocksuite:prop:record';
+const SESSION_PROP_KEY = 'lumensuite:prop:record';
 
 const SessionPropsSchema = z.object({
   viewport: z.union([
@@ -114,21 +114,21 @@ export class EditPropsStore {
     const id = this._service.doc.id;
     switch (key) {
       case 'viewport':
-        return 'blocksuite:' + id + ':edgelessViewport';
+        return 'lumensuite:' + id + ':edgelessViewport';
       case 'presentBlackBackground':
-        return 'blocksuite:presentation:blackBackground';
+        return 'lumensuite:presentation:blackBackground';
       case 'presentFillScreen':
-        return 'blocksuite:presentation:fillScreen';
+        return 'lumensuite:presentation:fillScreen';
       case 'presentHideToolbar':
-        return 'blocksuite:presentation:hideToolbar';
+        return 'lumensuite:presentation:hideToolbar';
       case 'templateCache':
-        return 'blocksuite:' + id + ':templateTool';
+        return 'lumensuite:' + id + ':templateTool';
       case 'remoteColor':
-        return 'blocksuite:remote-color';
+        return 'lumensuite:remote-color';
       case 'showBidirectional':
-        return 'blocksuite:' + id + ':showBidirectional';
+        return 'lumensuite:' + id + ':showBidirectional';
       case 'autoHideEmbedHTMLFullScreenToolbar':
-        return 'blocksuite:embedHTML:autoHideFullScreenToolbar';
+        return 'lumensuite:embedHTML:autoHideFullScreenToolbar';
       default:
         return key;
     }
@@ -189,7 +189,7 @@ export class EditPropsStore {
 }
 
 export function getLastPropsKey(
-  modelType: BlockSuite.EdgelessModelKeys,
+  modelType: LumenSuite.EdgelessModelKeys,
   modelProps: Partial<LastProps[LastPropsKey]>
 ): LastPropsKey | null {
   if (modelType === 'shape') {

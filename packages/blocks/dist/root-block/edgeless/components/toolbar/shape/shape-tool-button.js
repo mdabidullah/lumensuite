@@ -32,8 +32,8 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { ShapeType } from '@blocksuite/affine-model';
-import { SignalWatcher } from '@blocksuite/block-std';
+import { ShapeType } from '@lumensuite/affine-model';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { ShapeToolController } from '../../../tools/shape-tool.js';

@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { INLINE_ROOT_ATTR, ZERO_WIDTH_SPACE } from '../consts.js';
 import { isInlineRoot, isNativeTextInVText, isVElement, isVLine, } from './guard.js';
 import { calculateTextLength, getTextNodesFromElement } from './text.js';
@@ -32,7 +32,7 @@ export function nativePointToTextPoint(node, offset) {
 }
 export function textPointToDomPoint(text, offset, rootElement) {
     if (rootElement.dataset.vRoot !== 'true') {
-        throw new BlockSuiteError(ErrorCode.InlineEditorError, 'textRangeToDomPoint should be called with editor root element');
+        throw new LumenSuiteError(ErrorCode.InlineEditorError, 'textRangeToDomPoint should be called with editor root element');
     }
     if (!rootElement.contains(text))
         return null;
@@ -49,11 +49,11 @@ export function textPointToDomPoint(text, offset, rootElement) {
     }
     const textParentElement = text.parentElement;
     if (!textParentElement) {
-        throw new BlockSuiteError(ErrorCode.InlineEditorError, 'text element parent not found');
+        throw new LumenSuiteError(ErrorCode.InlineEditorError, 'text element parent not found');
     }
     const lineElement = textParentElement.closest('v-line');
     if (!lineElement) {
-        throw new BlockSuiteError(ErrorCode.InlineEditorError, 'line element not found');
+        throw new LumenSuiteError(ErrorCode.InlineEditorError, 'line element not found');
     }
     const lineIndex = Array.from(rootElement.querySelectorAll('v-line')).indexOf(lineElement);
     return { text, index: index + lineIndex };

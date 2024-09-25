@@ -1,8 +1,8 @@
-import type { BaseElementProps, PointTestOptions } from '@blocksuite/block-std/gfx';
-import type { Bound, IBound, IVec, PointLocation, SerializedXYWH } from '@blocksuite/global/utils';
-import { type Color, FontStyle, FontWeight, StrokeStyle, TextAlign, type TextStyleProps, TextVerticalAlign } from '@blocksuite/affine-model';
-import { GfxPrimitiveElementModel } from '@blocksuite/block-std/gfx';
-import { type Y } from '@blocksuite/store';
+import type { BaseElementProps, PointTestOptions } from '@lumensuite/block-std/gfx';
+import type { Bound, IBound, IVec, PointLocation, SerializedXYWH } from '@lumensuite/global/utils';
+import { type Color, FontStyle, FontWeight, StrokeStyle, TextAlign, type TextStyleProps, TextVerticalAlign } from '@lumensuite/affine-model';
+import { GfxPrimitiveElementModel } from '@lumensuite/block-std/gfx';
+import { type Y } from '@lumensuite/store';
 import { ShapeStyle, ShapeType, TextResizing } from '../../consts/index.js';
 export type ShapeProps = BaseElementProps & {
     shapeType: ShapeType;
@@ -63,7 +63,7 @@ export declare class ShapeElementModel extends GfxPrimitiveElementModel<ShapePro
     accessor xywh: SerializedXYWH;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface SurfaceElementModelMap {
             shape: ShapeElementModel;
         }

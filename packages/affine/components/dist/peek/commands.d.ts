@@ -1,8 +1,8 @@
-import type { BlockComponent, Command } from '@blocksuite/block-std';
+import type { BlockComponent, Command } from '@lumensuite/block-std';
 export declare const getSelectedPeekableBlocksCommand: Command<'selectedBlocks', 'selectedPeekableBlocks'>;
 export declare const peekSelectedBlockCommand: Command<'selectedBlocks'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             selectedPeekableBlocks?: BlockComponent[];
         }

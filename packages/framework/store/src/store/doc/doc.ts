@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { type Disposable, Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { type Disposable, Slot } from '@lumensuite/global/utils';
 import { signal } from '@preact/signals-core';
 
 import type { BlockModel, Schema } from '../../schema/index.js';
@@ -343,9 +343,9 @@ export class Doc {
     }
   }
 
-  addBlock<Key extends BlockSuite.Flavour>(
+  addBlock<Key extends LumenSuite.Flavour>(
     flavour: Key,
-    blockProps?: BlockSuite.ModelProps<BlockSuite.BlockModels[Key]>,
+    blockProps?: LumenSuite.ModelProps<LumenSuite.BlockModels[Key]>,
     parent?: BlockModel | string | null,
     parentIndex?: number
   ): string;
@@ -364,7 +364,7 @@ export class Doc {
     parentIndex?: number
   ): string {
     if (this.readonly) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         'cannot modify data in readonly mode'
       );
@@ -564,7 +564,7 @@ export class Doc {
     );
   }
 
-  getSchemaByFlavour(flavour: BlockSuite.Flavour) {
+  getSchemaByFlavour(flavour: LumenSuite.Flavour) {
     return this._schema.flavourSchemaMap.get(flavour);
   }
 
@@ -633,7 +633,7 @@ export class Doc {
 
     const yBlock = this._yBlocks.get(model.id);
     if (!yBlock) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         `updating block: ${model.id} not found`
       );
@@ -658,7 +658,7 @@ export class Doc {
 
       const schema = this.schema.flavourSchemaMap.get(model.flavour);
       if (!schema) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.ModelCRUDError,
           `schema for flavour: ${model.flavour} not found`
         );

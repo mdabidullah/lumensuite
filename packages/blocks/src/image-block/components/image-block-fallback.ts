@@ -1,12 +1,12 @@
-import type { ImageBlockModel } from '@blocksuite/affine-model';
+import type { ImageBlockModel } from '@lumensuite/affine-model';
 
-import { humanFileSize } from '@blocksuite/affine-shared/utils';
+import { consume } from '@lit/context';
+import { humanFileSize } from '@lumensuite/affine-shared/utils';
 import {
   modelContext,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { consume } from '@lit/context';
+} from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

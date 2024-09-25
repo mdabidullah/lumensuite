@@ -1,4 +1,4 @@
-import { Bound, DisposableGroup, last, } from '@blocksuite/global/utils';
+import { Bound, DisposableGroup, last, } from '@lumensuite/global/utils';
 import { LifeCycleWatcher } from '../extension/lifecycle-watcher.js';
 import { LifeCycleWatcherIdentifier } from '../identifier.js';
 import { onSurfaceAdded } from '../utils/gfx.js';

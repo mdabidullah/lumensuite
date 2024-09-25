@@ -1,7 +1,7 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 
-import { Bound, getElementsBound } from '@blocksuite/global/utils';
-import { Slot } from '@blocksuite/store';
+import { Bound, getElementsBound } from '@lumensuite/global/utils';
+import { Slot } from '@lumensuite/store';
 
 import type { EdgelessTool } from '../types.js';
 
@@ -139,7 +139,7 @@ export class CopilotSelectionController extends EdgelessToolController<CopilotSe
   onPressSpaceBar(): void {}
 
   updateDragPointsWith(
-    selectedElements: BlockSuite.EdgelessModel[],
+    selectedElements: LumenSuite.EdgelessModel[],
     padding = 0
   ) {
     const bounds = getElementsBound(
@@ -151,7 +151,7 @@ export class CopilotSelectionController extends EdgelessToolController<CopilotSe
   }
 
   updateSelectionWith(
-    selectedElements: BlockSuite.EdgelessModel[],
+    selectedElements: LumenSuite.EdgelessModel[],
     padding = 0
   ) {
     const { selection } = this._edgeless.service;
@@ -171,7 +171,7 @@ export class CopilotSelectionController extends EdgelessToolController<CopilotSe
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessToolMap {
       'copilot-selection': CopilotSelectionController;
     }

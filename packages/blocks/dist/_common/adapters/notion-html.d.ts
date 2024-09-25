@@ -1,4 +1,4 @@
-import { type AssetsManager, BaseAdapter, type BlockSnapshot, type DocSnapshot, type FromBlockSnapshotPayload, type FromBlockSnapshotResult, type FromDocSnapshotPayload, type FromDocSnapshotResult, type FromSliceSnapshotPayload, type FromSliceSnapshotResult, type SliceSnapshot } from '@blocksuite/store';
+import { type AssetsManager, BaseAdapter, type BlockSnapshot, type DocSnapshot, type FromBlockSnapshotPayload, type FromBlockSnapshotResult, type FromDocSnapshotPayload, type FromDocSnapshotResult, type FromSliceSnapshotPayload, type FromSliceSnapshotResult, type SliceSnapshot } from '@lumensuite/store';
 export type NotionHtml = string;
 type NotionHtmlToSliceSnapshotPayload = {
     file: NotionHtml;
@@ -25,7 +25,7 @@ export declare class NotionHtmlAdapter extends BaseAdapter<NotionHtml> {
     fromDocSnapshot(_payload: FromDocSnapshotPayload): Promise<FromDocSnapshotResult<NotionHtml>>;
     fromSliceSnapshot(_payload: FromSliceSnapshotPayload): Promise<FromSliceSnapshotResult<NotionHtml>>;
     toBlockSnapshot(payload: NotionHtmlToBlockSnapshotPayload): Promise<BlockSnapshot>;
-    toDoc(payload: NotionHtmlToDocSnapshotPayload): Promise<import("@blocksuite/store").Doc | undefined>;
+    toDoc(payload: NotionHtmlToDocSnapshotPayload): Promise<import("@lumensuite/store").Doc | undefined>;
     toDocSnapshot(payload: NotionHtmlToDocSnapshotPayload): Promise<DocSnapshot>;
     toSliceSnapshot(payload: NotionHtmlToSliceSnapshotPayload): Promise<SliceSnapshot | null>;
 }

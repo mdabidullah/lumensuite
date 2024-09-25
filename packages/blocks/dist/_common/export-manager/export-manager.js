@@ -1,8 +1,8 @@
-import { SurfaceElementModel, } from '@blocksuite/affine-block-surface';
-import { GroupElementModel, } from '@blocksuite/affine-model';
-import { isInsidePageEditor, matchFlavours, } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { assertExists, Bound } from '@blocksuite/global/utils';
+import { SurfaceElementModel, } from '@lumensuite/affine-block-surface';
+import { GroupElementModel, } from '@lumensuite/affine-model';
+import { isInsidePageEditor, matchFlavours, } from '@lumensuite/affine-shared/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { assertExists, Bound } from '@lumensuite/global/utils';
 import { getBlockComponentByModel, getRootByEditorHost, } from '../../_common/utils/index.js';
 import { getBlocksInFrameBound } from '../../root-block/edgeless/frame-manager.js';
 import { xywhArrayToObject } from '../../root-block/edgeless/utils/convert.js';
@@ -68,7 +68,7 @@ export class ExportManager {
     _checkCanContinueToCanvas(pathName, editorMode) {
         if (location.pathname !== pathName ||
             isInsidePageEditor(this.editorHost) !== editorMode) {
-            throw new BlockSuiteError(ErrorCode.EdgelessExportError, 'Unable to export content to canvas');
+            throw new LumenSuiteError(ErrorCode.EdgelessExportError, 'Unable to export content to canvas');
         }
     }
     async _checkReady() {

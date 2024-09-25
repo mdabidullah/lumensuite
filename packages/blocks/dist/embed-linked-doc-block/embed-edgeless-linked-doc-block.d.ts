@@ -1,6 +1,6 @@
 import type { EdgelessRootService } from '../root-block/index.js';
 import { EmbedLinkedDocBlockComponent } from './embed-linked-doc-block.js';
-declare const EmbedEdgelessLinkedDocBlockComponent_base: typeof EmbedLinkedDocBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessLinkedDocBlockComponent_base: typeof EmbedLinkedDocBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessLinkedDocBlockComponent extends EmbedEdgelessLinkedDocBlockComponent_base {
     convertToEmbed: () => void;
     get rootService(): EdgelessRootService;

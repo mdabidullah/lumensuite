@@ -1,6 +1,6 @@
-import { DatabaseBlockSchema, NoteBlockSchema, ParagraphBlockSchema, RootBlockSchema, } from '@blocksuite/affine-model';
-import { columnModelPresets } from '@blocksuite/data-view/column-pure-presets';
-import { DocCollection, IdGeneratorType, Schema } from '@blocksuite/store';
+import { DatabaseBlockSchema, NoteBlockSchema, ParagraphBlockSchema, RootBlockSchema, } from '@lumensuite/affine-model';
+import { columnModelPresets } from '@lumensuite/data-view/column-pure-presets';
+import { DocCollection, IdGeneratorType, Schema } from '@lumensuite/store';
 import { beforeEach, describe, expect, test } from 'vitest';
 import { databaseBlockColumns } from '../../database-block/index.js';
 import { addColumn, copyCellsByColumn, deleteColumn, getCell, getColumn, updateCell, } from '../../database-block/utils.js';

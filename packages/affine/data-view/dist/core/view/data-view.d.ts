@@ -1,6 +1,6 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
-import type { BlockStdScope, EventName, UIEventHandler } from '@blocksuite/block-std';
-import type { Disposable } from '@blocksuite/global/utils';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
+import type { BlockStdScope, EventName, UIEventHandler } from '@lumensuite/block-std';
+import type { Disposable } from '@lumensuite/global/utils';
 import type { ReadonlySignal } from '@lit-labs/preact-signals';
 import type { DataSource } from '../common/data-source/base.js';
 import type { DataViewRenderer } from '../data-view.js';

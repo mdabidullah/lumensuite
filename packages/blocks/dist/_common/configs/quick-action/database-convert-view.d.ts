@@ -1,10 +1,10 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 import { LitElement, type TemplateResult } from 'lit';
 export declare const DATABASE_CONVERT_WHITE_LIST: string[];
-declare const DatabaseConvertView_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatabaseConvertView_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DatabaseConvertView extends DatabaseConvertView_base {
     static styles: import("lit").CSSResult;
-    get doc(): import("@blocksuite/store").Doc;
+    get doc(): import("@lumensuite/store").Doc;
     private _convertToDatabase;
     render(): TemplateResult<1>;
     accessor host: EditorHost;

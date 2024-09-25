@@ -1,4 +1,4 @@
-import { Bound } from '@blocksuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { titleRenderParams } from './utils.js';
 export function group(model, ctx, matrix, renderer) {
     const { xywh } = model;

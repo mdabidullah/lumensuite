@@ -1,11 +1,11 @@
-import type { EditorMenuButton } from '@blocksuite/affine-components/toolbar';
+import type { EditorMenuButton } from '@lumensuite/affine-components/toolbar';
 import { LitElement } from 'lit';
 import type { ModeType, PickColorEvent, PickColorType } from './types.js';
 import '../panel/color-panel.js';
 import './color-picker.js';
 import './custom-button.js';
 type Type = 'normal' | 'custom';
-declare const EdgelessColorPickerButton_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessColorPickerButton_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessColorPickerButton extends EdgelessColorPickerButton_base {
     #private;
     switchToCustomTab: (e: MouseEvent) => void;

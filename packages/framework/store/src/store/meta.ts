@@ -1,14 +1,14 @@
 import type * as Y from 'yjs';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
 
-import type { BlockSuiteDoc } from '../yjs/index.js';
+import type { LumenSuiteDoc } from '../yjs/index.js';
 import type { DocCollection } from './collection.js';
 
 import { COLLECTION_VERSION, PAGE_VERSION } from '../consts.js';
 
-// please use `declare module '@blocksuite/store'` to extend this interface
+// please use `declare module '@lumensuite/store'` to extend this interface
 export interface DocMeta {
   id: string;
   title: string;
@@ -69,7 +69,7 @@ export class DocCollectionMeta {
 
   commonFieldsUpdated = new Slot();
 
-  readonly doc: BlockSuiteDoc;
+  readonly doc: LumenSuiteDoc;
 
   docMetaAdded = new Slot<string>();
 
@@ -133,7 +133,7 @@ export class DocCollectionMeta {
     return this._yMap.get('pages') as unknown as Y.Array<unknown>;
   }
 
-  constructor(doc: BlockSuiteDoc) {
+  constructor(doc: LumenSuiteDoc) {
     this.doc = doc;
     this._yMap = doc.getMap(this.id);
     this._proxy = doc.getMapProxy<string, DocCollectionMetaState>(this.id);
@@ -263,13 +263,13 @@ export class DocCollectionMeta {
   validateVersion(collection: DocCollection) {
     const workspaceVersion = this._proxy.workspaceVersion;
     if (!workspaceVersion) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         'Invalid workspace data, workspace version is missing. Please make sure the data is valid.'
       );
     }
     if (workspaceVersion < COLLECTION_VERSION) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         `Workspace version ${workspaceVersion} is outdated. Please upgrade the editor.`
       );
@@ -277,13 +277,13 @@ export class DocCollectionMeta {
 
     const pageVersion = this._proxy.pageVersion;
     if (!pageVersion) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         'Invalid workspace data, page version is missing. Please make sure the data is valid.'
       );
     }
     if (pageVersion < PAGE_VERSION) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         `Doc version ${pageVersion} is outdated. Please upgrade the editor.`
       );
@@ -291,14 +291,14 @@ export class DocCollectionMeta {
 
     const blockVersions = { ...this._proxy.blockVersions };
     if (!blockVersions) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         'Invalid workspace data, versions data is missing. Please make sure the data is valid'
       );
     }
     const dataFlavours = Object.keys(blockVersions);
     if (dataFlavours.length === 0) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.DocCollectionError,
         'Invalid workspace data, missing versions field. Please make sure the data is valid.'
       );
@@ -309,17 +309,17 @@ export class DocCollectionMeta {
       const editorVersion =
         collection.schema.flavourSchemaMap.get(dataFlavour)?.version;
       if (!editorVersion) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.DocCollectionError,
           `Editor missing ${dataFlavour} flavour. Please make sure this block flavour is registered.`
         );
       } else if (dataVersion > editorVersion) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.DocCollectionError,
           `Editor doesn't support ${dataFlavour}@${dataVersion}. Please upgrade the editor.`
         );
       } else if (dataVersion < editorVersion) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.DocCollectionError,
           `In workspace data, the block flavour ${dataFlavour}@${dataVersion} is outdated. Please downgrade the editor or try data migration.`
         );

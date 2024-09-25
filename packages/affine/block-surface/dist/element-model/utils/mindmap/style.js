@@ -1,5 +1,5 @@
-import { ConnectorMode, FontFamily, FontWeight, LineColor, MindmapStyle, ShapeFillColor, StrokeStyle, } from '@blocksuite/affine-model';
-import { last } from '@blocksuite/global/utils';
+import { ConnectorMode, FontFamily, FontWeight, LineColor, MindmapStyle, ShapeFillColor, StrokeStyle, } from '@lumensuite/affine-model';
+import { last } from '@lumensuite/global/utils';
 import { fitContent } from '../../../renderer/elements/shape/utils.js';
 export class MindmapStyleGetter {
 }

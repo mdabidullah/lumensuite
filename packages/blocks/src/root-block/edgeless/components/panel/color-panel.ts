@@ -1,11 +1,11 @@
-import { TransparentIcon } from '@blocksuite/affine-components/icons';
+import { TransparentIcon } from '@lumensuite/affine-components/icons';
 import {
   LINE_COLORS,
   LineColor,
   NoteBackgroundColor,
   ShapeFillColor,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

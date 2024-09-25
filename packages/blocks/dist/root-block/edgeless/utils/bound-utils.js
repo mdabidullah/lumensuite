@@ -1,5 +1,5 @@
-import { Bound, getBoundsWithRotation } from '@blocksuite/global/utils';
-import { BlockSnapshotSchema } from '@blocksuite/store';
+import { Bound, getBoundsWithRotation } from '@lumensuite/global/utils';
+import { BlockSnapshotSchema } from '@lumensuite/store';
 export function edgelessElementsBound(elements) {
     if (elements.length === 0)
         return new Bound();

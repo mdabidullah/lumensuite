@@ -1,13 +1,13 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
 import {
   BlockStdScope,
   EditorHost,
   ShadowlessElement,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { EdgelessEditorBlockSpecs } from '@blocksuite/blocks';
-import { noop } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std';
+import { EdgelessEditorBlockSpecs } from '@lumensuite/blocks';
+import { noop } from '@lumensuite/global/utils';
 import { css, html, nothing, type TemplateResult } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { guard } from 'lit/directives/guard.js';

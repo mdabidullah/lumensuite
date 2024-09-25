@@ -8,6 +8,6 @@ For instance, the [page editor](../editors/page-editor) and the [edgeless editor
 
 ## Reference
 
-- [`RootBlockSchema`](/api/@blocksuite/blocks/variables/RootBlockSchema.html)
-- [`PageRootService`](/api/@blocksuite/blocks/classes/PageRootService.html)
-- [`EdgelessRootService`](/api/@blocksuite/blocks/classes/EdgelessRootService.html)
+- [`RootBlockSchema`](/api/@lumensuite/blocks/variables/RootBlockSchema.html)
+- [`PageRootService`](/api/@lumensuite/blocks/classes/PageRootService.html)
+- [`EdgelessRootService`](/api/@lumensuite/blocks/classes/EdgelessRootService.html)

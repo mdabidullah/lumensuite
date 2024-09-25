@@ -1,9 +1,9 @@
-import { popMenu } from '@blocksuite/affine-components/context-menu';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
+} from '@lumensuite/block-std';
 import { css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';

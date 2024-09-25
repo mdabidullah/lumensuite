@@ -1,4 +1,4 @@
-import { ConnectorMode, FontFamily, FontStyle, FontWeight, LayoutType, LineColor, LineWidth, MindmapStyle, NoteDisplayMode, PointStyle, ShapeStyle, StrokeStyle, TextAlign, TextVerticalAlign } from '@blocksuite/affine-model';
+import { ConnectorMode, FontFamily, FontStyle, FontWeight, LayoutType, LineColor, LineWidth, MindmapStyle, NoteDisplayMode, PointStyle, ShapeStyle, StrokeStyle, TextAlign, TextVerticalAlign } from '@lumensuite/affine-model';
 import { z } from 'zod';
 export declare const ColorSchema: z.ZodUnion<[z.ZodObject<{
     normal: z.ZodString;
@@ -118,7 +118,7 @@ export declare const ShapeSchema: z.ZodDefault<z.ZodObject<{
         light: string;
         dark: string;
     }>]>]>;
-    fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+    fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
         normal: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         normal: string;
@@ -177,7 +177,7 @@ export declare const ShapeSchema: z.ZodDefault<z.ZodObject<{
     textAlign: TextAlign;
     strokeStyle: StrokeStyle;
     strokeWidth: number;
-    fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+    fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
         normal: string;
     } | {
         light: string;
@@ -209,7 +209,7 @@ export declare const ShapeSchema: z.ZodDefault<z.ZodObject<{
     textAlign: TextAlign;
     strokeStyle: StrokeStyle;
     strokeWidth: number;
-    fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+    fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
         normal: string;
     } | {
         light: string;
@@ -245,7 +245,7 @@ export declare const RoundedShapeSchema: z.ZodDefault<z.ZodObject<{
         light: string;
         dark: string;
     }>]>]>;
-    fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+    fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
         normal: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         normal: string;
@@ -304,7 +304,7 @@ export declare const RoundedShapeSchema: z.ZodDefault<z.ZodObject<{
     textAlign: TextAlign;
     strokeStyle: StrokeStyle;
     strokeWidth: number;
-    fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+    fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
         normal: string;
     } | {
         light: string;
@@ -336,7 +336,7 @@ export declare const RoundedShapeSchema: z.ZodDefault<z.ZodObject<{
     textAlign: TextAlign;
     strokeStyle: StrokeStyle;
     strokeWidth: number;
-    fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+    fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
         normal: string;
     } | {
         light: string;
@@ -447,7 +447,7 @@ export declare const EdgelessTextSchema: z.ZodDefault<z.ZodObject<{
     textAlign: TextAlign;
 }>>;
 export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
-    background: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").NoteBackgroundColor>, z.ZodUnion<[z.ZodObject<{
+    background: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").NoteBackgroundColor>, z.ZodUnion<[z.ZodObject<{
         normal: z.ZodString;
     }, "strip", z.ZodTypeAny, {
         normal: string;
@@ -469,31 +469,31 @@ export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
             borderRadius: z.ZodNumber;
             borderSize: z.ZodNumber;
             borderStyle: z.ZodNativeEnum<typeof StrokeStyle>;
-            shadowType: z.ZodNativeEnum<typeof import("@blocksuite/affine-model").NoteShadow>;
+            shadowType: z.ZodNativeEnum<typeof import("@lumensuite/affine-model").NoteShadow>;
         }, "strip", z.ZodTypeAny, {
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         }, {
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         }>;
     }, "strip", z.ZodTypeAny, {
         style: {
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         };
     }, {
         style: {
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         };
     }>;
 }, "strip", z.ZodTypeAny, {
@@ -502,7 +502,7 @@ export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         };
     };
     background: {
@@ -510,7 +510,7 @@ export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
     } | {
         light: string;
         dark: string;
-    } | import("@blocksuite/affine-model").NoteBackgroundColor;
+    } | import("@lumensuite/affine-model").NoteBackgroundColor;
     displayMode: NoteDisplayMode;
 }, {
     edgeless: {
@@ -518,7 +518,7 @@ export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
             borderRadius: number;
             borderSize: number;
             borderStyle: StrokeStyle;
-            shadowType: import("@blocksuite/affine-model").NoteShadow;
+            shadowType: import("@lumensuite/affine-model").NoteShadow;
         };
     };
     background: {
@@ -526,7 +526,7 @@ export declare const NoteSchema: z.ZodDefault<z.ZodObject<{
     } | {
         light: string;
         dark: string;
-    } | import("@blocksuite/affine-model").NoteBackgroundColor;
+    } | import("@lumensuite/affine-model").NoteBackgroundColor;
     displayMode: NoteDisplayMode;
 }>>;
 export declare const MindmapSchema: z.ZodDefault<z.ZodObject<{
@@ -727,7 +727,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
     }>>;
     'affine:note': z.ZodDefault<z.ZodObject<{
-        background: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").NoteBackgroundColor>, z.ZodUnion<[z.ZodObject<{
+        background: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").NoteBackgroundColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -749,31 +749,31 @@ export declare const NodePropsSchema: z.ZodObject<{
                 borderRadius: z.ZodNumber;
                 borderSize: z.ZodNumber;
                 borderStyle: z.ZodNativeEnum<typeof StrokeStyle>;
-                shadowType: z.ZodNativeEnum<typeof import("@blocksuite/affine-model").NoteShadow>;
+                shadowType: z.ZodNativeEnum<typeof import("@lumensuite/affine-model").NoteShadow>;
             }, "strip", z.ZodTypeAny, {
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             }, {
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             }>;
         }, "strip", z.ZodTypeAny, {
             style: {
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         }, {
             style: {
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         }>;
     }, "strip", z.ZodTypeAny, {
@@ -782,7 +782,7 @@ export declare const NodePropsSchema: z.ZodObject<{
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         };
         background: {
@@ -790,7 +790,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         } | {
             light: string;
             dark: string;
-        } | import("@blocksuite/affine-model").NoteBackgroundColor;
+        } | import("@lumensuite/affine-model").NoteBackgroundColor;
         displayMode: NoteDisplayMode;
     }, {
         edgeless: {
@@ -798,7 +798,7 @@ export declare const NodePropsSchema: z.ZodObject<{
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         };
         background: {
@@ -806,7 +806,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         } | {
             light: string;
             dark: string;
-        } | import("@blocksuite/affine-model").NoteBackgroundColor;
+        } | import("@lumensuite/affine-model").NoteBackgroundColor;
         displayMode: NoteDisplayMode;
     }>>;
     'shape:diamond': z.ZodDefault<z.ZodObject<{
@@ -826,7 +826,7 @@ export declare const NodePropsSchema: z.ZodObject<{
             light: string;
             dark: string;
         }>]>]>;
-        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -885,7 +885,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -917,7 +917,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -953,7 +953,7 @@ export declare const NodePropsSchema: z.ZodObject<{
             light: string;
             dark: string;
         }>]>]>;
-        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -1012,7 +1012,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1044,7 +1044,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1080,7 +1080,7 @@ export declare const NodePropsSchema: z.ZodObject<{
             light: string;
             dark: string;
         }>]>]>;
-        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -1139,7 +1139,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1171,7 +1171,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1207,7 +1207,7 @@ export declare const NodePropsSchema: z.ZodObject<{
             light: string;
             dark: string;
         }>]>]>;
-        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -1266,7 +1266,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1298,7 +1298,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1334,7 +1334,7 @@ export declare const NodePropsSchema: z.ZodObject<{
             light: string;
             dark: string;
         }>]>]>;
-        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@blocksuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
+        fillColor: z.ZodUnion<[z.ZodNativeEnum<typeof import("@lumensuite/affine-model").ShapeFillColor>, z.ZodUnion<[z.ZodObject<{
             normal: z.ZodString;
         }, "strip", z.ZodTypeAny, {
             normal: string;
@@ -1393,7 +1393,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1425,7 +1425,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1476,7 +1476,7 @@ export declare const NodePropsSchema: z.ZodObject<{
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         };
         background: {
@@ -1484,7 +1484,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         } | {
             light: string;
             dark: string;
-        } | import("@blocksuite/affine-model").NoteBackgroundColor;
+        } | import("@lumensuite/affine-model").NoteBackgroundColor;
         displayMode: NoteDisplayMode;
     };
     connector: {
@@ -1528,7 +1528,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1561,7 +1561,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1594,7 +1594,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1627,7 +1627,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1660,7 +1660,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1711,7 +1711,7 @@ export declare const NodePropsSchema: z.ZodObject<{
                 borderRadius: number;
                 borderSize: number;
                 borderStyle: StrokeStyle;
-                shadowType: import("@blocksuite/affine-model").NoteShadow;
+                shadowType: import("@lumensuite/affine-model").NoteShadow;
             };
         };
         background: {
@@ -1719,7 +1719,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         } | {
             light: string;
             dark: string;
-        } | import("@blocksuite/affine-model").NoteBackgroundColor;
+        } | import("@lumensuite/affine-model").NoteBackgroundColor;
         displayMode: NoteDisplayMode;
     } | undefined;
     connector?: {
@@ -1763,7 +1763,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1796,7 +1796,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1829,7 +1829,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1862,7 +1862,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;
@@ -1895,7 +1895,7 @@ export declare const NodePropsSchema: z.ZodObject<{
         textAlign: TextAlign;
         strokeStyle: StrokeStyle;
         strokeWidth: number;
-        fillColor: import("@blocksuite/affine-model").ShapeFillColor | {
+        fillColor: import("@lumensuite/affine-model").ShapeFillColor | {
             normal: string;
         } | {
             light: string;

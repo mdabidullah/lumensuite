@@ -1,6 +1,6 @@
-import { getInlineEditorByModel, markdownInput, } from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { IS_MAC } from '@blocksuite/global/env';
+import { getInlineEditorByModel, markdownInput, } from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { IS_MAC } from '@lumensuite/global/env';
 import { forwardDelete } from './utils/forward-delete.js';
 import { mergeWithPrev } from './utils/merge-with-prev.js';
 export const paragraphKeymap = (std) => {

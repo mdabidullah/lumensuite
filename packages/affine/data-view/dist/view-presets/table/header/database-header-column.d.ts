@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { TableColumn, TableSingleView } from '../table-view-manager.js';
 import './number-format-bar.js';
-declare const DatabaseHeaderColumn_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatabaseHeaderColumn_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DatabaseHeaderColumn extends DatabaseHeaderColumn_base {
     static styles: import("lit").CSSResult;
     private _clickColumn;

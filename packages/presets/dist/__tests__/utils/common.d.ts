@@ -1,4 +1,4 @@
-import type { Point } from '@blocksuite/global/utils';
+import type { Point } from '@lumensuite/global/utils';
 export declare function wait(time?: number): Promise<unknown>;
 /**
  * simulate click event

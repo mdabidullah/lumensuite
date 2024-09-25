@@ -1,7 +1,7 @@
-import { CommonUtils, Overlay, } from '@blocksuite/affine-block-surface';
-import { getShapeRadius, getShapeType, GroupElementModel, ShapeElementModel, } from '@blocksuite/affine-model';
-import { assertExists, Bound } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { CommonUtils, Overlay, } from '@lumensuite/affine-block-surface';
+import { getShapeRadius, getShapeType, GroupElementModel, ShapeElementModel, } from '@lumensuite/affine-model';
+import { assertExists, Bound } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { ShapeFactory } from '../../utils/tool-overlay.js';
 export var Direction;
 (function (Direction) {

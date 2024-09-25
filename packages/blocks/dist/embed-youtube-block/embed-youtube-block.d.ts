@@ -1,4 +1,4 @@
-import type { EmbedYoutubeModel, EmbedYoutubeStyles } from '@blocksuite/affine-model';
+import type { EmbedYoutubeModel, EmbedYoutubeStyles } from '@lumensuite/affine-model';
 import type { EmbedYoutubeBlockService } from './embed-youtube-service.js';
 import { EmbedBlockComponent } from '../_common/embed-block-helper/embed-block-element.js';
 export declare class EmbedYoutubeBlockComponent extends EmbedBlockComponent<EmbedYoutubeModel, EmbedYoutubeBlockService> {

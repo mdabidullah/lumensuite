@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 function makeNewNameWhenConflict(names, name) {
     let i = 1;
     const ext = name.split('.').at(-1) ?? '';
@@ -48,7 +48,7 @@ export class AssetsManager {
     async writeToBlob(blobId) {
         const blob = this._assetsMap.get(blobId);
         if (!blob) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'Blob ${blobId} not found in assets manager');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'Blob ${blobId} not found in assets manager');
         }
         const exists = (await this._blob.get(blobId)) !== null;
         if (exists) {

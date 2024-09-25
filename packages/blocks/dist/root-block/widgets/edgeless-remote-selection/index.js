@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { RemoteCursor } from '@blocksuite/affine-components/icons';
-import { requestThrottledConnectedFrame } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists, pickValues } from '@blocksuite/global/utils';
+import { RemoteCursor } from '@lumensuite/affine-components/icons';
+import { requestThrottledConnectedFrame } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists, pickValues } from '@lumensuite/global/utils';
 import { css, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

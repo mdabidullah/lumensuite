@@ -51,7 +51,7 @@ test(scoped`basic input`, async ({ page }) => {
   await focusRichText(page);
   await type(page, 'hello');
 
-  await test.expect(page).toHaveTitle(/BlockSuite/);
+  await test.expect(page).toHaveTitle(/LumenSuite/);
   expect(await getPageSnapshot(page, true)).toMatchSnapshot(
     `${BASIC_DEFAULT_SNAPSHOT}.json`
   );
@@ -346,7 +346,7 @@ test(
   async ({ page }) => {
     test.info().annotations.push({
       type: 'issue',
-      description: 'https://github.com/toeverything/blocksuite/issues/2138',
+      description: 'https://github.com/toeverything/lumensuite/issues/2138',
     });
     await enterPlaygroundRoom(page);
     await initEmptyParagraphState(page);
@@ -362,7 +362,7 @@ test(
 test(scoped`delete emoji in the middle of the text`, async ({ page }) => {
   test.info().annotations.push({
     type: 'issue',
-    description: 'https://github.com/toeverything/blocksuite/issues/2138',
+    description: 'https://github.com/toeverything/lumensuite/issues/2138',
   });
   await enterPlaygroundRoom(page);
   await initEmptyParagraphState(page);

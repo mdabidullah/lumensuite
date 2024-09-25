@@ -1,48 +1,48 @@
-import type { BlockModel, Doc } from '@blocksuite/store';
-import { type DatabaseBlockModel } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
-import { type ViewMeta } from '@blocksuite/data-view';
+import type { BlockModel, Doc } from '@lumensuite/store';
+import { type DatabaseBlockModel } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
+import { type ViewMeta } from '@lumensuite/data-view';
 import { addColumn, applyColumnUpdate, updateCell } from './utils.js';
 export declare class DatabaseBlockService extends BlockService {
     static readonly flavour: "affine:database";
     addColumn: typeof addColumn;
     applyColumnUpdate: typeof applyColumnUpdate;
-    databaseViewAddView: (model: DatabaseBlockModel, viewMeta: ViewMeta) => import("@blocksuite/data-view").BasicViewDataType<"table", {
-        columns: import("@blocksuite/data-view/view-presets").TableViewColumn[];
-        filter: import("@blocksuite/data-view").FilterGroup;
-        groupBy?: import("@blocksuite/data-view").GroupBy;
-        groupProperties?: import("@blocksuite/data-view").GroupProperty[];
-        sort?: import("@blocksuite/data-view").Sort;
+    databaseViewAddView: (model: DatabaseBlockModel, viewMeta: ViewMeta) => import("@lumensuite/data-view").BasicViewDataType<"table", {
+        columns: import("@lumensuite/data-view/view-presets").TableViewColumn[];
+        filter: import("@lumensuite/data-view").FilterGroup;
+        groupBy?: import("@lumensuite/data-view").GroupBy;
+        groupProperties?: import("@lumensuite/data-view").GroupProperty[];
+        sort?: import("@lumensuite/data-view").Sort;
         header?: {
             titleColumn?: string;
             iconColumn?: string;
             imageColumn?: string;
         };
-    }> | import("@blocksuite/data-view").BasicViewDataType<"kanban", {
-        columns: import("@blocksuite/data-view/view-presets").KanbanViewColumn[];
-        filter: import("@blocksuite/data-view").FilterGroup;
-        groupBy?: import("@blocksuite/data-view").GroupBy;
-        sort?: import("@blocksuite/data-view").Sort;
+    }> | import("@lumensuite/data-view").BasicViewDataType<"kanban", {
+        columns: import("@lumensuite/data-view/view-presets").KanbanViewColumn[];
+        filter: import("@lumensuite/data-view").FilterGroup;
+        groupBy?: import("@lumensuite/data-view").GroupBy;
+        sort?: import("@lumensuite/data-view").Sort;
         header: {
             titleColumn?: string;
             iconColumn?: string;
             coverColumn?: string;
         };
-        groupProperties: import("@blocksuite/data-view").GroupProperty[];
+        groupProperties: import("@lumensuite/data-view").GroupProperty[];
     }>;
     databaseViewInitEmpty: (model: DatabaseBlockModel, viewMeta: ViewMeta) => void;
     updateCell: typeof updateCell;
-    updateView: <ViewData extends import("@blocksuite/affine-model").ViewBasicDataType>(model: DatabaseBlockModel, id: string, update: (data: ViewData) => Partial<ViewData>) => void;
+    updateView: <ViewData extends import("@lumensuite/affine-model").ViewBasicDataType>(model: DatabaseBlockModel, id: string, update: (data: ViewData) => Partial<ViewData>) => void;
     viewPresets: {
         tableViewConfig: {
             type: "table";
-            model: import("@blocksuite/data-view").DataViewConfig<import("@blocksuite/data-view/view-presets").TableViewData>;
-            renderer: import("@blocksuite/data-view").DataViewRendererConfig;
+            model: import("@lumensuite/data-view").DataViewConfig<import("@lumensuite/data-view/view-presets").TableViewData>;
+            renderer: import("@lumensuite/data-view").DataViewRendererConfig;
         };
         kanbanViewConfig: {
             type: "kanban";
-            model: import("@blocksuite/data-view").DataViewConfig<import("@blocksuite/data-view/view-presets").KanbanViewData>;
-            renderer: import("@blocksuite/data-view").DataViewRendererConfig;
+            model: import("@lumensuite/data-view").DataViewConfig<import("@lumensuite/data-view/view-presets").KanbanViewData>;
+            renderer: import("@lumensuite/data-view").DataViewRendererConfig;
         };
     };
     initDatabaseBlock(doc: Doc, model: BlockModel, databaseId: string, viewMeta: ViewMeta, isAppendNewRow?: boolean): void;

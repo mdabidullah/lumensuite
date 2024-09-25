@@ -1,6 +1,6 @@
-import type { FrameBlockModel, RichText } from '@blocksuite/blocks';
+import type { FrameBlockModel, RichText } from '@lumensuite/blocks';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

@@ -1,17 +1,17 @@
-import type { UIEventStateContext } from '@blocksuite/block-std';
+import type { UIEventStateContext } from '@lumensuite/block-std';
 
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
 import {
   getCurrentNativeRange,
   matchFlavours,
-} from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
+} from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
 import {
   assertExists,
   debounce,
   DisposableGroup,
   throttle,
-} from '@blocksuite/global/utils';
+} from '@lumensuite/global/utils';
 import { customElement } from 'lit/decorators.js';
 
 import type { RootBlockComponent } from '../../types.js';
@@ -143,7 +143,7 @@ export class AffineSlashMenuWidget extends WidgetComponent {
         }),
       };
 
-      // Wait for dom update, see this case https://github.com/toeverything/blocksuite/issues/2611
+      // Wait for dom update, see this case https://github.com/toeverything/lumensuite/issues/2611
       requestAnimationFrame(() => {
         const curRange = getCurrentNativeRange();
         if (!curRange) return;

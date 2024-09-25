@@ -1,8 +1,8 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DataViewCellLifeCycle } from '../../column/index.js';
 import type { Column } from '../../view-manager/column.js';
 import type { SingleView } from '../../view-manager/single-view.js';
-declare const RecordField_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const RecordField_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class RecordField extends RecordField_base {
     static styles: import("lit").CSSResult;
     private _cell;

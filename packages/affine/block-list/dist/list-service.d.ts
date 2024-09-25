@@ -1,4 +1,4 @@
-import { BlockService } from '@blocksuite/block-std';
+import { BlockService } from '@lumensuite/block-std';
 import { getListIcon } from './utils/get-list-icon.js';
 export declare class ListBlockService extends BlockService {
     static readonly flavour: "affine:list";

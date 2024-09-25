@@ -1,4 +1,4 @@
-import type { BlockCommands } from '@blocksuite/block-std';
+import type { BlockCommands } from '@lumensuite/block-std';
 
 import { addParagraphCommand } from './add-paragraph.js';
 import { appendParagraphCommand } from './append-paragraph.js';
@@ -15,7 +15,7 @@ export const commands: BlockCommands = {
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface CommandContext {
       paragraphConvertedId?: string;
     }

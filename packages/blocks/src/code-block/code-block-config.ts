@@ -9,7 +9,7 @@ export interface CodeBlockConfig {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockConfigs {
       'affine:code': CodeBlockConfig;
     }

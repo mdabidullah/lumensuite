@@ -1,5 +1,5 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
 import { PlusIcon } from '@blocksuite/icons/lit';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

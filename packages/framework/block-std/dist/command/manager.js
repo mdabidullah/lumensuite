@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { LifeCycleWatcher } from '../extension/index.js';
 import { CommandIdentifier } from '../identifier.js';
 import { cmdSymbol } from './consts.js';
@@ -19,10 +19,10 @@ import { cmdSymbol } from './consts.js';
  *  return;
  * ```
  *
- * You should always add the command to the global interface `BlockSuite.Commands`
+ * You should always add the command to the global interface `LumenSuite.Commands`
  * ```ts
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface Commands {
  *       'myCommand': typeof myCommand
  *     }
@@ -42,7 +42,7 @@ import { cmdSymbol } from './consts.js';
  * }
  *
  * declare global {
- *   namespace BlockSuite {
+ *   namespace LumenSuite {
  *     interface CommandContext {
  *       // All command input and output data should be defined here
  *       // The keys should be optional
@@ -275,7 +275,7 @@ export class CommandManager extends LifeCycleWatcher {
     exec(command, ...payloads) {
         const cmdFunc = this._commands.get(command);
         if (!cmdFunc) {
-            throw new BlockSuiteError(ErrorCode.CommandError, `The command "${command}" not found`);
+            throw new LumenSuiteError(ErrorCode.CommandError, `The command "${command}" not found`);
         }
         const inData = payloads[0];
         const ctx = {

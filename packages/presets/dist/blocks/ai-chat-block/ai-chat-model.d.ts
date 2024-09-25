@@ -1,4 +1,4 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 type AIChatProps = {
     xywh: SerializedXYWH;
     index: string;
@@ -11,7 +11,7 @@ type AIChatProps = {
 export declare const AIChatBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<AIChatProps>;
+        props: import("@lumensuite/store").PropsGetter<AIChatProps>;
         flavour: "affine:embed-ai-chat";
     } & {
         version: number;
@@ -19,15 +19,15 @@ export declare const AIChatBlockSchema: {
         children: never[];
     };
     onUpgrade?: ((data: AIChatProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<AIChatProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<AIChatProps>) | undefined;
 };
 declare const AIChatBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<AIChatProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<AIChatProps>;
 };
 export declare class AIChatBlockModel extends AIChatBlockModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-ai-chat': AIChatBlockModel;
         }

@@ -1,5 +1,5 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
-import { Slot } from '@blocksuite/global/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
+import { Slot } from '@lumensuite/global/utils';
 import { AssetsManager } from './assets.js';
 import { BaseBlockTransformer } from './base.js';
 import { toDraftModel } from './draft.js';
@@ -73,7 +73,7 @@ export class Job {
                 const rootModel = doc.root;
                 const meta = this._exportDocMeta(doc);
                 if (!rootModel) {
-                    throw new BlockSuiteError(ErrorCode.TransformerError, 'Root block not found in doc');
+                    throw new LumenSuiteError(ErrorCode.TransformerError, 'Root block not found in doc');
                 }
                 const blocks = await this.blockToSnapshot(rootModel);
                 if (!blocks) {
@@ -312,7 +312,7 @@ export class Job {
     _exportDocMeta(doc) {
         const docMeta = doc.meta;
         if (!docMeta) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'Doc meta not found');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'Doc meta not found');
         }
         return {
             id: docMeta.id,
@@ -325,13 +325,13 @@ export class Job {
         const { meta } = this._collection;
         const { pageVersion, workspaceVersion, docs } = meta;
         if (!pageVersion) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'Page version not found');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'Page version not found');
         }
         if (!workspaceVersion) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'Workspace version not found');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'Workspace version not found');
         }
         if (!docs) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, 'Docs not found');
+            throw new LumenSuiteError(ErrorCode.TransformerError, 'Docs not found');
         }
         return {
             pageVersion,
@@ -343,7 +343,7 @@ export class Job {
     _getSchema(flavour) {
         const schema = this._collection.schema.flavourSchemaMap.get(flavour);
         if (!schema) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, `Flavour schema not found for ${flavour}`);
+            throw new LumenSuiteError(ErrorCode.TransformerError, `Flavour schema not found for ${flavour}`);
         }
         return schema;
     }
@@ -380,7 +380,7 @@ export class Job {
         }
         const model = doc.getBlockById(id);
         if (!model) {
-            throw new BlockSuiteError(ErrorCode.TransformerError, `Block not found by id ${id}`);
+            throw new LumenSuiteError(ErrorCode.TransformerError, `Block not found by id ${id}`);
         }
         this._slots.afterImport.emit({
             type: 'block',

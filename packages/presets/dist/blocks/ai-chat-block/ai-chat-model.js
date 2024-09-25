@@ -1,5 +1,5 @@
-import { GfxCompatible } from '@blocksuite/block-std/gfx';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { GfxCompatible } from '@lumensuite/block-std/gfx';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 export const AIChatBlockSchema = defineBlockSchema({
     flavour: 'affine:embed-ai-chat',
     props: () => ({

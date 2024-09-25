@@ -1,7 +1,7 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
-import { GfxCompatible } from '@blocksuite/block-std/gfx';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { GfxCompatible } from '@lumensuite/block-std/gfx';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 type AIChatProps = {
   xywh: SerializedXYWH;
@@ -37,7 +37,7 @@ export const AIChatBlockSchema = defineBlockSchema({
 export class AIChatBlockModel extends GfxCompatible<AIChatProps>(BlockModel) {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:embed-ai-chat': AIChatBlockModel;
     }

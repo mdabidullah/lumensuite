@@ -1,4 +1,4 @@
-import { type Color, ColorScheme } from '@blocksuite/affine-model';
+import { type Color, ColorScheme } from '@lumensuite/affine-model';
 /**
  * Observer theme changing by `data-theme` property
  */

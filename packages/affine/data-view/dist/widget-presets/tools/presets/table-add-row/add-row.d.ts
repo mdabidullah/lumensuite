@@ -1,4 +1,4 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
 import { WidgetBase } from '../../../../core/widget/widget-base.js';
 export declare class DataViewHeaderToolsAddRow extends WidgetBase {
     static styles: import("lit").CSSResult;

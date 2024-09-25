@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { getSvgPath } from '@blocksuite/global/utils';
+import { getSvgPath } from '@lumensuite/global/utils';
 import { css, html, LitElement, svg } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 /**

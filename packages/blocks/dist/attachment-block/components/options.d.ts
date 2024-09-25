@@ -1,4 +1,4 @@
-import type { AttachmentBlockModel } from '@blocksuite/affine-model';
+import type { AttachmentBlockModel } from '@lumensuite/affine-model';
 import type { AttachmentBlockComponent } from '../attachment-block.js';
 export declare function AttachmentOptionsTemplate({ anchor, model, abortController, }: {
     anchor: AttachmentBlockComponent;

@@ -1,5 +1,5 @@
-import { isAbortError } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { isAbortError } from '@lumensuite/affine-shared/utils';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 import { DEFAULT_LINK_PREVIEW_ENDPOINT } from '../consts.js';
 // ========== Link Preview ==========
 export class LinkPreviewer {
@@ -42,7 +42,7 @@ export class LinkPreviewer {
                 })
                     .then(r => {
                     if (!r || !r.ok) {
-                        throw new BlockSuiteError(ErrorCode.DefaultRuntimeError, `Failed to fetch link preview: ${url}`);
+                        throw new LumenSuiteError(ErrorCode.DefaultRuntimeError, `Failed to fetch link preview: ${url}`);
                     }
                     return r;
                 })

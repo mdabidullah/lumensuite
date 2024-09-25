@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { BlockStdScope, WithDisposable, } from '@blocksuite/block-std';
-import { CodeBlockComponent, DividerBlockComponent, ListBlockComponent, ParagraphBlockComponent, SpecProvider, } from '@blocksuite/blocks';
-import { BlockViewType } from '@blocksuite/store';
+import { BlockStdScope, WithDisposable, } from '@lumensuite/block-std';
+import { CodeBlockComponent, DividerBlockComponent, ListBlockComponent, ParagraphBlockComponent, SpecProvider, } from '@lumensuite/blocks';
+import { BlockViewType } from '@lumensuite/store';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

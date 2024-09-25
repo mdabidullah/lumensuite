@@ -4,11 +4,11 @@ import {
   type ListType,
   type ParagraphType,
   type ViewBasicDataType,
-} from '@blocksuite/blocks';
-import { columnPresets } from '@blocksuite/data-view/column-presets';
-import { viewPresets } from '@blocksuite/data-view/view-presets';
-import { assertExists } from '@blocksuite/global/utils';
-import { type DocCollection, Text } from '@blocksuite/store';
+} from '@lumensuite/blocks';
+import { columnPresets } from '@lumensuite/data-view/column-presets';
+import { viewPresets } from '@lumensuite/data-view/view-presets';
+import { assertExists } from '@lumensuite/global/utils';
+import { type DocCollection, Text } from '@lumensuite/store';
 
 import type { InitFn } from './utils.js';
 
@@ -21,7 +21,7 @@ export const database: InitFn = (collection: DocCollection, id: string) => {
   doc.load(() => {
     // Add root block and surface block at root level
     const rootId = doc.addBlock('affine:page', {
-      title: new Text('BlockSuite Playground'),
+      title: new Text('LumenSuite Playground'),
     });
     doc.addBlock('affine:surface', {}, rootId);
 

@@ -1,4 +1,4 @@
-import { FrameIcon } from '@blocksuite/affine-components/icons';
+import { FrameIcon } from '@lumensuite/affine-components/icons';
 import { FrameConfig } from './config.js';
 export const buildFrameDenseMenu = edgeless => ({
     type: 'sub-menu',

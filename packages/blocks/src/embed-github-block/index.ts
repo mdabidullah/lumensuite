@@ -1,4 +1,4 @@
-import { noop } from '@blocksuite/global/utils';
+import { noop } from '@lumensuite/global/utils';
 
 import type { EmbedGithubBlockService } from './embed-github-service.js';
 
@@ -10,7 +10,7 @@ export * from './embed-github-service.js';
 export * from './embed-github-spec.js';
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockServices {
       'affine:embed-github': EmbedGithubBlockService;
     }

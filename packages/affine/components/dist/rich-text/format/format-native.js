@@ -1,5 +1,5 @@
-import { BLOCK_ID_ATTR, } from '@blocksuite/block-std';
-import { INLINE_ROOT_ATTR } from '@blocksuite/inline';
+import { BLOCK_ID_ATTR, } from '@lumensuite/block-std';
+import { INLINE_ROOT_ATTR } from '@lumensuite/inline';
 import { FORMAT_NATIVE_SUPPORT_FLAVOURS } from './consts.js';
 // for native range
 export const formatNativeCommand = (ctx, next) => {

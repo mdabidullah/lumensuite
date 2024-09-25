@@ -1,10 +1,10 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
 import {
   GfxCompatible,
   type GfxElementGeometry,
-} from '@blocksuite/block-std/gfx';
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+} from '@lumensuite/block-std/gfx';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 type LatexProps = {
   xywh: SerializedXYWH;
@@ -43,7 +43,7 @@ export class LatexBlockModel
   implements GfxElementGeometry {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:latex': LatexBlockModel;
     }

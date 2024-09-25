@@ -1,4 +1,4 @@
-import { BlockViewExtension, CommandExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, CommandExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import './bookmark-edgeless-block.js';
 import { BookmarkBlockService } from './bookmark-service.js';

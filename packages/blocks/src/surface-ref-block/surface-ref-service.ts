@@ -1,7 +1,7 @@
-import type { Doc } from '@blocksuite/store';
+import type { Doc } from '@lumensuite/store';
 
-import { SurfaceRefBlockSchema } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
+import { SurfaceRefBlockSchema } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
 
 import { SurfaceRefRenderer } from './surface-ref-renderer.js';
 

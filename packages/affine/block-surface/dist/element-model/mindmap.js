@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { LayoutType, LocalConnectorElementModel, MindmapStyle, TextResizing, } from '@blocksuite/affine-model';
-import { convert, field, GfxGroupLikeElementModel, observe, watch, } from '@blocksuite/block-std/gfx';
-import { assertType, deserializeXYWH, keys, last, pick, } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { LayoutType, LocalConnectorElementModel, MindmapStyle, TextResizing, } from '@lumensuite/affine-model';
+import { convert, field, GfxGroupLikeElementModel, observe, watch, } from '@lumensuite/block-std/gfx';
+import { assertType, deserializeXYWH, keys, last, pick, } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { generateKeyBetween } from 'fractional-indexing';
 import { z } from 'zod';
 import { layout } from './utils/mindmap/layout.js';

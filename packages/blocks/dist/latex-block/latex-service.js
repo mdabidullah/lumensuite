@@ -1,5 +1,5 @@
-import { LatexBlockSchema } from '@blocksuite/affine-model';
-import { BlockService } from '@blocksuite/block-std';
+import { LatexBlockSchema } from '@lumensuite/affine-model';
+import { BlockService } from '@lumensuite/block-std';
 export class LatexBlockService extends BlockService {
     static { this.flavour = LatexBlockSchema.model.flavour; }
 }

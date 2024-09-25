@@ -1,4 +1,4 @@
-import type { Constructor } from '@blocksuite/global/utils';
+import type { Constructor } from '@lumensuite/global/utils';
 import type { LitElement, TemplateResult } from 'lit';
 
 import type { PeekableClass, PeekableOptions } from './type.js';

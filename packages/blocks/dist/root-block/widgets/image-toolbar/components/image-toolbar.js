@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MoreVerticalIcon } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { assertExists, noop } from '@blocksuite/global/utils';
+import { MoreVerticalIcon } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { assertExists, noop } from '@lumensuite/global/utils';
 import { flip, offset } from '@floating-ui/dom';
 import { html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';

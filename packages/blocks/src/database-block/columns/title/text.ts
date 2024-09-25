@@ -1,17 +1,17 @@
-import type { Text } from '@blocksuite/store';
+import type { Text } from '@lumensuite/store';
 
 import {
   DefaultInlineManagerExtension,
   type RichText,
-} from '@blocksuite/affine-components/rich-text';
-import { QuickSearchProvider } from '@blocksuite/affine-shared/services';
+} from '@lumensuite/affine-components/rich-text';
+import { QuickSearchProvider } from '@lumensuite/affine-shared/services';
 import {
   getViewportElement,
   isValidUrl,
-} from '@blocksuite/affine-shared/utils';
-import { BaseCellRenderer } from '@blocksuite/data-view';
-import { IS_MAC } from '@blocksuite/global/env';
-import { assertExists } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-shared/utils';
+import { BaseCellRenderer } from '@lumensuite/data-view';
+import { IS_MAC } from '@lumensuite/global/env';
+import { assertExists } from '@lumensuite/global/utils';
 import { css } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { html } from 'lit/static-html.js';

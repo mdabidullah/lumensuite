@@ -1,5 +1,5 @@
 import { EmbedYoutubeBlockComponent } from './embed-youtube-block.js';
-declare const EmbedEdgelessYoutubeBlockComponent_base: typeof EmbedYoutubeBlockComponent & (new (...args: any[]) => import("@blocksuite/block-std").GfxBlockComponent);
+declare const EmbedEdgelessYoutubeBlockComponent_base: typeof EmbedYoutubeBlockComponent & (new (...args: any[]) => import("@lumensuite/block-std").GfxBlockComponent);
 export declare class EmbedEdgelessYoutubeBlockComponent extends EmbedEdgelessYoutubeBlockComponent_base {
 }
 export {};

@@ -1,6 +1,6 @@
 import type * as Y from 'yjs';
-import { Slot } from '@blocksuite/global/utils';
-import type { BlockSuiteDoc } from '../yjs/index.js';
+import { Slot } from '@lumensuite/global/utils';
+import type { LumenSuiteDoc } from '../yjs/index.js';
 import type { DocCollection } from './collection.js';
 export interface DocMeta {
     id: string;
@@ -34,7 +34,7 @@ export declare class DocCollectionMeta {
     protected readonly _proxy: DocCollectionMetaState;
     protected readonly _yMap: Y.Map<DocCollectionMetaState[keyof DocCollectionMetaState]>;
     commonFieldsUpdated: Slot<void>;
-    readonly doc: BlockSuiteDoc;
+    readonly doc: LumenSuiteDoc;
     docMetaAdded: Slot<string>;
     docMetaRemoved: Slot<string>;
     docMetaUpdated: Slot<void>;
@@ -49,7 +49,7 @@ export declare class DocCollectionMeta {
     get properties(): DocsPropertiesMeta;
     get workspaceVersion(): number | undefined;
     get yDocs(): Y.Array<unknown>;
-    constructor(doc: BlockSuiteDoc);
+    constructor(doc: LumenSuiteDoc);
     private _handleCommonFieldsEvent;
     private _handleDocMetaEvent;
     addDocMeta(doc: DocMeta, index?: number): void;

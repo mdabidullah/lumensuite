@@ -1,5 +1,5 @@
-import { LayoutType } from '@blocksuite/affine-model';
-import { assertType } from '@blocksuite/global/utils';
+import { LayoutType } from '@lumensuite/affine-model';
+import { assertType } from '@lumensuite/global/utils';
 import { ConnectorPathGenerator } from '../../../managers/connector-manager.js';
 export function getHoveredArea(target, position, layoutDir) {
     const { x, y, w, h } = target;

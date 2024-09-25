@@ -1,4 +1,4 @@
-import type { Rect } from '@blocksuite/global/utils';
+import type { Rect } from '@lumensuite/global/utils';
 
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';

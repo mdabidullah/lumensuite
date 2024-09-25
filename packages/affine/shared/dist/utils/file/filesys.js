@@ -1,7 +1,7 @@
 // Polyfill for `showOpenFilePicker` API
 // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/wicg-file-system-access/index.d.ts
 // See also https://caniuse.com/?search=showOpenFilePicker
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { LumenSuiteError, ErrorCode } from '@lumensuite/global/exceptions';
 // See [Common MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types)
 const FileTypes = [
     {
@@ -95,7 +95,7 @@ export async function openFileOrFiles({ acceptType = 'Any', multiple = false, } 
         try {
             const fileType = FileTypes.find(i => i.description === acceptType);
             if (acceptType !== 'Any' && !fileType)
-                throw new BlockSuiteError(ErrorCode.DefaultRuntimeError, `Unexpected acceptType "${acceptType}"`);
+                throw new LumenSuiteError(ErrorCode.DefaultRuntimeError, `Unexpected acceptType "${acceptType}"`);
             const pickerOpts = {
                 types: fileType ? [fileType] : undefined,
                 multiple,
@@ -208,7 +208,7 @@ const tempImageMap = new Map();
  * Similarly, when converting from an attachment block to an image block,
  * we need to save the attachment's name.
  *
- * See also https://github.com/toeverything/blocksuite/pull/4583#pullrequestreview-1610662677
+ * See also https://github.com/toeverything/lumensuite/pull/4583#pullrequestreview-1610662677
  *
  * @internal
  */

@@ -1,4 +1,4 @@
-import { BulletIcons, checkboxChecked, checkboxUnchecked, toggleDown, toggleRight, } from '@blocksuite/affine-components/icons';
+import { BulletIcons, checkboxChecked, checkboxUnchecked, toggleDown, toggleRight, } from '@lumensuite/affine-components/icons';
 import { html } from 'lit';
 import { getNumberPrefix } from './get-number-prefix.js';
 const getListDeep = (model) => {

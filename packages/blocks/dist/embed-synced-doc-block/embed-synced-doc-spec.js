@@ -1,4 +1,4 @@
-import { BlockViewExtension, FlavourExtension, } from '@blocksuite/block-std';
+import { BlockViewExtension, FlavourExtension, } from '@lumensuite/block-std';
 import { literal } from 'lit/static-html.js';
 import './embed-edgeless-synced-doc-block.js';
 import { EmbedSyncedDocBlockService } from './embed-synced-doc-service.js';

@@ -1,6 +1,6 @@
-import { CaptionIcon, DownloadIcon, EditIcon, MoreVerticalIcon, SmallArrowDownIcon, } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { cloneGroups, renderGroups, renderToolbarSeparator, } from '@blocksuite/affine-components/toolbar';
+import { CaptionIcon, DownloadIcon, EditIcon, MoreVerticalIcon, SmallArrowDownIcon, } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { cloneGroups, renderGroups, renderToolbarSeparator, } from '@lumensuite/affine-components/toolbar';
 import { flip, offset } from '@floating-ui/dom';
 import { html, nothing } from 'lit';
 import { join } from 'lit/directives/join.js';

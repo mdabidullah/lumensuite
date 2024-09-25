@@ -51,7 +51,7 @@ export class EventService {
                     inlineRange.length === 0 &&
                     inlineRange.index > 0) {
                     // do not use target range when deleting across lines
-                    // https://github.com/toeverything/blocksuite/issues/5381
+                    // https://github.com/toeverything/lumensuite/issues/5381
                     inlineRange = {
                         index: inlineRange.index - 1,
                         length: 1,

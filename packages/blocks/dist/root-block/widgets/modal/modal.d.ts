@@ -1,4 +1,4 @@
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { createCustomModal } from './custom-modal.js';
 export declare const AFFINE_MODAL_WIDGET = "affine-modal-widget";
 export declare class AffineModalWidget extends WidgetComponent {

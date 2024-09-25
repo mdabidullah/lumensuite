@@ -1,5 +1,5 @@
-import type { Doc } from '@blocksuite/store';
-import { BlockService } from '@blocksuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { BlockService } from '@lumensuite/block-std';
 import { SurfaceRefRenderer } from './surface-ref-renderer.js';
 export declare class SurfaceRefBlockService extends BlockService {
     static readonly flavour: "affine:surface-ref";

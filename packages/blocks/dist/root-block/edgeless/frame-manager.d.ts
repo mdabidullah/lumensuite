@@ -1,7 +1,7 @@
-import type { FrameBlockModel, NoteBlockModel } from '@blocksuite/affine-model';
-import type { Doc } from '@blocksuite/store';
-import { Overlay } from '@blocksuite/affine-block-surface';
-import { Bound, type IVec } from '@blocksuite/global/utils';
+import type { FrameBlockModel, NoteBlockModel } from '@lumensuite/affine-model';
+import type { Doc } from '@lumensuite/store';
+import { Overlay } from '@lumensuite/affine-block-surface';
+import { Bound, type IVec } from '@lumensuite/global/utils';
 import type { EdgelessRootService } from '../../index.js';
 export declare class FrameOverlay extends Overlay {
     private _edgelessService;
@@ -28,9 +28,9 @@ export declare class EdgelessFrameManager {
     /**
      * Reset parent of elements to the frame
      */
-    addElementsToFrame(frame: FrameBlockModel, elements: BlockSuite.EdgelessModel[]): void;
+    addElementsToFrame(frame: FrameBlockModel, elements: LumenSuite.EdgelessModel[]): void;
     createFrameOnBound(bound: Bound): FrameBlockModel;
-    createFrameOnElements(elements: BlockSuite.EdgelessModel[]): FrameBlockModel;
+    createFrameOnElements(elements: LumenSuite.EdgelessModel[]): FrameBlockModel;
     createFrameOnSelected(): FrameBlockModel;
     createFrameOnViewportCenter(wh: [number, number]): void;
     dispose(): void;
@@ -39,20 +39,20 @@ export declare class EdgelessFrameManager {
      * 1. The frame doesn't have `childElements`, return all elements in the frame bound but not owned by another frame.
      * 2. Return all child elements of the frame if `childElements` exists.
      */
-    getChildElementsInFrame(frame: FrameBlockModel): BlockSuite.EdgelessModel[];
+    getChildElementsInFrame(frame: FrameBlockModel): LumenSuite.EdgelessModel[];
     /**
      * Get all elements in the frame bound,
      * whatever the element already has another parent frame or not.
      */
-    getElementsInFrameBound(frame: FrameBlockModel, fullyContained?: boolean): import("@blocksuite/block-std/gfx").GfxModel[];
+    getElementsInFrameBound(frame: FrameBlockModel, fullyContained?: boolean): import("@lumensuite/block-std/gfx").GfxModel[];
     /**
      * Get most top frame from the point.
      */
     getFrameFromPoint([x, y]: IVec, ignoreFrames?: FrameBlockModel[]): FrameBlockModel | null;
-    getParentFrame(element: BlockSuite.EdgelessModel): FrameBlockModel | undefined;
+    getParentFrame(element: LumenSuite.EdgelessModel): FrameBlockModel | undefined;
     removeAllChildrenFromFrame(frame: FrameBlockModel): void;
-    removeParentFrame(element: BlockSuite.EdgelessModel): void;
+    removeParentFrame(element: LumenSuite.EdgelessModel): void;
 }
 export declare function getNotesInFrameBound(doc: Doc, frame: FrameBlockModel, fullyContained?: boolean): NoteBlockModel[];
-export declare function getBlocksInFrameBound(doc: Doc, model: FrameBlockModel, fullyContained?: boolean): BlockSuite.EdgelessBlockModelType[];
+export declare function getBlocksInFrameBound(doc: Doc, model: FrameBlockModel, fullyContained?: boolean): LumenSuite.EdgelessBlockModelType[];
 //# sourceMappingURL=frame-manager.d.ts.map

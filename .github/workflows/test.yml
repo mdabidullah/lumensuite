@@ -50,7 +50,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm --filter=@blocksuite/playground build
+        run: pnpm --filter=@lumensuite/playground build
 
   unit:
     name: Unit Test
@@ -95,7 +95,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./.coverage/unit/lcov.info
           flags: unittest
-          name: blocksuite
+          name: lumensuite
           fail_ci_if_error: false
 
       - name: Upload test results
@@ -155,7 +155,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm nx vite:build @blocksuite/playground
+        run: pnpm nx vite:build @lumensuite/playground
 
       - name: Install playwright browsers
         run: npx playwright install chromium
@@ -172,7 +172,7 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./.coverage/lcov.info
           flags: e2etest
-          name: blocksuite
+          name: lumensuite
           fail_ci_if_error: false
 
       - name: Upload test results

@@ -1,4 +1,4 @@
-import { BrushElementModel, ConnectorElementModel, GroupElementModel, ShapeElementModel, TextElementModel } from '@blocksuite/affine-model';
+import { BrushElementModel, ConnectorElementModel, GroupElementModel, ShapeElementModel, TextElementModel } from '@lumensuite/affine-model';
 import { SurfaceElementModel } from './base.js';
 import { MindmapElementModel } from './mindmap.js';
 export declare const elementsCtorMap: {

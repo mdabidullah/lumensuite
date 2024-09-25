@@ -1,8 +1,8 @@
-import { Slot } from '@blocksuite/global/utils';
+import { Slot } from '@lumensuite/global/utils';
 import * as Y from 'yjs';
 import type { BlockModel } from '../../schema/base.js';
 import type { IdGenerator } from '../../utils/id-generator.js';
-import type { AwarenessStore, BlockSuiteDoc } from '../../yjs/index.js';
+import type { AwarenessStore, LumenSuiteDoc } from '../../yjs/index.js';
 import type { DocCollection } from '../collection.js';
 import type { YBlock } from './index.js';
 import type { Query } from './query.js';
@@ -20,7 +20,7 @@ export type BlockProps = BlockSysProps & Record<string, unknown>;
 type DocOptions = {
     id: string;
     collection: DocCollection;
-    doc: BlockSuiteDoc;
+    doc: LumenSuiteDoc;
     awarenessStore: AwarenessStore;
     idGenerator?: IdGenerator;
 };
@@ -51,7 +51,7 @@ export declare class BlockCollection {
     protected readonly _ySpaceDoc: Y.Doc;
     readonly awarenessStore: AwarenessStore;
     readonly id: string;
-    readonly rootDoc: BlockSuiteDoc;
+    readonly rootDoc: LumenSuiteDoc;
     readonly slots: {
         historyUpdated: Slot<void>;
         yBlockUpdated: Slot<{
@@ -62,13 +62,13 @@ export declare class BlockCollection {
             id: string;
         }>;
     };
-    get awarenessSync(): import("@blocksuite/sync").AwarenessEngine;
-    get blobSync(): import("@blocksuite/sync").BlobEngine;
+    get awarenessSync(): import("@lumensuite/sync").AwarenessEngine;
+    get blobSync(): import("@lumensuite/sync").BlobEngine;
     get canRedo(): boolean;
     get canUndo(): boolean;
     get collection(): DocCollection;
     get crud(): DocCRUD;
-    get docSync(): import("@blocksuite/sync").DocEngine;
+    get docSync(): import("@lumensuite/sync").DocEngine;
     get history(): Y.UndoManager;
     get isEmpty(): boolean;
     get loaded(): boolean;
@@ -106,7 +106,7 @@ export declare class BlockCollection {
     withoutTransact(callback: () => void): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
         }
         type Flavour = string & keyof BlockModels;

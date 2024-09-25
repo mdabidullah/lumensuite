@@ -1,15 +1,15 @@
-import type { AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import type { DeltaInsert } from '@blocksuite/inline';
+import type { AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import type { DeltaInsert } from '@lumensuite/inline';
 import type { Root } from 'hast';
 
 import {
   ColorScheme,
   DEFAULT_NOTE_BACKGROUND_COLOR,
   NoteDisplayMode,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { getFilenameFromContentDisposition } from '@blocksuite/affine-shared/utils';
-import { sha } from '@blocksuite/global/utils';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { getFilenameFromContentDisposition } from '@lumensuite/affine-shared/utils';
+import { sha } from '@lumensuite/global/utils';
 import {
   type AssetsManager,
   type BlockSnapshot,
@@ -26,8 +26,8 @@ import {
   type SliceSnapshot,
   type ToBlockSnapshotPayload,
   type ToDocSnapshotPayload,
-} from '@blocksuite/store';
-import { ASTWalker, BaseAdapter } from '@blocksuite/store';
+} from '@lumensuite/store';
+import { ASTWalker, BaseAdapter } from '@lumensuite/store';
 import { collapseWhiteSpace } from 'collapse-white-space';
 import rehypeParse from 'rehype-parse';
 import rehypeStringify from 'rehype-stringify';
@@ -387,7 +387,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
                 props: {
                   language: codeLang ?? 'Plain Text',
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: this._hastToDelta(codeText, {
                       trim: false,
                       pre: true,
@@ -418,7 +418,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
                   props: {
                     type: 'quote',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: this._hastToDelta(
                         hastGetTextChildrenOnlyAst(o.node)
                       ),
@@ -471,7 +471,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
                   props: {
                     type: 'text',
                     text: {
-                      '$blocksuite:internal:text$': true,
+                      '$lumensuite:internal:text$': true,
                       delta: this._hastToDelta(o.node),
                     },
                   },
@@ -495,7 +495,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
                   ? 'quote'
                   : 'text',
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta: this._hastToDelta(o.node),
                 },
               },
@@ -536,7 +536,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
               props: {
                 type: listType,
                 text: {
-                  '$blocksuite:internal:text$': true,
+                  '$lumensuite:internal:text$': true,
                   delta:
                     listType !== 'toggle'
                       ? this._hastToDelta(o.node)
@@ -595,7 +595,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
                 props: {
                   type: o.node.tagName,
                   text: {
-                    '$blocksuite:internal:text$': true,
+                    '$lumensuite:internal:text$': true,
                     delta: this._hastToDelta(o.node),
                   },
                 },
@@ -789,7 +789,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
             )
             .openNode({
               type: 'comment',
-              value: 'BlockSuiteDocTitlePlaceholder',
+              value: 'LumenSuiteDocTitlePlaceholder',
             })
             .closeNode();
           break;
@@ -1148,7 +1148,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
     });
     return {
       file: file.replace(
-        '<!--BlockSuiteDocTitlePlaceholder-->',
+        '<!--LumenSuiteDocTitlePlaceholder-->',
         `<h1>${payload.snapshot.meta.title}</h1>`
       ),
       assetsIds,
@@ -1236,7 +1236,7 @@ export class HtmlAdapter extends BaseAdapter<Html> {
         flavour: 'affine:page',
         props: {
           title: {
-            '$blocksuite:internal:text$': true,
+            '$lumensuite:internal:text$': true,
             delta: this._hastToDelta(
               titleAst ?? {
                 type: 'text',

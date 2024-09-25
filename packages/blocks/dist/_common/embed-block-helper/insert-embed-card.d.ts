@@ -1,5 +1,5 @@
-import type { EmbedCardStyle } from '@blocksuite/affine-model';
-import type { BlockStdScope } from '@blocksuite/block-std';
+import type { EmbedCardStyle } from '@lumensuite/affine-model';
+import type { BlockStdScope } from '@lumensuite/block-std';
 interface EmbedCardProperties {
     flavour: string;
     targetStyle: EmbedCardStyle;

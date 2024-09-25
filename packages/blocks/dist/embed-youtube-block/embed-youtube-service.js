@@ -1,6 +1,6 @@
-import { EmbedYoutubeBlockSchema, EmbedYoutubeStyles, } from '@blocksuite/affine-model';
-import { EmbedOptionProvider } from '@blocksuite/affine-shared/services';
-import { BlockService } from '@blocksuite/block-std';
+import { EmbedYoutubeBlockSchema, EmbedYoutubeStyles, } from '@lumensuite/affine-model';
+import { EmbedOptionProvider } from '@lumensuite/affine-shared/services';
+import { BlockService } from '@lumensuite/block-std';
 import { LinkPreviewer } from '../_common/embed-block-helper/index.js';
 import { youtubeUrlRegex } from './embed-youtube-model.js';
 import { queryEmbedYoutubeData } from './utils.js';

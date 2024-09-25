@@ -1,6 +1,6 @@
-import type { SurfaceRefBlockModel } from '@blocksuite/affine-model';
-import { type MenuItemGroup } from '@blocksuite/affine-components/toolbar';
-import { WidgetComponent } from '@blocksuite/block-std';
+import type { SurfaceRefBlockModel } from '@lumensuite/affine-model';
+import { type MenuItemGroup } from '@lumensuite/affine-components/toolbar';
+import { WidgetComponent } from '@lumensuite/block-std';
 import type { SurfaceRefBlockComponent } from '../../../surface-ref-block/index.js';
 import { SurfaceRefToolbarContext } from './context.js';
 export declare const AFFINE_SURFACE_REF_TOOLBAR = "affine-surface-ref-toolbar";

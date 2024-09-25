@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { Column } from '../view-manager/column.js';
 import type { SingleView } from '../view-manager/single-view.js';
-declare const DataViewPropertiesSettingView_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DataViewPropertiesSettingView_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class DataViewPropertiesSettingView extends DataViewPropertiesSettingView_base {
     static styles: import("lit").CSSResult;
     clickChangeAll: (allShow: boolean) => void;

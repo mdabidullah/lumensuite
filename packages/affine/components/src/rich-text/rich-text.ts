@@ -1,7 +1,7 @@
-import type { Y } from '@blocksuite/store';
+import type { Y } from '@lumensuite/store';
 
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import {
   type AttributeRenderer,
   createInlineKeyDownHandler,
@@ -11,8 +11,8 @@ import {
   type InlineRangeProvider,
   type KeyboardBindingContext,
   type VLine,
-} from '@blocksuite/inline';
-import { DocCollection, Text } from '@blocksuite/store';
+} from '@lumensuite/inline';
+import { DocCollection, Text } from '@lumensuite/store';
 import { css, html, type TemplateResult } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';

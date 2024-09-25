@@ -1,4 +1,4 @@
-import type { AttachmentBlockModel } from '@blocksuite/affine-model';
+import type { AttachmentBlockModel } from '@lumensuite/affine-model';
 import { type TemplateResult } from 'lit';
 export declare function allowEmbed(model: AttachmentBlockModel, maxFileSize?: number): boolean;
 export declare function convertToEmbed(model: AttachmentBlockModel, maxFileSize?: number): void;

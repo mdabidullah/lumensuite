@@ -12,9 +12,9 @@ import type { ExtensionType } from './extension.js';
  *
  * @example
  * ```ts
- * import { ConfigExtension } from '@blocksuite/block-std';
+ * import { ConfigExtension } from '@lumensuite/block-std';
  * const MyConfigExtension = ConfigExtension('my-flavour', config);
  * ```
  */
-export declare function ConfigExtension(flavor: BlockSuite.Flavour, config: Record<string, unknown>): ExtensionType;
+export declare function ConfigExtension(flavor: LumenSuite.Flavour, config: Record<string, unknown>): ExtensionType;
 //# sourceMappingURL=config.d.ts.map

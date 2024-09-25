@@ -1,10 +1,10 @@
-import { type AffineInlineEditor, type AffineTextAttributes } from '@blocksuite/affine-components/rich-text';
-import { BaseCellRenderer } from '@blocksuite/data-view';
-import { Text } from '@blocksuite/store';
+import { type AffineInlineEditor, type AffineTextAttributes } from '@lumensuite/affine-components/rich-text';
+import { BaseCellRenderer } from '@lumensuite/data-view';
+import { Text } from '@lumensuite/store';
 import { nothing, type PropertyValues } from 'lit';
 export declare class RichTextCell extends BaseCellRenderer<Text> {
     static styles: import("lit").CSSResult;
-    get attributeRenderer(): import("@blocksuite/inline/types").AttributeRenderer<AffineTextAttributes> | undefined;
+    get attributeRenderer(): import("@lumensuite/inline/types").AttributeRenderer<AffineTextAttributes> | undefined;
     get attributesSchema(): import("zod").ZodObject<Record<keyof AffineTextAttributes, import("zod").ZodTypeAny>, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
         color?: any;
         code?: any;
@@ -29,9 +29,9 @@ export declare class RichTextCell extends BaseCellRenderer<Text> {
         latex?: any;
     }> | undefined;
     get inlineEditor(): AffineInlineEditor;
-    get inlineManager(): import("@blocksuite/affine-components/rich-text").InlineManager | undefined;
+    get inlineManager(): import("@lumensuite/affine-components/rich-text").InlineManager | undefined;
     get service(): import("../../database-service.js").DatabaseBlockService | undefined;
-    get topContenteditableElement(): import("@blocksuite/block-std").BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null | undefined;
+    get topContenteditableElement(): import("@lumensuite/block-std").BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null | undefined;
     private changeUserSelectAccordToReadOnly;
     connectedCallback(): void;
     render(): import("lit/async-directive.js").DirectiveResult<typeof import("lit/directives/keyed.js").Keyed>;
@@ -43,7 +43,7 @@ export declare class RichTextCellEditing extends BaseCellRenderer<Text> {
     private _handleKeyDown;
     private _initYText;
     private _onSoftEnter;
-    get attributeRenderer(): import("@blocksuite/inline/types").AttributeRenderer<AffineTextAttributes> | undefined;
+    get attributeRenderer(): import("@lumensuite/inline/types").AttributeRenderer<AffineTextAttributes> | undefined;
     get attributesSchema(): import("zod").ZodObject<Record<keyof AffineTextAttributes, import("zod").ZodTypeAny>, import("zod").UnknownKeysParam, import("zod").ZodTypeAny, {
         color?: any;
         code?: any;
@@ -68,9 +68,9 @@ export declare class RichTextCellEditing extends BaseCellRenderer<Text> {
         latex?: any;
     }> | undefined;
     get inlineEditor(): AffineInlineEditor;
-    get inlineManager(): import("@blocksuite/affine-components/rich-text").InlineManager | undefined;
+    get inlineManager(): import("@lumensuite/affine-components/rich-text").InlineManager | undefined;
     get service(): import("../../database-service.js").DatabaseBlockService | undefined;
-    get topContenteditableElement(): import("@blocksuite/block-std").BlockComponent<import("@blocksuite/store").BlockModel<object, object & {}>, import("@blocksuite/block-std").BlockService, string> | null | undefined;
+    get topContenteditableElement(): import("@lumensuite/block-std").BlockComponent<import("@lumensuite/store").BlockModel<object, object & {}>, import("@lumensuite/block-std").BlockService, string> | null | undefined;
     connectedCallback(): void;
     firstUpdated(): void;
     render(): import("lit").TemplateResult | typeof nothing;
@@ -81,5 +81,5 @@ declare global {
         'affine-database-rich-text-cell-editing': RichTextCellEditing;
     }
 }
-export declare const richTextColumnConfig: import("@blocksuite/data-view").ColumnMeta<"rich-text", Record<string, never>, import("../utils.js").RichTextCellType>;
+export declare const richTextColumnConfig: import("@lumensuite/data-view").ColumnMeta<"rich-text", Record<string, never>, import("../utils.js").RichTextCellType>;
 //# sourceMappingURL=cell-renderer.d.ts.map

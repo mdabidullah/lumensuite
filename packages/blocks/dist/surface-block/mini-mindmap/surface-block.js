@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CanvasRenderer, elementRenderers, fitContent, } from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockComponent } from '@blocksuite/block-std';
-import { GfxControllerIdentifier } from '@blocksuite/block-std/gfx';
+import { CanvasRenderer, elementRenderers, fitContent, } from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockComponent } from '@lumensuite/block-std';
+import { GfxControllerIdentifier } from '@lumensuite/block-std/gfx';
 import { html } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 let MindmapSurfaceBlock = (() => {

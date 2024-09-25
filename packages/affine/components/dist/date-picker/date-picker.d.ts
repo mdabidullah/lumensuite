@@ -7,7 +7,7 @@ export interface DateCell {
     selected?: boolean;
     tabIndex?: number;
 }
-declare const DatePicker_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DatePicker_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 /**
  * Date picker
  */

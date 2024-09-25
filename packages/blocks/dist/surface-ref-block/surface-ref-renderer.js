@@ -1,7 +1,7 @@
-import { CanvasRenderer, elementRenderers, } from '@blocksuite/affine-block-surface';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { GfxControllerIdentifier, Viewport } from '@blocksuite/block-std/gfx';
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import { CanvasRenderer, elementRenderers, } from '@lumensuite/affine-block-surface';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { GfxControllerIdentifier, Viewport } from '@lumensuite/block-std/gfx';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 import { getSurfaceBlock } from './utils.js';
 export class SurfaceRefRenderer {
     get surfaceModel() {

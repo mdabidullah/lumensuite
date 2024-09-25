@@ -2,7 +2,7 @@ export { getBlockIndexCommand, getNextBlockCommand, getPrevBlockCommand, getSele
 export { copySelectedModelsCommand, deleteSelectedModelsCommand, draftSelectedModelsCommand, getSelectedModelsCommand, } from './model-crud/index.js';
 export { getBlockSelectionsCommand, getImageSelectionsCommand, getTextSelectionCommand, } from './selection/index.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             currentSelectionPath?: string;
         }

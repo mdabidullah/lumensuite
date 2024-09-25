@@ -1,7 +1,7 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { Doc } from '@blocksuite/store';
-import { ShadowlessElement } from '@blocksuite/block-std';
-import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@blocksuite/blocks';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { Doc } from '@lumensuite/store';
+import { ShadowlessElement } from '@lumensuite/block-std';
+import { type EdgelessRootBlockComponent, type FrameBlockModel } from '@lumensuite/blocks';
 import { type PropertyValues } from 'lit';
 import './frame-card-title.js';
 export type ReorderEvent = CustomEvent<{
@@ -25,7 +25,7 @@ export type FitViewEvent = CustomEvent<{
     block: FrameBlockModel;
 }>;
 export declare const AFFINE_FRAME_CARD = "affine-frame-card";
-declare const FrameCard_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FrameCard_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FrameCard extends FrameCard_base {
     static styles: import("lit").CSSResult;
     private _clearFrameDisposables;

@@ -32,7 +32,7 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { assertEquals } from '@blocksuite/global/utils';
+import { assertEquals } from '@lumensuite/global/utils';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { ColorUnit } from '../../../edgeless/components/panel/color-panel.js';

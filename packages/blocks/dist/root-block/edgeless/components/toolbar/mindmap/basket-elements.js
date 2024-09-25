@@ -1,8 +1,8 @@
-import { CanvasElementType, } from '@blocksuite/affine-block-surface';
-import { LayoutType, TextElementModel, } from '@blocksuite/affine-model';
-import { TelemetryProvider } from '@blocksuite/affine-shared/services';
-import { assertInstanceOf, Bound } from '@blocksuite/global/utils';
-import { DocCollection } from '@blocksuite/store';
+import { CanvasElementType, } from '@lumensuite/affine-block-surface';
+import { LayoutType, TextElementModel, } from '@lumensuite/affine-model';
+import { TelemetryProvider } from '@lumensuite/affine-shared/services';
+import { assertInstanceOf, Bound } from '@lumensuite/global/utils';
+import { DocCollection } from '@lumensuite/store';
 import { mountTextElementEditor } from '../../../utils/text.js';
 const unitMap = { x: 'px', y: 'px', r: 'deg', s: '', z: '', o: '' };
 export const textConfig = {

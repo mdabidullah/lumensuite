@@ -1,4 +1,4 @@
-import { getNextContentBlock, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { getNextContentBlock, matchFlavours, } from '@lumensuite/affine-shared/utils';
 // When deleting at line end of a list block,
 // check current block's children and siblings
 /**

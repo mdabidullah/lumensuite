@@ -1,13 +1,13 @@
 // checkout https://vitest.dev/guide/debugging.html for debugging tests
 
-import type { Slot } from '@blocksuite/global/utils';
+import type { Slot } from '@lumensuite/global/utils';
 
 import { assert, beforeEach, describe, expect, it, vi } from 'vitest';
 import { applyUpdate, encodeStateAsUpdate } from 'yjs';
 
 import type { BlockModel, BlockSchemaType, Doc } from '../index.js';
 import type { DocMeta } from '../store/index.js';
-import type { BlockSuiteDoc } from '../yjs/index.js';
+import type { LumenSuiteDoc } from '../yjs/index.js';
 
 import { COLLECTION_VERSION, PAGE_VERSION } from '../consts.js';
 import { DocCollection, IdGeneratorType, Schema } from '../index.js';
@@ -36,7 +36,7 @@ const spaceId = defaultDocId;
 const spaceMetaId = 'meta';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function serializCollection(doc: BlockSuiteDoc): Record<string, any> {
+function serializCollection(doc: LumenSuiteDoc): Record<string, any> {
   const spaces = {};
   doc.spaces.forEach((subDoc, key) => {
     // @ts-ignore
@@ -949,7 +949,7 @@ describe('flags', () => {
 });
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface BlockModels {
       'affine:page': BlockModel;
       'affine:paragraph': BlockModel;

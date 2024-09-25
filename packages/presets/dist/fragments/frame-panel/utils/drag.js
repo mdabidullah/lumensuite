@@ -1,4 +1,4 @@
-import { on, once, } from '@blocksuite/blocks';
+import { on, once, } from '@lumensuite/blocks';
 import { FrameCard } from '../card/frame-card.js';
 /**
  * start drag frame cards

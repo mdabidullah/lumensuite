@@ -1,8 +1,8 @@
-import type { FrameBlockModel } from '@blocksuite/affine-model';
-import { type EditorHost, ShadowlessElement } from '@blocksuite/block-std';
-import { type Doc } from '@blocksuite/store';
+import type { FrameBlockModel } from '@lumensuite/affine-model';
+import { type EditorHost, ShadowlessElement } from '@lumensuite/block-std';
+import { type Doc } from '@lumensuite/store';
 import type { EdgelessRootBlockComponent } from '../../edgeless-root-block.js';
-declare const FramePreview_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const FramePreview_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class FramePreview extends FramePreview_base {
     static styles: import("lit").CSSResult;
     private _clearFrameDisposables;

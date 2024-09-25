@@ -1,4 +1,4 @@
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 export class RootBlockModel extends BlockModel {
     constructor() {
         super();

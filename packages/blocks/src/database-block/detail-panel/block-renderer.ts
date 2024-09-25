@@ -1,12 +1,12 @@
-import type { EditorHost } from '@blocksuite/block-std';
-import type { DetailSlotProps } from '@blocksuite/data-view';
+import type { EditorHost } from '@lumensuite/block-std';
+import type { DetailSlotProps } from '@lumensuite/data-view';
 import type {
   KanbanSingleView,
   TableSingleView,
-} from '@blocksuite/data-view/view-presets';
+} from '@lumensuite/data-view/view-presets';
 
-import { DefaultInlineManagerExtension } from '@blocksuite/affine-components/rich-text';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
+import { DefaultInlineManagerExtension } from '@lumensuite/affine-components/rich-text';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
 import { css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

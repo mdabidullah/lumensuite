@@ -1,4 +1,4 @@
-import { getNextContinuousNumberedLists, matchFlavours, } from '@blocksuite/affine-shared/utils';
+import { getNextContinuousNumberedLists, matchFlavours, } from '@lumensuite/affine-shared/utils';
 /**
  * correct target is a numbered list, which is divided into two steps:
  * 1. check if there is a numbered list before the target list. If so, adjust the order of the target list

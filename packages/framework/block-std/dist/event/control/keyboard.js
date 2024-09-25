@@ -1,4 +1,4 @@
-import { IS_MAC } from '@blocksuite/global/env';
+import { IS_MAC } from '@lumensuite/global/env';
 import { UIEventState, UIEventStateContext, } from '../base.js';
 import { bindKeymap } from '../keymap.js';
 import { KeyboardEventState } from '../state/index.js';

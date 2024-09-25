@@ -132,14 +132,14 @@ Therefore, we chose to implement a common document data layer based on Yjs. This
 
 The blue part owns the full capability to drive UI in complex collaborative applications, including the management of rich text, history, conflict resolution, model update events, etc. This part has a well-defined isolation boundary from UI components and can be used independently of editors. We believe this is the data layer needed for being document-centric.
 
-## The BlockSuite Showcase
+## The LumenSuite Showcase
 
-Embracing the document-centric philosophy, we created the [BlockSuite](https://github.com/toeverything/blocksuite) project.
+Embracing the document-centric philosophy, we created the [LumenSuite](https://github.com/toeverything/lumensuite) project.
 
-In BlockSuite, documents are modeled as `doc` objects. Each doc holds a tree of blocks. Some editor presets can be used upon connecting to a doc as following:
+In LumenSuite, documents are modeled as `doc` objects. Each doc holds a tree of blocks. Some editor presets can be used upon connecting to a doc as following:
 
 ```ts
-import { createEmptyDoc, PageEditor } from '@blocksuite/presets';
+import { createEmptyDoc, PageEditor } from '@lumensuite/presets';
 
 // Initialize a `doc` document
 const doc = createEmptyDoc().init();
@@ -151,7 +151,7 @@ editor.doc = doc;
 document.body.appendChild(editor);
 ```
 
-BlockSuite advocates for assembling the top-level `PageEditor` component from smaller editable components, as all editable components can connect to different nodes in the block tree document. For example, instead of using existing complex rich text editors, BlockSuite implemented a `@blocksuite/inline` rich text component that only supports rendering linear text sequences. Complex rich text content can be assembled from atomic inline editor components, as illustrated:
+LumenSuite advocates for assembling the top-level `PageEditor` component from smaller editable components, as all editable components can connect to different nodes in the block tree document. For example, instead of using existing complex rich text editors, LumenSuite implemented a `@lumensuite/inline` rich text component that only supports rendering linear text sequences. Complex rich text content can be assembled from atomic inline editor components, as illustrated:
 
 ![inline-example](../images/inline-example.png)
 
@@ -159,11 +159,11 @@ In the diagram, each inline editor instance connects to a `Y.Text` node in the d
 
 ![flat-inlines](../images/flat-inlines.png)
 
-Since various editors can be loaded and unloaded independently of the document, this allows BlockSuite to support switching between different editors using the same block tree document. Thus, when switching content between document editors and whiteboard editors (which we call `EdgelessEditor`), all operation history recorded on the doc can be preserved, rather than reset:
+Since various editors can be loaded and unloaded independently of the document, this allows LumenSuite to support switching between different editors using the same block tree document. Thus, when switching content between document editors and whiteboard editors (which we call `EdgelessEditor`), all operation history recorded on the doc can be preserved, rather than reset:
 
 ![showcase-page-edgeless-editors](../images/showcase-page-edgeless-editors.jpg)
 
-Moreover, the separation of document and editor also allows docs to be used independently of editors. This is why BlockSuite not only provides various editor UI components but also many peripheral UI components that rely on doc state yet are not part of the editor. We refer to these components as _fragments_. The lifecycle of a fragment can be completely independent of the editor, and it can be implemented with a different technology stack than that used for the editor. For example, the right sidebar in the following diagram belongs to `OutlineFragment`, which facilitates panel arrangement by the application layer (rather than an all-in-one editor):
+Moreover, the separation of document and editor also allows docs to be used independently of editors. This is why LumenSuite not only provides various editor UI components but also many peripheral UI components that rely on doc state yet are not part of the editor. We refer to these components as _fragments_. The lifecycle of a fragment can be completely independent of the editor, and it can be implemented with a different technology stack than that used for the editor. For example, the right sidebar in the following diagram belongs to `OutlineFragment`, which facilitates panel arrangement by the application layer (rather than an all-in-one editor):
 
 ![showcase-fragments-1](../images/showcase-fragments-1.jpg)
 
@@ -171,15 +171,15 @@ Furthermore, by supporting a document data layer independent of the editor, we a
 
 ![showcase-fragments-2](../images/showcase-fragments-2.jpg)
 
-Additionally, the document-centric approach aids in better separation between the data layer and rendering layer, enabling developers to break free from the typically DOM-based editors, to implement better performance optimization strategies. For example, the BlockSuite document supports a surface block specially designed for rendering graphic content, which could take the advantage of the HTML5 `<canvas>`. BlockSuite allows these graphic contents to interleave with other block tree contents rendered to the DOM, automatically merging graphic elements into as few canvases as possible to enhance rendering performance:
+Additionally, the document-centric approach aids in better separation between the data layer and rendering layer, enabling developers to break free from the typically DOM-based editors, to implement better performance optimization strategies. For example, the LumenSuite document supports a surface block specially designed for rendering graphic content, which could take the advantage of the HTML5 `<canvas>`. LumenSuite allows these graphic contents to interleave with other block tree contents rendered to the DOM, automatically merging graphic elements into as few canvases as possible to enhance rendering performance:
 
 ![context-interleaving](../images/context-interleaving.png)
 
-In contrast, when there are 2000 canvas shapes in the document, tldraw, the DOM-based open-source whiteboard, would reaches its limit. At this point, it exhibits noticeable frame drops during viewport panning and zooming, degrading the content to placeholders with React suspense. However, the canvas renderer in BlockSuite could still maintain a frame rate of over 100fps at this time - and don't forget, you can still use the complete DOM-based rich text editing capability!
+In contrast, when there are 2000 canvas shapes in the document, tldraw, the DOM-based open-source whiteboard, would reaches its limit. At this point, it exhibits noticeable frame drops during viewport panning and zooming, degrading the content to placeholders with React suspense. However, the canvas renderer in LumenSuite could still maintain a frame rate of over 100fps at this time - and don't forget, you can still use the complete DOM-based rich text editing capability!
 
 ![showcase-edgeless-perf](../images/showcase-edgeless-perf.jpg)
 
-A year after creating BlockSuite, we have not only implemented a collaborative editing framework under the document-centric approach but also delivered an editor product with powerful document editing and canvas whiteboard editing capabilities. Considering the time traditionally required to implement complex rich text editors from scratch, we believe this is a highly efficient pattern. Of course, as a young open-source project, BlockSuite still has many areas for continuous improvement, and we hope you could stay tuned!
+A year after creating LumenSuite, we have not only implemented a collaborative editing framework under the document-centric approach but also delivered an editor product with powerful document editing and canvas whiteboard editing capabilities. Considering the time traditionally required to implement complex rich text editors from scratch, we believe this is a highly efficient pattern. Of course, as a young open-source project, LumenSuite still has many areas for continuous improvement, and we hope you could stay tuned!
 
 ## Summary
 
@@ -193,4 +193,4 @@ We believe that the shift to document-centric not only solves some core issues f
 
 ---
 
-Support our project with a star 🌟 on GitHub: [**toeverything/blocksuite**](https://github.com/toeverything/blocksuite)
+Support our project with a star 🌟 on GitHub: [**toeverything/lumensuite**](https://github.com/toeverything/lumensuite)

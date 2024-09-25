@@ -1,4 +1,4 @@
-import { WidgetComponent } from '@blocksuite/block-std';
+import { WidgetComponent } from '@lumensuite/block-std';
 import { type FloatingElement, type ReferenceElement } from '@floating-ui/dom';
 export declare const AFFINE_INNER_MODAL_WIDGET = "affine-inner-modal-widget";
 export declare class AffineInnerModalWidget extends WidgetComponent {

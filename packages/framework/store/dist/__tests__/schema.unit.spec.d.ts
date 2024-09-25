@@ -1,6 +1,6 @@
 import { type BlockModel } from '../schema/base.js';
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:note-block-video': BlockModel;
             'affine:note-invalid-block-video': BlockModel;

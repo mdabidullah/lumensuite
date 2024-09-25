@@ -1,7 +1,7 @@
-import type { Bound } from '@blocksuite/global/utils';
+import type { Bound } from '@lumensuite/global/utils';
 
-import { openFileOrFiles } from '@blocksuite/affine-shared/utils';
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { openFileOrFiles } from '@lumensuite/affine-shared/utils';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import converter from 'xml-js';
 
 type MindMapNode = {
@@ -18,7 +18,7 @@ export async function importMindmap(bound: Bound): Promise<MindMapNode> {
   });
 
   if (!file) {
-    throw new BlockSuiteError(ErrorCode.UserAbortError, 'Aborted by user');
+    throw new LumenSuiteError(ErrorCode.UserAbortError, 'Aborted by user');
   }
 
   let result;
@@ -28,7 +28,7 @@ export async function importMindmap(bound: Bound): Promise<MindMapNode> {
   } else if (file.name.endsWith('.opml') || file.name.endsWith('.xml')) {
     result = await parseOPMLFile(file);
   } else {
-    throw new BlockSuiteError(ErrorCode.ParsingError, 'Unsupported file type');
+    throw new LumenSuiteError(ErrorCode.ParsingError, 'Unsupported file type');
   }
 
   if (result) {
@@ -81,7 +81,7 @@ async function parseMmFile(file: File): Promise<MindMapNode> {
     const result = traverse(map.node);
 
     if (!result) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ParsingError,
         'Failed to parse mm file'
       );
@@ -90,7 +90,7 @@ async function parseMmFile(file: File): Promise<MindMapNode> {
     return result;
   } catch (e) {
     console.error(e);
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ParsingError,
       'Failed to parse mm file'
     );
@@ -130,7 +130,7 @@ async function parseOPMLFile(file: File): Promise<MindMapNode> {
     const result = traverse(opml.body.outline);
 
     if (!result) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ParsingError,
         'Failed to parse OPML file'
       );
@@ -139,7 +139,7 @@ async function parseOPMLFile(file: File): Promise<MindMapNode> {
     return result;
   } catch (e) {
     console.error(e);
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ParsingError,
       'Failed to parse OPML file'
     );

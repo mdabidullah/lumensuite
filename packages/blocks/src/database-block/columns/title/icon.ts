@@ -1,4 +1,4 @@
-import { BaseCellRenderer } from '@blocksuite/data-view';
+import { BaseCellRenderer } from '@lumensuite/data-view';
 import { css, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

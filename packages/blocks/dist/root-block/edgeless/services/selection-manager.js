@@ -1,6 +1,6 @@
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { assertType, DisposableGroup, groupBy, Slot, } from '@blocksuite/global/utils';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { assertType, DisposableGroup, groupBy, Slot, } from '@lumensuite/global/utils';
 import { edgelessElementsBound } from '../utils/bound-utils.js';
 export class EdgelessSelectionManager {
     get activeGroup() {

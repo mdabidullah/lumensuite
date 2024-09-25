@@ -1,10 +1,10 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 
 import {
   focusTextModel,
   getInlineEditorByModel,
-} from '@blocksuite/affine-components/rich-text';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
+} from '@lumensuite/affine-components/rich-text';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
 
 export const splitParagraphCommand: Command<
   never,
@@ -42,7 +42,7 @@ export const splitParagraphCommand: Command<
     doc.captureSync();
     const right = model.text.split(splitIndex, splitLength);
     const id = doc.addBlock(
-      model.flavour as BlockSuite.Flavour,
+      model.flavour as LumenSuite.Flavour,
       {
         text: right,
         type: model.type,
@@ -80,7 +80,7 @@ export const splitParagraphCommand: Command<
 };
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Commands {
       splitParagraph: typeof splitParagraphCommand;
     }

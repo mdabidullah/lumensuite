@@ -1,4 +1,4 @@
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 import { FontFamily, FontStyle, FontWeight, TextAlign, } from '../../consts/index.js';
 import { GfxCompatible } from '../../utils/index.js';
 export const EdgelessTextBlockSchema = defineBlockSchema({

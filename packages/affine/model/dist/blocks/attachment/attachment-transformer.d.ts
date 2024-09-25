@@ -1,5 +1,5 @@
-import type { FromSnapshotPayload, SnapshotReturn, ToSnapshotPayload } from '@blocksuite/store';
-import { BaseBlockTransformer } from '@blocksuite/store';
+import type { FromSnapshotPayload, SnapshotReturn, ToSnapshotPayload } from '@lumensuite/store';
+import { BaseBlockTransformer } from '@lumensuite/store';
 import type { AttachmentBlockProps } from './attachment-model.js';
 export declare class AttachmentBlockTransformer extends BaseBlockTransformer<AttachmentBlockProps> {
     fromSnapshot(payload: FromSnapshotPayload): Promise<SnapshotReturn<AttachmentBlockProps>>;

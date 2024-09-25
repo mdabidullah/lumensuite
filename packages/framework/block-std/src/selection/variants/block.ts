@@ -34,7 +34,7 @@ export class BlockSelection extends BaseSelection {
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface Selection {
       block: typeof BlockSelection;
     }

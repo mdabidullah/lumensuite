@@ -1,6 +1,6 @@
 import type { YArrayEvent, YMapEvent } from 'yjs';
 
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import { Array as YArray, Map as YMap } from 'yjs';
 
 import type { UnRecord } from './utils.js';
@@ -56,7 +56,7 @@ export class ReactiveYArray extends BaseReactiveYData<
       },
       set: (target, p, value, receiver) => {
         if (typeof p !== 'string') {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'key cannot be a symbol'
           );
@@ -75,14 +75,14 @@ export class ReactiveYArray extends BaseReactiveYData<
 
         const reactive = proxies.get(this._ySource);
         if (!reactive) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not subscribed before changes'
           );
         }
         const doc = this._ySource.doc;
         if (!doc) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not bound to a Y.Doc'
           );
@@ -103,7 +103,7 @@ export class ReactiveYArray extends BaseReactiveYData<
       },
       deleteProperty: (target, p): boolean => {
         if (typeof p !== 'string') {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'key cannot be a symbol'
           );
@@ -111,14 +111,14 @@ export class ReactiveYArray extends BaseReactiveYData<
 
         const proxied = proxies.get(this._ySource);
         if (!proxied) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not subscribed before changes'
           );
         }
         const doc = this._ySource.doc;
         if (!doc) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not bound to a Y.Doc'
           );
@@ -192,7 +192,7 @@ export class ReactiveYMap extends BaseReactiveYData<UnRecord, YMap<unknown>> {
       },
       set: (target, p, value, receiver) => {
         if (typeof p !== 'string') {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'key cannot be a symbol'
           );
@@ -209,14 +209,14 @@ export class ReactiveYMap extends BaseReactiveYData<UnRecord, YMap<unknown>> {
 
         const reactive = proxies.get(this._ySource);
         if (!reactive) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not subscribed before changes'
           );
         }
         const doc = this._ySource.doc;
         if (!doc) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not bound to a Y.Doc'
           );
@@ -234,7 +234,7 @@ export class ReactiveYMap extends BaseReactiveYData<UnRecord, YMap<unknown>> {
       },
       deleteProperty: (target, p) => {
         if (typeof p !== 'string') {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'key cannot be a symbol'
           );
@@ -245,14 +245,14 @@ export class ReactiveYMap extends BaseReactiveYData<UnRecord, YMap<unknown>> {
 
         const proxied = proxies.get(this._ySource);
         if (!proxied) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not subscribed before changes'
           );
         }
         const doc = this._ySource.doc;
         if (!doc) {
-          throw new BlockSuiteError(
+          throw new LumenSuiteError(
             ErrorCode.ReactiveProxyError,
             'YData is not bound to a Y.Doc'
           );
@@ -336,7 +336,7 @@ export function stashProp(yMap: YArray<unknown>, prop: number): void;
 export function stashProp(yAbstract: unknown, prop: string | number) {
   const proxy = proxies.get(yAbstract);
   if (!proxy) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ReactiveProxyError,
       'YData is not subscribed before changes'
     );
@@ -349,7 +349,7 @@ export function popProp(yMap: YArray<unknown>, prop: number): void;
 export function popProp(yAbstract: unknown, prop: string | number) {
   const proxy = proxies.get(yAbstract);
   if (!proxy) {
-    throw new BlockSuiteError(
+    throw new LumenSuiteError(
       ErrorCode.ReactiveProxyError,
       'YData is not subscribed before changes'
     );

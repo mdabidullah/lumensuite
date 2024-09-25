@@ -24,7 +24,7 @@ export { SurfaceBlockTransformer } from './surface-transformer.js';
 export { AStarRunner } from './utils/a-star.js';
 export { RoughCanvas } from './utils/rough/canvas.js';
 export { sortIndex } from './utils/sort.js';
-import { almostEqual, clamp, getBoundsWithRotation, getPointFromBoundsWithRotation, getPointsFromBoundsWithRotation, getQuadBoundsWithRotation, getStroke, getSvgPathFromStroke, intersects, isOverlap, isPointIn, lineIntersects, linePolygonIntersects, normalizeDegAngle, polygonGetPointTangent, polygonNearestPoint, polygonPointDistance, polyLineNearestPoint, rotatePoints, sign, toDegree, toRadian, } from '@blocksuite/global/utils';
+import { almostEqual, clamp, getBoundsWithRotation, getPointFromBoundsWithRotation, getPointsFromBoundsWithRotation, getQuadBoundsWithRotation, getStroke, getSvgPathFromStroke, intersects, isOverlap, isPointIn, lineIntersects, linePolygonIntersects, normalizeDegAngle, polygonGetPointTangent, polygonNearestPoint, polygonPointDistance, polyLineNearestPoint, rotatePoints, sign, toDegree, toRadian, } from '@lumensuite/global/utils';
 import { generateKeyBetween } from 'fractional-indexing';
 import { generateElementId, normalizeWheelDeltaY } from './utils/index.js';
 export const ConnectorUtils = {

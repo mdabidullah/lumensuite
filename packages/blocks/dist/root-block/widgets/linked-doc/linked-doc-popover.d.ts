@@ -1,10 +1,10 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
-import type { EditorHost } from '@blocksuite/block-std';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
+import type { EditorHost } from '@lumensuite/block-std';
 import { LitElement } from 'lit';
 import type { IconButton } from '../../../_common/components/button.js';
 import type { LinkedMenuGroup } from './config.js';
 import '../../../_common/components/button.js';
-declare const LinkedDocPopover_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const LinkedDocPopover_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class LinkedDocPopover extends LinkedDocPopover_base {
     private triggerKey;
     private getMenus;

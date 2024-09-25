@@ -4,5 +4,5 @@ This is a block used to place attachment content. It supports optional style con
 
 ## Reference
 
-- [`AttachmentBlockSchema`](/api/@blocksuite/blocks/variables/AttachmentBlockSchema.html)
-- [`AttachmentBlockService`](/api/@blocksuite/blocks/classes/AttachmentBlockService.html)
+- [`AttachmentBlockSchema`](/api/@lumensuite/blocks/variables/AttachmentBlockSchema.html)
+- [`AttachmentBlockService`](/api/@lumensuite/blocks/classes/AttachmentBlockService.html)

@@ -2,7 +2,7 @@
 
 This editor component offers a canvas with infinite logical dimensions, suitable for whiteboard and graphic editing.
 
-<iframe src="https://try-blocksuite.vercel.app/starter/?init&mode=edgeless" frameborder="no" width="100%" height="500"></iframe>
+<iframe src="https://try-lumensuite.vercel.app/starter/?init&mode=edgeless" frameborder="no" width="100%" height="500"></iframe>
 
 ## Features
 
@@ -14,25 +14,25 @@ This editor component offers a canvas with infinite logical dimensions, suitable
 - Various [link cards](../blocks/link-blocks) that can be inserted on top of the canvas.
 - Customizable toolbars and other widgets.
 
-Moreover, this editor inherits capabilities built into the BlockSuite framework, including:
+Moreover, this editor inherits capabilities built into the LumenSuite framework, including:
 
 - Per-user undo/redo stack
 - Real-time collaboration
 - [Document streaming](../../guide/data-synchronization#document-streaming)
 
-Notably, the BlockSuite framework allows runtime compatibility between the page editor and the edgeless editor, beyond mere static file format compatibility. This means you can dynamically attach the same doc object to different instances of the page editor and edgeless editor.
+Notably, the LumenSuite framework allows runtime compatibility between the page editor and the edgeless editor, beyond mere static file format compatibility. This means you can dynamically attach the same doc object to different instances of the page editor and edgeless editor.
 
 ## Usage
 
 ```ts
-import { EdgelessEditor } from '@blocksuite/presets';
+import { EdgelessEditor } from '@lumensuite/presets';
 
 const editor = new EdgelessEditor();
 ```
 
 ## Integration
 
-Like all BlockSuite editors, the editor UI is entirely composed of the combination of [block specs](../../guide/block-spec). A specialized [root block](../blocks/root-block) spec serves as the root node of the document and implements all top-level document UI, with main widgets also mounted on the root block. Accordingly, commonly used editing APIs are provided in the root service.
+Like all LumenSuite editors, the editor UI is entirely composed of the combination of [block specs](../../guide/block-spec). A specialized [root block](../blocks/root-block) spec serves as the root node of the document and implements all top-level document UI, with main widgets also mounted on the root block. Accordingly, commonly used editing APIs are provided in the root service.
 
 Specifically, the canvas element and some blocks that appear on the top layer of the canvas are located on the [surface block](../blocks/surface-block). Therefore, operating the edgeless editor also requires accessing the model and service mounted on this block.
 
@@ -46,9 +46,9 @@ To integrate and customize this editor, you can:
 
 ## Reference
 
-- [`EdgelessEditor`](/api/@blocksuite/presets/classes/EdgelessEditor.html)
-- [`EdgelessRootService`](/api/@blocksuite/blocks/classes/EdgelessRootService.html)
-- [`SurfaceBlockModel`](/api/@blocksuite/blocks/classes/SurfaceBlockModel.html)
-- [`SurfaceBlockService`](/api/@blocksuite/blocks/classes/SurfaceBlockService.html)
+- [`EdgelessEditor`](/api/@lumensuite/presets/classes/EdgelessEditor.html)
+- [`EdgelessRootService`](/api/@lumensuite/blocks/classes/EdgelessRootService.html)
+- [`SurfaceBlockModel`](/api/@lumensuite/blocks/classes/SurfaceBlockModel.html)
+- [`SurfaceBlockService`](/api/@lumensuite/blocks/classes/SurfaceBlockService.html)
 
 Since `EdgelessEditor` is a native web component, all DOM-related properties are inherited.

@@ -32,9 +32,9 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { SignalWatcher, WithDisposable } from '@blocksuite/block-std';
-import { BlocksUtils, NoteDisplayMode } from '@blocksuite/blocks';
-import { Bound, DisposableGroup } from '@blocksuite/global/utils';
+import { SignalWatcher, WithDisposable } from '@lumensuite/block-std';
+import { BlocksUtils, NoteDisplayMode } from '@lumensuite/blocks';
+import { Bound, DisposableGroup } from '@lumensuite/global/utils';
 import { effect, signal } from '@lit-labs/preact-signals';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';

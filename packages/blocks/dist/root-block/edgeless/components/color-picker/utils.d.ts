@@ -1,4 +1,4 @@
-import type { Color, ColorScheme } from '@blocksuite/affine-model';
+import type { Color, ColorScheme } from '@lumensuite/affine-model';
 import type { Hsv, Hsva, ModeType, PickColorDetail, PickColorType, Point, Rgb, Rgba } from './types.js';
 export declare const defaultPoint: (x?: number, y?: number) => Point;
 export declare const defaultHsva: () => Hsva;

@@ -1,6 +1,6 @@
-import type { BlockComponent } from '@blocksuite/block-std';
-import type { BlockModel } from '@blocksuite/store';
-import { type Point, Rect } from '@blocksuite/global/utils';
+import type { BlockComponent } from '@lumensuite/block-std';
+import type { BlockModel } from '@lumensuite/store';
+import { type Point, Rect } from '@lumensuite/global/utils';
 import type { EditingState } from '../types.js';
 /**
  * A dropping type.

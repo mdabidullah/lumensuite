@@ -1,8 +1,8 @@
 /// <reference types="vite/client" />
 
-import type { DividerBlockModel } from '@blocksuite/affine-model';
+import type { DividerBlockModel } from '@lumensuite/affine-model';
 
-import { CaptionedBlockComponent } from '@blocksuite/affine-components/caption';
+import { CaptionedBlockComponent } from '@lumensuite/affine-components/caption';
 import { html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 

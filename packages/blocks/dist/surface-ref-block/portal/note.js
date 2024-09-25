@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, NoteShadow, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { BlockStdScope, RANGE_QUERY_EXCLUDE_ATTR, } from '@blocksuite/block-std';
-import { ShadowlessElement, WithDisposable } from '@blocksuite/block-std';
-import { deserializeXYWH } from '@blocksuite/global/utils';
-import { BlockViewType } from '@blocksuite/store';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, NoteDisplayMode, NoteShadow, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { BlockStdScope, RANGE_QUERY_EXCLUDE_ATTR, } from '@lumensuite/block-std';
+import { ShadowlessElement, WithDisposable } from '@lumensuite/block-std';
+import { deserializeXYWH } from '@lumensuite/global/utils';
+import { BlockViewType } from '@lumensuite/store';
 import { css, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

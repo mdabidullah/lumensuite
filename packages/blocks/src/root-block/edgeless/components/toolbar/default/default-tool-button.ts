@@ -2,7 +2,7 @@ import {
   ArrowUpIcon,
   HandIcon,
   SelectIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import { css, html, LitElement } from 'lit';
 import { customElement, query } from 'lit/decorators.js';
 

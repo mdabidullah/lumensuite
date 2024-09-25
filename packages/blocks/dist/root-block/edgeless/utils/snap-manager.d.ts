@@ -1,5 +1,5 @@
-import { Overlay } from '@blocksuite/affine-block-surface';
-import { Bound } from '@blocksuite/global/utils';
+import { Overlay } from '@lumensuite/affine-block-surface';
+import { Bound } from '@lumensuite/global/utils';
 import type { EdgelessRootService } from '../edgeless-root-service.js';
 export declare class EdgelessSnapManager extends Overlay {
     private _rootService;
@@ -35,6 +35,6 @@ export declare class EdgelessSnapManager extends Overlay {
         dy: number;
     };
     render(ctx: CanvasRenderingContext2D): void;
-    setupAlignables(alignables: BlockSuite.EdgelessModel[]): Bound;
+    setupAlignables(alignables: LumenSuite.EdgelessModel[]): Bound;
 }
 //# sourceMappingURL=snap-manager.d.ts.map

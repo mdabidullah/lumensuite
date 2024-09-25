@@ -20,7 +20,7 @@ export declare class MindmapToolController extends EdgelessToolController<Mindma
     onPressSpaceBar(_pressed: boolean): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             mindmap: MindmapToolController;
         }

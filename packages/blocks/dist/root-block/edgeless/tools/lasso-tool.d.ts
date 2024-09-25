@@ -1,4 +1,4 @@
-import type { PointerEventState } from '@blocksuite/block-std';
+import type { PointerEventState } from '@lumensuite/block-std';
 import type { EdgelessTool } from '../types.js';
 import { LassoMode } from '../../../_common/types.js';
 import { EdgelessToolController } from './edgeless-tool.js';
@@ -42,7 +42,7 @@ export declare class LassoToolController extends EdgelessToolController<LassoToo
     onPressSpaceBar(): void;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessToolMap {
             lasso: LassoToolController;
         }

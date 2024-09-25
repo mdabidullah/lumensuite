@@ -1,9 +1,10 @@
 import type { Signal } from '@lit-labs/preact-signals';
 
+import { computed, signal } from '@lit-labs/preact-signals';
 import {
   GeneralStyleIcon,
   ScribbledStyleIcon,
-} from '@blocksuite/affine-components/icons';
+} from '@lumensuite/affine-components/icons';
 import {
   DEFAULT_SHAPE_FILL_COLOR,
   LineColor,
@@ -12,10 +13,9 @@ import {
   type ShapeName,
   ShapeStyle,
   ShapeType,
-} from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { SignalWatcher } from '@blocksuite/block-std';
-import { computed, signal } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

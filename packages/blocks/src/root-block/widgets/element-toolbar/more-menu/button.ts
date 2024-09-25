@@ -1,8 +1,8 @@
-import type { MenuItemGroup } from '@blocksuite/affine-components/toolbar';
+import type { MenuItemGroup } from '@lumensuite/affine-components/toolbar';
 
-import { renderGroups } from '@blocksuite/affine-components/toolbar';
-import { WithDisposable } from '@blocksuite/block-std';
 import { MoreHorizontalIcon, MoreVerticalIcon } from '@blocksuite/icons/lit';
+import { renderGroups } from '@lumensuite/affine-components/toolbar';
+import { WithDisposable } from '@lumensuite/block-std';
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
@@ -42,7 +42,7 @@ export class EdgelessMoreButton extends WithDisposable(LitElement) {
   accessor edgeless!: EdgelessRootBlockComponent;
 
   @property({ attribute: false })
-  accessor elements: BlockSuite.EdgelessModel[] = [];
+  accessor elements: LumenSuite.EdgelessModel[] = [];
 
   @property({ attribute: false })
   accessor groups!: MenuItemGroup<ElementToolbarMoreMenuContext>[];

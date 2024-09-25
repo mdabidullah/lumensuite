@@ -1,4 +1,4 @@
-import { DisposableGroup, Slot } from '@blocksuite/global/utils';
+import { DisposableGroup, Slot } from '@lumensuite/global/utils';
 import { type TemplateResult } from 'lit';
 import * as Y from 'yjs';
 import type { VLine } from './components/v-line.js';

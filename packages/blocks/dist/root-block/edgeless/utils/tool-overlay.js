@@ -1,7 +1,7 @@
-import { Overlay, } from '@blocksuite/affine-block-surface';
-import { DEFAULT_NOTE_BACKGROUND_COLOR, DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, shapeMethods, } from '@blocksuite/affine-model';
-import { ThemeObserver } from '@blocksuite/affine-shared/theme';
-import { Bound, DisposableGroup, noop, Slot } from '@blocksuite/global/utils';
+import { Overlay, } from '@lumensuite/affine-block-surface';
+import { DEFAULT_NOTE_BACKGROUND_COLOR, DEFAULT_SHAPE_FILL_COLOR, DEFAULT_SHAPE_STROKE_COLOR, shapeMethods, } from '@lumensuite/affine-model';
+import { ThemeObserver } from '@lumensuite/affine-shared/theme';
+import { Bound, DisposableGroup, noop, Slot } from '@lumensuite/global/utils';
 import { NOTE_OVERLAY_CORNER_RADIUS, NOTE_OVERLAY_HEIGHT, NOTE_OVERLAY_OFFSET_X, NOTE_OVERLAY_OFFSET_Y, NOTE_OVERLAY_STOKE_COLOR, NOTE_OVERLAY_TEXT_COLOR, NOTE_OVERLAY_WIDTH, SHAPE_OVERLAY_HEIGHT, SHAPE_OVERLAY_OFFSET_X, SHAPE_OVERLAY_OFFSET_Y, SHAPE_OVERLAY_WIDTH, } from '../utils/consts.js';
 const drawRoundedRect = (ctx, xywh) => {
     const [x, y, w, h] = xywh;

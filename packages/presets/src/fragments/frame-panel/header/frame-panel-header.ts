@@ -1,13 +1,13 @@
-import type { EditorHost } from '@blocksuite/block-std';
+import type { EditorHost } from '@lumensuite/block-std';
 
-import { WithDisposable } from '@blocksuite/block-std';
+import { WithDisposable } from '@lumensuite/block-std';
 import {
   DocModeProvider,
   type EdgelessRootBlockComponent,
   type NavigatorMode,
-} from '@blocksuite/blocks';
-import { createButtonPopper } from '@blocksuite/blocks';
-import { DisposableGroup } from '@blocksuite/global/utils';
+} from '@lumensuite/blocks';
+import { createButtonPopper } from '@lumensuite/blocks';
+import { DisposableGroup } from '@lumensuite/global/utils';
 import { css, html, LitElement, type PropertyValues } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 

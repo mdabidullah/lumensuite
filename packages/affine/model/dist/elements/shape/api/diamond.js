@@ -1,4 +1,4 @@
-import { Bound, getCenterAreaBounds, getPointsFromBoundsWithRotation, linePolygonIntersects, pointInPolygon, PointLocation, pointOnPolygonStoke, polygonGetPointTangent, polygonNearestPoint, rotatePoints, } from '@blocksuite/global/utils';
+import { Bound, getCenterAreaBounds, getPointsFromBoundsWithRotation, linePolygonIntersects, pointInPolygon, PointLocation, pointOnPolygonStoke, polygonGetPointTangent, polygonNearestPoint, rotatePoints, } from '@lumensuite/global/utils';
 import { DEFAULT_CENTRAL_AREA_RATIO } from '../../../consts/index.js';
 export const diamond = {
     points({ x, y, w, h }) {

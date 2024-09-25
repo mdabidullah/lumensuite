@@ -1,5 +1,5 @@
-import { createEmptyDoc, PageEditor } from '@blocksuite/presets';
-import '@blocksuite/presets/themes/affine.css';
+import { createEmptyDoc, PageEditor } from '@lumensuite/presets';
+import '@lumensuite/presets/themes/affine.css';
 
 const container = document.createElement('div');
 container.style.display = 'flex';

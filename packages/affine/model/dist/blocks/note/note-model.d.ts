@@ -1,11 +1,11 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
-import { Bound } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
+import { Bound } from '@lumensuite/global/utils';
 import { type Color, NoteDisplayMode, type StrokeStyle } from '../../consts/index.js';
 export declare const NoteBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<NoteProps>;
+        props: import("@lumensuite/store").PropsGetter<NoteProps>;
         flavour: "affine:note";
     } & {
         version: number;
@@ -14,7 +14,7 @@ export declare const NoteBlockSchema: {
         children: string[];
     };
     onUpgrade?: ((data: NoteProps, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<NoteProps>) | undefined;
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<NoteProps>) | undefined;
 };
 type NoteProps = {
     xywh: SerializedXYWH;
@@ -44,7 +44,7 @@ type NoteEdgelessProps = {
     scale?: number;
 };
 declare const NoteBlockModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<NoteProps>;
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<NoteProps>;
 };
 export declare class NoteBlockModel extends NoteBlockModel_base implements GfxElementGeometry {
     private _isSelectable;
@@ -53,7 +53,7 @@ export declare class NoteBlockModel extends NoteBlockModel_base implements GfxEl
     intersectsBound(bound: Bound): boolean;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:note': NoteBlockModel;
         }

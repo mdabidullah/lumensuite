@@ -1,5 +1,5 @@
-import { DiamondIcon, EllipseIcon, RoundedRectangleIcon, ScribbledDiamondIcon, ScribbledEllipseIcon, ScribbledRoundedRectangleIcon, ScribbledSquareIcon, ScribbledTriangleIcon, SquareIcon, TriangleIcon, } from '@blocksuite/affine-components/icons';
-import { ShapeType } from '@blocksuite/affine-model';
+import { DiamondIcon, EllipseIcon, RoundedRectangleIcon, ScribbledDiamondIcon, ScribbledEllipseIcon, ScribbledRoundedRectangleIcon, ScribbledSquareIcon, ScribbledTriangleIcon, SquareIcon, TriangleIcon, } from '@lumensuite/affine-components/icons';
+import { ShapeType } from '@lumensuite/affine-model';
 export const ShapeComponentConfig = [
     {
         name: ShapeType.Rect,

@@ -1,4 +1,4 @@
-import { assertEquals } from '@blocksuite/global/utils';
+import { assertEquals } from '@lumensuite/global/utils';
 import { ASTWalkerContext } from './context.js';
 export class BaseAdapter {
     get configs() {

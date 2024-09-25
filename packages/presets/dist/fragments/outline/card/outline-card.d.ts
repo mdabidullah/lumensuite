@@ -1,9 +1,9 @@
-import type { Doc } from '@blocksuite/store';
-import { type NoteBlockModel } from '@blocksuite/blocks';
+import type { Doc } from '@lumensuite/store';
+import { type NoteBlockModel } from '@lumensuite/blocks';
 import { LitElement, nothing } from 'lit';
 import './outline-preview.js';
 export declare const AFFINE_OUTLINE_NOTE_CARD = "affine-outline-note-card";
-declare const OutlineNoteCard_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const OutlineNoteCard_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class OutlineNoteCard extends OutlineNoteCard_base {
     static styles: import("lit").CSSResult;
     private _displayModePopper;

@@ -1,11 +1,11 @@
-import type { SurfaceBlockComponent, SurfaceBlockModel } from '@blocksuite/affine-block-surface';
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { UIEventHandler } from '@blocksuite/block-std';
-import type { IBound, IPoint, IVec } from '@blocksuite/global/utils';
-import type { BlockModel } from '@blocksuite/store';
-import { BlockComponent } from '@blocksuite/block-std';
-import { type GfxViewportElement } from '@blocksuite/block-std/gfx';
-import { Point } from '@blocksuite/global/utils';
+import type { SurfaceBlockComponent, SurfaceBlockModel } from '@lumensuite/affine-block-surface';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { UIEventHandler } from '@lumensuite/block-std';
+import type { IBound, IPoint, IVec } from '@lumensuite/global/utils';
+import type { BlockModel } from '@lumensuite/store';
+import { BlockComponent } from '@lumensuite/block-std';
+import { type GfxViewportElement } from '@lumensuite/block-std/gfx';
+import { Point } from '@lumensuite/global/utils';
 import type { Viewport } from '../../_common/utils/index.js';
 import type { EdgelessRootBlockWidgetName } from '../types.js';
 import type { EdgelessSelectedRect } from './components/rects/edgeless-selected-rect.js';
@@ -38,9 +38,12 @@ export declare class EdgelessRootBlockComponent extends BlockComponent<RootBlock
     disableComponents: boolean;
     keyboardManager: EdgelessPageKeyboardManager | null;
     mouseRoot: HTMLElement;
-    get dispatcher(): import("@blocksuite/block-std").UIEventDispatcher;
+    get dispatcher(): import("@lumensuite/block-std").UIEventDispatcher;
     get slots(): {
-        edgelessToolUpdated: import("@blocksuite/store").Slot<import("./tools/text-tool.js").TextTool | {
+        edgelessToolUpdated: import("@lumensuite/store").Slot<import("./tools/text-tool.js").TextTool | {
+            type: "pan";
+            panning: boolean;
+        } | {
             type: "brush";
         } | import("./tools/connector-tool.js").ConnectorTool | {
             type: "copilot";
@@ -53,33 +56,30 @@ export declare class EdgelessRootBlockComponent extends BlockComponent<RootBlock
             type: "frame";
         } | import("./tools/lasso-tool.js").LassoTool | {
             type: "mindmap";
-        } | import("./tools/note-tool.js").NoteTool | {
-            type: "pan";
-            panning: boolean;
-        } | import("./tools/shape-tool.js").ShapeTool | {
+        } | import("./tools/note-tool.js").NoteTool | import("./tools/shape-tool.js").ShapeTool | {
             type: "default";
         } | {
             type: "template";
         }>;
-        pressShiftKeyUpdated: import("@blocksuite/store").Slot<boolean>;
-        cursorUpdated: import("@blocksuite/store").Slot<string>;
-        copyAsPng: import("@blocksuite/store").Slot<{
-            blocks: BlockSuite.EdgelessBlockModelType[];
-            shapes: BlockSuite.SurfaceModel[];
+        pressShiftKeyUpdated: import("@lumensuite/store").Slot<boolean>;
+        cursorUpdated: import("@lumensuite/store").Slot<string>;
+        copyAsPng: import("@lumensuite/store").Slot<{
+            blocks: LumenSuite.EdgelessBlockModelType[];
+            shapes: LumenSuite.SurfaceModel[];
         }>;
-        readonlyUpdated: import("@blocksuite/store").Slot<boolean>;
-        draggingAreaUpdated: import("@blocksuite/store").Slot<void>;
-        navigatorSettingUpdated: import("@blocksuite/store").Slot<{
+        readonlyUpdated: import("@lumensuite/store").Slot<boolean>;
+        draggingAreaUpdated: import("@lumensuite/store").Slot<void>;
+        navigatorSettingUpdated: import("@lumensuite/store").Slot<{
             hideToolbar?: boolean;
             blackBackground?: boolean;
             fillScreen?: boolean;
         }>;
-        navigatorFrameChanged: import("@blocksuite/store").Slot<import("@blocksuite/affine-model").FrameBlockModel>;
-        fullScreenToggled: import("@blocksuite/store").Slot<void>;
-        elementResizeStart: import("@blocksuite/store").Slot<void>;
-        elementResizeEnd: import("@blocksuite/store").Slot<void>;
-        toggleNoteSlicer: import("@blocksuite/store").Slot<void>;
-        docLinkClicked: import("@blocksuite/store").Slot<{
+        navigatorFrameChanged: import("@lumensuite/store").Slot<import("@lumensuite/affine-model").FrameBlockModel>;
+        fullScreenToggled: import("@lumensuite/store").Slot<void>;
+        elementResizeStart: import("@lumensuite/store").Slot<void>;
+        elementResizeEnd: import("@lumensuite/store").Slot<void>;
+        toggleNoteSlicer: import("@lumensuite/store").Slot<void>;
+        docLinkClicked: import("@lumensuite/store").Slot<{
             pageId: string;
             params?: {
                 mode?: "page" | "edgeless" | undefined;
@@ -87,10 +87,10 @@ export declare class EdgelessRootBlockComponent extends BlockComponent<RootBlock
                 elementIds?: string[] | undefined;
             } | undefined;
         }>;
-        tagClicked: import("@blocksuite/store").Slot<{
+        tagClicked: import("@lumensuite/store").Slot<{
             tagId: string;
         }>;
-        toolbarLocked: import("@blocksuite/store").Slot<boolean>;
+        toolbarLocked: import("@lumensuite/store").Slot<boolean>;
     };
     get surfaceBlockModel(): SurfaceBlockModel;
     get tools(): import("./services/tools-manager.js").EdgelessToolsManager;

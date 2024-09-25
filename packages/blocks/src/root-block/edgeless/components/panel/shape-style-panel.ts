@@ -1,8 +1,8 @@
 import {
   GeneralStyleIcon,
   ScribbledStyleIcon,
-} from '@blocksuite/affine-components/icons';
-import { ShapeStyle } from '@blocksuite/affine-model';
+} from '@lumensuite/affine-components/icons';
+import { ShapeStyle } from '@lumensuite/affine-model';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

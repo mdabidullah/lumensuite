@@ -1,4 +1,4 @@
-import { INLINE_ROOT_ATTR } from '@blocksuite/inline';
+import { INLINE_ROOT_ATTR } from '@lumensuite/inline';
 import { FORMAT_TEXT_SUPPORT_FLAVOURS } from './consts.js';
 import { clearMarksOnDiscontinuousInput } from './utils.js';
 // for text selection

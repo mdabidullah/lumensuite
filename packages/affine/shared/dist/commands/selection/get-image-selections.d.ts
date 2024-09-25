@@ -1,8 +1,8 @@
-import type { ImageSelection } from '@blocksuite/affine-shared/selection';
-import type { Command } from '@blocksuite/block-std';
+import type { ImageSelection } from '@lumensuite/affine-shared/selection';
+import type { Command } from '@lumensuite/block-std';
 export declare const getImageSelectionsCommand: Command<never, 'currentImageSelections'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             currentImageSelections?: ImageSelection[];
         }

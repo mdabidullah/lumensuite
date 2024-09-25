@@ -9,7 +9,7 @@ import { BlockViewIdentifier } from '../identifier.js';
  *
  * @example
  * ```ts
- * import { BlockViewExtension } from '@blocksuite/block-std';
+ * import { BlockViewExtension } from '@lumensuite/block-std';
  *
  * const MyListBlockViewExtension = BlockViewExtension(
  *   'affine:list',

@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
 import './outline-setting-menu.js';
 export declare const AFFINE_OUTLINE_PANEL_HEADER = "affine-outline-panel-header";
-declare const OutlinePanelHeader_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const OutlinePanelHeader_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class OutlinePanelHeader extends OutlinePanelHeader_base {
     static styles: import("lit").CSSResult;
     private _notePreviewSettingMenuPopper;

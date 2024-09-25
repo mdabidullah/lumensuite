@@ -1,5 +1,5 @@
-import { REQUEST_IDLE_CALLBACK_ENABLED } from '@blocksuite/global/env';
-import { assertExists } from '@blocksuite/global/utils';
+import { REQUEST_IDLE_CALLBACK_ENABLED } from '@lumensuite/global/env';
+import { assertExists } from '@lumensuite/global/utils';
 import * as Y from 'yjs';
 
 import type { VLine } from '../components/v-line.js';
@@ -243,7 +243,7 @@ export class RangeService<TextAttributes extends BaseTextAttributes> {
     const fn = () => {
       // There may be multiple range update events in one frame,
       // so we need to obtain the latest inline ranage.
-      // see https://github.com/toeverything/blocksuite/issues/2982
+      // see https://github.com/toeverything/lumensuite/issues/2982
       // when using input method inline ranage will return to the starting point,
       // so we need to re-sync
       this.syncInlineRange();

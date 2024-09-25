@@ -1,7 +1,7 @@
-import type { BlockComponent, UIEventHandler } from '@blocksuite/block-std';
-import type { BlockSnapshot, Doc } from '@blocksuite/store';
+import type { BlockComponent, UIEventHandler } from '@lumensuite/block-std';
+import type { BlockSnapshot, Doc } from '@lumensuite/store';
 
-import { assertExists, DisposableGroup } from '@blocksuite/global/utils';
+import { assertExists, DisposableGroup } from '@lumensuite/global/utils';
 
 import {
   AttachmentAdapter,

@@ -1,4 +1,4 @@
-import { getBlockIndexCommand, getBlockSelectionsCommand, getNextBlockCommand, getPrevBlockCommand, getSelectedBlocksCommand, } from '@blocksuite/affine-shared/commands';
+import { getBlockIndexCommand, getBlockSelectionsCommand, getNextBlockCommand, getPrevBlockCommand, getSelectedBlocksCommand, } from '@lumensuite/affine-shared/commands';
 import { updateBlockType } from './block-type.js';
 import { dedentBlock } from './dedent-block.js';
 import { dedentBlockToRoot } from './dedent-block-to-root.js';

@@ -1,10 +1,10 @@
-import { popFilterableSimpleMenu } from '@blocksuite/affine-components/context-menu';
+import { PlusIcon } from '@blocksuite/icons/lit';
+import { popFilterableSimpleMenu } from '@lumensuite/affine-components/context-menu';
 import {
   ShadowlessElement,
   SignalWatcher,
   WithDisposable,
-} from '@blocksuite/block-std';
-import { PlusIcon } from '@blocksuite/icons/lit';
+} from '@lumensuite/block-std';
 import { css, html, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

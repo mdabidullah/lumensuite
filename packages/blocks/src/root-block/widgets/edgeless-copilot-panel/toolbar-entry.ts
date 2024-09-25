@@ -1,5 +1,5 @@
-import { AIStarIcon } from '@blocksuite/affine-components/icons';
-import { type EditorHost, WithDisposable } from '@blocksuite/block-std';
+import { AIStarIcon } from '@lumensuite/affine-components/icons';
+import { type EditorHost, WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 

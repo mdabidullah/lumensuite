@@ -1,8 +1,8 @@
-import type { InsertToPosition } from '@blocksuite/affine-shared/utils';
-import type { BlockStdScope, EventName, UIEventHandler } from '@blocksuite/block-std';
-import type { Disposable } from '@blocksuite/global/utils';
+import type { InsertToPosition } from '@lumensuite/affine-shared/utils';
+import type { BlockStdScope, EventName, UIEventHandler } from '@lumensuite/block-std';
+import type { Disposable } from '@lumensuite/global/utils';
 import type { ReadonlySignal } from '@lit-labs/preact-signals';
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DataSource } from '../common/data-source/base.js';
 import type { DataViewRenderer } from '../data-view.js';
 import type { DataViewSelection } from '../types.js';
@@ -10,7 +10,7 @@ import type { SingleView } from '../view-manager/single-view.js';
 import type { ViewManager } from '../view-manager/view-manager.js';
 import type { DataViewWidget } from '../widget/types.js';
 import type { DataViewExpose, DataViewProps } from './data-view.js';
-declare const DataViewBase_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const DataViewBase_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare abstract class DataViewBase<T extends SingleView = SingleView, Selection extends DataViewSelection = DataViewSelection> extends DataViewBase_base implements DataViewProps<T, Selection>, DataViewExpose {
     addRow?(position: InsertToPosition): void;
     abstract focusFirstCell(): void;

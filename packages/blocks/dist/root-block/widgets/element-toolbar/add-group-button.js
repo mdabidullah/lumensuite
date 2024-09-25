@@ -32,10 +32,10 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { MindmapElementModel } from '@blocksuite/affine-block-surface';
-import { GroupIcon } from '@blocksuite/affine-components/icons';
-import { GroupElementModel } from '@blocksuite/affine-model';
-import { WithDisposable } from '@blocksuite/block-std';
+import { MindmapElementModel } from '@lumensuite/affine-block-surface';
+import { GroupIcon } from '@lumensuite/affine-components/icons';
+import { GroupElementModel } from '@lumensuite/affine-model';
+import { WithDisposable } from '@lumensuite/block-std';
 import { css, html, LitElement, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 let EdgelessAddGroupButton = (() => {

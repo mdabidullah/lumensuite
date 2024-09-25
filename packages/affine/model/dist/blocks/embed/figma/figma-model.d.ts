@@ -10,7 +10,7 @@ export type EmbedFigmaBlockProps = {
     caption: string | null;
 } & EmbedFigmaBlockUrlData;
 declare const EmbedFigmaModel_base: {
-    new (): import("@blocksuite/block-std/gfx").GfxBlockElementModel<{
+    new (): import("@lumensuite/block-std/gfx").GfxBlockElementModel<{
         style: (typeof EmbedFigmaStyles)[number];
         url: string;
         caption: string | null;
@@ -19,7 +19,7 @@ declare const EmbedFigmaModel_base: {
 export declare class EmbedFigmaModel extends EmbedFigmaModel_base {
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface EdgelessBlockModelMap {
             'affine:embed-figma': EmbedFigmaModel;
         }

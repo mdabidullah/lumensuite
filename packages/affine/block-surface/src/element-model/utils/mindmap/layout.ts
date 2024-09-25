@@ -1,7 +1,7 @@
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
-import { LayoutType } from '@blocksuite/affine-model';
-import { Bound } from '@blocksuite/global/utils';
+import { LayoutType } from '@lumensuite/affine-model';
+import { Bound } from '@lumensuite/global/utils';
 
 import type { MindmapElementModel } from '../../mindmap.js';
 
@@ -27,7 +27,7 @@ export type MindmapNode = {
   id: string;
   detail: NodeDetail;
 
-  element: BlockSuite.SurfaceElementModel;
+  element: LumenSuite.SurfaceElementModel;
   children: MindmapNode[];
 
   /**

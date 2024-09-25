@@ -1,7 +1,7 @@
-import type { GfxElementGeometry } from '@blocksuite/block-std/gfx';
-import type { SerializedXYWH } from '@blocksuite/global/utils';
+import type { GfxElementGeometry } from '@lumensuite/block-std/gfx';
+import type { SerializedXYWH } from '@lumensuite/global/utils';
 
-import { BlockModel, defineBlockSchema } from '@blocksuite/store';
+import { BlockModel, defineBlockSchema } from '@lumensuite/store';
 
 import { type EmbedCardStyle, GfxCompatible } from '../../utils/index.js';
 import { AttachmentBlockTransformer } from './attachment-transformer.js';
@@ -92,7 +92,7 @@ export class AttachmentBlockModel
   implements GfxElementGeometry {}
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface EdgelessBlockModelMap {
       'affine:attachment': AttachmentBlockModel;
     }

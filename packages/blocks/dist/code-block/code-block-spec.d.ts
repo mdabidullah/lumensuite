@@ -1,3 +1,3 @@
-import { type ExtensionType } from '@blocksuite/block-std';
+import { type ExtensionType } from '@lumensuite/block-std';
 export declare const CodeBlockSpec: ExtensionType[];
 //# sourceMappingURL=code-block-spec.d.ts.map

@@ -1,4 +1,4 @@
-import { clamp } from '@blocksuite/affine-shared/utils';
+import { clamp } from '@lumensuite/affine-shared/utils';
 export function calcSafeCoordinate({ positioningPoint, objRect = { width: 0, height: 0 }, boundaryRect = document.body.getBoundingClientRect(), offsetX = 0, offsetY = 0, edgeGap = 20, }) {
     const safeX = clamp(positioningPoint.x + offsetX, edgeGap, boundaryRect.width - objRect.width - edgeGap);
     const y = positioningPoint.y + offsetY;

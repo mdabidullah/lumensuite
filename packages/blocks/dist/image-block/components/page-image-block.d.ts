@@ -1,7 +1,7 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import { type PropertyValues } from 'lit';
 import type { ImageBlockComponent } from '../image-block.js';
-declare const ImageBlockPageComponent_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const ImageBlockPageComponent_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class ImageBlockPageComponent extends ImageBlockPageComponent_base {
     static styles: import("lit").CSSResult;
     private _isDragging;

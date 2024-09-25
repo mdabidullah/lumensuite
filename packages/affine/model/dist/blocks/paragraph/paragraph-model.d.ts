@@ -1,11 +1,11 @@
-import { type SchemaToModel } from '@blocksuite/store';
+import { type SchemaToModel } from '@lumensuite/store';
 export type ParagraphType = 'text' | 'quote' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 export declare const ParagraphBlockSchema: {
     version: number;
     model: {
-        props: import("@blocksuite/store").PropsGetter<{
+        props: import("@lumensuite/store").PropsGetter<{
             type: ParagraphType;
-            text: import("@blocksuite/store").Text;
+            text: import("@lumensuite/store").Text;
         }>;
         flavour: "affine:paragraph";
     } & {
@@ -15,16 +15,16 @@ export declare const ParagraphBlockSchema: {
     };
     onUpgrade?: ((data: {
         type: ParagraphType;
-        text: import("@blocksuite/store").Text;
+        text: import("@lumensuite/store").Text;
     }, previousVersion: number, latestVersion: number) => void) | undefined;
-    transformer?: (() => import("@blocksuite/store").BaseBlockTransformer<{
+    transformer?: (() => import("@lumensuite/store").BaseBlockTransformer<{
         type: ParagraphType;
-        text: import("@blocksuite/store").Text;
+        text: import("@lumensuite/store").Text;
     }>) | undefined;
 };
 export type ParagraphBlockModel = SchemaToModel<typeof ParagraphBlockSchema>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface BlockModels {
             'affine:paragraph': ParagraphBlockModel;
         }

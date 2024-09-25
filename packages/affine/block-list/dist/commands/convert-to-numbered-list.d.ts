@@ -1,11 +1,11 @@
-import type { Command } from '@blocksuite/block-std';
+import type { Command } from '@lumensuite/block-std';
 export declare const convertToNumberedListCommand: Command<never, 'listConvertedId', {
     id: string;
     order: number;
     stopCapturing?: boolean;
 }>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Commands {
             convertToNumberedList: typeof convertToNumberedListCommand;
         }

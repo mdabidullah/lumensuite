@@ -1,4 +1,3 @@
-import { popMenu } from '@blocksuite/affine-components/context-menu';
 import {
   CopyIcon,
   DoneIcon,
@@ -6,6 +5,7 @@ import {
   SettingsIcon,
 } from '@blocksuite/icons/lit';
 import { flip, offset } from '@floating-ui/dom';
+import { popMenu } from '@lumensuite/affine-components/context-menu';
 import { css, html, LitElement } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 

@@ -1,9 +1,9 @@
-import { ShadowlessElement } from '@blocksuite/block-std';
+import { ShadowlessElement } from '@lumensuite/block-std';
 import type { DataViewRenderer } from '../../../core/data-view.js';
 import type { TableSingleView } from '../table-view-manager.js';
 import { type TableViewSelection } from '../types.js';
 import './row-select-checkbox.js';
-declare const TableRow_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const TableRow_base: typeof ShadowlessElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class TableRow extends TableRow_base {
     static styles: import("lit").CSSResult;
     private _clickDragHandler;

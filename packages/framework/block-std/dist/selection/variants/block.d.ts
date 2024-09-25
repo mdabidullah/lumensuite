@@ -7,7 +7,7 @@ export declare class BlockSelection extends BaseSelection {
     toJSON(): Record<string, unknown>;
 }
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface Selection {
             block: typeof BlockSelection;
         }

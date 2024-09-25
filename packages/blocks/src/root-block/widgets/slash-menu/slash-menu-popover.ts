@@ -1,16 +1,16 @@
-import type { AffineInlineEditor } from '@blocksuite/affine-components/rich-text';
+import type { AffineInlineEditor } from '@lumensuite/affine-components/rich-text';
 
-import { ArrowDownIcon } from '@blocksuite/affine-components/icons';
-import { createLitPortal } from '@blocksuite/affine-components/portal';
-import { getInlineEditorByModel } from '@blocksuite/affine-components/rich-text';
+import { autoPlacement, offset } from '@floating-ui/dom';
+import { ArrowDownIcon } from '@lumensuite/affine-components/icons';
+import { createLitPortal } from '@lumensuite/affine-components/portal';
+import { getInlineEditorByModel } from '@lumensuite/affine-components/rich-text';
 import {
   isControlledKeyboardEvent,
   isFuzzyMatch,
   substringMatchScore,
-} from '@blocksuite/affine-shared/utils';
-import { WithDisposable } from '@blocksuite/block-std';
-import { assertExists } from '@blocksuite/global/utils';
-import { autoPlacement, offset } from '@floating-ui/dom';
+} from '@lumensuite/affine-shared/utils';
+import { WithDisposable } from '@lumensuite/block-std';
+import { assertExists } from '@lumensuite/global/utils';
 import { html, LitElement, nothing, type PropertyValues } from 'lit';
 import { customElement, property, query, state } from 'lit/decorators.js';
 import { ifDefined } from 'lit/directives/if-defined.js';

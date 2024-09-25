@@ -1,7 +1,7 @@
-import type { Command, TextSelection } from '@blocksuite/block-std';
+import type { Command, TextSelection } from '@lumensuite/block-std';
 export declare const getTextSelectionCommand: Command<never, 'currentTextSelection'>;
 declare global {
-    namespace BlockSuite {
+    namespace LumenSuite {
         interface CommandContext {
             currentTextSelection?: TextSelection;
         }

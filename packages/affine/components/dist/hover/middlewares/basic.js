@@ -1,4 +1,4 @@
-import { sleep } from '@blocksuite/global/utils';
+import { sleep } from '@lumensuite/global/utils';
 /**
  * When the mouse is hovering in, the `mouseover` event will be fired multiple times.
  * This middleware will filter out the duplicated events.

@@ -1,7 +1,7 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 
 type MatchEvent<T extends string> = T extends UIEventStateType
-  ? BlockSuiteUIEventState[T]
+  ? LumenSuiteUIEventState[T]
   : UIEventState;
 
 export class UIEventState {
@@ -28,7 +28,7 @@ export class UIEventStateContext {
   ): MatchEvent<Type> => {
     const state = this._map[type];
     if (!state) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.EventDispatcherError,
         `UIEventStateContext: state ${type} not found`
       );
@@ -54,9 +54,9 @@ export type UIEventHandler = (
 ) => boolean | null | undefined | void;
 
 declare global {
-  interface BlockSuiteUIEventState {
+  interface LumenSuiteUIEventState {
     defaultState: UIEventState;
   }
 
-  type UIEventStateType = keyof BlockSuiteUIEventState;
+  type UIEventStateType = keyof LumenSuiteUIEventState;
 }

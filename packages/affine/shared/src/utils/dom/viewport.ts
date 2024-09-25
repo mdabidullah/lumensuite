@@ -1,4 +1,4 @@
-import type { BlockComponent, EditorHost } from '@blocksuite/block-std';
+import type { BlockComponent, EditorHost } from '@lumensuite/block-std';
 
 import { isInsidePageEditor } from './checker.js';
 

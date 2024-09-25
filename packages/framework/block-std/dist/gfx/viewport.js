@@ -1,4 +1,4 @@
-import { Bound, clamp, Slot, Vec, } from '@blocksuite/global/utils';
+import { Bound, clamp, Slot, Vec, } from '@lumensuite/global/utils';
 function cutoff(value, ref, sign) {
     if (sign > 0 && value > ref)
         return ref;

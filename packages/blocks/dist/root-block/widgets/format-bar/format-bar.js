@@ -32,12 +32,12 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { HoverController } from '@blocksuite/affine-components/hover';
-import { isFormatSupported } from '@blocksuite/affine-components/rich-text';
-import { cloneGroups, } from '@blocksuite/affine-components/toolbar';
-import { matchFlavours } from '@blocksuite/affine-shared/utils';
-import { WidgetComponent } from '@blocksuite/block-std';
-import { assertExists, DisposableGroup } from '@blocksuite/global/utils';
+import { HoverController } from '@lumensuite/affine-components/hover';
+import { isFormatSupported } from '@lumensuite/affine-components/rich-text';
+import { cloneGroups, } from '@lumensuite/affine-components/toolbar';
+import { matchFlavours } from '@lumensuite/affine-shared/utils';
+import { WidgetComponent } from '@lumensuite/block-std';
+import { assertExists, DisposableGroup } from '@lumensuite/global/utils';
 import { autoUpdate, computePosition, inline, offset, shift, } from '@floating-ui/dom';
 import { html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';

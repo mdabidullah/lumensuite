@@ -1,12 +1,12 @@
+import { computed } from '@lit-labs/preact-signals';
 import {
   ArrowUpIcon,
   ConnectorCWithArrowIcon,
   ConnectorLWithArrowIcon,
   ConnectorXWithArrowIcon,
-} from '@blocksuite/affine-components/icons';
-import { ConnectorMode, getConnectorModeName } from '@blocksuite/affine-model';
-import { SignalWatcher } from '@blocksuite/block-std';
-import { computed } from '@lit-labs/preact-signals';
+} from '@lumensuite/affine-components/icons';
+import { ConnectorMode, getConnectorModeName } from '@lumensuite/affine-model';
+import { SignalWatcher } from '@lumensuite/block-std';
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { styleMap } from 'lit/directives/style-map.js';

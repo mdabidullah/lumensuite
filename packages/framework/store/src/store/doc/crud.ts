@@ -1,4 +1,4 @@
-import { BlockSuiteError, ErrorCode } from '@blocksuite/global/exceptions';
+import { ErrorCode, LumenSuiteError } from '@lumensuite/global/exceptions';
 import * as Y from 'yjs';
 
 import type { YBlock } from './index.js';
@@ -55,7 +55,7 @@ export class DocCRUD {
   ) {
     const schema = this._schema.flavourSchemaMap.get(flavour);
     if (!schema) {
-      throw new BlockSuiteError(
+      throw new LumenSuiteError(
         ErrorCode.ModelCRUDError,
         `schema for flavour: ${flavour} not found`
       );
@@ -146,7 +146,7 @@ export class DocCRUD {
       if (bringChildrenTo) {
         const bringChildrenToModel = () => {
           if (!bringChildrenTo) {
-            throw new BlockSuiteError(
+            throw new LumenSuiteError(
               ErrorCode.ModelCRUDError,
               'bringChildrenTo is not provided when deleting block'
             );
@@ -276,7 +276,7 @@ export class DocCRUD {
 
       const last = children[children.length - 1];
       if (this.getNext(last) !== blockId) {
-        throw new BlockSuiteError(
+        throw new LumenSuiteError(
           ErrorCode.ModelCRUDError,
           'The blocks to move are not contiguous under their parent'
         );
@@ -318,7 +318,7 @@ export class DocCRUD {
             .toArray()
             .findIndex(id => id === targetSibling);
           if (targetIndex === -1) {
-            throw new BlockSuiteError(
+            throw new LumenSuiteError(
               ErrorCode.ModelCRUDError,
               'Target sibling not found'
             );

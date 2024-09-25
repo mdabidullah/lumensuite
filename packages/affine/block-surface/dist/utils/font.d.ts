@@ -1,4 +1,4 @@
-import type { FontFamily } from '@blocksuite/affine-model';
+import type { FontFamily } from '@lumensuite/affine-model';
 export declare function wrapFontFamily(fontFamily: FontFamily | string): string;
 export declare const getFontFaces: () => any[];
 export declare const isSameFontFamily: (fontFamily: FontFamily | string) => (fontFace: FontFace) => boolean;

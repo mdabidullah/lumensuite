@@ -1,4 +1,4 @@
-import { ShapeType } from '@blocksuite/affine-model';
+import { ShapeType } from '@lumensuite/affine-model';
 const shapeMap = {
     [ShapeType.Rect]: 0,
     [ShapeType.Ellipse]: 1,

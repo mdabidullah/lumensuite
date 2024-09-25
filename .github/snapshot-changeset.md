@@ -1,16 +1,16 @@
 ---
-'@blocksuite/global': patch
-'@blocksuite/block-std': patch
-'@blocksuite/store': patch
-'@blocksuite/inline': patch
-'@blocksuite/sync': patch
-'@blocksuite/affine-shared': patch
-'@blocksuite/affine-model': patch
-'@blocksuite/affine-components': patch
-'@blocksuite/affine-block-paragraph': patch
-'@blocksuite/affine-block-list': patch
-'@blocksuite/blocks': patch
-'@blocksuite/presets': patch
+'@lumensuite/global': patch
+'@lumensuite/block-std': patch
+'@lumensuite/store': patch
+'@lumensuite/inline': patch
+'@lumensuite/sync': patch
+'@lumensuite/affine-shared': patch
+'@lumensuite/affine-model': patch
+'@lumensuite/affine-components': patch
+'@lumensuite/affine-block-paragraph': patch
+'@lumensuite/affine-block-list': patch
+'@lumensuite/blocks': patch
+'@lumensuite/presets': patch
 ---
 
 Release a snapshot version.

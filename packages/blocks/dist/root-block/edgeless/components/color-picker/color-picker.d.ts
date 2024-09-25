@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import type { Hsva, ModeRgba, ModeTab, ModeType, NavType, PickColorEvent, Point, Rgb } from './types.js';
-declare const EdgelessColorPicker_base: typeof LitElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/block-std").DisposableClass>;
+declare const EdgelessColorPicker_base: typeof LitElement & import("@lumensuite/global/utils").Constructor<import("@lumensuite/block-std").DisposableClass>;
 export declare class EdgelessColorPicker extends EdgelessColorPicker_base {
     #private;
     static styles: import("lit").CSSResult;

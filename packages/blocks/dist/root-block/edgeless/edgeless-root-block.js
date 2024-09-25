@@ -32,16 +32,16 @@ var __runInitializers = (this && this.__runInitializers) || function (thisArg, i
     }
     return useValue ? value : void 0;
 };
-import { CommonUtils } from '@blocksuite/affine-block-surface';
-import { focusTextModel } from '@blocksuite/affine-components/rich-text';
-import { toast } from '@blocksuite/affine-components/toast';
-import { NoteDisplayMode } from '@blocksuite/affine-model';
-import { FontLoaderService, TelemetryProvider, } from '@blocksuite/affine-shared/services';
-import { handleNativeRangeAtPoint, humanFileSize, isTouchPadPinchEvent, requestConnectedFrame, requestThrottledConnectedFrame, } from '@blocksuite/affine-shared/utils';
-import { BlockComponent } from '@blocksuite/block-std';
-import { GfxBlockElementModel, } from '@blocksuite/block-std/gfx';
-import { IS_WINDOWS } from '@blocksuite/global/env';
-import { assertExists, Bound, Point, serializeXYWH, throttle, Vec, } from '@blocksuite/global/utils';
+import { CommonUtils } from '@lumensuite/affine-block-surface';
+import { focusTextModel } from '@lumensuite/affine-components/rich-text';
+import { toast } from '@lumensuite/affine-components/toast';
+import { NoteDisplayMode } from '@lumensuite/affine-model';
+import { FontLoaderService, TelemetryProvider, } from '@lumensuite/affine-shared/services';
+import { handleNativeRangeAtPoint, humanFileSize, isTouchPadPinchEvent, requestConnectedFrame, requestThrottledConnectedFrame, } from '@lumensuite/affine-shared/utils';
+import { BlockComponent } from '@lumensuite/block-std';
+import { GfxBlockElementModel, } from '@lumensuite/block-std/gfx';
+import { IS_WINDOWS } from '@lumensuite/global/env';
+import { assertExists, Bound, Point, serializeXYWH, throttle, Vec, } from '@lumensuite/global/utils';
 import { css, html, nothing } from 'lit';
 import { customElement, query, state } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';

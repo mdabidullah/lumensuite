@@ -1,4 +1,4 @@
-/// <reference types="@blocksuite/global" preserve="true" />
+/// <reference types="@lumensuite/global" preserve="true" />
 // eslint-disable-next-line @typescript-eslint/triple-slash-reference
 /// <reference path="../shim.d.ts" />
 export * from './adapter/index.js';
@@ -10,7 +10,7 @@ export * from './transformer/index.js';
 export { createAutoIncrementIdGenerator, createAutoIncrementIdGeneratorByClientId, nanoid, uuidv4, } from './utils/id-generator.js';
 export * as Utils from './utils/utils.js';
 export * from './yjs/index.js';
-export { Slot } from '@blocksuite/global/utils';
+export { Slot } from '@lumensuite/global/utils';
 import './utils/formatter.js';
 const env = typeof globalThis !== 'undefined'
     ? globalThis
@@ -25,7 +25,7 @@ const importIdentifier = '__ $BLOCKSUITE_STORE$ __';
 // @ts-ignore
 if (env[importIdentifier] === true) {
     // https://github.com/yjs/yjs/issues/438
-    console.error('@blocksuite/store was already imported. This breaks constructor checks and will lead to issues!');
+    console.error('@lumensuite/store was already imported. This breaks constructor checks and will lead to issues!');
 }
 // @ts-ignore
 env[importIdentifier] = true;

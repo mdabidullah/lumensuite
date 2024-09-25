@@ -1,9 +1,9 @@
 {
-  "name": "@blocksuite/store",
+  "name": "@lumensuite/store",
   "version": "0.17.5",
-  "description": "BlockSuite data store built for general purpose state management.",
+  "description": "LumenSuite data store built for general purpose state management.",
   "type": "module",
-  "repository": "toeverything/blocksuite",
+  "repository": "mdabidullah/lumensuite",
   "scripts": {
     "build": "tsc",
     "test:unit": "nx vite:test --run",
@@ -15,9 +15,9 @@
   "author": "toeverything",
   "license": "MPL-2.0",
   "dependencies": {
-    "@blocksuite/global": "workspace:*",
-    "@blocksuite/inline": "workspace:*",
-    "@blocksuite/sync": "workspace:*",
+    "@lumensuite/global": "workspace:*",
+    "@lumensuite/inline": "workspace:*",
+    "@lumensuite/sync": "workspace:*",
     "@preact/signals-core": "catalog:",
     "@types/flexsearch": "^0.7.6",
     "@types/lodash.ismatch": "^4.4.9",

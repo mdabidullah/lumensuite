@@ -1,7 +1,7 @@
-import type { RootBlockModel } from '@blocksuite/affine-model';
-import type { Viewport } from '@blocksuite/affine-shared/types';
-import type { Text } from '@blocksuite/store';
-import { BlockComponent } from '@blocksuite/block-std';
+import type { RootBlockModel } from '@lumensuite/affine-model';
+import type { Viewport } from '@lumensuite/affine-shared/types';
+import type { Text } from '@lumensuite/store';
+import { BlockComponent } from '@lumensuite/block-std';
 import type { PageRootBlockWidgetName } from '../index.js';
 import type { PageRootService } from './page-root-service.js';
 import { PageClipboard } from '../clipboard/index.js';
@@ -15,7 +15,7 @@ export declare class PageRootBlockComponent extends BlockComponent<RootBlockMode
     prependParagraphWithText: (text: Text) => void;
     get rootScrollContainer(): HTMLElement;
     get slots(): {
-        docLinkClicked: import("@blocksuite/store").Slot<{
+        docLinkClicked: import("@lumensuite/store").Slot<{
             pageId: string;
             params?: {
                 mode?: "page" | "edgeless" | undefined;
@@ -23,10 +23,10 @@ export declare class PageRootBlockComponent extends BlockComponent<RootBlockMode
                 elementIds?: string[] | undefined;
             } | undefined;
         }>;
-        tagClicked: import("@blocksuite/store").Slot<{
+        tagClicked: import("@lumensuite/store").Slot<{
             tagId: string;
         }>;
-        viewportUpdated: import("@blocksuite/store").Slot<Viewport>;
+        viewportUpdated: import("@lumensuite/store").Slot<Viewport>;
     };
     get viewport(): Viewport | null;
     get viewportElement(): HTMLDivElement | null;

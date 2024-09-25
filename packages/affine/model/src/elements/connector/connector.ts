@@ -2,15 +2,15 @@ import type {
   BaseElementProps,
   PointTestOptions,
   SerializedElement,
-} from '@blocksuite/block-std/gfx';
-import type { IVec, SerializedXYWH, XYWH } from '@blocksuite/global/utils';
+} from '@lumensuite/block-std/gfx';
+import type { IVec, SerializedXYWH, XYWH } from '@lumensuite/global/utils';
 
 import {
   derive,
   field,
   GfxPrimitiveElementModel,
   local,
-} from '@blocksuite/block-std/gfx';
+} from '@lumensuite/block-std/gfx';
 import {
   Bound,
   curveIntersects,
@@ -23,8 +23,8 @@ import {
   Polyline,
   polyLineNearestPoint,
   Vec,
-} from '@blocksuite/global/utils';
-import { DocCollection, type Y } from '@blocksuite/store';
+} from '@lumensuite/global/utils';
+import { DocCollection, type Y } from '@lumensuite/store';
 
 import {
   type Color,
@@ -510,7 +510,7 @@ export class ConnectorElementModel extends GfxPrimitiveElementModel<ConnectorEle
 }
 
 declare global {
-  namespace BlockSuite {
+  namespace LumenSuite {
     interface SurfaceElementModelMap {
       connector: ConnectorElementModel;
     }
